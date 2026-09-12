@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "https://www.totaldomainwar.com/*"
+  to = "https://totaldomainwar.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    # Short cache on HTML so a deploy is visible immediately.
+    Cache-Control = "public, max-age=0, must-revalidate"
