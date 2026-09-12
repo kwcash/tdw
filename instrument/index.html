@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Instrument — Total Domain War</title>
-<meta name="description" content="Answer ten questions about a situation and read it through the Total Domain War framework: the dimensions in play, the domains engaged, the stratagem that fits, and what to do about it.">
+<title>The Instrument, open reading — Total Domain War</title>
+<meta name="description" content="Describe a situation in your own words and read it through the Total Domain War framework: dimensions, domains, stratagem, and counter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     line-height:1.62;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,.nav-brand,nav,button,legend,.label,.tag,.side-name{
+  h1,h2,h3,.nav-brand,nav,button,.label{
     font-family:Archivo, "Helvetica Neue", Arial, sans-serif;
   }
   a{color:inherit;}
@@ -52,122 +52,45 @@
     font-size:clamp(1.9rem, 4.5vw, 2.6rem); line-height:1.1;
     margin:0 0 16px; font-weight:800; letter-spacing:-0.01em;
   }
-  p.lede{font-size:1.05rem; color:var(--bone-dim); max-width:580px; margin:0 0 12px;}
-  p.note{font-size:0.9rem; color:var(--bone-dim); margin:0 0 36px;}
+  p.lede{font-size:1.05rem; color:var(--bone-dim); max-width:580px; margin:0 0 10px;}
+  p.alt{font-size:0.9rem; color:var(--bone-dim); margin:0 0 32px;}
+  p.alt a{font-weight:600;}
 
-  fieldset{
-    border:none; border-top:1px solid var(--rule);
-    margin:0 0 8px; padding:28px 0 4px;
-  }
-  legend{
-    font-size:0.78rem; text-transform:uppercase; letter-spacing:0.1em;
-    font-weight:700; color:var(--bone-dim); padding:0 0 4px;
-  }
-
-  .sides{display:flex; gap:16px; flex-wrap:wrap; margin:8px 0 4px;}
-  .side{flex:1 1 220px;}
-  .side label{display:block; font-size:0.88rem; color:var(--bone-dim); margin:0 0 6px;}
-  .side input{
-    width:100%; background:var(--ink-2); border:1px solid var(--rule);
-    border-radius:6px; padding:11px 13px; font-size:1rem; color:var(--bone);
-    font-family:"Source Serif 4", Georgia, serif;
-  }
-  .side input:focus{outline:2px solid var(--signal); outline-offset:2px;}
-
-  .q{padding:20px 0; border-bottom:1px solid var(--rule);}
-  .q:last-child{border-bottom:none;}
-  .q .dim{
-    font-family:Archivo, sans-serif; font-size:0.72rem; text-transform:uppercase;
-    letter-spacing:0.1em; font-weight:700; color:var(--signal); margin:0 0 6px;
-  }
-  .q .ask{margin:0 0 12px; font-weight:600;}
-  .opts{display:flex; flex-direction:column; gap:8px;}
-  .opts label{
-    display:flex; align-items:flex-start; gap:10px; cursor:pointer;
+  textarea{
+    width:100%; min-height:220px; resize:vertical;
     background:var(--ink-2); border:1px solid var(--rule); border-radius:6px;
-    padding:11px 13px; font-size:0.96rem;
+    padding:16px; font-family:"Source Serif 4", Georgia, serif;
+    font-size:1rem; color:var(--bone); line-height:1.55;
   }
-  .opts label:hover{border-color:var(--bone-dim);}
-  .opts input{margin:5px 0 0; flex:none; accent-color:var(--signal);}
-  .opts input:focus-visible{outline:2px solid var(--signal); outline-offset:3px;}
+  textarea:focus{outline:2px solid var(--signal); outline-offset:2px;}
 
-  .domains{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:6px;}
-  @media (max-width:560px){.domains{grid-template-columns:1fr;}}
-  .domains label{
-    display:flex; align-items:center; gap:9px; cursor:pointer;
-    background:var(--ink-2); border:1px solid var(--rule); border-radius:6px;
-    padding:10px 12px; font-size:0.93rem;
-    font-family:Archivo, sans-serif; font-weight:600;
-  }
-  .domains label:hover{border-color:var(--bone-dim);}
-  .domains input{flex:none; accent-color:var(--signal);}
+  .row{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:12px; flex-wrap:wrap;}
+  .count{font-size:0.82rem; color:var(--bone-dim);}
 
-  .actions{display:flex; align-items:center; gap:16px; margin-top:28px; flex-wrap:wrap;}
   button.cta{
     background:var(--bone); color:var(--ink); border:none; font-weight:700;
-    font-size:0.95rem; padding:14px 26px; border-radius:4px; cursor:pointer;
-    letter-spacing:0.01em;
+    font-size:0.95rem; padding:14px 26px; border-radius:4px; cursor:pointer; letter-spacing:0.01em;
   }
   button.cta:hover, button.cta:focus{background:#0B1720; color:var(--ink);}
-  button.ghost{
-    background:none; border:1px solid var(--rule); color:var(--bone-dim);
-    font-weight:600; font-size:0.9rem; padding:13px 20px; border-radius:4px; cursor:pointer;
-  }
-  button.ghost:hover, button.ghost:focus{border-color:var(--bone-dim); color:var(--bone);}
+  button.cta:disabled{opacity:0.6; cursor:not-allowed;}
 
-  .warn{
+  .error{
     margin-top:16px; padding:12px 16px; background:#F3E7D6;
     border:1px solid var(--signal); border-radius:6px; font-size:0.92rem;
   }
-  .warn[hidden]{display:none;}
+  .error[hidden]{display:none;}
 
+  .spinner-row{display:flex; align-items:center; gap:10px; margin-top:16px; font-size:0.9rem; color:var(--bone-dim);}
+  .spinner-row[hidden]{display:none;}
+
+  #result{margin-top:44px;}
   #result[hidden]{display:none;}
-  #result{margin-top:8px;}
   #result h2{
-    font-size:1.05rem; font-weight:700; margin:34px 0 12px;
-    border-top:1px solid var(--rule); padding-top:26px;
+    font-size:1.05rem; font-weight:700; margin:28px 0 10px;
+    border-top:1px solid var(--rule); padding-top:24px;
   }
-  #result h2:first-child{border-top:none; padding-top:0; margin-top:8px;}
+  #result h2:first-child{border-top:none; padding-top:0;}
   #result p{margin:0 0 14px;}
-
-  .ledger{margin:0 0 8px;}
-  .row{
-    display:flex; align-items:baseline; gap:12px;
-    padding:9px 0; border-bottom:1px solid var(--rule);
-  }
-  .row:last-child{border-bottom:none;}
-  .row .name{
-    font-family:Archivo, sans-serif; font-weight:700; font-size:0.82rem;
-    text-transform:uppercase; letter-spacing:0.06em; min-width:112px; flex:none;
-  }
-  .row .holder{font-size:0.95rem;}
-  .row.them .name{color:var(--signal);}
-  .row.even .name{color:var(--bone-dim);}
-  .row.even .holder{color:var(--bone-dim);}
-
-  .tag{
-    display:inline-block; font-size:0.68rem; font-weight:700; text-transform:uppercase;
-    letter-spacing:0.08em; padding:2px 7px; border-radius:3px; margin-left:2px;
-  }
-  .tag.master{background:#F3E7D6; color:var(--signal); border:1px solid var(--signal);}
-
-  .strat{
-    background:var(--ink-2); border:1px solid var(--rule);
-    border-left:3px solid var(--signal);
-    border-radius:6px; padding:16px 18px; margin:0 0 12px;
-  }
-  .strat .sname{font-family:Archivo, sans-serif; font-weight:700; margin:0 0 6px; font-size:0.98rem;}
-  .strat p{margin:0; font-size:0.95rem;}
-
-  ol.counter{margin:0; padding-left:1.3em;}
-  ol.counter li{margin:0 0 14px;}
-  ol.counter li::marker{color:var(--signal); font-weight:700;}
-
-  .closing{
-    margin-top:32px; padding-top:24px; border-top:1px solid var(--rule);
-    font-size:0.95rem; color:var(--bone-dim);
-  }
-  .closing a{font-weight:600;}
 
   footer{border-top:1px solid var(--rule); padding:32px 0 48px; font-size:0.82rem; color:var(--bone-dim);}
 </style>
@@ -178,48 +101,28 @@
   <div class="wrap">
     <a class="nav-brand" href="/">TOTAL DOMAIN WAR</a>
     <nav class="links">
+      <a href="questions.html">Ten questions</a>
       <a href="/prologue.html">Read the Prologue</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
-  <p class="kicker">The Instrument</p>
-  <h1 class="title">Read a situation through the framework</h1>
-  <p class="lede">Ten questions about a contest you are in or watching. The instrument returns the dimensions in play, the domains engaged, the stratagem that names the pattern, and what to do first.</p>
-  <p class="note">Nothing you type leaves your browser. There is no account and no record. <a href="ai.html">Or describe a situation in your own words.</a></p>
+  <p class="kicker">The Instrument, open reading</p>
+  <h1 class="title">Describe a situation in your own words</h1>
+  <p class="lede">A negotiation, a market move, a piece of news, a personal account. The instrument returns the dimensions in play, the domains engaged, the stratagem that fits, and one concrete counter.</p>
+  <p class="alt">Prefer to be asked instead? <a href="questions.html">Take the ten-question reading.</a> It answers instantly.</p>
 
-  <form id="form">
-    <fieldset>
-      <legend>The two sides</legend>
-      <div class="sides">
-        <div class="side">
-          <label for="us">Your side</label>
-          <input id="us" type="text" maxlength="40" placeholder="Your side" autocomplete="off">
-        </div>
-        <div class="side">
-          <label for="them">The other side</label>
-          <input id="them" type="text" maxlength="40" placeholder="The other side" autocomplete="off">
-        </div>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Ten dimensions</legend>
-      <div id="questions"></div>
-    </fieldset>
-
-    <fieldset>
-      <legend>Where is this being fought</legend>
-      <div class="domains" id="domains"></div>
-    </fieldset>
-
-    <div class="actions">
-      <button class="cta" type="submit">Read the situation</button>
-      <button class="ghost" type="button" id="reset">Start over</button>
+  <form id="analyze-form">
+    <textarea id="story" name="story" maxlength="6000" placeholder="Paste or describe the situation here." required></textarea>
+    <div class="row">
+      <span class="count"><span id="char-count">0</span> / 6000</span>
+      <button class="cta" type="submit" id="submit-btn">Run the instrument</button>
     </div>
-    <div class="warn" id="warn" hidden></div>
   </form>
+
+  <div class="spinner-row" id="loading" hidden>Reading the situation&hellip; this takes up to a minute.</div>
+  <div class="error" id="error" hidden></div>
 
   <div id="result" hidden></div>
 </main>
@@ -231,421 +134,72 @@
 </footer>
 
 <script>
-(function () {
-  'use strict';
+  const form = document.getElementById('analyze-form');
+  const storyEl = document.getElementById('story');
+  const countEl = document.getElementById('char-count');
+  const btn = document.getElementById('submit-btn');
+  const loading = document.getElementById('loading');
+  const errorEl = document.getElementById('error');
+  const resultEl = document.getElementById('result');
 
-  // Each question maps an answer to who holds that dimension.
-  var DIMENSIONS = [
-    {
-      key: 'time', name: 'Time', sub: 'The horizon dimension',
-      ask: 'Which side is working on the longer horizon?',
-      opts: [
-        ['them', 'They plan in years or decades. We plan in quarters or cycles.'],
-        ['you', 'We plan further ahead than they do.'],
-        ['even', 'Both sides work on roughly the same horizon.']
-      ],
-      theirs: 'They are prepared to lose for a long time in order to win later. Your side measures success on a shorter clock, and they can simply wait for it to run out.',
-      counter: 'Extend the horizon. Commit to something that outlives the current cycle, and protect its budget from the next round of cuts. You do not match a decade of planning by working harder inside a quarter.',
-      stratagem: ['Stratagem 4', 'Wait at Ease for the Weary Enemy', 'Hold the high ground and let the other side climb. Your own short clock is the power source, so lengthening it drains the advantage away.']
-    },
-    {
-      key: 'entropy', name: 'Entropy', sub: 'The disorder dimension',
-      ask: 'Whose own operation runs with less confusion, duplicated effort, and fewer reversals?',
-      opts: [
-        ['them', 'Theirs. Ours contradicts itself and changes direction.'],
-        ['you', 'Ours. Theirs looks disordered.'],
-        ['even', 'Both run about as cleanly, or as messily.']
-      ],
-      theirs: 'Disorder taxes everything your side does before it reaches the contest. The same effort produces less result, and the loss never appears as a line item.',
-      counter: 'Cut the disorder. Write one assessment everyone works from. End the internal walls that keep the people under pressure from seeing what the people watching already know.',
-      stratagem: ['Stratagem 20', 'Muddy the Waters to Catch the Fish', 'Stir the water until nobody can tell what is in it, then act while the other side is still arguing about what it sees.']
-    },
-    {
-      key: 'topology', name: 'Topology', sub: 'The network dimension',
-      ask: 'Whose network moves a decision faster from the top to everyone who has to act on it?',
-      opts: [
-        ['them', 'Theirs. Ours needs many approvals.'],
-        ['you', 'Ours moves faster than theirs.'],
-        ['even', 'Both move at a similar speed.']
-      ],
-      theirs: 'They convert a decision into action faster than you do. Speed of transmission is a weapon on its own, because it decides who is still deliberating when the other side has already moved.',
-      counter: 'Shorten the path from decision to action. Count how many approvals a routine move needs, then delete the ones that exist only to spread blame.',
-      stratagem: ['Stratagem 18', 'Capture the Ringleader to Disband the Bandits', 'Do not fight the mass. Find the few nodes that turn numbers into action, and take those.']
-    },
-    {
-      key: 'asymmetry', name: 'Asymmetry', sub: 'The leverage dimension',
-      ask: 'When each side acts, whose actions are harder to trace back and answer?',
-      opts: [
-        ['them', 'Theirs. We can rarely prove who did what.'],
-        ['you', 'Ours. They are more exposed than we are.'],
-        ['even', 'Both act about as openly.']
-      ],
-      theirs: 'The imbalance is not that they act and you do not. It is that your actions can be traced to a source and answered, and theirs cannot.',
-      counter: 'Build the attribution case in peacetime, before you need it. Do not leave yourself improvising a chain of evidence at the moment the chain of evidence is what the crisis requires.',
-      stratagem: ['Stratagem 8', 'Openly Repair the Gallery Roads, March Secretly Through Chencang', 'Two tracks run at once. One is built to be seen, one is built to win, and the visible track is what you are invited to argue about.']
-    },
-    {
-      key: 'agency', name: 'Agency', sub: 'The capture dimension',
-      ask: 'Has either side gained influence inside the other’s decision-making, through funding, access, or dependence?',
-      opts: [
-        ['them', 'They have influence inside ours.'],
-        ['you', 'We have influence inside theirs.'],
-        ['even', 'Neither, as far as anyone can tell.']
-      ],
-      theirs: 'A captured institution breaks no rule. It chases its own interest, and that interest was lined up with theirs upstream. From the inside it does not feel like capture. It feels like good sense.',
-      counter: 'Audit who shapes your decisions before the decisions get made. Trace the funding and the access, then publish what you find. Capture survives on not being named.',
-      stratagem: ['Stratagem 30', 'Make the Host and the Guest Exchange Places', 'The guest arrives deferential, becomes indispensable, then sets the agenda. It produces no single event a headline can catch, which is exactly why it works.']
-    },
-    {
-      key: 'resonance', name: 'Resonance', sub: 'The amplification dimension',
-      ask: 'Whose separate efforts reinforce each other rather than cancel each other out?',
-      opts: [
-        ['them', 'Theirs add up. Ours work against each other.'],
-        ['you', 'Ours add up. Theirs work against each other.'],
-        ['even', 'Neither side combines particularly well.']
-      ],
-      theirs: 'Your side can hold better resources everywhere and still produce a net near zero. One arm marks the target while another funds it. The question is never how much force each part makes, it is whether the forces add or subtract.',
-      counter: 'Stop cancelling yourself. Find the two efforts pointing in opposite directions and make one of them stop. That costs nothing and recovers more than new spending would.',
-      stratagem: ['Stratagem 29', 'Deck the Tree with False Blossoms', 'Make a modest force read as an overwhelming one, so the other side answers a threat that was never the real one.']
-    },
-    {
-      key: 'phase', name: 'Phase', sub: 'The synchronization dimension',
-      ask: 'Whose moves land together in a planned sequence rather than one at a time?',
-      opts: [
-        ['them', 'Theirs arrive together. Ours arrive separately.'],
-        ['you', 'Ours are sequenced. Theirs are not.'],
-        ['even', 'Neither side sequences deliberately.']
-      ],
-      theirs: 'Moves that arrive one at a time get absorbed one at a time. Arriving together is what turns several ordinary pressures into one your side cannot answer.',
-      counter: 'Stop arriving separately. Sequence your moves so each one makes the next possible, rather than spending them one by one and watching each get absorbed.',
-      stratagem: ['Stratagem 35', 'Chain the Stratagems', 'A single stratagem is dangerous. Chained, they are decisive, because your answer to the first becomes the trap that makes the second unavoidable.']
-    },
-    {
-      key: 'gradient', name: 'Gradient', sub: 'The pressure dimension',
-      ask: 'Has either side engineered incentives so the other drifts its way without being told to?',
-      opts: [
-        ['them', 'Theirs pull our people their way.'],
-        ['you', 'Ours pull their people our way.'],
-        ['even', 'Neither has built that kind of slope.']
-      ],
-      theirs: 'Nobody is being ordered. A slope was cut, and your people are walking down it while making decisions that look individually reasonable.',
-      counter: 'Reverse the slopes. Find the incentives quietly pulling your own people the other way, and flatten them. Then build your own on purpose rather than by accident.',
-      stratagem: ['Stratagem 17', 'Cast a Brick to Attract Jade', 'Offer something cheap and attractive first. The terms look generous, and the recipient overextends into a dependency that was the point.']
-    },
-    {
-      key: 'criticality', name: 'Criticality', sub: 'The tipping-point dimension',
-      ask: 'Does either side stand on a single point the other controls? A supplier, a platform, a gatekeeper, a payment channel.',
-      opts: [
-        ['them', 'We stand on a point they control.'],
-        ['you', 'They stand on a point we control.'],
-        ['even', 'Neither side holds a chokepoint over the other.']
-      ],
-      theirs: 'A gradient is a hillside. Criticality is the edge of the cliff. One decision at that point cascades into consequences far larger than the decision itself.',
-      counter: 'Cut your own chokepoints. Find every place you stand on a single supplier, platform, or gatekeeper the other side controls, and build a second source before you need one.',
-      stratagem: ['Stratagem 19', 'Remove the Firewood From Under the Pot', 'Do not fight the boiling water. Take away the fuel underneath it, and the problem solves itself one level down from where anyone is looking.']
-    },
-    {
-      key: 'coherence', name: 'Coherence', sub: 'The master dimension', master: true,
-      ask: 'Do your own institutions, teams, or allies pull in the same direction?',
-      opts: [
-        ['them', 'No. We work against ourselves more than we admit.'],
-        ['you', 'Yes. We are aligned on one aim.'],
-        ['even', 'Partly. It depends who is asked.']
-      ],
-      theirs: 'Ten people pull a rope. If five pull each way the rope does not move, and not for any lack of effort. Coherence is the master dimension because it decides whether strength becomes effect or cancels itself.',
-      counter: 'Coherence comes first, every time. Until the alignment gap closes, every other investment gets partly spent fighting your own side. Name one authority that can settle disputes between your own units, give it a shared vocabulary, and publish the thresholds so nobody has to guess what counts as a problem.',
-      stratagem: null
-    }
-  ];
-
-  var DOMAINS = [
-    ['Kinetic', 'Force, or the threat of it, is on the table.'],
-    ['Economic', 'Trade, supply, and market access are being used as instruments.'],
-    ['Financial', 'Capital, credit, and payment channels carry part of the fight.'],
-    ['Information', 'What gets believed is contested directly.'],
-    ['Psychological', 'The target is the other side’s will rather than its capability.'],
-    ['Legal', 'Rules, courts, and standards are being used as weapons rather than as referees.'],
-    ['Association', 'Who is connected to whom is itself the instrument.'],
-    ['Cyber', 'Networks, and the systems running on them, are contested ground.'],
-    ['Cultural', 'Story, prestige, and what looks normal are in play.'],
-    ['AI and Cognitive', 'Machine judgment shapes what the humans decide.'],
-    ['Biological', 'Health, bodies, and the systems that protect them are exposed.'],
-    ['Data and Surveillance', 'Who can see whom, and for how long, decides the rest.']
-  ];
-
-  // Repair order from the book. Coherence first, because nothing else
-  // multiplies until it does.
-  var REPAIR_ORDER = ['coherence', 'entropy', 'time', 'criticality', 'gradient',
-                      'agency', 'resonance', 'phase', 'topology', 'asymmetry'];
-
-  var qWrap = document.getElementById('questions');
-  var dWrap = document.getElementById('domains');
-  var form = document.getElementById('form');
-  var result = document.getElementById('result');
-  var warn = document.getElementById('warn');
-
-  DIMENSIONS.forEach(function (d, i) {
-    var box = document.createElement('div');
-    box.className = 'q';
-
-    var dim = document.createElement('p');
-    dim.className = 'dim';
-    dim.textContent = (i + 1) + '. ' + d.name + ' · ' + d.sub;
-    box.appendChild(dim);
-
-    var ask = document.createElement('p');
-    ask.className = 'ask';
-    ask.textContent = d.ask;
-    box.appendChild(ask);
-
-    var opts = document.createElement('div');
-    opts.className = 'opts';
-    d.opts.forEach(function (o) {
-      var label = document.createElement('label');
-      var input = document.createElement('input');
-      input.type = 'radio';
-      input.name = d.key;
-      input.value = o[0];
-      var span = document.createElement('span');
-      span.textContent = o[1];
-      label.appendChild(input);
-      label.appendChild(span);
-      opts.appendChild(label);
-    });
-    box.appendChild(opts);
-    qWrap.appendChild(box);
+  storyEl.addEventListener('input', () => {
+    countEl.textContent = storyEl.value.length;
   });
 
-  DOMAINS.forEach(function (dom, i) {
-    var label = document.createElement('label');
-    var input = document.createElement('input');
-    input.type = 'checkbox';
-    input.name = 'domain';
-    input.value = String(i);
-    var span = document.createElement('span');
-    span.textContent = dom[0];
-    label.appendChild(input);
-    label.appendChild(span);
-    dWrap.appendChild(label);
-  });
-
-  function cap(s) {
-    return s.charAt(0).toUpperCase() + s.slice(1);
-  }
-
-  function sideNames() {
-    var us = document.getElementById('us').value.trim();
-    var them = document.getElementById('them').value.trim();
-    return {
-      us: us || 'Your side',
-      usLower: us || 'your side',
-      them: them || 'the other side',
-      themCap: cap(them || 'the other side')
-    };
-  }
-
-  function heading(text) {
-    var h = document.createElement('h2');
-    h.textContent = text;
-    result.appendChild(h);
-  }
-
-  function para(text, cls) {
-    var p = document.createElement('p');
-    if (cls) { p.className = cls; }
-    p.textContent = text;
-    result.appendChild(p);
-    return p;
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    var answers = {};
-    var missing = 0;
-    DIMENSIONS.forEach(function (d) {
-      var picked = form.querySelector('input[name="' + d.key + '"]:checked');
-      if (picked) { answers[d.key] = picked.value; } else { missing++; }
-    });
-
-    if (missing > 0) {
-      warn.textContent = 'Answer all ten questions first. ' + missing +
-        (missing === 1 ? ' is still blank.' : ' are still blank.');
-      warn.hidden = false;
-      return;
-    }
-    warn.hidden = true;
-
-    var names = sideNames();
-    var picked = Array.prototype.slice
-      .call(form.querySelectorAll('input[name="domain"]:checked'))
-      .map(function (el) { return DOMAINS[Number(el.value)]; });
-
-    render(answers, names, picked);
-    result.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-
-  function render(answers, names, pickedDomains) {
-    result.innerHTML = '';
-    result.hidden = false;
-
-    var theirs = DIMENSIONS.filter(function (d) { return answers[d.key] === 'them'; });
-    var yours = DIMENSIONS.filter(function (d) { return answers[d.key] === 'you'; });
-    var even = DIMENSIONS.filter(function (d) { return answers[d.key] === 'even'; });
-    var coherenceLost = answers.coherence !== 'you';
-
-    // ---- The ledger ----
-    heading('Dimensions in play');
-
-    var ledger = document.createElement('div');
-    ledger.className = 'ledger';
-    DIMENSIONS.forEach(function (d) {
-      var v = answers[d.key];
-      var row = document.createElement('div');
-      row.className = 'row ' + (v === 'them' ? 'them' : v === 'you' ? 'you' : 'even');
-
-      var name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = d.name;
-      row.appendChild(name);
-
-      var holder = document.createElement('span');
-      holder.className = 'holder';
-      if (d.key === 'coherence') {
-        holder.textContent = v === 'you' ? 'Yours, and holding'
-          : v === 'them' ? 'Failing on your side'
-          : 'Partial, which reads as failing';
+  function renderReply(text) {
+    resultEl.innerHTML = '';
+    const lines = text.split('\n');
+    let currentP = null;
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) { currentP = null; continue; }
+      if (line.startsWith('## ')) {
+        const h = document.createElement('h2');
+        h.textContent = line.slice(3).trim();
+        resultEl.appendChild(h);
+        currentP = null;
       } else {
-        holder.textContent = v === 'them' ? names.themCap
-          : v === 'you' ? names.us
-          : 'Even';
-      }
-      row.appendChild(holder);
-
-      if (d.master) {
-        var tag = document.createElement('span');
-        tag.className = 'tag master';
-        tag.textContent = 'master';
-        row.appendChild(tag);
-      }
-      ledger.appendChild(row);
-    });
-    result.appendChild(ledger);
-
-    theirs.slice(0, 3).forEach(function (d) {
-      para(d.name + '. ' + d.theirs);
-    });
-
-    // ---- Domains ----
-    heading('Domains engaged');
-    if (pickedDomains.length === 0) {
-      para('You named no domains, so this reading rests on the dimensions alone. The dimensions decide who wins. The domains only say where the fighting shows up.');
-    } else {
-      pickedDomains.forEach(function (dom) {
-        para(dom[0] + '. ' + dom[1]);
-      });
-      if (pickedDomains.length >= 4) {
-        para('Four or more domains at once is the pattern itself. A rival who is formidable in one domain is a competitor. A rival running several against a side that answers in one at a time is running the method.');
+        if (!currentP) {
+          currentP = document.createElement('p');
+          resultEl.appendChild(currentP);
+        } else {
+          currentP.append(' ');
+        }
+        currentP.append(line);
       }
     }
-
-    // ---- Stratagem ----
-    heading('Stratagem');
-    var named = theirs.filter(function (d) { return d.stratagem; }).slice(0, 3);
-    if (named.length === 0) {
-      para('Nothing here names a stratagem. On your own answers, ' + names.them +
-        ' is not running a recognizable pattern against you. That is worth knowing, because the framework is not improved by finding a campaign in every disagreement.');
-    } else {
-      named.forEach(function (d) {
-        var box = document.createElement('div');
-        box.className = 'strat';
-        var t = document.createElement('p');
-        t.className = 'sname';
-        t.textContent = d.stratagem[0] + '. ' + d.stratagem[1];
-        box.appendChild(t);
-        var p = document.createElement('p');
-        p.textContent = d.stratagem[2];
-        box.appendChild(p);
-        result.appendChild(box);
-      });
-      if (named.length >= 3) {
-        para('Three at once is a chain, not three separate problems. Stratagem 35 is the instruction to link them so your answer to the first becomes the trap that makes the second unavoidable. Answer them one at a time and you will lose to the sequence.');
-      }
-    }
-
-    // ---- The read ----
-    heading('The read');
-
-    para('Of the ten dimensions, ' + names.them + ' holds ' + theirs.length +
-      ', ' + names.usLower + ' holds ' + yours.length +
-      ', and ' + even.length + ' stand even.');
-
-    if (coherenceLost) {
-      para('Coherence is the master dimension, and it is not yours. A strategy’s effect is the product of its dimensions rather than the sum, so a side that cancels itself drags down every other term it holds. That is why a stronger position can still produce a weaker result, and why the gap does not close by spending more.');
-    } else {
-      para('Coherence is yours, and it is the master dimension. Whatever else is missing, your strength still converts into effect instead of leaking away as friction. Every fix below compounds rather than getting cancelled on the way out.');
-    }
-
-    if (theirs.length >= 6) {
-      para('At this spread the result is not decided by resources. ' + names.themCap +
-        ' is not beating you at any one thing. They are combining, and you are answering in pieces.');
-    } else if (theirs.length >= 3) {
-      para('This is not yet a losing position. It is the shape one takes if nobody names it, because each of these gaps is defensible on its own and only compounds when left together.');
-    } else if (theirs.length === 0) {
-      para('Nothing here shows a side running the method against you. Read it again in six months. The dimensions move slowly, and that is exactly what makes them easy to miss.');
-    } else {
-      para('The exposure is narrow. Fixing it now costs a fraction of what it costs after it has been combined with the others.');
-    }
-
-    // ---- The counter ----
-    heading('The counter');
-
-    var toFix = REPAIR_ORDER
-      .map(function (key) {
-        return DIMENSIONS.filter(function (d) { return d.key === key; })[0];
-      })
-      .filter(function (d) { return d && answers[d.key] === 'them'; });
-
-    if (toFix.length === 0) {
-      para('Nothing needs repair on these answers. Hold the horizon and check again when the situation moves.');
-    } else {
-      para('In this order. The sequence matters more than the effort, because fixing these in the wrong order wastes the work.');
-      var ol = document.createElement('ol');
-      ol.className = 'counter';
-      toFix.forEach(function (d) {
-        var li = document.createElement('li');
-        var strong = document.createElement('strong');
-        strong.textContent = d.name + '. ';
-        li.appendChild(strong);
-        li.appendChild(document.createTextNode(d.counter));
-        ol.appendChild(li);
-      });
-      result.appendChild(ol);
-
-      if (coherenceLost) {
-        para('Coherence sits first for a reason. Until it closes, every item below it gets partly cancelled by your own side, so work done out of order is work done twice.');
-      }
-    }
-
-    var closing = document.createElement('p');
-    closing.className = 'closing';
-    closing.appendChild(document.createTextNode(
-      'This reading is your own answers run through the framework, not an assessment of your situation. The apparatus is set out in full in the book. '));
-    var link = document.createElement('a');
-    link.href = '/prologue.html';
-    link.textContent = 'Start with the Prologue.';
-    closing.appendChild(link);
-    result.appendChild(closing);
+    resultEl.hidden = false;
   }
 
-  document.getElementById('reset').addEventListener('click', function () {
-    form.reset();
-    result.hidden = true;
-    result.innerHTML = '';
-    warn.hidden = true;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorEl.hidden = true;
+    resultEl.hidden = true;
+    const story = storyEl.value.trim();
+    if (!story) return;
+
+    btn.disabled = true;
+    loading.hidden = false;
+
+    try {
+      const res = await fetch('analyze.php', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ story }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Something went wrong.');
+      }
+      renderReply(data.reply || '');
+    } catch (err) {
+      errorEl.textContent = err.message || 'Something went wrong.';
+      errorEl.hidden = false;
+    } finally {
+      btn.disabled = false;
+      loading.hidden = true;
+    }
   });
-})();
 </script>
 
 </body>
