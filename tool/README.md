@@ -1,4 +1,8 @@
-# The Instrument
+# The Instrument (Node build)
+
+**Deploying on Hestia without SSH? Use `instrument/` instead**, which is the
+same tool in PHP and installs through the file manager. This Node build needs
+shell access to run as a service.
 
 A small Node app: a visitor submits a situation and the Total Domain War
 framework reads it back — dimensions in play, domains engaged, the fitting
