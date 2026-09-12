@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Instrument — Total Domain War</title>
+<meta name="description" content="Submit a situation and read it through the Total Domain War framework: ten dimensions, twelve domains, thirty-six stratagems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:      #D9E4EC;
+    --ink-2:    #E9F0F5;
+    --ink-3:    #C6D6E1;
+    --rule:     #A9BECD;
+    --bone:     #152430;
+    --bone-dim: #4E6375;
+    --signal:   #8A5514;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--bone);
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size:1.0625rem;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.label,nav,.nav-brand,button,.cta{
+    font-family:Archivo, "Helvetica Neue", Arial, sans-serif;
+  }
+  a{color:inherit;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 24px;}
+
+  header.site{border-bottom:1px solid var(--rule); padding:20px 0;}
+  header.site .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;}
+  .nav-brand{font-weight:700; letter-spacing:0.02em; font-size:0.95rem; text-decoration:none;}
+  nav.links{display:flex; gap:20px; font-size:0.9rem; font-weight:600;}
+  nav.links a{text-decoration:none; border-bottom:1px solid transparent;}
+  nav.links a:hover, nav.links a:focus{border-bottom-color:var(--bone);}
+
+  main.wrap{padding:48px 24px 64px;}
+
+  p.kicker{
+    font-family:Archivo, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    font-size:0.78rem;
+    font-weight:600;
+    color:var(--bone-dim);
+    margin:0 0 14px;
+  }
+  h1.title{
+    font-size:clamp(1.9rem, 4.5vw, 2.6rem);
+    line-height:1.1;
+    margin:0 0 16px;
+    font-weight:800;
+    letter-spacing:-0.01em;
+  }
+  p.lede{
+    font-size:1.05rem;
+    color:var(--bone-dim);
+    max-width:560px;
+    margin:0 0 36px;
+  }
+
+  form{margin:0 0 12px;}
+  textarea{
+    width:100%;
+    min-height:220px;
+    resize:vertical;
+    background:var(--ink-2);
+    border:1px solid var(--rule);
+    border-radius:6px;
+    padding:16px;
+    font-family:"Source Serif 4", Georgia, serif;
+    font-size:1rem;
+    color:var(--bone);
+    line-height:1.55;
+  }
+  textarea:focus{outline:2px solid var(--signal); outline-offset:2px;}
+
+  .row{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:12px; flex-wrap:wrap;}
+  .count{font-size:0.82rem; color:var(--bone-dim);}
+
+  button.cta{
+    display:inline-block;
+    background:var(--bone);
+    color:var(--ink);
+    border:none;
+    text-decoration:none;
+    font-weight:700;
+    font-size:0.95rem;
+    padding:14px 26px;
+    border-radius:4px;
+    letter-spacing:0.01em;
+    cursor:pointer;
+  }
+  button.cta:hover, button.cta:focus{background:#0B1720; color:var(--ink);}
+  button.cta:disabled{opacity:0.6; cursor:not-allowed;}
+
+  .error{
+    margin-top:16px;
+    padding:12px 16px;
+    background:#F3E7D6;
+    border:1px solid var(--signal);
+    color:var(--bone);
+    border-radius:6px;
+    font-size:0.92rem;
+  }
+  .error[hidden]{display:none;}
+
+  #result{margin-top:44px;}
+  #result[hidden]{display:none;}
+  #result h2{
+    font-size:1.05rem;
+    font-weight:700;
+    margin:28px 0 10px;
+    border-top:1px solid var(--rule);
+    padding-top:24px;
+  }
+  #result h2:first-child{border-top:none; padding-top:0;}
+  #result p{margin:0 0 14px;}
+
+  .spinner-row{display:flex; align-items:center; gap:10px; margin-top:16px; font-size:0.9rem; color:var(--bone-dim);}
+  .spinner-row[hidden]{display:none;}
+
+  footer{border-top:1px solid var(--rule); padding:32px 0 48px; font-size:0.82rem; color:var(--bone-dim);}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="nav-brand" href="/">TOTAL DOMAIN WAR</a>
+    <nav class="links">
+      <a href="/prologue.html">Read the Prologue</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="kicker">The Instrument</p>
+  <h1 class="title">Read a situation through the framework</h1>
+  <p class="lede">Describe a negotiation, a market move, a piece of news, a personal account. The instrument names the dimensions in play, the domains engaged, the stratagem that fits, and one concrete counter.</p>
+
+  <form id="analyze-form">
+    <textarea id="story" name="story" maxlength="6000" placeholder="Paste or describe the situation here." required></textarea>
+    <div class="row">
+      <span class="count"><span id="char-count">0</span> / 6000</span>
+      <button class="cta" type="submit" id="submit-btn">Run the instrument</button>
+    </div>
+  </form>
+
+  <div class="spinner-row" id="loading" hidden>Reading the situation&hellip;</div>
+  <div class="error" id="error" hidden></div>
+
+  <div id="result" hidden></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>totaldomainwar.com</p>
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('analyze-form');
+  const storyEl = document.getElementById('story');
+  const countEl = document.getElementById('char-count');
+  const btn = document.getElementById('submit-btn');
+  const loading = document.getElementById('loading');
+  const errorEl = document.getElementById('error');
+  const resultEl = document.getElementById('result');
+
+  storyEl.addEventListener('input', () => {
+    countEl.textContent = storyEl.value.length;
+  });
+
+  function renderReply(text) {
+    resultEl.innerHTML = '';
+    const lines = text.split('\n');
+    let currentP = null;
+    for (const raw of lines) {
+      const line = raw.trim();
+      if (!line) { currentP = null; continue; }
+      if (line.startsWith('## ')) {
+        const h = document.createElement('h2');
+        h.textContent = line.slice(3).trim();
+        resultEl.appendChild(h);
+        currentP = null;
+      } else {
+        if (!currentP) {
+          currentP = document.createElement('p');
+          resultEl.appendChild(currentP);
+        } else {
+          currentP.append(' ');
+        }
+        currentP.append(line);
+      }
+    }
+    resultEl.hidden = false;
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errorEl.hidden = true;
+    resultEl.hidden = true;
+    const story = storyEl.value.trim();
+    if (!story) return;
+
+    btn.disabled = true;
+    loading.hidden = false;
+
+    try {
+      const res = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ story }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Something went wrong.');
+      }
+      renderReply(data.reply || '');
+    } catch (err) {
+      errorEl.textContent = err.message || 'Something went wrong.';
+      errorEl.hidden = false;
+    } finally {
+      btn.disabled = false;
+      loading.hidden = true;
+    }
+  });
+</script>
+
+</body>
+</html>
