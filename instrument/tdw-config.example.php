@@ -1,7 +1,7 @@
 <?php
 /**
- * Only needed for the open reading at ai.html. The ten-question reading at
- * index.html needs no key and no config.
+ * Only needed for the open reading at index.html. The ten-question reading at
+ * questions.html needs no key and no config.
  *
  * Rename this file to tdw-config.php and upload it into the private
  * directory, so it sits at:
