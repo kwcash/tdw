@@ -188,19 +188,28 @@
         body: JSON.stringify({ story }),
       });
 
-      // A misconfigured install answers with an HTML page, usually the
-      // server's 404. Say so plainly instead of failing on JSON.parse.
+      // A misconfigured install answers with an HTML page. Say which fault it
+      // is rather than failing on JSON.parse, which only names the parser.
       const raw = await res.text();
       let data;
       try {
         data = JSON.parse(raw);
       } catch (parseError) {
+        if (res.status === 504 || res.status === 502 || res.status === 408) {
+          throw new Error('The server gave up waiting for the reading (HTTP ' + res.status +
+            '). Try once more, and if it keeps happening set effort to low in tdw-config.php.');
+        }
         throw new Error('The server returned a page instead of data (HTTP ' + res.status +
           '). Either analyze.php is missing from this folder, or PHP is not running on this domain.');
       }
 
+      // The reply streams, so its status is fixed at 200 before any error is
+      // known. Errors arrive in the body.
+      if (data.error) {
+        throw new Error(data.error);
+      }
       if (!res.ok) {
-        throw new Error(data.error || 'Something went wrong.');
+        throw new Error('Something went wrong.');
       }
       renderReply(data.reply || '');
     } catch (err) {
