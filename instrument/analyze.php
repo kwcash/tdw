@@ -186,6 +186,10 @@ $apiKey = load_api_key();
 // Opus 5 runs adaptive thinking by default, and thinking tokens count toward
 // max_tokens. 1200 would truncate the reply mid-section, so leave real headroom
 // and let effort control the spend instead.
+//
+// The request streams. A model that thinks before answering can take minutes,
+// and a silent connection for that long is killed by the web server in front
+// of PHP, which reaches the visitor as a 504 rather than as an answer.
 $body = json_encode([
     'model' => load_model(),
     'max_tokens' => 4000,
@@ -195,16 +199,74 @@ $body = json_encode([
         ['role' => 'user', 'content' => $story],
     ],
     'fallbacks' => 'default',
+    'stream' => true,
 ]);
 
-set_time_limit(180);
+set_time_limit(600);
+
+// Stop anything from holding the response back, and tell nginx not to buffer
+// it, so the keepalives below actually reach the browser.
+header('X-Accel-Buffering: no');
+while (ob_get_level() > 0) {
+    ob_end_flush();
+}
+ob_implicit_flush(true);
+
+$reply = '';
+$streamError = null;
+$stopReason = '';
+$buffer = '';
+$lastPing = microtime(true);
+
+/**
+ * Anthropic sends server-sent events. Pull the text out as it arrives, and
+ * emit a space every couple of seconds so the connection never sits idle.
+ * JSON.parse ignores leading whitespace, so the padding costs the caller
+ * nothing.
+ */
+$onChunk = function ($ch, string $chunk) use (&$reply, &$streamError, &$stopReason, &$buffer, &$lastPing): int {
+    $length = strlen($chunk);
+    $buffer .= $chunk;
+
+    while (($breakAt = strpos($buffer, "\n")) !== false) {
+        $line = trim(substr($buffer, 0, $breakAt));
+        $buffer = substr($buffer, $breakAt + 1);
+
+        if (strncmp($line, 'data:', 5) !== 0) {
+            continue;
+        }
+
+        $event = json_decode(trim(substr($line, 5)), true);
+        if (!is_array($event)) {
+            continue;
+        }
+
+        $type = $event['type'] ?? '';
+        if ($type === 'content_block_delta' && ($event['delta']['type'] ?? '') === 'text_delta') {
+            $reply .= (string) ($event['delta']['text'] ?? '');
+        } elseif ($type === 'message_delta' && isset($event['delta']['stop_reason'])) {
+            $stopReason = (string) $event['delta']['stop_reason'];
+        } elseif ($type === 'error') {
+            $streamError = (string) ($event['error']['message'] ?? 'stream error');
+        }
+    }
+
+    $now = microtime(true);
+    if ($now - $lastPing > 2.0) {
+        echo ' ';
+        flush();
+        $lastPing = $now;
+    }
+
+    return $length;
+};
 
 $ch = curl_init('https://api.anthropic.com/v1/messages');
 curl_setopt_array($ch, [
-    CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => $body,
-    CURLOPT_TIMEOUT => 150,
+    CURLOPT_WRITEFUNCTION => $onChunk,
+    CURLOPT_TIMEOUT => 540,
     CURLOPT_HTTPHEADER => [
         'content-type: application/json',
         'x-api-key: ' . $apiKey,
@@ -215,40 +277,34 @@ curl_setopt_array($ch, [
     ],
 ]);
 
-$response = curl_exec($ch);
+$ok = curl_exec($ch);
 $status = (int) curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
 $curlError = curl_error($ch);
 curl_close($ch);
 
-if ($response === false) {
+// Output has already started, so the status code is fixed at 200. Errors ride
+// in the body instead, and the caller checks for them either way.
+if ($ok === false && $reply === '') {
     error_log('TDW instrument: request failed. ' . $curlError);
-    fail(502, 'The instrument failed to respond. Try again shortly.');
+    echo json_encode(['error' => 'The instrument failed to respond. Try again shortly.']);
+    exit;
 }
 
 if ($status < 200 || $status >= 300) {
-    error_log('TDW instrument: API returned ' . $status . '. ' . $response);
-    fail(502, 'The instrument failed to respond. Try again shortly.');
+    error_log('TDW instrument: API returned ' . $status . '. ' . ($streamError ?? ''));
+    echo json_encode(['error' => 'The instrument failed to respond. Try again shortly.']);
+    exit;
 }
 
-$data = json_decode($response, true);
-
-if (is_array($data) && ($data['stop_reason'] ?? '') === 'refusal') {
-    fail(422, 'The instrument declined to read that one. Try a different situation.');
-}
-
-// Only text blocks carry the reply. Thinking blocks are skipped.
-$reply = '';
-if (is_array($data) && isset($data['content']) && is_array($data['content'])) {
-    foreach ($data['content'] as $block) {
-        if (($block['type'] ?? '') === 'text' && isset($block['text'])) {
-            $reply .= $block['text'];
-        }
-    }
+if ($stopReason === 'refusal') {
+    echo json_encode(['error' => 'The instrument declined to read that one. Try a different situation.']);
+    exit;
 }
 
 if ($reply === '') {
-    error_log('TDW instrument: empty reply. ' . $response);
-    fail(502, 'The instrument returned nothing. Try again shortly.');
+    error_log('TDW instrument: empty reply. ' . ($streamError ?? 'no error reported'));
+    echo json_encode(['error' => 'The instrument returned nothing. Try again shortly.']);
+    exit;
 }
 
 echo json_encode(['reply' => $reply]);
