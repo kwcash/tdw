@@ -16,6 +16,13 @@ echo PHP_VERSION_ID >= 70400 ? "  OK\n" : "  TOO OLD, need 7.4 or newer\n";
 echo "cURL extension: ";
 echo function_exists('curl_init') ? "present  OK\n" : "MISSING, the tool cannot call the API\n";
 
+foreach (['analyze.php', 'index.html', 'questions.html'] as $needed) {
+    echo "File " . $needed . ": ";
+    echo is_readable(__DIR__ . '/' . $needed)
+        ? "present  OK\n"
+        : "MISSING from this folder, upload it here\n";
+}
+
 $candidates = [
     __DIR__ . '/../../private/tdw-config.php',
     __DIR__ . '/../../tdw-config.php',
