@@ -21,23 +21,45 @@ function fail(int $status, string $message): void
 }
 
 /**
- * Loads config from tdw-config.php, which must sit ABOVE public_html so the
- * web server never serves it. Falls back to an environment variable.
+ * Places tdw-config.php may live, best first. The private directory comes
+ * first because control panels that set open_basedir (Hestia among them)
+ * allow it but not the domain root, so a config above public_html is
+ * invisible to PHP even when it is present and readable.
  */
-function load_api_key(): string
+function config_paths(): array
 {
-    $candidates = [
+    return [
+        __DIR__ . '/../../private/tdw-config.php',
         __DIR__ . '/../../tdw-config.php',
         __DIR__ . '/../tdw-config.php',
     ];
+}
 
-    foreach ($candidates as $path) {
-        if (is_readable($path)) {
-            $config = require $path;
-            if (is_array($config) && !empty($config['api_key'])) {
-                return (string) $config['api_key'];
+function load_config(): array
+{
+    static $config = null;
+
+    if ($config === null) {
+        $config = [];
+        foreach (config_paths() as $path) {
+            if (is_readable($path)) {
+                $loaded = require $path;
+                if (is_array($loaded)) {
+                    $config = $loaded;
+                    break;
+                }
             }
         }
+    }
+
+    return $config;
+}
+
+function load_api_key(): string
+{
+    $config = load_config();
+    if (!empty($config['api_key'])) {
+        return (string) $config['api_key'];
     }
 
     $fromEnv = getenv('ANTHROPIC_API_KEY');
@@ -45,40 +67,21 @@ function load_api_key(): string
         return $fromEnv;
     }
 
+    error_log('TDW instrument: no config found. open_basedir=' . (ini_get('open_basedir') ?: 'not set')
+        . ' tried=' . implode(', ', config_paths()));
     fail(500, 'The instrument is not configured yet.');
 }
 
 function load_model(): string
 {
-    $candidates = [
-        __DIR__ . '/../../tdw-config.php',
-        __DIR__ . '/../tdw-config.php',
-    ];
-
-    foreach ($candidates as $path) {
-        if (is_readable($path)) {
-            $config = require $path;
-            if (is_array($config) && !empty($config['model'])) {
-                return (string) $config['model'];
-            }
-        }
-    }
-
-    return 'claude-opus-5';
+    $config = load_config();
+    return !empty($config['model']) ? (string) $config['model'] : 'claude-opus-5';
 }
 
 function load_effort(): string
 {
-    foreach ([__DIR__ . '/../../tdw-config.php', __DIR__ . '/../tdw-config.php'] as $path) {
-        if (is_readable($path)) {
-            $config = require $path;
-            if (is_array($config) && !empty($config['effort'])) {
-                return (string) $config['effort'];
-            }
-        }
-    }
-
-    return 'medium';
+    $config = load_config();
+    return !empty($config['effort']) ? (string) $config['effort'] : 'medium';
 }
 
 /**
