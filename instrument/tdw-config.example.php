@@ -1,5 +1,8 @@
 <?php
 /**
+ * Only needed for the open reading at ai.html. The ten-question reading at
+ * index.html needs no key and no config.
+ *
  * Rename this file to tdw-config.php and upload it ONE LEVEL ABOVE
  * public_html, so it sits at:
  *
@@ -13,6 +16,11 @@
 return [
     'api_key' => 'sk-ant-REPLACE-ME',
 
-    // Optional. Defaults to claude-sonnet-5 if omitted.
-    'model' => 'claude-sonnet-5',
+    // Optional. Defaults to claude-opus-5.
+    'model' => 'claude-opus-5',
+
+    // Optional. How hard the model works per reading, which is the main cost
+    // control. One of low, medium, high, xhigh, max. Defaults to medium.
+    // Drop to low to roughly halve the spend per reading.
+    'effort' => 'medium',
 ];

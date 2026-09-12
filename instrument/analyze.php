@@ -64,7 +64,21 @@ function load_model(): string
         }
     }
 
-    return 'claude-sonnet-5';
+    return 'claude-opus-5';
+}
+
+function load_effort(): string
+{
+    foreach ([__DIR__ . '/../../tdw-config.php', __DIR__ . '/../tdw-config.php'] as $path) {
+        if (is_readable($path)) {
+            $config = require $path;
+            if (is_array($config) && !empty($config['effort'])) {
+                return (string) $config['effort'];
+            }
+        }
+    }
+
+    return 'medium';
 }
 
 /**
@@ -166,13 +180,18 @@ enforce_rate_limit();
 
 $apiKey = load_api_key();
 
+// Opus 5 runs adaptive thinking by default, and thinking tokens count toward
+// max_tokens. 1200 would truncate the reply mid-section, so leave real headroom
+// and let effort control the spend instead.
 $body = json_encode([
     'model' => load_model(),
-    'max_tokens' => 1200,
+    'max_tokens' => 4000,
+    'output_config' => ['effort' => load_effort()],
     'system' => SYSTEM_PROMPT,
     'messages' => [
         ['role' => 'user', 'content' => $story],
     ],
+    'fallbacks' => 'default',
 ]);
 
 set_time_limit(180);
@@ -187,6 +206,9 @@ curl_setopt_array($ch, [
         'content-type: application/json',
         'x-api-key: ' . $apiKey,
         'anthropic-version: 2023-06-01',
+        // Visitors submit arbitrary text, so a safety refusal is a real case.
+        // Server-side fallback routes it to another model instead of failing.
+        'anthropic-beta: server-side-fallback-2026-07-01',
     ],
 ]);
 
@@ -206,10 +228,16 @@ if ($status < 200 || $status >= 300) {
 }
 
 $data = json_decode($response, true);
+
+if (is_array($data) && ($data['stop_reason'] ?? '') === 'refusal') {
+    fail(422, 'The instrument declined to read that one. Try a different situation.');
+}
+
+// Only text blocks carry the reply. Thinking blocks are skipped.
 $reply = '';
 if (is_array($data) && isset($data['content']) && is_array($data['content'])) {
     foreach ($data['content'] as $block) {
-        if (isset($block['text'])) {
+        if (($block['type'] ?? '') === 'text' && isset($block['text'])) {
             $reply .= $block['text'];
         }
     }
