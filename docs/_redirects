@@ -1,0 +1,4 @@
+# Cloudflare Pages / Netlify. Canonical host = apex.
+# Fixes the www-vs-apex split that served two different builds.
+https://www.totaldomainwar.com/*  https://totaldomainwar.com/:splat  301!
+/prologue                          /prologue.html                      200
