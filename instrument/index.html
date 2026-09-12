@@ -187,7 +187,18 @@
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ story }),
       });
-      const data = await res.json();
+
+      // A misconfigured install answers with an HTML page, usually the
+      // server's 404. Say so plainly instead of failing on JSON.parse.
+      const raw = await res.text();
+      let data;
+      try {
+        data = JSON.parse(raw);
+      } catch (parseError) {
+        throw new Error('The server returned a page instead of data (HTTP ' + res.status +
+          '). Either analyze.php is missing from this folder, or PHP is not running on this domain.');
+      }
+
       if (!res.ok) {
         throw new Error(data.error || 'Something went wrong.');
       }
