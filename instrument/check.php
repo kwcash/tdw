@@ -17,9 +17,17 @@ echo "cURL extension: ";
 echo function_exists('curl_init') ? "present  OK\n" : "MISSING, the tool cannot call the API\n";
 
 $candidates = [
+    __DIR__ . '/../../private/tdw-config.php',
     __DIR__ . '/../../tdw-config.php',
     __DIR__ . '/../tdw-config.php',
 ];
+
+$basedir = ini_get('open_basedir');
+echo "\nopen_basedir: " . ($basedir === '' || $basedir === false ? "not set, PHP can read anywhere\n" : $basedir . "\n");
+if ($basedir) {
+    echo "  PHP can ONLY read inside those paths. A config outside them is\n";
+    echo "  invisible even when it exists. The private directory is normally allowed.\n";
+}
 
 echo "\nLooking for tdw-config.php in these exact places:\n";
 $found = null;
@@ -53,8 +61,9 @@ foreach ($candidates as $path) {
 echo "\nConfig file: ";
 if ($found === null) {
     echo "NOT FOUND\n";
-    echo "  Upload it to the first path listed above. That folder is the one\n";
-    echo "  containing public_html, not a folder inside it.\n";
+    echo "  Put it at the FIRST path listed above, inside the private directory.\n";
+    echo "  That folder sits outside the web root, so the key cannot be downloaded,\n";
+    echo "  and control panels that set open_basedir still let PHP read it.\n";
 } else {
     $config = require $found;
     $key = is_array($config) && !empty($config['api_key']) ? (string) $config['api_key'] : '';

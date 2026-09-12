@@ -27,11 +27,17 @@ bills against.
    `/home/<user>/web/totaldomainwar.com/public_html/`, create a folder named
    `instrument`, and upload `index.html`, `analyze.php`, and `check.php` into it.
 
-2. **Place the key outside the web root.** Rename
+2. **Place the key in the `private` directory.** Rename
    `tdw-config.example.php` to `tdw-config.php`, put your real key in it, and
-   upload it to `/home/<user>/web/totaldomainwar.com/` — one level ABOVE
-   `public_html`. Nothing outside `public_html` is reachable from the web, so
-   the key cannot be downloaded. Do not put this file in `public_html`.
+   upload it to `/home/<user>/web/totaldomainwar.com/private/`.
+
+   That directory sits outside the web root, so the key cannot be downloaded.
+   Use it rather than the domain root, because Hestia and similar panels set
+   `open_basedir` on the PHP pool, and the domain root is not on the allowed
+   list. A config placed there exists, is readable by the file manager, and is
+   still invisible to PHP, which fails as "The instrument is not configured
+   yet." The `private` directory is on the allowed list. Do not put this file
+   in `public_html`.
 
 3. **Verify.** Open `https://totaldomainwar.com/instrument/check.php`. All four
    lines must say OK. Then delete `check.php`.
