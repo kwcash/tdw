@@ -146,6 +146,22 @@
     countEl.textContent = storyEl.value.length;
   });
 
+  // The reply marks its lead-ins with **bold**. Render those rather than
+  // printing the asterisks. Text is added as text nodes, never as HTML.
+  function appendInline(parent, line) {
+    const parts = line.split('**');
+    parts.forEach((part, i) => {
+      if (!part) return;
+      if (i % 2 === 1) {
+        const strong = document.createElement('strong');
+        strong.textContent = part;
+        parent.appendChild(strong);
+      } else {
+        parent.append(part);
+      }
+    });
+  }
+
   function renderReply(text) {
     resultEl.innerHTML = '';
     const lines = text.split('\n');
@@ -165,7 +181,7 @@
         } else {
           currentP.append(' ');
         }
-        currentP.append(line);
+        appendInline(currentP, line);
       }
     }
     resultEl.hidden = false;
