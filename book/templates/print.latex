@@ -1,0 +1,217 @@
+%% Print interior for KDP paperback and hardcover.
+%% Filled in by pandoc from MASTER.md; page geometry comes from build.sh.
+\documentclass[
+  fontsize=$if(fontsize)$$fontsize$$else$11pt$endif$,
+  twoside,
+  open=any,
+  cleardoublepage=empty,
+  toc=flat,
+  headings=normal,
+  footnotes=multiple
+]{scrbook}
+
+%% ---------------------------------------------------------------- page ---
+\usepackage[
+  paperwidth=$paperwidth$,
+  paperheight=$paperheight$,
+  inner=$inner$,
+  outer=$outer$,
+  top=$top$,
+  bottom=$bottom$,
+  includehead,
+  headheight=14pt,
+  headsep=0.24in,
+  footskip=0.36in
+]{geometry}
+
+%% ---------------------------------------------------------------- type ---
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{EBGaramond}[
+  Path=$fontdir$/,
+  Extension=.otf,
+  UprightFont=*-Regular,
+  ItalicFont=*-Italic,
+  BoldFont=*-SemiBold,
+  BoldItalicFont=*-SemiBoldItalic,
+  Numbers=OldStyle,
+  Ligatures={TeX,Common}
+]
+\newfontfamily\cjkfont{Noto Serif CJK TC}[Scale=0.9]
+\newcommand{\textcjk}[1]{{\cjkfont #1}}
+\newcommand{\allsc}{\addfontfeatures{Letters={SmallCaps,UppercaseSmallCaps},LetterSpace=6}}
+
+\usepackage{polyglossia}
+\setdefaultlanguage[variant=american]{english}
+\usepackage[protrusion=true,expansion=false]{microtype}
+
+\linespread{1.06}
+\setlength{\parindent}{1.2em}
+\setlength{\emergencystretch}{3em}
+
+%% widows, orphans, and no hyphen split across a page
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
+\raggedbottom
+
+%% ---------------------------------------------------------- tables ------
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{needspace}
+\setlength{\LTpre}{0.6\baselineskip}
+\setlength{\LTpost}{0.9\baselineskip}
+\newenvironment{booktable}{%
+  \par\Needspace{7\baselineskip}%
+  \footnotesize\addfontfeatures{Numbers=Lining}%
+  \setlength{\tabcolsep}{4pt}%
+  \renewcommand{\arraystretch}{1.1}%
+  \setlength{\extrarowheight}{2.5pt}%
+}{\par}
+\newcommand{\tabletitle}[1]{%
+  \par\Needspace{10\baselineskip}\medskip
+  \noindent{\small\bfseries #1}\par\nopagebreak}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%% -------------------------------------------------- running heads -------
+\usepackage[headsepline=false,footsepline=false]{scrlayer-scrpage}
+\clearpairofpagestyles
+\automark[chapter]{chapter}
+\newcommand{\headstyle}{\normalfont\footnotesize\allsc}
+\setkomafont{pagehead}{\headstyle}
+\setkomafont{pagenumber}{\normalfont\footnotesize}
+% verso: folio outside left, book title; recto: chapter title, folio outside right
+\lehead{\pagemark}
+\cehead{$title$}
+\rohead{\pagemark}
+\cohead{\leftmark}
+% chapter openers: no head, folio centred at the foot
+\cfoot[\pagemark]{}
+\renewcommand*{\chapterpagestyle}{plain.scrheadings}
+\renewcommand*{\partpagestyle}{empty}
+\pagestyle{scrheadings}
+
+%% ---------------------------------------------------------- headings ----
+\setkomafont{disposition}{\normalfont}
+\setkomafont{chapter}{\LARGE}
+\setkomafont{section}{\large}
+\setkomafont{subsection}{\normalsize\itshape}
+\renewcommand*{\raggedchapter}{\centering}
+\RedeclareSectionCommand[
+  beforeskip=0.9in,
+  afterskip=0.3in]{chapter}
+\RedeclareSectionCommand[
+  beforeskip=-1.6\baselineskip plus -0.4\baselineskip,
+  afterskip=0.6\baselineskip]{section}
+\RedeclareSectionCommand[
+  beforeskip=-1.2\baselineskip plus -0.3\baselineskip,
+  afterskip=0.4\baselineskip]{subsection}
+\setcounter{tocdepth}{\chaptertocdepth}
+\setkomafont{partentry}{\normalfont\allsc}
+\setkomafont{chapterentry}{\normalfont}
+\setkomafont{partentrypagenumber}{\normalfont}
+\setkomafont{chapterentrypagenumber}{\normalfont}
+\DeclareTOCStyleEntry[beforeskip=0.9em plus 1pt]{part}{part}
+\DeclareTOCStyleEntry[beforeskip=0.15em,linefill=\TOCLineLeaderFill]{chapter}{chapter}
+
+\makeatletter
+\newcommand{\bookpart}[3]{%
+  \cleardoubleoddpage
+  \thispagestyle{empty}%
+  \phantomsection
+  \addcontentsline{toc}{part}{#3}%
+  \markboth{}{}%
+  \vspace*{2.1in}%
+  \begin{center}
+    \ifx\relax#1\relax\else
+      {\large\allsc #1}\par\vspace{0.22in}%
+    \fi
+    {\Huge #2}\par
+  \end{center}
+  \cleardoubleoddpage}
+\newcommand{\bookchapter}[1]{\addchap{#1}}
+\newcommand{\unlistedchapter}[1]{\chapter*{#1}}
+\newcommand{\booksection}[1]{\Needspace{5\baselineskip}\section*{#1}}
+\newcommand{\booksubsection}[1]{\Needspace{4\baselineskip}\subsection*{#1}}
+\newcommand{\chaptersubtitle}[1]{%
+  \vspace*{-0.18in}%
+  {\centering\large\itshape #1\par}%
+  \vspace{0.3in}\nobreak\@afterindentfalse\@afterheading}
+\newcommand{\casekey}[2]{%
+  \par{\small\noindent\hangindent=1.2em\hangafter=1
+  {\allsc #1}\enspace #2\par}\vspace{0.35\baselineskip}\@afterindentfalse\@afterheading}
+\newcommand{\scenebreak}{%
+  \par\vspace{0.6\baselineskip}%
+  {\centering *\hspace{1.2em}*\hspace{1.2em}*\par}%
+  \vspace{0.6\baselineskip}\@afterindentfalse\@afterheading}
+\makeatother
+
+\newenvironment{notesmatter}{\small}{\par}
+
+%% ------------------------------------------------ front matter pages ----
+\newcommand{\copyrightpagestart}{%
+  \clearpage\thispagestyle{empty}%
+  \vspace*{\fill}%
+  \begingroup\footnotesize\raggedright
+  \setlength{\parindent}{0pt}\setlength{\parskip}{0.7\baselineskip}}
+\newcommand{\copyrightpagestop}{\par\endgroup}
+\newcommand{\dedicationpagestart}{%
+  \cleardoubleoddpage\thispagestyle{empty}%
+  \vspace*{2in}%
+  \begingroup\centering\large\itshape\setlength{\parindent}{0pt}}
+\newcommand{\dedicationpagestop}{\par\endgroup}
+\newcommand{\epigraphpagestart}{%
+  \cleardoubleoddpage\thispagestyle{empty}%
+  \vspace*{1.9in}\begingroup}
+\newcommand{\epigraphpagestop}{\par\endgroup}
+\newenvironment{bookepigraph}{%
+  \begin{center}\begin{minipage}{0.78\textwidth}\setlength{\parindent}{0pt}%
+  \raggedright\hyphenpenalty=10000\exhyphenpenalty=10000}%
+  {\end{minipage}\end{center}}
+\newcommand{\epigraphsource}[1]{%
+  \par\vspace{0.7\baselineskip}{\raggedleft\small #1\par}}
+\newcommand{\booktoc}{%
+  \cleardoubleoddpage
+  \tableofcontents}
+
+%% ------------------------------------------------------------ pdf -------
+\usepackage[hidelinks,bookmarksopen=true,pdfusetitle]{hyperref}
+\hypersetup{
+  pdftitle={$title$},
+  pdfauthor={$author$},
+  pdfsubject={$subtitle$},
+  pdflang={en-US}}
+
+\begin{document}
+\frontmatter
+
+%% i. half title
+\thispagestyle{empty}
+\vspace*{2.3in}
+\begin{center}{\LARGE\allsc $title$}\end{center}
+\cleardoubleoddpage
+
+%% iii. title page
+\thispagestyle{empty}
+\vspace*{1.3in}
+\begin{center}
+  {\fontsize{30pt}{34pt}\selectfont $title$\par}
+  \vspace{0.35in}
+  \begin{minipage}{0.86\textwidth}\centering
+    {\large\itshape $subtitle$\par}
+  \end{minipage}\par
+$if(edition)$
+  \vspace{0.3in}
+  {\normalsize\allsc $edition$\par}
+$endif$
+  \vspace{1.1in}
+  {\Large\allsc $author$\par}
+  \vfill
+  {\small\allsc $publisher$\par}
+\end{center}
+\clearpage
+
+$body$
+
+\end{document}

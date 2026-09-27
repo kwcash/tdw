@@ -1,0 +1,140 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+
+/* Kindle / EPUB3 stylesheet. Kept deliberately plain: Kindle readers pick
+   their own font, size and margins, so this only sets structure. */
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  orphans: 2;
+  widows: 2;
+}
+
+p {
+  margin: 0;
+  text-indent: 1.2em;
+  text-align: justify;
+}
+
+h1 + p, h2 + p, h3 + p, h4 + p,
+.chapter-subtitle + p, .case-key + p, hr + p, blockquote + p,
+.table-title + p, table + p {
+  text-indent: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  text-align: left;
+  page-break-after: avoid;
+  line-height: 1.2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6em;
+  margin: 3em 0 2em 0;
+  page-break-before: always;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.45em;
+  margin: 2em 0 0.4em 0;
+  page-break-before: always;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 1.6em 0 0.5em 0;
+}
+
+h4 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 1.2em 0 0.4em 0;
+}
+
+.hidden-heading {
+  display: none;
+}
+
+.chapter-subtitle p {
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  margin: 0 0 1.6em 0;
+}
+
+.case-key p {
+  text-indent: -1.2em;
+  margin: 0 0 0.3em 1.2em;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.case-key + :not(.case-key) {
+  margin-top: 1em;
+}
+
+.table-title p {
+  text-indent: 0;
+  font-weight: bold;
+  margin: 1.2em 0 0.4em 0;
+  page-break-after: avoid;
+}
+
+hr {
+  border: 0;
+  text-align: center;
+  margin: 1.2em 0;
+}
+
+hr::after {
+  content: "* * *";
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0.6em 0 1.2em 0;
+  font-size: 0.85em;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.25em 0.4em;
+  border-bottom: 1px solid #999;
+}
+
+th {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+blockquote {
+  margin: 1em 1.5em;
+}
+
+blockquote p {
+  text-indent: 0;
+}
+
+section[epub|type~="dedication"] p,
+section[epub|type~="epigraph"] p {
+  text-align: center;
+  text-indent: 0;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+section[epub|type~="copyright-page"] p {
+  text-indent: 0;
+  text-align: left;
+  font-size: 0.85em;
+  margin-bottom: 0.8em;
+}
