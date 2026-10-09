@@ -1,0 +1,336 @@
+[
+ {
+  "id": "F058",
+  "idx": 0,
+  "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfhhis01.txt",
+  "grep": [
+   "1316.7",
+   "1,316",
+   "Jan Feb Mar"
+  ],
+  "excerpt": 0,
+  "note": "TIC peak row and year header",
+  "grep_width": 600,
+  "grep_limit": 2
+ },
+ {
+  "id": "F060",
+  "idx": 0,
+  "url": "https://www.info.gov.hk/gia/general/202506/06/P2025060600275.htm",
+  "grep": [
+   "August 1, 2025",
+   "1 August 2025",
+   "Stablecoins Ordinance"
+  ],
+  "excerpt": 0,
+  "note": "HK gov: Stablecoins Ordinance commencement"
+ },
+ {
+  "id": "F062",
+  "idx": 2,
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.2216248120&format=json&resultType=core",
+  "grep": [
+   "2,621",
+   "2621",
+   "900",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "Europe PMC record of the PNAS paper",
+  "grep_width": 300
+ },
+ {
+  "id": "F064",
+  "idx": 2,
+  "url": "https://arxiv.org/abs/2412.11924",
+  "grep": [
+   "105",
+   "Zuchongzhi",
+   "University of Science and Technology"
+  ],
+  "excerpt": 0,
+  "note": "arXiv Zuchongzhi 3.0"
+ },
+ {
+  "id": "F065",
+  "idx": 1,
+  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+  "grep": [
+   "13",
+   "Armed Forces",
+   "foreign adversar",
+   "February"
+  ],
+  "excerpt": 0,
+  "note": "FTC PADFAA press release",
+  "ua": "browser"
+ },
+ {
+  "id": "F068",
+  "idx": 1,
+  "url": "https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
+  "grep": [
+   "1.2 trillion",
+   "7,800",
+   "185 billion",
+   "interceptors"
+  ],
+  "excerpt": 0,
+  "note": "CBO national missile defense",
+  "ua": "browser"
+ },
+ {
+  "id": "F068",
+  "idx": 2,
+  "url": "https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
+  "grep": [
+   "low 600s",
+   "1,000 warheads",
+   "over 1,000"
+  ],
+  "excerpt": 0,
+  "note": "DoD CMPR 2025",
+  "grep_width": 240
+ },
+ {
+  "id": "F026",
+  "idx": 2,
+  "url": "https://home.treasury.gov/news/press-releases/jy2792",
+  "grep": [
+   "Sichuan Juxinhe",
+   "Salt Typhoon",
+   "January 17"
+  ],
+  "excerpt": 0,
+  "note": "Treasury Salt Typhoon sanctions Jan 2025"
+ },
+ {
+  "id": "F099",
+  "idx": 1,
+  "url": "https://www.federalregister.gov/documents/2024/01/29/2024-01580/taking-additional-steps-to-address-the-national-emergency-with-respect-to-significant-malicious",
+  "grep": [
+   "verify the identity",
+   "Infrastructure as a Service",
+   "January 29, 2024"
+  ],
+  "excerpt": 0,
+  "note": "Commerce IaaS KYC notice of proposed rulemaking"
+ },
+ {
+  "id": "F100",
+  "idx": 1,
+  "url": "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf",
+  "grep": [
+   "appropriate levels of human judgment",
+   "January 25, 2023"
+  ],
+  "excerpt": 0,
+  "note": "DoDD 3000.09 (2023)",
+  "ua": "browser"
+ },
+ {
+  "id": "F077",
+  "idx": 1,
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decoupling-direct-investment-american-firms-retreat-from-china-20260925.html",
+  "grep": [
+   "dividend",
+   "reinvest",
+   "never recovered",
+   "2020"
+  ],
+  "excerpt": 0,
+  "note": "Fed note: dividends vs reinvestment",
+  "grep_width": 240
+ },
+ {
+  "id": "F079",
+  "idx": 0,
+  "url": "https://www.uscis.gov/humanitarian/deferred-enforced-departure/ded-covered-country-certain-hong-kong-residents",
+  "grep": [
+   "2027",
+   "Feb",
+   "expire"
+  ],
+  "excerpt": 0,
+  "note": "USCIS Hong Kong DED",
+  "ua": "browser"
+ },
+ {
+  "id": "F090",
+  "idx": 2,
+  "url": "https://www.info.gov.hk/gia/general/202602/09/P2026020900699.htm",
+  "grep": [
+   "20 years",
+   "Lai Chee-ying",
+   "sentenc"
+  ],
+  "excerpt": 0,
+  "note": "HK Security Secretary on Lai sentencing"
+ },
+ {
+  "id": "F090",
+  "idx": 2,
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/02/sentencing-in-jimmy-lai-case",
+  "grep": [
+   "Lai",
+   "sentence",
+   "parole"
+  ],
+  "excerpt": 0,
+  "note": "State on Lai sentencing"
+ },
+ {
+  "id": "F096",
+  "idx": 0,
+  "url": "https://english.news.cn/20260921/3d1a795c52f14c10a6edda3c2165add6/c.html",
+  "grep": [
+   "Zhang Youxia",
+   "Liu Zhenli",
+   "expelled"
+  ],
+  "excerpt": 0,
+  "note": "Xinhua on expulsions"
+ },
+ {
+  "id": "F096",
+  "idx": 2,
+  "url": "https://www.state.gov/releases/2026/02/statement-to-the-conference-on-disarmament/",
+  "grep": [
+   "February 5",
+   "New START",
+   "China",
+   "trilateral"
+  ],
+  "excerpt": 0,
+  "note": "State: New START expiry",
+  "grep_width": 240
+ },
+ {
+  "id": "F089",
+  "idx": 1,
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0129/2024012900565.pdf",
+  "grep": [
+   "wound up",
+   "29 January 2024",
+   "liquidators"
+  ],
+  "excerpt": 0,
+  "note": "HKEX filing: Evergrande winding-up order",
+  "grep_width": 240
+ },
+ {
+  "id": "F052",
+  "idx": 2,
+  "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+  "grep": [
+   "Chinese military companies",
+   "Hesai",
+   "June 8",
+   "entities"
+  ],
+  "excerpt": 800,
+  "note": "1260H notice June 2026"
+ },
+ {
+  "id": "F086",
+  "idx": 2,
+  "url": "https://www.fsa.usda.gov/sites/default/files/2026-01/AFIDAYR2024ReportWithPageNumbers.pdf",
+  "grep": [
+   "247,659",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "USDA AFIDA 2024 report",
+  "ua": "browser",
+  "grep_width": 240
+ },
+ {
+  "id": "F091",
+  "idx": 2,
+  "url": "https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-june-2023/how-many-people-do-we-grant-protection-to",
+  "grep": [
+   "BN(O)",
+   "176,407",
+   "Hong Kong"
+  ],
+  "excerpt": 0,
+  "note": "Home Office stats: BN(O) grants",
+  "grep_width": 240
+ },
+ {
+  "id": "F098",
+  "idx": 0,
+  "url": "https://english.www.gov.cn/archive/whitepaper/201907/24/content_WS5d3941ddc6d08408f502283d.html",
+  "grep": [
+   "intelligent",
+   "informationized",
+   "2019"
+  ],
+  "excerpt": 300,
+  "note": "China national defense white paper 2019"
+ },
+ {
+  "id": "F098",
+  "idx": 1,
+  "url": "https://arxiv.org/abs/2412.19437",
+  "grep": [
+   "5.576",
+   "2.788",
+   "training"
+  ],
+  "excerpt": 0,
+  "note": "DeepSeek-V3 technical report (company preprint)"
+ },
+ {
+  "id": "F098",
+  "idx": 1,
+  "url": "https://arxiv.org/abs/2501.12948",
+  "grep": [
+   "OpenAI-o1",
+   "comparable",
+   "DeepSeek-R1"
+  ],
+  "excerpt": 0,
+  "note": "DeepSeek-R1 paper (company preprint)"
+ },
+ {
+  "id": "F093",
+  "idx": 2,
+  "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+  "grep": [
+   "does not authorize",
+   "We hold",
+   "tariffs",
+   "affirm"
+  ],
+  "excerpt": 0,
+  "note": "SCOTUS holding",
+  "grep_width": 240
+ },
+ {
+  "id": "F094",
+  "idx": 2,
+  "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
+  "grep": [
+   "Volt Typhoon",
+   "pre-position",
+   "February 7, 2024"
+  ],
+  "excerpt": 0,
+  "note": "CISA AA24-038A",
+  "ua": "browser"
+ },
+ {
+  "id": "F094",
+  "idx": 1,
+  "url": "https://www.opm.gov/cybersecurity-resource-center/cybersecurity-incidents",
+  "grep": [
+   "21.5 million",
+   "5.6 million",
+   "2015"
+  ],
+  "excerpt": 0,
+  "note": "OPM cyber incidents page (alternate URL)",
+  "ua": "browser"
+ }
+]

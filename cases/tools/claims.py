@@ -29,7 +29,12 @@ VERDICTS = {'', 'supported', 'partial', 'unsupported', 'contradicted', 'unresolv
 
 def sentences(text):
     """Return [sentence, sep, sentence, ...] so ''.join(parts) == text."""
-    raw = SPLIT.split(text)
+    masked = LINK.sub(lambda m: 'x' * len(m.group(0)), text)   # "Pub. L. 116-149" inside a link is not a sentence end
+    raw, last = [], 0
+    for m in SPLIT.finditer(masked):
+        raw += [text[last:m.start()], text[m.start():m.end()]]
+        last = m.end()
+    raw.append(text[last:])
     out = [raw[0]]
     for i in range(1, len(raw), 2):
         sep, nxt = raw[i], raw[i + 1]

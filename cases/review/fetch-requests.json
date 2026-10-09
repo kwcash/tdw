@@ -2,482 +2,338 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "F071",
+   "id": "F058",
    "idx": 0,
-   "url": "https://focustaiwan.tw/politics/202608200011",
+   "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfhhis01.txt",
    "grep": [
-    "1.1225",
-    "3.01",
-    "3.32"
+    "1316.7",
+    "1,316",
+    "Jan Feb Mar"
    ],
    "excerpt": 0,
-   "note": "Cabinet 2027 budget"
+   "note": "TIC peak row and year header",
+   "grep_width": 600,
+   "grep_limit": 2
   },
   {
-   "id": "F071",
-   "idx": 1,
-   "url": "https://www.mnd.gov.tw/en/News/PressRelease/86638",
+   "id": "F060",
+   "idx": 0,
+   "url": "https://www.info.gov.hk/gia/general/202506/06/P2025060600275.htm",
    "grep": [
-    "Special Act",
-    "Asymmetric",
-    "Legislative Yuan"
-   ],
-   "excerpt": 300,
-   "note": "MND on special act passage"
-  },
-  {
-   "id": "F071",
-   "idx": 1,
-   "url": "https://focustaiwan.tw/politics/202605080020",
-   "grep": [
-    "780",
-    "May 8",
-    "1.25"
+    "August 1, 2025",
+    "1 August 2025",
+    "Stablecoins Ordinance"
    ],
    "excerpt": 0,
-   "note": "Special act passed with ceiling"
+   "note": "HK gov: Stablecoins Ordinance commencement"
   },
   {
-   "id": "F071",
+   "id": "F062",
    "idx": 2,
-   "url": "https://english.president.gov.tw/News/7022",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.2216248120&format=json&resultType=core",
    "grep": [
-    "5 percent",
-    "2030",
-    "GDP"
+    "2,621",
+    "2621",
+    "900",
+    "Chinese"
    ],
    "excerpt": 0,
-   "note": "Lai: 5 percent of GDP by 2030"
+   "note": "Europe PMC record of the PNAS paper",
+   "grep_width": 300
   },
   {
-   "id": "F072",
-   "idx": 0,
-   "url": "https://esc.nccu.edu.tw/PageDoc/Detail?fid=7801&id=6961",
+   "id": "F064",
+   "idx": 2,
+   "url": "https://arxiv.org/abs/2412.11924",
    "grep": [
-    "Taiwanese",
-    "December",
-    "2025"
+    "105",
+    "Zuchongzhi",
+    "University of Science and Technology"
    ],
-   "excerpt": 400,
-   "note": "NCCU identity trend"
+   "excerpt": 0,
+   "note": "arXiv Zuchongzhi 3.0"
   },
   {
-   "id": "F073",
+   "id": "F065",
    "idx": 1,
-   "url": "https://www.cga.gov.tw/GipOpen/wSite/ct?xItem=167237&ctNode=9601&mp=eng",
+   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
    "grep": [
-    "Kinmen",
-    "patrol",
+    "13",
+    "Armed Forces",
+    "foreign adversar",
     "February"
    ],
-   "excerpt": 300,
-   "note": "CGA Kinmen patrols Feb 2026"
+   "excerpt": 0,
+   "note": "FTC PADFAA press release",
+   "ua": "browser"
   },
   {
-   "id": "F073",
+   "id": "F068",
    "idx": 1,
-   "url": "https://www.mac.gov.tw/EN/News_Content.aspx?n=2BA0753CBE348412&sms=E828F60C4AFBAF90&s=F04508A2EB8B18A3",
+   "url": "https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
    "grep": [
-    "capsiz",
-    "died",
-    "two",
-    "February"
-   ],
-   "excerpt": 300,
-   "note": "MAC on Feb 2024 Kinmen incident"
-  },
-  {
-   "id": "F074",
-   "idx": 0,
-   "url": "https://english.www.gov.cn/archive/white_paper/2018/01/26/content_281476026660336.htm",
-   "grep": [
-    "Near-Arctic",
-    "January"
+    "1.2 trillion",
+    "7,800",
+    "185 billion",
+    "interceptors"
    ],
    "excerpt": 0,
-   "note": "China Arctic Policy 2018"
+   "note": "CBO national missile defense",
+   "ua": "browser"
   },
   {
-   "id": "F074",
-   "idx": 1,
-   "url": "https://www.news.uscg.mil/Press-Releases/article/4276832/coast-guard-continues-response-to-chinese-research-vessel-activity-in-us-arctic/",
-   "grep": [
-    "five",
-    "research vessels",
-    "Xue Long",
-    "Arctic District"
-   ],
-   "excerpt": 300,
-   "note": "USCG Aug 2025 five vessels"
-  },
-  {
-   "id": "F074",
+   "id": "F068",
    "idx": 2,
-   "url": "https://www.news.uscg.mil/Press-Releases/Article/3922625/us-coast-guard-encounters-joint-chinese-coast-guard-russian-border-guard-patrol/",
+   "url": "https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
    "grep": [
-    "Bering",
-    "Russian",
-    "Chinese Coast Guard",
-    "October"
-   ],
-   "excerpt": 300,
-   "note": "USCG Oct 2024 joint patrol"
-  },
-  {
-   "id": "F075",
-   "idx": 0,
-   "url": "https://www.huawei.com/en/news/2026/3/annual-report-2025",
-   "grep": [
-    "880.9",
-    "192.3",
-    "21.8%"
-   ],
-   "excerpt": 200,
-   "note": "Huawei 2025 annual report"
-  },
-  {
-   "id": "F076",
-   "idx": 0,
-   "url": "https://www.csis.org/analysis/threat-chinas-shipbuilding-empire",
-   "grep": [
-    "232",
-    "230",
-    "Navy"
-   ],
-   "excerpt": 300,
-   "note": "CSIS shipbuilding ratio"
-  },
-  {
-   "id": "F076",
-   "idx": 1,
-   "url": "https://docs.fcc.gov/public/attachments/DA-25-1086A1.pdf",
-   "grep": [
-    "Covered List",
-    "December 22, 2025",
-    "UAS"
-   ],
-   "excerpt": 300,
-   "note": "FCC covered list (PDF)"
-  },
-  {
-   "id": "F076",
-   "idx": 2,
-   "url": "https://www.federalregister.gov/documents/2025/11/12/2025-19846/one-year-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed-entities",
-   "grep": [
-    "November 10, 2025",
-    "suspen",
-    "November 9, 2026"
+    "low 600s",
+    "1,000 warheads",
+    "over 1,000"
    ],
    "excerpt": 0,
-   "note": "BIS affiliates rule suspension"
+   "note": "DoD CMPR 2025",
+   "grep_width": 240
+  },
+  {
+   "id": "F026",
+   "idx": 2,
+   "url": "https://home.treasury.gov/news/press-releases/jy2792",
+   "grep": [
+    "Sichuan Juxinhe",
+    "Salt Typhoon",
+    "January 17"
+   ],
+   "excerpt": 0,
+   "note": "Treasury Salt Typhoon sanctions Jan 2025"
+  },
+  {
+   "id": "F099",
+   "idx": 1,
+   "url": "https://www.federalregister.gov/documents/2024/01/29/2024-01580/taking-additional-steps-to-address-the-national-emergency-with-respect-to-significant-malicious",
+   "grep": [
+    "verify the identity",
+    "Infrastructure as a Service",
+    "January 29, 2024"
+   ],
+   "excerpt": 0,
+   "note": "Commerce IaaS KYC notice of proposed rulemaking"
+  },
+  {
+   "id": "F100",
+   "idx": 1,
+   "url": "https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf",
+   "grep": [
+    "appropriate levels of human judgment",
+    "January 25, 2023"
+   ],
+   "excerpt": 0,
+   "note": "DoDD 3000.09 (2023)",
+   "ua": "browser"
   },
   {
    "id": "F077",
-   "idx": 0,
+   "idx": 1,
    "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decoupling-direct-investment-american-firms-retreat-from-china-20260925.html",
    "grep": [
-    "greenfield",
-    "2020",
-    "September 25, 2026"
+    "dividend",
+    "reinvest",
+    "never recovered",
+    "2020"
    ],
-   "excerpt": 300,
-   "note": "Fed note on US FDI in China"
-  },
-  {
-   "id": "F077",
-   "idx": 2,
-   "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
-   "grep": [
-    "126.6",
-    "150.0",
-    "Augmented"
-   ],
-   "excerpt": 200,
-   "note": "IMF Article IV augmented debt"
-  },
-  {
-   "id": "F078",
-   "idx": 0,
-   "url": "https://www.aspistrategist.org.au/aspis-critical-technology-tracker-2025-updates-and-10-new-technologies/",
-   "grep": [
-    "66",
-    "74",
-    "2025"
-   ],
-   "excerpt": 300,
-   "note": "ASPI tracker 66 of 74"
-  },
-  {
-   "id": "F078",
-   "idx": 2,
-   "url": "https://nz.china-embassy.gov.cn/eng/mfasr/202003/t20200319_880697.htm",
-   "grep": [
-    "New York Times",
-    "Wall Street Journal",
-    "Washington Post",
-    "press card"
-   ],
-   "excerpt": 300,
-   "note": "MFA March 18 2020 journalists"
+   "excerpt": 0,
+   "note": "Fed note: dividends vs reinvestment",
+   "grep_width": 240
   },
   {
    "id": "F079",
    "idx": 0,
    "url": "https://www.uscis.gov/humanitarian/deferred-enforced-departure/ded-covered-country-certain-hong-kong-residents",
    "grep": [
-    "February 5, 2027",
-    "Hong Kong"
+    "2027",
+    "Feb",
+    "expire"
    ],
-   "excerpt": 200,
-   "note": "DED Hong Kong",
+   "excerpt": 0,
+   "note": "USCIS Hong Kong DED",
    "ua": "browser"
   },
   {
-   "id": "F079",
-   "idx": 1,
-   "url": "https://freedomhouse.org/article/ten-findings-ten-years-data-transnational-repression",
-   "grep": [
-    "272",
-    "1,219",
-    "22 percent"
-   ],
-   "excerpt": 200,
-   "note": "Freedom House ten findings"
-  },
-  {
-   "id": "F079",
-   "idx": 2,
-   "url": "https://www.congress.gov/crs_external_products/IF/HTML/IF12538.html",
-   "grep": [
-    "China",
-    "PRC",
-    "Southwest"
-   ],
-   "excerpt": 300,
-   "note": "CRS FY2024 origins"
-  },
-  {
-   "id": "F080",
-   "idx": 2,
-   "url": "https://www.cecc.gov/media-center/press-releases/chairs%E2%80%99-statement-on-release-of-xinjiang-police-files",
-   "grep": [
-    "Xinjiang Police Files",
-    "2022",
-    "Strike Hard"
-   ],
-   "excerpt": 300,
-   "note": "CECC on Xinjiang Police Files"
-  },
-  {
-   "id": "F084",
-   "idx": 1,
-   "url": "https://home.treasury.gov/news/press-releases/sb0243",
-   "grep": [
-    "32",
-    "Houthi",
-    "China"
-   ],
-   "excerpt": 300,
-   "note": "Treasury Houthi network Sept 2025"
-  },
-  {
-   "id": "F084",
-   "idx": 1,
-   "url": "https://www.state.gov/briefings/department-press-briefing-april-17-2025",
-   "grep": [
-    "Chang Guang",
-    "Houthi"
-   ],
-   "excerpt": 300,
-   "note": "State April 2025 on Chang Guang"
-  },
-  {
-   "id": "F085",
-   "idx": 0,
-   "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
-   "grep": [
-    "ransomware",
-    "3,156"
-   ],
-   "excerpt": 300,
-   "note": "IC3 2025 report (PDF)"
-  },
-  {
-   "id": "F085",
-   "idx": 2,
-   "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
-   "grep": [
-    "80-90",
-    "thirty",
-    "Chinese state-sponsored"
-   ],
-   "excerpt": 300,
-   "note": "Anthropic AI espionage report"
-  },
-  {
-   "id": "F087",
-   "idx": 0,
-   "url": "https://archive.dni.gov/files/ODNI/documents/assessments/ATA-2025-Unclassified-Report.pdf",
-   "grep": [
-    "research-related",
-    "natural origin",
-    "CIA"
-   ],
-   "excerpt": 300,
-   "note": "ATA 2025 on COVID origins"
-  },
-  {
-   "id": "F087",
-   "idx": 1,
-   "url": "https://www.who.int/news/item/27-06-2025-who-scientific-advisory-group-issues-report-on-origins-of-covid-19",
-   "grep": [
-    "zoonotic",
-    "laboratory",
-    "data"
-   ],
-   "excerpt": 300,
-   "note": "WHO SAGO June 2025"
-  },
-  {
    "id": "F090",
-   "idx": 0,
-   "url": "https://www.basiclaw.gov.hk/en/basiclaw/chapter1.html",
+   "idx": 2,
+   "url": "https://www.info.gov.hk/gia/general/202602/09/P2026020900699.htm",
    "grep": [
-    "50 years",
-    "Article 5"
+    "20 years",
+    "Lai Chee-ying",
+    "sentenc"
    ],
    "excerpt": 0,
-   "note": "Basic Law Art. 5"
+   "note": "HK Security Secretary on Lai sentencing"
   },
   {
    "id": "F090",
-   "idx": 1,
-   "url": "https://www.info.gov.hk/gia/general/202403/19/P2024031900717.htm",
+   "idx": 2,
+   "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/02/sentencing-in-jimmy-lai-case",
    "grep": [
-    "Safeguarding National Security",
-    "Article 23",
-    "passage"
+    "Lai",
+    "sentence",
+    "parole"
    ],
-   "excerpt": 200,
-   "note": "SNSO passage"
+   "excerpt": 0,
+   "note": "State on Lai sentencing"
   },
   {
-   "id": "F092",
-   "idx": 1,
-   "url": "https://www.congress.gov/crs-product/LSB11444",
+   "id": "F096",
+   "idx": 0,
+   "url": "https://english.news.cn/20260921/3d1a795c52f14c10a6edda3c2165add6/c.html",
    "grep": [
-    "June 12, 2026",
-    "repeal",
-    "702"
+    "Zhang Youxia",
+    "Liu Zhenli",
+    "expelled"
+   ],
+   "excerpt": 0,
+   "note": "Xinhua on expulsions"
+  },
+  {
+   "id": "F096",
+   "idx": 2,
+   "url": "https://www.state.gov/releases/2026/02/statement-to-the-conference-on-disarmament/",
+   "grep": [
+    "February 5",
+    "New START",
+    "China",
+    "trilateral"
+   ],
+   "excerpt": 0,
+   "note": "State: New START expiry",
+   "grep_width": 240
+  },
+  {
+   "id": "F089",
+   "idx": 1,
+   "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0129/2024012900565.pdf",
+   "grep": [
+    "wound up",
+    "29 January 2024",
+    "liquidators"
+   ],
+   "excerpt": 0,
+   "note": "HKEX filing: Evergrande winding-up order",
+   "grep_width": 240
+  },
+  {
+   "id": "F052",
+   "idx": 2,
+   "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+   "grep": [
+    "Chinese military companies",
+    "Hesai",
+    "June 8",
+    "entities"
+   ],
+   "excerpt": 800,
+   "note": "1260H notice June 2026"
+  },
+  {
+   "id": "F086",
+   "idx": 2,
+   "url": "https://www.fsa.usda.gov/sites/default/files/2026-01/AFIDAYR2024ReportWithPageNumbers.pdf",
+   "grep": [
+    "247,659",
+    "Chinese"
+   ],
+   "excerpt": 0,
+   "note": "USDA AFIDA 2024 report",
+   "ua": "browser",
+   "grep_width": 240
+  },
+  {
+   "id": "F091",
+   "idx": 2,
+   "url": "https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-june-2023/how-many-people-do-we-grant-protection-to",
+   "grep": [
+    "BN(O)",
+    "176,407",
+    "Hong Kong"
+   ],
+   "excerpt": 0,
+   "note": "Home Office stats: BN(O) grants",
+   "grep_width": 240
+  },
+  {
+   "id": "F098",
+   "idx": 0,
+   "url": "https://english.www.gov.cn/archive/whitepaper/201907/24/content_WS5d3941ddc6d08408f502283d.html",
+   "grep": [
+    "intelligent",
+    "informationized",
+    "2019"
    ],
    "excerpt": 300,
-   "note": "CRS on 702 repeal"
+   "note": "China national defense white paper 2019"
+  },
+  {
+   "id": "F098",
+   "idx": 1,
+   "url": "https://arxiv.org/abs/2412.19437",
+   "grep": [
+    "5.576",
+    "2.788",
+    "training"
+   ],
+   "excerpt": 0,
+   "note": "DeepSeek-V3 technical report (company preprint)"
+  },
+  {
+   "id": "F098",
+   "idx": 1,
+   "url": "https://arxiv.org/abs/2501.12948",
+   "grep": [
+    "OpenAI-o1",
+    "comparable",
+    "DeepSeek-R1"
+   ],
+   "excerpt": 0,
+   "note": "DeepSeek-R1 paper (company preprint)"
   },
   {
    "id": "F093",
    "idx": 2,
    "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
    "grep": [
-    "IEEPA",
-    "tariff",
-    "February 20, 2026"
+    "does not authorize",
+    "We hold",
+    "tariffs",
+    "affirm"
    ],
-   "excerpt": 300,
-   "note": "SCOTUS Learning Resources opinion (PDF)"
+   "excerpt": 0,
+   "note": "SCOTUS holding",
+   "grep_width": 240
   },
   {
    "id": "F094",
-   "idx": 0,
-   "url": "https://justice.gov/opa/pr/chinese-military-personnel-charged-computer-fraud-economic-espionage-and-wire-fraud-hacking",
+   "idx": 2,
+   "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
    "grep": [
-    "145 million",
-    "Equifax",
-    "PLA"
+    "Volt Typhoon",
+    "pre-position",
+    "February 7, 2024"
    ],
-   "excerpt": 300,
-   "note": "Equifax indictment"
-  },
-  {
-   "id": "F094",
-   "idx": 1,
-   "url": "https://www.opm.gov/cybersecurity/cybersecurity-incidents/",
-   "grep": [
-    "21.5 million",
-    "background investigation"
-   ],
-   "excerpt": 300,
-   "note": "OPM incident page",
+   "excerpt": 0,
+   "note": "CISA AA24-038A",
    "ua": "browser"
   },
   {
    "id": "F094",
    "idx": 1,
-   "url": "https://oversight.house.gov/report/opm-data-breach-government-jeopardized-national-security-generation/",
+   "url": "https://www.opm.gov/cybersecurity-resource-center/cybersecurity-incidents",
    "grep": [
     "21.5 million",
-    "foreign adversary"
+    "5.6 million",
+    "2015"
    ],
-   "excerpt": 300,
-   "note": "House Oversight OPM report"
-  },
-  {
-   "id": "F098",
-   "idx": 0,
-   "url": "https://eng.mod.gov.cn/publications/2019-07/24/content_4846452.htm",
-   "grep": [
-    "intelligent",
-    "informationized"
-   ],
-   "excerpt": 300,
-   "note": "2019 defense white paper"
-  },
-  {
-   "id": "F099",
-   "idx": 0,
-   "url": "https://arxiv.org/abs/2412.12140",
-   "grep": [
-    "self-replic",
-    "Llama",
-    "Qwen",
-    "Fudan"
-   ],
-   "excerpt": 300,
-   "note": "Fudan self-replication paper"
-  },
-  {
-   "id": "F100",
-   "idx": 0,
-   "url": "https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/",
-   "grep": [
-    "3000.09",
-    "90 days",
-    "June"
-   ],
-   "excerpt": 300,
-   "note": "NSPM-11"
-  },
-  {
-   "id": "F100",
-   "idx": 1,
-   "url": "https://www.war.gov/News/Releases/Release/article/3278076/dod-announces-update-to-dod-directive-300009-autonomy-in-weapon-systems/",
-   "grep": [
-    "human judgment",
-    "January 25, 2023"
-   ],
-   "excerpt": 300,
-   "note": "DoDD 3000.09 update 2023"
-  },
-  {
-   "id": "F100",
-   "idx": 2,
-   "url": "https://www.ai.mil/News/PR-View/Article/4242822/cdao-announces-partnerships-with-frontier-ai-companies-to-address-national-secu/",
-   "grep": [
-    "200 million",
-    "Anthropic",
-    "xAI"
-   ],
-   "excerpt": 300,
-   "note": "CDAO frontier AI awards"
+   "excerpt": 0,
+   "note": "OPM cyber incidents page (alternate URL)",
+   "ua": "browser"
   }
  ]
 }
