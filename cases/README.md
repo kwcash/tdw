@@ -44,8 +44,10 @@ and names the stratagem. Never write a claim in `record` that you cannot link.
 | `sourced` | Links exist; nobody has read them against the claims | at least one link |
 | `verified` | A named person checked each claim against its source | `verifiedBy`, `verifiedOn` |
 
-Today: 198 cases are `unsourced`, 22 are `sourced`, none are `verified`. Moving
-cases down that list is the work this structure exists to track.
+Run `validate.py --report` for today's counts. After the futures sourcing pass
+(see below) every history case is still `unsourced`, most futures are `sourced`,
+and none is `verified`. Moving cases down that list is the work this structure
+exists to track.
 
 ## Commands (Python 3, standard library only)
 
@@ -58,21 +60,52 @@ python3 -I tools/build.py --verify PATH # rebuild and compare to an existing con
 
 ```
 
-`build.py --verify` against the original game `content.json` passes: the 220
-files rebuild it exactly, so the game is unchanged by this move.
+`build.py --verify` against the original game `content.json` passed when the 220
+files were first imported: they rebuilt it exactly. It now reports differences
+on every case the sourcing pass has touched, because those sentences carry links
+the original did not. That is the expected change; check the diff shows links and
+nothing else.
 
 ## Sourcing pass
 
+Primary sources first: statutes, court opinions, agency and ministry pages, then
+official bodies. Media, think tanks, companies and NGOs are used only when
+nothing primary was readable, and the link label says which. A primary source has
+its own view too (a PRC ministry page states PRC policy), so each decision's note
+says whose statement the page is.
+
 ```bash
-python3 -I tools/claims.py export --kind futures --status unsourced > review/futures-unsourced.csv
-# fill verdict (supported | partial | unsupported | contradicted), add_label, add_url
-python3 -I tools/claims.py apply review/futures-unsourced.csv --dry-run
+# 1. queue pages: edit review/fetch-requests.json and push (see .github/workflows/fetch-sources.yml)
+#    A GitHub Actions runner fetches each URL, greps for the claim's key terms and prints snippets.
+python3 -I tools/read_fetch_log.py SAVED_JOB_LOG [--json out.json]   # read the runner's report
+
+# 2. record a decision for each sentence and apply it
+python3 -I tools/claims.py decide review/decisions-batchNN.json --dry-run
+python3 -I tools/claims.py decide review/decisions-batchNN.json
+
+# 3. summarize everything decided so far
+python3 -I tools/findings.py            # writes review/futures-sourcing-findings.md
 ```
 
-`review/futures-unsourced.csv` has one row per sentence of the 78 unsourced
-future scenarios (239 sentences, 194 of them checkable). `apply` links supported
-claims, tags unsupported ones `[NEEDED: source]`, never sets `verified`, and
-refuses to run if a sentence changed since export.
+A decision is `{id, idx, verdict, label, url, notes}`; `idx` is the sentence
+number in `text.record`. Verdicts:
+
+| Verdict | Effect on the text | Meaning |
+|---|---|---|
+| `supported` | adds the link | the page says it |
+| `partial` | adds the link | the page supports part; the note says what is missing |
+| `contradicted` | none | the page says something else; the author decides |
+| `unresolved` | none | the page was tried and did not settle it (blocked, empty, or a chart) |
+| `unsupported` | adds `[NEEDED: source]` | do not use on case text the game displays |
+
+Every decision, with its note, is appended to `review/decisions-log.jsonl`. The
+tools never set `verified`. `review/futures-sourcing-findings.md` lists the
+contradictions, the partial links, the checked-but-unsettled sentences, the
+non-government links, and the checkable sentences nobody has tried yet.
+
+The original worksheet (`claims.py export` / `apply`) still works for a reviewer
+who prefers a spreadsheet: `review/futures-unsourced.csv` has one row per
+sentence of the 78 futures that had no link at the start (239 sentences).
 
 ## Adding or changing a case
 
