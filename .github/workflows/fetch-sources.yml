@@ -1,0 +1,38 @@
+name: fetch-sources
+
+# A fetch proxy for sessions that cannot reach the web. Push a REQUESTS.json
+# (default cases/review/fetch-requests.json) and read the report in this run's log:
+# the lines between "=== FETCH REPORT BEGIN ===" and "=== FETCH REPORT END ===".
+# The report is also uploaded as an artifact. Pages are fetched as data only.
+
+on:
+  push:
+    paths:
+      - 'cases/review/fetch-requests.json'
+      - 'cases/tools/fetch_sources.py'
+      - '.github/workflows/fetch-sources.yml'
+  workflow_dispatch:
+    inputs:
+      requests:
+        description: 'Path to the requests file'
+        default: 'cases/review/fetch-requests.json'
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the sources
+        env:
+          REQUESTS: ${{ inputs.requests || 'cases/review/fetch-requests.json' }}
+        run: python3 -I cases/tools/fetch_sources.py "$REQUESTS" --out fetch-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fetch-report
+          path: fetch-report.json
+          if-no-files-found: ignore
