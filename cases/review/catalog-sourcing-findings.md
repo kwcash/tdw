@@ -10,9 +10,9 @@ Generated 2026-10-09 by `tools/findings.py --kind catalog` from `decisions-log.j
 
 ## Counts
 
-- Historical cases: 120 cases, 436 record sentences, 190 now carry a link; 97 cases have at least one link.
-- Decisions logged (latest per sentence): contradicted 4, partial 106, supported 84, unresolved 48.
-- Checkable sentences with no link and no decision on file: 22.
+- Historical cases: 120 cases, 436 record sentences, 249 now carry a link; 113 cases have at least one link.
+- Decisions logged (latest per sentence): contradicted 4, partial 135, supported 114, unresolved 10.
+- Checkable sentences with no link and no decision on file: 1.
 
 ## Contradicted by the source (4)
 
@@ -27,7 +27,7 @@ The page says something different from the sentence. The text was left unchanged
 - **C118[4]** The city's statistics bureau fined Mintz about $1.5 million in August.  
   Two news reports (media only) say the Beijing Municipal Bureau of Statistics ruling is dated July 5 and its website statement July 14, with a fine of 10.69 million yuan (about $1.49 million) for 'foreign-related statistical investigations'; the news broke in August (Al Jazeera, August 22, 2023). The amount matches; 'in August' matches when the fine became public, not the dates on the ruling.
 
-## Linked, but the link covers only part of the sentence (106)
+## Linked, but the link covers only part of the sentence (135)
 
 The note says what the page supports and what is still open.
 
@@ -35,6 +35,8 @@ The note says what the page supports and what is still open.
   Official: US-Chinese relations were 'private and largely commercial' and Sino-American trade grew 'under the Chinese system that limited foreign traders' access to a single port' (Guangzhou/Canton). The year 1757 is not on the page.
 - **C001[2]** The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules.  
   US government essay: about a year after the Treaty of Paris (1783) the Empress of China 'slipped out of New York's harbor for Canton' in 1784, carrying ginseng. The February date and the exchange for tea and silk were not in the snippets read. The Founders Online page for Jay's papers returned no text.
+- **C002[2]** The merchants surrendered him, a Qing court convicted him, and officials executed him by strangulation in October 1821.  
+  Two secondary accounts: Dulles says Terranova was seized, given a second trial to which no Americans were admitted, and 'summarily strangled'; the encyclopedia says the magistrate sentenced him to death by strangulation after the Americans relented and surrendered him. Neither text read gives the month, October 1821; a helper noted that a Stanford record says October 27 and other accounts October 28. No Chinese or US government record was found.
 - **C003[0]** American houses carried Turkish opium and held a minority share of the trade, and Russell and Company made fortunes for partners such as Warren Delano Jr. Lin confined t…  
   LOC finding aid: Russell & Company, a trading house founded in 1819 in Canton, with the opium trade among its business. The college essay (secondary) says Warren Delano II made his fortune with Russell & Co. in the opium trade. 'Turkish opium', the minority share and Lin's confinement of the foreign community in spring 1839 were not in the text read; the Delano page names Warren Delano II, so check the sentence's 'Jr.'
 - **C003[1]** The Americans kept trading as neutral carriers after the British withdrew, and the war that followed opened five ports under the Treaty of Nanjing in 1842.  
@@ -65,6 +67,10 @@ The note says what the page supports and what is still open.
   FRUS minutes of the 30 April 1919 meeting with Wilson, Clemenceau, Lloyd George and the Japanese delegates on Shantung: Japan states it would hand back the peninsula in full sovereignty to China 'retaining only the economic privileges granted to Germany'. Wilson's assent is the meeting's outcome and was not in the snippet.
 - **C015[1]** The Republic of China's delegates refused to sign the Treaty of Versailles that June.  
   FRUS: Clemenceau reports a letter from the Chinese Delegation saying they would sign the Treaty of Peace only with a reservation on Shantung; a Reinsch dispatch describes the popular indignation over the settlement. These show the dispute; the refusal to sign on June 28 is not in the text read.
+- **C015[2]** Soviet Russia's Karakhan Manifesto of July 1919 offered to give up Tsarist privileges in China, and the offer reached Chinese readers in March 1920.  
+  Journal article: the first major Soviet effort to win China was 'a manifesto of July 25, 1919'; a footnote says Millard's Review reported Soviet notes to China received March 21, 1920 and April 1, 1920. FRUS: a December 20, 1922 State Department memorandum lists the July 25, 1919 declaration but says 'so far we have not succeeded in finding' its text. ANU monograph: the manifesto 'pledged the new Soviet Government to restore to China the rights and privileges forcibly extracted by Tsarism' and the text the Chinese received later proved different. The March 1920 date is for the notes, not clearly for the manifesto reaching Chinese readers.
+- **C019[1]** Red Star Over China appeared in London in 1937 and in New York in January 1938, and a Chinese translation drew young volunteers to Yan'an.  
+  PRC foreign ministry feature (the PRC's own account): 'In October 1937, a newly published book became an instant hit in London' and the book was Red Star Over China. The January 1938 New York edition and the claim about young volunteers going to Yan'an were not on the page.
 - **C022[0]** Mao launched the Rectification Movement that spring, and Party meetings denounced Wang as a Trotskyite through May and June 1942.  
   NGO biography of Wang Shiwei (1906 to July 1, 1947): his Yan'an writings of 1942, the 'Trotskyite' label. The Rectification Movement launching that spring and meetings denouncing him through May and June 1942 are not in the text read; the Columbia University trial-transcript PDF failed TLS verification.
 - **C022[1]** The Party expelled Wang and held him under guard, and its security forces executed him in 1947.  
@@ -75,6 +81,10 @@ The note says what the page supports and what is still open.
   US government page on Wu's Manhattan Project work at Columbia; the text read mentions xenon and Hanford. Fermi's team consulting her unpublished work during the 1944 reactor stall was not in the snippets, and the second NPS page did not mention xenon.
 - **C024[2]** She became a citizen in 1954, and her experiment of 1957 overturned the conservation of parity.  
   NIST history: experiments at the National Bureau of Standards in late 1956 (Wu's cobalt-60 experiment) demonstrated that parity is not conserved in weak interactions, with the news in January 1957. Her 1954 citizenship was not on the page; Britannica returned HTTP 403.
+- **C026[2]** Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed.  
+  Avalon text of the declaration of war handed to the Japanese ambassador on August 8, 1945 (the August 9 date was not matched by the grep). FRUS: Chiang's memorandum says Zhu De's orders of August 11, 1945 directed the Communist armies to coordinate with Soviet forces in China and Korea. This is the Nationalist leader's account of Communist moves, not an independent record of troops entering Manchuria. The DTIC document returned HTTP 403.
+- **C027[2]** Jaffe paid a fine of $2,500, and no one went to prison.  
+  Time magazine, 1950 (media only; no government record found): 'the court fined Jaffe $2,500, which he paid on the spot' and Larsen $500. The ProQuest guide to the FBI files says only Jaffe and Larsen pleaded guilty to any charge, unauthorized possession of government documents. That no one went to prison is inferred from the fines; no page states it.
 - **C028[2]** Marshall left China in January 1947 and blamed extremists on both sides for the failure.  
   FRUS: on January 5, 1947 Marshall's statement on the situation in China was released for publication on January 7; chapter XVII is titled 'Recall of General Marshall; reactions'. The statement's blame on extremists on both sides was not in the snippets.
 - **C030[1]** In October 1949 it arrested Ward on a charge of assaulting a Chinese employee, convicted him and expelled him that December.  
@@ -115,14 +125,22 @@ The note says what the page supports and what is still open.
   FRUS report on the 1958 crisis: the page contains the Seventh Fleet, convoy operations, 24 September and Sidewinder, in the Commander's account of operations. The snippets do not state that Nationalist pilots scored the first combat kills with Sidewinders on September 24.
 - **C043[2]** In October the Party announced it would shell only on odd-numbered days, and the ritual lasted until January 1, 1979.  
   FRUS: discusses the Chinese Communists' bombardment pattern in October 1958 and the risks of the Quemoy dispute. The announcement to shell on odd-numbered days only and its ending on January 1, 1979 are not in the snippets; Britannica returned HTTP 403.
+- **C044[0]** Mao circulated the letter and attacked Peng on July 23, and the conference purged him as the leader of an anti-Party clique.  
+  Mao's speech of July 23, 1959; the editors' note describes Peng's 'Letter of Opinion' dated July 14, 1959. In the later plenum speech Mao says 'There emerged the right opportunist anti-party clique' at Lushan. The pages do not say Mao circulated the letter or that the conference voted to purge Peng. The marxists.org text of the Selected Works is a hosting archive, not a Party site.
+- **C045[0]** Tibetans had risen against Party rule in Lhasa on March 10, and Party artillery shelled the city after the Dalai Lama left.  
+  US government record: 'Beginning on March 10 at Lhasa there had occurred a series of events which led to the flight from Lhasa of the Dalai Lama whom the Chinese Communists were about to kidnap and carry off to Peiping'; thousands of Tibetans took the Dalai Lama into protective custody. This is the CIA director's account to the NSC. Artillery shelling of the city is not in the passage read.
 - **C045[1]** Two CIA-trained Tibetans radioed news of his flight, and the agency trained Tibetan fighters at Camp Hale in Colorado from 1958 to 1964.  
   CIA's own page: Tibetan freedom fighters were secretly trained by the CIA at Camp Hale, Colorado. The 1958 to 1964 span is in the page's text; the radio report of the Dalai Lama's flight by two CIA-trained Tibetans was not found (the CIA covert-action PDF returned no matches).
+- **C045[2]** Washington wound the program down as it moved toward the Party in the late 1960s and early 1970s.  
+  US government record: funds for Tibetan operations other than guerrilla support 'have been gradually reduced from over $500,000 yearly before 1969 to $363,000 proposed for FY 1971', and the 40 Committee approved a CIA proposal 'to continue to reduce the forces from 1,800 to 300 over the next 3 years'. The memo does not link the wind-down to the opening to Beijing; that link is the sentence's interpretation.
 - **C046[0]** Famine and a loosened border sent tens of thousands of people from Guangdong into Hong Kong in April and May 1962, and Hong Kong's government returned most of them.  
   FRUS: the delegate of the Republic of China noted 'the recent large influx of Chinese refugees from the mainland into Hong Kong' in the 1962 session. April and May, tens of thousands, and Hong Kong's return of most of them are not in the snippets.
 - **C047[1]** The Party detonated its first device on October 16, 1964, two days after Nikita Khrushchev lost power in Moscow.  
   FRUS summary and the Public Papers text (hosted by UC Santa Barbara's American Presidency Project) both date the first Chinese nuclear explosion to October 16, 1964; the FRUS summary also mentions Khrushchev. The two-day gap after Khrushchev's fall (October 14) is not stated in the text read.
 - **C048[0]** The Party sent engineering, railway and anti-aircraft units to North Vietnam from June 1965 and withdrew them by 1969.  
   FRUS memorandum of a 1965 conversation referring to Chinese railroad and engineering personnel in North Vietnam and proposals about lines of communication. June 1965 as the start and 1969 as the withdrawal are not in the snippets.
+- **C048[1]** Chinese sources put the total who served at about 320,000, with a peak near 170,000 in 1967.  
+  Secondary sources only; no government page found: Alpha History says that between 1965 and 1971 more than 320,000 Chinese troops were deployed in North Vietnam and the peak year was 1967 with around 170,000. The USC page gives the 320,000 figure. Neither attributes the numbers to Chinese sources. A China Quarterly article's footnote cites other estimates (Whiting: 50,000 sent; Vietnamese sources: 20,000), so the figures are contested.
 - **C049[1]** The Party had already imprisoned him from 1949 to 1955 on a false spy charge, and it held him again from 1968 to 1977.  
   Biography: he was twice suddenly arrested on spy charges and put in solitary confinement. The years 1949 to 1955 and 1968 to 1977 are not in the text read; the Library of Congress authority page returned HTTP 403.
 - **C049[2]** He left for the United States in 1980 and later advised American firms on business in China.  
@@ -137,6 +155,8 @@ The note says what the page supports and what is still open.
   FRUS: the Beijing conversation with Zhou Enlai of July 9, 1971 refers to Yahya. The National Security Archive (George Washington University, an independent research institute) page reproduces the 'Blood telegram' from Dacca of March 28, 1971 on the army's actions in East Pakistan. The page text read does not itself state that the flight ran through Yahya's channel.
 - **C053[4]** In 2024 the State Department and several legislatures rejected that reading.  
   CRS: a State Department spokesperson said in March 2025 that Resolution 2758 'puts no limits on any country's sovereign choice to engage substantively with Taiwan' and accused the PRC of 'intentional misuse and mischaracterization'; 'Since 2024, parliaments that have passed motions challenging the PRC's interpretation' include Australia, Belgium, Canada, the Czech Republic, the Netherlands, the UK and the European Parliament. So the legislatures' motions date from 2024, but this CRS text dates the State Department spokesperson's statement to March 2025; check the date of State's earlier statement that the resolution 'does not address the issue of representation of Taiwan'. The European Parliament page returned no text.
+- **C055[4]** In December the city moved the wall to a park and required every writer to register a name and workplace.  
+  Scholarly secondary sources: posters were allowed only in a special place in Yuetan Park, and 'authors have to show ID cards and register their posters beforehand'; the journal article says the Wall was moved from Xidan to the remoter Yuetan Park 'towards the end of 1979'. A requirement to register the writer's workplace was not found.
 - **C056[0]** The photograph ran on front pages across the country during a visit that began with the signing of the Agreement on Cooperation in Science and Technology on January 31.  
   Official treaty record: the Agreement on Cooperation in Science and Technology of January 31, 1979, as amended and extended. Department history: Vice Premier Deng Xiaoping visited, met President Carter and attended a state dinner in 1979. That the photograph ran on front pages is media content not checked here.
 - **C056[2]** It reached its renewal date in August 2023.  
@@ -147,10 +167,16 @@ The note says what the page supports and what is still open.
   Official: the Joint Communique recognized the PRC as the sole legal government of China, effective January 1, 1979, with the US ending diplomatic relations with Taiwan. The one-year notice for the Mutual Defense Treaty was not in the text read (the treaty's Article X is the primary source).
 - **C058[1]** The administration sent Congress a bill that said little about security, and Congress rewrote it.  
   FRUS: a House-Senate conference committee wrote the final version of the 'Taiwan omnibus legislation', and Carter's aides noted that 'Congress has obviously added its own touches'. That the administration's bill said little about security is not in the snippets; the milestone says the Taiwan Relations Act provides arms 'of a defensive character'.
+- **C060[2]** A Wayne County judge gave Ebens and his stepson Michael Nitz three years' probation and fines of $3,000 each.  
+  Michigan Bar Journal: Chief Judge Charles Kaufman 'sentenced the men to three years probation and a fine of $3,000'. DISCREPANCY: the Sixth Circuit opinion says Ebens was placed on probation and 'fined $3,720', and the Civil Rights Commission report gives $3,780, which suggests $3,000 plus costs. Check the figure.
+- **C060[3]** A federal jury convicted Ebens of a civil rights crime in 1984, but an appeals court overturned the verdict, and a second jury acquitted him in 1987.  
+  Michigan Bar Journal: the federal jury 'found Ebens guilty of federal civil rights violations'; he appealed to the Sixth Circuit, where 'a Cincinnati jury found him not guilty'. The Sixth Circuit opinion, decided September 11, 1986, says the judgment could not stand. The years 1984 and 1987 were not matched.
 - **C061[2]** The Reagan administration granted her asylum on April 4, 1983.  
   Media only: the Monitor reports Beijing cut off sports and cultural exchanges for the rest of 1983 over Washington's granting of asylum to Hu Na, and its April 5 digest says the Justice Department announced the asylum decision. The date April 4 and Reagan's role were not found in the text read; a Justice Department or White House record is the primary source.
 - **C062[1]** In 1986 the two governments agreed on Peace Pearl, a program worth about $550 million to fit American radar and fire-control systems to 55 J-8II interceptors.  
   Both name the Peace Pearl program, the F-8 avionics modernization. The year 1986, the value of about $550 million and the 55 J-8II interceptors were not in the snippets.
+- **C062[3]** The Party withdrew from Peace Pearl in 1990 and bought Soviet Su-27 fighters instead.  
+  CRS: the PRC had looked to the United States for aircraft modernization under 'Peace Pearl'; after the Cold War ended the strategic rationale went away; the State Department announced on December 22, 1992 that the Bush administration would close out four suspended Foreign Military Sales cases, including an avionics upgrade for the F-8; and China acquired Su-27 fighters and other Russian systems. DISCREPANCY: the CRS describes a US suspension and a US close-out in 1992, not a Chinese withdrawal in 1990.
 - **C064[0]** State television rebroadcast his interview with a number for citizens to call, and two women reported him within hours.  
   NGO reports: Xiao Bin, a 42-year-old worker in Dalian, 'was arrested on 11 June after he was shown on Chinese national television'. The number to call and the two women who reported him within hours are not in the snippets.
 - **C064[3]** On June 13 the Ministry of Public Security issued a wanted list of 21 student leaders, and state television showed their photographs for days.  
@@ -179,8 +205,12 @@ The note says what the page supports and what is still open.
   CRS: the FY1999 National Defense Authorization Act (P.L. 105-261) was passed in 1998 and moved satellite export licensing back to the State Department's Munitions List; the effective date, March 15, 1999, is likely the source of '1999' in the sentence. The sentence's year should be checked against the Act's date (October 1998).
 - **C076[0]** The freighter had run aground off Queens in June 1993, and ten of its passengers drowned.  
   BIA decision: the Golden Venture, with some 300 passengers and a crew of 13 Indonesian nationals, 'ran aground on a sandbar off the coast of New York' 100 to 200 yards off the Rockaway Peninsula on June 6, 1993. The passage read says the Coast Guard recovered the bodies of four passengers who drowned and three other passengers died later, which is seven, not ten; the commonly cited total of ten is not shown in the text read.
+- **C076[2]** Immigration judges split on such claims until Congress acted in 1996.  
+  Chang: the Board held that implementing the one couple, one child policy 'is not on its face persecutive' even if involuntary sterilization occurs, and the applicant must show it was applied on a protected ground. The Attorney General's 2008 decision cites section 601(a) of the 1996 Act, 'codified at section 101(a)(42)' of the INA, as the change in the legal framework. Neither page documents a split among immigration judges; that part is unchecked.
 - **C079[0]** A B-2 bomber had struck the People's Republic's embassy in Belgrade with guided bombs during NATO's war over Kosovo, and the strike killed three Chinese journalists.  
   State Department: 'on 7 May 1999 one of the fleet of B-2 bombers from Whiteman AFB' dropped five 2,000-pound GPS-guided bombs on the building targeted, which proved to be the embassy. CRS: the payment was to the families of 'the 3 killed and to the 27 injured'. That the dead were journalists is not stated in the text read; a helper's lead, unverified: a CRS report calls them journalists, an earlier one embassy employees.
+- **C080[3]** Falun Gong practitioners sued Cisco in 2011 and alleged that the company built features into Golden Shield to identify and track them.  
+  Court record: the Ninth Circuit opinion covers an action by Falun Gong practitioners against Cisco and two executives under the Alien Tort Statute and Torture Victim Protection Act; its table of contents includes 'Cisco's Contributions to the Golden Shield'; the district court number is 5:11-cv-02449 (N.D. Cal.), which indicates a 2011 filing. The allegation that Cisco built features to identify and track practitioners was not read in the snippets.
 - **C083[1]** The Party held the twenty-four crew members for eleven days and released them after Washington delivered a letter that said sorry twice, once for his death and once for …  
   The letter says 'We are very sorry the entering of China's airspace and the landing did not have verbal clearance' and that the President and Secretary Powell 'have expressed their sincere regret over your missing pilot'. The crew size of 24 and the eleven days of detention are not in the letter; the Navy History page failed TLS verification.
 - **C083[3]** The Party returned the aircraft in pieces aboard a Russian cargo plane that July.  
@@ -201,10 +231,24 @@ The note says what the page supports and what is still open.
   Media only: Yahoo settled with the families a week after a congressional hearing that scrutinized its role in Shi Tao's jailing; Lantos is named. The 'moral pygmies' quote was not in the snippets; the eWeek page returned HTTP 403.
 - **C088[1]** The House voted 398 to 15 for a resolution that the sale would threaten national security, and Congress wrote a delay into the energy bill.  
   House resolution text: the sense of the House that 'a Chinese state-owned energy company exercising control of critical United States energy infrastructure' could threaten national security. The vote count 398 to 15 and the delay written into the energy bill were not found in the snippets (the CRS chronology lists H.Res. 344).
+- **C089[1]** The Party said nothing for twelve days.  
+  CRS: the test was on January 11, 2007; China 'did not give advance warnings and its Foreign Ministry did not issue a public statement until January 23', twelve days later. Hoover (a think tank): the Foreign Ministry at first 'continued to bob and weave... refusing to confirm or deny the test', so 'said nothing' is loose; it deflected questions before confirming. The PRC foreign ministry page for January 23 returned a maintenance notice.
+- **C090[0]** Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling.  
+  NZ government document: Fonterra 'bought a 43 per cent stake' in Sanlu in 2005; in 2008 Sanlu 'was identified as the main culprit' in the melamine scandal, was prosecuted and bankrupted. Complaints from late 2007 and continued sales were not found; the China Daily page returned nothing matching and the china.org.cn page failed TLS verification.
+- **C090[3]** A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 milli…  
+  Trade press: more than 150 brands of wet pet food were recalled from March 2007, and Menu Foods alone recalled '60 million cans and pouches'; the foods were tainted with melamine and cyanuric acid. The two mainland suppliers, wheat gluten and rice protein, and the pet deaths across the United States were not on the page; the FDA page returned HTTP 403.
+- **C094[2]** Former officials said in 2013 that the intruders had reached Google's records of American surveillance orders, which could reveal which of the Party's agents the FBI was…  
+  Two trade-press reports of a Washington Post story, no government record: the Aurora intruders accessed a Google database 'which contained data about court orders that authorized surveillance of certain individuals, presumably included among them Chinese spies'; the repository also includes classified FISA orders. The year 2013 and the FBI link were not in the snippets. The Washington Post article itself timed out earlier.
 - **C095[3]** Liu died in custody of liver cancer on July 13, 2017.  
   Nobel Foundation: Liu Xiaobo, born 28 December 1955, died 13 July 2017 in Shenyang. The cause of death, liver cancer, and death in custody were not in the snippet read.
+- **C098[0]** In April 2012 the Philippine navy had found mainland fishing boats inside Scarborough Shoal, and maritime surveillance ships of the People's Republic moved in to block a…  
+  CRS: 'China and the Philippines engaged in a prolonged standoff in 2012 over a dispute about which nation has the right to police Scarborough Shoal', which lies inside the Philippine EEZ and China's nine-dash line. The April 2012 detail (Philippine navy finding fishing boats, Chinese surveillance ships blocking an arrest) is not in the snippets; a later CRS report adds that China has controlled the shoal since the 2012 standoff.
 - **C099[1]** A court in Urumqi sentenced him to life in prison for separatism in September 2014, and seven of his students received prison terms.  
   State statement on the conviction and sentencing of Ilham Tohti; USCIRF lists the sentence as life imprisonment, with separatism as the reason, in 2014. The Urumqi court, the month, and the prison terms for seven students were not matched in the snippets.
+- **C099[2]** He won the Václav Havel Prize and the Sakharov Prize in 2019.  
+  This link rests on a web-search result, not on a page the runner read: the runner got no text from the European Parliament pages (HTTP 202). The search result titled the press release 'Ilham Tohti awarded the 2019 Sakharov Prize' and reported that the Parliament announced the prize on 24 October 2019. The Vaclav Havel Prize (Council of Europe) was not confirmed; the Council of Europe page returned HTTP 403.
+- **C100[1]** Security firms reported fewer commercial intrusions from mainland groups in the months after.  
+  Media report of company data: FireEye's June 2016 report found 'a significant decrease since early 2013 in the number of commercial attacks from China' across 72 groups, with a 'noticeable decline' beginning in mid-2014, and the article notes the September 2015 Obama-Xi agreement. DISCREPANCY in timing: the decline FireEye describes begins in mid-2014, before the September 2015 agreement, so 'in the months after' fits the reporting only loosely. The FireEye report itself was not read.
 - **C101[3]** Mo pleaded guilty on January 27, 2016, and received 36 months in October.  
   Court filing: the plea agreement of Mo Hailong (Robert Mo) with the United States describes the inbred seed of Pioneer and Monsanto as trade secrets. FBI story: Mo, 46, a legal permanent resident, was sentenced in Iowa the previous month. The plea date, January 27, 2016, and the 36-month term were not in the snippets.
 - **C102[2]** Broidy pleaded guilty in 2020 to a related charge and received a pardon in January 2021.  
@@ -217,6 +261,10 @@ The note says what the page supports and what is still open.
   Court filing: the affidavit describes Lee's notebook with handwritten operational notes from asset meetings and his transit through Honolulu. The August 2012 date of the hotel-room search, the 2007 departure and 'true names' are not in the snippets; the DOJ press release returned no text.
 - **C104[2]** The FBI arrested Lee in January 2018.  
   Court filing: complaint and arrest-warrant affidavit filed 01/13/18 in the Eastern District of Virginia. The arrest date, January 15, 2018 at JFK, was not matched.
+- **C105[0]** ZTE had pleaded guilty in 2017 to shipping American technology to Iran and North Korea and had paid $1.19 billion.  
+  BIS notice: under the March 23, 2017 order ZTE agreed to 'a record-high combined civil and criminal penalty of $1.19 billion' for shipping to Iran and North Korea, and entered a plea agreement with the Justice Department; USCC: ZTE 'pled guilty'. DISCREPANCY: $300 million of the $661 million civil penalty was suspended, and USCC says ZTE agreed to pay $892 million in forfeiture and fines, so 'had paid $1.19 billion' overstates what was actually paid.
+- **C105[3]** In June the administration settled for a $1 billion fine, $400 million in escrow and new leadership, and a Senate attempt to restore the ban died in conference.  
+  BIS: on June 8, 2018 the Commerce undersecretary issued a Superseding Order under which ZTE would pay $1,000,000,000 to Commerce and place $400,000,000 in escrow at a US bank; the settlement agreement requires ZTE to replace its entire boards of directors and to terminate senior leadership at senior vice president level and above. The Senate amendment that died in conference was not checked (the Rubio press release failed DNS).
 - **C106[1]** The Party's retaliatory tariffs that July had hit soybeans and other farm goods, and analysts found them aimed at counties that had voted for the President in 2016.  
   Academic studies (secondary): the 2018 retaliatory tariffs fell on US exports from politically competitive counties and were aimed at Republican-leaning places (NBER 25638: tariffs 'favored sectors located in politically competitive counties, but retaliatory tariffs offset the benefits'; NBER 26434: Republican House candidates lost vote share). That the retaliation hit soybeans in July 2018 and targeted counties that voted for Trump in 2016 is the studies' general finding, not a quotation checked word by word.
 - **C107[1]** The Party detained Michael Spavor the same week and held both men for 1,019 days.  
@@ -227,6 +275,8 @@ The note says what the page supports and what is still open.
   ONDCP report: the 'landmark agreement between the two Presidents at the Woodside Summit in November 2023' restarted bilateral counternarcotics cooperation and created the Counternarcotics Working Group. The State page records PRC announcements on scheduling precursor chemicals. Neither snippet says in so many words that Beijing agreed in November 2023 to curb precursor exports. US government account.
 - **C109[0]** Prosecutors said Jin and others fabricated evidence that the meetings broke the terms of service, created fake accounts in dissidents' names and passed users' names and …  
   Court filing: the affidavit says Jin, Huang and co-conspirators 'fabricated evidence of TOS violations to provide pretextual justification for terminating the meetings, as well as certain participants' accounts', and describes the meetings commemorating the Tiananmen Square massacre. The fake accounts and the passing of users' names and email addresses to PRC officials were not in the snippets; the DOJ press release returned no text. The filing does not name the company; it calls it Company-1.
+- **C109[2]** The Justice Department charged Jin on December 18, 2020.  
+  Company's own statement: Zoom, the unnamed 'Company-1' in the filing, published its response to the Justice Department complaint on December 18, 2020 and says it terminated the China-based former employee charged. The court filing is docket 20-MJ-1103 in the Eastern District of New York. The Justice Department press release returned no text, so the charging date is inferred from the company's post.
 - **C110[2]** On March 17 the Party expelled about a dozen American reporters from the New York Times, the Journal and the Washington Post and barred them from working in Hong Kong.  
   PRC foreign ministry statement (the PRC's own account): it requires the China-based branches of the New York Times, the Wall Street Journal and the Washington Post to hand back press cards within ten days and bars their staff from working as journalists in the PRC 'including its Hong Kong and Macao Special Administrative Regions'. The March 17 date and the 'about a dozen' count were not in the snippet; the page's URL carries a 2024 stamp, so the original 2020 date is unconfirmed. The State statement found (of February 19, 2020) is about the three Wall Street Journal correspondents and does not cover this sentence.
 - **C113[2]** On December 1 the WTA's chief executive Steve Simon suspended all tournaments on the mainland, a decision that cost the tour its richest market.  
@@ -237,125 +287,63 @@ The note says what the page supports and what is still open.
   CRS: 'In 2021, Evergrande was unable to repay $305 billion (2% of China's GDP) it owed to PRC and foreign creditors', not counting off-book liabilities. The page does not say the default was on dollar bonds or in December; a USCC chapter that was also read says many developers defaulted on dollar-denominated bonds without naming Evergrande's month.
 - **C115[2]** In 2022 buyers in scores of cities stopped paying mortgages on unfinished apartments.  
   USCC: describes the presale system in which families took mortgages on yet-to-be-built flats and developers' defaults left presold units unfinished. A footnote cites Bloomberg News, 'Sweeping Mortgage Boycott Changes the Face of Dissent in China' (August 2, 2022). The body text read does not state the 2022 boycott or 'scores of cities'.
+- **C115[3]** The company sought protection in a New York bankruptcy court in August 2023, and police detained its founder the next month.  
+  Company filing: Hui Ka Yan 'has been subject to mandatory measures in accordance with the law due to suspicion of illegal crimes' and trading was suspended on 28 September 2023. Media: Bloomberg reported he was taken away by police and put under 'residential surveillance', a measure that 'falls short of formal detention or arrest', so 'detained' is loose. The New York bankruptcy filing in August 2023 was not confirmed (the DLA Piper page returned HTTP 429).
 - **C117[0]** Fufeng Group of Shandong had bought about 370 acres twelve miles from the base, which hosts drone and space communications units.  
   Congressional hearing statement: 'the Fufeng Group's acquisition of 370 acres of land to build a wet corn mill plant near the Grand Forks Air Force Base in North Dakota'. Shandong, the twelve-mile distance and the drone and space-communications units were not in the snippets.
 - **C117[1]** CFIUS had concluded in December 2022 that it lacked jurisdiction over the purchase.  
   Senate hearing transcript: a Chinese-linked company tried in 2022 to build a corn milling plant near Grand Forks Air Force Base and 'Treasury later determined that they did not have the proper jurisdiction to act in this case' (Treasury chairs CFIUS). This is a statement made at a hearing. December 2022 is not on the page.
 - **C117[3]** Treasury later brought land near the base under review, and a rule of November 2024 added 59 more installations to the list.  
   Federal Register: the 2023 proposed rule's list includes Grand Forks Air Force Base among installations; the November 2024 final rule's background says the July 19, 2024 proposal would 'add 59 military installations to the appendix'. The page text read does not itself state the final count of 59 or that land near the base was 'brought under review'.
+- **C119[0]** DeepSeek had released its R1 reasoning model on January 20, 2025, and its app soon topped the American download charts.  
+  Company's own page: 'News January 20, 2025: DeepSeek-R1 Release'. Reuters, via the Korea paper: by Monday, January 27, the assistant 'had overtaken U.S. rival ChatGPT in do[wnloads]' (the snippet is cut off), which supports the app rising on US charts but does not itself say it topped the American download chart.
+- **C119[1]** On January 27 Nvidia lost about $589 billion in market value, the largest one-day loss for any company in American market history.  
+  Reuters via the Korea paper (media only): the selloff evaporated '$593 billion of the chipmaker's market value, a record one-day loss for a Wall Street company'. DISCREPANCY in the figure: Reuters (LSEG data) says $593 billion; the $589 billion in the sentence matches Bloomberg-based reports (seen only in search summaries). The 'about' covers the gap, but the sources differ.
+- **C120[3]** The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems.  
+  Statute: the enrolled bill's table of contents lists 'Sec. 1692. Prohibition on access to Department of Defense cloud-based resources by certain individuals', and the public law header reads 'PUBLIC LAW 119-60, DEC. 18, 2025'. The operative text naming the People's Republic of China, Russia, Iran and North Korea was not in the snippets read; a CRS note on the same law lists those four as covered nations for a separate provision on AI systems.
 
-## Checked, not settled (48)
+## Checked, not settled (10)
 
 A page was tried (blocked, empty, wrong content, or the figure is in a chart or a scan). No link was added. Hosts that refused the runner: ftc.gov, hhs.gov, usda.gov, gao.gov, pnas.org, cbo.gov, spaceforce.mil, war.gov, congress.gov, news.uscg.mil, aps.org, mac.gov.tw, swift.com, sec.gov, spacenews.com, and justice.gov pages that return empty text. TLS failures (not bypassed): npc.gov.cn, english.scio.gov.cn, kinmen.gov.tw, eng.mod.gov.cn. Archive.org copies were rate limited (HTTP 429).
 
-- **C002[2]** The merchants surrendered him, a Qing court convicted him, and officials executed him by strangulation in October 1821.  
-  MIT Visualizing Cultures essay (university site) discusses the Terranova incident of 1821 but neither 'strangled' nor 'October' was in the text read; the USC US-China Exchange page failed TLS verification. The execution by strangulation in October 1821 is unchecked.
-- **C015[2]** Soviet Russia's Karakhan Manifesto of July 1919 offered to give up Tsarist privileges in China, and the offer reached Chinese readers in March 1920.  
-  Only a Britannica page was offered and it returned HTTP 403. The Karakhan Manifesto's July 1919 date and its reaching Chinese readers in March 1920 are unchecked.
-- **C016[1]** The Party joined the Comintern as its Chinese section in 1922 and took its directives.  
-  Britannica returned HTTP 403; the only readable page was Wikipedia's article on the Second CCP Congress, which is not used as a source here. It mentions a resolution on participation in the Comintern (1922). Needs a primary document (the Congress's resolutions) or a scholarly source.
-- **C017[2]** Chiang Kai-shek struck in Shanghai on April 12, 1927, and the purge that followed killed thousands of Communists and labor activists.  
-  The State Department milestone on the Chinese revolution covers the 1926-27 Northern Expedition and the Nationalist-Communist split but has no 'purge' or April 12 date; Britannica returned HTTP 403. The April 12, 1927 date and 'thousands killed' are unchecked.
-- **C019[0]** The Party arranged Snow's passage into its base in the summer of 1936, and he stayed about four months.  
-  The UMKC finding aid for Edgar Snow returned no text to the runner (HTTP 202) and Britannica returned HTTP 403. A helper agent's lead, unverified: UMKC says five months and Snow reached Bao'an on July 13, 1936, so 'about four months' needs checking against his own account.
-- **C019[1]** Red Star Over China appeared in London in 1937 and in New York in January 1938, and a Chinese translation drew young volunteers to Yan'an.  
-  The UMKC archival-object pages for the London (Gollancz) and New York (Random House) editions returned no text to the runner (HTTP 202). The 1937 and January 1938 publication dates are unchecked.
-- **C026[2]** Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed.  
-  The Army Center of Military History page failed DNS on the runner and Britannica returned HTTP 403. The August 9, 1945 Soviet entry into Manchuria is unchecked here.
-- **C027[2]** Jaffe paid a fine of $2,500, and no one went to prison.  
-  The FBI history page on the Second World War and Cold War does not mention Amerasia, Jaffe or a fine. The $2,500 fine and the absence of prison terms are unchecked.
 - **C034[2]** By 1956 the Party had brought private industry under joint state ownership, and Rong later founded CITIC in 1979 to court foreign capital.  
-  Only a Britannica page was offered and it returned HTTP 403. The 1956 joint ownership and Rong Yiren's founding of CITIC in 1979 are unchecked.
+  The CITIC pages returned HTTP 521 and the china.org.cn page failed TLS verification (not bypassed). The 1956 joint ownership and the 1979 founding of CITIC remain unchecked.
 - **C037[2]** The dispute over voluntary repatriation kept the war going for more than a year, and about 14,000 of the prisoners reached Taiwan in January 1954.  
-  The Army Center of Military History pages returned HTTP 403 and a DNS failure. The length of the repatriation dispute and the January 1954 arrival of about 14,000 prisoners in Taiwan are unchecked.
+  FRUS 1952-54 vol. XV part 1 doc. 453 discusses Article 109 of the prisoner-of-war convention; it does not mention 14,000 prisoners going to Taiwan.
 - **C038[0]** Captors had subjected American prisoners to daily indoctrination and pressure to inform on one another, and some prisoners signed confessions.  
   The National Archives article did not contain indoctrination, brainwash or confess in the text read; the Army history page returned HTTP 403.
 - **C042[1]** On June 8 the People's Daily turned on the critics, and the Anti-Rightist Campaign labeled more than 550,000 people rightists.  
-  The Library of Congress authority page and Britannica both returned HTTP 403. The June 8 People's Daily editorial and the figure of more than 550,000 labeled rightists are unchecked.
-- **C044[0]** Mao circulated the letter and attacked Peng on July 23, and the conference purged him as the leader of an anti-Party clique.  
-  The CIA reading-room PDF of leader profiles did not contain Peng Te-huai, Lushan or 'anti-party clique' in the text read; Britannica returned HTTP 403. The July 23 date and the purge are unchecked.
+  The Wilson Center Digital Archive page failed DNS on the runner. The June 8 People's Daily editorial and the figure of more than 550,000 rightists remain unchecked. A search summary said Mao told a Polish delegation about 450,000 had been exposed.
 - **C044[1]** The campaign against right opportunism that followed punished cadres who reported shortfalls, and grain procurement continued at inflated targets.  
   Both offered pages were Britannica and returned HTTP 403.
 - **C044[2]** Scholarly estimates of deaths in the famine of 1959 to 1961 range from about fifteen million to forty-five million.  
   Both offered pages were Britannica and returned HTTP 403. The range of famine death estimates needs a scholarly source.
-- **C045[0]** Tibetans had risen against Party rule in Lhasa on March 10, and Party artillery shelled the city after the Dalai Lama left.  
-  The CIA reading-room document on covert action in the high altitudes returned no matches for Lhasa, Dalai Lama, March 1959 or artillery (it is probably a scanned image); Britannica returned HTTP 403.
-- **C045[2]** Washington wound the program down as it moved toward the Party in the late 1960s and early 1970s.  
-  The CIA covert-action PDF returned no matches for 1969, 1970, termination or phase; it is probably a scanned image the extractor could not read.
-- **C050[0]** The Party had labeled Lin a rightist at Peking University in 1957 and arrested her in 1960.  
-  The CECC hearing transcript offered for Lin Zhao did not mention Lin Zhao, Peking University, rightist, 1960 or 1968. Her 1957 labeling and 1960 arrest are unchecked.
-- **C052[3]** The State Department recalled Blood that June.  
-  The National Security Archive page does not contain 'recalled' or 'June 1971'; Blood's recall that June is unchecked.
-- **C055[2]** In March 1979 Wei warned that Deng was becoming a new dictator, and police arrested him on March 29.  
-  Britannica returned HTTP 403 and the CECC hearing transcript did not contain March 29, 1979. Wei Jingsheng's warning about Deng and his arrest date are unchecked.
-- **C055[3]** A court sentenced him to fifteen years in October.  
-  Both offered pages were Britannica and returned HTTP 403. Wei Jingsheng's fifteen-year sentence and its October date are unchecked.
-- **C055[4]** In December the city moved the wall to a park and required every writer to register a name and workplace.  
-  The FRUS document offered (1977-80 Vol. XIII, Document 279) mentions the Democracy Wall and Wei Jingsheng only in a footnote; the December move to a park and the registration rule were not in the text read; Britannica returned HTTP 403.
-- **C055[5]** In 1980 the National People's Congress struck the right to write big-character posters from the constitution.  
-  Both offered pages were Britannica and returned HTTP 403. The 1980 constitutional change on big-character posters is unchecked; the PRC constitution's text or a National People's Congress document is the primary source.
-- **C060[0]** Chin was Chinese American, and witnesses said Ronald Ebens blamed him for auto jobs lost to Japanese imports.  
-  The CourtListener opinion page returned no text (HTTP 202) and the DOJ blog page returned an empty page; neither mentioned Vincent Chin or Ebens in the text read.
-- **C060[2]** A Wayne County judge gave Ebens and his stepson Michael Nitz three years' probation and fines of $3,000 each.  
-  The CourtListener and DOJ pages returned no text. A helper's lead, unverified: the Sixth Circuit opinion gives the fine as $3,720, not $3,000.
-- **C060[3]** A federal jury convicted Ebens of a civil rights crime in 1984, but an appeals court overturned the verdict, and a second jury acquitted him in 1987.  
-  The CourtListener and DOJ pages returned no text. The 1984 conviction, the reversal and the 1987 acquittal are unchecked.
-- **C062[3]** The Party withdrew from Peace Pearl in 1990 and bought Soviet Su-27 fighters instead.  
-  The CRS and GAO documents name Peace Pearl and, separately, the Su-27, but the snippets do not connect China's 1990 withdrawal from Peace Pearl to buying Su-27s. Unchecked.
 - **C070[1]** He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991.  
-  Only Britannica was offered and it returned HTTP 403. Wu's covert filming and the 1991 60 Minutes broadcast are unchecked.
-- **C081[3]** In 2006 the government and five news organizations paid him about $1.6 million to settle his privacy suit.  
-  The CourtListener opinion page returned no text (HTTP 202). The 2006 settlement of about $1.6 million is unchecked.
-- **C089[1]** The Party said nothing for twelve days.  
-  The NASA newsletter did not contain '23 January' or Chinese government confirmation in the text read. The twelve days of silence is unchecked here.
-- **C089[3]** The Party formed the Strategic Support Force in 2015 to fight in space and cyberspace, and in 2024 it split that force into separate aerospace, cyber and information arm…  
-  The NDU Press and Defense Department report pages returned HTTP 403. The 2015 formation of the Strategic Support Force and its 2024 split are unchecked.
-- **C094[2]** Former officials said in 2013 that the intruders had reached Google's records of American surveillance orders, which could reveal which of the Party's agents the FBI was…  
-  The Washington Post article timed out on the runner. The 2013 claim that the intruders reached Google's records of surveillance orders is media-only and unchecked.
-- **C098[0]** In April 2012 the Philippine navy had found mainland fishing boats inside Scarborough Shoal, and maritime surveillance ships of the People's Republic moved in to block a…  
-  The CRS report on the South China Sea offered for the April 2012 Scarborough Shoal standoff did not contain the event in the snippets read.
+  The CECC roundtable testimony of Harry Wu (2005) was read for '60 Minutes', CBS and filming and none appeared; it mentions a 1991 State Council ban on forced-labor exports. Wu's covert filming and the 1991 broadcast remain unchecked.
 - **C098[1]** American diplomats brokered what they described as a mutual withdrawal in June.  
-  The CRS report snippets did not show the US-brokered mutual withdrawal in June 2012, and the congress.gov testimony page timed out. A State Department source was not found.
-- **C099[2]** He won the Václav Havel Prize and the Sakharov Prize in 2019.  
-  The European Parliament page returned no text and the Council of Europe page returned HTTP 403. The 2019 Vaclav Havel and Sakharov prizes are unchecked.
-- **C100[2]** By 2018 the Party had placed antiship and antiaircraft missiles on Fiery Cross, Subi and Mischief reefs.  
-  Both CRS In Focus PDFs on the South China Sea did not mention Fiery Cross, Subi, Mischief or missiles in the text read.
-- **C100[3]** In December 2018 the Justice Department charged two hackers who worked with the Ministry of State Security in the APT10 campaign against American companies.  
-  The DOJ press page returned an empty page to the runner. The December 2018 APT10 indictment is unchecked here; a court record or FBI page may serve.
-- **C103[4]** Xu had also directed Ji Chaoqun, a student in Chicago who enlisted in the Army Reserve in 2016, and a jury convicted Ji in September 2022.  
-  Both DOJ press-release pages returned no text to the runner. Ji Chaoqun's Army Reserve enlistment in 2016 and his September 2022 conviction are unchecked.
-- **C104[3]** He pleaded guilty to conspiracy to deliver national defense information and received 19 years in November 2019.  
-  Both DOJ press-release pages returned no text. The guilty plea (May 2019) and the 19-year sentence (November 2019) are unchecked.
-- **C105[0]** ZTE had pleaded guilty in 2017 to shipping American technology to Iran and North Korea and had paid $1.19 billion.  
-  The Commerce page returned HTTP 403 and the DOJ release returned no text. ZTE's 2017 guilty plea and $1.19 billion payment are unchecked.
-- **C105[3]** In June the administration settled for a $1 billion fine, $400 million in escrow and new leadership, and a Senate attempt to restore the ban died in conference.  
-  Both Commerce pages returned HTTP 403. The June 2018 settlement terms and the fate of the Senate amendment are unchecked.
+  The CRS reports read mention the 2012 standoff but not the June 2012 mutual withdrawal brokered by the United States; the Inquirer page returned HTTP 403. A State Department source was not found.
 - **C106[2]** Soybean exports to the mainland fell from about $12 billion in 2017 to about $3 billion in 2018.  
-  The CRS report read (R45310) gives the $12 billion aid package and describes targeted export values but not the soybean figures of about $12 billion in 2017 and $3 billion in 2018 in the snippets; the other CRS page returned HTTP 403.
-- **C107[3]** Meng reached a deferred prosecution agreement with the Justice Department on September 24, 2021.  
-  Both Justice Department pages (the deferred prosecution agreement PDF and the press release) returned no text to the runner. Meng's September 24, 2021 agreement is unchecked.
+  The two USITC pages returned HTTP 403. The USDA Economic Research Service report read did not contain the figures $12.2 billion or $3.1 billion. The soybean export values for 2017 and 2018 remain unchecked.
 - **C108[3]** Deaths from synthetic opioids in the United States passed 70,000 a year in 2021 and 2022.  
-  Both CDC pages (the NCHS data brief PDFs) returned HTTP 403. The 70,000-a-year figure for 2021 and 2022 is unchecked.
-- **C109[2]** The Justice Department charged Jin on December 18, 2020.  
-  The Justice Department and FBI press-release pages returned no text, so the December 18, 2020 charging date is unchecked.
-- **C112[1]** The Pentagon estimated that the Party's arsenal passed 600 operational warheads by mid-2024 and would exceed 1,000 by 2030.  
-  Both Defense Department pages (the 2024 China Military Power Report and its fact sheet) returned HTTP 403 to the runner. The 600-warhead and 1,000-by-2030 figures are unchecked.
-- **C115[3]** The company sought protection in a New York bankruptcy court in August 2023, and police detained its founder the next month.  
-  Neither the CRS In Focus nor the USCC chapter mentions the Chapter 15 filing in New York in August 2023 or the September 2023 detention of Hui Ka Yan.
-- **C118[2]** In May state television accused the expert network Capvision of helping foreign spies.  
-  The House hearing transcript read says Chinese security forces raided and imprisoned local staff at Capvision, Bain and Mintz; it does not mention the May state television report or the foreign-spies accusation.
+  Both CDC pages returned HTTP 403 and the NIDA overdose-death-rates page returned no extractable text (HTTP 202). The figures for synthetic opioid deaths in 2021 and 2022 remain unchecked.
 
-## Links that are not government or court pages (40)
+## Links that are not government or court pages (71)
 
 Each entry has at least one link that is not a government or court page: a company, NGO, think tank, news agency, preprint, translator, reference work or archive. Where a government page would be better, say so in review; the label on the link says what the source is.
 
+- **C002[2]** Foster Rhea Dulles, The Old China Trade, chapter 9 (1930 book; secondary); Protection of American Citizens Abroad: Extraterritoriality (reference encyclopedia; secondary)
 - **C003[0]** Library of Congress finding aid: Russell & Co., Guangzhou, records; Connecticut College exhibit essay: Delano's Dealings (secondary)
 - **C008[0]** Yale News: first Chinese student to graduate from an American university; Connecticut Humanities: Yung Wing's Dream, the Chinese Educational Mission
 - **C008[2]** Connecticut Humanities: Yung Wing's Dream
 - **C014[0]** University of Hawaii at Manoa: Sun Yat-sen handout (Chinese Studies)
+- **C015[2]** Journal of Asian Studies: The Soviet Offer to China of 1919 (Cambridge; secondary); FRUS 1922 vol. I, doc. 775: State Department memorandum on Soviet declarations and notes to China; Sino-Soviet relations: the first phase, 1917-1920 (ANU Press; secondary)
+- **C016[2]** Twenty-First Century (Chinese University of Hong Kong): article quoting Chen Duxiu's report to the Comintern of June 30, 1922 (secondary)
+- **C017[2]** Hoover Institution: Chiang Chooses His Enemies (think tank; secondary); The 12 April Coup of 1927: Actors, Motives, Consequences (European Research, 2021; secondary)
+- **C019[0]** Edgar Snow, Interviews With Mao Tse-tung (his own account, via marxists.org); Season of High Adventure: Edgar Snow in China (UC Press; secondary)
 - **C022[0]** Independent Chinese PEN Center: Wang Shiwei (NGO, secondary)
 - **C022[1]** Independent Chinese PEN Center: Wang Shiwei (NGO, secondary)
 - **C022[2]** Aisixiang essay by Fu Guoyong, "Pursuing humanity: rereading Wang Shiwei" (Chinese essay site, secondary)
+- **C027[2]** The Strange Case of Amerasia (Time, 1950; media only; hosted on whittakerchambers.org); FBI Files on the Amerasia Affair: guide to the microfilm edition (ProQuest; commercial publisher)
 - **C031[1]** Truman Library: photograph of John Paton Davies after dismissal by Secretary Dulles; ADST oral history: The State Department Under the Red Scare (secondary)
 - **C031[2]** Service v. Dulles, 354 U.S. 363 (1957), Cornell Legal Information Institute
 - **C033[1]** National Archives blog: Blue Star Turned to Gold (the loss of Ens. Jesse L. Brown)
@@ -363,7 +351,12 @@ Each entry has at least one link that is not a government or court page: a compa
 - **C035[2]** Wilson Center, Cold War International History Project Bulletin 11 (1998): new evidence on the allegations; Wilson Center blog: Soviet, Chinese and North Korean false allegations of biological weapons use
 - **C040[0]** Caltech Library exhibit: Remembering JPL co-founder Tsien
 - **C040[1]** Caltech Aerospace: Qian Xuesen (Tsien Hsue-Shen)
+- **C048[1]** Alpha History: Chinese and Soviet involvement in Vietnam (educational site; secondary); USC Scalar project: China's involvement in the war, 1964-1969 (university student project; secondary)
 - **C049[0]** Wilson Center: Sidney Rittenberg, expert biography
+- **C050[0]** Independent Chinese PEN Center: Case No. 14 (1960), Lin Zhao (NGO); China Unofficial Archives: Lin Zhao (NGO archive)
+- **C055[2]** The Chinese democracy movement of 1978-1981: Beijing, March 1979 (Beijing Spring site, University of Vienna)
+- **C055[3]** Human Rights Watch: Wei Jingsheng released (1997; NGO); Independent Chinese PEN Center: Case No. 33 (1979), Wei Jingsheng (NGO)
+- **C055[4]** The Democracy Wall (Beijing Spring site, University of Vienna); Opletal, The 1978-1981 Democracy Wall Movement (Journal of the European Association for Chinese Studies, 2021)
 - **C061[2]** Christian Science Monitor, April 8, 1983 (media only); Christian Science Monitor, April 5, 1983 wire digest (media only)
 - **C063[0]** ADST oral history: A Dissident for Dinner, George H. W. Bush's ill-fated banquet in China (secondary)
 - **C064[0]** Amnesty International, China: Preliminary report on repression after 4 June 1989 (ASA 17/09/90); Human Rights Watch / Asia Watch: Detained in China and Tibet, update
@@ -376,6 +369,7 @@ Each entry has at least one link that is not a government or court page: a compa
 - **C069[1]** Human Rights Watch/Asia: China, no progress on human rights (May 4, 1994); Amnesty International: Wei Jingsheng held in secret for 16 months (August 4, 1995)
 - **C078[1]** State Department 1998 Country Report on Human Rights Practices: China; Human Rights Watch chronology: China, Hong Kong, Tibet (April-June 1998)
 - **C078[3]** State Department 1998 Country Report on Human Rights Practices: China; Human Rights Watch: Nipped in the Bud, the suppression of the China Democracy Party (2000)
+- **C081[3]** Reporters Committee for Freedom of the Press: Settlement reached in Lee case (non-profit); The Seattle Times: U.S., 5 news organizations settle Wen Ho Lee's lawsuit (June 3, 2006; media only)
 - **C082[3]** Acemoglu, Autor, Dorn, Hanson and Price, Import Competition and the Great US Employment Sag of the 2000s (MIT copy); NBER working paper 21906 (same study)
 - **C085[0]** Yanzhong Huang, The SARS Epidemic and Its Aftermath in China: A Political Perspective (National Academies Press, via NCBI Bookshelf)
 - **C085[1]** Yanzhong Huang, The SARS Epidemic and Its Aftermath in China (NAP via NCBI Bookshelf)
@@ -385,35 +379,33 @@ Each entry has at least one link that is not a government or court page: a compa
 - **C086[2]** The Register: Employee fired for probing bad guys awarded $4.7m (media only); Computerworld: Six months later, Sandia back-hacker still waits for his $4.7M (media only)
 - **C087[1]** CECC: Chinese authorities release journalist and democracy advocate Shi Tao early; Dui Hua Foundation: April 2004, exposing Yahoo!'s role in the crackdown on journalist Shi Tao (NGO)
 - **C087[2]** The Register: Yahoo settles with jailed Chinese journalists (media only)
+- **C089[1]** CRS report RS22652: China's anti-satellite weapon test (April 23, 2007); China Leadership Monitor No. 20: Rogue Warriors? A Puzzled Look at the Chinese ASAT Test (Hoover Institution; think tank)
+- **C089[3]** John Costello, testimony to the US-China Economic and Security Review Commission, February 15, 2018; CNA PLA Update, April 30, 2024: PLA creates Aerospace, Cyber, and Information Support Forces (think tank)
+- **C090[3]** dvm360 (veterinary trade media): Tentative settlement reached in pet-food lawsuits (April 3, 2008; media only)
+- **C094[2]** SC Media: Google hackers wanted to know which Chinese intel operatives were being watched (trade press; media only); Security Affairs: Google data breach, company's surveillance database hacked (media only)
+- **C100[1]** MIT Technology Review: The decline in Chinese cyberattacks, the story behind the numbers (media only; reports FireEye data)
+- **C103[4]** Docket entry of September 26, 2022, United States v. Ji Chaoqun, No. 1:18-cr-00611 (N.D. Ill.; CourtListener RECAP copy); Military Times: Ex-Army reservist convicted of illegally acting as Chinese agent (September 27, 2022; media only)
+- **C104[1]** NPR, May 21, 2017: efforts in China to dismantle CIA operations (interview with Mark Mazzetti of the New York Times; media only); TheJournal.ie, May 22, 2017: China killed or jailed up to 20 US spies in two years (media only)
+- **C104[3]** NBC News: Former CIA officer sentenced to 19 years for conspiring with Chinese spies (November 2019; media only); KPBS/NPR: Ex-CIA officer sentenced to 19 years for conspiracy to spy for China (November 22, 2019; media only)
 - **C106[1]** Fajgelbaum, Goldberg, Kennedy and Khandelwal, The Return to Protectionism (NBER working paper 25638); Blanchard, Bown and Chor, Did Trump's trade war impact the 2018 election? (NBER working paper 26434)
+- **C107[3]** Radio-Canada International, September 24, 2021: B.C. court drops extradition case after Meng Wanzhou enters deferred prosecution agreement in U.S. (media only)
+- **C109[2]** Zoom: Our perspective on the DOJ complaint (company statement, published December 18, 2020); Amended complaint and affidavit, United States v. Jin Xinjiang et al., No. 20-MJ-1103 (E.D.N.Y.; Justice Department copy)
 - **C112[0]** Federation of American Scientists (NGO): the second nuclear missile silo field near Hami, July 26, 2021; Federation of American Scientists (NGO): A closer look at China's missile silo construction
+- **C112[1]** Federation of American Scientists (NGO): The 2024 DOD China Military Power Report; Arms Control Association (NGO): Pentagon says Chinese nuclear arsenal still growing (January/February 2025)
+- **C115[3]** China Evergrande Group announcement to the Hong Kong Stock Exchange, September 28, 2023 (HKEXnews); Bangkok Post, September 28, 2023: Evergrande confirms police are watching chairman (Reuters and Bloomberg; media only)
+- **C116[2]** 9to5Mac, November 9, 2022: Apple to restrict Everyone option in AirDrop in China (media only); Macworld, November 10, 2022: Apple to limit AirDrop everyone setting to 10 minutes (media only)
+- **C116[3]** CRS In Focus IF12265 on the 2022 protests in China (congress.gov); Amnesty International (NGO), November 2022: China, government must not detain peaceful protesters; Human Rights Watch (NGO), November 2023: China, allow commemorations of White Paper protests
+- **C117[2]** Grand Forks Herald, February 6, 2023: Year-long Fufeng debate comes to an end after council members vote to stop project (media only); KFYR-TV, February 6, 2023: Grand Forks City Council officially cancels Fufeng project (media only)
 - **C118[1]** CNN report on the Mintz Group fine, syndicated by KTVZ (media only)
+- **C118[2]** China Daily, May 9, 2023: Capvision accused of abetting foreign spy services (PRC state media); Global Times, May 9, 2023: Leading consulting company probed in counter-espionage action (PRC state media); Linklaters (law firm): China strengthens enforcement under the Anti-Espionage Law
 - **C118[3]** Xinhua: China revises Counter-Espionage Law (NPC English-language site, April 27, 2023); A&O Shearman (law firm): the revised PRC Counter-Espionage law, what has really changed
+- **C119[0]** DeepSeek-R1 Release, January 20, 2025 (DeepSeek; company statement); Korea JoongAng Daily (Reuters report; media only): investors dump tech stocks after record Nvidia loss
+- **C119[1]** Korea JoongAng Daily (Reuters report; media only): Investors dump tech stocks after record $593 billion Nvidia loss
+- **C119[2]** DeepSeek privacy policy (company statement; last updated Feb 10, 2026); PRC National Intelligence Law (2017), English translation by China Law Translate (translator); PRC National Intelligence Law (2017), translation hosted by Brown University (university)
 
-## Checkable sentences nobody has tried yet (22)
+## Checkable sentences nobody has tried yet (1)
 
-74 checkable sentences still have no link; 52 of them were tried and are listed above as unresolved. The rest carry a date, number or named act and have not been looked at.
+15 checkable sentences still have no link; 14 of them were tried and are listed above as unresolved. The rest carry a date, number or named act and have not been looked at.
 
-- **C016[2]** Chen Duxiu reported to Moscow in June 1922 that the Comintern had supplied almost all of the Party's spending since the previous October.
-- **C048[1]** Chinese sources put the total who served at about 320,000, with a peak near 170,000 in 1967.
-- **C054[2]** The Chinese text of the 1979 normalization communiqué used chengren, the word for diplomatic recognition.
-- **C054[3]** When senators raised the change in 1979, the administration answered that the English text governed.
-- **C066[0]** Coalition forces had broken Iraq's army in 1991 after six weeks of air war and a hundred hours on the ground.
-- **C076[2]** Immigration judges split on such claims until Congress acted in 1996.
-- **C076[3]** Section 601 of the Illegal Immigration Reform and Immigrant Responsibility Act defined forced abortion and sterilization as persecution on account of political opinion.
 - **C077[0]** Martin Scorsese's film about the Dalai Lama's youth had drawn warnings from Party officials before its release in December 1997.
-- **C080[3]** Falun Gong practitioners sued Cisco in 2011 and alleged that the company built features into Golden Shield to identify and track them.
-- **C080[4]** The Ninth Circuit let most claims proceed on July 7, 2023, and Cisco asked the Supreme Court to review the ruling.
-- **C090[0]** Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling.
-- **C090[2]** The formula sickened about 300,000 infants and killed six.
-- **C090[3]** A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 million packages of pet food.
-- **C100[1]** Security firms reported fewer commercial intrusions from mainland groups in the months after.
-- **C104[1]** Between 2010 and 2012 the Party's security services killed or imprisoned as many as twenty CIA sources on the mainland, according to reporting in 2017.
-- **C116[2]** In November Apple limited AirDrop's open setting to ten minutes on phones sold in the People's Republic.
-- **C116[3]** After a fire in Urumqi killed at least ten people on November 24, protests spread to more than a dozen cities, and demonstrators held up blank sheets of paper.
-- **C117[2]** The city council voted in February 2023 to stop the project.
-- **C119[0]** DeepSeek had released its R1 reasoning model on January 20, 2025, and its app soon topped the American download charts.
-- **C119[1]** On January 27 Nvidia lost about $589 billion in market value, the largest one-day loss for any company in American market history.
-- **C119[2]** DeepSeek's privacy policy stores user data on servers in the People's Republic, where the 2017 National Intelligence Law requires organizations to assist state intelligence work.
-- **C120[3]** The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems.
 

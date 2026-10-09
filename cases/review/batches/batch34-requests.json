@@ -1,0 +1,254 @@
+[
+ {
+  "id": "C025",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1944v06/d453",
+  "grep": [
+   "Mao",
+   "plea",
+   "American cooperation",
+   "August 23",
+   "Service"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1944 vol VI doc 453: Gauss transmits Service reports (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C025",
+  "idx": 0,
+  "url": "https://www.cia.gov/resources/csi/static/The-Dixie-Mission-1944.pdf",
+  "grep": [
+   "Dixie Mission",
+   "Yenan",
+   "Mao",
+   "July 22",
+   "Service"
+  ],
+  "excerpt": 0,
+  "note": "CIA Center for the Study of Intelligence: The Dixie Mission 1944 (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C025",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1944v06/d513",
+  "grep": [
+   "Service",
+   "Communist",
+   "discipline",
+   "Kuomintang",
+   "corrupt"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1944 vol VI doc 513 (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C025",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1945v07/d246",
+  "grep": [
+   "Hurley",
+   "Service",
+   "Communist",
+   "favorably"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1945 vol VII doc 246: Hurley to Secretary of State (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C025",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1945v07/d321",
+  "grep": [
+   "Hurley",
+   "Service",
+   "Communist",
+   "Foreign Service"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1945 vol VII doc 321: Hurley to Secretary of State (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C091",
+  "idx": 0,
+  "url": "https://www.fda.gov/Drugs/DrugSafety/PostmarketDrugSafetyInformationforPatientsandProviders/ucm112597.htm",
+  "grep": [
+   "oversulfated chondroitin sulfate",
+   "Baxter",
+   "deaths",
+   "Changzhou",
+   "recall"
+  ],
+  "excerpt": 0,
+  "note": "FDA: Information on heparin (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C091",
+  "idx": 1,
+  "url": "https://www.gao.gov/assets/gao-11-95.pdf",
+  "grep": [
+   "Baxter",
+   "Changzhou",
+   "inspect",
+   "deaths",
+   "adverse"
+  ],
+  "excerpt": 0,
+  "note": "GAO-11-95: response to heparin contamination (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C091",
+  "idx": 2,
+  "url": "https://www.gao.gov/assets/gao-11-95.pdf",
+  "grep": [
+   "Changzhou",
+   "never inspected",
+   "confus",
+   "inspect",
+   "Scientific Protein"
+  ],
+  "excerpt": 0,
+  "note": "GAO-11-95 on the Changzhou plant inspection (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C091",
+  "idx": 3,
+  "url": "https://pubmed.ncbi.nlm.nih.gov/23042900/",
+  "grep": [
+   "heparin",
+   "deaths",
+   "China",
+   "recall"
+  ],
+  "excerpt": 0,
+  "note": "PubMed abstract: the heparin recall of 2008 (NIH index; secondary)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C006",
+  "idx": 0,
+  "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+  "grep": [
+   "Chinese",
+   "strike",
+   "Crocker",
+   "food",
+   "wages"
+  ],
+  "excerpt": 0,
+  "note": "NPS Golden Spike: Chinese labor and the iron road (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C006",
+  "idx": 1,
+  "url": "https://guides.loc.gov/this-month-in-business-history/june/sierra-strike",
+  "grep": [
+   "strike",
+   "Crocker",
+   "food",
+   "week",
+   "eight days"
+  ],
+  "excerpt": 0,
+  "note": "Library of Congress guide: 1867 Sierra strike (US government)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C006",
+  "idx": 2,
+  "url": "https://web.stanford.edu/group/chineserailroad/cgi-bin/website/virtual/",
+  "grep": [
+   "strike",
+   "Crocker",
+   "records",
+   "no written",
+   "diaries"
+  ],
+  "excerpt": 0,
+  "note": "Stanford Chinese Railroad Workers in North America Project (university)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C092",
+  "idx": 0,
+  "url": "https://www.uscc.gov/sites/default/files/transcripts/4.30.09HearingTranscript.pdf",
+  "grep": [
+   "San Francisco",
+   "torch",
+   "Tibet",
+   "students",
+   "flag"
+  ],
+  "excerpt": 0,
+  "note": "USCC hearing transcript April 30, 2009 (US commission)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C092",
+  "idx": 1,
+  "url": "https://www.uscc.gov/sites/default/files/transcripts/6.18.08HearingTranscript.pdf",
+  "grep": [
+   "torch",
+   "San Francisco",
+   "relay",
+   "Tibet",
+   "route"
+  ],
+  "excerpt": 0,
+  "note": "USCC hearing transcript June 18, 2008 (US commission)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C018",
+  "idx": 0,
+  "url": "https://www.marxists.org/subject/china/documents/cpc/history/01.htm",
+  "grep": [
+   "AB League",
+   "Anti-Bolshevik",
+   "Futian",
+   "liquidat",
+   "counter-revolution"
+  ],
+  "excerpt": 0,
+  "note": "Resolution on Certain Questions in the History of Our Party (1945) (marxists.org copy of CPC document)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
