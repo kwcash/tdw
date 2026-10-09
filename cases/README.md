@@ -44,10 +44,10 @@ and names the stratagem. Never write a claim in `record` that you cannot link.
 | `sourced` | Links exist; nobody has read them against the claims | at least one link |
 | `verified` | A named person checked each claim against its source | `verifiedBy`, `verifiedOn` |
 
-Run `validate.py --report` for today's counts. After the futures sourcing pass
-(see below) every history case is still `unsourced`, most futures are `sourced`,
-and none is `verified`. Moving cases down that list is the work this structure
-exists to track.
+Run `validate.py --report` for today's counts. After the sourcing passes
+(see below) 214 of the 220 cases are `sourced`, 6 are still `unsourced`
+(C018, C021, C077, C091, F035, F082), and none is `verified`. Moving cases down
+that list is the work this structure exists to track.
 
 ## Commands (Python 3, standard library only)
 
@@ -84,7 +84,8 @@ python3 -I tools/claims.py decide review/decisions-batchNN.json --dry-run
 python3 -I tools/claims.py decide review/decisions-batchNN.json
 
 # 3. summarize everything decided so far
-python3 -I tools/findings.py            # writes review/futures-sourcing-findings.md
+python3 -I tools/findings.py                   # review/futures-sourcing-findings.md
+python3 -I tools/findings.py --kind catalog    # review/catalog-sourcing-findings.md
 ```
 
 A decision is `{id, idx, verdict, label, url, notes}`; `idx` is the sentence
@@ -103,9 +104,30 @@ tools never set `verified`. `review/futures-sourcing-findings.md` lists the
 contradictions, the partial links, the checked-but-unsettled sentences, the
 non-government links, and the checkable sentences nobody has tried yet.
 
-The original worksheet (`claims.py export` / `apply`) still works for a reviewer
+The original worksheets (`claims.py export` / `apply`) still work for a reviewer
 who prefers a spreadsheet: `review/futures-unsourced.csv` has one row per
-sentence of the 78 futures that had no link at the start (239 sentences).
+sentence of the 78 futures that had no link at the start (239 sentences), and
+`review/catalog-unsourced.csv` has one row per sentence of the 120 historical
+cases (436 sentences, 264 with a date, number or named act).
+
+Where things stand (latest decision per sentence, from `decisions-log.jsonl`):
+
+| Set | Supported | Partial | Contradicted | Unresolved |
+|---|---|---|---|---|
+| Historical cases C001 to C120 (277 sentences decided) | 115 | 140 | 4 | 18 |
+| Futures F001 to F100 (159 sentences decided) | 87 | 54 | 1 | 17 |
+
+`supported` and `partial` mean a link was added after a script read the page
+text; neither means a person read it. Read `review/catalog-sourcing-findings.md`
+and `review/futures-sourcing-findings.md` first: they list every contradiction,
+every partial link with what is still open, every sentence the runner could not
+settle, and every link that is not a government or court page (company, NGO,
+think tank, reference work, or media only).
+
+Folders: `review/batches/` holds the request files sent to the fetch runner
+(`batchNN-requests.json`) and the candidate lists the helper agents wrote
+(`cat-*`, `gap-*`); `review/decisions-batchNN.json` are the decision files that
+were applied; `review/gap*.json` is the worklist for the second pass.
 
 ## Adding or changing a case
 

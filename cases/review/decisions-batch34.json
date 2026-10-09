@@ -1,0 +1,120 @@
+[
+ {
+  "id": "C025",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "FRUS 1944 vol. VI, doc. 453: Gauss transmits John Service's reports from Yenan (September 28, 1944)",
+   "CIA Center for the Study of Intelligence: The Dixie Mission 1944"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1944v06/d453",
+   "https://www.cia.gov/resources/csi/static/The-Dixie-Mission-1944.pdf"
+  ],
+  "notes": "US government records: the Ambassador transmits Service's reports from Yenan, where he served with the US Army Observer Section; in the August 23, 1944 interview 'Mr. Mao made a plea for American cooperation and the granting of assistance to the Chinese Communist Party and said that the Chinese Communists must and will cooperate with the United States'. The CIA study calls it a US Army observer group sent to the Communist headquarters at Yenan. 'Open access to its leaders and its base' was not in the snippets, and 'after the war' is the sentence's framing."
+ },
+ {
+  "id": "C025",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FRUS 1944 vol. VI, doc. 513: memorandum by John S. Service for General Stilwell, October 10, 1944",
+  "url": "https://history.state.gov/historicaldocuments/frus1944v06/d513",
+  "notes": "US government record: Service's memorandum calls the Kuomintang government 'in crisis' with 'demoralized armies' and urges a more realistic line. The words discipline and corruption did not match the passages read, so the praise of Party discipline and the contrast with Nationalist corruption are not confirmed."
+ },
+ {
+  "id": "C025",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "FRUS 1945 vol. VII, doc. 246: Ambassador Hurley to the Secretary of State, April 30, 1945",
+  "url": "https://history.state.gov/historicaldocuments/frus1945v07/d246",
+  "notes": "US government record: Hurley wrote that Service 'has shown himself to be very favorably disposed toward the Communists and also on occasion to be most unfriendly to the Nationalist Government'. NUANCE: another FRUS document (vol. VII, doc. 321, September 1945) shows Hurley acting as mediator between the government and the Communists, so 'opposed working with the Party' fits his hostility to Service's views better than his own 1944 to 1945 conduct. The later loss of careers in the purge of the China hands is not on the page."
+ },
+ {
+  "id": "C091",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The FDA heparin information page returned HTTP 404 at the URL tried. A search summary (not read by the runner) says investigators identified oversulfated chondroitin sulfate as the contaminant; the claim that it mimicked heparin in standard tests and cost a fraction of the drug is unchecked."
+ },
+ {
+  "id": "C091",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The GAO report GAO-11-95 returned HTTP 403 to the runner. A search summary says Baxter recalled heparin vials in February 2008 and an FDA review of adverse-event reports found 574 cases including 94 with a fatal outcome; 'dozens of deaths and hundreds of severe reactions' is unchecked."
+ },
+ {
+  "id": "C091",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "GAO-11-95 returned HTTP 403. A search summary says GAO describes limits on FDA's inspection of Chinese heparin firms; no source was found for the claim that the plant had never been inspected because of a name mix-up."
+ },
+ {
+  "id": "C091",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The PubMed page returned no text. No PRC statement denying deaths was found."
+ },
+ {
+  "id": "C006",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Chinese Labor and the Iron Road (Golden Spike National Historical Park, US National Park Service)",
+  "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+  "notes": "National Park Service: 'Chinese workers were paid an average of 30% less than their white counterparts', were segregated in work camps and paid for their own lodging and food; the 1867 walkout began on June 24. That Chinese workers were most of the workforce on the Sierra grade was not in the snippet."
+ },
+ {
+  "id": "C006",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "1867 Sierra Strike: Chinese Worker's Pay Stand (Library of Congress research guide)",
+  "url": "https://guides.loc.gov/this-month-in-business-history/june/sierra-strike",
+  "notes": "Library of Congress: 'In response to the striking workers, Crocker halted all supply deliveries to the camps, including food' and 'for eight days, the workers stayed in the camps' before Crocker said they would be fined if they returned. A National Park Service account, seen only in a search summary, puts the food cut-off after the strike had run about a week, so the order of events differs between sources."
+ },
+ {
+  "id": "C006",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Stanford Chinese Railroad Workers project page did not contain the terms for missing company records or the absence of workers' written accounts in the text read."
+ },
+ {
+  "id": "C092",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The two US-China Commission hearing transcripts read mention the torch relay but not its San Francisco stop or its timing after the March 2008 Lhasa protests."
+ },
+ {
+  "id": "C092",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The US-China Commission transcripts do not mention the San Francisco reroute or the move of the closing ceremony to the airport."
+ },
+ {
+  "id": "C092",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "US-China Economic and Security Review Commission hearing transcript, April 30, 2009",
+  "url": "https://www.uscc.gov/sites/default/files/transcripts/4.30.09HearingTranscript.pdf",
+  "notes": "Commission hearing: a witness says overseas Chinese support was visible during 'set-piece confrontations like international criticism attending the route of the Olympic torch', and 'a certain uniformity of placards and pro-China rallies suggested official coordination' while participation was real. The testimony is about the relay in general, not San Francisco, campus associations or the number of students."
+ },
+ {
+  "id": "C018",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CPC Resolution on History (1981) at marxists.org was read for AB League, Anti-Bolshevik, Futian and liquidation, with no match. No page on the Futian incident was found."
+ }
+]

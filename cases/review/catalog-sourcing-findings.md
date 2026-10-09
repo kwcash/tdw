@@ -10,8 +10,8 @@ Generated 2026-10-09 by `tools/findings.py --kind catalog` from `decisions-log.j
 
 ## Counts
 
-- Historical cases: 120 cases, 436 record sentences, 249 now carry a link; 113 cases have at least one link.
-- Decisions logged (latest per sentence): contradicted 4, partial 135, supported 114, unresolved 10.
+- Historical cases: 120 cases, 436 record sentences, 255 now carry a link; 116 cases have at least one link.
+- Decisions logged (latest per sentence): contradicted 4, partial 140, supported 115, unresolved 18.
 - Checkable sentences with no link and no decision on file: 1.
 
 ## Contradicted by the source (4)
@@ -27,7 +27,7 @@ The page says something different from the sentence. The text was left unchanged
 - **C118[4]** The city's statistics bureau fined Mintz about $1.5 million in August.  
   Two news reports (media only) say the Beijing Municipal Bureau of Statistics ruling is dated July 5 and its website statement July 14, with a fine of 10.69 million yuan (about $1.49 million) for 'foreign-related statistical investigations'; the news broke in August (Al Jazeera, August 22, 2023). The amount matches; 'in August' matches when the fine became public, not the dates on the ruling.
 
-## Linked, but the link covers only part of the sentence (135)
+## Linked, but the link covers only part of the sentence (140)
 
 The note says what the page supports and what is still open.
 
@@ -43,6 +43,8 @@ The note says what the page supports and what is still open.
   Official: the Treaty of Nanjing (1842) was the Anglo-Chinese treaty that the 1844 US treaty 'replicated'. 'Five ports' and the Americans' neutral-carrier trade were not in the text read.
 - **C005[1]** American diplomats in China reported kidnapping, deaths and mutinies in the traffic.  
   The 1860 House document is the President's message transmitting information on the coolie trade; the govinfo link is a details page, so its text was not read. The National Archives article describes a coolie ship's 174-day voyage with a death of its captain and a mutiny, and recruitment by deception. That American diplomats reported kidnapping, deaths and mutinies is the likely content of the House document but was not confirmed from its text.
+- **C006[0]** Chinese crews made up most of the Central Pacific's workforce on the Sierra grade and earned less than white crews for the same work.  
+  National Park Service: 'Chinese workers were paid an average of 30% less than their white counterparts', were segregated in work camps and paid for their own lodging and food; the 1867 walkout began on June 24. That Chinese workers were most of the workforce on the Sierra grade was not in the snippet.
 - **C008[0]** Yung Wing, Yale's first Chinese graduate, had persuaded the court to send 120 boys to New England between 1872 and 1875.  
   University and state-humanities pages (secondary): Yung Wing graduated from Yale College in 1854, the first Chinese student to graduate from an American university; the mission brought 120 Chinese students, starting in 1872. The 1875 end of the shipments and Yung Wing 'persuading the court' were not in the text read; the Yale archives finding aid returned no text.
 - **C008[1]** The mission's conservative commissioner warned that the boys were becoming American, and the United States refused to admit any of them to West Point or Annapolis in 187…  
@@ -81,6 +83,12 @@ The note says what the page supports and what is still open.
   US government page on Wu's Manhattan Project work at Columbia; the text read mentions xenon and Hanford. Fermi's team consulting her unpublished work during the 1944 reactor stall was not in the snippets, and the second NPS page did not mention xenon.
 - **C024[2]** She became a citizen in 1954, and her experiment of 1957 overturned the conservation of parity.  
   NIST history: experiments at the National Bureau of Standards in late 1956 (Wu's cobalt-60 experiment) demonstrated that parity is not conserved in weak interactions, with the news in January 1957. Her 1954 citizenship was not on the page; Britannica returned HTTP 403.
+- **C025[0]** The Party hosted the observers with open access to its leaders and its base, and Mao told John Service that the Party wanted American cooperation after the war.  
+  US government records: the Ambassador transmits Service's reports from Yenan, where he served with the US Army Observer Section; in the August 23, 1944 interview 'Mr. Mao made a plea for American cooperation and the granting of assistance to the Chinese Communist Party and said that the Chinese Communists must and will cooperate with the United States'. The CIA study calls it a US Army observer group sent to the Communist headquarters at Yenan. 'Open access to its leaders and its base' was not in the snippets, and 'after the war' is the sentence's framing.
+- **C025[1]** Service's reports praised the Party's discipline and contrasted it with Nationalist corruption.  
+  US government record: Service's memorandum calls the Kuomintang government 'in crisis' with 'demoralized armies' and urges a more realistic line. The words discipline and corruption did not match the passages read, so the praise of Party discipline and the contrast with Nationalist corruption are not confirmed.
+- **C025[2]** Ambassador Patrick Hurley opposed working with the Party, and the mission's advocates later lost their careers in the purge of the China hands.  
+  US government record: Hurley wrote that Service 'has shown himself to be very favorably disposed toward the Communists and also on occasion to be most unfriendly to the Nationalist Government'. NUANCE: another FRUS document (vol. VII, doc. 321, September 1945) shows Hurley acting as mediator between the government and the Communists, so 'opposed working with the Party' fits his hostility to Service's views better than his own 1944 to 1945 conduct. The later loss of careers in the purge of the China hands is not on the page.
 - **C026[2]** Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed.  
   Avalon text of the declaration of war handed to the Japanese ambassador on August 8, 1945 (the August 9 date was not matched by the grep). FRUS: Chiang's memorandum says Zhu De's orders of August 11, 1945 directed the Communist armies to coordinate with Soviet forces in China and Korea. This is the Nationalist leader's account of Communist moves, not an independent record of troops entering Manchuria. The DTIC document returned HTTP 403.
 - **C027[2]** Jaffe paid a fine of $2,500, and no one went to prison.  
@@ -237,6 +245,8 @@ The note says what the page supports and what is still open.
   NZ government document: Fonterra 'bought a 43 per cent stake' in Sanlu in 2005; in 2008 Sanlu 'was identified as the main culprit' in the melamine scandal, was prosecuted and bankrupted. Complaints from late 2007 and continued sales were not found; the China Daily page returned nothing matching and the china.org.cn page failed TLS verification.
 - **C090[3]** A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 milli…  
   Trade press: more than 150 brands of wet pet food were recalled from March 2007, and Menu Foods alone recalled '60 million cans and pouches'; the foods were tainted with melamine and cyanuric acid. The two mainland suppliers, wheat gluten and rice protein, and the pet deaths across the United States were not on the page; the FDA page returned HTTP 403.
+- **C092[2]** Campus associations brought thousands of students to wave the national flag along the route, beside Tibetan and human rights protesters.  
+  Commission hearing: a witness says overseas Chinese support was visible during 'set-piece confrontations like international criticism attending the route of the Olympic torch', and 'a certain uniformity of placards and pro-China rallies suggested official coordination' while participation was real. The testimony is about the relay in general, not San Francisco, campus associations or the number of students.
 - **C094[2]** Former officials said in 2013 that the intruders had reached Google's records of American surveillance orders, which could reveal which of the Party's agents the FBI was…  
   Two trade-press reports of a Washington Post story, no government record: the Aurora intruders accessed a Google database 'which contained data about court orders that authorized surveillance of certain individuals, presumably included among them Chinese spies'; the repository also includes classified FISA orders. The year 2013 and the FBI link were not in the snippets. The Washington Post article itself timed out earlier.
 - **C095[3]** Liu died in custody of liver cancer on July 13, 2017.  
@@ -302,10 +312,14 @@ The note says what the page supports and what is still open.
 - **C120[3]** The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems.  
   Statute: the enrolled bill's table of contents lists 'Sec. 1692. Prohibition on access to Department of Defense cloud-based resources by certain individuals', and the public law header reads 'PUBLIC LAW 119-60, DEC. 18, 2025'. The operative text naming the People's Republic of China, Russia, Iran and North Korea was not in the snippets read; a CRS note on the same law lists those four as covered nations for a separate provision on AI systems.
 
-## Checked, not settled (10)
+## Checked, not settled (18)
 
 A page was tried (blocked, empty, wrong content, or the figure is in a chart or a scan). No link was added. Hosts that refused the runner: ftc.gov, hhs.gov, usda.gov, gao.gov, pnas.org, cbo.gov, spaceforce.mil, war.gov, congress.gov, news.uscg.mil, aps.org, mac.gov.tw, swift.com, sec.gov, spacenews.com, and justice.gov pages that return empty text. TLS failures (not bypassed): npc.gov.cn, english.scio.gov.cn, kinmen.gov.tw, eng.mod.gov.cn. Archive.org copies were rate limited (HTTP 429).
 
+- **C006[2]** The company's records of the week are thin, and the workers left no written account of their own.  
+  The Stanford Chinese Railroad Workers project page did not contain the terms for missing company records or the absence of workers' written accounts in the text read.
+- **C018[0]** The purge targeted an alleged Anti-Bolshevik League inside the Jiangxi Soviet and drew confessions by torture.  
+  The CPC Resolution on History (1981) at marxists.org was read for AB League, Anti-Bolshevik, Futian and liquidation, with no match. No page on the Futian incident was found.
 - **C034[2]** By 1956 the Party had brought private industry under joint state ownership, and Rong later founded CITIC in 1979 to court foreign capital.  
   The CITIC pages returned HTTP 521 and the china.org.cn page failed TLS verification (not bypassed). The 1956 joint ownership and the 1979 founding of CITIC remain unchecked.
 - **C037[2]** The dispute over voluntary repatriation kept the war going for more than a year, and about 14,000 of the prisoners reached Taiwan in January 1954.  
@@ -320,6 +334,18 @@ A page was tried (blocked, empty, wrong content, or the figure is in a chart or 
   Both offered pages were Britannica and returned HTTP 403. The range of famine death estimates needs a scholarly source.
 - **C070[1]** He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991.  
   The CECC roundtable testimony of Harry Wu (2005) was read for '60 Minutes', CBS and filming and none appeared; it mentions a 1991 State Council ban on forced-labor exports. Wu's covert filming and the 1991 broadcast remain unchecked.
+- **C091[0]** The chemical, oversulfated chondroitin sulfate, mimicked heparin in the standard tests and cost a fraction of the real drug.  
+  The FDA heparin information page returned HTTP 404 at the URL tried. A search summary (not read by the runner) says investigators identified oversulfated chondroitin sulfate as the contaminant; the claim that it mimicked heparin in standard tests and cost a fraction of the drug is unchecked.
+- **C091[1]** Baxter recalled its heparin, and the agency linked the contaminated product to dozens of deaths and hundreds of severe reactions.  
+  The GAO report GAO-11-95 returned HTTP 403 to the runner. A search summary says Baxter recalled heparin vials in February 2008 and an FDA review of adverse-event reports found 574 cases including 94 with a fatal outcome; 'dozens of deaths and hundreds of severe reactions' is unchecked.
+- **C091[2]** The agency had never inspected the Changzhou plant before the crisis because it had confused its name with another site.  
+  GAO-11-95 returned HTTP 403. A search summary says GAO describes limits on FDA's inspection of Chinese heparin firms; no source was found for the claim that the plant had never been inspected because of a name mix-up.
+- **C091[3]** Officials of the People's Republic denied that the contaminant caused any deaths.  
+  The PubMed page returned no text. No PRC statement denying deaths was found.
+- **C092[0]** The relay reached the city weeks after the Party crushed protests in Lhasa.  
+  The two US-China Commission hearing transcripts read mention the torch relay but not its San Francisco stop or its timing after the March 2008 Lhasa protests.
+- **C092[1]** Officials rerouted it without notice to avoid the crowds, and the closing ceremony moved to the airport.  
+  The US-China Commission transcripts do not mention the San Francisco reroute or the move of the closing ceremony to the airport.
 - **C098[1]** American diplomats brokered what they described as a mutual withdrawal in June.  
   The CRS reports read mention the 2012 standoff but not the June 2012 mutual withdrawal brokered by the United States; the Inquirer page returned HTTP 403. A State Department source was not found.
 - **C106[2]** Soybean exports to the mainland fell from about $12 billion in 2017 to about $3 billion in 2018.  

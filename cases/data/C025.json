@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On July 22, 1944, Colonel David Barrett stepped off a C-47 at Yan'an at the head of the United States Army Observation Group.",
-    "record": "The Party hosted the observers with open access to its leaders and its base, and Mao told John Service that the Party wanted American cooperation after the war. Service's reports praised the Party's discipline and contrasted it with Nationalist corruption. Ambassador Patrick Hurley opposed working with the Party, and the mission's advocates later lost their careers in the purge of the China hands.",
+    "record": "The Party hosted the observers with open access to its leaders and its base, and Mao told John Service that the Party wanted American cooperation after the war ([FRUS 1944 vol. VI, doc. 453: Gauss transmits John Service's reports from Yenan (September 28, 1944)](https://history.state.gov/historicaldocuments/frus1944v06/d453); [CIA Center for the Study of Intelligence: The Dixie Mission 1944](https://www.cia.gov/resources/csi/static/The-Dixie-Mission-1944.pdf)). Service's reports praised the Party's discipline and contrasted it with Nationalist corruption ([FRUS 1944 vol. VI, doc. 513: memorandum by John S. Service for General Stilwell, October 10, 1944](https://history.state.gov/historicaldocuments/frus1944v06/d513)). Ambassador Patrick Hurley opposed working with the Party, and the mission's advocates later lost their careers in the purge of the China hands ([FRUS 1945 vol. VII, doc. 246: Ambassador Hurley to the Secretary of State, April 30, 1945](https://history.state.gov/historicaldocuments/frus1945v07/d246)).",
     "reading": "Yan'an ran the Attract stage on American officers, and the warmth was real enough to persuade honest men. The Party welcomed the observers it could host and leaned to the Soviet Union once it held power, which is Stratagem 10 on a five-year clock.",
     "gapText": "Data Architecture. The observers saw what their host showed them, and no other channel tested it.",
     "fix": "Pair every hosted visit with independent collection and read the host's access as an operation."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }
