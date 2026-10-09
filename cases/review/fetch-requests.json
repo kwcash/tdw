@@ -2,593 +2,594 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C045",
-   "idx": 2,
-   "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d278",
-   "grep": [
-    "Tibet",
-    "1,800",
-    "300",
-    "reduce",
-    "Mustang"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1969-76 vol XVII doc 278: CIA memo to the 40 Committee on Tibetan operations (US government record)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C048",
-   "idx": 1,
-   "url": "https://scalar.usc.edu/works/the-vietnam-war/chinas-involvement-in-the-war-1964-1969",
-   "grep": [
-    "320,000",
-    "170,000",
-    "1967",
-    "Chinese"
-   ],
-   "excerpt": 0,
-   "note": "USC Scalar university course text on China's involvement in the Vietnam War; secondary; search summary reported 320,000 (1965-71) and ~170,000 peak in 1967",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C048",
-   "idx": 1,
-   "url": "https://www.cambridge.org/core/journals/china-quarterly/article/chinas-involvement-in-the-vietnam-war-196469/C19D6719CDDB9E160223C624A8D15A92",
-   "grep": [
-    "320,000",
-    "170,000",
-    "1967",
-    "Chinese troops",
-    "engineering"
-   ],
-   "excerpt": 0,
-   "note": "Chen Jian, China Quarterly 1995, 'China's Involvement in the Vietnam War, 1964-69'; scholarly original for the figures; may show only abstract/first page",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C048",
-   "idx": 1,
-   "url": "https://alphahistory.com/vietnamwar/chinese-and-soviet-involvement/",
-   "grep": [
-    "320,000",
-    "170,000",
-    "1967",
-    "North Vietnam"
-   ],
-   "excerpt": 0,
-   "note": "Alpha History educational site; secondary; states over 320,000 Chinese troops 1965-71 and peak ~170,000 in 1967",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C050",
-   "idx": 0,
-   "url": "https://www.chinesepen.org/english/?p=4153",
-   "grep": [
-    "Lin Zhao",
-    "Peking University",
-    "Rightist",
-    "1957",
-    "1960"
-   ],
-   "excerpt": 0,
-   "note": "Independent Chinese PEN Center case file No. 14 (1960) on Lin Zhao; NGO, secondary; says student Rightist then arrested 1960",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C050",
-   "idx": 0,
-   "url": "https://minjian-danganguan.org/en/archive/14",
-   "grep": [
-    "Lin Zhao",
-    "Peking University",
-    "Rightist",
-    "1957",
-    "October 1960"
-   ],
-   "excerpt": 0,
-   "note": "China Unofficial Archives biography entry for Lin Zhao; NGO/archive, secondary; says admitted to Peking University journalism 1954, classified Rightist 1957, arrested October 1960",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C050",
-   "idx": 0,
-   "url": "https://alphahistory.com/chineserevolution/lin-zhao/",
-   "grep": [
-    "Lin Zhao",
-    "Peking University",
-    "1957",
-    "1960",
-    "rightist"
-   ],
-   "excerpt": 0,
-   "note": "Alpha History educational site on Lin Zhao; secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C052",
-   "idx": 3,
-   "url": "https://history.state.gov/historicaldocuments/frus1969-76v11/persons",
-   "grep": [
-    "Blood, Archer",
-    "Consul General in Dacca",
-    "June 1971"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian, FRUS 1969-76 vol XI persons list; primary/official; lists Blood as Consul General in Dacca until June 1971",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C052",
-   "idx": 3,
-   "url": "https://history.state.gov/historicaldocuments/frus1969-76v11/d20",
-   "grep": [
-    "Blood",
-    "Dacca",
-    "transferred",
-    "Nixon",
-    "dissent"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1969-76 vol XI doc 20 with editorial note that Nixon ordered Blood transferred from Dacca after the dissent cable; primary/official",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C052",
-   "idx": 3,
-   "url": "https://afsa.org/sites/default/files/flipping_book/1204/63/",
-   "grep": [
-    "Blood",
-    "June 1971",
-    "recalled",
-    "personnel",
-    "Dhaka"
-   ],
-   "excerpt": 0,
-   "note": "Foreign Service Journal Dec 2004 (AFSA, diplomats' professional association); says Blood was recalled in June 1971 and assigned to State personnel office; secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C054",
-   "idx": 2,
-   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d186",
-   "grep": [
-    "cheng-jen",
-    "jen shih tao",
-    "acknowledge",
-    "Chinese text",
-    "linguists"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1977-80 vol XIII doc 186, Oksenberg memo to Brzezinski 3 Jan 1979 on the Chinese rendering of 'acknowledge' as cheng-jen; primary/official",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C054",
-   "idx": 2,
-   "url": "https://www.everycrsreport.com/reports/RL30341.html",
-   "grep": [
-    "cheng ren",
-    "ren shi",
-    "acknowledge",
-    "recognize",
-    "Chinese text"
-   ],
-   "excerpt": 0,
-   "note": "CRS report RL30341 'China/Taiwan: Evolution of the One China Policy' via EveryCRSReport mirror; primary/official CRS; discusses Chinese term cheng ren in 1979 communique",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C054",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/reports/RL30341.html",
-   "grep": [
-    "Javits",
-    "Christopher",
-    "binding text",
-    "determinative",
-    "English text"
-   ],
-   "excerpt": 0,
-   "note": "CRS report RL30341 via EveryCRSReport mirror; official CRS; search summary says it quotes Christopher telling Javits the English text is the binding text",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C054",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/files/20150105_RL30341_6a250771f574e01575c1cc9fa15c71f92858ef44.pdf",
-   "grep": [
-    "Javits",
-    "Christopher",
-    "binding text",
-    "determinative",
-    "English text"
-   ],
-   "excerpt": 0,
-   "note": "Earlier PDF version of CRS RL30341 (Jan 2015); official CRS; backup in case the HTML version differs",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C054",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/files/20110110_RL30341_80a0c3ea84512024e2b29b8d0585628f504b68ac.html",
-   "grep": [
-    "Javits",
-    "Christopher",
-    "binding text",
-    "determinative",
-    "English text"
-   ],
-   "excerpt": 0,
-   "note": "Jan 2011 version of CRS RL30341; official CRS; second backup version",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 2,
-   "url": "https://beijing-spring.univie.ac.at/en/photos/big-character-posters/beijing-march-1979/",
-   "grep": [
-    "Deng Xiaoping",
-    "dictator",
-    "29 March",
-    "March 29",
-    "15 years"
-   ],
-   "excerpt": 0,
-   "note": "University of Vienna Beijing Spring project photo page; university, secondary; ties Wei's arrest on 29 March to dazibao calling Deng a dictator, sentence of 15 years in October",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 2,
-   "url": "https://www.chinesepen.org/english/no-13-yu-zhang-33",
-   "grep": [
-    "Wei Jingsheng",
-    "Deng",
-    "dictator",
-    "March",
-    "1979"
-   ],
-   "excerpt": 0,
-   "note": "Independent Chinese PEN Center case file No. 33 (1979) on Wei Jingsheng; NGO, secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 2,
-   "url": "https://blogs.cuit.columbia.edu/jia/inside-authoritarian-state/",
-   "grep": [
-    "Wei Jingsheng",
-    "29 March 1979",
-    "March 29",
-    "arrested",
-    "Deng"
-   ],
-   "excerpt": 0,
-   "note": "Columbia Journal of International Affairs blog (student-run university publication); secondary; states arrest on 29 March 1979",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 3,
-   "url": "https://www.chinesepen.org/english/no-13-yu-zhang-33",
-   "grep": [
-    "fifteen years",
-    "15 years",
-    "October 16",
-    "1979",
-    "Wei Jingsheng"
-   ],
-   "excerpt": 0,
-   "note": "Independent Chinese PEN Center case file No. 33 (1979); NGO, secondary; gives verdict date 16 Oct 1979 and 15-year sentence",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 3,
-   "url": "https://www.hrw.org/news/1997/11/16/wei-jingsheng-released",
-   "grep": [
-    "October 16, 1979",
-    "fifteen years",
-    "15 years",
-    "Wei Jingsheng",
-    "1979"
-   ],
-   "excerpt": 0,
-   "note": "Human Rights Watch 1997 statement on Wei's release; NGO, secondary; gives sentencing date 16 Oct 1979",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 3,
-   "url": "https://beijing-spring.univie.ac.at/en/photos/big-character-posters/beijing-march-1979/",
-   "grep": [
-    "15 years",
-    "October",
-    "Wei Jingsheng",
-    "arrested",
-    "1979"
-   ],
-   "excerpt": 0,
-   "note": "University of Vienna Beijing Spring project; university, secondary; sentenced to 15 years in October",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 4,
-   "url": "https://beijing-spring.univie.ac.at/en/the-democracy-movement-1978-1981/the-democracy-wall",
-   "grep": [
-    "Yuetan",
-    "6 December",
-    "register",
-    "Xidan",
-    "big-character"
-   ],
-   "excerpt": 0,
-   "note": "University of Vienna Beijing Spring project page on the Xidan Democracy Wall; university, secondary; closure on 6 Dec 1979, relocation to Yuetan Park, registration office",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 4,
-   "url": "https://journals.univie.ac.at/index.php/jeacs/article/download/6561/6579/15915",
-   "grep": [
-    "Yuetan",
-    "register",
-    "work unit",
-    "December 1979",
-    "Democracy Wall"
-   ],
-   "excerpt": 0,
-   "note": "Opletal, 'The 1978-1981 Democracy Wall Movement', Journal of East Asian Cultural Studies, University of Vienna; scholarly, secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 4,
-   "url": "https://digital.bentley.umich.edu/midaily/mdp.39015071754373/977/download_text",
-   "grep": [
-    "Democracy Wall",
-    "register",
-    "work",
-    "names",
-    "park"
-   ],
-   "excerpt": 0,
-   "note": "Michigan Daily 1979 page (AP/UPI wire report) via Univ. of Michigan Bentley digital archive; media only; says new wall requires writers to register names and work addresses",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 5,
-   "url": "https://jjjcz.mee.gov.cn/djfg/gjflfg/xf/198009/t19800901_444124.html",
-   "grep": [
-    "第四十五条",
-    "大字报",
-    "大鸣",
-    "第三次会议",
-    "1980年9月10日"
-   ],
-   "excerpt": 0,
-   "note": "Chinese government agency (Ministry of Ecology and Environment discipline team) page hosting the Fifth NPC Third Session resolution amending Article 45; primary text",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 5,
-   "url": "https://news.12371.cn/2015/03/18/ARTI1426667115741768.shtml?from=singlemessage",
-   "grep": [
-    "大字报",
-    "大鸣",
-    "第四十五条",
-    "罢工",
-    "宪法"
-   ],
-   "excerpt": 0,
-   "note": "1978 PRC Constitution text on the Communist Party members' site 12371.cn; primary text of original Article 45",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C055",
-   "idx": 5,
-   "url": "https://openyls.law.yale.edu/server/api/core/bitstreams/a59d2072-e67a-4949-9048-755d56540be4/content",
-   "grep": [
-    "Article 45",
-    "four big",
-    "big-character posters",
-    "1980",
-    "Central Committee"
-   ],
-   "excerpt": 0,
-   "note": "Yale law journal comment on free speech in China; university law journal, secondary; says Central Committee recommended removing the four big rights June 1980 and the NPC did so",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
    "id": "C060",
-   "idx": 0,
-   "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
+   "idx": 3,
+   "url": "https://findingaids.lib.umich.edu/catalog/umich-bhl-05100",
    "grep": [
-    "Chinese-American",
-    "Japanese",
-    "out of work",
     "Ebens",
-    "Vincent Chin"
-   ],
-   "excerpt": 0,
-   "note": "Sixth Circuit opinion, United States v. Ebens, 800 F.2d 1422 (1986), on Justia; court opinion, primary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C060",
-   "idx": 0,
-   "url": "https://law.resource.org/pub/us/case/reporter/F2/800/800.F2d.1422.84-1757.html",
-   "grep": [
-    "Chinese-American",
-    "Japanese",
-    "out of work",
-    "Ebens",
-    "Chin"
-   ],
-   "excerpt": 0,
-   "note": "Same Sixth Circuit opinion, 800 F.2d 1422, on Public.Resource.Org; court opinion, primary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C060",
-   "idx": 0,
-   "url": "https://usccr.gov/files/historical/1985/85-008.pdf",
-   "grep": [
+    "1987",
+    "25 years",
     "Vincent Chin",
-    "Ebens",
-    "Japanese",
-    "Chinese American",
-    "probation"
+    "retrial"
    ],
    "excerpt": 0,
-   "note": "U.S. Commission on Civil Rights, Recent Activities Against Citizens and Residents of Asian Descent (1986); federal agency report, primary/official; content on Chin case unverified",
+   "note": "University of Michigan Bentley Historical Library finding aid for American Citizens for Justice records; university archive, secondary; summarises conviction, overturn and 1987 retrial",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C060",
-   "idx": 2,
-   "url": "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
-   "grep": [
-    "Kaufman",
-    "probation",
-    "$3,000",
-    "Ebens",
-    "Nitz",
-    "manslaughter"
-   ],
-   "excerpt": 0,
-   "note": "State Bar of Michigan Bar Journal cover story 'Killing Spawned Asian American Civil Rights Movement'; professional bar publication, secondary; search summary says three years' probation and $3,000 fine",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C060",
-   "idx": 2,
-   "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
-   "grep": [
-    "probation",
-    "3,720",
-    "manslaughter",
-    "Wayne County",
-    "Ebens"
-   ],
-   "excerpt": 0,
-   "note": "Sixth Circuit opinion, 800 F.2d 1422; court opinion, primary; search summary says it gives the state fine as $3,720, so it tests the $3,000 figure",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C060",
-   "idx": 2,
-   "url": "https://repository.law.umich.edu/context/mjrl/article/1274/viewcontent/johnson.pdf",
-   "grep": [
-    "Ebens",
-    "Nitz",
-    "probation",
-    "$3,000",
-    "Kaufman"
-   ],
-   "excerpt": 0,
-   "note": "Michigan Journal of Race and Law vol 1 article on the Vincent Chin case; university law journal, secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C060",
+   "id": "C062",
    "idx": 3,
-   "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
+   "url": "https://www.everycrsreport.com/reports/RL30700.html",
    "grep": [
-    "Ebens",
-    "twenty-five",
-    "reverse",
-    "fair trial",
-    "section 245"
+    "Peace Pearl",
+    "Su-27",
+    "1990",
+    "F-8",
+    "avionics"
    ],
    "excerpt": 0,
-   "note": "Sixth Circuit opinion, 800 F.2d 1422 (11 Sept 1986); court opinion, primary; covers 1984 federal conviction and reversal for denial of fair trial",
+   "note": "CRS report RL30700 'China's Foreign Conventional Arms Acquisitions' via EveryCRSReport mirror; official CRS; a CRS report in search says China canceled Peace Pearl in 1990",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C060",
+   "id": "C062",
    "idx": 3,
-   "url": "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
+   "url": "https://www.uscc.gov/sites/default/files/5.20.10Fisher.pdf",
    "grep": [
-    "Ebens",
-    "not guilty",
-    "Cincinnati",
-    "Sixth Circuit",
-    "civil rights"
+    "Peace Pearl",
+    "Grumman",
+    "Tiananmen",
+    "Su-27",
+    "cancel"
    ],
    "excerpt": 0,
-   "note": "State Bar of Michigan Bar Journal article; professional bar publication, secondary; says a Cincinnati jury found Ebens not guilty on retrial",
+   "note": "Richard Fisher testimony to the U.S.-China Economic and Security Review Commission (20 May 2010); congressional commission record, primary; says Peace Pearl was canceled after Tiananmen and Russia stepped in",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 3,
+   "url": "https://apps.dtic.mil/sti/tr/pdf/ADA297080.pdf",
+   "grep": [
+    "Peace Pearl",
+    "Su-27",
+    "Tiananmen",
+    "F-8",
+    "suspended"
+   ],
+   "excerpt": 0,
+   "note": "RAND, China's Air Force Enters the 21st Century (Allen, Krumel, Pollack, 1995), DTIC copy; think-tank study for the U.S. Air Force, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 0,
+   "url": "https://history.state.gov/milestones/1989-1992/gulf-war",
+   "grep": [
+    "January 16",
+    "February 28",
+    "Desert Storm",
+    "air",
+    "ground"
+   ],
+   "excerpt": 0,
+   "note": "Office of the Historian milestone: Gulf War (US State Department)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 0,
+   "url": "https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458965/1991-operation-desert-shielddesert-storm/",
+   "grep": [
+    "17 January",
+    "one hundred hours",
+    "largest air campaign",
+    "28 February"
+   ],
+   "excerpt": 0,
+   "note": "Air Force Historical Support Division fact sheet (US government)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 0,
+   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-PEMD-96-10/pdf/GAOREPORTS-PEMD-96-10.pdf",
+   "grep": [
+    "43-day",
+    "100 hours",
+    "January 17",
+    "February 28",
+    "ground"
+   ],
+   "excerpt": 0,
+   "note": "GAO report PEMD-96-10 on Gulf War air campaign (US government, via govinfo)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C070",
+   "idx": 1,
+   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/roundtables/2005/CECC%20Roundtable%20Testimony%20-%20Harry%20Wu%20-%206.22.05.pdf",
+   "grep": [
+    "60 Minutes",
+    "1991",
+    "CBS",
+    "film",
+    "Laogai"
+   ],
+   "excerpt": 0,
+   "note": "Harry Wu testimony to the Congressional-Executive Commission on China, 2005 (US commission record of his own account)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C076",
+   "idx": 2,
+   "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3107.pdf",
+   "grep": [
+    "Chang",
+    "one couple, one child",
+    "sterilization",
+    "persecution"
+   ],
+   "excerpt": 0,
+   "note": "Matter of Chang, 20 I&N Dec. 38 (BIA 1989) (US Justice Department EOIR)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C076",
+   "idx": 2,
+   "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3611.pdf",
+   "grep": [
+    "Chang",
+    "601(a)",
+    "1996",
+    "forced abortion",
+    "overrul"
+   ],
+   "excerpt": 0,
+   "note": "Matter of J-S-, 24 I&N Dec. 520 (A.G. 2008): describes IIRIRA 601(a) overruling Chang (US Justice Department)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C076",
+   "idx": 3,
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapI-sec1101.htm",
+   "grep": [
+    "forced to abort",
+    "involuntary sterilization",
+    "political opinion",
+    "persecuted"
+   ],
+   "excerpt": 0,
+   "note": "8 U.S.C. 1101(a)(42) as amended by IIRIRA 601(a) (US Code via govinfo)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 3,
+   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141602824_2025.01.31%20-%20Cisco%20Cert%20Pet.pdf",
+   "grep": [
+    "Falun Gong",
+    "Golden Shield",
+    "2011",
+    "Northern District of California",
+    "identify"
+   ],
+   "excerpt": 0,
+   "note": "Cisco's petition for certiorari in No. 24-856 (U.S. Supreme Court filing, primary court document); states when respondents sued and the Golden Shield allegations",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 3,
+   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141615995_2025.01.31%20-%20Cisco%20Cert%20Pet%20App.pdf",
+   "grep": [
+    "Falun Gong",
+    "Golden Shield",
+    "2011",
+    "Cisco",
+    "Berzon"
+   ],
+   "excerpt": 0,
+   "note": "Appendix to Cisco cert petition 24-856 containing the Ninth Circuit opinion (No. 15-16909) and district court orders (primary court documents)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 3,
+   "url": "https://business-humanrights.org/en/cisco-systems-lawsuits-re-china",
+   "grep": [
+    "Falun Gong",
+    "Golden Shield",
+    "2011",
+    "Cisco",
+    "Chambers"
+   ],
+   "excerpt": 0,
+   "note": "Business & Human Rights Resource Centre case page on the Cisco China lawsuits (NGO, secondary; summarises the May 2011 filing)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 4,
+   "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-856.html",
+   "grep": [
+    "July 7, 2023",
+    "15-16909",
+    "Petition for a writ of certiorari",
+    "Cisco Systems",
+    "Rehearing Denied"
+   ],
+   "excerpt": 0,
+   "note": "U.S. Supreme Court docket for Cisco Systems v. Doe I, No. 24-856 (primary court record); lists Ninth Circuit decision date and the cert petition",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 4,
+   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141602824_2025.01.31%20-%20Cisco%20Cert%20Pet.pdf",
+   "grep": [
+    "July 7, 2023",
+    "Ninth Circuit",
+    "15-16909",
+    "73 F.4th 700",
+    "certiorari"
+   ],
+   "excerpt": 0,
+   "note": "Cisco's petition for certiorari in No. 24-856 (primary court filing); cites the Ninth Circuit decision and asks the Supreme Court to review it",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C080",
+   "idx": 4,
+   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141615995_2025.01.31%20-%20Cisco%20Cert%20Pet%20App.pdf",
+   "grep": [
+    "July 7, 2023",
+    "15-16909",
+    "Berzon",
+    "Christen",
+    "REVERSED"
+   ],
+   "excerpt": 0,
+   "note": "Appendix to the cert petition with the Ninth Circuit opinion filed July 7, 2023 (primary court document)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C081",
+   "idx": 3,
+   "url": "https://www.rcfp.org/settlement-reached-lee-case-involving-reporters-subpoenas/",
+   "grep": [
+    "Wen Ho Lee",
+    "$750,000",
+    "895,000",
+    "Associated Press",
+    "June 2"
+   ],
+   "excerpt": 0,
+   "note": "Reporters Committee for Freedom of the Press news item on the June 2006 Lee settlement (NGO, secondary); gives the news organizations' $750,000 share and the five outlets",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C081",
+   "idx": 3,
+   "url": "https://www.jurist.org/news/2006/06/us-nuclear-scientist-settles-privacy",
+   "grep": [
+    "Wen Ho Lee",
+    "895,000",
+    "750,000",
+    "Privacy Act",
+    "news organizations"
+   ],
+   "excerpt": 0,
+   "note": "JURIST (University of Pittsburgh School of Law news service, secondary) report on the June 2006 settlement amounts: government $895,000 plus media $750,000",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C081",
+   "idx": 3,
+   "url": "https://archive.seattletimes.com/archive/20060603/wenholee03/us-5-news-organizations-settle-wen-ho-lees-lawsuit",
+   "grep": [
+    "Wen Ho Lee",
+    "1.6 million",
+    "895,000",
+    "750,000",
+    "five news organizations"
+   ],
+   "excerpt": 0,
+   "note": "media only: Associated Press story (Seattle Times archive, 3 June 2006) on the Lee settlement, should carry the combined ~$1.6 million figure",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 1,
+   "url": "https://www.fmprc.gov.cn/ce/ceun/eng/fyrth/t291388.htm",
+   "grep": [
+    "23 January, 2007",
+    "outer space",
+    "Liu Jianchao",
+    "test",
+    "informed"
+   ],
+   "excerpt": 0,
+   "note": "PRC Ministry of Foreign Affairs transcript of spokesperson Liu Jianchao's regular press conference on 23 January 2007 (primary, Chinese government), first official comment on the satellite test",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 1,
+   "url": "https://www.everycrsreport.com/files/20070423_RS22652_86cca19bea87ad2ae804edb0c6d1556a407f392a.html",
+   "grep": [
+    "January 11, 2007",
+    "January 23",
+    "Foreign Ministry",
+    "Fengyun",
+    "anti-satellite"
+   ],
+   "excerpt": 0,
+   "note": "CRS Report RS22652 'China's Anti-Satellite Weapon Test' (Shirley Kan, 23 Apr 2007), Congressional Research Service via everycrsreport.com mirror (primary US government analysis); dates the test and the Chinese statement",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 1,
+   "url": "https://www.hoover.org/sites/default/files/research/docs/clm20jm.pdf",
+   "grep": [
+    "January 11",
+    "January 23",
+    "silence",
+    "ASAT",
+    "Foreign Ministry"
+   ],
+   "excerpt": 0,
+   "note": "China Leadership Monitor (Hoover Institution think tank, James Mulvenon) analysis of Beijing's silence after the January 2007 ASAT test (secondary)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 3,
+   "url": "https://www.uscc.gov/sites/default/files/Costello_Written%20Testimony.pdf",
+   "grep": [
+    "Strategic Support Force",
+    "December 31, 2015",
+    "December 2015",
+    "space",
+    "cyberspace"
+   ],
+   "excerpt": 0,
+   "note": "Written testimony of John Costello to the U.S.-China Economic and Security Review Commission, 'China's Strategic Support Force: A Force for a New Era' (US government commission record, primary testimony); covers 2015 creation for space and cyber",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 3,
+   "url": "https://www.cna.org/Newsletters/PLA%20Update/Issue-20/PLA-Update-Issue-20-April-30-2024.pdf",
+   "grep": [
+    "April 19",
+    "Strategic Support Force",
+    "Aerospace Force",
+    "Cyberspace Force",
+    "Information Support Force",
+    "2015"
+   ],
+   "excerpt": 0,
+   "note": "CNA PLA Update Issue 20 (30 Apr 2024), CNA research institute newsletter (think tank, secondary); reports the April 19, 2024 disbanding of the SSF into three forces and its late-2015 founding",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 3,
+   "url": "https://www.airuniversity.af.edu/CASI/Display/Article/3749754/the-plas-new-information-support-force/",
+   "grep": [
+    "Strategic Support Force",
+    "Information Support Force",
+    "Aerospace Force",
+    "Cyberspace Force",
+    "2015"
+   ],
+   "excerpt": 0,
+   "note": "China Aerospace Studies Institute (US Air Force Air University) article 'The PLA's New Information Support Force' (US government research institute, secondary)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 0,
+   "url": "https://www.china.org.cn/china/photos/2008-12/31/content_17037604.htm",
+   "grep": [
+    "Sanlu",
+    "December 2007",
+    "complaints",
+    "Tian Wenhua",
+    "melamine"
+   ],
+   "excerpt": 0,
+   "note": "china.org.cn (Chinese government-run outlet, Xinhua-sourced) report on the 31 Dec 2008 Sanlu executives' trial; prosecutors on complaints from December 2007 (state media, primary Chinese account)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 0,
+   "url": "https://covid-19.chinadaily.com.cn/china/2009-01/01/content_7358822.htm",
+   "grep": [
+    "Sanlu",
+    "December 2007",
+    "complaints",
+    "Tian Wenhua",
+    "melamine"
+   ],
+   "excerpt": 0,
+   "note": "China Daily (state media mirror) 1 Jan 2009 report on the Sanlu trial and guilty plea; complaints began December 2007 (secondary/state media)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 0,
+   "url": "https://www.treasury.govt.nz/sites/default/files/2020-03/oia-20200010.pdf",
+   "grep": [
+    "Sanlu",
+    "43%",
+    "Fonterra",
+    "melamine",
+    "2008"
+   ],
+   "excerpt": 0,
+   "note": "New Zealand Treasury response to an Official Information Act request (NZ government document, primary); states Fonterra's 43% stake in Sanlu and the 2008 melamine scandal (covers the ownership half of the sentence only)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 2,
+   "url": "https://covid-19.chinadaily.com.cn/china/2008-12/01/content_7258262.htm",
+   "grep": [
+    "294,000",
+    "six",
+    "51,900",
+    "Ministry of Health",
+    "melamine"
+   ],
+   "excerpt": 0,
+   "note": "China Daily (Xinhua) 1 Dec 2008 report of the Chinese Ministry of Health's final figures: 294,000 infants affected, six deaths (state media relaying the government announcement)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 2,
+   "url": "https://rfs.healthbureau.gov.hk/images/HKMJ/HKMJ_Vol19_No6_Supple8_Dec2013.pdf",
+   "grep": [
+    "294 000",
+    "294,000",
+    "melamine",
+    "six deaths",
+    "Sanlu"
+   ],
+   "excerpt": 0,
+   "note": "Hong Kong Medical Journal supplement funded by the Hong Kong Food and Health Bureau (government-funded research summary, secondary) citing the Ministry of Health's 294,000 infants and six deaths",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 2,
+   "url": "https://www.besjournal.com/fileSWYXYHJKX/journal/article/swyxyhjkx/2009/2/PDF/bes200902005.pdf",
+   "grep": [
+    "294",
+    "melamine",
+    "six",
+    "infant formula",
+    "Sanlu"
+   ],
+   "excerpt": 0,
+   "note": "Biomedical and Environmental Sciences 2009 (China CDC journal, peer-reviewed, secondary) article on the melamine infant formula incident",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 3,
+   "url": "https://www.avma.org/javma-news/2007-04-15/recall-pet-food-leaves-veterinarians-seeking-solutions",
+   "grep": [
+    "60 million",
+    "melamine",
+    "wheat gluten",
+    "recall",
+    "Menu Foods"
+   ],
+   "excerpt": 0,
+   "note": "JAVMA News, American Veterinary Medical Association, 15 Apr 2007 (professional association, secondary); recall scale and melamine in wheat gluten",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 3,
+   "url": "https://cacmap.fda.gov/animal-veterinary/recalls-withdrawals/melamine-pet-food-recall-frequently-asked-questions",
+   "grep": [
+    "Xuzhou Anying",
+    "Binzhou Futian",
+    "wheat gluten",
+    "rice protein concentrate",
+    "melamine"
+   ],
+   "excerpt": 0,
+   "note": "FDA Center for Veterinary Medicine, Melamine Pet Food Recall FAQ (agency page, primary); names the two Chinese suppliers of wheat gluten and rice protein concentrate",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C090",
+   "idx": 3,
+   "url": "https://www.dvm360.com/view/tentative-settlement-reached-pet-food-lawsuits-0",
+   "grep": [
+    "60 million",
+    "Menu Foods",
+    "melamine",
+    "recall",
+    "pouches"
+   ],
+   "excerpt": 0,
+   "note": "media only: dvm360 veterinary trade news on the pet food lawsuit settlement; states Menu Foods recalled 60 million cans and pouches",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
