@@ -70,15 +70,18 @@ def check_terms(text, terms):
 
 
 def grep_snippets(text, term, width=130, limit=3):
-    low, flat = text.lower(), re.sub(r'(?<=\d),(?=\d)', '', text.lower())
-    spots = []
-    for v in variants(term):
-        for src in (low, flat):
-            i = src.find(v)
-            while i != -1 and len(spots) < limit and (src is low):
-                spots.append(text[max(0, i - width): i + len(v) + width])
-                i = src.find(v, i + len(v) + width)
-    return spots[:limit]
+    """Up to `limit` snippets around `term`. Numbers match with or without digit commas."""
+    out = []
+    for src, plain in ((text, True), (re.sub(r'(?<=\d),(?=\d)', '', text), False)):
+        low = src.lower()
+        for v in variants(term):
+            i = low.find(v)
+            while i != -1 and len(out) < limit:
+                out.append(src[max(0, i - width): i + len(v) + width])
+                i = low.find(v, i + len(v) + width)
+        if out:
+            break
+    return out[:limit]
 
 
 def fetch(url, terms, grep=(), excerpt=0):
