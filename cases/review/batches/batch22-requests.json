@@ -1,0 +1,561 @@
+[
+ {
+  "id": "C067",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/STATUTE-106/pdf/STATUTE-106-Pg1969.pdf",
+  "grep": [
+   "Chinese Student Protection Act",
+   "102-404",
+   "October 9, 1992",
+   "adjustment of status",
+   "People's Republic of China"
+  ],
+  "excerpt": 0,
+  "note": "Statutes at Large 106 Stat. 1969 (P.L. 102-404)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C067",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/COMPS-1364/pdf/COMPS-1364.pdf",
+  "grep": [
+   "Chinese Student Protection Act of 1992",
+   "102-404",
+   "adjustment of status",
+   "June 5, 1989",
+   "permanent resident"
+  ],
+  "excerpt": 0,
+  "note": "US Code compilation of CSPA",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C068",
+  "idx": 0,
+  "url": "https://adst.org/?p=25291",
+  "grep": [
+   "Yinhe",
+   "Yin He",
+   "thiodiglycol",
+   "thionyl chloride",
+   "Iran"
+  ],
+  "excerpt": 0,
+  "note": "ADST oral history (secondary)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C068",
+  "idx": 0,
+  "url": "https://www.armscontrolwonk.com/archive/602067/the-yinhe-incident/",
+  "grep": [
+   "Yinhe",
+   "thiodiglycol",
+   "thionyl chloride",
+   "Iran",
+   "mustard"
+  ],
+  "excerpt": 0,
+  "note": "think tank/blog: Arms Control Wonk (Carnegie)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C068",
+  "idx": 2,
+  "url": "https://adst.org/?p=25291",
+  "grep": [
+   "Dammam",
+   "Yinhe",
+   "Yin He",
+   "containers",
+   "inspection"
+  ],
+  "excerpt": 0,
+  "note": "ADST oral history (secondary)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C068",
+  "idx": 2,
+  "url": "https://www.armscontrolwonk.com/archive/602067/the-yinhe-incident/",
+  "grep": [
+   "Dammam",
+   "628",
+   "containers",
+   "Saudi",
+   "September"
+  ],
+  "excerpt": 0,
+  "note": "think tank/blog: Arms Control Wonk (Carnegie)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 0,
+  "url": "https://www.archives.gov/files/federal-register/executive-orders/pdf/12850.pdf",
+  "grep": [
+   "12850",
+   "emigration",
+   "prison labor",
+   "overall, significant progress",
+   "Most-Favored-Nation"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register text of EO 12850 (archives.gov)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 0,
+  "url": "https://clintonwhitehouse6.archives.gov/1993/05/1993-05-28-executive-order-12850-on-china-mfn.html",
+  "grep": [
+   "Executive Order 12850",
+   "emigration",
+   "prison labor",
+   "overall, significant progress",
+   "July 3, 1994"
+  ],
+  "excerpt": 0,
+  "note": "Clinton White House archive text of EO 12850",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 1,
+  "url": "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+  "grep": [
+   "Wei Jingsheng",
+   "April 1",
+   "Shattuck",
+   "Christopher",
+   "1994"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch/Asia, May 1994 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 1,
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170521995en.pdf",
+  "grep": [
+   "Wei Jingsheng",
+   "1 April 1994",
+   "Shattuck",
+   "detained",
+   "Christopher"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International 1995 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 2,
+  "url": "https://clintonwhitehouse6.archives.gov/1994/05/1994-05-26-president-in-press-conference-on-china-mfn-status.html",
+  "grep": [
+   "Secretary Christopher",
+   "freedom of emigration",
+   "prison labor",
+   "overall significant progress",
+   "Most Favored Nation"
+  ],
+  "excerpt": 0,
+  "note": "Clinton White House archive: 26 May 1994 press conference",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C069",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/PPP-1994-book1/pdf/PPP-1994-book1-doc-pg991.pdf",
+  "grep": [
+   "Secretary Christopher",
+   "emigration",
+   "prison labor",
+   "overall significant progress",
+   "most-favored-nation"
+  ],
+  "excerpt": 0,
+  "note": "Public Papers of the Presidents 1994, p. 991",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C070",
+  "idx": 0,
+  "url": "https://www.britannica.com/biography/Harry-Hongda-Wu",
+  "grep": [
+   "Harry Wu",
+   "19 years",
+   "1985",
+   "laogai",
+   "labor"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Britannica",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C070",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/app/details/BILLS-104sres148ats",
+  "grep": [
+   "Harry Wu",
+   "19 years",
+   "S. Res. 148",
+   "Peter H. Wu",
+   "1995"
+  ],
+  "excerpt": 0,
+  "note": "Senate resolution S.Res.148 (104th)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C070",
+  "idx": 1,
+  "url": "https://www.britannica.com/biography/Harry-Hongda-Wu",
+  "grep": [
+   "60 Minutes",
+   "1991",
+   "Wu",
+   "camps",
+   "laogai"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Britannica",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C070",
+  "idx": 2,
+  "url": "https://clintonwhitehouse6.archives.gov/1995/08/1995-08-24-press-secretary-statement-on-china-expulsion-of-wu.html",
+  "grep": [
+   "Wu",
+   "15 years",
+   "expelled",
+   "convicted",
+   "Aug. 24"
+  ],
+  "excerpt": 0,
+  "note": "Clinton White House archive press secretary statement 24 Aug 1995",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C070",
+  "idx": 2,
+  "url": "https://www.amnesty.org/en/documents/asa17/058/1995/en/",
+  "grep": [
+   "Harry Wu",
+   "15 years",
+   "23 August 1995",
+   "espionage",
+   "expelled"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International 1995 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C071",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/FR-2002-01-24/pdf/02-1773.pdf",
+  "grep": [
+   "Magnequench",
+   "Anderson",
+   "Indiana",
+   "2001",
+   "workers"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register notice (TAA certification) Jan 24 2002; dates may differ from 2002 closure",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C071",
+  "idx": 2,
+  "url": "https://www.uscc.gov/sites/default/files/Statement%20of%20Carolyn%20Bartholomew%20July%202005.pdf",
+  "grep": [
+   "Magnequench",
+   "Anderson",
+   "Tianjin",
+   "China",
+   "Indiana"
+  ],
+  "excerpt": 0,
+  "note": "USCC commissioner statement 2005",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 2,
+  "url": "https://www.cecc.gov/publications/commission-analysis/government-policy-on-tibetan-reincarnation-leads-to-expulsions",
+  "grep": [
+   "golden urn",
+   "Gyaltsen Norbu",
+   "Gyancain Norbu",
+   "1995",
+   "Panchen Lama"
+  ],
+  "excerpt": 0,
+  "note": "CECC (congressional-executive commission) analysis",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 2,
+  "url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/gedhun-choekyi-nyima",
+  "grep": [
+   "Gedhun Choekyi Nyima",
+   "Gyaltsen Norbu",
+   "golden urn",
+   "1995",
+   "November"
+  ],
+  "excerpt": 0,
+  "note": "USCIRF (federal commission) victims database",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 3,
+  "url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/gedhun-choekyi-nyima",
+  "grep": [
+   "Gedhun Choekyi Nyima",
+   "1995",
+   "whereabouts",
+   "disappeared",
+   "unknown"
+  ],
+  "excerpt": 0,
+  "note": "USCIRF (federal commission) victims database",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 3,
+  "url": "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/china/tibet/",
+  "grep": [
+   "Gedhun Choekyi Nyima",
+   "1995",
+   "whereabouts",
+   "Panchen Lama",
+   "disappeared"
+  ],
+  "excerpt": 0,
+  "note": "State Dept 2023 International Religious Freedom Report, Tibet",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 4,
+  "url": "https://www.cecc.gov/media-center/press-releases/chairs-welcome-passage-of-the-tibetan-policy-and-support-act",
+  "grep": [
+   "Tibetan Policy and Support Act",
+   "Dalai Lama",
+   "reincarnation",
+   "Tibetan Buddhist",
+   "2020"
+  ],
+  "excerpt": 0,
+  "note": "CECC press release on TPSA passage",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C072",
+  "idx": 4,
+  "url": "https://www.state.gov/wp-content/uploads/2021/05/240282-TIBET-2020-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf",
+  "grep": [
+   "Tibetan Policy and Support Act",
+   "Dalai Lama",
+   "reincarnation",
+   "Tibetan Buddhist",
+   "succession"
+  ],
+  "excerpt": 0,
+  "note": "State Dept 2020 International Religious Freedom Report, Tibet",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C073",
+  "idx": 0,
+  "url": "https://www.everycrsreport.com/files/2023-04-04_IF12371_8c02902da8b53bb7fd8ac59ac780d0e8a24c4618.pdf",
+  "grep": [
+   "396",
+   "97-1",
+   "Lee Teng-hui",
+   "Cornell",
+   "1995"
+  ],
+  "excerpt": 0,
+  "note": "CRS IF12371 Taiwan presidents' US transit visits (secondary official)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C073",
+  "idx": 0,
+  "url": "https://www.everycrsreport.com/files/20060906_RL30341_10105ad24c7366cd77e937630ea1e85cf7a72bfd.html",
+  "grep": [
+   "396",
+   "97",
+   "Lee Teng-hui",
+   "Cornell",
+   "concurrent resolution"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL30341 One China policy statements (secondary official)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C073",
+  "idx": 1,
+  "url": "https://www.everycrsreport.com/reports/97-484.html",
+  "grep": [
+   "July 1995",
+   "March 1996",
+   "missile",
+   "Taiwan",
+   "Lee Teng-hui"
+  ],
+  "excerpt": 0,
+  "note": "CRS 97-484 China-US chronology, Clinton administration",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C073",
+  "idx": 1,
+  "url": "https://www.everycrsreport.com/files/20060124_IB98034_22dc9dc1c66f854f5740ea147933645ea77cafad.pdf",
+  "grep": [
+   "July 1995",
+   "March 1996",
+   "missile",
+   "presidential election",
+   "Cornell"
+  ],
+  "excerpt": 0,
+  "note": "CRS IB98034 Taiwan policy choices",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C074",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/CRPT-105hrpt829/pdf/CRPT-105hrpt829-vol1.pdf",
+  "grep": [
+   "Johnny Chung",
+   "Liu Chao-ying",
+   "aerospace",
+   "Liu Huaqing",
+   "$300,000"
+  ],
+  "excerpt": 0,
+  "note": "House Report 105-829 (Burton committee); large PDF",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C074",
+  "idx": 0,
+  "url": "https://www.hsgac.senate.gov/media/dems/campaign-finance-china-connection-re-emerges/",
+  "grep": [
+   "Johnny Chung",
+   "Liu Chao-ying",
+   "Liu Huaqing",
+   "aerospace",
+   "Chinese military"
+  ],
+  "excerpt": 0,
+  "note": "Senate HSGAC minority page",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C074",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/CRPT-105srpt167/pdf/CRPT-105srpt167-pt1.pdf",
+  "grep": [
+   "Governmental Affairs",
+   "Chinese government",
+   "plan",
+   "influence",
+   "1996"
+  ],
+  "excerpt": 0,
+  "note": "Senate Report 105-167 (Thompson committee majority report)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C074",
+  "idx": 2,
+  "url": "https://www.congress.gov/105/crpt/srpt167/CRPT-105srpt167-pt6.pdf",
+  "grep": [
+   "minority",
+   "Chinese government",
+   "China",
+   "no evidence",
+   "Governmental Affairs"
+  ],
+  "excerpt": 0,
+  "note": "Senate Report 105-167 part 6 (minority views, if so numbered); congress.gov PDF",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C074",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/CRPT-105srpt167/pdf/CRPT-105srpt167-pt1.pdf",
+  "grep": [
+   "Democratic National Committee",
+   "2.8 million",
+   "citizenship",
+   "Asian",
+   "surnames"
+  ],
+  "excerpt": 0,
+  "note": "Senate Report 105-167",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
