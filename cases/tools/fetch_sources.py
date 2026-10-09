@@ -9,6 +9,7 @@ REQUESTS.json:
    "requests": [{"id": "F001", "url": "https://...", "terms": ["69 percent", "August 2026"], "note": "...",
                  "grep": ["Trump", "$14"],   # optional: up to 3 wide snippets per term, found anywhere on the page
                  "excerpt": 800,             # optional: first N characters of the page text
+                 "grep_width": 130, "grep_limit": 3,   # optional: snippet size and count
                  "ua": "browser"}]}          # optional: a browser-style User-Agent, for public pages that refuse bots
 
 For each URL the report gives the HTTP status, final URL, page title, and for each
@@ -107,7 +108,7 @@ def grep_snippets(text, term, width=130, limit=3):
     return out[:limit]
 
 
-def fetch(url, terms, grep=(), excerpt=0, ua=None):
+def fetch(url, terms, grep=(), excerpt=0, ua=None, grep_width=130, grep_limit=3):
     if url.startswith('http://'):
         url = 'https://' + url[len('http://'):]            # we only fetch over https
     out = {'url': url, 'status': None, 'final_url': None, 'title': None, 'bytes': 0, 'error': None}
@@ -142,7 +143,7 @@ def fetch(url, terms, grep=(), excerpt=0, ua=None):
                 out['terms'] = check_terms(text, terms)
                 out['terms_found'] = f"{sum(1 for v in out['terms'].values() if v)}/{len(terms)}"
             if grep:
-                out['grep'] = {g: grep_snippets(text, g) for g in grep}
+                out['grep'] = {g: grep_snippets(text, g, grep_width, grep_limit) for g in grep}
             if excerpt:
                 out['excerpt'] = text[:min(int(excerpt), 3000)]
             if not text:
@@ -195,7 +196,7 @@ def main():
     report = []
     print('=== FETCH REPORT BEGIN ===', flush=True)
     for i, r in enumerate(reqs):
-        res = fetch(r['url'], r.get('terms', []), r.get('grep', ()), r.get('excerpt', 0), r.get('ua'))
+        res = fetch(r['url'], r.get('terms', []), r.get('grep', ()), r.get('excerpt', 0), r.get('ua'), r.get('grep_width', 130), r.get('grep_limit', 3))
         res.update(id=r.get('id'), claim=r.get('note'))
         report.append(res)
         print('FETCH ' + json.dumps(res, ensure_ascii=False), flush=True)

@@ -1,0 +1,34 @@
+[
+ {
+  "id": "F008",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "National Intelligence Law, Article 7",
+  "url": "https://www.12339.gov.cn/article/h5_law_con/4",
+  "notes": "Chinese-language text on the Ministry of State Security reporting platform: Article 7 \"任何组织和公民都应当依法支持、协助和配合国家情报工作\" (all organizations and citizens shall support, assist and cooperate with national intelligence work). The law was adopted June 27, 2017 and amended 2018. The npc.gov.cn copies failed the runner's TLS handshake."
+ },
+ {
+  "id": "F021",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "PRC embassy (MOFCOM announcement)",
+  "url": "https://us.china-embassy.gov.cn/eng/zmgx/zxxx/202504/t20250409_11590915.htm",
+  "notes": "MOFCOM announcement via the PRC embassy: six US firms (Shield AI, Sierra Nevada...) added to the unreliable entity list effective April 10, 2025 for Taiwan arms sales or military technology cooperation. Shows the practice; \"many times since 2023\" needs the earlier listings."
+ },
+ {
+  "id": "F041",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "MOFCOM",
+  "url": "https://www.mofcom.gov.cn/syxwfb/art/2025/art_072f1b88bcb4415fae1f05bbd569fd50.html",
+  "notes": "MOFCOM spokesperson Q&A of 2025-07-15 on MOFCOM/MOST Announcement No. 28 of 2025: adds battery cathode material preparation technology (LFP, LMFP, phosphate cathode raw materials) and lithium extraction/processing technologies to the restricted-export catalogue. Chinese-language page."
+ },
+ {
+  "id": "F015",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "H.R. 7520 (reported text)",
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-118hr7520rh/html/BILLS-118hr7520rh.htm",
+  "notes": "House-reported bill text: unlawful for a data broker to make sensitive data of a US individual available to a foreign adversary country or entity it controls. The enacted law is Division I of P.L. 118-50 (April 24, 2024) with slightly different wording (\"personally identifiable sensitive data\"). Replace with the enacted text."
+ }
+]

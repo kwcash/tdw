@@ -2,70 +2,14 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "F019",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edmi/pr/chinese-nationals-charged-conspiracy-and-smuggling-dangerous-biological-pathogen-us",
-   "grep": [
-    "Fusarium",
-    "Michigan",
-    "smuggl",
-    "June"
-   ],
-   "excerpt": 500,
-   "note": "DOJ Fusarium case",
-   "ua": "browser"
-  },
-  {
-   "id": "F045",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/former-high-ranking-new-york-state-government-employee-charged-acting-undisclosed",
-   "grep": [
-    "Linda Sun",
-    "agent",
-    "Executive Chamber",
-    "September"
-   ],
-   "excerpt": 500,
-   "note": "Linda Sun charged",
-   "ua": "browser"
-  },
-  {
-   "id": "F046",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/two-individuals-arrested-operating-undeclared-police-station-chinese-government",
-   "grep": [
-    "police station",
-    "Ministry of Public Security",
-    "Lu Jianwang",
-    "Chen Jinping"
-   ],
-   "excerpt": 500,
-   "note": "Police station arrests",
-   "ua": "browser"
-  },
-  {
-   "id": "F046",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/new-york-city-resident-pleads-guilty-operating-secret-police-station-chinese",
-   "grep": [
-    "pleaded guilty",
-    "Chen Jinping",
-    "December"
-   ],
-   "excerpt": 500,
-   "note": "Chen plea",
-   "ua": "browser"
-  },
-  {
    "id": "F023",
    "idx": 2,
    "url": "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf",
    "grep": [
-    "277,398",
-    "China"
+    "277,398"
    ],
-   "excerpt": 200,
-   "note": "Open Doors fast facts (PDF debug)"
+   "excerpt": 0,
+   "note": "Open Doors fast facts"
   },
   {
    "id": "F024",
@@ -73,24 +17,10 @@
    "url": "https://media.ca11.uscourts.gov/opinions/pub/files/202312737.pdf",
    "grep": [
     "Senate Bill 264",
-    "Shen",
-    "Chinese"
+    "Shen"
    ],
-   "excerpt": 200,
-   "note": "11th Cir. opinion (PDF debug)"
-  },
-  {
-   "id": "F024",
-   "idx": 2,
-   "url": "https://www.usda.gov/about-usda/news/press-releases/2025/07/08/farm-security-national-security-trump-administration-takes-bold-action-elevate-american-agriculture",
-   "grep": [
-    "National Farm Security Action Plan",
-    "foreign adversar",
-    "farmland"
-   ],
-   "excerpt": 300,
-   "note": "USDA plan",
-   "ua": "browser"
+   "excerpt": 0,
+   "note": "11th Cir. Shen opinion"
   },
   {
    "id": "F030",
@@ -98,49 +28,10 @@
    "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
    "grep": [
     "talking points",
-    "censorship",
-    "CAISI"
+    "censorship"
    ],
-   "excerpt": 200,
-   "note": "AI Action Plan (PDF debug)"
-  },
-  {
-   "id": "F035",
-   "idx": 0,
-   "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/84aeb15bbe33894365d33f52e027c5268ba95dcf/TSMC%204Q24%20Transcript.pdf",
-   "grep": [
-    "Arizona",
-    "high volume"
-   ],
-   "excerpt": 200,
-   "note": "TSMC 4Q24 transcript",
-   "ua": "browser"
-  },
-  {
-   "id": "F035",
-   "idx": 0,
-   "url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
-   "grep": [
-    "N4",
-    "Q4 2024",
-    "volume production"
-   ],
-   "excerpt": 200,
-   "note": "TSMC Arizona page",
-   "ua": "browser"
-  },
-  {
-   "id": "F055",
-   "idx": 2,
-   "url": "https://www.gao.gov/assets/gao-11-95.pdf",
-   "grep": [
-    "heparin",
-    "China",
-    "2008"
-   ],
-   "excerpt": 200,
-   "note": "GAO heparin",
-   "ua": "browser"
+   "excerpt": 0,
+   "note": "AI Action Plan"
   },
   {
    "id": "F056",
@@ -149,132 +40,459 @@
    "grep": [
     "BGI",
     "prenatal",
-    "PLA",
-    "genetic"
+    "PLA"
    ],
-   "excerpt": 200,
-   "note": "NCSC genomics fact sheet (PDF debug)"
+   "excerpt": 0,
+   "note": "NCSC genomics fact sheet"
   },
   {
-   "id": "F053",
-   "idx": 2,
-   "url": "https://www.grandforksgov.com/business/fufeng-usa-development",
+   "id": "F068",
+   "idx": 1,
+   "url": "https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
    "grep": [
-    "CFIUS",
-    "jurisdiction",
-    "Air Force"
+    "1.2 trillion",
+    "7,800",
+    "20 years"
    ],
-   "excerpt": 300,
-   "note": "Grand Forks Fufeng page"
+   "excerpt": 0,
+   "note": "CBO Golden Dome"
   },
   {
-   "id": "F008",
-   "idx": 2,
-   "url": "https://www.mca.gov.cn/zt/n2643/n2647/c1662004999979993329/content.html",
+   "id": "F064",
+   "idx": 1,
+   "url": "https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf",
    "grep": [
-    "第七条",
-    "支持、协助和配合"
+    "2030",
+    "2035",
+    "deprecated",
+    "disallowed"
    ],
-   "excerpt": 100,
-   "note": "National Intelligence Law (MCA copy)"
+   "excerpt": 0,
+   "note": "NIST IR 8547 ipd"
   },
   {
-   "id": "F008",
-   "idx": 2,
-   "url": "https://www.12339.gov.cn/article/h5_law_con/4",
-   "grep": [
-    "第七条",
-    "支持、协助和配合"
-   ],
-   "excerpt": 100,
-   "note": "National Intelligence Law (12339 copy)"
-  },
-  {
-   "id": "F021",
+   "id": "F045",
    "idx": 0,
-   "url": "https://en.moj.gov.cn/2025-03/25/c_1080689.htm",
+   "url": "https://justice.gov/opa/pr/former-high-ranking-new-york-state-government-employee-charged-acting-undisclosed-agent",
    "grep": [
-    "Anti-Foreign Sanctions Law",
-    "2021",
-    "countermeasures"
+    "Linda Sun",
+    "agent",
+    "Executive Chamber",
+    "Taiwan"
    ],
    "excerpt": 300,
-   "note": "Regulation implementing AFSL (MOJ)"
+   "note": "Linda Sun (OPA)"
   },
   {
-   "id": "F021",
-   "idx": 2,
-   "url": "https://us.china-embassy.gov.cn/eng/zmgx/zxxx/202504/t20250409_11590915.htm",
-   "grep": [
-    "unreliable entity",
-    "Taiwan",
-    "military",
-    "six US"
-   ],
-   "excerpt": 300,
-   "note": "PRC adds six US firms to UEL April 2025"
-  },
-  {
-   "id": "F041",
-   "idx": 1,
-   "url": "https://www.mofcom.gov.cn/syxwfb/art/2025/art_072f1b88bcb4415fae1f05bbd569fd50.html",
-   "grep": [
-    "电池",
-    "正极",
-    "磷酸",
-    "锂"
-   ],
-   "excerpt": 200,
-   "note": "MOFCOM Q&A on technology export catalogue"
-  },
-  {
-   "id": "F043",
+   "id": "F046",
    "idx": 0,
-   "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds632_e.htm",
+   "url": "https://justice.gov/opa/pr/two-arrested-operating-illegal-overseas-police-station-chinese-government",
    "grep": [
-    "Chongqing",
-    "royalt",
-    "OPPO",
-    "global"
+    "police station",
+    "Ministry of Public Security",
+    "Lu Jianwang",
+    "Chen Jinping"
    ],
    "excerpt": 300,
-   "note": "WTO DS632 royalties dispute"
+   "note": "Police station arrests (OPA)"
   },
   {
-   "id": "F015",
-   "idx": 1,
-   "url": "https://www.ftc.gov/legal-library/browse/statutes/protecting-americans-data-foreign-adversaries-act-2024-padfaa",
+   "id": "F046",
+   "idx": 0,
+   "url": "https://www.justice.gov/archives/opa/pr/new-york-resident-pleads-guilty-operating-secret-police-station-chinese-government-lower",
    "grep": [
-    "data broker",
-    "foreign adversary",
-    "sensitive data"
+    "pleaded guilty",
+    "Chen Jinping",
+    "December"
    ],
-   "excerpt": 200,
-   "note": "PADFAA via FTC",
-   "ua": "browser"
-  },
-  {
-   "id": "F015",
-   "idx": 1,
-   "url": "https://www.govinfo.gov/content/pkg/BILLS-118hr7520rh/html/BILLS-118hr7520rh.htm",
-   "grep": [
-    "data broker",
-    "foreign adversary"
-   ],
-   "excerpt": 200,
-   "note": "PADFAA bill text (reported)"
+   "excerpt": 300,
+   "note": "Chen plea (OPA)"
   },
   {
    "id": "F058",
    "idx": 0,
    "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfhhis01.txt",
    "grep": [
-    "China, Mainland",
-    "1,3",
-    "2013"
+    "\"China, Mainland\""
+   ],
+   "excerpt": 0,
+   "note": "TIC: all China rows",
+   "grep_limit": 40,
+   "grep_width": 70
+  },
+  {
+   "id": "F059",
+   "idx": 0,
+   "url": "https://home.treasury.gov/news/press-releases/jy1298",
+   "grep": [
+    "half",
+    "300 billion",
+    "immobiliz"
+   ],
+   "excerpt": 300,
+   "note": "Russia reserves immobilized"
+  },
+  {
+   "id": "F059",
+   "idx": 1,
+   "url": "https://www.gold.org/goldhub/gold-focus/2026/05/china-gold-market-update-notable-rise-gold-reserves",
+   "grep": [
+    "2,3",
+    "tonnes",
+    "2025"
+   ],
+   "excerpt": 300,
+   "note": "PBoC gold (WGC)"
+  },
+  {
+   "id": "F060",
+   "idx": 1,
+   "url": "https://ofac.treasury.gov/media/44966/download",
+   "grep": [
+    "significant transaction",
+    "Hong Kong Autonomy",
+    "Public Law 116"
+   ],
+   "excerpt": 0,
+   "note": "HKAA public law"
+  },
+  {
+   "id": "F060",
+   "idx": 2,
+   "url": "https://ofac.treasury.gov/media/918616/download?inline=",
+   "grep": [
+    "not identified",
+    "no foreign financial",
+    "February 1, 2022",
+    "Section 5(b)"
+   ],
+   "excerpt": 0,
+   "note": "Treasury HKAA 5(b) report"
+  },
+  {
+   "id": "F061",
+   "idx": 0,
+   "url": "https://documents.pclob.gov/prod/Documents/EventsAndPress/290ce816-6560-4e92-95a2-a9afcc72f378/PCLOB%20press%20release%20(1-27-25).pdf",
+   "grep": [
+    "quorum",
+    "terminated",
+    "Williams"
+   ],
+   "excerpt": 0,
+   "note": "PCLOB press release Jan 27 2025"
+  },
+  {
+   "id": "F061",
+   "idx": 1,
+   "url": "https://www.pclob.gov/Board/Index",
+   "grep": [
+    "Williams",
+    "term",
+    "2026"
+   ],
+   "excerpt": 300,
+   "note": "PCLOB board page"
+  },
+  {
+   "id": "F061",
+   "idx": 2,
+   "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/06/announcement-of-expanded-screening-and-vetting-for-visa-applicants",
+   "grep": [
+    "online presence",
+    "F, M, and J",
+    "public"
+   ],
+   "excerpt": 300,
+   "note": "State: student visa vetting"
+  },
+  {
+   "id": "F062",
+   "idx": 0,
+   "url": "https://justice.gov/opa/speech/assistant-attorney-general-matthew-olsen-delivers-remarks-countering-nation-state-threats",
+   "grep": [
+    "China Initiative",
+    "not the right approach",
+    "February"
+   ],
+   "excerpt": 300,
+   "note": "Olsen remarks ending China Initiative"
+  },
+  {
+   "id": "F062",
+   "idx": 2,
+   "url": "https://www.pnas.org/doi/10.1073/pnas.2216248120",
+   "grep": [
+    "2,621",
+    "2010",
+    "2021",
+    "return migration"
+   ],
+   "excerpt": 300,
+   "note": "PNAS Chinese-American scientists"
+  },
+  {
+   "id": "F063",
+   "idx": 0,
+   "url": "https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html",
+   "grep": [
+    "samarium",
+    "April 4",
+    "dysprosium"
+   ],
+   "excerpt": 0,
+   "note": "MOFCOM Announcement 18 of 2025"
+  },
+  {
+   "id": "F063",
+   "idx": 0,
+   "url": "http://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html",
+   "grep": [
+    "镓",
+    "锗",
+    "2023年8月1日"
+   ],
+   "excerpt": 100,
+   "note": "Gallium germanium 2023"
+  },
+  {
+   "id": "F063",
+   "idx": 0,
+   "url": "https://www.mofcom.gov.cn/zcfb/blgg/art/2023/art_f6b1bc49e2c8482f8eb749012bc66dec.html",
+   "grep": [
+    "石墨",
+    "2023年12月1日"
+   ],
+   "excerpt": 100,
+   "note": "Graphite 2023"
+  },
+  {
+   "id": "F063",
+   "idx": 0,
+   "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html",
+   "grep": [
+    "锑",
+    "2024年9月15日"
+   ],
+   "excerpt": 100,
+   "note": "Antimony 2024"
+  },
+  {
+   "id": "F063",
+   "idx": 1,
+   "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html",
+   "grep": [
+    "0.1%",
+    "万分之",
+    "境外",
+    "价值"
+   ],
+   "excerpt": 100,
+   "note": "Announcement 61 of 2025"
+  },
+  {
+   "id": "F063",
+   "idx": 1,
+   "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html",
+   "grep": [
+    "2026年11月10日",
+    "暂停"
+   ],
+   "excerpt": 100,
+   "note": "Announcement 70 of 2025 suspension"
+  },
+  {
+   "id": "F064",
+   "idx": 0,
+   "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+   "grep": [
+    "August 13",
+    "FIPS 203",
+    "finalized"
+   ],
+   "excerpt": 200,
+   "note": "NIST PQC standards"
+  },
+  {
+   "id": "F064",
+   "idx": 2,
+   "url": "https://link.aps.org/doi/10.1103/PhysRevLett.134.090601",
+   "grep": [
+    "105",
+    "Zuchongzhi"
+   ],
+   "excerpt": 200,
+   "note": "Zuchongzhi 3.0 PRL"
+  },
+  {
+   "id": "F065",
+   "idx": 0,
+   "url": "https://techpolicy.sanford.duke.edu/data-brokers-and-the-sale-of-data-on-us-military-personnel/",
+   "grep": [
+    "0.12",
+    "12 cents",
+    "military"
+   ],
+   "excerpt": 300,
+   "note": "Duke military data brokers"
+  },
+  {
+   "id": "F065",
+   "idx": 2,
+   "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+   "grep": [
+    "13",
+    "warning letters",
+    "February"
+   ],
+   "excerpt": 300,
+   "note": "FTC PADFAA letters",
+   "ua": "browser"
+  },
+  {
+   "id": "F066",
+   "idx": 0,
+   "url": "https://www.swfound.org/publications-and-reports/chinese-military-and-intelligence-rendezvous-and-proximity-operations-fact-sheet",
+   "grep": [
+    "SJ-21",
+    "SJ-25",
+    "2022",
+    "graveyard"
+   ],
+   "excerpt": 300,
+   "note": "SWF Chinese RPO fact sheet"
+  },
+  {
+   "id": "F066",
+   "idx": 3,
+   "url": "https://www.csis.org/analysis/what-are-biggest-space-threats-2026",
+   "grep": [
+    "dogfight",
+    "five",
+    "refuel"
+   ],
+   "excerpt": 300,
+   "note": "CSIS space threats 2026"
+  },
+  {
+   "id": "F066",
+   "idx": 1,
+   "url": "https://www.spaceforce.mil/About-Us/Fact-Sheets/Fact-Sheet-Display/Article/4297159/space-threat-fact-sheet/",
+   "grep": [
+    "SJ-21",
+    "SJ-25",
+    "dogfight"
+   ],
+   "excerpt": 300,
+   "note": "Space Force threat fact sheet",
+   "ua": "browser"
+  },
+  {
+   "id": "F067",
+   "idx": 0,
+   "url": "https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/",
+   "grep": [
+    "April",
+    "Artemis II",
+    "Moon"
+   ],
+   "excerpt": 300,
+   "note": "Artemis II return"
+  },
+  {
+   "id": "F067",
+   "idx": 0,
+   "url": "https://www.nasa.gov/news-release/nasa-adds-mission-to-artemis-lunar-program-updates-architecture/",
+   "grep": [
+    "Artemis IV",
+    "2028",
+    "landing"
+   ],
+   "excerpt": 300,
+   "note": "Artemis IV 2028"
+  },
+  {
+   "id": "F067",
+   "idx": 2,
+   "url": "https://www.state.gov/bureau-of-oceans-and-international-environmental-and-scientific-affairs/artemis-accords",
+   "grep": [
+    "76",
+    "San Marino",
+    "September"
+   ],
+   "excerpt": 300,
+   "note": "Artemis Accords 76"
+  },
+  {
+   "id": "F067",
+   "idx": 1,
+   "url": "https://english.news.cn/20260819/449ddc15c79749c5a560903d30a27cf4/c.html",
+   "grep": [
+    "Chang",
+    "launch",
+    "2027",
+    "postpon"
    ],
    "excerpt": 500,
-   "note": "TIC historical holdings"
+   "note": "Chang'e-7 Aug 19 2026"
+  },
+  {
+   "id": "F068",
+   "idx": 0,
+   "url": "https://www.federalregister.gov/documents/2025/02/03/2025-02182/the-iron-dome-for-america",
+   "grep": [
+    "next-generation missile defense shield",
+    "January 27, 2025"
+   ],
+   "excerpt": 200,
+   "note": "EO 14186"
+  },
+  {
+   "id": "F069",
+   "idx": 0,
+   "url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+   "grep": [
+    "9.5",
+    "15.3",
+    "2030",
+    "4.4"
+   ],
+   "excerpt": 300,
+   "note": "LBNL data center report 2025 update"
+  },
+  {
+   "id": "F070",
+   "idx": 1,
+   "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+   "grep": [
+    "Super Intelligence",
+    "November 2026",
+    "incident"
+   ],
+   "excerpt": 300,
+   "note": "Super Intelligence Dialogue"
+  },
+  {
+   "id": "F070",
+   "idx": 0,
+   "url": "https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202411/t20241117_11527672.html",
+   "grep": [
+    "human control",
+    "nuclear"
+   ],
+   "excerpt": 300,
+   "note": "PRC MFA Lima readout"
+  },
+  {
+   "id": "F070",
+   "idx": 3,
+   "url": "https://www.war.gov/News/Transcripts/Transcript/Article/3293101/pentagon-press-secretary-air-force-brig-gen-pat-ryder-holds-an-on-camera-press/",
+   "grep": [
+    "declined",
+    "call",
+    "balloon"
+   ],
+   "excerpt": 300,
+   "note": "Ryder briefing: call declined"
   }
  ]
 }

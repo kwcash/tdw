@@ -31,7 +31,7 @@ jobs:
       - name: Fetch the sources
         env:
           REQUESTS: ${{ inputs.requests || 'cases/review/fetch-requests.json' }}
-        run: python3 -I cases/tools/fetch_sources.py "$REQUESTS" --out fetch-report.json
+        run: python3 -E cases/tools/fetch_sources.py "$REQUESTS" --out fetch-report.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
