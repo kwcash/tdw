@@ -22,6 +22,8 @@ import html, ipaddress, json, os, re, socket, sys, time, urllib.error, urllib.pa
 
 UA = 'Mozilla/5.0 (compatible; source-check/1.0; +https://github.com)'
 MAX_BYTES = 3_000_000
+MAX_PDF_BYTES = 30_000_000
+MAX_PDF_PAGES = 120
 SKIP_TERMS = {'The', 'This', 'That', 'These', 'Its', 'Their', 'Party', 'Chinese', 'American', 'United', 'States', 'Taiwan', 'China'}
 
 
@@ -39,7 +41,20 @@ def safe_host(url):
     return None
 
 
+def pdf_text(raw):
+    """Text of the first pages of a PDF, or '' if pypdf is not installed or the file is scanned."""
+    try:
+        import io
+        from pypdf import PdfReader
+        pages = PdfReader(io.BytesIO(raw)).pages[:MAX_PDF_PAGES]
+        return re.sub(r'\s+', ' ', ' '.join((p.extract_text() or '') for p in pages)).strip()[:900_000]
+    except Exception:
+        return ''
+
+
 def text_of(raw, ctype):
+    if 'pdf' in ctype:
+        return pdf_text(raw)
     if 'html' not in ctype and 'xml' not in ctype and 'text' not in ctype:
         return ''
     s = raw.decode('utf-8', 'replace')
@@ -85,6 +100,8 @@ def grep_snippets(text, term, width=130, limit=3):
 
 
 def fetch(url, terms, grep=(), excerpt=0):
+    if url.startswith('http://'):
+        url = 'https://' + url[len('http://'):]            # we only fetch over https
     out = {'url': url, 'status': None, 'final_url': None, 'title': None, 'bytes': 0, 'error': None}
     bad = safe_host(url)
     if bad:
@@ -94,8 +111,8 @@ def fetch(url, terms, grep=(), excerpt=0):
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,*/*;q=0.5'})
             with urllib.request.urlopen(req, timeout=25) as r:
-                raw = r.read(MAX_BYTES)
                 ctype = r.headers.get('Content-Type', '')
+                raw = r.read(MAX_PDF_BYTES if ('pdf' in ctype or url.lower().endswith('.pdf')) else MAX_BYTES)
                 out.update(status=r.status, final_url=r.geturl(), bytes=len(raw), content_type=ctype)
             text = text_of(raw, ctype)
             m = re.search(r'(?is)<title[^>]*>(.*?)</title>', raw.decode('utf-8', 'replace'))

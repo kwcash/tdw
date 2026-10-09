@@ -3,6 +3,7 @@
 
     python3 -I tools/claims.py export [--kind futures|catalog] [--status unsourced] [IDS...] > review/sheet.csv
     python3 -I tools/claims.py apply review/sheet.csv [--dry-run]
+    python3 -I tools/claims.py decide review/decisions-batchNN.json [--dry-run]
 
 export  lists every sentence of `text.record` with the links it already carries
         and whether it is checkable (a number, date or named act). The reviewer
@@ -72,9 +73,12 @@ def apply(args):
                 sys.exit(f'{cid}/{r["idx"]}: sentence changed since export; re-export before applying')
             v = r['verdict']
             if v in ('supported', 'partial') and r['add_url']:
-                if not r['add_label'] or not r['add_url'].startswith('https://'):
-                    sys.exit(f'{cid}/{r["idx"]}: needs add_label and an https add_url')
-                tag = f' ([{r["add_label"]}]({r["add_url"]}))'
+                labels, urls = r['add_label'].split(' ;; '), r['add_url'].split(' ;; ')
+                if len(labels) == 1 and len(urls) > 1:
+                    labels = labels * len(urls)
+                if len(labels) != len(urls) or not all(labels) or not all(u.startswith('https://') for u in urls):
+                    sys.exit(f'{cid}/{r["idx"]}: needs a label and an https URL (several URLs: separate with " ;; ")')
+                tag = ' (' + '; '.join(f'[{l}]({u})' for l, u in zip(labels, urls)) + ')'
             elif v == 'unsupported':
                 tag = ' [NEEDED: source]'
             else:
@@ -90,6 +94,36 @@ def apply(args):
     print(f'{changed} sentences changed in {len(by)} cases' + (' (dry run)' if dry else ''))
 
 
+def decide(args):
+    """Apply decisions from a JSON file: [{"id","idx","verdict","label","url","notes"}]; label/url may be lists.
+    Rows are built from each case's current sentences, so earlier edits never block later ones.
+    Every decision, with its notes, is appended to review/decisions-log.jsonl."""
+    import datetime
+    path = os.path.abspath(args[0])
+    decisions = json.load(open(path, encoding='utf-8'))
+    rows = []
+    for d in decisions:
+        c = load_json(DATA / f'{d["id"]}.json')
+        parts = sentences(c['text']['record'])
+        lab, url = d.get('label', ''), d.get('url', '')
+        lab = ' ;; '.join(lab) if isinstance(lab, list) else lab
+        url = ' ;; '.join(url) if isinstance(url, list) else url
+        rows.append({'id': d['id'], 'idx': d['idx'], 'checkable': 1, 'has_link': 0, 'sentence': parts[int(d['idx']) * 2],
+                     'verdict': d['verdict'], 'add_label': lab, 'add_url': url, 'notes': d.get('notes', '')})
+    tmp = os.path.join(os.path.dirname(path), '.decide-tmp.csv')
+    with open(tmp, 'w', encoding='utf-8', newline='') as f:
+        w = csv.DictWriter(f, FIELDS, lineterminator='\n')
+        w.writeheader()
+        w.writerows(rows)
+    dry = '--dry-run' in args
+    if not dry:
+        with open(os.path.join(os.path.dirname(path), 'decisions-log.jsonl'), 'a', encoding='utf-8') as f:
+            for d, r in zip(decisions, rows):
+                f.write(json.dumps({**d, 'sentence': r['sentence'], 'date': datetime.date.today().isoformat()}, ensure_ascii=False) + '\n')
+    apply([tmp] + (['--dry-run'] if dry else []))
+    os.remove(tmp)
+
+
 if __name__ == '__main__':
     cmd, rest = (sys.argv[1], sys.argv[2:]) if len(sys.argv) > 2 else ('', [])
-    {'export': export, 'apply': apply}.get(cmd, lambda a: sys.exit(__doc__))(rest)
+    {'export': export, 'apply': apply, 'decide': decide}.get(cmd, lambda a: sys.exit(__doc__))(rest)

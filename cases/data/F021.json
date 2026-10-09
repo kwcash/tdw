@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "The general counsel of an American bank's Shanghai branch reads a court summons in May 2027. A mainland trading house is suing the branch under the Anti-Foreign Sanctions Law for freezing its payments after Treasury's latest designation.",
-    "record": "The Party enacted the Anti-Foreign Sanctions Law in June 2021, and the Ministry of Commerce issued rules that let mainland parties sue firms that comply with foreign sanctions. An executive order of December 2023 warned foreign banks that they risk American sanctions for serving Russia's military industry. The Party has added American defense firms to its unreliable entity list many times since 2023.",
+    "record": "The Party enacted the Anti-Foreign Sanctions Law in June 2021, and the Ministry of Commerce issued rules that let mainland parties sue firms that comply with foreign sanctions ([MOFCOM](https://english.mofcom.gov.cn/Policies/GeneralPolicies/art/2021/art_98677d0ed28b41b9adeff27b00c9d001.html)). An executive order of December 2023 warned foreign banks that they risk American sanctions for serving Russia's military industry ([Federal Register](https://www.federalregister.gov/documents/2023/12/26/2023-28662/taking-additional-steps-with-respect-to-the-russian-federations-harmful-activities)). The Party has added American defense firms to its unreliable entity list many times since 2023.",
     "reading": "The Party answers pressure on its banks by threatening the American firms inside its reach. Courts, regulators and customs officers make each American office pay for Washington's sanctions. The firms then lobby Washington to go easy. This is Stratagem 2, besiege Wei to rescue Zhao.",
     "coreEvent": "Treasury designates a mainland-headquartered bank for sanctions evasion before 2029.",
     "gapText": "Architecture Governance. Treasury designates without a pre-agreed answer to the retaliation that lands on American firms.",
     "fix": "Write the response package before the designation, and tell firms what the government will do when the Party strikes back."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }
