@@ -1,0 +1,133 @@
+[
+ {
+  "id": "F045",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_24-cr-00346/pdf/USCOURTS-nyed-1_24-cr-00346-1.pdf",
+  "grep": [
+   "Sun",
+   "Executive Chamber",
+   "Taiwan",
+   "Foreign Agents Registration",
+   "2024"
+  ],
+  "excerpt": 0,
+  "note": "Indictment, United States v. Sun (E.D.N.Y. 1:24-cr-00346) on govinfo",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F045",
+  "idx": 0,
+  "url": "https://www.justice.gov/d9/2024-09/sun_and_hu_indictment.pdf",
+  "grep": [
+   "Executive Chamber",
+   "Taiwan",
+   "agent of"
+  ],
+  "excerpt": 0,
+  "note": "Sun and Hu indictment (DOJ copy)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F045",
+  "idx": 0,
+  "url": "https://www.courtlistener.com/docket/69124149/united-states-v-sun/",
+  "grep": [
+   "Indictment",
+   "2024",
+   "Sun"
+  ],
+  "excerpt": 0,
+  "note": "CourtListener docket, United States v. Sun",
+  "ua": "browser",
+  "grep_width": 160
+ },
+ {
+  "id": "F046",
+  "idx": 0,
+  "url": "https://www.justice.gov/d9/2023-04/police_station_-_23-mj-265_amended_complaint_signed.pdf",
+  "grep": [
+   "Ministry of Public Security",
+   "Lu Jianwang",
+   "Chen Jinping",
+   "police station",
+   "107 East Broadway"
+  ],
+  "excerpt": 0,
+  "note": "Amended complaint 23-mj-265 (police station)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F046",
+  "idx": 0,
+  "url": "https://www.courtlistener.com/docket/67672835/united-states-v-jianwang/",
+  "grep": [
+   "Unseal",
+   "April 17",
+   "Indictment",
+   "Jianwang"
+  ],
+  "excerpt": 0,
+  "note": "CourtListener docket, United States v. Jianwang",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F019",
+  "idx": 0,
+  "url": "https://www.courtlistener.com/docket/70445712/united-states-v-jian/",
+  "grep": [
+   "2025",
+   "complaint",
+   "Jian",
+   "Liu"
+  ],
+  "excerpt": 0,
+  "note": "CourtListener docket, United States v. Jian",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F019",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edmi/pr/chinese-nationals-charged-conspiracy-and-smuggling-dangerous-biological-pathogen-us",
+  "grep": [
+   "Fusarium graminearum",
+   "June 3",
+   "Jian",
+   "Liu"
+  ],
+  "excerpt": 0,
+  "note": "USAO E.D. Mich. release (often empty on the runner)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F047",
+  "idx": 0,
+  "url": "https://www.justice.gov/olc/media/1453136/dl",
+  "grep": [
+   "January 22",
+   "joint venture",
+   "TikTok USDS"
+  ],
+  "excerpt": 0,
+  "note": "OLC opinion on TikTok USDS Joint Venture",
+  "ua": "browser",
+  "grep_width": 240
+ },
+ {
+  "id": "F047",
+  "idx": 0,
+  "url": "https://www.federalregister.gov/api/v1/documents/2025-19139.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=signing_date&fields[]=executive_order_number",
+  "grep": [
+   "title",
+   "signing_date",
+   "executive_order_number"
+  ],
+  "excerpt": 800,
+  "note": "Federal Register API: EO 14352"
+ }
+]
