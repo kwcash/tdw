@@ -1,0 +1,490 @@
+[
+ {
+  "id": "C083",
+  "idx": 3,
+  "url": "https://www.everycrsreport.com/reports/RL30946.html",
+  "grep": [
+   "An-124",
+   "Russian",
+   "cargo plane",
+   "EP-3",
+   "Kadena"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL30946 China-US aircraft collision",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C084",
+  "idx": 0,
+  "url": "https://www.everycrsreport.com/reports/RL33001.html",
+  "grep": [
+   "East Turkestan",
+   "ETIM",
+   "September 11",
+   "Uighur",
+   "terrorist"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL33001 US-China counterterrorism",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C084",
+  "idx": 0,
+  "url": "https://www.everycrsreport.com/reports/RL31213.html",
+  "grep": [
+   "East Turkestan",
+   "terrorism",
+   "September 11",
+   "Uighur",
+   "Xinjiang"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL31213 China and Central Asia terrorism",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C084",
+  "idx": 3,
+  "url": "https://www.state.gov/reports/country-reports-on-terrorism-2020/china",
+  "grep": [
+   "ETIM",
+   "Terrorist Exclusion List",
+   "credible evidence",
+   "more than a decade",
+   "November"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Country Reports on Terrorism 2020, China",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C084",
+  "idx": 3,
+  "url": "https://www.federalregister.gov/documents/2020/11/05/2020-24620/in-the-matter-of-the-designation-of-the-eastern-turkistan-islamic-movement-also-known-as-etim-as-a",
+  "grep": [
+   "Eastern Turkistan Islamic Movement",
+   "revoke",
+   "Terrorist Exclusion List",
+   "Pompeo",
+   "2020"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register notice 5 Nov 2020",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 0,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7134750/",
+  "grep": [
+   "Zhang Wenkang",
+   "12",
+   "April 3",
+   "Beijing",
+   "Jiang Yanyong"
+  ],
+  "excerpt": 0,
+  "note": "secondary: BMJ news item via PMC",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 0,
+  "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+  "grep": [
+   "Zhang Wenkang",
+   "April 3",
+   "12 cases",
+   "Jiang Yanyong",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Institute of Medicine 'Learning from SARS' ch. (NCBI Bookshelf)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 1,
+  "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+  "grep": [
+   "April 20",
+   "Meng Xuenong",
+   "Zhang Wenkang",
+   "Time",
+   "339"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Institute of Medicine 'Learning from SARS' ch.",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 1,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/roundtables/2003/CECC%20Roundtable%20Testimony%20-%20Yanzhong%20Huang%20-%205.12.03.pdf",
+  "grep": [
+   "Zhang Wenkang",
+   "Meng Xuenong",
+   "April 20",
+   "339",
+   "Jiang Yanyong"
+  ],
+  "excerpt": 0,
+  "note": "CECC roundtable testimony (Y. Huang) 2003",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 2,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106085/",
+  "grep": [
+   "Guangdong",
+   "November 2002",
+   "SARS",
+   "Foshan",
+   "cover"
+  ],
+  "excerpt": 0,
+  "note": "secondary: SARS chronology (PMC)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 2,
+  "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+  "grep": [
+   "Guangdong",
+   "November 2002",
+   "SARS",
+   "cover",
+   "report"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Institute of Medicine 'Learning from SARS' ch.",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 3,
+  "url": "https://www.who.int/publications/m/item/summary-of-probable-sars-cases-with-onset-of-illness-from-1-november-2002-to-31-july-2003",
+  "grep": [
+   "774",
+   "8096",
+   "8,096",
+   "SARS",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "WHO summary table of probable SARS cases",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 4,
+  "url": "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-free-dr-jiang-yanyong-from-house-arrest",
+  "grep": [
+   "Jiang Yanyong",
+   "2004",
+   "house arrest",
+   "Tiananmen",
+   "army"
+  ],
+  "excerpt": 0,
+  "note": "CECC analysis",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C085",
+  "idx": 4,
+  "url": "https://www.hrw.org/sites/default/files/related_material/The%20Tiananmen%20Legacy_3.pdf",
+  "grep": [
+   "Jiang Yanyong",
+   "seven weeks",
+   "2004",
+   "army",
+   "Tiananmen"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C086",
+  "idx": 0,
+  "url": "https://www.theregister.com/2007/02/16/sandia_verdict/",
+  "grep": [
+   "Carpenter",
+   "Sandia",
+   "January 2005",
+   "FBI",
+   "Army"
+  ],
+  "excerpt": 0,
+  "note": "media only: The Register",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C086",
+  "idx": 0,
+  "url": "https://www.computerworld.com/article/1642797/q-a-reverse-hacker-describes-ordeal.html",
+  "grep": [
+   "Carpenter",
+   "Sandia",
+   "Titan Rain",
+   "fired",
+   "FBI"
+  ],
+  "excerpt": 0,
+  "note": "media only: Computerworld Q&A",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C086",
+  "idx": 2,
+  "url": "https://www.theregister.com/2007/02/16/sandia_verdict/",
+  "grep": [
+   "Carpenter",
+   "Sandia",
+   "$4.7 million",
+   "jury",
+   "2007"
+  ],
+  "excerpt": 0,
+  "note": "media only: The Register",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C086",
+  "idx": 2,
+  "url": "https://www.computerworld.com/?p=1579540",
+  "grep": [
+   "Carpenter",
+   "Sandia",
+   "$4.7",
+   "verdict",
+   "jury"
+  ],
+  "excerpt": 0,
+  "note": "media only: Computerworld",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C087",
+  "idx": 1,
+  "url": "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-release-journalist-and-democracy-advocate-shi",
+  "grep": [
+   "Shi Tao",
+   "10 years",
+   "April 2005",
+   "state secrets",
+   "Yahoo"
+  ],
+  "excerpt": 0,
+  "note": "CECC analysis",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C087",
+  "idx": 1,
+  "url": "https://duihua.org/?p=6506",
+  "grep": [
+   "Shi Tao",
+   "10 years",
+   "Hunan",
+   "state secrets",
+   "Yahoo"
+  ],
+  "excerpt": 0,
+  "note": "NGO: Dui Hua Foundation",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C087",
+  "idx": 2,
+  "url": "https://www.theregister.com/2007/11/13/yahoo_settles_lawsuit_from_jailed_chinese_journalists/",
+  "grep": [
+   "Lantos",
+   "Yahoo",
+   "Shi Tao",
+   "Wang Xiaoning",
+   "settle"
+  ],
+  "excerpt": 0,
+  "note": "media only: The Register",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C087",
+  "idx": 2,
+  "url": "https://www.eweek.com/de/mobile/yahoo-takes-a-congressional-mugging/",
+  "grep": [
+   "moral pygmies",
+   "Lantos",
+   "Yahoo",
+   "Shi Tao",
+   "Jerry Yang"
+  ],
+  "excerpt": 0,
+  "note": "media only: eWeek",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C088",
+  "idx": 1,
+  "url": "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf",
+  "grep": [
+   "398",
+   "H.Res. 344",
+   "energy bill",
+   "Unocal",
+   "national security"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL33093 CNOOC bid for Unocal",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C088",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-109hres344ih/html/BILLS-109hres344ih.htm",
+  "grep": [
+   "Chinese state-owned",
+   "energy company",
+   "national security",
+   "Unocal",
+   "impair"
+  ],
+  "excerpt": 0,
+  "note": "H.Res.344 (109th) text",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C088",
+  "idx": 2,
+  "url": "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf",
+  "grep": [
+   "August 2",
+   "withdrew",
+   "Chevron",
+   "CNOOC",
+   "Unocal"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL33093 CNOOC bid for Unocal",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C089",
+  "idx": 0,
+  "url": "https://orbitaldebris.jsc.nasa.gov/quarterly-news/pdfs/odqnv11i2.pdf",
+  "grep": [
+   "Fengyun-1C",
+   "Xichang",
+   "865",
+   "ballistic",
+   "11 January"
+  ],
+  "excerpt": 0,
+  "note": "NASA Orbital Debris Quarterly News Apr 2007",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C089",
+  "idx": 0,
+  "url": "https://ntrs.nasa.gov/api/citations/20070007324/downloads/20070007324.pdf",
+  "grep": [
+   "Fengyun-1C",
+   "11 January 2007",
+   "865",
+   "Xichang",
+   "anti-satellite"
+  ],
+  "excerpt": 0,
+  "note": "NASA technical paper IAC-07-A6.3.01",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C089",
+  "idx": 1,
+  "url": "https://orbitaldebris.jsc.nasa.gov/quarterly-news/pdfs/odqnv11i2.pdf",
+  "grep": [
+   "23 January",
+   "Chinese government",
+   "confirmed",
+   "Fengyun-1C",
+   "anti-satellite"
+  ],
+  "excerpt": 0,
+  "note": "NASA ODQN Apr 2007; may not state the twelve-day silence",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C089",
+  "idx": 3,
+  "url": "https://ndupress.ndu.edu/Media/News/News-Article-View/Article/4157257/a-new-step-in-chinas-military-reform/",
+  "grep": [
+   "Strategic Support Force",
+   "2015",
+   "April 2024",
+   "Aerospace Force",
+   "Information Support Force"
+  ],
+  "excerpt": 0,
+  "note": "NDU Press / Joint Force Quarterly (official academic)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C089",
+  "idx": 3,
+  "url": "https://media.defense.gov/2024/Dec/18/2003615520/-1/-1/0/MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2024.PDF",
+  "grep": [
+   "Strategic Support Force",
+   "Aerospace Force",
+   "Cyberspace Force",
+   "Information Support Force",
+   "April 2024"
+  ],
+  "excerpt": 0,
+  "note": "DoD China Military Power Report 2024 (large PDF)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]

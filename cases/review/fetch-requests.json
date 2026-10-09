@@ -2,558 +2,489 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C074",
+   "id": "C083",
    "idx": 3,
-   "url": "https://www.govinfo.gov/content/pkg/CRPT-105hrpt829/pdf/CRPT-105hrpt829-vol1.pdf",
+   "url": "https://www.everycrsreport.com/reports/RL30946.html",
    "grep": [
-    "Democratic National Committee",
-    "2.8 million",
-    "citizenship",
-    "Asian",
-    "returned"
+    "An-124",
+    "Russian",
+    "cargo plane",
+    "EP-3",
+    "Kadena"
    ],
    "excerpt": 0,
-   "note": "House Report 105-829; large PDF",
+   "note": "CRS RL30946 China-US aircraft collision",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C084",
+   "idx": 0,
+   "url": "https://www.everycrsreport.com/reports/RL33001.html",
+   "grep": [
+    "East Turkestan",
+    "ETIM",
+    "September 11",
+    "Uighur",
+    "terrorist"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL33001 US-China counterterrorism",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C084",
+   "idx": 0,
+   "url": "https://www.everycrsreport.com/reports/RL31213.html",
+   "grep": [
+    "East Turkestan",
+    "terrorism",
+    "September 11",
+    "Uighur",
+    "Xinjiang"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL31213 China and Central Asia terrorism",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C084",
+   "idx": 3,
+   "url": "https://www.state.gov/reports/country-reports-on-terrorism-2020/china",
+   "grep": [
+    "ETIM",
+    "Terrorist Exclusion List",
+    "credible evidence",
+    "more than a decade",
+    "November"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Country Reports on Terrorism 2020, China",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C075",
-   "idx": 0,
-   "url": "https://www.govinfo.gov/content/pkg/GPO-CRPT-105hrpt851/html/ch6bod.html",
+   "id": "C084",
+   "idx": 3,
+   "url": "https://www.federalregister.gov/documents/2020/11/05/2020-24620/in-the-matter-of-the-designation-of-the-eastern-turkistan-islamic-movement-also-known-as-etim-as-a",
    "grep": [
-    "Long March 3B",
-    "Intelsat 708",
-    "February 15, 1996",
+    "Eastern Turkistan Islamic Movement",
+    "revoke",
+    "Terrorist Exclusion List",
+    "Pompeo",
+    "2020"
+   ],
+   "excerpt": 0,
+   "note": "Federal Register notice 5 Nov 2020",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 0,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7134750/",
+   "grep": [
+    "Zhang Wenkang",
+    "12",
+    "April 3",
+    "Beijing",
+    "Jiang Yanyong"
+   ],
+   "excerpt": 0,
+   "note": "secondary: BMJ news item via PMC",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 0,
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+   "grep": [
+    "Zhang Wenkang",
+    "April 3",
+    "12 cases",
+    "Jiang Yanyong",
+    "Beijing"
+   ],
+   "excerpt": 0,
+   "note": "secondary: Institute of Medicine 'Learning from SARS' ch. (NCBI Bookshelf)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 1,
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+   "grep": [
+    "April 20",
+    "Meng Xuenong",
+    "Zhang Wenkang",
+    "Time",
+    "339"
+   ],
+   "excerpt": 0,
+   "note": "secondary: Institute of Medicine 'Learning from SARS' ch.",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 1,
+   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/roundtables/2003/CECC%20Roundtable%20Testimony%20-%20Yanzhong%20Huang%20-%205.12.03.pdf",
+   "grep": [
+    "Zhang Wenkang",
+    "Meng Xuenong",
+    "April 20",
+    "339",
+    "Jiang Yanyong"
+   ],
+   "excerpt": 0,
+   "note": "CECC roundtable testimony (Y. Huang) 2003",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 2,
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106085/",
+   "grep": [
+    "Guangdong",
+    "November 2002",
+    "SARS",
+    "Foshan",
+    "cover"
+   ],
+   "excerpt": 0,
+   "note": "secondary: SARS chronology (PMC)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 2,
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+   "grep": [
+    "Guangdong",
+    "November 2002",
+    "SARS",
+    "cover",
+    "report"
+   ],
+   "excerpt": 0,
+   "note": "secondary: Institute of Medicine 'Learning from SARS' ch.",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 3,
+   "url": "https://www.who.int/publications/m/item/summary-of-probable-sars-cases-with-onset-of-illness-from-1-november-2002-to-31-july-2003",
+   "grep": [
+    "774",
+    "8096",
+    "8,096",
+    "SARS",
+    "China"
+   ],
+   "excerpt": 0,
+   "note": "WHO summary table of probable SARS cases",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 4,
+   "url": "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-free-dr-jiang-yanyong-from-house-arrest",
+   "grep": [
+    "Jiang Yanyong",
+    "2004",
+    "house arrest",
+    "Tiananmen",
+    "army"
+   ],
+   "excerpt": 0,
+   "note": "CECC analysis",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C085",
+   "idx": 4,
+   "url": "https://www.hrw.org/sites/default/files/related_material/The%20Tiananmen%20Legacy_3.pdf",
+   "grep": [
+    "Jiang Yanyong",
+    "seven weeks",
+    "2004",
+    "army",
+    "Tiananmen"
+   ],
+   "excerpt": 0,
+   "note": "Human Rights Watch (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C086",
+   "idx": 0,
+   "url": "https://www.theregister.com/2007/02/16/sandia_verdict/",
+   "grep": [
+    "Carpenter",
+    "Sandia",
+    "January 2005",
+    "FBI",
+    "Army"
+   ],
+   "excerpt": 0,
+   "note": "media only: The Register",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C086",
+   "idx": 0,
+   "url": "https://www.computerworld.com/article/1642797/q-a-reverse-hacker-describes-ordeal.html",
+   "grep": [
+    "Carpenter",
+    "Sandia",
+    "Titan Rain",
+    "fired",
+    "FBI"
+   ],
+   "excerpt": 0,
+   "note": "media only: Computerworld Q&A",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C086",
+   "idx": 2,
+   "url": "https://www.theregister.com/2007/02/16/sandia_verdict/",
+   "grep": [
+    "Carpenter",
+    "Sandia",
+    "$4.7 million",
+    "jury",
+    "2007"
+   ],
+   "excerpt": 0,
+   "note": "media only: The Register",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C086",
+   "idx": 2,
+   "url": "https://www.computerworld.com/?p=1579540",
+   "grep": [
+    "Carpenter",
+    "Sandia",
+    "$4.7",
+    "verdict",
+    "jury"
+   ],
+   "excerpt": 0,
+   "note": "media only: Computerworld",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C087",
+   "idx": 1,
+   "url": "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-release-journalist-and-democracy-advocate-shi",
+   "grep": [
+    "Shi Tao",
+    "10 years",
+    "April 2005",
+    "state secrets",
+    "Yahoo"
+   ],
+   "excerpt": 0,
+   "note": "CECC analysis",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C087",
+   "idx": 1,
+   "url": "https://duihua.org/?p=6506",
+   "grep": [
+    "Shi Tao",
+    "10 years",
+    "Hunan",
+    "state secrets",
+    "Yahoo"
+   ],
+   "excerpt": 0,
+   "note": "NGO: Dui Hua Foundation",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C087",
+   "idx": 2,
+   "url": "https://www.theregister.com/2007/11/13/yahoo_settles_lawsuit_from_jailed_chinese_journalists/",
+   "grep": [
+    "Lantos",
+    "Yahoo",
+    "Shi Tao",
+    "Wang Xiaoning",
+    "settle"
+   ],
+   "excerpt": 0,
+   "note": "media only: The Register",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C087",
+   "idx": 2,
+   "url": "https://www.eweek.com/de/mobile/yahoo-takes-a-congressional-mugging/",
+   "grep": [
+    "moral pygmies",
+    "Lantos",
+    "Yahoo",
+    "Shi Tao",
+    "Jerry Yang"
+   ],
+   "excerpt": 0,
+   "note": "media only: eWeek",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C088",
+   "idx": 1,
+   "url": "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf",
+   "grep": [
+    "398",
+    "H.Res. 344",
+    "energy bill",
+    "Unocal",
+    "national security"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL33093 CNOOC bid for Unocal",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C088",
+   "idx": 1,
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-109hres344ih/html/BILLS-109hres344ih.htm",
+   "grep": [
+    "Chinese state-owned",
+    "energy company",
+    "national security",
+    "Unocal",
+    "impair"
+   ],
+   "excerpt": 0,
+   "note": "H.Res.344 (109th) text",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C088",
+   "idx": 2,
+   "url": "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf",
+   "grep": [
+    "August 2",
+    "withdrew",
+    "Chevron",
+    "CNOOC",
+    "Unocal"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL33093 CNOOC bid for Unocal",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C089",
+   "idx": 0,
+   "url": "https://orbitaldebris.jsc.nasa.gov/quarterly-news/pdfs/odqnv11i2.pdf",
+   "grep": [
+    "Fengyun-1C",
     "Xichang",
-    "Loral"
+    "865",
+    "ballistic",
+    "11 January"
    ],
    "excerpt": 0,
-   "note": "House Report 105-851 (Cox Report) ch. 6",
+   "note": "NASA Orbital Debris Quarterly News Apr 2007",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C075",
+   "id": "C089",
    "idx": 0,
-   "url": "https://www.everycrsreport.com/reports/98-485.html",
+   "url": "https://ntrs.nasa.gov/api/citations/20070007324/downloads/20070007324.pdf",
    "grep": [
-    "Long March 3B",
-    "Intelsat 708",
-    "February 1996",
-    "Loral",
-    "Xichang"
+    "Fengyun-1C",
+    "11 January 2007",
+    "865",
+    "Xichang",
+    "anti-satellite"
    ],
    "excerpt": 0,
-   "note": "CRS 98-485 satellite export policy chronology",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C075",
-   "idx": 2,
-   "url": "https://www.everycrsreport.com/reports/98-485.html",
-   "grep": [
-    "Munitions List",
-    "1999",
-    "105-261",
-    "National Defense Authorization",
-    "satellite"
-   ],
-   "excerpt": 0,
-   "note": "CRS 98-485 satellite export policy chronology",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C075",
-   "idx": 2,
-   "url": "https://www.everycrsreport.com/files/20030327_98-485F_9e792d372e35fdcfa67dbe27d0ae626afb8b9c56.pdf",
-   "grep": [
-    "Munitions List",
-    "1999",
-    "105-261",
-    "State Department",
-    "satellite"
-   ],
-   "excerpt": 0,
-   "note": "CRS 98-485F (March 2003 version)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C075",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/files/20030327_98-485F_9e792d372e35fdcfa67dbe27d0ae626afb8b9c56.pdf",
-   "grep": [
-    "$14 million",
-    "Loral",
-    "Boeing",
-    "$32 million",
-    "Hughes"
-   ],
-   "excerpt": 0,
-   "note": "CRS 98-485F (March 2003 version)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C075",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/reports/98-485.html",
-   "grep": [
-    "$14 million",
-    "Loral",
-    "Boeing",
-    "$32 million",
-    "Hughes"
-   ],
-   "excerpt": 0,
-   "note": "CRS 98-485 latest version",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C076",
-   "idx": 0,
-   "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3215.pdf",
-   "grep": [
-    "Golden Venture",
-    "June 6, 1993",
-    "ran aground",
-    "drown",
-    "New York"
-   ],
-   "excerpt": 0,
-   "note": "DOJ EOIR BIA Interim Decision 3215 (Matter of G-); may not give drowning count",
+   "note": "NASA technical paper IAC-07-A6.3.01",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C078",
+   "id": "C089",
    "idx": 1,
-   "url": "https://1997-2001.state.gov/global/human_rights/1998_hrp_report/china.html",
+   "url": "https://orbitaldebris.jsc.nasa.gov/quarterly-news/pdfs/odqnv11i2.pdf",
    "grep": [
-    "Wang Dan",
-    "medical parole",
-    "April",
-    "leave the country",
-    "1998"
+    "23 January",
+    "Chinese government",
+    "confirmed",
+    "Fengyun-1C",
+    "anti-satellite"
    ],
    "excerpt": 0,
-   "note": "State Dept 1998 China human rights report",
+   "note": "NASA ODQN Apr 2007; may not state the twelve-day silence",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C078",
-   "idx": 1,
-   "url": "https://www.hrw.org/legacy/campaigns/china-98/chron298.htm",
-   "grep": [
-    "Wang Dan",
-    "April 19",
-    "exile",
-    "United States",
-    "1998"
-   ],
-   "excerpt": 0,
-   "note": "HRW chronology Apr-Jun 1998 (NGO)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C078",
+   "id": "C089",
    "idx": 3,
-   "url": "https://1997-2001.state.gov/global/human_rights/1998_hrp_report/china.html",
+   "url": "https://ndupress.ndu.edu/Media/News/News-Article-View/Article/4157257/a-new-step-in-chinas-military-reform/",
    "grep": [
-    "China Democracy Party",
-    "Xu Wenli",
-    "Wang Youcai",
-    "Qin Yongmin",
-    "13 years"
+    "Strategic Support Force",
+    "2015",
+    "April 2024",
+    "Aerospace Force",
+    "Information Support Force"
    ],
    "excerpt": 0,
-   "note": "State Dept 1998 China human rights report",
+   "note": "NDU Press / Joint Force Quarterly (official academic)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C078",
+   "id": "C089",
    "idx": 3,
-   "url": "https://www.hrw.org/report/2000/09/01/china-nipped-bud/suppression-china-democracy-party",
+   "url": "https://media.defense.gov/2024/Dec/18/2003615520/-1/-1/0/MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2024.PDF",
    "grep": [
-    "China Democracy Party",
-    "Xu Wenli",
-    "Wang Youcai",
-    "Qin Yongmin",
-    "thirteen years"
+    "Strategic Support Force",
+    "Aerospace Force",
+    "Cyberspace Force",
+    "Information Support Force",
+    "April 2024"
    ],
    "excerpt": 0,
-   "note": "HRW report 2000 (NGO)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C079",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/reports/RS20547.html",
-   "grep": [
-    "B-2",
-    "Belgrade",
-    "embassy",
-    "May 7, 1999",
-    "killed"
-   ],
-   "excerpt": 0,
-   "note": "CRS RS20547 embassy bombing compensation (says 3 embassy employees killed)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C079",
-   "idx": 0,
-   "url": "https://1997-2001.state.gov/policy_remarks/1999/990617_pickering_emb.html",
-   "grep": [
-    "B-2",
-    "Joint Direct Attack",
-    "Belgrade",
-    "embassy",
-    "Pickering"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Pickering remarks 17 June 1999",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C079",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/reports/RS20547.html",
-   "grep": [
-    "$4.5 million",
-    "$28 million",
-    "humanitarian",
-    "embassy",
-    "Belgrade"
-   ],
-   "excerpt": 0,
-   "note": "CRS RS20547 embassy bombing compensation",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C079",
-   "idx": 3,
-   "url": "https://1997-2001.state.gov/briefings/statements/1999/ps991216b.html",
-   "grep": [
-    "$28 million",
-    "Chinese embassy",
-    "Belgrade",
-    "compensation",
-    "December 16"
-   ],
-   "excerpt": 0,
-   "note": "State Dept statement 16 Dec 1999",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C080",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/reports/RL33437.html",
-   "grep": [
-    "Falun Gong",
-    "July 20",
-    "July 21",
-    "1999",
-    "ban"
-   ],
-   "excerpt": 0,
-   "note": "CRS RL33437 China and Falun Gong; date of ban may be July 21/22",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C080",
-   "idx": 0,
-   "url": "https://www.amnesty.org/ar/wp-content/uploads/2021/12/ASA170112000ENGLISH.pdf",
-   "grep": [
-    "Falun Gong",
-    "22 July 1999",
-    "banned",
-    "illegal organizations",
-    "Ministry of Civil Affairs"
-   ],
-   "excerpt": 0,
-   "note": "Amnesty International 2000 (NGO); dates ban 22 July",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C080",
-   "idx": 1,
-   "url": "https://www.govinfo.gov/content/pkg/BILLS-111hres605ih/html/BILLS-111hres605ih.htm",
-   "grep": [
-    "610 Office",
-    "Falun Gong",
-    "July 20, 1999",
-    "June 10, 1999",
-    "extrajudicial"
-   ],
-   "excerpt": 0,
-   "note": "House resolution text H.Res.605 (111th)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C080",
-   "idx": 1,
-   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/hearings/2012/CECC%20Hearing%20Testimony%20-%20Caylan%20Ford%20-%2012.18.12.pdf",
-   "grep": [
-    "610 Office",
-    "Falun Gong",
-    "transformation",
-    "re-education",
-    "arrest"
-   ],
-   "excerpt": 0,
-   "note": "CECC hearing testimony 2012",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 0,
-   "url": "https://irp.fas.org/congress/2001_rpt/whl.html",
-   "grep": [
-    "Wen Ho Lee",
-    "278",
-    "solitary",
-    "W-88",
-    "Los Alamos"
-   ],
-   "excerpt": 0,
-   "note": "Congressional report on oversight of Wen Ho Lee case (FAS-hosted)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 0,
-   "url": "https://www.courtlistener.com/opinion/790790/wen-ho-lee-v-department-of-justice-jeff-gerth/",
-   "grep": [
-    "Wen Ho Lee",
-    "solitary confinement",
-    "W-88",
-    "Los Alamos",
-    "Taiwan"
-   ],
-   "excerpt": 0,
-   "note": "D.C. Circuit opinion (CourtListener)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 1,
-   "url": "https://irp.fas.org/congress/2001_rpt/whl.html",
-   "grep": [
-    "59",
-    "counts",
-    "Atomic Energy Act",
-    "Wen Ho Lee",
-    "espionage"
-   ],
-   "excerpt": 0,
-   "note": "Congressional report on oversight of Wen Ho Lee case (FAS-hosted)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 1,
-   "url": "https://sgp.fas.org/congress/2000/reno.html",
-   "grep": [
-    "59",
-    "counts",
-    "Wen Ho Lee",
-    "Atomic Energy Act",
-    "indictment"
-   ],
-   "excerpt": 0,
-   "note": "Testimony of Attorney General Reno (FAS-hosted)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 3,
-   "url": "https://www.courtlistener.com/opinion/2500430/lee-v-department-of-justice/",
-   "grep": [
-    "settle",
-    "$1.6 million",
-    "Wen Ho Lee",
-    "Privacy Act",
-    "news organizations"
-   ],
-   "excerpt": 0,
-   "note": "CourtListener Lee v. DOJ opinion (may recount 2006 settlement)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/files/20010717_RS20691_9d7dd0b47ef14e2812416db8a52a844821b20362.pdf",
-   "grep": [
-    "237",
-    "197",
-    "May 24",
-    "83-15",
-    "H.R. 4444"
-   ],
-   "excerpt": 0,
-   "note": "CRS RS20691 PNTR (secondary official)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 0,
-   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1062/vote_106_2_00251.htm",
-   "grep": [
-    "H.R. 4444",
-    "83",
-    "15",
-    "September 19, 2000",
-    "Normal Trade Relations"
-   ],
-   "excerpt": 0,
-   "note": "US Senate roll call vote 251, 106th Cong. 2nd sess.",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 2,
-   "url": "https://www.wto.org/english/thewto_e/countries_e/china_e.htm",
-   "grep": [
-    "11 December 2001",
-    "China",
-    "Member",
-    "WTO"
-   ],
-   "excerpt": 0,
-   "note": "WTO China member page",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 2,
-   "url": "https://www.wto.org/english/thewto_e/acc_e/a1_chine_e.htm",
-   "grep": [
-    "11 December 2001",
-    "China",
-    "accession",
-    "143",
-    "Member"
-   ],
-   "excerpt": 0,
-   "note": "WTO accession page for China",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 3,
-   "url": "https://economics.mit.edu/sites/default/files/publications/ADH-China-Shock-Published.pdf",
-   "grep": [
-    "2.4 million",
-    "2.0 million",
-    "1999",
-    "2011",
-    "import"
-   ],
-   "excerpt": 0,
-   "note": "secondary: Autor, Dorn, Hanson, China Shock (Annual Review of Economics)",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C082",
-   "idx": 3,
-   "url": "https://www.nber.org/system/files/working_papers/w21906/w21906.pdf",
-   "grep": [
-    "2.4 million",
-    "2.0 million",
-    "1999",
-    "2011",
-    "import"
-   ],
-   "excerpt": 0,
-   "note": "secondary: NBER w21906 China Shock",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C083",
-   "idx": 1,
-   "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2001/04/20010411-1.html",
-   "grep": [
-    "very sorry",
-    "Wang Wei",
-    "verbal clearance",
-    "crew",
-    "Prueher"
-   ],
-   "excerpt": 0,
-   "note": "Bush White House archive: Prueher letter 11 Apr 2001",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C083",
-   "idx": 1,
-   "url": "https://www.history.navy.mil/research/archives/Collections/ncdu-det-206/2001/ep-3-collision--crew-detainment-and-homecoming.html",
-   "grep": [
-    "EP-3",
-    "11 days",
-    "24",
-    "crew",
-    "Hainan"
-   ],
-   "excerpt": 0,
-   "note": "Naval History and Heritage Command archive page",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C083",
-   "idx": 3,
-   "url": "https://www.history.navy.mil/research/archives/Collections/ncdu-det-206/2001/ep-3-collision--crew-detainment-and-homecoming.html",
-   "grep": [
-    "EP-3",
-    "dismantled",
-    "July 2001",
-    "Georgia",
-    "cargo"
-   ],
-   "excerpt": 0,
-   "note": "Naval History and Heritage Command archive page",
+   "note": "DoD China Military Power Report 2024 (large PDF)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
