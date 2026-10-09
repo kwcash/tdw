@@ -103,14 +103,17 @@ def main():
         w(f'- **{cid}[{i}]** {lab}')
     w('')
 
-    w(f'## Checkable sentences nobody has tried yet ({len(open_sent) - len(tried & {(c, i) for c, i, _ in open_sent})} of {len(open_sent)} unlinked)')
+    untried = [(cid, i, s) for cid, i, s in open_sent if (cid, i) not in tried]
+    w('## Flags raised before the decision log started')
     w('')
-    w('Sentences with a date, number or named act and no link. Some are Taiwan, Hong Kong or PRC government facts a person on an unblocked network could settle in minutes.')
+    w('- `futures-link-check.md`: the 35 links the cases already carried, checked against their claims (7 supported, 8 partial, 2 not on the page, the rest unchecked or blocked). Includes F001 (the Trump-visit and September-APEC claims sit on links that cannot support them), F003 (the PLA 2027 goal is not in the communique) and F012 (the Open Doors link was a landing page; replaced with the fast-facts PDF).')
+    w('- `book-vs-cases.md`: where a case and the book disagree. F005: Appendix H note 13 says "late February" and AP/NBC date the event January 29, 2026.')
     w('')
-    cur = None
-    for cid, i, s in open_sent:
-        if (cid, i) in tried:
-            continue
+    w(f'## Checkable sentences nobody has tried yet ({len(untried)})')
+    w('')
+    w(f'{len(open_sent)} checkable sentences still have no link; {len(open_sent) - len(untried)} of them were tried and are listed above as unresolved. The rest carry a date, number or named act and have not been looked at. Some are Taiwan, Hong Kong or PRC government facts a person on an unblocked network could settle in minutes.')
+    w('')
+    for cid, i, s in untried:
         w(f'- **{cid}[{i}]** {short(s, 200)}')
     w('')
     open(out, 'w', encoding='utf-8').write('\n'.join(L) + '\n')

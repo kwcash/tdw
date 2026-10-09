@@ -1,0 +1,17 @@
+[
+ {
+  "id": "F061",
+  "idx": 1,
+  "url": "https://documents.pclob.gov/prod/Documents/FinancialReport/1084/FY27%20PCLOB%20CBJ%20-%20Final%20-%202.13.26.pdf",
+  "grep": [
+   "January 29, 2026",
+   "Williams",
+   "quorum"
+  ],
+  "excerpt": 0,
+  "note": "PCLOB FY2027 budget justification (Feb 2026)",
+  "ua": "browser",
+  "grep_width": 260,
+  "grep_limit": 4
+ }
+]
