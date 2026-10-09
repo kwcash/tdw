@@ -1,0 +1,12 @@
+{
+  "domains": ["Kinetic", "Economic", "Financial", "Information", "Psychological", "Legal", "Association", "Cyber", "Cultural", "AI and Cognitive", "Biological", "Data and Surveillance"],
+  "dimensions": ["Time", "Entropy", "Topology", "Asymmetry", "Agency", "Resonance", "Phase", "Gradient", "Criticality", "Coherence"],
+  "stages": ["Attract", "Accommodate", "Control", "Extract", "Consume", "Defense", "Mirror", "Doctrine"],
+  "gaps": ["Business", "Principles", "Application", "Data", "Technology", "Governance"],
+  "worlds": ["Long Grind", "Machine Mandate", "Runaway", "Unwinding"],
+  "tiers": [
+    {"tier": 1, "title": "Recruit"}, {"tier": 2, "title": "Operative"}, {"tier": 3, "title": "Analyst"},
+    {"tier": 4, "title": "Strategist"}, {"tier": 5, "title": "Commander"}, {"tier": 6, "title": "Doctrine Master"}
+  ],
+  "statuses": ["unsourced", "sourced", "verified"]
+}

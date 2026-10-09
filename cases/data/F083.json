@@ -1,0 +1,42 @@
+{
+  "id": "F083",
+  "kind": "futures",
+  "title": "The Truth Standard",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S14"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Cultural",
+    "AI and Cognitive"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2049,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "The War for the Mind",
+  "gap": "Principles",
+  "text": {
+    "brief": "A history teacher in Lusaka asks the national AI tutor in 2045 what happened in Beijing in June 1989. The tutor answers that the government restored order and cites a mainland encyclopedia as its only source.",
+    "record": "Hugging Face reported in August 2026 that developers had built 151,448 derivative models on Alibaba's Qwen, 2.6 times the count built on Meta's models. The Party's rules for generative AI of 2023 require services to uphold core socialist values. Open models cost little to run, and poorer governments can adapt them without license fees.",
+    "reading": "The Party installs its own authorities over the record. Its models, encyclopedias and standards bodies declare what happened, and the approved history travels inside every cheap model built on its weights. This is Stratagem 14, borrow a corpse to resurrect the soul.",
+    "coreEvent": "Most AI models deployed by governments in the Global South follow the Party's content rules on its own history before 2045.",
+    "gapText": "Architecture Principles. The free world treats training data as a commercial matter, and the Party treats it as the record of history.",
+    "fix": "Build and give away truthful archives and models, because the cheapest model sets the record."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "F008",
+  "kind": "futures",
+  "title": "The Inverter Switch",
+  "tier": 3,
+  "dimension": "Criticality",
+  "stage": "Control",
+  "stratagems": [
+    "S10"
+  ],
+  "theater": [
+    "Economic",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Cyber",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Military-Civil Fusion",
+  "gap": "Application",
+  "text": {
+    "brief": "At 4:10 p.m. on a July afternoon in 2027, an operator in the Texas grid control room watches 900 megawatts of solar drop offline in six minutes. The inverters all came from one mainland vendor, and all took a firmware update from its cloud that morning.",
+    "record": "Reuters reported in May 2025 that engineers found undocumented communication devices inside some mainland-made solar inverters and batteries. Mainland firms supply a growing share of the inverters and batteries on American grid sites. The 2017 National Intelligence Law obliges every mainland organization to support the state's intelligence work.",
+    "reading": "A vendor's cloud connection gives the Party a remote hand on the grid that no attacker needs to build. The first use need not look hostile. A faulty update in a heat wave teaches grid operators how fragile the fleet is and leaves the Party a denial it can defend. This is Stratagem 10, hide a knife behind a smile.",
+    "coreEvent": "An American grid operator reports an event traced to remote firmware changes in foreign-made inverters before 2029.",
+    "gapText": "Application Architecture. Utilities let vendor clouds change the behavior of grid assets without a local gate.",
+    "fix": "Require local approval, signed firmware and logging for every update to grid-connected inverters. Twin the fleet so operators can see which vendor controls which megawatts."
+  },
+  "status": "unsourced"
+}

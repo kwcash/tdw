@@ -1,0 +1,42 @@
+{
+  "id": "F073",
+  "kind": "futures",
+  "title": "The Diversion",
+  "tier": 6,
+  "dimension": "Phase",
+  "stage": "Consume",
+  "stratagems": [
+    "S23"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2045,
+      "month": null
+    }
+  },
+  "world": "Runaway",
+  "horizon": 3,
+  "arc": "Taiwan",
+  "gap": "Data",
+  "text": {
+    "brief": "A fisherman on Kinmen watches landing craft cross the bay at dawn in 2039. The same morning the premier of the People's Republic dines in Brussels and signs orders for European aircraft.",
+    "record": "The mainland's youth unemployment rate reached 18.9 percent in August 2026. The China Coast Guard has patrolled the waters around Kinmen since February 2024, after two mainland fishermen died fleeing a Taiwanese patrol boat. Kinmen lies within sight of Xiamen.",
+    "reading": "A Party split at the top needs a victory it can show at home. It courts Europe and the Gulf with orders and investment while it seizes an island off its own coast. This is Stratagem 23, befriend a distant state while attacking a neighbor.",
+    "coreEvent": "Mainland forces take control of Kinmen or Matsu before 2045.",
+    "gapText": "Data Architecture. Allies see the Party's domestic stress in pieces and never assemble the warning.",
+    "fix": "Pool allied data on the Party's domestic stress and tie it to responses agreed before the crisis."
+  },
+  "status": "unsourced"
+}

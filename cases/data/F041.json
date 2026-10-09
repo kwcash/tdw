@@ -1,0 +1,41 @@
+{
+  "id": "F041",
+  "kind": "futures",
+  "title": "The Battery Grid",
+  "tier": 3,
+  "dimension": "Time",
+  "stage": "Defense",
+  "stratagems": [
+    "S28"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Cyber"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Military-Civil Fusion",
+  "gap": "Business",
+  "text": {
+    "brief": "In the summer of 2031 the Ministry of Commerce halts exports of lithium iron phosphate cells to American buyers during a dispute over arms for Taiwan. An operator at a Texas battery farm checks her supplier list and finds that her replacement cells ship from Georgia.",
+    "record": "The 2025 tax law cut clean-energy credits for projects that use components from foreign entities of concern. The Party restricted exports of battery cathode and lithium processing technology in July 2025. American utilities added large amounts of battery storage in 2024 and 2025, much of it built with mainland cells.",
+    "reading": "The Party builds dependence with cheap cells and saves the cutoff for a crisis. A grid that cannot replace its batteries loses the flexibility that solar and wind need. The defenders' design meets its test when the ladder comes away. This is Stratagem 28, lure the enemy onto the roof and remove the ladder.",
+    "coreEvent": "The Party restricts battery cell exports to American buyers before 2035.",
+    "gapText": "Business Architecture. Utilities bought storage on price, and the price came from one rival's subsidies.",
+    "fix": "Keep credits tied to diversified supply, hold a repair stockpile and fund the chemistry that comes next."
+  },
+  "status": "unsourced"
+}

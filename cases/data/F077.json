@@ -1,0 +1,41 @@
+{
+  "id": "F077",
+  "kind": "futures",
+  "title": "The Orphaned Factories",
+  "tier": 4,
+  "dimension": "Entropy",
+  "stage": "Consume",
+  "stratagems": [
+    "S11"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2044,
+      "month": null
+    }
+  },
+  "world": "Unwinding",
+  "horizon": 3,
+  "arc": "Military-Civil Fusion",
+  "gap": "Business",
+  "text": {
+    "brief": "A plant manager for an American auto parts maker in Wuxi finds the gate chained in 2039. A provincial order says the factory now serves social stability, and no court in Beijing answers the phone.",
+    "record": "A Federal Reserve note of September 25, 2026 found that new American greenfield projects in China fell sharply after 2020 and never recovered. The same note found that dividends from American subsidiaries there now exceed reinvestment. The IMF put the mainland's augmented government debt at 126.6 percent of GDP in 2025.",
+    "reading": "A Party losing control at the center sacrifices foreign investors to protect local jobs and state firms. The plum tree falls so the peach can stand. This is Stratagem 11, sacrifice the plum tree to preserve the peach.",
+    "coreEvent": "Provincial authorities seize or freeze the assets of a major American manufacturer on the mainland during a succession crisis before 2044.",
+    "gapText": "Business Architecture. American firms price mainland risk as a business cycle, not as the fall of a regime.",
+    "fix": "Plan for regime risk in every mainland exposure, with exits tested in advance."
+  },
+  "status": "unsourced"
+}

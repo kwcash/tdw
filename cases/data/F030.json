@@ -1,0 +1,42 @@
+{
+  "id": "F030",
+  "kind": "futures",
+  "title": "The Open-Weight Default",
+  "tier": 2,
+  "dimension": "Topology",
+  "stage": "Attract",
+  "stratagems": [
+    "S17"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Machine Minds",
+  "gap": "Application",
+  "text": {
+    "brief": "A two-person startup in Austin fine-tunes a free mainland model for a legal-research app in November 2026. The model runs fast and cheap, and it refuses every question about Tiananmen.",
+    "record": "Mainland labs release open-weight models that rank among the most downloaded in the world. The American AI Action Plan of July 2025 directed federal evaluators to test mainland models for Party talking points and censorship. The Commerce Department's AI standards center published an evaluation of DeepSeek models in 2025.",
+    "reading": "The Party's labs give away strong models and let the ecosystem grow around them. Each startup that builds on them inherits the model's values and its update path. The gift costs little and buys a place inside American products. This is Stratagem 17, cast a brick to attract jade.",
+    "coreEvent": "A federal evaluation finds hidden malicious behavior beyond censorship in a mainland open-weight model before 2029.",
+    "gapText": "Application Architecture. Builders pick models on price and speed with no record of what its trainers taught the model to believe.",
+    "fix": "Publish evaluations and model cards that show origin, training and behavior. Labels, not removals."
+  },
+  "status": "unsourced"
+}

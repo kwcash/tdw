@@ -1,0 +1,41 @@
+{
+  "id": "F057",
+  "kind": "futures",
+  "title": "The Debt Trap Door",
+  "tier": 4,
+  "dimension": "Criticality",
+  "stage": "Consume",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2033,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Financial Control",
+  "gap": "Business",
+  "text": {
+    "brief": "An investor in Chicago wakes in 2032 to news that a Nasdaq-listed mainland firm has lost its operating licenses in a restructuring. Her shares represent a Cayman company whose contracts no mainland court will enforce.",
+    "record": "S&P rated the developer Vanke in selective default in December 2025. Property investment on the mainland fell 19.9 percent in the first eight months of 2026. Most mainland companies listed in the United States use variable interest entities, contracts that give foreign shareholders no ownership of the operating firm.",
+    "reading": "The Party lets crises land on foreign holders first. Capital controls seal the exits, courts favor domestic creditors and the shell listed in New York turns out to own nothing. This is Stratagem 22, shut the door to catch the thief.",
+    "coreEvent": "A listed mainland company with large American holdings restructures and leaves American shareholders with nothing before 2034.",
+    "gapText": "Business Architecture. American investors buy contracts that look like shares.",
+    "fix": "Label VIE listings as contracts, not ownership, and let index rules weigh them on that basis."
+  },
+  "status": "unsourced"
+}

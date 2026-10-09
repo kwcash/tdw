@@ -1,0 +1,42 @@
+{
+  "id": "F003",
+  "kind": "futures",
+  "title": "The Hollow Command",
+  "label": "January to December 2027",
+  "tier": 3,
+  "dimension": "Coherence",
+  "stage": "Doctrine",
+  "stratagems": [
+    "S29"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2027,
+      "month": 1
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Taiwan",
+  "gap": "Data",
+  "text": {
+    "brief": "The PLA turns one hundred on August 1, 2027. An analyst at Indo-Pacific Command watches state television show a hundred ships in formation off Fujian. She must tell the commander whether the fleet can fight or only parade.",
+    "record": "The Party set the PLA's centenary goal for 2027 and repeated it at the Fourth Plenum in October 2025 ([gov.cn](https://english.www.gov.cn/news/202510/23/content_WS68fa3825c6d00ca5f9a06fbe.html)). Between October 2025 and September 2026 the Party expelled two vice chairmen and two other members of its Central Military Commission. The commission now holds only Xi Jinping and one vice chairman ([Al Jazeera](https://www.aljazeera.com/news/2026/9/21/china-expels-two-top-disloyal-military-leaders-from-communist-party)).",
+    "reading": "The Party answers doubt about its purged command with display. A centenary review and a named exercise around Taiwan project a force larger and readier than its leadership can yet direct. The display aims at two audiences at once. Taipei should feel encircled, and Washington should overestimate the risk of standing firm. This is Stratagem 29, deck the tree with false blossoms.",
+    "coreEvent": "The PLA stages a named joint exercise around Taiwan during 2027.",
+    "gapText": "Data Architecture. Defenders count ships and aircraft well and measure command competence poorly, so displays move their judgment more than capacity does.",
+    "fix": "Add command, logistics and training measures to the net assessment and brief them to allies before each Party anniversary. Pre-announce what the display will contain, as Washington did in 1964."
+  },
+  "status": "sourced"
+}

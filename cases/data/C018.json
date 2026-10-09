@@ -1,0 +1,38 @@
+{
+  "id": "C018",
+  "kind": "catalog",
+  "title": "Futian",
+  "tier": 1,
+  "dimension": "Coherence",
+  "stage": "Consume",
+  "stratagems": [
+    "S7",
+    "S18"
+  ],
+  "theater": [
+    "Kinetic",
+    "Psychological",
+    "Legal"
+  ],
+  "spine": "Psychological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1930,
+      "month": null
+    },
+    "end": {
+      "year": 1930,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In December 1930 soldiers of the Twentieth Army at Futian in Jiangxi rose against the Party's purge commission after it tortured their officers into naming members of a counterrevolutionary league.",
+    "record": "The purge targeted an alleged Anti-Bolshevik League inside the Jiangxi Soviet and drew confessions by torture. The Party executed thousands of its own members and soldiers in the Jiangxi base in the months after. Later official Party histories describe the campaign as an error of excess.",
+    "reading": "The Party learned early that a named enemy inside the ranks produces obedience, and it ran the pattern again at Yan'an and after 1949. The first victims of the method were Party members and the peasants who followed them.",
+    "gapText": "Architecture Governance. No authority outside the purge commission could test a confession.",
+    "fix": "Keep review of any charge outside the body that makes it, the separation a free society builds into its courts."
+  },
+  "status": "unsourced"
+}

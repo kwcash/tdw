@@ -1,0 +1,42 @@
+{
+  "id": "F062",
+  "kind": "futures",
+  "title": "The Loyalty Test",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Mirror",
+  "stratagems": [
+    "S9"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association",
+    "AI and Cognitive"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Pen From the Inside",
+  "gap": "Principles",
+  "text": {
+    "brief": "A battery chemist at a national laboratory in Illinois accepts an offer from a Shenzhen institute in 2031. Born in Wuhan and a citizen since 2015, she spent two years under an investigation that closed without a charge.",
+    "record": "The Justice Department ended its China Initiative in February 2022. MIT Technology Review found that 130 of the 148 people charged under it were of Chinese heritage. A study in PNAS found that departures of scientists of Chinese descent from the United States rose from about 900 in 2010 to 2,621 in 2021. House appropriators wrote language to restore the initiative in September 2025 and dropped it in January 2026.",
+    "reading": "The Party does not need to recruit when suspicion does the work. Each case against an innocent scientist tells the rest where they are unwelcome, and the talent programs wait with offers. This is Stratagem 9, watch the fire from across the river.",
+    "coreEvent": "A peer-reviewed study published before 2034 finds a record year for departures of scientists of Chinese descent from American institutions.",
+    "gapText": "Architecture Principles. A security policy that sorts people by ancestry drives out the talent it exists to protect.",
+    "fix": "Judge every researcher on documented conduct under one standard. Ancestry is not loyalty, and it is not evidence of betrayal."
+  },
+  "status": "unsourced"
+}

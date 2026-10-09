@@ -1,0 +1,37 @@
+{
+  "id": "C110",
+  "kind": "catalog",
+  "title": "The Journalists' Expulsion",
+  "tier": 6,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Information",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2020,
+      "month": null
+    },
+    "end": {
+      "year": 2020,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "The Wall Street Journal's deputy bureau chief Josh Chin learned on February 19, 2020 that he and two colleagues had five days to leave the mainland.",
+    "record": "The foreign ministry cited a headline on an opinion essay that called the People's Republic the real sick man of Asia. A day earlier the State Department had designated five state media outlets as foreign missions, and in March it capped the number of mainland citizens they could employ in the United States. On March 17 the Party expelled about a dozen American reporters from the New York Times, the Journal and the Washington Post and barred them from working in Hong Kong.",
+    "reading": "The Party matched a cap on its state media staff with the removal of reporters who had covered the outbreak's first months, and the trade favored the side that fears its press. Removing the reporters removed the fuel of independent reporting, which is Stratagem 19.",
+    "gapText": "Architecture Principles. Reciprocity treated state media outlets and independent newsrooms as equal units, so each round of retaliation cost the free press more.",
+    "fix": "Answer expulsions of journalists with measures aimed at the state that expels them, and never trade independent reporters for state media staff."
+  },
+  "status": "unsourced"
+}

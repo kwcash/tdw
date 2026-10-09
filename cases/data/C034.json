@@ -1,0 +1,39 @@
+{
+  "id": "C034",
+  "kind": "catalog",
+  "title": "Five-Anti and the Red Capitalist",
+  "tier": 2,
+  "dimension": "Agency",
+  "stage": "Consume",
+  "stratagems": [
+    "S18",
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Psychological",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1952,
+      "month": null
+    },
+    "end": {
+      "year": 1956,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In January 1956 Rong Yiren, heir to one of Shanghai's largest textile and flour businesses, handed his family's factories to joint state ownership in a ceremony the Party celebrated.",
+    "record": "The Party launched the Five-Anti campaign in January 1952 against five offenses it charged to private business, from bribery and tax evasion to theft of economic information. Work teams and employees denounced owners in mass meetings, and many business owners killed themselves under the pressure. By 1956 the Party had brought private industry under joint state ownership, and Rong later founded CITIC in 1979 to court foreign capital.",
+    "reading": "Five-Anti consumed the private sector that had stayed to work with the new state, and the Party later called on its survivor to attract the foreign capital it needed. The actions of 2020 and 2021 against private platforms run the same instrument with regulators in place of work teams.",
+    "gapText": "Architecture Governance. No law protected property from a campaign, so compliance bought nothing.",
+    "fix": "Price the risk that a party-state will consume any private partner it no longer needs, and write that risk into every investment review."
+  },
+  "status": "unsourced"
+}

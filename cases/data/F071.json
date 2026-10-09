@@ -1,0 +1,42 @@
+{
+  "id": "F071",
+  "kind": "futures",
+  "title": "The Frozen Strait",
+  "tier": 5,
+  "dimension": "Coherence",
+  "stage": "Defense",
+  "stratagems": [
+    "S4"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2045,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "Taiwan",
+  "gap": "Governance",
+  "text": {
+    "brief": "A Taiwanese conscript stands the night watch on Kinmen in 2040, the same post his father held in 2012. The Party has fired no shot across the Strait in fourteen years, and the island's defense budget has shrunk as a share of its economy for three straight years.",
+    "record": "Taiwan's cabinet proposed NT$1.12 trillion for defense in 2027, or 3.01 percent of GDP, down from 3.32 percent in 2026. The legislature passed a special arms act of NT$780 billion in May 2026, well short of the NT$1.25 trillion the government sought. President Lai Ching-te has pledged to reach 5 percent of GDP by 2030.",
+    "reading": "The Party waits at ease. Each quiet year makes the next defense vote harder in Taipei and in Washington, and the Party plans in decades while its rivals budget in years. This is Stratagem 4, wait at ease for the weary enemy.",
+    "coreEvent": "American security assistance to Taiwan lapses for a full fiscal year before 2042.",
+    "gapText": "Architecture Governance. Deterrence in the Strait rests on annual votes, and the Party plans in decades.",
+    "fix": "Fund Taiwan's defense on a multiyear schedule and write the authority to outlast any one Congress."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "C032",
+  "kind": "catalog",
+  "title": "Land to the Tiller",
+  "tier": 2,
+  "dimension": "Resonance",
+  "stage": "Consume",
+  "stratagems": [
+    "S18",
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Psychological",
+    "Legal"
+  ],
+  "spine": "Psychological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1950,
+      "month": null
+    },
+    "end": {
+      "year": 1950,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In 1948 William Hinton, an American tractor technician, watched a Party work team run land reform in the Shanxi village of Long Bow and later wrote it up as Fanshen.",
+    "record": "The Agrarian Reform Law of June 30, 1950, carried the base-area practice across the mainland. Work teams classified every household by class and staged mass accusation meetings against landlords, many of which ended in beatings and executions. Scholarly estimates of the dead run from several hundred thousand to two million or more.",
+    "reading": "Land to the tiller was a frequency the Nationalists could not transmit, and the class labels it assigned became a permanent sorting of the population. The same sorting later ran in Xinjiang with algorithms in place of work teams.",
+    "gapText": "Architecture Governance. No court stood between a class label and a death sentence.",
+    "fix": "Keep every sanction tied to individual conduct proven in a forum the accuser does not control."
+  },
+  "status": "unsourced"
+}

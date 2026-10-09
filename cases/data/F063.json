@@ -1,0 +1,42 @@
+{
+  "id": "F063",
+  "kind": "futures",
+  "title": "The Dependency Map",
+  "tier": 4,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S35"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Digital Twin",
+  "gap": "Data",
+  "text": {
+    "brief": "A program manager at a missile plant in Arizona learns in 2030 that her seeker line will stop in six weeks. The shortage covers a magnet, a wafer and a lens from suppliers three tiers down whose names no one in her office knew.",
+    "record": "The Party's export controls grew from gallium and germanium in 2023 to graphite, antimony and seven heavy rare earths by April 2025. Its October 2025 rules reached any product in the world with 0.1 percent or more of mainland rare earth content, and the Party suspended them under the trade truce until November 10, 2026. The licensing of heavy rare earths never lapsed, and the general licenses issued from December 2025 exclude defense and aerospace buyers.",
+    "reading": "The Party maps America's dependencies past the first tier and pulls one thread at a time. Each control looks narrow, and together they chain into a campaign that can stop a missile line or a shipyard. This is Stratagem 35, chain the stratagems.",
+    "coreEvent": "A mainland export control halts production on an American defense program for at least a month before 2034.",
+    "gapText": "Data Architecture. No American agency holds a map of supply past the first tier, and the Party maps every tier.",
+    "fix": "Build the map, keep it current and give it to the firms and program offices that must act on it."
+  },
+  "status": "unsourced"
+}

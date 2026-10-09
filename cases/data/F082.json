@@ -1,0 +1,42 @@
+{
+  "id": "F082",
+  "kind": "futures",
+  "title": "The Unity Channel",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Attract",
+  "stratagems": [
+    "S31"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2037,
+      "month": null
+    },
+    "end": {
+      "year": 2045,
+      "month": null
+    }
+  },
+  "world": "Unwinding",
+  "horizon": 3,
+  "arc": "The War for the Mind",
+  "gap": "Application",
+  "text": {
+    "brief": "A college student in Seattle binges a mainland drama in 2040 about a reformer who saves the nation from corrupt rivals. The show costs nothing, looks superb and draws its money from one faction of a Party at war with itself.",
+    "record": "Ne Zha 2 earned about $2.26 billion worldwide in 2025 and about $23 million in North America. A Beijing-based publisher listed in Shenzhen owns 49 percent of the company behind ReelShort, a short-drama app that earned about $130 million worldwide in the first quarter of 2025. Short dramas reach American audiences through phones rather than theaters.",
+    "reading": "A weakened faction courts the world with beauty. Its dramas, games and idols carry a story in which that faction saves the nation, and viewers abroad become its constituency. This is Stratagem 31, the beauty trap.",
+    "coreEvent": "A streaming channel funded by one Party faction draws more than 50 million monthly viewers outside the mainland before 2045.",
+    "gapText": "Application Architecture. App stores name the developer of a show and not the state faction that paid for it.",
+    "fix": "Label the ultimate sponsor of state-backed foreign media in every app store."
+  },
+  "status": "unsourced"
+}

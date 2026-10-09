@@ -1,0 +1,42 @@
+{
+  "id": "F002",
+  "kind": "futures",
+  "title": "The Ballot and the Bet",
+  "tier": 2,
+  "dimension": "Resonance",
+  "stage": "Control",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Association",
+    "AI and Cognitive"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 3
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Taiwan",
+  "gap": "Data",
+  "text": {
+    "brief": "Three days before Taiwan's local elections on November 28, 2026, a prosecutor in Changhua opens a folder of receipts for a subsidized tour of Fujian. The tour carried forty village wardens, and the same wardens now share a synthetic video of a candidate on their neighborhood chat groups.",
+    "record": "Taiwan elects 11,051 local officials on November 28, 2026 ([Taipei Times](https://www.taipeitimes.com/News/taiwan/archives/2026/08/20/2003862831)). The same ballot carries a referendum on the nuclear-free homeland policy ([Focus Taiwan](https://focustaiwan.tw/politics/202608280025)). Before the 2024 elections prosecutors investigated village wardens over subsidized mainland trips and gamblers over illegal betting on the results.",
+    "reading": "The Party works through local intermediaries so the message arrives in Taiwanese voices. Subsidized tours bind wardens and temple committees, offshore betting markets manufacture a sense of inevitability, and AI video fills the gaps. The aim reaches past any single race to 2028 and to the claim that Taiwan's voters reject their own government's line. This is Stratagem 3, kill with a borrowed knife.",
+    "coreEvent": "Taiwan's authorities document a Party-funded network of trips, betting and synthetic video aimed at the 2026 local elections.",
+    "gapText": "Data Architecture. Tours, betting and content sit with three different agencies, and none sees the whole network in time.",
+    "fix": "Fuse the three data streams in one election-security cell with a mandate that ends on polling day. Label foreign-origin content and leave citizens' own speech alone."
+  },
+  "status": "sourced"
+}

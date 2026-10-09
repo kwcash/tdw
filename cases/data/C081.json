@@ -1,0 +1,36 @@
+{
+  "id": "C081",
+  "kind": "catalog",
+  "title": "Wen Ho Lee",
+  "tier": 5,
+  "dimension": "Asymmetry",
+  "stage": "Mirror",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Information",
+    "Legal"
+  ],
+  "spine": "Legal",
+  "opponent": "The federal government",
+  "when": {
+    "start": {
+      "year": 1999,
+      "month": null
+    },
+    "end": {
+      "year": 2000,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On September 13, 2000, Judge James Parker apologized from the bench to Wen Ho Lee for the way the government had held him.",
+    "record": "Lee, a Los Alamos scientist born in Taiwan, had spent 278 days in solitary confinement after investigators named him in the search for a leak of W88 warhead data. Prosecutors charged him with 59 counts of mishandling classified files and never charged him with espionage. He pleaded guilty to one count and went free that day. In 2006 the government and five news organizations paid him about $1.6 million to settle his privacy suit.",
+    "reading": "The investigation narrowed to one man before it tested the evidence, and the W88 question has never reached a public answer. A defender who picks suspects by origin hands the Party a recruiting argument and leaves the real leak unfound.",
+    "gapText": "Architecture Principles. The judge who freed Lee said the government had embarrassed the nation, and no principle had stopped the case before it reached him.",
+    "fix": "Test every counterintelligence lead against the evidence before naming anyone, and keep ancestry off the suspect list."
+  },
+  "status": "unsourced"
+}

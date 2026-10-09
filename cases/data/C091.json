@@ -1,0 +1,37 @@
+{
+  "id": "C091",
+  "kind": "catalog",
+  "title": "Heparin",
+  "tier": 5,
+  "dimension": "Topology",
+  "stage": "Extract",
+  "stratagems": [
+    "S25"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "A counterfeit supply chain",
+  "when": {
+    "start": {
+      "year": 2008,
+      "month": null
+    },
+    "end": {
+      "year": 2008,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "In March 2008 Janet Woodcock of the Food and Drug Administration announced that a counterfeit chemical had entered American heparin through a plant in Changzhou.",
+    "record": "The chemical, oversulfated chondroitin sulfate, mimicked heparin in the standard tests and cost a fraction of the real drug. Baxter recalled its heparin, and the agency linked the contaminated product to dozens of deaths and hundreds of severe reactions. The agency had never inspected the Changzhou plant before the crisis because it had confused its name with another site. Officials of the People's Republic denied that the contaminant caused any deaths.",
+    "reading": "Someone upstream swapped a cheap fake into a drug's structure and kept the shape the tests expected, which is Stratagem 25. No one upstream has answered for it, because the investigation stopped at a border the defender could not cross.",
+    "gapText": "Application Architecture. The agency's inspection routine confused two plants and left the one that mattered unvisited.",
+    "fix": "Inspect every foreign plant that makes an active ingredient before its product reaches a patient, and test for adulterants as well as for identity."
+  },
+  "status": "unsourced"
+}

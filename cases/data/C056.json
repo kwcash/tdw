@@ -1,0 +1,38 @@
+{
+  "id": "C056",
+  "kind": "catalog",
+  "title": "The Hat in Texas",
+  "tier": 3,
+  "dimension": "Resonance",
+  "stage": "Attract",
+  "stratagems": [
+    "S10",
+    "S17"
+  ],
+  "theater": [
+    "Economic",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1979,
+      "month": null
+    },
+    "end": {
+      "year": 1979,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "Deng Xiaoping put on a ten-gallon hat at a rodeo outside Houston on February 2, 1979.",
+    "record": "The photograph ran on front pages across the country during a visit that began with the signing of the Agreement on Cooperation in Science and Technology on January 31. The agreement framed four decades of joint research under dozens of agency protocols. It reached its renewal date in August 2023. After short extensions the State Department renewed it in December 2024 with a narrower scope that leaves out critical and emerging technologies.",
+    "reading": "The hat bought goodwill on the evening news, while the agreement bought access to American laboratories for forty years, which is Stratagem 17. Americans enjoyed the gesture and seldom counted what the framework carried.",
+    "gapText": "Business Architecture. No agency owned the total cost of the agreement, so each protocol answered only to its own sponsor.",
+    "fix": "Renew science agreements on fixed terms with a published list of closed fields, and review every protocol against it."
+  },
+  "status": "unsourced"
+}

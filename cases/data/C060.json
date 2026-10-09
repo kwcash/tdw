@@ -1,0 +1,37 @@
+{
+  "id": "C060",
+  "kind": "catalog",
+  "title": "Vincent Chin",
+  "tier": 3,
+  "dimension": "Resonance",
+  "stage": "Mirror",
+  "stratagems": [
+    "S10"
+  ],
+  "theater": [
+    "Economic",
+    "Psychological",
+    "Legal"
+  ],
+  "spine": "Psychological",
+  "opponent": "Scapegoat violence",
+  "when": {
+    "start": {
+      "year": 1982,
+      "month": null
+    },
+    "end": {
+      "year": 1982,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "A Chrysler plant supervisor and his laid-off stepson beat Vincent Chin with a baseball bat in Highland Park on June 19, 1982.",
+    "record": "Chin was Chinese American, and witnesses said Ronald Ebens blamed him for auto jobs lost to Japanese imports. He died four days later, days before his wedding. A Wayne County judge gave Ebens and his stepson Michael Nitz three years' probation and fines of $3,000 each. A federal jury convicted Ebens of a civil rights crime in 1984, but an appeals court overturned the verdict, and a second jury acquitted him in 1987.",
+    "reading": "Anger over lost jobs landed on a man who had nothing to do with them, because his killers read ancestry as allegiance. Every defender who repeats that error hands the Party the argument its United Front work makes, that the United States will never accept Americans of Chinese descent.",
+    "gapText": "Architecture Principles. The court weighed the killing as a quarrel and had no principle that named the motive.",
+    "fix": "Keep ancestry out of every judgment of loyalty, and prosecute violence that turns on it as the crime it is."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F012",
+  "kind": "futures",
+  "title": "The Campus Informant",
+  "tier": 2,
+  "dimension": "Agency",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Psychological",
+    "Association",
+    "Cultural",
+    "Data and Surveillance"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The Long Arm",
+  "gap": "Business",
+  "text": {
+    "brief": "A junior at a Midwestern university books a room in March 2027 for a talk by a Taiwanese legislator. Two days later her father calls from Chengdu and asks her to cancel, and the dean's office asks whether the event could move online for safety.",
+    "record": "Freedom House attributed 272 of 1,219 documented physical incidents of transnational repression from 2014 to 2024 to the People's Republic, more than any other state. American campuses hosted 277,398 students from the mainland in the 2023 to 2024 academic year ([IIE Open Doors](https://opendoorsdata.org/)). Secretary of State Rubio announced in May 2025 that the United States would revoke visas of mainland students with Party ties or in critical fields.",
+    "reading": "The Party never contacts the university. Police visit the family, the family presses the student, and the university chooses the quiet option. Every student on campus reads the warning without anyone saying it. This is Stratagem 26, point at the mulberry while cursing the locust.",
+    "coreEvent": "An American university cancels or relocates a Taiwan- or Tibet-related event after pressure linked to the Party before 2028.",
+    "gapText": "Business Architecture. Universities route these cases to event security and risk offices, and those offices reward the quiet option.",
+    "fix": "Write a campus protocol that keeps events on schedule and protects the student under pressure. Ancestry is never evidence of anything but the Party's leverage."
+  },
+  "status": "sourced"
+}

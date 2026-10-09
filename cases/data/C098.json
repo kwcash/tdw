@@ -1,0 +1,37 @@
+{
+  "id": "C098",
+  "kind": "catalog",
+  "title": "Scarborough to The Hague",
+  "tier": 5,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S30"
+  ],
+  "theater": [
+    "Kinetic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2012,
+      "month": null
+    },
+    "end": {
+      "year": 2016,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "On January 22, 2013, Philippine Foreign Secretary Albert del Rosario announced that his government would take its dispute with the People's Republic to an arbitral tribunal under the law of the sea.",
+    "record": "In April 2012 the Philippine navy had found mainland fishing boats inside Scarborough Shoal, and maritime surveillance ships of the People's Republic moved in to block any arrest. American diplomats brokered what they described as a mutual withdrawal in June. The Philippine ships left, and the mainland ships stayed. On July 12, 2016, the tribunal found no legal basis for historic rights inside the nine-dash line. The Party called the award null and void.",
+    "reading": "The Party took the shoal by staying after the other side left, which is Stratagem 30, and possession then did work that law could not undo. The ruling stands in international law and has not moved a single ship.",
+    "gapText": "Architecture Governance. The United States brokered a withdrawal with no means to verify it and no plan for a side that stayed.",
+    "fix": "Attach verification and a stated consequence to every brokered deal, and act on the consequence when either side breaks it."
+  },
+  "status": "unsourced"
+}

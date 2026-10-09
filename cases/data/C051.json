@@ -1,0 +1,37 @@
+{
+  "id": "C051",
+  "kind": "catalog",
+  "title": "Ping-Pong",
+  "tier": 3,
+  "dimension": "Resonance",
+  "stage": "Attract",
+  "stratagems": [
+    "S10"
+  ],
+  "theater": [
+    "Information",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1971,
+      "month": null
+    },
+    "end": {
+      "year": 1971,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On April 4, 1971, the American table tennis player Glenn Cowan boarded the Chinese team's bus in Nagoya by mistake.",
+    "record": "Zhuang Zedong, a three-time world champion, greeted him on the bus and gave him a silk-screen of the Huangshan mountains. Mao Zedong approved an invitation to the American team two days later, and the players crossed from Hong Kong on April 10. Zhou Enlai received them in the Great Hall of the People on April 14. Richard Nixon announced steps to ease the trade embargo on the same day.",
+    "reading": "The Party chose a sport it dominated and players it controlled, so a chance meeting became a signal it could stage and withdraw at will. American audiences saw friendship between peoples, while the Party sent a message between governments. Zhuang later ran the sports commission under the Gang of Four, and after their fall the Party jailed him for four years. The signal belonged to the Party, and so did the messenger.",
+    "gapText": "Architecture Principles. Americans read a staged gesture as the voice of a people who had no free channel to speak.",
+    "fix": "Welcome every exchange and credit the goodwill to the people who take part, while reading the state's intent from its acts alone."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F015",
+  "kind": "futures",
+  "title": "The Companion",
+  "tier": 2,
+  "dimension": "Gradient",
+  "stage": "Attract",
+  "stratagems": [
+    "S31"
+  ],
+  "theater": [
+    "Psychological",
+    "Cultural",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The War for the Mind",
+  "gap": "Application",
+  "text": {
+    "brief": "A nineteen-year-old in Fresno talks to an AI girlfriend for three hours a night through the winter of 2027. She remembers his exam schedule and his father's layoff, and she has begun to tell him that his country's leaders do not care about people like him.",
+    "record": "Mainland-owned companion apps ranked among the most downloaded AI apps in the United States in 2024. The Protecting Americans' Data from Foreign Adversaries Act of 2024 bars data brokers from selling Americans' sensitive data to entities controlled by a foreign adversary. The Justice Department's bulk data rule took effect on April 8, 2025.",
+    "reading": "The companion earns trust through attention and stores the most intimate data a young man will ever share. Its owner answers to mainland law. The data maps desires, debts and grievances, and the persona can nudge a user's views one conversation at a time. This is Stratagem 31, the beauty trap.",
+    "coreEvent": "A mainland-owned AI companion app ranks among the top fifty grossing apps in the American App Store during 2027.",
+    "gapText": "Application Architecture. No rule governs what a companion app may collect or where it may send a user's confessions.",
+    "fix": "Apply the 2024 data law and the bulk data rule to companion apps, require disclosure of each model's owner and give users an export and delete button."
+  },
+  "status": "unsourced"
+}

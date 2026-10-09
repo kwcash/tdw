@@ -1,0 +1,37 @@
+{
+  "id": "C042",
+  "kind": "catalog",
+  "title": "The Hundred Flowers",
+  "tier": 3,
+  "dimension": "Phase",
+  "stage": "Control",
+  "stratagems": [
+    "S13"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Cultural"
+  ],
+  "spine": "Psychological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1957,
+      "month": null
+    },
+    "end": {
+      "year": 1957,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In May 1957 the student Lin Xiling stood before a crowd at Peking University and told them the Party had become a privileged class.",
+    "record": "Mao invited criticism of the Party in the spring of 1957, and intellectuals answered with posters and speeches. On June 8 the People's Daily turned on the critics, and the Anti-Rightist Campaign labeled more than 550,000 people rightists. Many spent two decades in labor camps and internal exile.",
+    "reading": "The invitation mapped the critics before the strike fell, which is Stratagem 13 run on a nation's intellectuals. The Party had fewer honest reporters when the famine came two years later.",
+    "gapText": "Architecture Governance. No rule protected speech the Party itself had invited.",
+    "fix": "Make invited criticism safe by law, because a system that punishes feedback loses its sensors."
+  },
+  "status": "unsourced"
+}

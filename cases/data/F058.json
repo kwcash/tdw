@@ -1,0 +1,41 @@
+{
+  "id": "F058",
+  "kind": "futures",
+  "title": "The Treasury Bluff",
+  "tier": 4,
+  "dimension": "Asymmetry",
+  "stage": "Defense",
+  "stratagems": [
+    "S32"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Psychological"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Financial Control",
+  "gap": "Data",
+  "text": {
+    "brief": "During a crisis over Taiwan in 2033, a Party newspaper reports that the People's Bank may sell its American Treasury holdings. A Federal Reserve economist has one hour to tell her chair whether the threat is real.",
+    "record": "Mainland holdings of Treasury securities peaked at more than $1.3 trillion in 2013 and have fallen by nearly half since. A fire sale would cut the value of the Party's own reserves and push the yuan up against the exporters it protects. The Federal Reserve keeps standing repo facilities and swap lines for market stress.",
+    "reading": "The Party threatens a weapon it cannot fire without wounding itself. If Washington flinches, the bluff works. If markets panic for a week, the Party still gains. This is Stratagem 32, the empty fortress.",
+    "coreEvent": "Mainland declared holdings of Treasury securities fall under $500 billion before 2034.",
+    "gapText": "Data Architecture. Official data show where Treasuries sit and not who owns them, so a bluff can outrun the facts.",
+    "fix": "Improve ownership data and plan market backstops in advance."
+  },
+  "status": "unsourced"
+}

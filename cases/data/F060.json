@@ -1,0 +1,42 @@
+{
+  "id": "F060",
+  "kind": "futures",
+  "title": "The Offshore Coin",
+  "tier": 4,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S8"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal",
+    "Cyber"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2033,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Hong Kong",
+  "gap": "Governance",
+  "text": {
+    "brief": "A compliance officer at a New York bank traces a shipment of drone engines to Russia in 2031. The buyer paid a Hong Kong trader in a licensed stablecoin pegged to the offshore yuan, and no dollar ever moved.",
+    "record": "Hong Kong's stablecoin law took effect on August 1, 2025. The Hong Kong Autonomy Act of 2020 lets Washington sanction banks that deal with officials who undermine the city's autonomy. Treasury's reports under that act named no bank from 2020 to 2022.",
+    "reading": "The Party lets Hong Kong build a regulated rail for sanctioned trade. The license gives the coins legitimacy, and the offshore yuan keeps them outside dollar law. This is Stratagem 8, openly repair the gallery roads and march secretly through Chencang.",
+    "coreEvent": "Treasury documents the use of a stablecoin licensed in Hong Kong in sanctioned Russian or Iranian trade before 2033.",
+    "gapText": "Architecture Governance. The sanctions law that covers Hong Kong has never named a bank.",
+    "fix": "Use the law already on the books, and name the first issuer that moves sanctioned trade."
+  },
+  "status": "unsourced"
+}

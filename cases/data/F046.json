@@ -1,0 +1,42 @@
+{
+  "id": "F046",
+  "kind": "futures",
+  "title": "The Digital Police Station",
+  "tier": 3,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S8"
+  ],
+  "theater": [
+    "Association",
+    "Cyber",
+    "Cultural",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Long Arm",
+  "gap": "Application",
+  "text": {
+    "brief": "A retired engineer in Queens renews his mainland driver's license through an app in 2031. The app asks for his face, his address and his contacts, and a week later a stranger calls him by name to ask about his son's activism.",
+    "record": "Federal prosecutors charged two men in April 2023 with running an undeclared police station for the Ministry of Public Security in Manhattan, and one pleaded guilty in December 2024. Safeguard Defenders counted more than 100 such stations worldwide in 2022. The Justice Department's bulk data rule bars transfers of Americans' sensitive data to entities tied to countries of concern.",
+    "reading": "The Party closes the storefronts and moves the service into an app. License renewals, pension checks and document services ask for identity and location, and the same data feeds the police. The service is real, and so is the watch. This is Stratagem 8, openly repair the gallery roads and march secretly through Chencang.",
+    "coreEvent": "American authorities charge operators of a diaspora service app as agents of the People's Republic before 2036.",
+    "gapText": "Application Architecture. American rules police data brokers and not the government apps that collect the same data.",
+    "fix": "Apply data-transfer rules to any app that sends Americans' data to a foreign security service, and prosecute the harassment that follows."
+  },
+  "status": "unsourced"
+}

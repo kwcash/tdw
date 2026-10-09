@@ -1,0 +1,42 @@
+{
+  "id": "F004",
+  "kind": "futures",
+  "title": "The Guard's Debt",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Extract",
+  "stratagems": [
+    "S31"
+  ],
+  "theater": [
+    "Kinetic",
+    "Financial",
+    "Association",
+    "Data and Surveillance"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Taiwan",
+  "gap": "Governance",
+  "text": {
+    "brief": "A sergeant in an air-defense battalion outside Taichung owes more than a year's pay to an online lender. In March 2027 a friendly stranger offers to clear the debt for photographs of a launcher manual.",
+    "record": "Taiwan's courts convicted four soldiers in March 2025, three of them presidential guards, for espionage on behalf of the People's Republic ([The Defense Post](https://thedefensepost.com/2025/03/28/taiwan-spying-china/)). Six service members followed in April 2026 and three airmen in July 2026 ([Taipei Times](https://www.taipeitimes.com/News/taiwan/archives/2026/07/16/2003860849)). Recruiters in these cases reached debt-stressed personnel through lenders, gambling contacts and cryptocurrency payments.",
+    "reading": "The Party's services recruit through need rather than ideology. Debt collectors, gambling hosts and dating contacts identify soldiers under pressure and pay them in small sums for manuals, codes and rosters. Each sale looks minor to the seller. Together the sales hand the PLA the order of battle it needs to paralyze air defense on the first night. This is Stratagem 31, the beauty trap, run on money.",
+    "coreEvent": "Taiwan uncovers another Party-run espionage ring inside an air-defense or command unit before 2029.",
+    "gapText": "Architecture Governance. Security clearance reviews check loyalty once and ignore the debt that builds after the review.",
+    "fix": "Treat financial distress as a support case and not a disqualifier, with a no-penalty channel for reporting approaches. Run every disclosed approach as a potential double-agent operation."
+  },
+  "status": "sourced"
+}

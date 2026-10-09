@@ -1,0 +1,41 @@
+{
+  "id": "F089",
+  "kind": "futures",
+  "title": "The Loot Offer",
+  "tier": 4,
+  "dimension": "Entropy",
+  "stage": "Mirror",
+  "stratagems": [
+    "S5"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2037,
+      "month": null
+    },
+    "end": {
+      "year": 2045,
+      "month": null
+    }
+  },
+  "world": "Unwinding",
+  "horizon": 3,
+  "arc": "Financial Control",
+  "gap": "Principles",
+  "text": {
+    "brief": "A partner at a New York fund reads a term sheet in 2040 for control of a mainland port operator at a tenth of its old value. The seller is a provincial official who needs dollars before his faction falls.",
+    "record": "The IMF put the mainland's augmented government debt at 126.6 percent of GDP in 2025 and projected 150 percent by 2029. A Hong Kong court ordered Evergrande's liquidation in January 2024. Property investment on the mainland fell 19.9 percent in the first eight months of 2026.",
+    "reading": "A burning house invites looting. Collapsing factions sell what they took from the Chinese people, and American buyers who take the bait hand the next government a grievance and the old faction a cash exit. This is Stratagem 5, loot a burning house.",
+    "coreEvent": "American funds buy control of major mainland state assets at distressed prices during a succession crisis before 2045.",
+    "gapText": "Architecture Principles. American investment rules ask whether a deal is legal, not whether the seller had the right to sell.",
+    "fix": "Refuse title from a regime in collapse and hold stolen proceeds for the people who owned them."
+  },
+  "status": "unsourced"
+}

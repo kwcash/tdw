@@ -1,0 +1,37 @@
+{
+  "id": "C108",
+  "kind": "catalog",
+  "title": "The Class Scheduling of Fentanyl",
+  "tier": 6,
+  "dimension": "Gradient",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S21"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2019,
+      "month": null
+    },
+    "end": {
+      "year": 2019,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "On April 1, 2019, Liu Yuejin of the National Narcotics Control Commission announced that all fentanyl-related substances would come under control as a class from May 1.",
+    "record": "The step followed a pledge at the Buenos Aires summit of December 2018. Direct shipments of finished fentanyl to the United States fell. Suppliers shifted to precursor chemicals that the rule did not cover, and Mexican cartels made the drug from them. Deaths from synthetic opioids in the United States passed 70,000 a year in 2021 and 2022. In November 2023 the Party agreed to curb precursor exports. A House select committee reported in 2024 that the state had paid export tax rebates on some of the same chemicals.",
+    "reading": "The rule answered the demand Washington made and left the precursor trade open, so the flow changed form and kept its volume. The trade shed its old shell and kept moving, which is Stratagem 21.",
+    "gapText": "Application Architecture. The rule controlled a list of substances, and chemists changed the product faster than officials changed the list.",
+    "fix": "Control chemical families by structure, and follow the money through the payment networks that move it."
+  },
+  "status": "unsourced"
+}

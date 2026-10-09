@@ -1,0 +1,37 @@
+{
+  "id": "C014",
+  "kind": "catalog",
+  "title": "The Diaspora Funds a Republic",
+  "tier": 1,
+  "dimension": "Topology",
+  "stage": "Attract",
+  "stratagems": [
+    "S14"
+  ],
+  "theater": [
+    "Financial",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Association",
+  "opponent": "The revolutionary league",
+  "when": {
+    "start": {
+      "year": 1911,
+      "month": null
+    },
+    "end": {
+      "year": 1911,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "Sun Yat-sen was in Denver raising money when the Wuchang uprising began in October 1911, and he read of it in a newspaper.",
+    "record": "Sun joined the Chee Kung Tong, a secret society with lodges in American Chinatowns, in Honolulu in 1904 and used its network to raise funds. Laundrymen, cooks and merchants in American cities paid for much of the revolutionary league's work. The Party merged its Overseas Chinese Affairs Office into the United Front Work Department in 2018.",
+    "reading": "The republic grew from a diaspora mesh that no government commanded. The Party runs that same association layer through its United Front today, and the 2018 merger put the whole layer under one department.",
+    "gapText": "Business Architecture. No defender owns the association layer, so a diaspora's own institutions sit open to capture.",
+    "fix": "Support independent community institutions and protect them from coercion, without treating their members as suspects."
+  },
+  "status": "unsourced"
+}

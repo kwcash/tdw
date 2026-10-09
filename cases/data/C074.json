@@ -1,0 +1,37 @@
+{
+  "id": "C074",
+  "kind": "catalog",
+  "title": "The Campaign Finance Scandal",
+  "tier": 4,
+  "dimension": "Topology",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S20"
+  ],
+  "theater": [
+    "Financial",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1996,
+      "month": null
+    },
+    "end": {
+      "year": 1996,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In 1998 the fundraiser Johnny Chung told federal investigators that a lieutenant colonel in the People's Liberation Army had given him $300,000 for American campaigns.",
+    "record": "Chung said the money came from Liu Chaoying, a state aerospace executive and the daughter of the army's senior general. He pleaded guilty to campaign finance violations. The Senate Governmental Affairs Committee reported in 1998 that Party officials had planned to influence American elections, and its minority disputed how far the plan went. The Democratic National Committee returned about $2.8 million in questionable donations and then called donors with Asian surnames to question their citizenship.",
+    "reading": "The Party ran money through a few intermediaries, and suspicion then fell on every American who shared their ancestry. That second result served the Party as well as the first, because it taught Asian Americans that their own institutions saw them as suspects.",
+    "gapText": "Architecture Governance. No one owned the source of foreign money that reached campaigns through citizens, so scrutiny fell on ancestry instead of on money.",
+    "fix": "Trace the money rather than the donor's name, and apply the same test to every contribution."
+  },
+  "status": "unsourced"
+}

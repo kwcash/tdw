@@ -1,0 +1,37 @@
+{
+  "id": "C113",
+  "kind": "catalog",
+  "title": "Peng Shuai and the WTA",
+  "tier": 6,
+  "dimension": "Agency",
+  "stage": "Control",
+  "stratagems": [
+    "S29"
+  ],
+  "theater": [
+    "Psychological",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2021,
+      "month": null
+    },
+    "end": {
+      "year": 2021,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "On November 2, 2021, the tennis player Peng Shuai posted that the former vice premier Zhang Gaoli had coerced her into sex.",
+    "record": "Censors deleted the post within about half an hour, and Peng vanished from public view. State media then released an email in her name that retracted the claim. On December 1 the WTA's chief executive Steve Simon suspended all tournaments on the mainland, a decision that cost the tour its richest market. The International Olympic Committee held video calls with her before the Beijing Games and accepted her assurances. The WTA returned in 2023 without the investigation it had demanded.",
+    "reading": "The Party staged dinners, videos and calls to show a free woman, which is Stratagem 29. One sports body put a player's safety ahead of its largest market and held out for more than a year, while the Olympic committee lent the Party its credibility.",
+    "gapText": "Business Architecture. The design held where one tour priced its market against a principle, and it failed where the Olympic committee chose access.",
+    "fix": "Write athlete safety terms into every event contract in states that detain critics, with an exit the sport has priced in advance."
+  },
+  "status": "unsourced"
+}

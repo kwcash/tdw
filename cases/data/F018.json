@@ -1,0 +1,41 @@
+{
+  "id": "F018",
+  "kind": "futures",
+  "title": "The Empty Chair at Geneva",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Control",
+  "stratagems": [
+    "S30"
+  ],
+  "theater": [
+    "Legal",
+    "Association",
+    "Biological"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "After COVID",
+  "gap": "Governance",
+  "text": {
+    "brief": "In February 2027 a member of the WHO secretariat drafts the agenda for a pathogen-sharing working group. The American seat stands empty, and the largest new pledge on the table comes from the People's Republic.",
+    "record": "The United States completed its withdrawal from the World Health Organization on January 22, 2026. The World Health Assembly adopted the Pandemic Agreement on May 20, 2025. The People's Republic pledged $500 million to the organization over five years in May 2025.",
+    "reading": "The guest takes the host's seat. With the United States outside, the Party gains weight in the rules for pathogen sharing, outbreak reporting and emergency declarations. The COVID record shows what the Party does inside an institution that defers to it. This is Stratagem 30, make the host and the guest exchange places.",
+    "coreEvent": "The People's Republic becomes the largest state funder of the WHO before 2029.",
+    "gapText": "Architecture Governance. The United States left a rule-writing body without a replacement network, so the rules now form without it.",
+    "fix": "Build allied surveillance that works with or without the WHO, and keep American experts at every technical table."
+  },
+  "status": "unsourced"
+}

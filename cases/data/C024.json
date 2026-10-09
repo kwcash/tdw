@@ -1,0 +1,37 @@
+{
+  "id": "C024",
+  "kind": "catalog",
+  "title": "Chien-Shiung Wu",
+  "tier": 2,
+  "dimension": "Coherence",
+  "stage": "Defense",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Kinetic",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Association",
+  "opponent": "The Axis",
+  "when": {
+    "start": {
+      "year": 1944,
+      "month": null
+    },
+    "end": {
+      "year": 1944,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "In March 1944 Chien-Shiung Wu, a physicist from Jiangsu who had earned her doctorate at Berkeley, joined the Manhattan Project's Substitute Alloy Materials Laboratory at Columbia.",
+    "record": "Wu worked on radiation detection and the enrichment of uranium. When the Hanford production reactor stalled in 1944, Enrico Fermi's team consulted her unpublished work on xenon, the fission product that was poisoning the reactor. She became a citizen in 1954, and her experiment of 1957 overturned the conservation of parity.",
+    "reading": "The arsenal of 1941 to 1945 ran on talent the country's own laws had tried to keep out. Wu's work is the 442nd lesson in a laboratory.",
+    "gapText": "Architecture Principles. The defender recruited a scientist whom its naturalization law had barred until the year before she joined.",
+    "fix": "Recruit by skill and screen by conduct, the rule the Military-Civil Fusion chapter sets for research security."
+  },
+  "status": "unsourced"
+}

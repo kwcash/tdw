@@ -1,0 +1,37 @@
+{
+  "id": "C084",
+  "kind": "catalog",
+  "title": "ETIM and the Guantánamo Uyghurs",
+  "tier": 5,
+  "dimension": "Asymmetry",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2002,
+      "month": null
+    },
+    "end": {
+      "year": 2002,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On August 26, 2002, Deputy Secretary of State Richard Armitage announced in Beijing that the United States had designated the East Turkestan Islamic Movement a terrorist group.",
+    "record": "The Party had sought the listing since the September 11 attacks and used it to cast Uyghur dissent as terrorism. American forces had already captured twenty-two Uyghur men in Afghanistan and Pakistan and sent them to Guantánamo. The military cleared them in the years after, but none could go home without risk of torture, and they waited years for third countries to take them. In November 2020 the State Department removed the group from its Terrorist Exclusion List and said no credible evidence showed it had existed for more than a decade.",
+    "reading": "Washington gave the Party a label it could stretch over a whole people, and the Party later cited that label to justify its camps in Xinjiang. The designation lent American authority to a campaign against Uyghurs, which is Stratagem 3.",
+    "gapText": "Data Architecture. Washington listed a group on evidence it could not test, and the listing outlived the group.",
+    "fix": "List a group only on evidence the defender can verify for itself, and review each listing on a fixed schedule."
+  },
+  "status": "unsourced"
+}

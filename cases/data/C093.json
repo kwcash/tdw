@@ -1,0 +1,36 @@
+{
+  "id": "C093",
+  "kind": "catalog",
+  "title": "The Drywall Cases",
+  "tier": 5,
+  "dimension": "Asymmetry",
+  "stage": "Extract",
+  "stratagems": [
+    "S36"
+  ],
+  "theater": [
+    "Economic",
+    "Legal"
+  ],
+  "spine": "Legal",
+  "opponent": "A state-owned supplier",
+  "when": {
+    "start": {
+      "year": 2009,
+      "month": null
+    },
+    "end": {
+      "year": 2019,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "In July 2014 Judge Eldon Fallon held Taishan Gypsum in contempt and barred it from doing business in the United States after it walked out of his court.",
+    "record": "Builders had installed drywall from the People's Republic in thousands of homes after the hurricanes of 2004 and 2005. The boards released sulfur gases that corroded wiring and appliances, and many families left their homes. Taishan, a subsidiary of a state-owned building materials group, defaulted and then argued that its parent enjoyed sovereign immunity. The court rejected the claim, and Taishan agreed in 2019 to pay $248 million.",
+    "reading": "A state-owned supplier treated an American court as optional and retreated from it until the court threatened its parent's business, which is Stratagem 36. The families waited more than a decade for money their own courts had awarded.",
+    "gapText": "Business Architecture. Importers carried no bond or insurance for a foreign supplier that American courts struggled to reach.",
+    "fix": "Require importers of building materials to carry insurance or a bond that answers for defects, whoever made them."
+  },
+  "status": "unsourced"
+}

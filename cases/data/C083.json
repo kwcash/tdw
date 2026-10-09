@@ -1,0 +1,37 @@
+{
+  "id": "C083",
+  "kind": "catalog",
+  "title": "The EP-3",
+  "tier": 5,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S5"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Data and Surveillance"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2001,
+      "month": null
+    },
+    "end": {
+      "year": 2001,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On April 1, 2001, Lieutenant Shane Osborn landed a damaged EP-3E on Hainan Island after a fighter of the People's Liberation Army Navy struck it over the South China Sea.",
+    "record": "The fighter's pilot, Wang Wei, died in the collision. The Party held the twenty-four crew members for eleven days and released them after Washington delivered a letter that said sorry twice, once for his death and once for the landing without clearance. The crew had destroyed part of the plane's classified equipment and data before landing, and a Navy review found the destruction incomplete. The Party returned the aircraft in pieces aboard a Russian cargo plane that July.",
+    "reading": "The Party turned an accident that followed its pilot's aggressive intercepts into a demand for an apology, and it presented Washington's wording at home as a confession. It also held the aircraft long enough to study what the crew could not destroy, which is Stratagem 5.",
+    "gapText": "Data Architecture. The aircraft carried more classified material than its crew could destroy in the minutes before landing.",
+    "fix": "Carry only the data a mission needs, and build destruction into the equipment rather than leaving it to a crew in an emergency."
+  },
+  "status": "unsourced"
+}

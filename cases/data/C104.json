@@ -1,0 +1,37 @@
+{
+  "id": "C104",
+  "kind": "catalog",
+  "title": "The Network Rolled Up",
+  "tier": 6,
+  "dimension": "Criticality",
+  "stage": "Consume",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Legal",
+    "Association",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2010,
+      "month": null
+    },
+    "end": {
+      "year": 2019,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In April 2010 two intelligence officers of the People's Republic approached the former CIA officer Jerry Chun Shing Lee and offered him $100,000 in cash.",
+    "record": "Lee had left the agency in 2007, and in August 2012 FBI agents found notebooks in his Honolulu hotel room with the true names of CIA assets and their meeting places. Between 2010 and 2012 the Party's security services killed or imprisoned as many as twenty CIA sources on the mainland, according to reporting in 2017. The FBI arrested Lee in January 2018. He pleaded guilty to conspiracy to deliver national defense information and received 19 years in November 2019.",
+    "reading": "The public record does not settle whether Lee, a compromised communications system or both gave the Party the names. A network that depends on one channel or one officer's memory fails all at once, which is Criticality at its most lethal. The Party shut the door and took everyone inside, which is Stratagem 22.",
+    "gapText": "Data Architecture. A departing officer carried source names in notebooks, and no control stopped the record from leaving with him.",
+    "fix": "Treat source identities as data that never leaves a controlled system, and compartment networks so one breach cannot expose them all."
+  },
+  "status": "unsourced"
+}

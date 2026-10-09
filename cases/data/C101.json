@@ -1,0 +1,37 @@
+{
+  "id": "C101",
+  "kind": "catalog",
+  "title": "Mo Hailong",
+  "tier": 6,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S12"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Economic",
+  "opponent": "A mainland seed company",
+  "when": {
+    "start": {
+      "year": 2016,
+      "month": null
+    },
+    "end": {
+      "year": 2016,
+      "month": null
+    }
+  },
+  "gap": "Technology",
+  "text": {
+    "brief": "In May 2011 a DuPont Pioneer field manager found Mo Hailong on his knees in a test field in Iowa.",
+    "record": "Mo directed international business for the Beijing Dabeinong Technology Group, whose subsidiary Kings Nower Seed sold corn seed on the mainland. He and others took inbred seed from fields that grew the parent lines of DuPont Pioneer and Monsanto hybrids and bought farms in Iowa and Illinois during the scheme. Investigators found seed hidden in microwave popcorn boxes. Mo pleaded guilty on January 27, 2016, and received 36 months in October.",
+    "reading": "Parent seed carries years of breeding in a pocketful of kernels, so a few trips along Iowa roads could shortcut a decade of research. The theft took what lay open in the fields, which is Stratagem 12.",
+    "gapText": "Technology Architecture. The companies guarded their laboratories and left their most valuable genetics in open fields along public roads.",
+    "fix": "Protect breeding lines where they grow, and give farmers and rural sheriffs a simple way to report strangers in test plots."
+  },
+  "status": "unsourced"
+}

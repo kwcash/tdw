@@ -1,0 +1,38 @@
+{
+  "id": "C050",
+  "kind": "catalog",
+  "title": "Lin Zhao",
+  "tier": 3,
+  "dimension": "Time",
+  "stage": "Consume",
+  "stratagems": [
+    "S22",
+    "S26"
+  ],
+  "theater": [
+    "Psychological",
+    "Legal",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1968,
+      "month": null
+    },
+    "end": {
+      "year": 1968,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "Party authorities in Shanghai executed Lin Zhao on April 29, 1968.",
+    "record": "The Party had labeled Lin a rightist at Peking University in 1957 and arrested her in 1960. In prison she wrote essays and letters, some in her own blood, rejecting the Party's claim on her conscience. Her family learned of her death when an official came to collect a fee for the bullet, according to accounts the filmmaker Hu Jie gathered.",
+    "reading": "The Party killed the writer and failed to kill the writing, which survived in archives and reached readers through Hu Jie's documentary of 2004. Memory is a domain the Party contests for decades, and it loses when records survive.",
+    "gapText": "Architecture Governance. No court, press or church could stand between a young woman and a state that punished belief.",
+    "fix": "Fund archives that hold victims' records outside the Party's reach, so memory has a home the Party cannot raid."
+  },
+  "status": "unsourced"
+}

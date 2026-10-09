@@ -1,0 +1,38 @@
+{
+  "id": "C012",
+  "kind": "catalog",
+  "title": "The Boycott of 1905",
+  "fullTitle": "The Boycott of 1905",
+  "tier": 1,
+  "dimension": "Resonance",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Association"
+  ],
+  "spine": "Economic",
+  "opponent": "The Qing court",
+  "when": {
+    "start": {
+      "year": 1905,
+      "month": null
+    },
+    "end": {
+      "year": 1905,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On July 16, 1905, a man named Feng Xiawei killed himself outside the American consulate in Shanghai to protest the treatment of Chinese in the United States.",
+    "record": "Shanghai merchants called a boycott of American goods in May 1905 unless Washington eased the exclusion laws, and the boycott began that July. Students, guilds and overseas Chinese communities spread it from Shanghai to Canton and beyond. The Qing court banned the boycott at the end of August under American pressure, and it faded in the south during 1906.",
+    "reading": "The boycott grew from the street, on a grievance the United States had written into its own statute book. The Party's boycotts of American firms start at the top and stop on command, which is the difference between Resonance and a switch.",
+    "gapText": "Architecture Principles. The defender's own exclusion law supplied the grievance the boycott used.",
+    "fix": "Close the self-inflicted grievance first, since no information operation needs a lie when the statute book supplies the truth."
+  },
+  "status": "unsourced"
+}

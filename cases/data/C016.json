@@ -1,0 +1,36 @@
+{
+  "id": "C016",
+  "kind": "catalog",
+  "title": "The Comintern's Section",
+  "tier": 1,
+  "dimension": "Agency",
+  "stage": "Control",
+  "stratagems": [
+    "S17"
+  ],
+  "theater": [
+    "Financial",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Comintern",
+  "when": {
+    "start": {
+      "year": 1921,
+      "month": null
+    },
+    "end": {
+      "year": 1921,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In late July 1921 thirteen delegates met in a house in the French Concession of Shanghai to found the Chinese Communist Party, with two Comintern agents in the room.",
+    "record": "Hendricus Sneevliet, known as Maring, represented the Communist International at the first congress. The Party joined the Comintern as its Chinese section in 1922 and took its directives. Chen Duxiu reported to Moscow in June 1922 that the Comintern had supplied almost all of the Party's spending since the previous October.",
+    "reading": "The Party began as a foreign-funded section of a foreign organization, a fact its own histories record. The Party now treats foreign funding of Chinese civil society as a security threat, as its 2017 law on foreign NGOs shows.",
+    "gapText": "Data Architecture. The Republic's government kept no registry of foreign money in its politics.",
+    "fix": "Register foreign funding of political organizations and enforce the registry, the job FARA and Section 117 exist to do."
+  },
+  "status": "unsourced"
+}

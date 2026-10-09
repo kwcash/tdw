@@ -1,0 +1,41 @@
+{
+  "id": "F059",
+  "kind": "futures",
+  "title": "The Gold Bid",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Doctrine",
+  "stratagems": [
+    "S21"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Financial Control",
+  "gap": "Data",
+  "text": {
+    "brief": "A trade analyst in Zurich notices in 2030 that Swiss gold exports to Hong Kong and Shanghai have tripled in a year. The People's Bank reports buying one-tenth of that amount.",
+    "record": "The allies froze about half of Russia's central bank reserves in 2022. The People's Bank has reported gold purchases in most months since late 2022, and its reported reserves stood near 2,300 tonnes in 2025. Analysts estimate that the Party's real holdings exceed the reported figure.",
+    "reading": "The Party learned from Russia's frozen reserves and began moving its savings where no sanction can reach. It reports small purchases and makes large ones through state banks. This is Stratagem 21, slough off the cicada's golden shell.",
+    "coreEvent": "The People's Bank reports gold reserves exceeding 3,000 tonnes before 2034.",
+    "gapText": "Data Architecture. The defenders count the reserves the Party reports.",
+    "fix": "Estimate the real holdings from trade data and design sanctions for a rival that holds gold and not dollars."
+  },
+  "status": "unsourced"
+}

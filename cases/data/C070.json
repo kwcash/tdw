@@ -1,0 +1,37 @@
+{
+  "id": "C070",
+  "kind": "catalog",
+  "title": "Harry Wu and the Laogai",
+  "tier": 4,
+  "dimension": "Asymmetry",
+  "stage": "Extract",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1995,
+      "month": null
+    },
+    "end": {
+      "year": 1995,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On June 19, 1995, border guards at Horgos detained Harry Wu as he entered from Kazakhstan on an American passport.",
+    "record": "Wu had spent nineteen years in the Party's labor camps before he left for the United States in 1985. He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991. A court convicted him of espionage in August 1995 and sentenced him to fifteen years, and the Party expelled him the same day. Hillary Clinton flew to the women's conference in Beijing two weeks later.",
+    "reading": "The camps ran a production line with a prison at one end and an export market at the other, and each camp carried a company name to cross the sea, which is Stratagem 1. Wu proved the link with a hidden camera, work the defender's own customs service had left undone.",
+    "gapText": "Data Architecture. Importers could not see a camp behind a company name, and customs kept no record that linked the two.",
+    "fix": "Require importers to trace goods to the factory floor, and publish the list of known camp enterprises."
+  },
+  "status": "unsourced"
+}

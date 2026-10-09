@@ -1,0 +1,37 @@
+{
+  "id": "C086",
+  "kind": "catalog",
+  "title": "Titan Rain and Shawn Carpenter",
+  "tier": 5,
+  "dimension": "Agency",
+  "stage": "Extract",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Legal",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Cyber",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2003,
+      "month": null
+    },
+    "end": {
+      "year": 2005,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In 2004 Shawn Carpenter, a network analyst at Sandia National Laboratories, followed an intruder's trail from American defense networks to computers in Guangdong.",
+    "record": "He passed what he found to Army counterintelligence and the FBI, and Sandia fired him in January 2005 for sharing it. Investigators called the campaign Titan Rain, and it had reached networks at defense contractors, Army commands and NASA. In 2007 a New Mexico jury awarded Carpenter $4.7 million against Sandia.",
+    "reading": "One analyst saw the pattern because he followed it past his employer's boundary, and his employer punished him for crossing it. The intruders hid inside ordinary traffic, which is Stratagem 1. Washington never attributed Titan Rain in public, so the record stops at Carpenter's trace.",
+    "gapText": "Architecture Governance. No owner joined a laboratory's network logs to the government's counterintelligence, so the one man who joined them lost his job.",
+    "fix": "Give every network defender a protected path to report foreign intrusions to the government, and bar retaliation against those who use it."
+  },
+  "status": "unsourced"
+}

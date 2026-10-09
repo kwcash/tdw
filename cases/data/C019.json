@@ -1,0 +1,38 @@
+{
+  "id": "C019",
+  "kind": "catalog",
+  "title": "Red Star Over China",
+  "tier": 1,
+  "dimension": "Resonance",
+  "stage": "Attract",
+  "stratagems": [
+    "S10",
+    "S29"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Information",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1936,
+      "month": null
+    },
+    "end": {
+      "year": 1936,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In July 1936 Edgar Snow sat with Mao Zedong in a cave at Bao'an and wrote down the life story that Mao chose to tell him.",
+    "record": "The Party arranged Snow's passage into its base in the summer of 1936, and he stayed about four months. Red Star Over China appeared in London in 1937 and in New York in January 1938, and a Chinese translation drew young volunteers to Yan'an. The book set the Western picture of the Party for a decade.",
+    "reading": "One curated visit wrote the adversary's first Western profile, and the host chose every interview. The Party still grants access to the visitors it expects to carry its picture home.",
+    "gapText": "Data Architecture. The defenders held one source on the Party's base and no means to test it.",
+    "fix": "Treat any access an adversary grants as a curated feed, and test it against sources the adversary does not control."
+  },
+  "status": "unsourced"
+}

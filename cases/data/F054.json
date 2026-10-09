@@ -1,0 +1,42 @@
+{
+  "id": "F054",
+  "kind": "futures",
+  "title": "The Next Outbreak",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "After COVID",
+  "gap": "Data",
+  "text": {
+    "brief": "A wastewater analyst in Seattle flags an unfamiliar respiratory virus in samples from an airport in February 2031. The mainland's health authority has reported nothing. A doctor in Chengdu deleted a post that morning.",
+    "record": "The United States left the World Health Organization on January 22, 2026. The Party delayed its reports on COVID-19 in December 2019 and January 2020, as the book's COVID chapter documents. The WHO declared eight public health emergencies of international concern from 2009 through 2024.",
+    "reading": "The Party buys time at the start of an outbreak. It denies human transmission, silences doctors and praises its own openness, then sells masks and vaccines to a world it left unwarned. This is Stratagem 1, deceive the heavens to cross the sea.",
+    "coreEvent": "The WHO declares a public health emergency for a novel respiratory pathogen first detected on the mainland before 2035.",
+    "gapText": "Data Architecture. Early warning depends on the honesty of the government where the outbreak starts.",
+    "fix": "Build warning that works without the Party's cooperation."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F088",
+  "kind": "futures",
+  "title": "The Digital Yuan Belt",
+  "tier": 4,
+  "dimension": "Topology",
+  "stage": "Attract",
+  "stratagems": [
+    "S28"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2049,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "Financial Control",
+  "gap": "Technology",
+  "text": {
+    "brief": "A treasury official in Jakarta moves the nation's nickel receipts onto a mainland payment rail in 2040 because the fees run lower and settlement takes seconds. The Party's central bank now sees every payment.",
+    "record": "The mainland's Cross-Border Interbank Payment System processed RMB 180.15 trillion in 2025, up about 3 percent from 2024. SWIFT's July 2026 tracker put the yuan at 3.10 percent of international payments outside the eurozone, fifth among currencies. The dollar held about 50 percent.",
+    "reading": "The Party lures trading partners onto rails that are cheap and fast, then holds the ladder. Once payments, identities and credit run on its network, leaving costs more than staying. This is Stratagem 28, lure the enemy onto the roof and remove the ladder.",
+    "coreEvent": "At least twenty Belt and Road countries settle most of their trade with the mainland in yuan through Party-run rails before 2045.",
+    "gapText": "Technology Architecture. Dollar payments still move through slow and costly correspondent chains, and the Party's rails settle in seconds.",
+    "fix": "Modernize the dollar's rails so the better network is also the free one."
+  },
+  "status": "unsourced"
+}

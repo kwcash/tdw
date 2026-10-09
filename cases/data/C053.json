@@ -1,0 +1,38 @@
+{
+  "id": "C053",
+  "kind": "catalog",
+  "title": "Resolution 2758",
+  "tier": 3,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S7",
+    "S14"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1971,
+      "month": null
+    },
+    "end": {
+      "year": 1971,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "On October 25, 1971, the Republic of China's delegation walked out of the General Assembly before the vote that expelled it.",
+    "record": "The Assembly adopted Resolution 2758 by 76 votes to 35 with 17 abstentions. The text seated the representatives of the People's Republic and expelled the representatives of Chiang Kai-shek. It never mentions Taiwan and decides nothing about the island's status. The Party now cites the resolution as proof of its claim to Taiwan and uses it to keep Taiwanese passport holders and journalists out of United Nations buildings and meetings. In 2024 the State Department and several legislatures rejected that reading.",
+    "reading": "The Party turned a decision on credentials into a claim of sovereignty by repeating the claim until agencies wrote it into their rules, which is Stratagem 14. Time did the work, because each year of silence let the reading harden into practice.",
+    "gapText": "Application Architecture. The text stayed fixed, while each agency's access rules carried the Party's reading into daily practice.",
+    "fix": "State the plain text of the resolution in every forum, and hold each agency to what the members voted."
+  },
+  "status": "unsourced"
+}

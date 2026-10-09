@@ -1,0 +1,42 @@
+{
+  "id": "F092",
+  "kind": "futures",
+  "title": "The Mirror State",
+  "tier": 5,
+  "dimension": "Coherence",
+  "stage": "Mirror",
+  "stratagems": [
+    "S30"
+  ],
+  "theater": [
+    "Legal",
+    "Association",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2038,
+      "month": null
+    },
+    "end": {
+      "year": 2050,
+      "month": null
+    }
+  },
+  "world": "Machine Mandate",
+  "horizon": 3,
+  "arc": "The Pen From the Inside",
+  "gap": "Principles",
+  "text": {
+    "brief": "A federal program officer in 2045 briefs a system that gives every American adult a risk score drawn from purchases, travel and speech. Its designers call it the answer to the Party's own system.",
+    "record": "Federal agencies reported more than 1,700 AI use cases in their 2024 inventories, about double the year before. Section 702 of the Foreign Intelligence Surveillance Act lapsed on June 12, 2026, after Congress failed to renew it. The Privacy and Civil Liberties Oversight Board has lacked a quorum since January 2025.",
+    "reading": "The Party wins when its rival copies it. Each American system built to answer the Party's surveillance makes America look more like the state it opposes, and the Party points to it as proof that every state does the same. This is Stratagem 30, make the host and the guest exchange places.",
+    "coreEvent": "A federal agency deploys an AI system that scores the risk of every American adult before 2048.",
+    "gapText": "Architecture Principles. The contest with the Party invites America to copy the system it opposes.",
+    "fix": "Write the difference into law. The symmetry is in the mechanism, and the difference is in the accountability."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "C006",
+  "kind": "catalog",
+  "title": "The Summit Strike",
+  "tier": 1,
+  "dimension": "Agency",
+  "stage": "Mirror",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Economic",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Economic",
+  "opponent": "The Central Pacific Railroad",
+  "when": {
+    "start": {
+      "year": 1867,
+      "month": null
+    },
+    "end": {
+      "year": 1867,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "In late June 1867 several thousand Chinese workers laid down their tools along the Sierra grade of the Central Pacific and asked for higher pay and shorter shifts in the tunnels.",
+    "record": "Chinese crews made up most of the Central Pacific's workforce on the Sierra grade and earned less than white crews for the same work. Charles Crocker cut off food and supplies to the camps, and the strike ended within about a week. The company's records of the week are thin, and the workers left no written account of their own.",
+    "reading": "The strike was an act of agency by people the record barely names. The railroad won by cutting supply rather than by argument, which is Stratagem 19 run by an American company against its own workforce.",
+    "gapText": "Architecture Principles. The host had no rule of equal pay, so the lowest bidder for danger became the default.",
+    "fix": "Write equal pay for equal work into the contract and enforce it, whatever the worker's origin."
+  },
+  "status": "unsourced"
+}

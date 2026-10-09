@@ -1,0 +1,36 @@
+{
+  "id": "C010",
+  "kind": "catalog",
+  "title": "Yick Wo v. Hopkins",
+  "tier": 1,
+  "dimension": "Asymmetry",
+  "stage": "Defense",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Economic",
+    "Legal"
+  ],
+  "spine": "Legal",
+  "opponent": "San Francisco's supervisors",
+  "when": {
+    "start": {
+      "year": 1886,
+      "month": null
+    },
+    "end": {
+      "year": 1886,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "In 1885 Lee Yick, who had run a laundry in San Francisco for twenty-two years, went to jail for washing clothes without a permit the city had refused him.",
+    "record": "San Francisco required a permit to run a laundry in a wooden building, and the supervisors refused all of some two hundred Chinese applicants. They granted all but one of about eighty applications from non-Chinese owners. The Supreme Court ruled on May 10, 1886, that the Fourteenth Amendment protects every person within the jurisdiction and that a law applied with an evil eye and an unequal hand violates it.",
+    "reading": "A neutral text can carry a targeted routine, and only the record of how the routine ran exposes it. The Court read the application layer rather than the statute, the audit the defenders still need against any rule written fair and run unfair.",
+    "gapText": "Application Architecture. The permit routine discriminated while the ordinance's text stayed neutral.",
+    "fix": "Audit outcomes by applicant class, not text alone, and publish the counts as the Yick Wo record did."
+  },
+  "status": "unsourced"
+}

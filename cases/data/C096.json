@@ -1,0 +1,37 @@
+{
+  "id": "C096",
+  "kind": "catalog",
+  "title": "Game of Pawns",
+  "tier": 5,
+  "dimension": "Gradient",
+  "stage": "Attract",
+  "stratagems": [
+    "S17"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2010,
+      "month": null
+    },
+    "end": {
+      "year": 2010,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "In 2004 Glenn Duffie Shriver, an American student in Shanghai, answered a newspaper ad that paid him $120 for an essay on relations between the United States and the People's Republic.",
+    "record": "The woman who placed the ad introduced him to intelligence officers of the People's Republic, who paid him more than $70,000 over several years. At their direction he applied to the State Department's Foreign Service and then to the CIA's clandestine service. He pleaded guilty in October 2010 and received a sentence of 48 months in January 2011. The FBI later made his case into a training film called Game of Pawns.",
+    "reading": "The officers started with a small payment for harmless work and raised the stakes by degrees, a gradient the recruit could justify one step at a time. The prize was the student's future access, which is Stratagem 17.",
+    "gapText": "Application Architecture. The clearance routine held, and investigators stopped Shriver before he joined.",
+    "fix": "Warn students before they go abroad about how approaches begin, and give them a safe path to report one without penalty."
+  },
+  "status": "unsourced"
+}

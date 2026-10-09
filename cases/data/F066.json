@@ -1,0 +1,42 @@
+{
+  "id": "F066",
+  "kind": "futures",
+  "title": "The Inspector Satellite",
+  "tier": 4,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S13"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The High Ground",
+  "gap": "Technology",
+  "text": {
+    "brief": "An orbital analyst at Vandenberg watches a mainland satellite drift to within 20 kilometers of an American missile-warning satellite in 2031. The same satellite has parked beside three others that year and left each time before anyone said a word.",
+    "record": "Shijian-21 towed a dead Beidou satellite to a graveyard orbit in January 2022. Shijian-25 docked with Shijian-21 in geostationary orbit in July 2025 for the first apparent refueling there. The two separated on November 25, 2025. The Space Force's vice chief said in March 2025 that five mainland satellites had practiced dogfighting in low orbit.",
+    "reading": "The Party parks its inspectors next to America's most valuable satellites and watches the response. Silence teaches it that close approach is normal, and a crisis later finds its servicers already in place with arms that can grab or blind. This is Stratagem 13, stomp the grass to scare the snake.",
+    "coreEvent": "American officials report in public that a mainland satellite closed within 10 kilometers of an American national security satellite in geostationary orbit before 2034.",
+    "gapText": "Technology Architecture. America's key satellites are few, large and unable to move out of the way.",
+    "fix": "Publish every close approach and field satellites that can move."
+  },
+  "status": "unsourced"
+}

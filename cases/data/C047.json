@@ -1,0 +1,37 @@
+{
+  "id": "C047",
+  "kind": "catalog",
+  "title": "Lop Nur and the Pre-Announcement",
+  "tier": 3,
+  "dimension": "Phase",
+  "stage": "Defense",
+  "stratagems": [
+    "S29"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1964,
+      "month": null
+    },
+    "end": {
+      "year": 1964,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On September 29, 1964, Secretary of State Dean Rusk told the press that the People's Republic might explode its first nuclear device in the near future.",
+    "record": "American intelligence had tracked the test site at Lop Nur and judged a test likely within months. The Party detonated its first device on October 16, 1964, two days after Nikita Khrushchev lost power in Moscow. Lyndon Johnson's statement that day said the test came as no surprise to the government.",
+    "reading": "The defender decided before the event and spent the surprise in advance, so the test landed as a confirmed forecast rather than a shock. Pre-announcement is the Phase principle run against a psychological effect.",
+    "gapText": "Data Architecture. The warning held because an owner mapped it to a public statement before the event.",
+    "fix": "Pre-announce what intelligence judges likely when surprise is the adversary's aim, as the United States did again before Russia's invasion of Ukraine in 2022."
+  },
+  "status": "unsourced"
+}

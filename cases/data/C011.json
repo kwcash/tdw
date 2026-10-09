@@ -1,0 +1,36 @@
+{
+  "id": "C011",
+  "kind": "catalog",
+  "title": "Wong Kim Ark",
+  "tier": 1,
+  "dimension": "Time",
+  "stage": "Defense",
+  "stratagems": [
+    "S7"
+  ],
+  "theater": [
+    "Legal",
+    "Cultural"
+  ],
+  "spine": "Legal",
+  "opponent": "The exclusion bureaucracy",
+  "when": {
+    "start": {
+      "year": 1898,
+      "month": null
+    },
+    "end": {
+      "year": 1898,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "In August 1895 customs officers at San Francisco stopped Wong Kim Ark, a cook born in the city in 1873, on his return from a visit to China and refused to let him land.",
+    "record": "The government argued that a child of Chinese subjects born on American soil was not a citizen. The Supreme Court held by six votes to two that the Fourteenth Amendment made Wong a citizen by birth. The Court ruled on March 28, 1898.",
+    "reading": "The republic's own court refused to make ancestry a legal category, and the refusal protected every later child of immigrants. The Party claims the loyalty of overseas Chinese by descent, and the Wong holding is the American answer in law.",
+    "gapText": "Architecture Principles. The executive tried to write descent into citizenship, and the Court held the line.",
+    "fix": "Keep citizenship a matter of law and conduct, never descent, the principle the Long Arm chapter depends on."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TDW arcs",
+  "type": "array",
+  "items": {
+    "type": "object", "additionalProperties": false,
+    "required": ["id", "name", "blurb", "span", "nodes"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+      "name": {"type": "string", "minLength": 3},
+      "blurb": {"type": "string", "minLength": 10},
+      "span": {"type": "string"},
+      "nodes": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[CF][0-9]{3}$"}}
+    }
+  }
+}

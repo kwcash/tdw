@@ -1,0 +1,37 @@
+{
+  "id": "C079",
+  "kind": "catalog",
+  "title": "Belgrade",
+  "tier": 4,
+  "dimension": "Resonance",
+  "stage": "Control",
+  "stratagems": [
+    "S14"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological"
+  ],
+  "spine": "Information",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1999,
+      "month": null
+    },
+    "end": {
+      "year": 1999,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On May 8, 1999, Ambassador James Sasser sat inside the American embassy in Beijing while protesters threw stones and firebombs at its walls.",
+    "record": "A B-2 bomber had struck the People's Republic's embassy in Belgrade with guided bombs during NATO's war over Kosovo, and the strike killed three Chinese journalists. The CIA had marked the building from outdated maps as a Yugoslav military supply office. The Party bused students to the American embassy and consulates, and protesters burned the consul general's residence in Chengdu. Washington apologized and paid $4.5 million to the victims' families and $28 million for the damage to the embassy.",
+    "reading": "The Party set a real American error inside its story of national humiliation and staged the anger it wanted, which is Stratagem 14. It opened the protests and closed them on its own schedule.",
+    "gapText": "Data Architecture. The targeting database carried an outdated address, and no check caught it before the strike.",
+    "fix": "Verify every fixed target against current sources and a no-strike list, and publish the investigation when a strike goes wrong."
+  },
+  "status": "unsourced"
+}

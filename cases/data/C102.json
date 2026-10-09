@@ -1,0 +1,37 @@
+{
+  "id": "C102",
+  "kind": "catalog",
+  "title": "The FARA Gap",
+  "tier": 6,
+  "dimension": "Topology",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2017,
+      "month": null
+    },
+    "end": {
+      "year": 2024,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "In May 2017 a request from Vice Minister of Public Security Sun Lijun reached the casino executive Steve Wynn.",
+    "record": "Sun wanted the exiled businessman Guo Wengui removed from the United States, and the fundraiser Elliott Broidy brokered the approach. Wynn pressed the request with the President and other officials until October 2017. Broidy pleaded guilty in 2020 to a related charge and received a pardon in January 2021. The Justice Department sued in 2022 to force Wynn to register as a foreign agent, and the courts dismissed the suit. The appeals court held on June 14, 2024 that the duty to register ended when the representation ended.",
+    "reading": "The Party reached the Oval Office through Americans with access, which is Stratagem 3. The courts read the registration law to expire with the relationship, so a finished influence campaign owes the public no record.",
+    "gapText": "Application Architecture. The registration routine tracked agents while they worked and lost them once the work ended.",
+    "fix": "Require disclosure of past foreign agency within a set period, whether or not the relationship continues."
+  },
+  "status": "unsourced"
+}

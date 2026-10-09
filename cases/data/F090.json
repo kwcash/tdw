@@ -1,0 +1,42 @@
+{
+  "id": "F090",
+  "kind": "futures",
+  "title": "The Year 2047",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Consume",
+  "stratagems": [
+    "S25"
+  ],
+  "theater": [
+    "Financial",
+    "Legal",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2044,
+      "month": null
+    },
+    "end": {
+      "year": 2049,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "Hong Kong",
+  "gap": "Principles",
+  "text": {
+    "brief": "A barrister in Hong Kong reads the Standing Committee's decision on the Basic Law's future in 2046. The words \"one country, two systems\" survive in every clause, and the final say over her cases now sits in Beijing.",
+    "record": "The Basic Law promises that Hong Kong's system stays unchanged for fifty years, through June 30, 2047. The Party imposed a national security law on the city on June 30, 2020, and Hong Kong passed its own security law in March 2024. A Hong Kong court sentenced the publisher Jimmy Lai to 20 years in prison on February 9, 2026.",
+    "reading": "The Party keeps the name of Hong Kong's system and replaces its beams one by one. The courts, the press and the legislature still stand, and each now carries weight for the Party. This is Stratagem 25, replace the beams with rotten timbers.",
+    "coreEvent": "The National People's Congress extends \"one country, two systems\" past 2047 in name while mainland bodies take the final say over Hong Kong's courts.",
+    "gapText": "Architecture Principles. Outsiders judged Hong Kong's system by its name, and the Party changed its substance.",
+    "fix": "Judge Hong Kong by practice rather than by label, and keep the door open for its people."
+  },
+  "status": "unsourced"
+}

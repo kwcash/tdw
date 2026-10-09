@@ -1,0 +1,37 @@
+{
+  "id": "C037",
+  "kind": "catalog",
+  "title": "The 14,000",
+  "tier": 2,
+  "dimension": "Agency",
+  "stage": "Defense",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Kinetic",
+    "Psychological",
+    "Legal"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1953,
+      "month": null
+    },
+    "end": {
+      "year": 1954,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On May 7, 1952, Harry Truman said the United States would not buy an armistice by turning over human beings for slaughter or slavery.",
+    "record": "About two thirds of the roughly 21,000 Chinese prisoners in United Nations Command camps refused repatriation. Many were former Nationalist soldiers the Party had absorbed. The dispute over voluntary repatriation kept the war going for more than a year, and about 14,000 of the prisoners reached Taiwan in January 1954.",
+    "reading": "The Party's own soldiers voted with their feet, and the United States paid in months of war to honor the vote. Shield the people was policy before it was a guardrail.",
+    "gapText": "Architecture Principles. The principle held, and soldiers who fought on during the deadlock paid for it.",
+    "fix": "Decide the rule on repatriation before the war ends, so negotiators defend it rather than invent it."
+  },
+  "status": "unsourced"
+}

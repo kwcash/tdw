@@ -1,0 +1,36 @@
+{
+  "id": "C065",
+  "kind": "catalog",
+  "title": "The Scowcroft Mission",
+  "tier": 4,
+  "dimension": "Resonance",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1989,
+      "month": null
+    },
+    "end": {
+      "year": 1989,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "Brent Scowcroft and Lawrence Eagleburger flew in secret to Beijing at the start of July 1989.",
+    "record": "George H. W. Bush had suspended military sales on June 5 and high-level exchanges on June 20. The trip broke his own suspension. Deng Xiaoping met the envoys and blamed the United States for the damage to relations. The White House kept the trip hidden until December, when the same two men made a second and public visit and reporters traced the first.",
+    "reading": "The mission accepted the Party's frame that the massacre was an internal affair and worked to keep the relationship whole. Bush trusted a personal channel to Deng that dated from his years in Beijing, and the Party learned that a massacre would cost it months of American coldness rather than years.",
+    "gapText": "Architecture Principles. The sanctions stated a principle in public while the envoys set it aside in private.",
+    "fix": "Keep private channels open, and hold them to the terms the public sanctions state."
+  },
+  "status": "unsourced"
+}

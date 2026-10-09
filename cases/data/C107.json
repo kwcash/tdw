@@ -1,0 +1,36 @@
+{
+  "id": "C107",
+  "kind": "catalog",
+  "title": "Meng Wanzhou and the Two Michaels",
+  "tier": 6,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2018,
+      "month": null
+    },
+    "end": {
+      "year": 2021,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "State security officers detained Michael Kovrig in Beijing on December 10, 2018, nine days after Canada arrested Meng Wanzhou at American request.",
+    "record": "Meng, Huawei's chief financial officer, faced American charges of bank fraud tied to sanctions on Iran. The Party detained Michael Spavor the same week and held both men for 1,019 days. A court sentenced Spavor to eleven years for espionage in August 2021. Meng reached a deferred prosecution agreement with the Justice Department on September 24, 2021. She flew home, and the two Michaels flew to Canada within hours.",
+    "reading": "The Party could not seize the prosecutor, so it seized two citizens of the ally that made the arrest, which is Stratagem 26. The exchange set a price on every allied citizen on the mainland, and the clock ran on the hostages rather than on the defendant.",
+    "gapText": "Architecture Governance. The United States asked an ally to make an arrest and had no plan to protect the ally's citizens from reprisal.",
+    "fix": "Agree with allies in advance on how to answer hostage-taking, and treat a seized allied citizen as a charge on the whole alliance."
+  },
+  "status": "unsourced"
+}

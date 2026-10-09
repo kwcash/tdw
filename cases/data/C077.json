@@ -1,0 +1,37 @@
+{
+  "id": "C077",
+  "kind": "catalog",
+  "title": "Kundun",
+  "tier": 4,
+  "dimension": "Gradient",
+  "stage": "Control",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1997,
+      "month": null
+    },
+    "end": {
+      "year": 1997,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "In October 1998 Michael Eisner apologized to Premier Zhu Rongji for Disney's release of Kundun.",
+    "record": "Martin Scorsese's film about the Dalai Lama's youth had drawn warnings from Party officials before its release in December 1997. Disney released it in a small number of theaters, and the Party froze Disney's business on the mainland. Disney hired Henry Kissinger's consulting firm to repair the relationship, and Eisner's apology followed.",
+    "reading": "The Party punished one film to warn a whole industry, which is Stratagem 26. The studios learned the lesson and began to cut scripts before the Party needed to ask, as PEN America documented in 2020.",
+    "gapText": "Business Architecture. Each studio weighed its own market access alone, so no film carried the industry's collective interest.",
+    "fix": "Disclose every change made to a film for a foreign censor, so audiences and regulators can see the price of access."
+  },
+  "status": "unsourced"
+}

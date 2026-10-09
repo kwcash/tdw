@@ -1,0 +1,37 @@
+{
+  "id": "C115",
+  "kind": "catalog",
+  "title": "Evergrande",
+  "tier": 6,
+  "dimension": "Criticality",
+  "stage": "Consume",
+  "stratagems": [
+    "S11"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2021,
+      "month": null
+    },
+    "end": {
+      "year": 2024,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "On January 29, 2024, Judge Linda Chan of the Hong Kong High Court ordered Evergrande into liquidation.",
+    "record": "Evergrande had defaulted on its dollar bonds in December 2021 with liabilities of more than $300 billion. It had sold about a million and a half homes before building them. In 2022 buyers in scores of cities stopped paying mortgages on unfinished apartments. The company sought protection in a New York bankruptcy court in August 2023, and police detained its founder the next month. American fund managers held some of its dollar bonds.",
+    "reading": "The Party's growth model ran on land sales and presales, which borrowed time from buyers who paid for homes years in advance. The Party let one developer fail to protect the banks and local governments behind it, which is Stratagem 11, and offshore creditors stood last in line.",
+    "gapText": "Business Architecture. Foreign creditors lent to an offshore holding company whose real assets sat on the mainland under courts that answer to the Party.",
+    "fix": "Price every claim on a mainland asset according to the court that would enforce it, and disclose that court to every retail investor."
+  },
+  "status": "unsourced"
+}

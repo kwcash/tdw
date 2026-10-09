@@ -1,0 +1,41 @@
+{
+  "id": "F096",
+  "kind": "futures",
+  "title": "The Loose Arsenal",
+  "tier": 6,
+  "dimension": "Criticality",
+  "stage": "Defense",
+  "stratagems": [
+    "S32"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2037,
+      "month": null
+    },
+    "end": {
+      "year": 2046,
+      "month": null
+    }
+  },
+  "world": "Unwinding",
+  "horizon": 3,
+  "arc": "The High Ground",
+  "gap": "Governance",
+  "text": {
+    "brief": "A duty officer at Strategic Command reads two orders in 2039, each issued in the name of the Central Military Commission by a different faction. Both claim command of the Rocket Force.",
+    "record": "The Party expelled Zhang Youxia and Liu Zhenli on September 21, 2026, leaving Xi Jinping and Zhang Shengmin as the only members of the Central Military Commission. The Pentagon reported in December 2025 that the mainland's arsenal would exceed 1,000 warheads by 2030. New START expired on February 5, 2026, and the Party rejected American calls for trilateral nuclear talks.",
+    "reading": "A split Party opens the gates of its fortress and dares the world to test who commands the missiles. The bluff works because no outsider knows whether the silos answer to anyone. This is Stratagem 32, the empty fortress.",
+    "coreEvent": "Two Party factions each claim command of nuclear forces during a succession crisis before 2046.",
+    "gapText": "Architecture Governance. No agreement, hotline or protocol covers a split in the Party's command of nuclear weapons.",
+    "fix": "Plan now with allies for a nuclear power's command split, and open channels to anyone who might hold a key."
+  },
+  "status": "unsourced"
+}

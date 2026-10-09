@@ -1,0 +1,36 @@
+{
+  "id": "C040",
+  "kind": "catalog",
+  "title": "Qian Xuesen",
+  "tier": 2,
+  "dimension": "Criticality",
+  "stage": "Mirror",
+  "stratagems": [
+    "S12"
+  ],
+  "theater": [
+    "Kinetic",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The federal government",
+  "when": {
+    "start": {
+      "year": 1950,
+      "month": null
+    },
+    "end": {
+      "year": 1955,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "In August 1950 federal agents in Los Angeles seized the crates of notes that Qian Xuesen, a founder of the Jet Propulsion Laboratory, had packed for a trip home.",
+    "record": "The government had revoked Qian's clearance that June on suspicion of Communist Party ties, a charge he denied. Officials held him under restrictions close to house arrest for five years and let him sail for the mainland in September 1955, in a trade tied to the release of American prisoners. Qian went on to lead the People's Republic's missile program.",
+    "reading": "The United States deported the scientist it had trained on a charge it never proved, and it handed the Party a founder of its missile program. Suspicion by association rather than conduct cost more than any theft.",
+    "gapText": "Architecture Principles. The defender judged a scientist by association and gave the adversary the talent it feared losing.",
+    "fix": "Judge researchers on documented conduct and keep them, because a talent expelled on suspicion becomes the adversary's gain."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "C062",
+  "kind": "catalog",
+  "title": "Peace Pearl",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S12",
+    "S17"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1986,
+      "month": null
+    },
+    "end": {
+      "year": 1986,
+      "month": null
+    }
+  },
+  "gap": "Technology",
+  "text": {
+    "brief": "In June 1984 Zhang Aiping became the first defense minister of the People's Republic to visit the United States.",
+    "record": "Washington had already approved the sale of 24 Sikorsky Black Hawk helicopters, and artillery radars and torpedoes followed. In 1986 the two governments agreed on Peace Pearl, a program worth about $550 million to fit American radar and fire-control systems to 55 J-8II interceptors. George H. W. Bush suspended military sales on June 5, 1989. The Party withdrew from Peace Pearl in 1990 and bought Soviet Su-27 fighters instead.",
+    "reading": "Each sale assumed a partnership that would outlast the program, and the army absorbed what it could before the partnership broke, which is Stratagem 12. The helicopters kept flying for the People's Liberation Army long after the American spare parts stopped.",
+    "gapText": "Technology Architecture. The program put American fire control on a platform the defender would never control, with no plan for the day the partnership ended.",
+    "fix": "Price every transfer of military technology on the assumption that the partnership ends, and keep the parts and the software on the American side."
+  },
+  "status": "unsourced"
+}

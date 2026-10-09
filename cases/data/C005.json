@@ -1,0 +1,38 @@
+{
+  "id": "C005",
+  "kind": "catalog",
+  "title": "The Coolie Trade Act",
+  "tier": 1,
+  "dimension": "Agency",
+  "stage": "Defense",
+  "stratagems": [
+    "S17",
+    "S28"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Legal",
+  "opponent": "The coolie traffic",
+  "when": {
+    "start": {
+      "year": 1862,
+      "month": null
+    },
+    "end": {
+      "year": 1862,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "On February 19, 1862, Abraham Lincoln signed a law that barred American ships from carrying Chinese contract laborers to foreign ports.",
+    "record": "American shipowners had carried Chinese laborers under contract to Cuba and Peru, where many worked off debts on plantations and in guano pits. American diplomats in China reported kidnapping, deaths and mutinies in the traffic. The act made carrying such laborers in American vessels a crime, and it required a consul to certify that each emigrant left freely.",
+    "reading": "Congress cut the lever at the carrier, the one node American law reached, and left the plantations it could not reach alone. The same design works today when a customs rule stops goods made by coerced hands at the border.",
+    "gapText": "Business Architecture. American shipowners earned freight from a traffic that American law had not yet named.",
+    "fix": "Name the trafficking channel in statute and bind the carrier, the model the Uyghur Forced Labor Prevention Act follows with its import presumption."
+  },
+  "status": "unsourced"
+}

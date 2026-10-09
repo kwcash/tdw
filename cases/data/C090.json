@@ -1,0 +1,37 @@
+{
+  "id": "C090",
+  "kind": "catalog",
+  "title": "Melamine",
+  "tier": 5,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S21"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2007,
+      "month": null
+    },
+    "end": {
+      "year": 2008,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On September 8, 2008, Prime Minister Helen Clark of New Zealand told her diplomats to go around provincial officials and warn the central government about poisoned infant formula.",
+    "record": "Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling. Local officials held the news through the Beijing Olympics. The formula sickened about 300,000 infants and killed six. A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 million packages of pet food.",
+    "reading": "Suppliers added melamine to fake protein readings, and the Olympic calendar kept the poison on shelves. The Party executed two men and jailed Sanlu's chairwoman for life in 2009, which is Stratagem 21, and left intact the system that had held the news.",
+    "gapText": "Data Architecture. Protein tests measured nitrogen, so a cheap chemical rich in nitrogen passed as food.",
+    "fix": "Test imported food and feed for what they contain rather than for a proxy, and share contamination findings across borders within days."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "F028",
+  "kind": "futures",
+  "title": "The Uncapped Count",
+  "tier": 3,
+  "dimension": "Criticality",
+  "stage": "Doctrine",
+  "stratagems": [
+    "S27"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The High Ground",
+  "gap": "Data",
+  "text": {
+    "brief": "An imagery analyst at a Washington research institute counts fresh spoil around three more silo doors near Hami in April 2027. Her report goes online that afternoon, and the Foreign Ministry calls it hype by evening.",
+    "record": "The Defense Department reported on December 23, 2025 that the Party's stockpile stood in the low 600s through 2024 and would pass 1,000 warheads by 2030 ([FAS](https://fas.org/publication/the-pentagons-slimmed-down-2025-china-military-power-report/)). New START expired on February 5, 2026, and the Party refused to join talks on a successor ([Arms Control Association](https://www.armscontrol.org/act/2026-03/news/new-start-expires-us-urges-modernized-treaty)). In November 2024 the two presidents affirmed that humans must control decisions to use nuclear weapons.",
+    "reading": "The Party builds the arsenal of a peer while it describes its posture as minimal. The gap between words and silos lets it avoid arms control and keeps rivals guessing whether the buildup has a ceiling. This is Stratagem 27, feign madness without losing balance.",
+    "coreEvent": "The United States and the People's Republic hold formal bilateral talks on nuclear arms before 2029.",
+    "gapText": "Data Architecture. Official counts arrive once a year, while new silos appear every month.",
+    "fix": "Publish declassified counts often and tie each to a standing offer of risk-reduction talks."
+  },
+  "status": "sourced"
+}

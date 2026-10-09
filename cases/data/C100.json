@@ -1,0 +1,37 @@
+{
+  "id": "C100",
+  "kind": "catalog",
+  "title": "The Rose Garden Pledges",
+  "tier": 5,
+  "dimension": "Time",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Kinetic",
+    "Legal",
+    "Cyber"
+  ],
+  "spine": "Cyber",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2015,
+      "month": null
+    },
+    "end": {
+      "year": 2015,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "On September 25, 2015, Xi Jinping told reporters in the Rose Garden that the People's Republic did not intend to militarize the islands it was building in the Spratlys.",
+    "record": "The same day he and Barack Obama agreed that neither government would conduct or knowingly support cyber theft of intellectual property for commercial advantage. Security firms reported fewer commercial intrusions from mainland groups in the months after. By 2018 the Party had placed antiship and antiaircraft missiles on Fiery Cross, Subi and Mischief reefs. In December 2018 the Justice Department charged two hackers who worked with the Ministry of State Security in the APT10 campaign against American companies.",
+    "reading": "Neither pledge carried a trigger, so time turned each into a record of broken words rather than a constraint. The pledges bought a quiet interval while the reefs hardened, which is Stratagem 1.",
+    "gapText": "Architecture Governance. Neither pledge carried verification or a named response, so breaking them cost the Party nothing.",
+    "fix": "Accept no security pledge without a verification method and a response agreed in advance."
+  },
+  "status": "unsourced"
+}

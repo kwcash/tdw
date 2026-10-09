@@ -1,0 +1,37 @@
+{
+  "id": "C119",
+  "kind": "catalog",
+  "title": "DeepSeek",
+  "tier": 6,
+  "dimension": "Phase",
+  "stage": "Attract",
+  "stratagems": [
+    "S10"
+  ],
+  "theater": [
+    "Economic",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2025,
+      "month": null
+    },
+    "end": {
+      "year": 2025,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On April 16, 2025, Representative John Moolenaar released a House select committee report that called DeepSeek a threat to American security.",
+    "record": "DeepSeek had released its R1 reasoning model on January 20, 2025, and its app soon topped the American download charts. On January 27 Nvidia lost about $589 billion in market value, the largest one-day loss for any company in American market history. DeepSeek's privacy policy stores user data on servers in the People's Republic, where the 2017 National Intelligence Law requires organizations to assist state intelligence work. The committee found that the model steered most answers on democracy, Taiwan and human rights toward the Party's line, and federal agencies and several states barred it from government devices.",
+    "reading": "A cheap and capable model drew Americans into a data pipeline that ends under the Party's intelligence law, which is Stratagem 10. The market shock marked a change of phase, the moment Americans learned that export controls had slowed the Party's AI programs less than their authors hoped.",
+    "gapText": "Data Architecture. Americans could send their data to a service under the Party's intelligence law with no warning at the point of download.",
+    "fix": "Label apps that store data under the jurisdiction of a foreign adversary at the point of download, and bar them from government devices by rule."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F053",
+  "kind": "futures",
+  "title": "The Private Equity Wrapper",
+  "tier": 4,
+  "dimension": "Topology",
+  "stage": "Extract",
+  "stratagems": [
+    "S21"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Financial",
+    "Data and Surveillance"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Borrowed Knife",
+  "gap": "Data",
+  "text": {
+    "brief": "A CFIUS analyst traces the new owner of a Wisconsin maker of night-vision optics in 2031. The buyer is a Luxembourg fund, its largest partner is a Singapore vehicle, and the vehicle's money came from a Shanghai state fund.",
+    "record": "Treasury exempted domestic companies from beneficial-ownership reporting under the Corporate Transparency Act in March 2025. CFIUS reviews foreign investment but depends on filings and on its own search for deals no one filed. In the Grand Forks case of 2022 and 2023, federal reviewers found they lacked jurisdiction over a land purchase near an Air Force base.",
+    "reading": "The Party's capital arrives dressed as a European or Asian fund. Each layer resets the regulator's view, and the small supplier with a defense contract changes hands without a filing. This is Stratagem 21, slough off the cicada's golden shell.",
+    "coreEvent": "CFIUS forces divestment of a Party-linked investment made through a third-country fund before 2034.",
+    "gapText": "Data Architecture. Regulators cannot see who owns the owner.",
+    "fix": "Collect beneficial ownership again and search for unfiled deals as a standing duty."
+  },
+  "status": "unsourced"
+}

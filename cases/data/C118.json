@@ -1,0 +1,37 @@
+{
+  "id": "C118",
+  "kind": "catalog",
+  "title": "The Mintz Raid",
+  "tier": 6,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2023,
+      "month": null
+    },
+    "end": {
+      "year": 2023,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On March 24, 2023, the foreign ministry spokeswoman Mao Ning said that authorities suspected the Mintz Group of illegal business operations.",
+    "record": "Police had raided the American due diligence firm's Beijing office days earlier and detained its five local employees. In April security officers questioned staff at Bain's Shanghai office. In May state television accused the expert network Capvision of helping foreign spies. The revised Counter-Espionage Law took effect on July 1, 2023, and widened espionage to cover documents and data related to national security. The city's statistics bureau fined Mintz about $1.5 million in August.",
+    "reading": "The Party closed the firms that verify supply chains and counterparties at the moment American law began to require that verification, so due diligence itself became a risk of espionage. The mainland employees who served as the investors' eyes bore the arrests, which is Stratagem 22.",
+    "gapText": "Data Architecture. American compliance rules assumed investors could verify facts on the ground, and the Party made verification a crime.",
+    "fix": "Treat an inability to verify as a finding in its own right, and require disclosure when due diligence becomes impossible."
+  },
+  "status": "unsourced"
+}

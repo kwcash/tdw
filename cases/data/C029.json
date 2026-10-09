@@ -1,0 +1,38 @@
+{
+  "id": "C029",
+  "kind": "catalog",
+  "title": "The Gold Yuan",
+  "tier": 2,
+  "dimension": "Entropy",
+  "stage": "Consume",
+  "stratagems": [
+    "S5",
+    "S9"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Psychological"
+  ],
+  "spine": "Financial",
+  "opponent": "The Nationalist government",
+  "when": {
+    "start": {
+      "year": 1948,
+      "month": null
+    },
+    "end": {
+      "year": 1948,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "In August 1948 Chiang Ching-kuo arrived in Shanghai to enforce the gold yuan, a new currency that citizens had to buy with their gold and foreign cash.",
+    "record": "The Nationalist government issued the gold yuan on August 19, 1948. It froze prices and ordered citizens to exchange their gold, silver and foreign currency. Chiang Ching-kuo arrested speculators, the price freeze broke within weeks, and the currency collapsed before the year was out.",
+    "reading": "The regime spent its middle class to buy three months of stable prices, and the Party took the cities that followed partly on the regime's own collapse. A government that confiscates its citizens' savings in a crisis teaches them to wait for the other side.",
+    "gapText": "Business Architecture. The Financial capability had no discipline the government could not override.",
+    "fix": "Keep money under rules a crisis government cannot suspend, because savers who lose everything stop defending the system."
+  },
+  "status": "unsourced"
+}

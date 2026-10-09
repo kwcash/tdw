@@ -1,0 +1,38 @@
+{
+  "id": "C036",
+  "kind": "catalog",
+  "title": "Downey and Fecteau",
+  "tier": 2,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S4",
+    "S26"
+  ],
+  "theater": [
+    "Psychological",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1952,
+      "month": null
+    },
+    "end": {
+      "year": 1973,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On the night of November 29, 1952, John Downey and Richard Fecteau were aboard a CIA plane that Party forces shot down over Manchuria.",
+    "record": "The Party announced their sentences in November 1954, life for Downey and twenty years for Fecteau. Washington insisted they were Army civilians and denied the CIA link for two decades. Fecteau walked out in December 1971, and Downey went free in March 1973 after Richard Nixon publicly acknowledged his CIA employment.",
+    "reading": "The Party held two men for leverage and waited out five American presidents. The American denial protected a secret the Party already knew and cost the prisoners years.",
+    "gapText": "Architecture Principles. The defender's cover story outlived its purpose and became part of the prisoners' sentence.",
+    "fix": "Review cover and denial policy on a clock once an adversary holds the person, because a secret the captor knows protects no one."
+  },
+  "status": "unsourced"
+}

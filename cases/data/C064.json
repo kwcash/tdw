@@ -1,0 +1,38 @@
+{
+  "id": "C064",
+  "kind": "catalog",
+  "title": "The Footage",
+  "tier": 4,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S13",
+    "S18"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1989,
+      "month": null
+    },
+    "end": {
+      "year": 1989,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In the days after June 4, 1989, a worker named Xiao Bin described the killings to an ABC News crew in Beijing.",
+    "record": "State television rebroadcast his interview with a number for citizens to call, and two women reported him within hours. He appeared on television under arrest and recanted. A court sentenced him to ten years. On June 13 the Ministry of Public Security issued a wanted list of 21 student leaders, and state television showed their photographs for days.",
+    "reading": "Foreign cameras gave the world its record of the massacre and gave the police their identifications. The asymmetry ran one way, because the network that aired a witness could not protect him once the Party turned his face into evidence.",
+    "gapText": "Data Architecture. Newsrooms treated a witness's face as content and had no rule for what a hostile state could do with it.",
+    "fix": "Protect sources in the edit as well as in the notebook, and obscure the faces of witnesses who remain within the state's reach."
+  },
+  "status": "unsourced"
+}

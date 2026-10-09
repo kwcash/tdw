@@ -1,0 +1,42 @@
+{
+  "id": "F013",
+  "kind": "futures",
+  "title": "The Exit Ban",
+  "tier": 2,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Psychological",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The Long Arm",
+  "gap": "Governance",
+  "text": {
+    "brief": "A regional sales director for an Ohio machine-tool maker reaches the passport desk at Shanghai Pudong in April 2027. The officer hands back her passport with a notice that she may not leave while a court reviews a contract dispute.",
+    "record": "Authorities on the mainland barred a Wells Fargo executive who holds American citizenship from leaving the country in July 2025, and the bank suspended staff travel there. The State Department warns that the People's Republic uses exit bans against Americans. American firms still send staff to the mainland without a shared warning system.",
+    "reading": "Exit bans turn visiting employees into collateral. Timed to trade disputes, a single ban tells every firm that its people sit inside the Party's reach. The firm settles, the government stays quiet, and the next ban costs less. This is Stratagem 26 again, aimed past the detainee at the boardroom.",
+    "coreEvent": "At least one new exit ban on an American citizen becomes public before 2028.",
+    "gapText": "Architecture Governance. No response to an exit ban exists until one happens, so each case starts from zero.",
+    "fix": "Pre-agree the response package of naming, visa restrictions and travel warnings, and apply it the day a ban becomes known."
+  },
+  "status": "unsourced"
+}

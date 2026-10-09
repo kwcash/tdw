@@ -1,0 +1,41 @@
+{
+  "id": "F069",
+  "kind": "futures",
+  "title": "The Compute Hinge",
+  "tier": 5,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S4"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "AI and Cognitive"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2033,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Machine Minds",
+  "gap": "Technology",
+  "text": {
+    "brief": "A utility planner in northern Virginia tells a data center developer in 2030 that the substation it needs will be ready in 2035. A mainland rival connected a campus of the same size in Inner Mongolia in fourteen months.",
+    "record": "Data centers used 4.7 percent of American electricity in 2024, and a Lawrence Berkeley National Laboratory report of June 2026 projects 9.5 to 15.3 percent by 2030. The mainland's installed generating capacity reached about 3,960 gigawatts in March 2026, up 15.5 percent in a year. Washington allowed sales of Nvidia's H200 chips to the mainland in December 2025 in exchange for a 25 percent share of the revenue.",
+    "reading": "The Party waits at ease while the American build-out strains a grid that takes a decade to expand. It builds power faster than it needs and buys chips where it can. Time then moves the contest from chips to electricity, and America leads in the first while the Party leads in the second. This is Stratagem 4, wait at ease for the weary enemy.",
+    "coreEvent": "A mainland lab releases a model that tops every American model on the leading public benchmarks before 2032.",
+    "gapText": "Technology Architecture. America's lead in chips rests on a grid that cannot grow at the speed of the chips.",
+    "fix": "Treat power for computing as a national security input and permit it on a national security clock."
+  },
+  "status": "unsourced"
+}

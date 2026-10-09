@@ -1,0 +1,38 @@
+{
+  "id": "C003",
+  "kind": "catalog",
+  "title": "The Opium Chests",
+  "tier": 1,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S5",
+    "S12"
+  ],
+  "theater": [
+    "Economic",
+    "Association",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "The opium houses",
+  "when": {
+    "start": {
+      "year": 1839,
+      "month": null
+    },
+    "end": {
+      "year": 1839,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On June 3, 1839, Commissioner Lin Zexu began destroying more than twenty thousand chests of opium in trenches at Humen. American chests went into the trenches with the British.",
+    "record": "American houses carried Turkish opium and held a minority share of the trade, and Russell and Company made fortunes for partners such as Warren Delano Jr. Lin confined the foreign community in its factories until it surrendered its stock in the spring of 1839. The Americans kept trading as neutral carriers after the British withdrew, and the war that followed opened five ports under the Treaty of Nanjing in 1842.",
+    "reading": "A trade that degrades the host's people buys a grievance that outlives every firm in it. The Party's official histories date modern Chinese history from 1840, and its patriotic education still teaches the opium trade as the first chapter of national humiliation.",
+    "gapText": "Architecture Principles. The American merchants carried no rule against profiting from harm to the host's population.",
+    "fix": "Write the harm rule into the treaty, as Article 33 of the Wanghia treaty did when it stripped American protection from opium traders in 1844."
+  },
+  "status": "unsourced"
+}

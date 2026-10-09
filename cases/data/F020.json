@@ -1,0 +1,42 @@
+{
+  "id": "F020",
+  "kind": "futures",
+  "title": "The Dollar Workaround",
+  "tier": 3,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S8"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal",
+    "Data and Surveillance"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Financial Control",
+  "gap": "Technology",
+  "text": {
+    "brief": "A trade finance officer in Dubai settles a cargo of Saudi crude for a mainland refiner in March 2028. The payment never touches a dollar account, and the compliance screen in New York never sees it.",
+    "record": "The mBridge platform links central banks in the People's Republic and Hong Kong with Thailand, the United Arab Emirates and Saudi Arabia. The Bank for International Settlements left the project in October 2024. Hong Kong's stablecoin law took effect on August 1, 2025. The GENIUS Act of July 2025 set federal rules for dollar stablecoins, including the power to freeze funds under lawful order.",
+    "reading": "The Party builds rails that route around the dollar's gate. Each rail sells speed and lower fees in the open and immunity from sanctions underneath. The convenience recruits users who never cared about sanctions. This is Stratagem 8, openly repair the gallery roads and march secretly through Chencang.",
+    "coreEvent": "Saudi Arabia settles more than 10 percent of its crude sales to the mainland in yuan before 2029.",
+    "gapText": "Technology Architecture. The dollar still runs on correspondent banking built decades ago, so a faster rival wins on convenience before it wins on politics.",
+    "fix": "Modernize dollar settlement until no trader gains by leaving it. Keep the lawful-order freeze and publish when it is used."
+  },
+  "status": "unsourced"
+}

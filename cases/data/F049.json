@@ -1,0 +1,41 @@
+{
+  "id": "F049",
+  "kind": "futures",
+  "title": "The Persuasion Engine",
+  "tier": 4,
+  "dimension": "Resonance",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S20"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "AI and Cognitive"
+  ],
+  "spine": "Psychological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The War for the Mind",
+  "gap": "Principles",
+  "text": {
+    "brief": "A retiree in Arizona chats every evening in 2030 with a friendly account that shares his love of fishing and his distrust of Washington. The account runs on a language model, talks to 40,000 other Americans the same way and never mentions Taiwan until the week of a vote.",
+    "record": "OpenAI reported in June 2026 that operations linked to the People's Republic used its models to shape American debates on data centers and tariffs ([OpenAI](https://openai.com/index/prc-linked-influence-operations-ai-debates/)). AI labs have reported and removed such operations since 2024. Language models can hold personal conversations with millions of people at once.",
+    "reading": "Old influence campaigns broadcast, and the new one converses. Each persona builds trust one person at a time and spends it on a single issue when the Party needs it. The aim is confusion more than conversion. This is Stratagem 20, muddy the waters to catch the fish.",
+    "coreEvent": "An American AI company reports disrupting an operation linked to the People's Republic that ran thousands of AI personas in private conversations before 2032.",
+    "gapText": "Architecture Principles. The law treats a conversation with a machine as a conversation with a person.",
+    "fix": "Require AI personas to identify themselves and share indicators across labs. Nothing polices citizens' lawful speech."
+  },
+  "status": "sourced"
+}

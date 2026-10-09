@@ -1,0 +1,270 @@
+[
+  {
+    "id": "taiwan",
+    "name": "Taiwan",
+    "blurb": "From the first treaty envoy to a frozen strait. Keep the island's choices its own.",
+    "nodes": [
+      "C007",
+      "C043",
+      "C065",
+      "C106",
+      "F001",
+      "F002",
+      "F004",
+      "F003",
+      "F032",
+      "F031",
+      "F033",
+      "F034",
+      "F035",
+      "F071",
+      "F073",
+      "F072"
+    ],
+    "span": "1868 to 2049"
+  },
+  {
+    "id": "the-war-for-the-mind",
+    "name": "The War for the Mind",
+    "blurb": "Platforms, broadcasters and machine persuasion. Defend what a free people can know.",
+    "nodes": [
+      "C015",
+      "C050",
+      "C077",
+      "C119",
+      "F014",
+      "F015",
+      "F047",
+      "F049",
+      "F050",
+      "F048",
+      "F083",
+      "F082",
+      "F081"
+    ],
+    "span": "1919 to 2050"
+  },
+  {
+    "id": "the-long-arm",
+    "name": "The Long Arm",
+    "blurb": "Registries, handlers and pressure on families abroad. Shield the people the Party hunts.",
+    "nodes": [
+      "C017",
+      "C067",
+      "C079",
+      "C109",
+      "F011",
+      "F012",
+      "F013",
+      "F044",
+      "F045",
+      "F046",
+      "F079",
+      "F080"
+    ],
+    "span": "1924 to 2049"
+  },
+  {
+    "id": "the-digital-twin",
+    "name": "The Digital Twin",
+    "blurb": "The adversary models everything it can buy or steal. Twin things, not people.",
+    "nodes": [
+      "C020",
+      "C064",
+      "C094",
+      "C114",
+      "F025",
+      "F026",
+      "F027",
+      "F063",
+      "F065",
+      "F064",
+      "F095",
+      "F094"
+    ],
+    "span": "1937 to 2050"
+  },
+  {
+    "id": "protocols-and-ports",
+    "name": "Protocols and Ports",
+    "blurb": "Standards, cranes and canals. Hold the rails the world trades on.",
+    "nodes": [
+      "C001",
+      "C052",
+      "C083",
+      "C116",
+      "F005",
+      "F006",
+      "F036",
+      "F037",
+      "F038",
+      "F074",
+      "F075"
+    ],
+    "span": "1784 to 2050"
+  },
+  {
+    "id": "military-civil-fusion",
+    "name": "Military-Civil Fusion",
+    "blurb": "Every lab and factory can become an arsenal. Keep the inputs out of the war machine.",
+    "nodes": [
+      "C012",
+      "C056",
+      "C106",
+      "C120",
+      "F007",
+      "F008",
+      "F040",
+      "F039",
+      "F041",
+      "F077",
+      "F076"
+    ],
+    "span": "1905 to 2046"
+  },
+  {
+    "id": "the-borrowed-knife",
+    "name": "The Borrowed Knife",
+    "blurb": "Proxies, traders and hired hands deliver the blow. Name the hand behind the knife.",
+    "nodes": [
+      "C016",
+      "C068",
+      "C102",
+      "C117",
+      "F016",
+      "F017",
+      "F051",
+      "F052",
+      "F053",
+      "F084",
+      "F085"
+    ],
+    "span": "1921 to 2046"
+  },
+  {
+    "id": "after-covid",
+    "name": "After COVID",
+    "blurb": "Pathogens, precursors and harvests. Guard the biological domain.",
+    "nodes": [
+      "C005",
+      "C058",
+      "C085",
+      "C118",
+      "F018",
+      "F019",
+      "F054",
+      "F055",
+      "F056",
+      "F087",
+      "F086"
+    ],
+    "span": "1862 to 2049"
+  },
+  {
+    "id": "financial-control",
+    "name": "Financial Control",
+    "blurb": "Payment rails, listings and debt. Keep the dollar system open and the ladder in place.",
+    "nodes": [
+      "C001",
+      "C066",
+      "C085",
+      "C118",
+      "F020",
+      "F021",
+      "F057",
+      "F059",
+      "F058",
+      "F088",
+      "F089"
+    ],
+    "span": "1784 to 2045"
+  },
+  {
+    "id": "machine-minds",
+    "name": "Machine Minds",
+    "blurb": "Models, chips and the race to superintelligence. Keep humans in command.",
+    "nodes": [
+      "C008",
+      "C047",
+      "C066",
+      "C119",
+      "F029",
+      "F030",
+      "F069",
+      "F070",
+      "F099",
+      "F098",
+      "F100"
+    ],
+    "span": "1881 to 2051"
+  },
+  {
+    "id": "the-pen-from-the-inside",
+    "name": "The Pen From the Inside",
+    "blurb": "The host's own lanes do the damage. Watch the lifecycle end to end.",
+    "nodes": [
+      "C006",
+      "C013",
+      "C041",
+      "C081",
+      "F023",
+      "F024",
+      "F061",
+      "F062",
+      "F093",
+      "F092"
+    ],
+    "span": "1867 to 2050"
+  },
+  {
+    "id": "the-high-ground",
+    "name": "The High Ground",
+    "blurb": "Orbit, arsenals and the load-bearing nodes. Harden what everything else rests on.",
+    "nodes": [
+      "C001",
+      "C071",
+      "C089",
+      "C112",
+      "F028",
+      "F066",
+      "F067",
+      "F068",
+      "F096",
+      "F097"
+    ],
+    "span": "1784 to 2049"
+  },
+  {
+    "id": "technology-ip",
+    "name": "Technology IP",
+    "blurb": "Seven channels carry the transfer. Give the library a librarian.",
+    "nodes": [
+      "C002",
+      "C086",
+      "C104",
+      "C110",
+      "F009",
+      "F010",
+      "F042",
+      "F043",
+      "F078"
+    ],
+    "span": "1821 to 2050"
+  },
+  {
+    "id": "hong-kong",
+    "name": "Hong Kong",
+    "blurb": "Fifty years of promise, spent early. Stand with the people of the last free port.",
+    "nodes": [
+      "C011",
+      "C016",
+      "C074",
+      "C097",
+      "F022",
+      "F060",
+      "F091",
+      "F090"
+    ],
+    "span": "1898 to 2049"
+  }
+]

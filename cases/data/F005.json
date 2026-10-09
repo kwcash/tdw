@@ -1,0 +1,41 @@
+{
+  "id": "F005",
+  "kind": "futures",
+  "title": "The Canal Arbitration",
+  "tier": 2,
+  "dimension": "Topology",
+  "stage": "Defense",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Protocols and Ports",
+  "gap": "Governance",
+  "text": {
+    "brief": "Counsel for a Hong Kong port operator asks an arbitration panel for $2 billion from the Republic of Panama. The same week, a trade official in Panama City reads notice that the General Administration of Customs in the People's Republic has suspended imports of Panamanian shrimp.",
+    "record": "Panama's Supreme Court voided CK Hutchison's concession for two canal ports on January 29, 2026, and units of Maersk and MSC took over operations on an interim basis ([NBC News](https://www.nbcnews.com/world/asia/hong-kong-company-concession-panama-canal-ports-ruled-unconstitutional-rcna256664)). Its unit Panama Ports Company filed for arbitration in February 2026 and valued the claim at $2 billion ([IISD](https://www.iisd.org/itn/2026/04/21/panama-faces-usd-2-billion-claim-after-supreme-court-annuls-strategic-port-concessions/)). The company's sale of its global port network had not closed by March 2026.",
+    "reading": "The Party cannot reverse a Panamanian court, so it prices the ruling for every other government watching. Customs holds, visa slowdowns and investment freezes land on Panama while state media frame the case as American coercion. The real audience sits in other port states from Peru to Greece. This is Stratagem 26, point at the mulberry while cursing the locust.",
+    "coreEvent": "The Party imposes measurable economic penalties on Panama over the voided concession before 2028.",
+    "gapText": "Architecture Governance. Hosts that defend their own gates face retaliation alone, because no allied mechanism absorbs the cost.",
+    "fix": "Build a pre-agreed compensation facility for any partner that loses trade after enforcing its own law against a strategic concession. Keep the retender open to every qualified bidder whatever its flag."
+  },
+  "status": "sourced"
+}

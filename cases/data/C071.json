@@ -1,0 +1,37 @@
+{
+  "id": "C071",
+  "kind": "catalog",
+  "title": "Magnequench",
+  "tier": 4,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S15"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1995,
+      "month": null
+    },
+    "end": {
+      "year": 1995,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In 1995 the investment banker Archibald Cox Jr. led a group that bought Magnequench, the magnet division of General Motors in Anderson, Indiana.",
+    "record": "Two state firms of the People's Republic held most of the equity, and relatives of Deng Xiaoping by marriage ran both. The Committee on Foreign Investment in the United States approved the sale on a pledge to keep production in the United States for at least five years. The company moved its lines to Tianjin and closed the Anderson plant in 2002. Congressional testimony tied its magnets to the guidance systems of American precision bombs.",
+    "reading": "The pledge ran on a clock the buyer could outwait, and the capability left once the clock ran out. The move lured a strategic industry away from its home ground, which is Stratagem 15, and the magnet line joined the Party's growing hold on rare-earth processing.",
+    "gapText": "Architecture Governance. The review board accepted a promise with an expiry date and kept no power to stop the move once it lapsed.",
+    "fix": "Tie approval of foreign purchases in critical supply chains to terms that last as long as the capability matters, with a named office to enforce them."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "F022",
+  "kind": "futures",
+  "title": "The Sentence and the Signal",
+  "tier": 2,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S17"
+  ],
+  "theater": [
+    "Psychological",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Hong Kong",
+  "gap": "Principles",
+  "text": {
+    "brief": "A British consular officer waits in a Hong Kong prison visiting room in March 2027. The publisher she has come to see turns 79 that winter, and his lawyers say his health is failing.",
+    "record": "A Hong Kong court convicted Jimmy Lai on December 15, 2025 of conspiring to collude with foreign forces and of sedition. The court sentenced him on February 9, 2026. Lai holds British citizenship, and Washington and London have both called for his release.",
+    "reading": "The Party holds a prisoner whose release it can sell. In 1998 the price was a softer human rights resolution in Geneva. In 2027 the price might be relief from Hong Kong sanctions or silence at a summit. This is Stratagem 17, cast a brick to attract jade.",
+    "coreEvent": "Jimmy Lai leaves custody on medical or humanitarian grounds before 2029.",
+    "gapText": "Architecture Principles. Each release becomes a bargain because no standing principle forbids trading policy for prisoners.",
+    "fix": "State and hold the principle that Washington trades no sanction, arms sale or statement for a prisoner. Welcome any release and pay nothing for it."
+  },
+  "status": "unsourced"
+}

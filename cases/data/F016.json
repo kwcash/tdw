@@ -1,0 +1,41 @@
+{
+  "id": "F016",
+  "kind": "futures",
+  "title": "The Index Knife",
+  "tier": 3,
+  "dimension": "Gradient",
+  "stage": "Attract",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Financial",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The Borrowed Knife",
+  "gap": "Business",
+  "text": {
+    "brief": "A state pension trustee in Harrisburg reads a staff memo in July 2027. The fund's emerging-markets index holds three companies the Pentagon now lists as Chinese military companies, and the index provider has no plan to drop them.",
+    "record": "The Defense Department added Alibaba, Baidu and BYD to its list of Chinese military companies on June 8, 2026 ([WilmerHale](https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies)). The update named 65 new entities. That list binds procurement and not investment. The defense bill signed on December 18, 2025 enacted new outbound investment rules and gave Treasury 450 days to write regulations ([Davis Polk](https://www.davispolk.com/insights/client-update/u-s-updates-outbound-investment-rule-adopts-biosecure-act)).",
+    "reading": "The Party does not ask American savers for money. It relies on index rules that treat its listed champions as ordinary stocks, so every passive fund buys them on schedule. American savings supply capital to firms the Pentagon calls military. This is Stratagem 3, kill with a borrowed knife.",
+    "coreEvent": "Treasury's final outbound investment regulations reach passive holdings of listed mainland companies before 2029.",
+    "gapText": "Business Architecture. Two federal lists name the same threat, and only one binds the money.",
+    "fix": "Harmonize designations across Defense, Commerce and Treasury, and give every listed firm a clear route off the list."
+  },
+  "status": "sourced"
+}

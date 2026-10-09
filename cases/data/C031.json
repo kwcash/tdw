@@ -1,0 +1,37 @@
+{
+  "id": "C031",
+  "kind": "catalog",
+  "title": "The China Hands",
+  "tier": 2,
+  "dimension": "Criticality",
+  "stage": "Mirror",
+  "stratagems": [
+    "S9"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The loyalty purge",
+  "when": {
+    "start": {
+      "year": 1950,
+      "month": null
+    },
+    "end": {
+      "year": 1954,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "The State Department fired John Service in December 1951 after the Loyalty Review Board found reasonable doubt about his loyalty.",
+    "record": "Joseph McCarthy's speech at Wheeling in February 1950 opened a campaign against the diplomats who had reported on the Party. The department dismissed John Paton Davies in 1954, and John Carter Vincent and O. Edmund Clubb also left under charges of disloyalty that no one proved. The Supreme Court restored Service's case in 1957, after the department had lost its China specialists.",
+    "reading": "The defender purged the officers who had seen the Party up close, and it lost the knowledge layer it needed for the next twenty years. The Party did nothing to cause the loss and gained from it anyway.",
+    "gapText": "Data Architecture. The defender treated accurate reporting on the adversary as evidence of sympathy with it.",
+    "fix": "Protect analysts whose assessments prove unwelcome, and judge them on accuracy and conduct alone."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F011",
+  "kind": "futures",
+  "title": "The Bounty List",
+  "tier": 2,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Psychological",
+    "Legal",
+    "Association",
+    "Data and Surveillance"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 9
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The Long Arm",
+  "gap": "Governance",
+  "text": {
+    "brief": "A graduate student in Washington wakes on a Tuesday in February 2027 to a message from her mother in Shenzhen. National security police have visited the family twice and want to know who pays her rent.",
+    "record": "Hong Kong police issued arrest warrants for 19 overseas activists on July 25, 2025, with bounties on 15 of them ([NBC News](https://www.nbcnews.com/world/asia/hong-kong-issues-arrest-warrants-19-overseas-activists-rcna221008)). The first round of bounties came in July 2023. The State Department sanctioned six mainland and Hong Kong officials on March 31, 2025 for undermining the city's autonomy ([State Department](https://www.state.gov/u-s-sanctions-six-individuals-for-undermining-hong-kongs-autonomy)).",
+    "reading": "The Party claims worldwide jurisdiction under the 2020 security law and posts bounties so that exile carries a price. Relatives on the mainland become the lever, and every new round tells overseas critics that no border shuts the door. This is Stratagem 22, shut the door to catch the thief.",
+    "coreEvent": "Hong Kong police announce a new round of national security warrants with bounties before October 2027.",
+    "gapText": "Architecture Governance. No American statute names transnational repression as a crime, so each case rides on older laws built for other purposes.",
+    "fix": "Pass a transnational repression statute, extend address-confidentiality programs to its victims and make visas for threatened relatives routine."
+  },
+  "status": "sourced"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "C094",
+  "kind": "catalog",
+  "title": "Aurora",
+  "tier": 5,
+  "dimension": "Asymmetry",
+  "stage": "Extract",
+  "stratagems": [
+    "S12"
+  ],
+  "theater": [
+    "Information",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2010,
+      "month": null
+    },
+    "end": {
+      "year": 2010,
+      "month": null
+    }
+  },
+  "gap": "Technology",
+  "text": {
+    "brief": "On January 12, 2010, Google's chief legal officer David Drummond wrote that intruders from the mainland had broken into the company's systems and targeted the Gmail accounts of human rights activists.",
+    "record": "At least twenty other companies had faced the same campaign, which the security firm McAfee named Aurora. Google stopped censoring its search results on the mainland and moved the service to Hong Kong in March. Former officials said in 2013 that the intruders had reached Google's records of American surveillance orders, which could reveal which of the Party's agents the FBI was watching.",
+    "reading": "One breach served two ends, the hunt for the Party's critics and a look at the hunters of its own agents, which is Stratagem 12. Google named the source in public and left the market, and few companies followed.",
+    "gapText": "Technology Architecture. The company's system for lawful surveillance orders became a target, because a door built for the government opens for anyone who breaks in.",
+    "fix": "Guard lawful access systems like the crown jewels, and assume every stored surveillance order is a target."
+  },
+  "status": "unsourced"
+}

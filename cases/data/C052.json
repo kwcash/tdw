@@ -1,0 +1,36 @@
+{
+  "id": "C052",
+  "kind": "catalog",
+  "title": "Polo I",
+  "tier": 3,
+  "dimension": "Topology",
+  "stage": "Attract",
+  "stratagems": [
+    "S6"
+  ],
+  "theater": [
+    "Information",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1971,
+      "month": null
+    },
+    "end": {
+      "year": 1971,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "Henry Kissinger feigned a stomach illness in Pakistan and flew in secret to Beijing on July 9, 1971.",
+    "record": "The flight ran through the channel of Yahya Khan, Pakistan's military ruler, whose army had begun a crackdown in East Pakistan that March. Kissinger spent about seventeen hours in talks with Zhou Enlai, and Nixon announced on July 15 that he would visit the People's Republic. On April 6 the consul general in Dacca, Archer Blood, had cabled a formal dissent against American silence on the killings. The State Department recalled Blood that June.",
+    "reading": "Washington routed a strategic shift through one intermediary, and that intermediary's war then shaped American policy in South Asia for the rest of the year. Kissinger's illness was Stratagem 6 run by an American. The Party chose the channel and the timing, and secrecy kept Congress and the allies out of the terms until Nixon went on television.",
+    "gapText": "Architecture Governance. No one outside the White House owned the terms of the opening, so a single channel set the price for the whole government.",
+    "fix": "Brief the committees of jurisdiction in confidence before a secret channel commits the country, and keep the channel secret from everyone else."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "C007",
+  "kind": "catalog",
+  "title": "Burlingame",
+  "tier": 1,
+  "dimension": "Resonance",
+  "stage": "Attract",
+  "stratagems": [
+    "S23"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Qing court",
+  "when": {
+    "start": {
+      "year": 1868,
+      "month": null
+    },
+    "end": {
+      "year": 1868,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "In November 1867 the Qing court appointed Anson Burlingame, who had recently finished six years as the American minister in Peking, to lead its first diplomatic mission to the West.",
+    "record": "Burlingame negotiated a treaty with Secretary of State William Seward that the two sides signed on July 28, 1868. It recognized the right of free migration and promised reciprocal access to schools, and it withheld naturalization. Congress reversed the migration promise within fourteen years, and Burlingame died on the mission in St. Petersburg in 1870.",
+    "reading": "The Qing court borrowed an American's credibility to speak for it in Washington, and the words landed because they were American words. The promise then failed on the American side, and every later government in China learned what an American guarantee on migration was worth.",
+    "gapText": "Architecture Principles. A treaty principle bound the executive while Congress kept the power to repeal it by statute.",
+    "fix": "Make treaty promises and domestic statute answer to the same architecture contract, so one branch cannot silently void the other's word."
+  },
+  "status": "unsourced"
+}

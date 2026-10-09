@@ -1,0 +1,36 @@
+{
+  "id": "C067",
+  "kind": "catalog",
+  "title": "The Chinese Student Protection Act",
+  "tier": 4,
+  "dimension": "Agency",
+  "stage": "Defense",
+  "stratagems": [
+    "S28"
+  ],
+  "theater": [
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1992,
+      "month": null
+    },
+    "end": {
+      "year": 1992,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "On November 30, 1989, George H. W. Bush vetoed a bill that would have let Chinese students stay in the United States after the massacre.",
+    "record": "Bush said he would protect the students by executive action, and his Executive Order 12711 of April 11, 1990 deferred their departure. The House voted to override the veto, and the Senate fell four votes short. In 1992 Congress passed the Chinese Student Protection Act, which let tens of thousands of students and scholars from the People's Republic apply for permanent residence.",
+    "reading": "Both branches chose to shield the people rather than return them to the Party's reach, and they argued only over the instrument. The Party later built talent programs aimed at this generation of graduates, programs that treat ancestry as a claim on loyalty that American law rejects.",
+    "gapText": "Architecture Governance. The design held because Congress kept pressing after the veto and the President answered with an order of his own.",
+    "fix": "Keep a standing path to stay for students and scholars whose home state turns on them, so protection never waits for a veto fight."
+  },
+  "status": "unsourced"
+}

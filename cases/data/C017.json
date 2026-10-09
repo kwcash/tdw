@@ -1,0 +1,37 @@
+{
+  "id": "C017",
+  "kind": "catalog",
+  "title": "The Bloc Within",
+  "tier": 1,
+  "dimension": "Agency",
+  "stage": "Control",
+  "stratagems": [
+    "S25",
+    "S30"
+  ],
+  "theater": [
+    "Kinetic",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1924,
+      "month": null
+    },
+    "end": {
+      "year": 1927,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In January 1924 Communist delegates took seats at the Nationalist Party's first national congress in Canton as members of both parties at once.",
+    "record": "The Comintern directed Party members to join the Nationalists as individuals while keeping their own organization, and the Soviet adviser Mikhail Borodin helped rebuild the Nationalist Party on Leninist lines. Communists rose to posts in its propaganda, peasant and labor departments. Chiang Kai-shek struck in Shanghai on April 12, 1927, and the purge that followed killed thousands of Communists and labor activists.",
+    "reading": "The bloc within is Stratagem 30 in its founding form. The guest joined the host, took its departments and prepared to set its agenda, and the host answered with a massacre rather than a design.",
+    "gapText": "Architecture Governance. The Nationalist Party admitted members who answered to another organization and had no rule for dual loyalty until it chose violence.",
+    "fix": "Require disclosure of outside organizational duties at the door and act on the disclosure through process, never purge."
+  },
+  "status": "unsourced"
+}

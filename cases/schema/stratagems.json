@@ -1,0 +1,182 @@
+[
+ {
+  "code": "S1",
+  "name": "deceive the heavens to cross the sea",
+  "group": "Superiority"
+ },
+ {
+  "code": "S2",
+  "name": "besiege Wei to rescue Zhao",
+  "group": "Superiority"
+ },
+ {
+  "code": "S3",
+  "name": "kill with a borrowed knife",
+  "group": "Superiority"
+ },
+ {
+  "code": "S4",
+  "name": "wait at ease for the weary enemy",
+  "group": "Superiority"
+ },
+ {
+  "code": "S5",
+  "name": "loot a burning house",
+  "group": "Superiority"
+ },
+ {
+  "code": "S6",
+  "name": "make a sound in the east, strike in the west",
+  "group": "Superiority"
+ },
+ {
+  "code": "S7",
+  "name": "create something from nothing",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S8",
+  "name": "openly repair the gallery roads and march secretly through Chencang",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S9",
+  "name": "watch the fire from across the river",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S10",
+  "name": "hide a knife behind a smile",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S11",
+  "name": "sacrifice the plum tree to preserve the peach",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S12",
+  "name": "take the opportunity to pilfer a goat",
+  "group": "Confrontation"
+ },
+ {
+  "code": "S13",
+  "name": "stomp the grass to scare the snake",
+  "group": "Attack"
+ },
+ {
+  "code": "S14",
+  "name": "borrow a corpse to resurrect the soul",
+  "group": "Attack"
+ },
+ {
+  "code": "S15",
+  "name": "lure the tiger down the mountain",
+  "group": "Attack"
+ },
+ {
+  "code": "S16",
+  "name": "let the enemy off in order to catch them",
+  "group": "Attack"
+ },
+ {
+  "code": "S17",
+  "name": "cast a brick to attract jade",
+  "group": "Attack"
+ },
+ {
+  "code": "S18",
+  "name": "capture the ringleader to disband the bandits",
+  "group": "Attack"
+ },
+ {
+  "code": "S19",
+  "name": "remove the firewood from under the pot",
+  "group": "Confusion"
+ },
+ {
+  "code": "S20",
+  "name": "muddy the waters to catch the fish",
+  "group": "Confusion"
+ },
+ {
+  "code": "S21",
+  "name": "slough off the cicada's golden shell",
+  "group": "Confusion"
+ },
+ {
+  "code": "S22",
+  "name": "shut the door to catch the thief",
+  "group": "Confusion"
+ },
+ {
+  "code": "S23",
+  "name": "befriend a distant state while attacking a neighbor",
+  "group": "Confusion"
+ },
+ {
+  "code": "S24",
+  "name": "borrow the road to conquer Guo",
+  "group": "Confusion"
+ },
+ {
+  "code": "S25",
+  "name": "replace the beams with rotten timbers",
+  "group": "Control"
+ },
+ {
+  "code": "S26",
+  "name": "point at the mulberry while cursing the locust",
+  "group": "Control"
+ },
+ {
+  "code": "S27",
+  "name": "feign madness without losing balance",
+  "group": "Control"
+ },
+ {
+  "code": "S28",
+  "name": "lure the enemy onto the roof and remove the ladder",
+  "group": "Control"
+ },
+ {
+  "code": "S29",
+  "name": "deck the tree with false blossoms",
+  "group": "Control"
+ },
+ {
+  "code": "S30",
+  "name": "make the host and the guest exchange places",
+  "group": "Control"
+ },
+ {
+  "code": "S31",
+  "name": "the beauty trap, run on money",
+  "group": "Desperation"
+ },
+ {
+  "code": "S32",
+  "name": "the empty fortress",
+  "group": "Desperation"
+ },
+ {
+  "code": "S33",
+  "name": "sow discord among the enemy",
+  "group": "Desperation"
+ },
+ {
+  "code": "S34",
+  "name": "inflict injury on yourself to win trust",
+  "group": "Desperation"
+ },
+ {
+  "code": "S35",
+  "name": "chain the stratagems",
+  "group": "Desperation"
+ },
+ {
+  "code": "S36",
+  "name": "if all else fails, retreat",
+  "group": "Desperation"
+ }
+]

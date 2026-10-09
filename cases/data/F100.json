@@ -1,0 +1,41 @@
+{
+  "id": "F100",
+  "kind": "futures",
+  "title": "The Last Human Staff",
+  "tier": 5,
+  "dimension": "Coherence",
+  "stage": "Defense",
+  "stratagems": [
+    "S4"
+  ],
+  "theater": [
+    "Kinetic",
+    "Psychological",
+    "AI and Cognitive"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2040,
+      "month": null
+    },
+    "end": {
+      "year": 2051,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "Machine Minds",
+  "gap": "Application",
+  "text": {
+    "brief": "A colonel signs an order in 2049 that machines drafted, checked and war-gamed. She realizes that no one left on her staff could have written it.",
+    "record": "A presidential memorandum of June 5, 2026 ordered the Pentagon to revise its directive on autonomy in weapon systems within 90 days. The directive, last updated in January 2023, requires appropriate human judgment over the use of force. The Pentagon awarded contracts worth up to $200 million each to four AI companies in July 2025.",
+    "reading": "The Party waits while American staffs hand their judgment to machines. When the machines err, no one can tell. The Party's patience then meets a rival that can no longer think without help. This is Stratagem 4, wait at ease for the weary enemy.",
+    "coreEvent": "Before 2050 an American command acts on a wrong AI recommendation that no one on its staff could have checked.",
+    "gapText": "Application Architecture. Staff workflows hand judgment to machines without keeping the skill to check them.",
+    "fix": "Keep the human skill alive on purpose, with drills that run without the machine."
+  },
+  "status": "unsourced"
+}

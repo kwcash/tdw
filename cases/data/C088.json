@@ -1,0 +1,37 @@
+{
+  "id": "C088",
+  "kind": "catalog",
+  "title": "CNOOC and Unocal",
+  "tier": 5,
+  "dimension": "Gradient",
+  "stage": "Attract",
+  "stratagems": [
+    "S13"
+  ],
+  "theater": [
+    "Economic",
+    "Financial",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2005,
+      "month": null
+    },
+    "end": {
+      "year": 2005,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "On June 23, 2005, Fu Chengyu of CNOOC offered $18.5 billion in cash for the American oil company Unocal.",
+    "record": "CNOOC's parent was a state company, and state banks supplied cheap loans for the offer. The House voted 398 to 15 for a resolution that the sale would threaten national security, and Congress wrote a delay into the energy bill. CNOOC withdrew on August 2, and Unocal went to Chevron.",
+    "reading": "State financing gave the bidder a cost of capital no private rival could match, and the bid probed how Washington would answer, which is Stratagem 13. Congress answered with a vote rather than a rule, and later buyers from the mainland favored smaller assets and minority stakes.",
+    "gapText": "Architecture Governance. The review process had no clear owner for a deal in which a state lender stood behind a listed company, so Congress filled the gap with a floor vote.",
+    "fix": "Treat state financing as state ownership in every investment review, and decide such cases by rule rather than in the heat of a headline."
+  },
+  "status": "unsourced"
+}

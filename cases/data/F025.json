@@ -1,0 +1,41 @@
+{
+  "id": "F025",
+  "kind": "futures",
+  "title": "The Truce Ledger",
+  "tier": 3,
+  "dimension": "Time",
+  "stage": "Control",
+  "stratagems": [
+    "S16"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Data and Surveillance"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 4
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "The Digital Twin",
+  "gap": "Data",
+  "text": {
+    "brief": "A licensing officer at the Ministry of Commerce approves 40 of 90 magnet export applications in December 2026. Each approved form names the American customer, the end use and the quantity, and each rejected form tells her more.",
+    "record": "Treasury Secretary Bessent announced on September 23, 2026 that the trade truce would run two more months to January 10, 2027 ([Supply Chain Dive](https://www.supplychaindive.com/news/us-china-to-extend-trade-war-truce-by-2-months/831251/)). The Party's April 2025 licensing rules on seven rare earths were never suspended. American officials say rare-earth deliveries fall short of the promises made at Busan.",
+    "reading": "The licensing regime does two jobs. It throttles supply, and it collects a map of American defense and industrial dependence from the applications themselves. Each suspension and extension resets the clock while the map grows. This is Stratagem 16, let the enemy off in order to catch them.",
+    "coreEvent": "Either side reimposes a suspended measure after the truce lapses before April 2027.",
+    "gapText": "Data Architecture. The Party holds a better map of American dependence than Washington does.",
+    "fix": "Build a federal dependency twin that maps every critical input to its users. Twin things, not people."
+  },
+  "status": "sourced"
+}

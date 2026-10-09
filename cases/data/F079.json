@@ -1,0 +1,42 @@
+{
+  "id": "F079",
+  "kind": "futures",
+  "title": "The Diaspora Dividend",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Defense",
+  "stratagems": [
+    "S20"
+  ],
+  "theater": [
+    "Psychological",
+    "Legal",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2037,
+      "month": null
+    },
+    "end": {
+      "year": 2046,
+      "month": null
+    }
+  },
+  "world": "Unwinding",
+  "horizon": 3,
+  "arc": "The Long Arm",
+  "gap": "Principles",
+  "text": {
+    "brief": "An immigration judge in New York hears fourteen asylum cases from mainland nationals in one morning in 2040. Each applicant fled a different faction, and each fears a different police force.",
+    "record": "Deferred Enforced Departure shields eligible Hong Kong residents in the United States through February 5, 2027. Freedom House counted the Party as the source of 272 of 1,219 physical incidents of transnational repression from 2014 through 2024. Encounters with mainland nationals at the southern border rose sharply in 2023 and 2024.",
+    "reading": "As the Party weakens, its factions muddy the waters abroad. Each sends agents among the exiles, forges defector stories and floods diaspora media, so every refugee looks like a spy and every spy looks like a refugee. This is Stratagem 20, muddy the waters to catch the fish.",
+    "coreEvent": "Asylum claims from mainland nationals in the United States double within two years during a succession crisis before 2046.",
+    "gapText": "Architecture Principles. The asylum system has no plan for a regime crisis that sends victims and agents on the same flights.",
+    "fix": "Write the parole plan now, vet on conduct and records, and keep the door open for the Party's victims."
+  },
+  "status": "unsourced"
+}

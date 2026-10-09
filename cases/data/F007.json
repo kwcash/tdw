@@ -1,0 +1,41 @@
+{
+  "id": "F007",
+  "kind": "futures",
+  "title": "The Drone Gap",
+  "tier": 2,
+  "dimension": "Gradient",
+  "stage": "Control",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Legal"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Military-Civil Fusion",
+  "gap": "Business",
+  "text": {
+    "brief": "A sheriff's office in rural Texas grounds half its drone fleet in February 2027. The replacement motors sit in a warehouse in Shenzhen waiting for an export license that never comes.",
+    "record": "The Federal Communications Commission added all foreign-made drones and components to its Covered List on December 22, 2025, which bars new models from the American market ([FCC](https://docs.fcc.gov/public/attachments/DA-25-1086A1.pdf)). The Ministry of Commerce tightened drone exports to the United States and sanctioned seven American entities on August 5, 2026 ([SCMP](https://www.scmp.com/economy/global-economy/article/3363037/china-sanctions-slew-us-entities-heightens-scrutiny-drone-exports)). American police, farmers and the Army still rely on mainland motors, batteries and magnets.",
+    "reading": "Washington closed the front door to new mainland drones, and the Party answers at the parts counter. License delays on motors, flight controllers and magnets starve the American assemblers who build the replacements. Each delay stays small enough to deny and large enough to stall a production line. This is Stratagem 19, remove the firewood from under the pot.",
+    "coreEvent": "The Party formally restricts exports of drone motors, flight controllers or their magnets to American buyers before 2028.",
+    "gapText": "Business Architecture. The ban on finished drones arrived before any plan for the parts inside the replacements.",
+    "fix": "Sequence every product ban behind a parts plan. Fund motors, magnets and batteries first, then close the market to finished goods."
+  },
+  "status": "sourced"
+}

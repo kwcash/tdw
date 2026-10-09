@@ -1,0 +1,37 @@
+{
+  "id": "C111",
+  "kind": "catalog",
+  "title": "The Bingtuan",
+  "tier": 6,
+  "dimension": "Topology",
+  "stage": "Consume",
+  "stratagems": [
+    "S30"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Cultural"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1954,
+      "month": null
+    },
+    "end": {
+      "year": 2020,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In October 1954 Mao Zedong's government ordered demobilized soldiers in Xinjiang to form a production and construction corps that would farm, build and garrison the region.",
+    "record": "The Corps grew into a state within the region that runs its own cities, courts and police. It grows a large share of Xinjiang's cotton and settled Han migrants across Uyghur lands for decades. The Treasury Department sanctioned the Corps and two of its officials on July 31, 2020 for serious human rights abuse. In December customs officers began to hold its cotton at the border.",
+    "reading": "Settlement turned soldiers from guests into hosts on Uyghur land, which is Stratagem 30. The Corps ran the method in one institution, a garrison that became an economy and then a supplier to American stores.",
+    "gapText": "Data Architecture. Buyers traced cotton to a country rather than to the Corps that grew it, so the fiber reached American shelves through spinners abroad.",
+    "fix": "Trace fiber to the farm with testing and records that follow it through every spinner."
+  },
+  "status": "unsourced"
+}

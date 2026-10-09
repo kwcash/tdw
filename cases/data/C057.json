@@ -1,0 +1,36 @@
+{
+  "id": "C057",
+  "kind": "catalog",
+  "title": "The Punitive War after the Visit",
+  "tier": 3,
+  "dimension": "Phase",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Kinetic",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1979,
+      "month": null
+    },
+    "end": {
+      "year": 1979,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On January 29, 1979, Deng Xiaoping told Jimmy Carter in the Oval Office that the People's Republic would teach Vietnam a lesson.",
+    "record": "Carter handed Deng a letter the next morning that urged restraint. The People's Liberation Army crossed the Vietnamese border on February 17, twelve days after Deng left the United States, and withdrew in March after heavy losses on both sides. Washington called for the army to leave Vietnam and for Vietnamese troops to leave Cambodia.",
+    "reading": "Deng timed the war to follow the visit, so the American welcome read as consent in Moscow and Hanoi. The Party punished Vietnam to warn the Soviet Union, which is Stratagem 26, and Washington's hospitality supplied the cover.",
+    "gapText": "Architecture Principles. Washington received advance notice of an invasion and had no principle that separated hosting a leader from lending him cover.",
+    "fix": "Answer advance notice of force with a public position before the force moves, so hospitality never reads as consent."
+  },
+  "status": "unsourced"
+}

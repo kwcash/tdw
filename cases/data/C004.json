@@ -1,0 +1,38 @@
+{
+  "id": "C004",
+  "kind": "catalog",
+  "title": "Wanghia",
+  "tier": 1,
+  "dimension": "Asymmetry",
+  "stage": "Control",
+  "stratagems": [
+    "S9",
+    "S12"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The treaty powers",
+  "when": {
+    "start": {
+      "year": 1844,
+      "month": null
+    },
+    "end": {
+      "year": 1844,
+      "month": null
+    }
+  },
+  "gap": "Technology",
+  "text": {
+    "brief": "On July 3, 1844, Caleb Cushing signed a treaty with the Qing commissioner Qiying in a temple at Wangxia village outside Macau.",
+    "record": "The treaty gave American consuls jurisdiction over American citizens in the open ports, and it granted the United States any privilege another power won later. It also declared opium contraband and left American opium traders to Qing law. The United States gave up extraterritorial rights in China by a treaty with the Republic of China in January 1943.",
+    "reading": "The United States let Britain fight and then took the terms, which is Stratagem 9 read from the winning bank. Extraterritoriality placed the guest's law inside the host's courts, and the Party still cites the unequal treaties when it rejects foreign law as interference.",
+    "gapText": "Technology Architecture. The host's legal platform admitted a second system it could not administer.",
+    "fix": "Refuse any arrangement that places a foreign system beyond local review, the same rule the Hong Kong case sets for the next guarantee."
+  },
+  "status": "unsourced"
+}

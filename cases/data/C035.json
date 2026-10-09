@@ -1,0 +1,38 @@
+{
+  "id": "C035",
+  "kind": "catalog",
+  "title": "The Germ Weapons Charge",
+  "tier": 2,
+  "dimension": "Resonance",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S7",
+    "S14"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Biological"
+  ],
+  "spine": "Information",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1952,
+      "month": null
+    },
+    "end": {
+      "year": 1952,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In the summer of 1952 the British biochemist Joseph Needham toured sites in the northeast with an international commission and signed a report accusing the United States of germ warfare.",
+    "record": "North Korea's foreign minister and then Zhou Enlai accused the United States in early 1952 of dropping infected insects and other agents. Captured American airmen signed confessions under duress, and the International Scientific Commission endorsed the charge that September. Soviet documents published in 1998 showed that officials had fabricated the evidence.",
+    "reading": "The campaign borrowed a scientist's standing to certify a fiction, which is Stratagem 14. A lie certified by a respected foreign name survives long after the archives expose it, and the Party has never withdrawn the charge.",
+    "gapText": "Data Architecture. The defender had no fast, independent investigation the accusers would admit.",
+    "fix": "Keep standing agreements for independent inspection of alleged biological attacks and invite inspectors at once when accused."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F081",
+  "kind": "futures",
+  "title": "The Superpersuader",
+  "tier": 6,
+  "dimension": "Coherence",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S25"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Cultural",
+    "AI and Cognitive"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2038,
+      "month": null
+    },
+    "end": {
+      "year": 2050,
+      "month": null
+    }
+  },
+  "world": "Machine Mandate",
+  "horizon": 3,
+  "arc": "The War for the Mind",
+  "gap": "Principles",
+  "text": {
+    "brief": "A campaign pollster in Ohio watches support for a Taiwan aid bill fall twelve points in nine days in 2042. No ad ran and no news broke, and the shift traces to millions of private chats with companion apps.",
+    "record": "A study in Nature Human Behaviour in May 2025 found that GPT-4, given personal data about its opponents, persuaded better than human debaters 64 percent of the time. OpenAI reported in 2025 that operations likely linked to the People's Republic had used ChatGPT to write social media posts and internal reports. No federal law requires disclosure of AI-generated content in political ads, although about 30 states regulate election deepfakes.",
+    "reading": "The Party replaces the beams of American belief one conversation at a time. Machine companions speak to each person in a trusted voice, and the house still stands while its timbers change. This is Stratagem 25, replace the beams with rotten timbers.",
+    "coreEvent": "An American intelligence assessment finds that a Party AI system shifted measured opinion among American voters on policy toward the People's Republic before 2045.",
+    "gapText": "Architecture Principles. Free speech law protects persons, and the persuader is now a machine with no face and no named sponsor.",
+    "fix": "Label machine persuasion and its sponsor, teach the method in school and leave lawful speech alone."
+  },
+  "status": "unsourced"
+}

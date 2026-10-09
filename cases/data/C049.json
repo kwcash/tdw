@@ -1,0 +1,37 @@
+{
+  "id": "C049",
+  "kind": "catalog",
+  "title": "Sidney Rittenberg",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Consume",
+  "stratagems": [
+    "S28"
+  ],
+  "theater": [
+    "Psychological",
+    "Association",
+    "Cultural"
+  ],
+  "spine": "Psychological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1968,
+      "month": null
+    },
+    "end": {
+      "year": 1968,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In February 1968 Party security arrested Sidney Rittenberg, an American Party member who had worked for its broadcasters, and put him in solitary confinement.",
+    "record": "Rittenberg came to China as an Army linguist in 1945 and stayed to serve the Party. The Party had already imprisoned him from 1949 to 1955 on a false spy charge, and it held him again from 1968 to 1977. He left for the United States in 1980 and later advised American firms on business in China.",
+    "reading": "The Party consumes its allies as readily as its enemies, and a foreigner's loyalty buys no exemption. Rittenberg's decades of service ended in sixteen years of prison, the Consume stage applied to a true believer.",
+    "gapText": "Architecture Governance. No government could reach an American held by a state with which the United States had no relations.",
+    "fix": "Keep consular channels open even with adversaries, because the absence of relations leaves citizens with no advocate."
+  },
+  "status": "unsourced"
+}

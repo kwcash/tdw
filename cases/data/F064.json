@@ -1,0 +1,41 @@
+{
+  "id": "F064",
+  "kind": "futures",
+  "title": "The Q-Day Archive",
+  "tier": 5,
+  "dimension": "Time",
+  "stage": "Extract",
+  "stratagems": [
+    "S9"
+  ],
+  "theater": [
+    "Information",
+    "Cyber",
+    "Data and Surveillance"
+  ],
+  "spine": "Cyber",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Digital Twin",
+  "gap": "Technology",
+  "text": {
+    "brief": "A cryptographer at the National Security Agency reads a mainland paper in 2034 that reports factoring a number far smaller than a real key. The authors thank a lab that stopped publishing two years earlier, and she asks what it has built since.",
+    "record": "NIST published its first three post-quantum encryption standards in August 2024. Its draft transition plan of November 2024 would deprecate RSA and elliptic-curve keys after 2030 and disallow them after 2035, and it remained a draft in August 2026. The University of Science and Technology of China ran a 105-qubit processor, Zuchongzhi 3.0, in 2025.",
+    "reading": "The Party stores what it cannot read today and waits while the defender's migration drags. Stolen ciphertext sits in an archive for the quantum machine, and the secrets of 2025 still matter in 2035. This is Stratagem 9, watch the fire from across the river.",
+    "coreEvent": "A government or laboratory demonstrates a quantum computer that breaks 2048-bit RSA before 2035.",
+    "gapText": "Technology Architecture. Secrets that must hold for twenty years still ride on keys a quantum computer can break.",
+    "fix": "Migrate long-lived secrets first and plan as if the archive will open."
+  },
+  "status": "unsourced"
+}

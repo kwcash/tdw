@@ -1,0 +1,42 @@
+{
+  "id": "F084",
+  "kind": "futures",
+  "title": "The Hired Navy",
+  "tier": 5,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2036,
+      "month": null
+    },
+    "end": {
+      "year": 2048,
+      "month": null
+    }
+  },
+  "world": "Long Grind",
+  "horizon": 3,
+  "arc": "The Borrowed Knife",
+  "gap": "Governance",
+  "text": {
+    "brief": "A tanker captain off the Horn of Africa hears a drone before he sees it in 2044. The militia that launched it buys guidance chips from a mainland firm and targeting images from a mainland satellite company.",
+    "record": "The Houthis attacked more than 100 merchant ships from November 2023 to mid-2025 and sank four. The State Department said in April 2025 that Chang Guang Satellite Technology supported Houthi attacks, and Treasury sanctioned three mainland firms among 32 targets in a Houthi network in September 2025. The Houthis told Beijing and Moscow in 2024 that their ships would pass unharmed.",
+    "reading": "The Party arms proxies that fight its rivals' trade while its own ships pass untouched. Each attack carries another's flag and the Party's parts. This is Stratagem 3, kill with a borrowed knife.",
+    "coreEvent": "A proxy force using mainland weapons halts most traffic through a major strait for a month before 2048.",
+    "gapText": "Architecture Governance. Sanctions treat each proxy war as a separate case, and the supplier behind them all goes unnamed.",
+    "fix": "Name the common supplier behind every proxy war and tie the sanctions to it."
+  },
+  "status": "unsourced"
+}

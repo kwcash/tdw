@@ -1,0 +1,42 @@
+{
+  "id": "F009",
+  "kind": "futures",
+  "title": "The Distillers",
+  "tier": 2,
+  "dimension": "Asymmetry",
+  "stage": "Extract",
+  "stratagems": [
+    "S12"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "AI and Cognitive",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Technology IP",
+  "gap": "Application",
+  "text": {
+    "brief": "An abuse analyst at an American AI lab watches 20,000 accounts on three continents ask the lab's model the same kinds of reasoning questions in the same order. The payments trace to a cloud reseller in Singapore, and the questions read like a training curriculum.",
+    "record": "OpenAI said in January 2025 that it had evidence DeepSeek used its models' outputs to train a rival, a practice called distillation. Anthropic barred companies controlled from the People's Republic from its services in September 2025. Anthropic named DeepSeek, Moonshot and MiniMax for large-scale distillation on February 23, 2026. The Commerce Department proposed know-your-customer rules for foreign users of American cloud services in January 2024.",
+    "reading": "Distillation lets a lab copy the behavior of a frontier model for the price of its API calls. Shell accounts, resellers and rotating payment cards hide who asks. The asker keeps the lesson, and the host pays for the compute that taught it. This is Stratagem 12, take the opportunity to pilfer a goat.",
+    "coreEvent": "Washington sanctions or restricts a mainland AI lab for distilling American models before 2028.",
+    "gapText": "Application Architecture. Model access checks a credit card and not the customer behind it.",
+    "fix": "Pair know-your-customer checks for high-volume model access with shared abuse indicators across labs. Treat distillation at scale as trade-secret theft and prosecute it that way."
+  },
+  "status": "unsourced"
+}

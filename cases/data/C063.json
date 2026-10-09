@@ -1,0 +1,36 @@
+{
+  "id": "C063",
+  "kind": "catalog",
+  "title": "Fang Lizhi",
+  "tier": 4,
+  "dimension": "Agency",
+  "stage": "Defense",
+  "stratagems": [
+    "S18"
+  ],
+  "theater": [
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1989,
+      "month": null
+    },
+    "end": {
+      "year": 1989,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On February 26, 1989, security police stopped the astrophysicist Fang Lizhi on his way to George H. W. Bush's banquet in Beijing.",
+    "record": "The embassy had invited Fang, whose speeches had inspired the student protests of 1986, and the Party kept him from the President's table. After the massacre Fang and his wife Li Shuxian took refuge in the American embassy on June 5. The Party charged them with counterrevolutionary crimes and issued warrants for their arrest. They stayed inside for more than a year until the Party let them fly to Britain in June 1990.",
+    "reading": "Individual officials made the choices that mattered, first by inviting a critic to a state dinner and then by opening the door when his life was at risk. The Party named Fang the black hand behind the movement, which is Stratagem 18, and the embassy denied it the ringleader it wanted.",
+    "gapText": "Architecture Principles. The design held because the embassy applied the same principle in February and in June, that a guest the Party hunts is still a guest.",
+    "fix": "Write the refuge decision into doctrine so it rests on principle rather than on the courage of one ambassador."
+  },
+  "status": "unsourced"
+}

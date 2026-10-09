@@ -1,0 +1,38 @@
+{
+  "id": "C033",
+  "kind": "catalog",
+  "title": "The Volunteers and the Panikkar Warning",
+  "tier": 2,
+  "dimension": "Phase",
+  "stage": "Consume",
+  "stratagems": [
+    "S1",
+    "S7"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Legal"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1950,
+      "month": null
+    },
+    "end": {
+      "year": 1950,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "Shortly after midnight on October 3, 1950, Zhou Enlai warned the Indian ambassador K. M. Panikkar that the People's Republic would enter the war if American troops crossed the 38th parallel.",
+    "record": "Washington discounted the message, and American troops crossed the parallel in early October. The Party's forces crossed the Yalu under the name Chinese People's Volunteers from October 19 and struck United Nations troops at Unsan and later at the Chosin Reservoir. The name let the Party fight a war it never declared.",
+    "reading": "The warning reached Washington through a channel it distrusted and triggered no response, the same gap the Hong Kong case records in 2017. The volunteer label shows the Legal domain at work before the first shot.",
+    "gapText": "Data Architecture. A warning arrived with no owner and no trigger, so it fed a report rather than a decision.",
+    "fix": "Map each warning to a response agreed in advance, whatever channel carries it, and log who judged it."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "F055",
+  "kind": "futures",
+  "title": "The API Chokepoint",
+  "tier": 3,
+  "dimension": "Criticality",
+  "stage": "Defense",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Biological"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2033,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "After COVID",
+  "gap": "Business",
+  "text": {
+    "brief": "A pharmacist in Ohio finds amoxicillin back on her shortage list in 2032. The key starting material comes from three plants in Shandong, and none has shipped since a tariff dispute began.",
+    "record": "The President ordered the Strategic Active Pharmaceutical Ingredients Reserve filled with about 26 critical drugs in August 2025. The United States imports most of the starting materials for its generic drugs, many from the mainland or from Indian makers that rely on mainland inputs. The heparin contamination of 2008 showed the risk of long and opaque drug supply chains.",
+    "reading": "The Party slows exports of starting materials in a dispute. Shortages spread through hospitals, and the pressure lands on patients before it reaches policymakers. This is Stratagem 19, remove the firewood from under the pot.",
+    "coreEvent": "The Party restricts exports of a key antibiotic starting material to American buyers before 2034.",
+    "gapText": "Business Architecture. Drug purchasing rewards the lowest price, and the lowest price came from one supplier.",
+    "fix": "Pay a premium for secure supply in federal purchasing and keep the reserve full."
+  },
+  "status": "unsourced"
+}

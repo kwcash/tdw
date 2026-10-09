@@ -1,0 +1,37 @@
+{
+  "id": "C087",
+  "kind": "catalog",
+  "title": "Shi Tao and Yahoo",
+  "tier": 5,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S3"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Data and Surveillance"
+  ],
+  "spine": "Data and Surveillance",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2004,
+      "month": null
+    },
+    "end": {
+      "year": 2005,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On April 20, 2004, the journalist Shi Tao emailed notes on a Party directive about the Tiananmen anniversary from his Yahoo account to an editor in New York.",
+    "record": "Yahoo's Hong Kong subsidiary gave state security the account information that tied the email to him. A court in Changsha sentenced him to ten years in April 2005 for leaking state secrets. In November 2007 Representative Tom Lantos told Yahoo's leaders at a hearing that they were moral pygmies, and that month Yahoo settled a suit that the families of Shi and another jailed writer had brought.",
+    "reading": "The Party used an American company's records to convict a journalist, which is Stratagem 3. Every data center a company runs inside the Party's reach becomes a node in the Party's network whether the company intends it or not.",
+    "gapText": "Data Architecture. Yahoo stored user identities where the Party's security services could compel them and had no rule for a request that sought a dissident.",
+    "fix": "Keep user identities outside the reach of states that jail speech, and publish every demand for them."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "C038",
+  "kind": "catalog",
+  "title": "The Code of Conduct",
+  "tier": 2,
+  "dimension": "Coherence",
+  "stage": "Defense",
+  "stratagems": [
+    "S25"
+  ],
+  "theater": [
+    "Psychological",
+    "Cultural"
+  ],
+  "spine": "Psychological",
+  "opponent": "Captors in Korea",
+  "when": {
+    "start": {
+      "year": 1955,
+      "month": null
+    },
+    "end": {
+      "year": 1955,
+      "month": null
+    }
+  },
+  "gap": "Application",
+  "text": {
+    "brief": "In January 1954 twenty-one American prisoners of war in Korea refused to come home and chose to go to the People's Republic.",
+    "record": "Captors had subjected American prisoners to daily indoctrination and pressure to inform on one another, and some prisoners signed confessions. The journalist Edward Hunter had popularized the word brainwashing in 1950. Dwight Eisenhower signed Executive Order 10631 on August 17, 1955, and gave every service member the Code of Conduct.",
+    "reading": "The Code turned a lesson learned in the camps into a design rule every service member carries into captivity. Robert Lifton's study of 1961 drew its criteria of totalism from people who went through the same method.",
+    "gapText": "Application Architecture. No routine prepared prisoners for captors who ran a psychological campaign rather than an interrogation.",
+    "fix": "Train every service member and every traveler at risk in the captor's method before capture, the job survival schools now do."
+  },
+  "status": "unsourced"
+}

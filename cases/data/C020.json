@@ -1,0 +1,37 @@
+{
+  "id": "C020",
+  "kind": "catalog",
+  "title": "The Nanjing Safety Zone",
+  "tier": 1,
+  "dimension": "Time",
+  "stage": "Defense",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Association"
+  ],
+  "spine": "Information",
+  "opponent": "Imperial Japan",
+  "when": {
+    "start": {
+      "year": 1937,
+      "month": null
+    },
+    "end": {
+      "year": 1937,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In December 1937 Minnie Vautrin stood at the gate of Ginling College in Nanjing and turned back Japanese soldiers who came for the women sheltering inside.",
+    "record": "Imperial Japanese forces took Nanjing on December 13, 1937, and killed civilians and prisoners on a mass scale in the weeks after. A committee of about two dozen Westerners ran a safety zone, and Vautrin's campus sheltered about ten thousand women and children at its peak. The missionary John Magee filmed victims in the city's hospital, and George Fitch smuggled the film to Shanghai sewn into his coat.",
+    "reading": "The zone saved lives, and its records outlasted every denial that followed. The Party builds its patriotic education on Nanjing's dead and erases the records of deaths it caused, the Cultural domain run selectively.",
+    "gapText": "Architecture Governance. No government owned the protection of the city's civilians, so a handful of private foreigners held it with flags and paperwork.",
+    "fix": "Keep evidence that outlives the event, because a documented record is the one defense a victim keeps after the guns stop."
+  },
+  "status": "unsourced"
+}

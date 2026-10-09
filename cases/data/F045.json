@@ -1,0 +1,41 @@
+{
+  "id": "F045",
+  "kind": "futures",
+  "title": "The Sister-State Deal",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Attract",
+  "stratagems": [
+    "S25"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2029,
+      "month": null
+    },
+    "end": {
+      "year": 2033,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "The Long Arm",
+  "gap": "Governance",
+  "text": {
+    "brief": "A governor's trade office signs a memorandum in 2030 with a mainland province covering agriculture, education and \"smart city\" data. The province's partner office sits inside the United Front Work Department.",
+    "record": "The Justice Department charged a former aide to two New York governors in September 2024 with acting as an undisclosed agent of the People's Republic. The United Front Work Department runs the Party's outreach to foreign officials and communities. State governments carry no general duty to register agents of foreign principals.",
+    "reading": "The Party courts the parts of American government that federal law watches least. Trade missions, donations and sister-state pacts build friends inside governors' offices, and over time the friends shape decisions from inside. This is Stratagem 25, replace the beams with rotten timbers.",
+    "coreEvent": "A state official faces charges for acting as an undisclosed agent of the People's Republic before 2034.",
+    "gapText": "Architecture Governance. Federal law registers foreign agents in Washington and stops at the statehouse door.",
+    "fix": "Extend disclosure to state government and publish every foreign memorandum. Sunlight works better than bans."
+  },
+  "status": "unsourced"
+}

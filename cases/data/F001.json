@@ -1,0 +1,41 @@
+{
+  "id": "F001",
+  "kind": "futures",
+  "title": "The Quiet Strait",
+  "tier": 2,
+  "dimension": "Time",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S16"
+  ],
+  "theater": [
+    "Kinetic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2027,
+      "month": 3
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Taiwan",
+  "gap": "Governance",
+  "text": {
+    "brief": "On a gray morning in November 2026, a duty officer at Taiwan's defense ministry logs the quietest month of PLA flights in two years. Her screen still shows two China Coast Guard cutters holding station east of Hualien.",
+    "record": "PLA air activity near Taiwan fell 69 percent year on year in August 2026, and no flights appeared during President Trump's visit to Beijing in May ([Taiwan Security Monitor](https://tsm.schar.gmu.edu/strait-snapshot-august-2026-update/)). Two New Zealand navy ships transited the Strait in late September. The Acting Secretary of the Navy said in May that a $14 billion arms package waited on the Iran war, and September reports said its release may slip past the APEC summit in Shenzhen ([Al Jazeera](https://www.aljazeera.com/news/2026/5/22/us-pausing-14bn-arms-sale-to-taiwan-due-to-iran-war-navy-chief-says)).",
+    "reading": "The Party lowers the temperature while the summit calendar runs from Washington in September to Shenzhen in November and Miami in December. Each quiet week becomes an argument for one more week of delay on arms, transits and official visits. Once the calendar clears, the pressure returns against a Taiwan that waited. This is Stratagem 16, let the enemy off in order to catch them.",
+    "coreEvent": "Washington holds the pending arms package past the APEC summit of November 18 and 19, 2026.",
+    "gapText": "Architecture Governance. Arms decisions follow the diplomatic calendar, so the Party sets their timing by setting the mood.",
+    "fix": "Decouple arms sales from summitry by statute or standing practice. The Six Assurances of 1982 already rule out prior consultation with the People's Republic on arms sales, and a fixed calendar makes that promise operational."
+  },
+  "status": "sourced"
+}

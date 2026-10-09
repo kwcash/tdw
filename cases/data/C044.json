@@ -1,0 +1,37 @@
+{
+  "id": "C044",
+  "kind": "catalog",
+  "title": "Lushan",
+  "tier": 3,
+  "dimension": "Entropy",
+  "stage": "Consume",
+  "stratagems": [
+    "S26"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Biological"
+  ],
+  "spine": "Biological",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1959,
+      "month": null
+    },
+    "end": {
+      "year": 1959,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On July 14, 1959, Marshal Peng Dehuai sent Mao a private letter at the Lushan conference warning that the Great Leap Forward was failing.",
+    "record": "Mao circulated the letter and attacked Peng on July 23, and the conference purged him as the leader of an anti-Party clique. The campaign against right opportunism that followed punished cadres who reported shortfalls, and grain procurement continued at inflated targets. Scholarly estimates of deaths in the famine of 1959 to 1961 range from about fifteen million to forty-five million.",
+    "reading": "Lushan proves that coherence and entropy are separate dimensions. Every institution pulled one way, and the system produced the deadliest famine in recorded history because it punished the one signal that could have stopped it.",
+    "gapText": "Data Architecture. The Party had perfect vertical alignment and no horizontal feedback, so false reports moved up and grain moved out.",
+    "fix": "Protect the channel that carries bad news, and verify reports against independent measures before they drive policy."
+  },
+  "status": "unsourced"
+}

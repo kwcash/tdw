@@ -1,0 +1,37 @@
+{
+  "id": "C068",
+  "kind": "catalog",
+  "title": "The Yinhe",
+  "tier": 4,
+  "dimension": "Asymmetry",
+  "stage": "Defense",
+  "stratagems": [
+    "S20"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Legal"
+  ],
+  "spine": "Information",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1993,
+      "month": null
+    },
+    "end": {
+      "year": 1993,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "In the summer of 1993 Captain Zhang Bingxi sailed the freighter Yinhe toward the Persian Gulf with American warships and aircraft shadowing it.",
+    "record": "American intelligence reported that the ship carried thiodiglycol and thionyl chloride, two precursors of mustard gas, bound for Iran. Washington asked the Gulf states to deny the ship port entry, and it waited at sea for weeks. A joint Saudi and American inspection at Dammam in early September found neither chemical in its 628 containers. The United States declined to apologize.",
+    "reading": "Washington accused in public before it verified, and the Party has taught the incident ever since as proof of American hegemony. The error muddied later accusations, including the 1997 sanctions on firms in the People's Republic that did sell chemical weapons precursors to Iran, which is Stratagem 20.",
+    "gapText": "Data Architecture. A single intelligence report moved to a public accusation with no second source and no plan for a miss.",
+    "fix": "Verify before accusing in public, and publish the evidence and any correction with equal weight when a charge fails."
+  },
+  "status": "unsourced"
+}

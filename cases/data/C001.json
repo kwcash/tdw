@@ -1,0 +1,37 @@
+{
+  "id": "C001",
+  "kind": "catalog",
+  "title": "The Gate at Canton",
+  "tier": 1,
+  "dimension": "Topology",
+  "stage": "Defense",
+  "stratagems": [
+    "S22"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Economic",
+  "opponent": "The opium traders",
+  "when": {
+    "start": {
+      "year": 1784,
+      "month": null
+    },
+    "end": {
+      "year": 1784,
+      "month": null
+    }
+  },
+  "gap": "Business",
+  "text": {
+    "brief": "In August 1784 Samuel Shaw, supercargo of the Empress of China, anchored at Whampoa and learned the terms of the only gate the Qing court kept open to the West.",
+    "record": "The Qing court confined Western trade to Canton from 1757. Every foreign ship needed a licensed hong merchant to stand surety for its conduct and its duties, and foreigners lived in a strip of factories outside the city walls for the trading season. The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules.",
+    "reading": "The security merchant made one licensed person answer for every guest, a gate built on verification rather than trust. The gate held until opium moved outside it and the gatekeepers took a cut, which is where most later gates have failed.",
+    "gapText": "Business Architecture. The gatekeepers earned from the traffic their office existed to stop.",
+    "fix": "Verify every request at the gate and audit the gatekeeper's income, the discipline zero trust now names."
+  },
+  "status": "unsourced"
+}

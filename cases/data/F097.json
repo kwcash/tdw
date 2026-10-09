@@ -1,0 +1,42 @@
+{
+  "id": "F097",
+  "kind": "futures",
+  "title": "The Orbital Blockade",
+  "tier": 5,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S30"
+  ],
+  "theater": [
+    "Kinetic",
+    "Economic",
+    "Legal",
+    "Cyber"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2038,
+      "month": null
+    },
+    "end": {
+      "year": 2049,
+      "month": null
+    }
+  },
+  "world": "Machine Mandate",
+  "horizon": 3,
+  "arc": "The High Ground",
+  "gap": "Governance",
+  "text": {
+    "brief": "A network engineer in Taipei watches her backup satellite link drop in 2043 as mainland traffic control reroutes every beam over the Strait. The Party calls it collision avoidance.",
+    "record": "The mainland plans two low-orbit constellations, Guowang with about 13,000 satellites and Qianfan with about 14,000. It flew more than 90 orbital launches in 2025, a national record. Together the two constellations had only a few hundred satellites in orbit by 2026.",
+    "reading": "The Party arrives in orbit as one operator among many and becomes the traffic authority. Its shells fill the lanes, its rules become the norm and Taiwan's links pass through its permission. This is Stratagem 30, make the host and the guest exchange places.",
+    "coreEvent": "Before 2045 the Party's low-orbit constellations pass 10,000 satellites, and it publishes traffic rules that other operators must follow near its shells.",
+    "gapText": "Architecture Governance. No binding international rule governs traffic in low orbit, so the operator with the most satellites writes the rules.",
+    "fix": "Write orbital traffic rules with allies now and spread every critical link across several constellations."
+  },
+  "status": "unsourced"
+}

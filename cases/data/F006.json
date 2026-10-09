@@ -1,0 +1,42 @@
+{
+  "id": "F006",
+  "kind": "futures",
+  "title": "The Matsu Cable",
+  "tier": 2,
+  "dimension": "Topology",
+  "stage": "Control",
+  "stratagems": [
+    "S1"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Legal",
+    "Cyber"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Protocols and Ports",
+  "gap": "Technology",
+  "text": {
+    "brief": "At 3:40 a.m. in January 2027, a network operations center in Taipei loses the signal on a cable to Matsu. Radar shows a sand barge under a flag of convenience dragging its anchor across the route at four knots.",
+    "record": "A Taiwanese court sentenced the captain of the Hong Tai 58 to three years in June 2025 for cutting a Taiwan-Penghu cable ([GlobalSecurity](https://www.globalsecurity.org/wmd/library/news/taiwan/2025/taiwan-250612-cna05.htm)). In March 2026 the barge Hai Hong Gong 66 allegedly damaged the Taiwan-Matsu No. 3 cable, and prosecutors opened an investigation ([Focus Taiwan](https://focustaiwan.tw/society/202604010018)). The PLA rehearsed a blockade of Keelung and Kaohsiung in its Justice Mission 2025 exercise in December 2025.",
+    "reading": "The Party cuts cables through vessels it can disown. Each cut looks like seamanship gone wrong, and each one tests repair times, backup capacity and the courts. The pattern teaches the observer to see accidents. When a crisis comes, a dozen accidents in one night can isolate the outlying islands and slow Taiwan's link to the world. This is Stratagem 1, deceive the heavens to cross the sea.",
+    "coreEvent": "Another Taiwan submarine cable suffers damage involving a mainland-crewed vessel before 2029.",
+    "gapText": "Technology Architecture. Taiwan's links to its islands and the world run through too few cables and too few repair ships.",
+    "fix": "Pair redundancy with prosecution. Put sensors on every corridor and open a case for every cut. Backup capacity makes each cut survivable."
+  },
+  "status": "sourced"
+}

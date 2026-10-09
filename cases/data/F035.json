@@ -1,0 +1,42 @@
+{
+  "id": "F035",
+  "kind": "futures",
+  "title": "The Silicon Shield Thins",
+  "tier": 4,
+  "dimension": "Resonance",
+  "stage": "Accommodate",
+  "stratagems": [
+    "S33"
+  ],
+  "theater": [
+    "Economic",
+    "Information",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2034,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Taiwan",
+  "gap": "Business",
+  "text": {
+    "brief": "A graduate student in Hsinchu watches a viral video in 2031 that splices a TSMC plant opening in Arizona with footage of the fall of Kabul. The caption asks who America will leave behind once it has the chips.",
+    "record": "TSMC began volume production in Arizona in late 2024 and plans more advanced plants there. Taiwan still makes most of the world's leading-edge chips. Surveys in Taiwan have long shown doubt that the United States would fight for the island.",
+    "reading": "The Party turns an American success into a Taiwanese fear. Each fab that moves to Arizona becomes proof, in the Party's telling, that Washington is packing to leave. Doubt in Taipei and impatience in Washington feed each other. This is Stratagem 33, sow discord among the enemy.",
+    "coreEvent": "TSMC begins volume production at 2 nanometers or smaller in Arizona before 2030.",
+    "gapText": "Business Architecture. Chip policy moved production without a design for the confidence the production used to carry.",
+    "fix": "Tie every relocation to a matching commitment that keeps Taiwan's stake in the alliance visible and permanent."
+  },
+  "status": "unsourced"
+}

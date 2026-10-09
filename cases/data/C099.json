@@ -1,0 +1,37 @@
+{
+  "id": "C099",
+  "kind": "catalog",
+  "title": "Ilham Tohti",
+  "tier": 5,
+  "dimension": "Coherence",
+  "stage": "Consume",
+  "stratagems": [
+    "S18"
+  ],
+  "theater": [
+    "Information",
+    "Legal",
+    "Cultural"
+  ],
+  "spine": "Cultural",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2013,
+      "month": null
+    },
+    "end": {
+      "year": 2014,
+      "month": null
+    }
+  },
+  "gap": "Principles",
+  "text": {
+    "brief": "On January 15, 2014, police took the economist Ilham Tohti from his home in Beijing.",
+    "record": "Tohti taught at Minzu University and ran Uyghur Online, a website that carried debate between Uyghurs and Han Chinese about policy in Xinjiang. A court in Urumqi sentenced him to life in prison for separatism in September 2014, and seven of his students received prison terms. He won the Václav Havel Prize and the Sakharov Prize in 2019. Mass detention of Uyghurs in camps began about three years after his trial.",
+    "reading": "The Party cast the moderate who argued for its own autonomy laws as the ringleader of separatism, which is Stratagem 18. Removing the bridge came first, and the camps came after.",
+    "gapText": "Architecture Principles. The defenders treated a moderate's life sentence as a single human rights case rather than as a warning of what the state intended for his people.",
+    "fix": "Read the jailing of moderates as an early warning, and prepare sanctions and trade rules before the mass action comes."
+  },
+  "status": "unsourced"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "F034",
+  "kind": "futures",
+  "title": "The Night of the Drones",
+  "tier": 5,
+  "dimension": "Phase",
+  "stage": "Consume",
+  "stratagems": [
+    "S18"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological",
+    "AI and Cognitive"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Taiwan",
+  "gap": "Governance",
+  "text": {
+    "brief": "At 2:15 a.m. in the autumn of 2033, a watch officer in Taipei sees a swarm of small drones rise from a cargo ship in Keelung harbor. Twenty minutes later a video of Taiwan's president announcing a ceasefire plays on every mainland platform, and the president is still asleep.",
+    "record": "Taiwan's courts have convicted presidential guards of spying for the People's Republic. The PLA fielded large numbers of drones and unmanned systems at its parade of September 3, 2025. Taiwan passed a six-year drone procurement act in August 2026 ([AEI](https://www.aei.org/commentary/china-taiwan-update-august-28-2026/)).",
+    "reading": "The Party aims the first night at the people who decide. Drones, agents and a synthetic surrender message try to leave the island without a voice before its forces move. If the voice survives, the operation fails. This is Stratagem 18, capture the ringleader to disband the bandits.",
+    "coreEvent": "The PLA attempts a strike on Taiwan's national leadership before 2036.",
+    "gapText": "Architecture Governance. Taiwan's line of command runs through a few buildings and a few people, and no tested procedure proves who speaks for the state after a strike.",
+    "fix": "Write the succession in law, spread it across places and people, and give every citizen a way to verify a real order."
+  },
+  "status": "sourced"
+}

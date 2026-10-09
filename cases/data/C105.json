@@ -1,0 +1,37 @@
+{
+  "id": "C105",
+  "kind": "catalog",
+  "title": "ZTE",
+  "tier": 6,
+  "dimension": "Topology",
+  "stage": "Extract",
+  "stratagems": [
+    "S21"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Cyber"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2018,
+      "month": null
+    },
+    "end": {
+      "year": 2018,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "In April 2018 Commerce Secretary Wilbur Ross barred American companies from selling parts to ZTE for seven years.",
+    "record": "ZTE had pleaded guilty in 2017 to shipping American technology to Iran and North Korea and had paid $1.19 billion. Commerce found that it had then lied about disciplining the employees responsible. Without American chips the company halted major operations within weeks. In June the administration settled for a $1 billion fine, $400 million in escrow and new leadership, and a Senate attempt to restore the ban died in conference.",
+    "reading": "One American rule stopped a national champion within weeks, and the settlement showed that the Party could buy the rule back at the leaders' table. ZTE shed its leadership and kept its business, which is Stratagem 21, and the Party poured money into domestic chips once it learned where the chokepoint lay.",
+    "gapText": "Architecture Governance. An enforcement action for sanctions violations became a bargaining chip in trade talks, so its force depended on the negotiation of the day.",
+    "fix": "Keep export enforcement out of trade negotiations, and require any settlement of a denial order to meet published terms."
+  },
+  "status": "unsourced"
+}

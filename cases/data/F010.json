@@ -1,0 +1,41 @@
+{
+  "id": "F010",
+  "kind": "futures",
+  "title": "The Lithography Walkout",
+  "tier": 3,
+  "dimension": "Agency",
+  "stage": "Extract",
+  "stratagems": [
+    "S18"
+  ],
+  "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2026,
+      "month": 10
+    },
+    "end": {
+      "year": 2028,
+      "month": 12
+    }
+  },
+  "world": null,
+  "horizon": 1,
+  "arc": "Technology IP",
+  "gap": "Governance",
+  "text": {
+    "brief": "A retired optics engineer in Veldhoven accepts a consulting contract that pays four times his pension. The client is a Shenzhen institute whose prototype makes extreme ultraviolet light and has not yet printed a chip.",
+    "record": "Reuters reported in December 2025 that former ASML engineers helped build a prototype EUV machine in Shenzhen that produces the light but no chips ([Engadget](https://www.engadget.com/big-tech/china-reportedly-has-a-prototype-euv-machine-built-by-ex-asml-employees-235833756.html)). As of August 2026 the tool had not processed a wafer. Dutch and American export controls bar the sale of EUV tools to the mainland and do little to stop the engineers who know how to build them.",
+    "reading": "Export controls stop machines at the border and let people walk through. The Party's talent programs recruit the few hundred engineers who hold the process knowledge for light sources, optics and stages. Each hire carries years of tacit know-how that no export license covers. This is Stratagem 18, capture the ringleader to disband the bandits.",
+    "coreEvent": "Credible reporting confirms that a mainland-built EUV tool has exposed production wafers before 2029.",
+    "gapText": "Architecture Governance. Export controls govern machines and ignore the retired people who carry the machines in their heads.",
+    "fix": "Give the critical few a better offer than the recruiter's, and apply narrow, conduct-based rules to transfers of process knowledge. Ancestry and nationality play no part in the test."
+  },
+  "status": "sourced"
+}

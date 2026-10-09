@@ -1,0 +1,37 @@
+{
+  "id": "C058",
+  "kind": "catalog",
+  "title": "The Taiwan Relations Act",
+  "tier": 3,
+  "dimension": "Time",
+  "stage": "Defense",
+  "stratagems": [
+    "S19"
+  ],
+  "theater": [
+    "Kinetic",
+    "Legal",
+    "Association"
+  ],
+  "spine": "Legal",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1979,
+      "month": null
+    },
+    "end": {
+      "year": 1979,
+      "month": null
+    }
+  },
+  "gap": "Governance",
+  "text": {
+    "brief": "On April 10, 1979, Jimmy Carter signed a law that Congress had written to fill the space his normalization left open.",
+    "record": "Recognition of the People's Republic on January 1, 1979 put the defense treaty with Taipei on a year's notice. The administration sent Congress a bill that said little about security, and Congress rewrote it. The Act treats any effort to decide Taiwan's future by other than peaceful means, including boycotts and embargoes, as a threat to the peace of the Western Pacific and of grave concern to the United States. It commits Washington to provide defensive arms, and it created the American Institute in Taiwan to carry relations without an embassy. The House passed the final bill 339 to 50, and the Senate 85 to 4.",
+    "reading": "The Party's three conditions for normalization aimed to pull the firewood from under Taipei's defense, which is Stratagem 19, and Congress put the firewood back by statute. The Act has outlasted every administration since, because a statute binds each executive whatever the preference of the day.",
+    "gapText": "Architecture Governance. Congress took ownership of a commitment the executive had set aside and wrote it into law.",
+    "fix": "Write every security commitment that must outlast an administration into statute, with a named office to carry it."
+  },
+  "status": "unsourced"
+}

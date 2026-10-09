@@ -1,0 +1,37 @@
+{
+  "id": "C089",
+  "kind": "catalog",
+  "title": "The ASAT Test",
+  "tier": 5,
+  "dimension": "Criticality",
+  "stage": "Doctrine",
+  "stratagems": [
+    "S13"
+  ],
+  "theater": [
+    "Kinetic",
+    "Information",
+    "Data and Surveillance"
+  ],
+  "spine": "Kinetic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2007,
+      "month": null
+    },
+    "end": {
+      "year": 2007,
+      "month": null
+    }
+  },
+  "gap": "Technology",
+  "text": {
+    "brief": "In January 2007 Nicholas Johnson, NASA's chief scientist for orbital debris, began counting the fragments of a weather satellite that a missile had shattered over the mainland.",
+    "record": "The missile rose from the Xichang area on January 11 and struck the retired Fengyun-1C at about 865 kilometers. The Party said nothing for twelve days. The strike left more than three thousand trackable fragments, the largest debris cloud on record, and much of it will orbit for decades. The Party formed the Strategic Support Force in 2015 to fight in space and cyberspace, and in 2024 it split that force into separate aerospace, cyber and information arms.",
+    "reading": "The test showed that American satellites sat within reach, and the silence kept Washington guessing about intent. Orbit is a system near its critical point, so one strike imposed a cost on every nation that uses it.",
+    "gapText": "Technology Architecture. American military and commercial power depended on satellites with no defense against a missile they could see coming.",
+    "fix": "Spread capability across many small satellites so that no single strike matters, and lead a ban on tests that create debris."
+  },
+  "status": "unsourced"
+}

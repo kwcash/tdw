@@ -1,0 +1,37 @@
+{
+  "id": "C025",
+  "kind": "catalog",
+  "title": "The Dixie Mission",
+  "tier": 2,
+  "dimension": "Resonance",
+  "stage": "Attract",
+  "stratagems": [
+    "S10"
+  ],
+  "theater": [
+    "Information",
+    "Psychological",
+    "Association"
+  ],
+  "spine": "Association",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 1944,
+      "month": null
+    },
+    "end": {
+      "year": 1944,
+      "month": null
+    }
+  },
+  "gap": "Data",
+  "text": {
+    "brief": "On July 22, 1944, Colonel David Barrett stepped off a C-47 at Yan'an at the head of the United States Army Observation Group.",
+    "record": "The Party hosted the observers with open access to its leaders and its base, and Mao told John Service that the Party wanted American cooperation after the war. Service's reports praised the Party's discipline and contrasted it with Nationalist corruption. Ambassador Patrick Hurley opposed working with the Party, and the mission's advocates later lost their careers in the purge of the China hands.",
+    "reading": "Yan'an ran the Attract stage on American officers, and the warmth was real enough to persuade honest men. The Party welcomed the observers it could host and leaned to the Soviet Union once it held power, which is Stratagem 10 on a five-year clock.",
+    "gapText": "Data Architecture. The observers saw what their host showed them, and no other channel tested it.",
+    "fix": "Pair every hosted visit with independent collection and read the host's access as an operation."
+  },
+  "status": "unsourced"
+}

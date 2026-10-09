@@ -1,0 +1,42 @@
+{
+  "id": "F039",
+  "kind": "futures",
+  "title": "The Humanoid Line",
+  "tier": 3,
+  "dimension": "Gradient",
+  "stage": "Attract",
+  "stratagems": [
+    "S24"
+  ],
+  "theater": [
+    "Economic",
+    "Cyber",
+    "AI and Cognitive",
+    "Data and Surveillance"
+  ],
+  "spine": "Economic",
+  "opponent": "The Party",
+  "when": {
+    "start": {
+      "year": 2030,
+      "month": null
+    },
+    "end": {
+      "year": 2035,
+      "month": null
+    }
+  },
+  "world": null,
+  "horizon": 2,
+  "arc": "Military-Civil Fusion",
+  "gap": "Application",
+  "text": {
+    "brief": "A warehouse manager in Memphis signs a lease in 2032 for forty humanoid robots from a mainland maker at half the price of any rival. The robots map the building on their first night and send the map to the vendor's cloud.",
+    "record": "Mainland factories install more industrial robots each year than the rest of the world combined. The Party's Fifteenth Five-Year Plan makes AI and advanced manufacturing central priorities. The Commerce Department barred mainland software from connected vehicles starting with model year 2027.",
+    "reading": "Cheap robots enter American warehouses, hospitals and homes with cameras, microphones and remote updates. The 2017 National Intelligence Law obliges their makers to help the state. Each robot is a sensor on the host's floor and a hand the vendor can move. This is Stratagem 24, borrow the road to conquer Guo.",
+    "coreEvent": "Mainland-made humanoid and service robots exceed a quarter of American unit sales before 2036.",
+    "gapText": "Application Architecture. Robots enter American buildings under rules written for dishwashers.",
+    "fix": "Apply one rule to every connected machine whatever its origin. Twin things, not people."
+  },
+  "status": "unsourced"
+}
