@@ -33,11 +33,11 @@
   "gap": "Governance",
   "text": {
     "brief": "Screeners pull a graduate student born in Houston from a boarding line in 2031, her fourth secondary search that year. The risk model that flags her weighs calls to an aunt in Chengdu, and no one outside the agency has read its rules.",
-    "record": "The Privacy and Civil Liberties Oversight Board has lacked a quorum since January 2025. Its one remaining member has served past her term since January 29, 2026. The State Department began reviewing the social media of every student visa applicant in June 2025, and agencies score travelers, applicants and employees with automated tools built on purchased data.",
+    "record": "The Privacy and Civil Liberties Oversight Board has lacked a quorum since January 2025 ([PCLOB statement, January 27, 2025](https://documents.pclob.gov/prod/Documents/EventsAndPress/290ce816-6560-4e92-95a2-a9afcc72f378/PCLOB%20press%20release%20(1-27-25).pdf)). Its one remaining member has served past her term since January 29, 2026. The State Department began reviewing the social media of every student visa applicant in June 2025, and agencies score travelers, applicants and employees with automated tools built on purchased data ([State Department: expanded screening and vetting for visa applicants](https://www.state.gov/releases/office-of-the-spokesperson/2025/06/announcement-of-expanded-screening-and-vetting-for-visa-applicants)).",
     "reading": "The Party profits when American security tools treat ancestry as risk. Each wrongful flag becomes a story in Party media aimed at the diaspora, and each story tells Chinese Americans that their own country sees them as suspects. This is Stratagem 33, sow discord among the enemy.",
     "coreEvent": "A federal court or inspector general finds that an automated vetting system used national origin or ancestry as a risk factor before 2033.",
     "gapText": "Architecture Governance. Automated vetting runs without a quorum to oversee it and without a path for a citizen to appeal.",
     "fix": "Publish the rules, review every automated flag and treat family ties as evidence of the Party's leverage, never of disloyalty."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

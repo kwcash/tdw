@@ -12,6 +12,7 @@ apply   writes the reviewed rows back:
           verdict supported | partial  with add_url  -> appends ([label](url)) to the sentence
           verdict unsupported                          -> appends [NEEDED: source]
           verdict contradicted                         -> leaves the text; the row stays in the sheet for the author
+          verdict unresolved                           -> leaves the text; `decide` logs that the source was checked and did not settle it
         Status becomes `sourced` when a case has a link. It never sets `verified`.
 Rows keep the sentence index, so edit the sheet, not the sentence column.
 """
@@ -23,7 +24,7 @@ SPLIT = re.compile(r'(?<=[.!?])(\s+)(?=[A-Z"“])')
 ABBR = re.compile(r'\b(Mr|Mrs|Dr|St|No|Inc|Corp|Ltd|Co|vs|Jr|Sr)\.$')
 CHECKABLE = re.compile(r'\d|\b(January|February|March|April|May|June|July|August|September|October|November|December)\b|\b(said|reported|announced|convicted|sentenced|sanctioned|signed|struck|ruled|added|issued|filed|expelled|closed)\b')
 FIELDS = ['id', 'idx', 'checkable', 'has_link', 'sentence', 'verdict', 'add_label', 'add_url', 'notes']
-VERDICTS = {'', 'supported', 'partial', 'unsupported', 'contradicted'}
+VERDICTS = {'', 'supported', 'partial', 'unsupported', 'contradicted', 'unresolved'}
 
 
 def sentences(text):

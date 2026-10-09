@@ -1,0 +1,288 @@
+[
+ {
+  "id": "F023",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "IIE Open Doors fast facts 2024",
+  "url": "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf",
+  "notes": "Open Doors 2024 fast facts (PDF): mainland China 277,398 students in 2023/24, down 4.2% from 289,526; world total 1,126,690. IIE is a nonprofit, not a government body; the survey is funded by the State Department's Bureau of Educational and Cultural Affairs."
+ },
+ {
+  "id": "F024",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Shen v. Commissioner, 11th Cir. No. 23-12737",
+  "url": "https://media.ca11.uscourts.gov/opinions/pub/files/202312737.pdf",
+  "notes": "Eleventh Circuit opinion in No. 23-12737 (Shen et al.): Chinese-citizen plaintiffs challenge Florida SB 264 (2023), which bars Chinese citizens domiciled in China from buying property in the state. Court opinion; read the panel's holding before citing the outcome."
+ },
+ {
+  "id": "F030",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "America's AI Action Plan (White House, July 2025)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+  "notes": "Plan text: 'publish evaluations of frontier models from the People's Republic of China for alignment with Chinese Communist Party talking points and censorship'. 'Federal evaluators' in our sentence is a compression."
+ },
+ {
+  "id": "F056",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "NCSC genomics fact sheet (2021) does not say BGI's prenatal test was developed with the PLA or sold in 50+ countries; it says BGI sold test kits to 180 countries by Aug 2020. The claim comes from 2021 Reuters reporting; look for the Reuters piece or a government document (DoD 1260H list entry for BGI Genomics, Commerce Entity List)."
+ },
+ {
+  "id": "F058",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Treasury TIC: major foreign holders of Treasury securities",
+  "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfhhis01.txt",
+  "notes": "Treasury's historical table of foreign holdings shows mainland China's monthly holdings in the 1,2xx to 1,3xx billion range with a high of 1,316.7 in the rows read, and the latest rows near 684 to 760 billion. Year labels for those rows were not in the snippets, so the 2013 peak and the 'nearly half' decline are consistent with the table but not confirmed from it."
+ },
+ {
+  "id": "F059",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Treasury fact sheet: one year of sanctions on Russia",
+  "url": "https://home.treasury.gov/news/press-releases/jy1298",
+  "notes": "Treasury (Feb 2023): REPO Task Force members 'immobilized about $300 billion worth of Russian Central Bank assets'. 'About half' of the reserves needs the pre-war total (about $630 billion) from the Bank of Russia, which this page does not give."
+ },
+ {
+  "id": "F059",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "World Gold Council (trade body): China gold market update, May 2026",
+  "url": "https://www.gold.org/goldhub/gold-focus/2026/05/china-gold-market-update-notable-rise-gold-reserves",
+  "notes": "Secondary (trade body). April 2026: the PBoC's 18th consecutive monthly gold addition, official holdings 2,322t, 9% of reserves. 'Since late 2022' and 'near 2,300 tonnes in 2025' are not on this page; the figure is for April 2026. A primary source is the PBoC reserve assets table or SAFE data."
+ },
+ {
+  "id": "F060",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Hong Kong Autonomy Act, Pub. L. 116-149",
+  "url": "https://ofac.treasury.gov/media/44966/download",
+  "notes": "Enacted text, signed July 14, 2020. Section 5 requires Treasury to identify foreign persons that materially contribute to the failure to meet obligations under the Joint Declaration or Basic Law, and foreign financial institutions that knowingly conduct significant transactions with them; Section 6 provides the sanctions."
+ },
+ {
+  "id": "F060",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Treasury, HKAA Section 5(b) report",
+  "url": "https://ofac.treasury.gov/media/918616/download?inline=",
+  "notes": "Treasury's Section 5(b) report: 'As of February 1, 2022, Treasury has not identified any FFI that has knowingly conducted a significant transaction with a foreign person' identified under 5(a). Covers the period to February 2022 only."
+ },
+ {
+  "id": "F061",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "PCLOB statement, January 27, 2025",
+  "url": "https://documents.pclob.gov/prod/Documents/EventsAndPress/290ce816-6560-4e92-95a2-a9afcc72f378/PCLOB%20press%20release%20(1-27-25).pdf",
+  "notes": "PCLOB spokesman: the White House 'terminated Chair Sharon Bradford Franklin, and Members Ed Felten and Travis LeBlanc'; 'remaining Member Beth Williams' continues. That leaves one member; the word 'quorum' is not on the page. Confirm the current state on pclob.gov before presenting 'since January 2025' as unbroken to October 2026."
+ },
+ {
+  "id": "F061",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "PCLOB Board page shows Beth A. Williams 'Board Member, February 2022 - Present' under a 'Previous Board Member' heading; the term-end date of January 29, 2026 is not on the page and '2026' does not appear. Left unlinked. A term end plus holdover needs the Senate confirmation record or PCLOB's statute (42 U.S.C. 2000ee)."
+ },
+ {
+  "id": "F061",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "State Department: expanded screening and vetting for visa applicants",
+  "url": "https://www.state.gov/releases/office-of-the-spokesperson/2025/06/announcement-of-expanded-screening-and-vetting-for-visa-applicants",
+  "notes": "State (June 2025): expanded 'comprehensive and thorough vetting, including online presence, of all student and exchange visitor applicants in the F, M, and J' categories. The second half, agencies scoring travelers, applicants and employees with automated tools built on purchased data, is not on this page."
+ },
+ {
+  "id": "F062",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "justice.gov speech page returned HTTP 200 with no readable text on the runner. The date of the China Initiative's end (Olsen remarks, Feb 23, 2022) is widely reported; get the page read by a person or find a mirror."
+ },
+ {
+  "id": "F062",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "pnas.org returned HTTP 403 on the runner. Find the paper via PMC or Europe PMC."
+ },
+ {
+  "id": "F063",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "MOFCOM-GAC Announcement 23 of 2023 (gallium, germanium)",
+   "MOFCOM-GAC Announcement 39 of 2023 (graphite)",
+   "MOFCOM-GAC Announcement 33 of 2024 (antimony)",
+   "MOFCOM-GAC Announcement 18 of 2025 (rare earths)"
+  ],
+  "url": [
+   "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html",
+   "https://www.mofcom.gov.cn/zcfb/blgg/art/2023/art_f6b1bc49e2c8482f8eb749012bc66dec.html",
+   "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html",
+   "https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html"
+  ],
+  "notes": "Official PRC Ministry of Commerce pages. No. 23 (July 3, 2023): export controls on gallium and germanium items from Aug 1, 2023. No. 39 (Oct 20, 2023): optimizes the temporary graphite controls. No. 33 (Aug 15, 2024): antimony. No. 18 (April 4, 2025): samarium, gadolinium, terbium, dysprosium, lutetium, scandium, yttrium. The page text read lists samarium and dysprosium explicitly; check the full list of seven. These are PRC statements of its own policy."
+ },
+ {
+  "id": "F063",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "MOFCOM Announcement 61 of 2025",
+   "MOFCOM Announcement 70 of 2025"
+  ],
+  "url": [
+   "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html",
+   "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html"
+  ],
+  "notes": "No. 61 (Oct 9, 2025): a license is required to export foreign-made items containing or mixed with Chinese-origin listed items worth 0.1% or more of the product's value. No. 70 (Nov 7, 2025): Nos. 55, 56, 57, 58, 61 and 62 are suspended from the date of issue until Nov 10, 2026. 'Any product in the world' is a compression of the foreign-made-item rule."
+ },
+ {
+  "id": "F064",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "NIST: first three finalized post-quantum standards",
+  "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+  "notes": "NIST news release of August 13, 2024: FIPS 203, 204 and 205."
+ },
+ {
+  "id": "F064",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "NIST IR 8547 (initial public draft)",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf",
+  "notes": "Draft transition table: ECDSA and RSA at 112 bits of security strength 'deprecated after 2030, disallowed after 2035'; the draft cites 2035 as the NSM-10 target. Publication date of the draft (Nov 2024) and that it was still a draft in August 2026 are not on the page."
+ },
+ {
+  "id": "F064",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Physical Review Letters (aps.org) returned HTTP 403 on the runner. Try the arXiv preprint."
+ },
+ {
+  "id": "F065",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Duke Sanford Tech Policy: data brokers and the sale of data on U.S. military personnel",
+  "url": "https://techpolicy.sanford.duke.edu/data-brokers-and-the-sale-of-data-on-us-military-personnel/",
+  "notes": "University research center, not a government body. The team bought data on military members from US brokers 'for as low as $0.12 per record'. The 2023 date of purchase was not in the snippet read."
+ },
+ {
+  "id": "F065",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The FTC press-release URL returned HTTP 404 on the runner; the URL may be mistyped or moved. Search ftc.gov for the February 2026 PADFAA letters."
+ },
+ {
+  "id": "F066",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Secure World Foundation: Chinese RPO fact sheet",
+  "url": "https://www.swfound.org/publications-and-reports/chinese-military-and-intelligence-rendezvous-and-proximity-operations-fact-sheet",
+  "notes": "Secondary (non-profit). Describes SJ-21 and SJ-25 among missions used to demonstrate 'inspection, surveillance, docking, maneuvering, and possible refueling'. The July 2025 GEO docking and the separation date are not on the page text read."
+ },
+ {
+  "id": "F066",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "CSIS panel transcript (secondary) mentions 'the refueling, the dogfighting' as headlines but not the Space Force vice chief or five satellites in March 2025. spaceforce.mil returned HTTP 403."
+ },
+ {
+  "id": "F067",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "NASA: Artemis II crew returns",
+   "NASA: Artemis program updates"
+  ],
+  "url": [
+   "https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/",
+   "https://www.nasa.gov/news-release/nasa-adds-mission-to-artemis-lunar-program-updates-architecture/"
+  ],
+  "notes": "NASA: Artemis II splashed down April 10, 2026 after a 10-day trip around the Moon with four crew. NASA: 'Artemis IV landing in 2028' with Artemis III now a 2027 low-Earth-orbit test."
+ },
+ {
+  "id": "F067",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Xinhua (Aug 19, 2026) reports Chang'e-7 being prepared at Wenchang; it does not mention a postponement to 2027 or a scrub on August 24. The 2030 crewed-landing goal is also not on that page."
+ },
+ {
+  "id": "F067",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "State Department: Artemis Accords",
+  "url": "https://www.state.gov/bureau-of-oceans-and-international-environmental-and-scientific-affairs/artemis-accords",
+  "notes": "State page: 'As of September 2026, there were 76 signatories'. The specific date (September 25) is not on the page."
+ },
+ {
+  "id": "F068",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Executive Order 14186, The Iron Dome for America",
+  "url": "https://www.federalregister.gov/documents/2025/02/03/2025-02182/the-iron-dome-for-america",
+  "notes": "Signed January 27, 2025; directs a 'next-generation missile defense shield'. The $185 billion program-lead estimate is not on this page."
+ },
+ {
+  "id": "F068",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "cbo.gov returned HTTP 403 on the runner. Retry via an alternate URL."
+ },
+ {
+  "id": "F069",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "LBNL, United States Data Center Energy Usage Report: 2025 Update",
+  "url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+  "notes": "Lawrence Berkeley National Laboratory (DOE national lab), published 2026-06-18: scenarios 'between 9.5 and 15.3% of total U.S. electricity use by 2030'. The 4.7% share for 2024 was not read."
+ },
+ {
+  "id": "F070",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "PRC Ministry of Foreign Affairs: Xi-Biden meeting in Lima",
+  "url": "https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202411/t20241117_11527672.html",
+  "notes": "PRC readout, Nov 2024: 'The two Presidents stressed the need to maintain human control over the decision to use nuclear weapons'. A PRC statement of the meeting; the White House readout is the US counterpart."
+ },
+ {
+  "id": "F070",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "White House fact sheet: state visit, September 2026",
+  "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+  "notes": "White House fact sheet: the two countries 'established the U.S.-China Super Intelligence (SI) Dialogue' and agreed to 'a bilateral communication channel for SI incidents'. A US government description of the visit; the PRC account of the same terms was not read."
+ },
+ {
+  "id": "F070",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "White House fact sheet: state visit, September 2026",
+  "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+  "notes": "Fact sheet: 'The next exchange will occur by November 2026.' Our sentence says 'for November 2026'; the page says 'by'."
+ },
+ {
+  "id": "F070",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "war.gov returned HTTP 403 on the runner; the Ryder briefing text has not been read."
+ }
+]

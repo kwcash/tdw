@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "A program manager at a missile plant in Arizona learns in 2030 that her seeker line will stop in six weeks. The shortage covers a magnet, a wafer and a lens from suppliers three tiers down whose names no one in her office knew.",
-    "record": "The Party's export controls grew from gallium and germanium in 2023 to graphite, antimony and seven heavy rare earths by April 2025. Its October 2025 rules reached any product in the world with 0.1 percent or more of mainland rare earth content, and the Party suspended them under the trade truce until November 10, 2026. The licensing of heavy rare earths never lapsed, and the general licenses issued from December 2025 exclude defense and aerospace buyers.",
+    "record": "The Party's export controls grew from gallium and germanium in 2023 to graphite, antimony and seven heavy rare earths by April 2025 ([MOFCOM-GAC Announcement 23 of 2023 (gallium, germanium)](https://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html); [MOFCOM-GAC Announcement 39 of 2023 (graphite)](https://www.mofcom.gov.cn/zcfb/blgg/art/2023/art_f6b1bc49e2c8482f8eb749012bc66dec.html); [MOFCOM-GAC Announcement 33 of 2024 (antimony)](https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html); [MOFCOM-GAC Announcement 18 of 2025 (rare earths)](https://english.mofcom.gov.cn/Policies/AnnouncementsOrders/art/2025/art_0dd87cbee7b045bf93fabe6ab2faceee.html)). Its October 2025 rules reached any product in the world with 0.1 percent or more of mainland rare earth content, and the Party suspended them under the trade truce until November 10, 2026 ([MOFCOM Announcement 61 of 2025](https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_7fc9bff0fb4546ecb02f66ee77d0e5f6.html); [MOFCOM Announcement 70 of 2025](https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_b1ec77dd3f0d4762952904df7cdaadec.html)). The licensing of heavy rare earths never lapsed, and the general licenses issued from December 2025 exclude defense and aerospace buyers.",
     "reading": "The Party maps America's dependencies past the first tier and pulls one thread at a time. Each control looks narrow, and together they chain into a campaign that can stop a missile line or a shipyard. This is Stratagem 35, chain the stratagems.",
     "coreEvent": "A mainland export control halts production on an American defense program for at least a month before 2034.",
     "gapText": "Data Architecture. No American agency holds a map of supply past the first tier, and the Party maps every tier.",
     "fix": "Build the map, keep it current and give it to the firms and program offices that must act on it."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

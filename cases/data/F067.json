@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A NASA mission planner in 2030 watches mainland landers settle on the rim of a south-pole crater that her team had picked for Artemis. The China National Space Administration announces a safety zone around the site the same day.",
-    "record": "Artemis II flew four astronauts around the Moon in April 2026, and NASA moved its first landing to Artemis IV, targeted for 2028. The Party aims to land astronauts by 2030 and postponed its Chang'e-7 south-pole probe to 2027 after a scrub on August 24, 2026. Seventy-six nations had signed the Artemis Accords by September 25, 2026.",
+    "record": "Artemis II flew four astronauts around the Moon in April 2026, and NASA moved its first landing to Artemis IV, targeted for 2028 ([NASA: Artemis II crew returns](https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/); [NASA: Artemis program updates](https://www.nasa.gov/news-release/nasa-adds-mission-to-artemis-lunar-program-updates-architecture/)). The Party aims to land astronauts by 2030 and postponed its Chang'e-7 south-pole probe to 2027 after a scrub on August 24, 2026. Seventy-six nations had signed the Artemis Accords by September 25, 2026 ([State Department: Artemis Accords](https://www.state.gov/bureau-of-oceans-and-international-environmental-and-scientific-affairs/artemis-accords)).",
     "reading": "The Party arrives at the lunar south pole as a guest of the Outer Space Treaty and stays as host. Its landers take the best crater rims under safety zones, and its research station invites partners who accept its rules. This is Stratagem 30, make the host and the guest exchange places.",
     "coreEvent": "Mainland astronauts walk on the Moon before any American crew returns there.",
     "gapText": "Architecture Governance. No agreed rule says how large a safety zone may be or how long it may last.",
     "fix": "Set limits on safety zones with partners now and register every site in the open before landing."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

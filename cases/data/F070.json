@@ -31,11 +31,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A watch officer at Indo-Pacific Command sees a mainland drone swarm turn toward a carrier group in 2032. The swarm's controllers have not answered the incident channel in eleven minutes, and the carrier's own targeting software recommends firing.",
-    "record": "The two presidents agreed in November 2024 that humans, not AI, should control decisions to use nuclear weapons. During Xi Jinping's state visit in September 2026 the two governments launched what the White House called the Super Intelligence Dialogue, with a channel for reporting incidents. They set its next meeting for November 2026. The PLA declined a call from the Secretary of Defense during the balloon crisis of February 2023.",
+    "record": "The two presidents agreed in November 2024 that humans, not AI, should control decisions to use nuclear weapons ([PRC Ministry of Foreign Affairs: Xi-Biden meeting in Lima](https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202411/t20241117_11527672.html)). During Xi Jinping's state visit in September 2026 the two governments launched what the White House called the Super Intelligence Dialogue, with a channel for reporting incidents ([White House fact sheet: state visit, September 2026](https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/)). They set its next meeting for November 2026 ([White House fact sheet: state visit, September 2026](https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/)). The PLA declined a call from the Secretary of Defense during the balloon crisis of February 2023.",
     "reading": "The Party may use the dialogue to slow American military AI while its own programs stay dark. Both governments still fear an accident that neither intended. No stratagem applies, because the hazard belongs to both sides.",
     "coreEvent": "The United States and the People's Republic sign an agreement to notify each other of incidents involving military AI before 2033.",
     "gapText": "Architecture Governance. The crisis channel depends on a person picking up a phone, and machines now act faster than the call.",
     "fix": "Build a channel for machine-speed incidents with agreed signals, a shared log and a mutual pause."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "An Air Force counterintelligence officer in 2030 finds a dataset for sale that tracks the phones that sleep each night at a bomber base. The buyer of record is a marketing firm in Dubai with two employees.",
-    "record": "Researchers at Duke University bought data on active-duty service members from brokers in 2023 for as little as 12 cents a record. Congress barred brokers in 2024 from selling Americans' sensitive data to foreign adversaries, including location data and military status. The FTC sent warning letters under that law to 13 brokers in February 2026.",
+    "record": "Researchers at Duke University bought data on active-duty service members from brokers in 2023 for as little as 12 cents a record ([Duke Sanford Tech Policy: data brokers and the sale of data on U.S. military personnel](https://techpolicy.sanford.duke.edu/data-brokers-and-the-sale-of-data-on-us-military-personnel/)). Congress barred brokers in 2024 from selling Americans' sensitive data to foreign adversaries, including location data and military status. The FTC sent warning letters under that law to 13 brokers in February 2026.",
     "reading": "The Party does not need to hack what it can buy. A shell company in a third country licenses location feeds, and the pattern of life of every pilot near a base arrives by contract. This is Stratagem 12, take the opportunity to pilfer a goat.",
     "coreEvent": "Investigators find that a Party-linked buyer obtained location data on American service members from a commercial broker before 2033.",
     "gapText": "Data Architecture. The law bars sales to adversaries, and a chain of resellers hides the final buyer.",
     "fix": "Hold every seller in the chain liable for where the data ends up, and prove it with test purchases."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }
