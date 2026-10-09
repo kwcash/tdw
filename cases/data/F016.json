@@ -37,5 +37,14 @@
     "gapText": "Business Architecture. Two federal lists name the same threat, and only one binds the money.",
     "fix": "Harmonize designations across Defense, Commerce and Treasury, and give every listed firm a clear route off the list."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "03-attract-the-borrowed-knife",
+        "n": 12,
+        "fit": "same"
+      }
+    ]
+  }
 }

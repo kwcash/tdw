@@ -37,5 +37,14 @@
     "gapText": "Architecture Governance. Arms decisions follow the diplomatic calendar, so the Party sets their timing by setting the mood.",
     "fix": "Decouple arms sales from summitry by statute or standing practice. The Six Assurances of 1982 already rule out prior consultation with the People's Republic on arms sales, and a fixed calendar makes that promise operational."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 15,
+        "fit": "related"
+      }
+    ]
+  }
 }

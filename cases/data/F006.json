@@ -38,5 +38,19 @@
     "gapText": "Technology Architecture. Taiwan's links to its islands and the world run through too few cables and too few repair ships.",
     "fix": "Pair redundancy with prosecution. Put sensors on every corridor and open a case for every cut. Backup capacity makes each cut survivable."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 6,
+        "fit": "same"
+      },
+      {
+        "file": "09-consume-taiwan",
+        "n": 19,
+        "fit": "related"
+      }
+    ]
+  }
 }

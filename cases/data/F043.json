@@ -37,5 +37,14 @@
     "gapText": "Architecture Governance. No allied rule decides which court sets a global price, so the fastest court wins.",
     "fix": "Agree with allies that global rates need consent or an agreed forum, and refuse to enforce rulings that skip both."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "07-protocols-and-ports",
+        "n": 5,
+        "fit": "same"
+      }
+    ]
+  }
 }

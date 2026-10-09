@@ -38,5 +38,14 @@
     "gapText": "Technology Architecture. Ports bought cranes as machines and never tested them as computers.",
     "fix": "Make acceptance testing the gate for every connected machine. No contribution is suspect because of its source, and no untested one enters service. Crane workers are not agents."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "07-protocols-and-ports",
+        "n": 2,
+        "fit": "same"
+      }
+    ]
+  }
 }

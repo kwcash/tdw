@@ -38,5 +38,14 @@
     "gapText": "Architecture Principles. The United States treats standards as private business while the Party treats them as national strategy.",
     "fix": "Build a standards workforce with public support and let merit decide every contribution."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "07-protocols-and-ports",
+        "n": 6,
+        "fit": "related"
+      }
+    ]
+  }
 }

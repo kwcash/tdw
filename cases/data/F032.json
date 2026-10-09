@@ -38,5 +38,14 @@
     "gapText": "Architecture Principles. Outside powers either pressure Taipei toward talks or away from them, and both choices override the voters who must live with the result.",
     "fix": "Hold one principle. Taiwan's people decide, and American commitments stay on schedule while they do."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 4,
+        "fit": "same"
+      }
+    ]
+  }
 }

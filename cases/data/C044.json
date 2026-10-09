@@ -33,5 +33,14 @@
     "gapText": "Data Architecture. The Party had perfect vertical alignment and no horizontal feedback, so false reports moved up and grain moved out.",
     "fix": "Protect the channel that carries bad news, and verify reports against independent measures before they drive policy."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "05-control-military-civil-fusion",
+        "n": 5,
+        "fit": "same"
+      }
+    ]
+  }
 }

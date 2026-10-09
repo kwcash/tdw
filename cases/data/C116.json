@@ -33,5 +33,14 @@
     "gapText": "Technology Architecture. A channel that worked without a network depended on one company's choices, and that company built its phones inside the Party's reach.",
     "fix": "Require American technology firms to disclose feature changes made for a single country, with the date and the reason."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "08-extract-covid-19",
+        "n": 15,
+        "fit": "same"
+      }
+    ]
+  }
 }

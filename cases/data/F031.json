@@ -38,5 +38,14 @@
     "gapText": "Technology Architecture. Taiwan's power system runs on a fuel that arrives by sea every few days and that Taiwan can store for barely two weeks.",
     "fix": "Lengthen the clock with storage and nuclear power, and pre-arrange escorts and insurance so no carrier has to choose between its cargo and its crew."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 6,
+        "fit": "same"
+      }
+    ]
+  }
 }

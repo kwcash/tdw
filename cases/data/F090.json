@@ -38,5 +38,19 @@
     "gapText": "Architecture Principles. Outsiders judged Hong Kong's system by its name, and the Party changed its substance.",
     "fix": "Judge Hong Kong by practice rather than by label, and keep the door open for its people."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "01-hong-kong",
+        "n": 14,
+        "fit": "same"
+      },
+      {
+        "file": "01-hong-kong",
+        "n": 26,
+        "fit": "same"
+      }
+    ]
+  }
 }

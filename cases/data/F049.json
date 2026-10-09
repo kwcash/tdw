@@ -37,5 +37,14 @@
     "gapText": "Architecture Principles. The law treats a conversation with a machine as a conversation with a person.",
     "fix": "Require AI personas to identify themselves and share indicators across labs. Nothing polices citizens' lawful speech."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "04-accommodate-the-war-for-the-mind",
+        "n": 9,
+        "fit": "related"
+      }
+    ]
+  }
 }

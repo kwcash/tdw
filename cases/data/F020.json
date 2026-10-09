@@ -38,5 +38,14 @@
     "gapText": "Technology Architecture. The dollar still runs on correspondent banking built decades ago, so a faster rival wins on convenience before it wins on politics.",
     "fix": "Modernize dollar settlement until no trader gains by leaving it. Keep the lawful-order freeze and publish when it is used."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "10-financial-control",
+        "n": 16,
+        "fit": "same"
+      }
+    ]
+  }
 }

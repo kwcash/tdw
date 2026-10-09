@@ -37,5 +37,19 @@
     "gapText": "Technology Architecture. Utilities run operational systems on networks that an intruder can reach and hold for years.",
     "fix": "Pair coordinated eviction with segmentation of operational networks and manual fallbacks tested every year."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "11-the-pen-from-the-inside",
+        "n": 16,
+        "fit": "same"
+      },
+      {
+        "file": "09-consume-taiwan",
+        "n": 10,
+        "fit": "same"
+      }
+    ]
+  }
 }

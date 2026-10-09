@@ -19,6 +19,8 @@ BREAKS = {
     'verified w/o checker': ('F001', lambda c: c.update(status='verified')),
     'sourced w/o link':     ('C001', lambda c: c.update(status='sourced')),
     'banned phrase':        ('C001', lambda c: c['text'].update(fix=c['text']['fix'] + ' Total Domain Warfare')),
+    'book note that does not exist': ('C053', lambda c: c['book']['notes'][0].update(n=99)),
+    'book fit not allowed': ('C053', lambda c: c['book']['notes'][0].update(fit='maybe')),
     'unknown field':        ('C001', lambda c: c.update(colour='red')),
 }
 
@@ -34,6 +36,8 @@ def main():
         with tempfile.TemporaryDirectory() as t:
             tmp = pathlib.Path(t) / 'cases'
             shutil.copytree(ROOT, tmp, ignore=shutil.ignore_patterns('build', '__pycache__'))
+            if (ROOT.parent / 'book' / 'src').is_dir():   # the validator checks book notes
+                shutil.copytree(ROOT.parent / 'book' / 'src', pathlib.Path(t) / 'book' / 'src')
             p = tmp / 'data' / f'{cid}.json'
             c = json.loads(p.read_text(encoding='utf-8'))
             fn(c)

@@ -33,5 +33,14 @@
     "gapText": "Architecture Governance. Congress took ownership of a commitment the executive had set aside and wrote it into law.",
     "fix": "Write every security commitment that must outlast an administration into statute, with a named office to carry it."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 14,
+        "fit": "same"
+      }
+    ]
+  }
 }

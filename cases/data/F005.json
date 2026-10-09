@@ -37,5 +37,14 @@
     "gapText": "Architecture Governance. Hosts that defend their own gates face retaliation alone, because no allied mechanism absorbs the cost.",
     "fix": "Build a pre-agreed compensation facility for any partner that loses trade after enforcing its own law against a strategic concession. Keep the retender open to every qualified bidder whatever its flag."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "07-protocols-and-ports",
+        "n": 13,
+        "fit": "same"
+      }
+    ]
+  }
 }

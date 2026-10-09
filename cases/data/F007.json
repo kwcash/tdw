@@ -37,5 +37,14 @@
     "gapText": "Business Architecture. The ban on finished drones arrived before any plan for the parts inside the replacements.",
     "fix": "Sequence every product ban behind a parts plan. Fund motors, magnets and batteries first, then close the market to finished goods."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "05-control-military-civil-fusion",
+        "n": 15,
+        "fit": "related"
+      }
+    ]
+  }
 }

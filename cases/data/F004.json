@@ -38,5 +38,14 @@
     "gapText": "Architecture Governance. Security clearance reviews check loyalty once and ignore the debt that builds after the review.",
     "fix": "Treat financial distress as a support case and not a disqualifier, with a no-penalty channel for reporting approaches. Run every disclosed approach as a potential double-agent operation."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 9,
+        "fit": "related"
+      }
+    ]
+  }
 }

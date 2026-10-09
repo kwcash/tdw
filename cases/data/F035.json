@@ -38,5 +38,14 @@
     "gapText": "Business Architecture. Chip policy moved production without a design for the confidence the production used to carry.",
     "fix": "Tie every relocation to a matching commitment that keeps Taiwan's stake in the alliance visible and permanent."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 17,
+        "fit": "same"
+      }
+    ]
+  }
 }

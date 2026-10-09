@@ -37,5 +37,14 @@
     "gapText": "Architecture Principles. Each release becomes a bargain because no standing principle forbids trading policy for prisoners.",
     "fix": "State and hold the principle that Washington trades no sanction, arms sale or statement for a prisoner. Welcome any release and pay nothing for it."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "01-hong-kong",
+        "n": 26,
+        "fit": "same"
+      }
+    ]
+  }
 }

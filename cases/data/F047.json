@@ -38,5 +38,14 @@
     "gapText": "Architecture Governance. The deal settled ownership and left no owner of the objective function.",
     "fix": "Assign the objective function to a named American owner, audit it every year and publish the results."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "04-accommodate-the-war-for-the-mind",
+        "n": 11,
+        "fit": "same"
+      }
+    ]
+  }
 }

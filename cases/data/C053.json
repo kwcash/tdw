@@ -34,5 +34,14 @@
     "gapText": "Application Architecture. The text stayed fixed, while each agency's access rules carried the Party's reading into daily practice.",
     "fix": "State the plain text of the resolution in every forum, and hold each agency to what the members voted."
   },
-  "status": "unsourced"
+  "status": "unsourced",
+  "book": {
+    "notes": [
+      {
+        "file": "09-consume-taiwan",
+        "n": 8,
+        "fit": "same"
+      }
+    ]
+  }
 }

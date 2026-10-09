@@ -38,5 +38,19 @@
     "gapText": "Business Architecture. Universities route these cases to event security and risk offices, and those offices reward the quiet option.",
     "fix": "Write a campus protocol that keeps events on schedule and protects the student under pressure. Ancestry is never evidence of anything but the Party's leverage."
   },
-  "status": "sourced"
+  "status": "sourced",
+  "book": {
+    "notes": [
+      {
+        "file": "10-financial-control",
+        "n": 12,
+        "fit": "same"
+      },
+      {
+        "file": "06-the-long-arm",
+        "n": 4,
+        "fit": "related"
+      }
+    ]
+  }
 }

@@ -36,6 +36,7 @@ def main():
     if props['world']['enum'] != [None] + tax['worlds']:
         errors.append('schema: world enum differs from taxonomy.worlds')
 
+    notes_dir = SCHEMA.parent.parent / 'book' / 'src' / 'appendix-h'
     cases, seen = [], set()
     for p in case_files():
         c = load_json(p)
@@ -66,6 +67,13 @@ def main():
         for f, lab, u in ls:
             if not re.match(r'^https://[^\s/]+\.[^\s/]+', u):
                 E(cid, f'{f}: link is not an https URL: {u!r}')
+        if c.get('book') and notes_dir.is_dir():
+            for ref in c['book']['notes']:
+                t = (notes_dir / f'{ref["file"]}.md').read_text(encoding='utf-8') if (notes_dir / f'{ref["file"]}.md').is_file() else None
+                if t is None:
+                    E(cid, f'book note file {ref["file"]} does not exist')
+                elif not re.search(r'^\*\*\\\[%d\\\]\*\*' % ref['n'], t, re.M):
+                    E(cid, f'{ref["file"]} has no note {ref["n"]}')
         if c['status'] == 'unsourced' and ls:
             E(cid, 'status is unsourced but the text has source links; set it to sourced')
         if c['status'] in ('sourced', 'verified') and not ls:
@@ -131,6 +139,7 @@ def main():
         print('\nstratagems never used:', sorted(strat - set(use), key=lambda x: int(x[1:])))
         print('most used:', use.most_common(6))
         print('domains never a spine:', sorted(set(tax['domains']) - {c['spine'] for c in cases}))
+        print('cases backed by a book note:', sum(1 for c in cases if c.get('book')), '(same:', sum(1 for c in cases for r in c.get('book', {}).get('notes', []) if r['fit'] == 'same'), 'notes)')
         print('cases in no arc:', sum(1 for c in cases if not member[c['id']]), 'of', len(cases))
 
     n = len(cases)

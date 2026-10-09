@@ -5,63 +5,363 @@
   "description": "One historical case (kind catalog, id C###) or one future scenario (kind futures, id F###). The twelve domains, ten dimensions and thirty-six stratagems are fixed by the book; see taxonomy.json. Text fields are Markdown; the only inline syntax is [label](https://url).",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "kind", "title", "tier", "dimension", "stage", "stratagems", "theater", "spine", "opponent", "when", "gap", "text", "status"],
+  "required": [
+    "id",
+    "kind",
+    "title",
+    "tier",
+    "dimension",
+    "stage",
+    "stratagems",
+    "theater",
+    "spine",
+    "opponent",
+    "when",
+    "gap",
+    "text",
+    "status"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[CF][0-9]{3}$"},
-    "kind": {"enum": ["catalog", "futures"]},
-    "title": {"type": "string", "minLength": 3, "maxLength": 80},
-    "fullTitle": {"type": "string", "maxLength": 100, "description": "Only when it differs from the default: title, plus ' (label)' for catalog cases."},
-    "tier": {"type": "integer", "minimum": 1, "maximum": 6},
-    "dimension": {"enum": ["Time", "Entropy", "Topology", "Asymmetry", "Agency", "Resonance", "Phase", "Gradient", "Criticality", "Coherence"]},
-    "stage": {"enum": ["Attract", "Accommodate", "Control", "Extract", "Consume", "Defense", "Mirror", "Doctrine"]},
-    "stratagems": {"type": "array", "minItems": 1, "maxItems": 4, "uniqueItems": true,
-      "items": {"type": "string", "pattern": "^S([1-9]|[12][0-9]|3[0-6])$"}},
-    "theater": {"type": "array", "minItems": 1, "maxItems": 6, "uniqueItems": true,
-      "items": {"enum": ["Kinetic", "Economic", "Financial", "Information", "Psychological", "Legal", "Association", "Cyber", "Cultural", "AI and Cognitive", "Biological", "Data and Surveillance"]}},
-    "spine": {"enum": ["Kinetic", "Economic", "Financial", "Information", "Psychological", "Legal", "Association", "Cyber", "Cultural", "AI and Cognitive", "Biological", "Data and Surveillance"]},
-    "opponent": {"type": "string", "minLength": 3, "maxLength": 60},
-    "when": {
-      "type": "object", "additionalProperties": false, "required": ["start", "end"],
-      "properties": {"start": {"$ref": "#/$defs/moment"}, "end": {"$ref": "#/$defs/moment"}}
+    "id": {
+      "type": "string",
+      "pattern": "^[CF][0-9]{3}$"
     },
-    "label": {"type": "string", "maxLength": 60, "description": "Only when it differs from the label derived from 'when'."},
-    "world": {"enum": [null, "Long Grind", "Machine Mandate", "Runaway", "Unwinding"]},
-    "horizon": {"type": "integer", "minimum": 1, "maximum": 3},
-    "arc": {"type": ["string", "null"], "maxLength": 60},
-    "gap": {"enum": ["Business", "Principles", "Application", "Data", "Technology", "Governance"]},
-    "text": {
-      "type": "object", "additionalProperties": false,
-      "required": ["brief", "record", "reading", "gapText", "fix"],
-      "properties": {
-        "brief": {"type": "string", "minLength": 40},
-        "record": {"type": "string", "minLength": 40, "description": "What is documented. Every checkable claim carries a [source](url) link or a [NEEDED: source] tag."},
-        "reading": {"type": "string", "minLength": 40, "description": "What the book argues. Names the stratagem."},
-        "coreEvent": {"type": "string", "minLength": 20, "description": "Futures only. The dated, checkable event the scenario turns on."},
-        "gapText": {"type": "string", "minLength": 20},
-        "fix": {"type": "string", "minLength": 20}
+    "kind": {
+      "enum": [
+        "catalog",
+        "futures"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "fullTitle": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Only when it differs from the default: title, plus ' (label)' for catalog cases."
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 6
+    },
+    "dimension": {
+      "enum": [
+        "Time",
+        "Entropy",
+        "Topology",
+        "Asymmetry",
+        "Agency",
+        "Resonance",
+        "Phase",
+        "Gradient",
+        "Criticality",
+        "Coherence"
+      ]
+    },
+    "stage": {
+      "enum": [
+        "Attract",
+        "Accommodate",
+        "Control",
+        "Extract",
+        "Consume",
+        "Defense",
+        "Mirror",
+        "Doctrine"
+      ]
+    },
+    "stratagems": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^S([1-9]|[12][0-9]|3[0-6])$"
       }
     },
-    "status": {"enum": ["unsourced", "sourced", "verified"],
-      "description": "unsourced: no link in the record. sourced: links exist, no human has read them. verified: a named person checked every claim against its source."},
-    "verifiedBy": {"type": "string", "minLength": 2},
-    "verifiedOn": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+    "theater": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "Kinetic",
+          "Economic",
+          "Financial",
+          "Information",
+          "Psychological",
+          "Legal",
+          "Association",
+          "Cyber",
+          "Cultural",
+          "AI and Cognitive",
+          "Biological",
+          "Data and Surveillance"
+        ]
+      }
+    },
+    "spine": {
+      "enum": [
+        "Kinetic",
+        "Economic",
+        "Financial",
+        "Information",
+        "Psychological",
+        "Legal",
+        "Association",
+        "Cyber",
+        "Cultural",
+        "AI and Cognitive",
+        "Biological",
+        "Data and Surveillance"
+      ]
+    },
+    "opponent": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 60
+    },
+    "when": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "$ref": "#/$defs/moment"
+        },
+        "end": {
+          "$ref": "#/$defs/moment"
+        }
+      }
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 60,
+      "description": "Only when it differs from the label derived from 'when'."
+    },
+    "world": {
+      "enum": [
+        null,
+        "Long Grind",
+        "Machine Mandate",
+        "Runaway",
+        "Unwinding"
+      ]
+    },
+    "horizon": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "arc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 60
+    },
+    "gap": {
+      "enum": [
+        "Business",
+        "Principles",
+        "Application",
+        "Data",
+        "Technology",
+        "Governance"
+      ]
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "brief",
+        "record",
+        "reading",
+        "gapText",
+        "fix"
+      ],
+      "properties": {
+        "brief": {
+          "type": "string",
+          "minLength": 40
+        },
+        "record": {
+          "type": "string",
+          "minLength": 40,
+          "description": "What is documented. Every checkable claim carries a [source](url) link or a [NEEDED: source] tag."
+        },
+        "reading": {
+          "type": "string",
+          "minLength": 40,
+          "description": "What the book argues. Names the stratagem."
+        },
+        "coreEvent": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Futures only. The dated, checkable event the scenario turns on."
+        },
+        "gapText": {
+          "type": "string",
+          "minLength": 20
+        },
+        "fix": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "unsourced",
+        "sourced",
+        "verified"
+      ],
+      "description": "unsourced: no link in the record. sourced: links exist, no human has read them. verified: a named person checked every claim against its source."
+    },
+    "verifiedBy": {
+      "type": "string",
+      "minLength": 2
+    },
+    "verifiedOn": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
     "book": {
-      "type": "object", "additionalProperties": false,
-      "description": "Where the manuscript treats this case, by section path under book/src.",
-      "properties": {"section": {"type": "string"}, "note": {"type": "string"}}
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "notes"
+      ],
+      "description": "Notes in the manuscript's Appendix H that back this case. fit 'same': the note records the same fact or event the case states. fit 'related': same subject, different event or context.",
+      "properties": {
+        "notes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "file",
+              "n",
+              "fit"
+            ],
+            "properties": {
+              "file": {
+                "type": "string",
+                "pattern": "^[0-9]{2}-[a-z0-9-]+$",
+                "description": "File under book/src/appendix-h, without .md"
+              },
+              "n": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "fit": {
+                "enum": [
+                  "same",
+                  "related"
+                ]
+              }
+            }
+          }
+        }
+      }
     }
   },
   "allOf": [
-    {"if": {"properties": {"kind": {"const": "futures"}}, "required": ["kind"]},
-     "then": {"required": ["horizon", "arc", "world"], "properties": {"text": {"required": ["coreEvent"]}, "id": {"pattern": "^F[0-9]{3}$"}}},
-     "else": {"properties": {"id": {"pattern": "^C[0-9]{3}$"}, "horizon": false, "arc": false, "world": false, "text": {"properties": {"coreEvent": false}}}}},
-    {"if": {"properties": {"status": {"const": "verified"}}, "required": ["status"]},
-     "then": {"required": ["verifiedBy", "verifiedOn"]}}
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "futures"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {
+        "required": [
+          "horizon",
+          "arc",
+          "world"
+        ],
+        "properties": {
+          "text": {
+            "required": [
+              "coreEvent"
+            ]
+          },
+          "id": {
+            "pattern": "^F[0-9]{3}$"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "id": {
+            "pattern": "^C[0-9]{3}$"
+          },
+          "horizon": false,
+          "arc": false,
+          "world": false,
+          "text": {
+            "properties": {
+              "coreEvent": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "verified"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "verifiedBy",
+          "verifiedOn"
+        ]
+      }
+    }
   ],
   "$defs": {
     "moment": {
-      "type": "object", "additionalProperties": false, "required": ["year"],
-      "properties": {"year": {"type": "integer", "minimum": 1700, "maximum": 2100}, "month": {"type": ["integer", "null"], "minimum": 1, "maximum": 12}}
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "year"
+      ],
+      "properties": {
+        "year": {
+          "type": "integer",
+          "minimum": 1700,
+          "maximum": 2100
+        },
+        "month": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 12
+        }
+      }
     }
   }
 }
