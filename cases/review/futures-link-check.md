@@ -7,7 +7,7 @@ A "supports" verdict means the page says what the sentence says. It does **not**
 ## Result
 
 - 35 links checked, 28 loaded (HTTP 200), 7 refused the runner (6 returned 403, 1 returned 402).
-- Of the 17 claims read closely: 8 supported, 7 partly supported, 2 not on the page.
+- Of the 17 claims read closely: 7 supported, 8 partly supported, 2 not on the page.
 
 ## The 17 claims read closely
 
