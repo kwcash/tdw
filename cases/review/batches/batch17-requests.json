@@ -1,0 +1,497 @@
+[
+ {
+  "id": "C031",
+  "idx": 0,
+  "url": "https://www.senate.gov/about/powers-procedures/investigations/mccarthy-hearings/communists-in-government-service.htm",
+  "grep": [
+   "Wheeling",
+   "Women's Republican Club",
+   "February 9, 1950",
+   "Lincoln"
+  ],
+  "excerpt": 0,
+  "note": "Senate Historical Office, McCarthy Wheeling speech",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 0,
+  "url": "https://www.senate.gov/senators/FeaturedBios/Featured_Bio_McCarthy.htm",
+  "grep": [
+   "Wheeling",
+   "February 1950",
+   "Communists",
+   "State Department"
+  ],
+  "excerpt": 0,
+  "note": "Senate featured biography of McCarthy",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 1,
+  "url": "https://www.trumanlibrary.gov/photograph-records/99-305",
+  "grep": [
+   "Davies",
+   "Dulles",
+   "November 5, 1954",
+   "security risk",
+   "Foreign Service"
+  ],
+  "excerpt": 0,
+  "note": "Truman Library record, Davies dismissed by Dulles (Davies only)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1952-54v01p2/d200",
+  "grep": [
+   "Vincent",
+   "Loyalty Review Board",
+   "Service",
+   "ineligible"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1952-54 memo by Loyalty Security Board chairman (Vincent case; Clubb not covered)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 1,
+  "url": "https://adst.org/2020/11/the-state-department-under-the-red-scare-mccarthys-campaign/",
+  "grep": [
+   "Clubb",
+   "Vincent",
+   "Davies",
+   "China Hands",
+   "retire"
+  ],
+  "excerpt": 0,
+  "note": "secondary (ADST oral-history site), Vincent and Clubb forced out",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 2,
+  "url": "https://www.courtlistener.com/opinion/105539/service-v-dulles/",
+  "grep": [
+   "Service v. Dulles",
+   "June 17, 1957",
+   "Loyalty Review Board",
+   "Secretary",
+   "regulations"
+  ],
+  "excerpt": 0,
+  "note": "Supreme Court opinion 354 U.S. 363 (CourtListener)",
+  "grep_width": 200
+ },
+ {
+  "id": "C031",
+  "idx": 2,
+  "url": "https://www.law.cornell.edu/supremecourt/text/354/363",
+  "grep": [
+   "354 U.S. 363",
+   "June 17, 1957",
+   "Service",
+   "Dulles"
+  ],
+  "excerpt": 0,
+  "note": "Supreme Court opinion text (Cornell LII, secondary host)",
+  "grep_width": 200
+ },
+ {
+  "id": "C032",
+  "idx": 0,
+  "url": "https://michaelharrison.org.uk/wp-content/uploads/2020/06/Agrarian-Reform-Law-ofthe-PRC-1950.pdf",
+  "grep": [
+   "Agrarian Reform Law",
+   "June 30, 1950",
+   "landlord",
+   "Central People's Government"
+  ],
+  "excerpt": 0,
+  "note": "1950 English translation of the law (reprint on a personal site; secondary host)",
+  "grep_width": 200
+ },
+ {
+  "id": "C032",
+  "idx": 0,
+  "url": "https://alphahistory.com/chineserevolution/agrarian-reform-law-1950/",
+  "grep": [
+   "Agrarian Reform Law",
+   "30 June 1950",
+   "landlord",
+   "peasant"
+  ],
+  "excerpt": 0,
+  "note": "secondary, education site with law excerpts",
+  "grep_width": 200
+ },
+ {
+  "id": "C033",
+  "idx": 0,
+  "url": "https://www.cia.gov/readingroom/docs/1988-11-01.pdf",
+  "grep": [
+   "Panikkar",
+   "October 3",
+   "38th parallel",
+   "Chou En-lai",
+   "intervene"
+  ],
+  "excerpt": 0,
+  "note": "CIA history 'The Chinese Intervention in Korea, 1950'",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C033",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1950v07/d609",
+  "grep": [
+   "Panikkar",
+   "Chou",
+   "38th parallel",
+   "India"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1950 vol VII, Henderson cable on Panikkar warning",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C033",
+  "idx": 1,
+  "url": "https://rediscovering-black-history.blogs.archives.gov/2023/03/23/blue-star-turned-to-gold-the-loss-of-ens-jesse-l-brown/",
+  "grep": [
+   "October 19",
+   "Yalu",
+   "Unsan",
+   "Chosin",
+   "People's Volunteer"
+  ],
+  "excerpt": 0,
+  "note": "National Archives blog (official host, blog format)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C033",
+  "idx": 1,
+  "url": "https://www.history.army.mil/books/pd-c-13.htm",
+  "grep": [
+   "Yalu",
+   "Unsan",
+   "October",
+   "Chinese",
+   "Chosin"
+  ],
+  "excerpt": 0,
+  "note": "US Army official history, Policy and Direction ch. XIII (Army puts crossings 14-20 Oct)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C034",
+  "idx": 0,
+  "url": "https://thechinaproject.com/2022/01/05/chinas-five-anti-campaign-of-1952/",
+  "grep": [
+   "Five-Anti",
+   "January 1952",
+   "bribery",
+   "tax evasion",
+   "economic intelligence"
+  ],
+  "excerpt": 0,
+  "note": "media only (no primary source found)",
+  "grep_width": 200
+ },
+ {
+  "id": "C034",
+  "idx": 0,
+  "url": "https://commonprogram.science/documents/wufan%20cities.pdf",
+  "grep": [
+   "Five-Anti",
+   "Wufan",
+   "bribery",
+   "tax evasion",
+   "economic"
+  ],
+  "excerpt": 0,
+  "note": "secondary, document collection on Wufan campaign; verify it is primary",
+  "grep_width": 200
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "url": "https://www.britannica.com/biography/Rong-Yiren",
+  "grep": [
+   "Rong Yiren",
+   "CITIC",
+   "1979",
+   "1956",
+   "joint"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica biography",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C035",
+  "idx": 0,
+  "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/cwihp_wp_78_china_false_bw_allegations_korean_war_march_16.pdf",
+  "grep": [
+   "Pak Hon",
+   "Zhou Enlai",
+   "February 24",
+   "448",
+   "biological"
+  ],
+  "excerpt": 0,
+  "note": "secondary, CWIHP Working Paper 78 on false BW allegations",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C035",
+  "idx": 1,
+  "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/cwihp_wp_78_china_false_bw_allegations_korean_war_march_16.pdf",
+  "grep": [
+   "International Scientific Commission",
+   "Needham",
+   "Enoch",
+   "Quinn",
+   "confess"
+  ],
+  "excerpt": 0,
+  "note": "secondary, CWIHP Working Paper 78 (airmen confessions, ISC report)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C035",
+  "idx": 1,
+  "url": "https://www.cia.gov/readingroom/docs/1953-02-27.pdf",
+  "grep": [
+   "International Scientific Commission",
+   "14 September 1952",
+   "germ",
+   "confessions"
+  ],
+  "excerpt": 0,
+  "note": "CIA Far East Survey 27 Feb 1953",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C035",
+  "idx": 2,
+  "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/CWIHPBulletin11_p4.pdf",
+  "grep": [
+   "bacteriological",
+   "Beria",
+   "false",
+   "Korea",
+   "Soviet"
+  ],
+  "excerpt": 0,
+  "note": "CWIHP Bulletin 11 (1998), Soviet documents on BW allegations",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C035",
+  "idx": 2,
+  "url": "https://wilsoncenter.org/blog-post/soviet-chinese-and-north-korean-false-allegations-biological-weapons-use-during-korean",
+  "grep": [
+   "Leitenberg",
+   "Soviet",
+   "false",
+   "biological",
+   "1998"
+  ],
+  "excerpt": 0,
+  "note": "think tank (Wilson Center blog)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C036",
+  "idx": 0,
+  "url": "https://www.cia.gov/stories/story/extraordinary-fidelity-two-cia-officers-imprisoned-in-china/",
+  "grep": [
+   "Downey",
+   "Fecteau",
+   "November 1954",
+   "life",
+   "20 years"
+  ],
+  "excerpt": 0,
+  "note": "CIA official story page",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C036",
+  "idx": 0,
+  "url": "https://www.cia.gov/resources/csi/static/Two-CIA-Prisoners-China.pdf",
+  "grep": [
+   "Downey",
+   "Fecteau",
+   "November 23, 1954",
+   "life imprisonment",
+   "twenty years"
+  ],
+  "excerpt": 0,
+  "note": "CIA Studies in Intelligence 2006, Two CIA Prisoners in China",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C036",
+  "idx": 2,
+  "url": "https://www.cia.gov/stories/story/extraordinary-fidelity-two-cia-officers-imprisoned-in-china/",
+  "grep": [
+   "Fecteau",
+   "December 1971",
+   "Downey",
+   "March 1973",
+   "Nixon"
+  ],
+  "excerpt": 0,
+  "note": "CIA official story page (releases)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C036",
+  "idx": 2,
+  "url": "https://loc.gov/item/powmia/pw082208",
+  "grep": [
+   "Nixon",
+   "Downey",
+   "C.I.A.",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "Library of Congress record of NYT 1 Feb 1973 article (media only)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C037",
+  "idx": 0,
+  "url": "https://history.army.mil/books/korea/truce/ch7.htm",
+  "grep": [
+   "21,839",
+   "repatriation",
+   "Neutral Nations Repatriation Commission",
+   "Chinese",
+   "refus"
+  ],
+  "excerpt": 0,
+  "note": "US Army official history, Truce Tent and Fighting Front ch. 7",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C037",
+  "idx": 0,
+  "url": "https://archives.gov/publications/prologue/2002/summer/korean-myths-2.html",
+  "grep": [
+   "repatriat",
+   "Chinese",
+   "Taiwan",
+   "prisoners",
+   "non-repatriat"
+  ],
+  "excerpt": 0,
+  "note": "National Archives Prologue article",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "url": "https://history.army.mil/books/korea/truce/ch7.htm",
+  "grep": [
+   "14,",
+   "Formosa",
+   "Taiwan",
+   "January 1954",
+   "voluntary repatriation"
+  ],
+  "excerpt": 0,
+  "note": "US Army official history ch. 7",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "url": "https://www.history.army.mil/brochures/kw-stale/stale.htm",
+  "grep": [
+   "repatriation",
+   "prisoners",
+   "Formosa",
+   "1954",
+   "armistice"
+  ],
+  "excerpt": 0,
+  "note": "US Army Center of Military History brochure, Years of Stalemate",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C038",
+  "idx": 0,
+  "url": "https://archives.gov/publications/prologue/2002/summer/korean-myths-2.html",
+  "grep": [
+   "brainwash",
+   "indoctrinat",
+   "confess",
+   "inform",
+   "collaborat"
+  ],
+  "excerpt": 0,
+  "note": "National Archives Prologue article on Korean War POW myths",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C038",
+  "idx": 0,
+  "url": "https://history.army.mil/books/korea/truce/ch7.htm",
+  "grep": [
+   "indoctrination",
+   "confess",
+   "informing",
+   "prisoners",
+   "propaganda"
+  ],
+  "excerpt": 0,
+  "note": "US Army official history ch. 7 (POW treatment)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C038",
+  "idx": 1,
+  "url": "https://kids.britannica.com/students/article/brainwashing/273328",
+  "grep": [
+   "Hunter",
+   "1950",
+   "brainwash",
+   "Korean War"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica Students",
+  "ua": "browser",
+  "grep_width": 200
+ }
+]
