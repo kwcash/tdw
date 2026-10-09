@@ -1,0 +1,468 @@
+[
+ {
+  "id": "C009",
+  "idx": 1,
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
+  "grep": [
+   "certificate of residence",
+   "Fong Yue Ting",
+   "collector of internal revenue",
+   "credible white witness",
+   "Chinese laborer"
+  ],
+  "excerpt": 0,
+  "note": "US Reports vol 149 p 698 (primary; describes Geary Act 1892 provisions)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C009",
+  "idx": 1,
+  "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration",
+  "grep": [
+   "Geary Act",
+   "1892",
+   "certificate",
+   "Chinese",
+   "exclusion"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Historian Milestones (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C009",
+  "idx": 2,
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
+  "grep": [
+   "Fong Yue Ting",
+   "May 15, 1893",
+   "certificate of residence",
+   "deport",
+   "149 U.S. 698"
+  ],
+  "excerpt": 0,
+  "note": "US Reports Fong Yue Ting v. United States (primary; Court upheld)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C009",
+  "idx": 2,
+  "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration",
+  "grep": [
+   "1943",
+   "repealed",
+   "Chinese Exclusion",
+   "Geary",
+   "wartime"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Historian Milestones (official; repeal 1943)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C009",
+  "idx": 2,
+  "url": "https://www.uscis.gov/about-us/our-history/stories-from-the-archives/edward-bing-kan-the-first-chinese-american-naturalized-after-repeal-of-chinese-exclusion",
+  "grep": [
+   "December 1943",
+   "repeal",
+   "Magnuson",
+   "Chinese exclusion",
+   "naturalized"
+  ],
+  "excerpt": 0,
+  "note": "USCIS history page (official; December 1943 repeal)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C010",
+  "idx": 2,
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep118/usrep118356/usrep118356.pdf",
+  "grep": [
+   "Yick Wo",
+   "evil eye and an unequal hand",
+   "Fourteenth Amendment",
+   "territorial jurisdiction",
+   "118 U.S. 356"
+  ],
+  "excerpt": 0,
+  "note": "US Reports Yick Wo v. Hopkins (primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C010",
+  "idx": 2,
+  "url": "https://www.loc.gov/item/usrep118356/",
+  "grep": [
+   "Yick Wo",
+   "May 10, 1886",
+   "118 U.S. 356",
+   "Fourteenth Amendment",
+   "Matthews"
+  ],
+  "excerpt": 0,
+  "note": "LOC US Reports item page (primary; decision date)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C011",
+  "idx": 2,
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep169/usrep169649/usrep169649.pdf",
+  "grep": [
+   "Wong Kim Ark",
+   "March 28, 1898",
+   "169 U.S. 649",
+   "citizen",
+   "Fourteenth Amendment"
+  ],
+  "excerpt": 0,
+  "note": "US Reports United States v. Wong Kim Ark (primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C011",
+  "idx": 2,
+  "url": "https://www.loc.gov/item/usrep169649/",
+  "grep": [
+   "Wong Kim Ark",
+   "1898",
+   "169 U.S. 649",
+   "March 28"
+  ],
+  "excerpt": 0,
+  "note": "LOC US Reports item page (primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C012",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1905/d221",
+  "grep": [
+   "boycott",
+   "Shanghai",
+   "guilds",
+   "exclusion",
+   "American goods"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1905 Rockhill dispatch on Shanghai guilds' boycott (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C012",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1905/ch43",
+  "grep": [
+   "boycott",
+   "Shanghai",
+   "merchants",
+   "guild",
+   "1905"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1905 chapter, Anti-American boycott (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C012",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1905/d237",
+  "grep": [
+   "edict",
+   "August 31",
+   "boycott",
+   "viceroys",
+   "Rockhill"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1905 Rockhill on imperial edict of Aug 31 1905 (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C012",
+  "idx": 2,
+  "url": "https://www.theodorerooseveltcenter.org/digital-library/o282597/",
+  "grep": [
+   "Imperial edict",
+   "August 31, 1905",
+   "boycott",
+   "edict"
+  ],
+  "excerpt": 0,
+  "note": "Theodore Roosevelt Center, imperial edict of Aug 31 1905 (archive)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C013",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1908/d54",
+  "grep": [
+   "remission",
+   "indemnity",
+   "students",
+   "1908",
+   "education"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1908 Boxer indemnity remission document (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C013",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/SERIALSET-05557_00_00-031-1275-0000/pdf/SERIALSET-05557_00_00-031-1275-0000.pdf",
+  "grep": [
+   "Remission",
+   "Chinese indemnity",
+   "10,785,286",
+   "joint resolution",
+   "students"
+  ],
+  "excerpt": 0,
+  "note": "H.Doc. 60-1275 executive order and joint resolution on remission (US Serial Set, primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C013",
+  "idx": 1,
+  "url": "https://www.tsinghua.edu.cn/en//info/1007/1011.htm",
+  "grep": [
+   "1911",
+   "Boxer",
+   "Indemnity",
+   "Tsinghua",
+   "preparatory"
+  ],
+  "excerpt": 0,
+  "note": "Tsinghua University official history (PRC; 1911 prep school)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C013",
+  "idx": 1,
+  "url": "https://www.soc.tsinghua.edu.cn/en/About/History.htm",
+  "grep": [
+   "1911",
+   "April 29",
+   "Boxer",
+   "Tsinghua",
+   "1909"
+  ],
+  "excerpt": 0,
+  "note": "Tsinghua Dept of Sociology history page (PRC university; 1911 opening)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C014",
+  "idx": 0,
+  "url": "https://manoa.hawaii.edu/chinesestudies/wp-content/uploads/2025/03/SYS-handout.pdf",
+  "grep": [
+   "Chee Kung",
+   "Chee Kong",
+   "Honolulu",
+   "1904",
+   "Hongmen"
+  ],
+  "excerpt": 0,
+  "note": "Univ. of Hawaii Chinese Studies handout on Sun Yat-sen in Hawaii (secondary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C014",
+  "idx": 0,
+  "url": "https://exhibits.lib.berkeley.edu/spotlight/eal-highlights/feature/chee-kung-tong-archives",
+  "grep": [
+   "Chee Kung Tong",
+   "Sun Yat-sen",
+   "Honolulu",
+   "Hongmen"
+  ],
+  "excerpt": 0,
+  "note": "UC Berkeley East Asian Library, Chee Kung Tong archives (secondary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C014",
+  "idx": 2,
+  "url": "https://www.xinhuanet.com/politics/2018-03/21/c_1122570517.htm",
+  "grep": [
+   "国务院侨务办公室",
+   "中央统战部",
+   "不再保留",
+   "侨务"
+  ],
+  "excerpt": 0,
+  "note": "Xinhua Chinese text of CPC Central Committee 2018 reform plan (PRC official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C014",
+  "idx": 2,
+  "url": "https://www.xinhuanet.com/english/2018-03/21/c_137055471.htm",
+  "grep": [
+   "Overseas Chinese Affairs",
+   "United Front Work Department",
+   "overseas Chinese"
+  ],
+  "excerpt": 0,
+  "note": "Xinhua English text of 2018 reform plan (PRC official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C015",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1919Parisv05/d32",
+  "grep": [
+   "Shantung",
+   "Kiaochow",
+   "Tsingtao",
+   "Japan",
+   "Wilson"
+  ],
+  "excerpt": 0,
+  "note": "FRUS Paris Peace Conf. v5 notes of meeting (likely Apr 30 1919 Council of Three; official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C015",
+  "idx": 0,
+  "url": "https://www.britannica.com/event/Shandong-question",
+  "grep": [
+   "Shandong",
+   "Wilson",
+   "Japan",
+   "1919",
+   "German"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Shandong question (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C015",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1919Parisv06/d75",
+  "grep": [
+   "Chinese Delegation",
+   "sign",
+   "reservation",
+   "Shantung"
+  ],
+  "excerpt": 0,
+  "note": "FRUS Paris Peace Conf. v6, Chinese letter on signing with Shantung reservation (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C015",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1919v01/d344",
+  "grep": [
+   "delegation",
+   "sign",
+   "reservation",
+   "Shantung",
+   "Reinsch"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1919 v1, Reinsch to Secretary of State on China not signing (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "url": "https://www.britannica.com/event/Karakhan-Manifesto",
+  "grep": [
+   "Karakhan",
+   "July 25, 1919",
+   "March 1920",
+   "privileges",
+   "Chinese Eastern Railway"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Karakhan Manifesto (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "url": "https://www.britannica.com/place/China/Communist-Nationalist-cooperation",
+  "grep": [
+   "Comintern",
+   "1922",
+   "Chinese Communist Party",
+   "Maring"
+  ],
+  "excerpt": 0,
+  "note": "Britannica China, Communist-Nationalist cooperation (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "url": "https://en.wikipedia.org/wiki/2nd_National_Congress_of_the_Chinese_Communist_Party",
+  "grep": [
+   "Comintern",
+   "branch",
+   "1922",
+   "Twenty-one",
+   "July"
+  ],
+  "excerpt": 0,
+  "note": "Wikipedia only (CCP 2nd Congress resolution on joining Comintern)",
+  "grep_width": 200
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "url": "https://www.britannica.com/topic/Shanghai-General-Labour-Union",
+  "grep": [
+   "April 12",
+   "1927",
+   "Chiang Kai-shek",
+   "General Labour Union",
+   "Communist"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Shanghai General Labour Union (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "url": "https://history.state.gov/milestones/1945-1952/chinese-rev",
+  "grep": [
+   "1927",
+   "Nationalists",
+   "Communists",
+   "purge"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Historian Milestones, Chinese Revolution (official; mentions 1927 break)",
+  "ua": "browser",
+  "grep_width": 200
+ }
+]

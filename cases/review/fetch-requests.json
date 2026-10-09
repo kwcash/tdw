@@ -2,467 +2,468 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C001",
-   "idx": 0,
-   "url": "https://www.britannica.com/event/First-Opium-War",
-   "grep": [
-    "1757",
-    "Canton",
-    "Qianlong",
-    "restricted"
-   ],
-   "excerpt": 0,
-   "note": "Britannica First Opium War (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C001",
-   "idx": 0,
-   "url": "https://history.state.gov/countries/china/summary",
-   "grep": [
-    "Guangzhou",
-    "Canton",
-    "single port",
-    "1757"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Historian China summary (official; may lack 1757)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C001",
-   "idx": 2,
-   "url": "https://founders.archives.gov/documents/Jay/01-04-02-0044",
-   "grep": [
-    "Empress of China",
-    "22d February",
-    "1784",
-    "New York",
-    "Canton"
-   ],
-   "excerpt": 0,
-   "note": "Founders Online, Samuel Shaw to John Jay 1785 (NARA/NHPRC; primary + editorial note)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C001",
-   "idx": 2,
-   "url": "https://www.nps.gov/articles/upload/01-Essay-1-Imperialism-and-Migration.pdf",
-   "grep": [
-    "Empress of China",
-    "1784",
-    "ginseng",
-    "tea",
-    "silk"
-   ],
-   "excerpt": 0,
-   "note": "NPS theme-study essay (official, secondary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C002",
-   "idx": 2,
-   "url": "https://uschinaexchange.usc.edu/exchange/terranova-affair",
-   "grep": [
-    "Terranova",
-    "1821",
-    "strangl",
-    "Emily",
-    "Canton"
-   ],
-   "excerpt": 0,
-   "note": "USC US-China exchange, Terranova affair (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C002",
-   "idx": 2,
-   "url": "https://visualizingcultures.mit.edu/rise_fall_canton_03/cw_essay03.html",
-   "grep": [
-    "Terranova",
-    "1821",
-    "strangled",
-    "Emily",
-    "October"
-   ],
-   "excerpt": 0,
-   "note": "MIT Visualizing Cultures, End of the Canton System (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
-   "idx": 0,
-   "url": "https://lcweb2.loc.gov/service/mss/eadxmlmss/eadpdfmss/2010/ms010075.pdf",
-   "grep": [
-    "Russell",
-    "Turkish opium",
-    "Delano",
-    "Canton",
-    "opium"
-   ],
-   "excerpt": 0,
-   "note": "LOC finding aid, Russell & Co. Guangzhou records (archive; Russell/Turkish opium part)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
-   "idx": 0,
-   "url": "https://omeka.conncoll.edu/exhibits/show/gold-journal/essays/delano",
-   "grep": [
-    "Delano",
-    "Russell",
-    "opium",
-    "Canton",
-    "fortune"
-   ],
-   "excerpt": 0,
-   "note": "Connecticut College essay on Warren Delano (secondary; Delano part)",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
-   "idx": 0,
-   "url": "https://www.britannica.com/event/First-Opium-War",
-   "grep": [
-    "Lin Zexu",
-    "1839",
-    "opium",
-    "factories",
-    "surrender"
-   ],
-   "excerpt": 0,
-   "note": "Britannica First Opium War (secondary; Lin confinement/surrender part)",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
+   "id": "C009",
    "idx": 1,
-   "url": "https://history.state.gov/milestones/1830-1860/china-1",
+   "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
    "grep": [
-    "Treaty of Nanjing",
-    "1842",
-    "five",
-    "opium",
-    "neutral"
+    "certificate of residence",
+    "Fong Yue Ting",
+    "collector of internal revenue",
+    "credible white witness",
+    "Chinese laborer"
    ],
    "excerpt": 0,
-   "note": "State Dept Historian Milestones, Opium Wars and opening of China (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
-   "idx": 1,
-   "url": "https://www.britannica.com/event/First-Opium-War",
-   "grep": [
-    "Treaty of Nanjing",
-    "1842",
-    "five",
-    "ports",
-    "Canton"
-   ],
-   "excerpt": 0,
-   "note": "Britannica First Opium War (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C003",
-   "idx": 1,
-   "url": "https://omeka.conncoll.edu/exhibits/show/gold-journal/essays/delano",
-   "grep": [
-    "neutral",
-    "Russell",
-    "war",
-    "opium",
-    "Delano"
-   ],
-   "excerpt": 0,
-   "note": "Connecticut College essay (secondary; Americans trading during the war)",
-   "grep_width": 200
-  },
-  {
-   "id": "C004",
-   "idx": 2,
-   "url": "https://history.state.gov/historicaldocuments/frus1943China/comp12",
-   "grep": [
-    "extraterritorial rights",
-    "January 11, 1943",
-    "relinquishment",
-    "Republic of China",
-    "treaty"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1943 China, treaty for relinquishment of extraterritorial rights (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C005",
-   "idx": 1,
-   "url": "https://www.govinfo.gov/app/details/SERIALSET-01057_00_00-004-0088-0000",
-   "grep": [
-    "coolie",
-    "kidnap",
-    "Macao",
-    "mutiny",
-    "1860"
-   ],
-   "excerpt": 0,
-   "note": "H.Ex.Doc. 36-88, President's message on Chinese coolie trade 1860 (US Serial Set; govinfo details page)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C005",
-   "idx": 1,
-   "url": "https://www.archives.gov/publications/prologue/2001/summer/coolie-ship-kate-hooper-1",
-   "grep": [
-    "Kate Hooper",
-    "coolie",
-    "mutin",
-    "Cuba",
-    "kidnap"
-   ],
-   "excerpt": 0,
-   "note": "NARA Prologue 2001, coolie ship Kate Hooper (official history)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C007",
-   "idx": 0,
-   "url": "https://history.state.gov/milestones/1866-1898/burlingame-seward-treaty",
-   "grep": [
-    "Burlingame",
-    "Seward",
-    "July 28, 1868",
-    "1868",
-    "treaty"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Historian Milestones, Burlingame-Seward Treaty (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C007",
-   "idx": 0,
-   "url": "https://www.govinfo.gov/link/statute/16/740",
-   "grep": [
-    "July 28, 1868",
-    "Burlingame",
-    "Seward",
-    "Emperor of China",
-    "Ta-Tsing"
-   ],
-   "excerpt": 0,
-   "note": "Statutes at Large vol. 16, Burlingame treaty text (primary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C007",
-   "idx": 2,
-   "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration",
-   "grep": [
-    "1882",
-    "Chinese Exclusion Act",
-    "Burlingame",
-    "suspend",
-    "laborers"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Historian Milestones, Chinese Immigration and Exclusion Acts (official; reversal of migration promise)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C007",
-   "idx": 2,
-   "url": "https://history.house.gov/People/Listing/B/BURLINGAME,-Anson-(B001112)/",
-   "grep": [
-    "Burlingame",
-    "St. Petersburg",
-    "1870",
-    "Russia"
-   ],
-   "excerpt": 0,
-   "note": "House History bio of Anson Burlingame (official; death in St. Petersburg)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C007",
-   "idx": 2,
-   "url": "https://history.state.gov/departmenthistory/people/burlingame-anson",
-   "grep": [
-    "Burlingame",
-    "1870",
-    "St. Petersburg",
-    "China"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Historian people page, Burlingame (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 0,
-   "url": "https://archives.yale.edu/repositories/12/resources/3106",
-   "grep": [
-    "Yung Wing",
-    "120",
-    "1872",
-    "1875",
-    "Educational"
-   ],
-   "excerpt": 0,
-   "note": "Yale archives, Yung Wing papers (archive; 120 students)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 0,
-   "url": "https://connecticuthistory.org/yung-wings-dream-the-chinese-educational-mission-1872-1881/",
-   "grep": [
-    "Yung Wing",
-    "120",
-    "1872",
-    "1875",
-    "Yale"
-   ],
-   "excerpt": 0,
-   "note": "Connecticut Humanities history site (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 0,
-   "url": "https://news.yale.edu/2025/10/01/first-chinese-student-graduate-american-university",
-   "grep": [
-    "Yung Wing",
-    "1854",
-    "Yale",
-    "first Chinese"
-   ],
-   "excerpt": 0,
-   "note": "Yale News (university; first Chinese Yale graduate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 1,
-   "url": "https://www.gutenberg.org/files/54635/54635-h/54635-h.htm",
-   "grep": [
-    "West Point",
-    "Annapolis",
-    "no room provided for Chinese students",
-    "Woo",
-    "Americaniz"
-   ],
-   "excerpt": 0,
-   "note": "Yung Wing memoir My Life in China and America 1909 (primary, partisan)",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 1,
-   "url": "https://connecticuthistory.org/yung-wings-dream-the-chinese-educational-mission-1872-1881/",
-   "grep": [
-    "West Point",
-    "Annapolis",
-    "1878",
-    "Americanized",
-    "commissioner"
-   ],
-   "excerpt": 0,
-   "note": "Connecticut Humanities history site (secondary)",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 2,
-   "url": "https://archives.yale.edu/repositories/12/resources/3106",
-   "grep": [
-    "1881",
-    "recalled",
-    "Educational Commission",
-    "abolished",
-    "Zhan"
-   ],
-   "excerpt": 0,
-   "note": "Yale archives, Yung Wing papers (archive; recall 1881)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 2,
-   "url": "https://www.loc.gov/item/2021668851/",
-   "grep": [
-    "Zhan Tianyou",
-    "Beijing",
-    "Zhangjiakou",
-    "1909",
-    "foreign"
-   ],
-   "excerpt": 0,
-   "note": "LOC item, Jing-Zhang railway 1909 photo album (Zhan railway part; may state built without foreign involvement)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C008",
-   "idx": 2,
-   "url": "https://www.loc.gov/item/2021670744",
-   "grep": [
-    "Zhan Tianyou",
-    "Jing-Zhang",
-    "Zhangjiakou",
-    "chief engineer",
-    "railroad"
-   ],
-   "excerpt": 0,
-   "note": "LOC item, portrait of Zhan Tianyou (chief engineer of Beijing-Zhangjiakou line)",
+   "note": "US Reports vol 149 p 698 (primary; describes Geary Act 1892 provisions)",
    "ua": "browser",
    "grep_width": 200
   },
   {
    "id": "C009",
-   "idx": 0,
-   "url": "https://www.archives.gov/milestone-documents/chinese-exclusion-act",
-   "grep": [
-    "May 6, 1882",
-    "Chinese laborers",
-    "citizenship",
-    "suspend",
-    "Exclusion Act"
-   ],
-   "excerpt": 0,
-   "note": "NARA Milestone Documents, Chinese Exclusion Act (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C009",
-   "idx": 0,
+   "idx": 1,
    "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration",
    "grep": [
-    "1882",
-    "Chinese Exclusion Act",
-    "suspend",
-    "laborers",
-    "10 years"
+    "Geary Act",
+    "1892",
+    "certificate",
+    "Chinese",
+    "exclusion"
    ],
    "excerpt": 0,
    "note": "State Dept Historian Milestones (official)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C009",
+   "idx": 2,
+   "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
+   "grep": [
+    "Fong Yue Ting",
+    "May 15, 1893",
+    "certificate of residence",
+    "deport",
+    "149 U.S. 698"
+   ],
+   "excerpt": 0,
+   "note": "US Reports Fong Yue Ting v. United States (primary; Court upheld)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C009",
+   "idx": 2,
+   "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration",
+   "grep": [
+    "1943",
+    "repealed",
+    "Chinese Exclusion",
+    "Geary",
+    "wartime"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Historian Milestones (official; repeal 1943)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C009",
+   "idx": 2,
+   "url": "https://www.uscis.gov/about-us/our-history/stories-from-the-archives/edward-bing-kan-the-first-chinese-american-naturalized-after-repeal-of-chinese-exclusion",
+   "grep": [
+    "December 1943",
+    "repeal",
+    "Magnuson",
+    "Chinese exclusion",
+    "naturalized"
+   ],
+   "excerpt": 0,
+   "note": "USCIS history page (official; December 1943 repeal)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C010",
+   "idx": 2,
+   "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep118/usrep118356/usrep118356.pdf",
+   "grep": [
+    "Yick Wo",
+    "evil eye and an unequal hand",
+    "Fourteenth Amendment",
+    "territorial jurisdiction",
+    "118 U.S. 356"
+   ],
+   "excerpt": 0,
+   "note": "US Reports Yick Wo v. Hopkins (primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C010",
+   "idx": 2,
+   "url": "https://www.loc.gov/item/usrep118356/",
+   "grep": [
+    "Yick Wo",
+    "May 10, 1886",
+    "118 U.S. 356",
+    "Fourteenth Amendment",
+    "Matthews"
+   ],
+   "excerpt": 0,
+   "note": "LOC US Reports item page (primary; decision date)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C011",
+   "idx": 2,
+   "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep169/usrep169649/usrep169649.pdf",
+   "grep": [
+    "Wong Kim Ark",
+    "March 28, 1898",
+    "169 U.S. 649",
+    "citizen",
+    "Fourteenth Amendment"
+   ],
+   "excerpt": 0,
+   "note": "US Reports United States v. Wong Kim Ark (primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C011",
+   "idx": 2,
+   "url": "https://www.loc.gov/item/usrep169649/",
+   "grep": [
+    "Wong Kim Ark",
+    "1898",
+    "169 U.S. 649",
+    "March 28"
+   ],
+   "excerpt": 0,
+   "note": "LOC US Reports item page (primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C012",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1905/d221",
+   "grep": [
+    "boycott",
+    "Shanghai",
+    "guilds",
+    "exclusion",
+    "American goods"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1905 Rockhill dispatch on Shanghai guilds' boycott (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C012",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1905/ch43",
+   "grep": [
+    "boycott",
+    "Shanghai",
+    "merchants",
+    "guild",
+    "1905"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1905 chapter, Anti-American boycott (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C012",
+   "idx": 2,
+   "url": "https://history.state.gov/historicaldocuments/frus1905/d237",
+   "grep": [
+    "edict",
+    "August 31",
+    "boycott",
+    "viceroys",
+    "Rockhill"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1905 Rockhill on imperial edict of Aug 31 1905 (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C012",
+   "idx": 2,
+   "url": "https://www.theodorerooseveltcenter.org/digital-library/o282597/",
+   "grep": [
+    "Imperial edict",
+    "August 31, 1905",
+    "boycott",
+    "edict"
+   ],
+   "excerpt": 0,
+   "note": "Theodore Roosevelt Center, imperial edict of Aug 31 1905 (archive)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C013",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1908/d54",
+   "grep": [
+    "remission",
+    "indemnity",
+    "students",
+    "1908",
+    "education"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1908 Boxer indemnity remission document (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C013",
+   "idx": 0,
+   "url": "https://www.govinfo.gov/content/pkg/SERIALSET-05557_00_00-031-1275-0000/pdf/SERIALSET-05557_00_00-031-1275-0000.pdf",
+   "grep": [
+    "Remission",
+    "Chinese indemnity",
+    "10,785,286",
+    "joint resolution",
+    "students"
+   ],
+   "excerpt": 0,
+   "note": "H.Doc. 60-1275 executive order and joint resolution on remission (US Serial Set, primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C013",
+   "idx": 1,
+   "url": "https://www.tsinghua.edu.cn/en//info/1007/1011.htm",
+   "grep": [
+    "1911",
+    "Boxer",
+    "Indemnity",
+    "Tsinghua",
+    "preparatory"
+   ],
+   "excerpt": 0,
+   "note": "Tsinghua University official history (PRC; 1911 prep school)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C013",
+   "idx": 1,
+   "url": "https://www.soc.tsinghua.edu.cn/en/About/History.htm",
+   "grep": [
+    "1911",
+    "April 29",
+    "Boxer",
+    "Tsinghua",
+    "1909"
+   ],
+   "excerpt": 0,
+   "note": "Tsinghua Dept of Sociology history page (PRC university; 1911 opening)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C014",
+   "idx": 0,
+   "url": "https://manoa.hawaii.edu/chinesestudies/wp-content/uploads/2025/03/SYS-handout.pdf",
+   "grep": [
+    "Chee Kung",
+    "Chee Kong",
+    "Honolulu",
+    "1904",
+    "Hongmen"
+   ],
+   "excerpt": 0,
+   "note": "Univ. of Hawaii Chinese Studies handout on Sun Yat-sen in Hawaii (secondary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C014",
+   "idx": 0,
+   "url": "https://exhibits.lib.berkeley.edu/spotlight/eal-highlights/feature/chee-kung-tong-archives",
+   "grep": [
+    "Chee Kung Tong",
+    "Sun Yat-sen",
+    "Honolulu",
+    "Hongmen"
+   ],
+   "excerpt": 0,
+   "note": "UC Berkeley East Asian Library, Chee Kung Tong archives (secondary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C014",
+   "idx": 2,
+   "url": "https://www.xinhuanet.com/politics/2018-03/21/c_1122570517.htm",
+   "grep": [
+    "国务院侨务办公室",
+    "中央统战部",
+    "不再保留",
+    "侨务"
+   ],
+   "excerpt": 0,
+   "note": "Xinhua Chinese text of CPC Central Committee 2018 reform plan (PRC official)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C014",
+   "idx": 2,
+   "url": "https://www.xinhuanet.com/english/2018-03/21/c_137055471.htm",
+   "grep": [
+    "Overseas Chinese Affairs",
+    "United Front Work Department",
+    "overseas Chinese"
+   ],
+   "excerpt": 0,
+   "note": "Xinhua English text of 2018 reform plan (PRC official)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C015",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1919Parisv05/d32",
+   "grep": [
+    "Shantung",
+    "Kiaochow",
+    "Tsingtao",
+    "Japan",
+    "Wilson"
+   ],
+   "excerpt": 0,
+   "note": "FRUS Paris Peace Conf. v5 notes of meeting (likely Apr 30 1919 Council of Three; official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C015",
+   "idx": 0,
+   "url": "https://www.britannica.com/event/Shandong-question",
+   "grep": [
+    "Shandong",
+    "Wilson",
+    "Japan",
+    "1919",
+    "German"
+   ],
+   "excerpt": 0,
+   "note": "Britannica Shandong question (secondary)",
+   "grep_width": 200
+  },
+  {
+   "id": "C015",
+   "idx": 1,
+   "url": "https://history.state.gov/historicaldocuments/frus1919Parisv06/d75",
+   "grep": [
+    "Chinese Delegation",
+    "sign",
+    "reservation",
+    "Shantung"
+   ],
+   "excerpt": 0,
+   "note": "FRUS Paris Peace Conf. v6, Chinese letter on signing with Shantung reservation (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C015",
+   "idx": 1,
+   "url": "https://history.state.gov/historicaldocuments/frus1919v01/d344",
+   "grep": [
+    "delegation",
+    "sign",
+    "reservation",
+    "Shantung",
+    "Reinsch"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1919 v1, Reinsch to Secretary of State on China not signing (official primary)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C015",
+   "idx": 2,
+   "url": "https://www.britannica.com/event/Karakhan-Manifesto",
+   "grep": [
+    "Karakhan",
+    "July 25, 1919",
+    "March 1920",
+    "privileges",
+    "Chinese Eastern Railway"
+   ],
+   "excerpt": 0,
+   "note": "Britannica Karakhan Manifesto (secondary)",
+   "grep_width": 200
+  },
+  {
+   "id": "C016",
+   "idx": 1,
+   "url": "https://www.britannica.com/place/China/Communist-Nationalist-cooperation",
+   "grep": [
+    "Comintern",
+    "1922",
+    "Chinese Communist Party",
+    "Maring"
+   ],
+   "excerpt": 0,
+   "note": "Britannica China, Communist-Nationalist cooperation (secondary)",
+   "grep_width": 200
+  },
+  {
+   "id": "C016",
+   "idx": 1,
+   "url": "https://en.wikipedia.org/wiki/2nd_National_Congress_of_the_Chinese_Communist_Party",
+   "grep": [
+    "Comintern",
+    "branch",
+    "1922",
+    "Twenty-one",
+    "July"
+   ],
+   "excerpt": 0,
+   "note": "Wikipedia only (CCP 2nd Congress resolution on joining Comintern)",
+   "grep_width": 200
+  },
+  {
+   "id": "C017",
+   "idx": 2,
+   "url": "https://www.britannica.com/topic/Shanghai-General-Labour-Union",
+   "grep": [
+    "April 12",
+    "1927",
+    "Chiang Kai-shek",
+    "General Labour Union",
+    "Communist"
+   ],
+   "excerpt": 0,
+   "note": "Britannica Shanghai General Labour Union (secondary)",
+   "grep_width": 200
+  },
+  {
+   "id": "C017",
+   "idx": 2,
+   "url": "https://history.state.gov/milestones/1945-1952/chinese-rev",
+   "grep": [
+    "1927",
+    "Nationalists",
+    "Communists",
+    "purge"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Historian Milestones, Chinese Revolution (official; mentions 1927 break)",
    "ua": "browser",
    "grep_width": 200
   }
