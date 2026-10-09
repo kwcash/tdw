@@ -17,10 +17,13 @@ the same fact the case states; `related` means same subject, different event.
 ## Where the game and the book disagree (author to decide)
 
 1. **F005, the Panama ports ruling.** The case dates the Supreme Court's ruling
-   January 29, 2026 and says units of Maersk and MSC took over operations. Appendix H
-   (Protocols and Ports, note 13) says the ruling was "reported from late February 2026"
-   and that MSC's Terminal Investment Limited took over interim operation of the
-   Cristóbal terminal. The note itself says to check this at final proof.
+   January 29, 2026. Appendix H (Protocols and Ports, note 13) says "reported from late
+   February 2026". The AP report on NBC is dated Jan. 30, 2026 and says the court ruled "late
+   Thursday", which is January 29, so the case is right on the date and the note looks wrong
+   (see `futures-link-check.md`). The case also says units of Maersk and MSC took over; the
+   note says MSC's Terminal Investment Limited took over the Cristóbal terminal. The NBC page
+   does not mention either, so the operator detail is still unsourced. The note itself says to
+   recheck it at final proof.
 2. **F004, Taiwan espionage.** The case cites convictions of four soldiers in March 2025.
    Appendix H (Taiwan, note 9) records a different case: charges on June 10, 2025,
    convictions on September 25, 2025, and a High Court ruling on June 25, 2026 that cut
