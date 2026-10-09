@@ -27,10 +27,10 @@
   "gap": "Principles",
   "text": {
     "brief": "On September 13, 2000, Judge James Parker apologized from the bench to Wen Ho Lee for the way the government had held him.",
-    "record": "Lee, a Los Alamos scientist born in Taiwan, had spent 278 days in solitary confinement after investigators named him in the search for a leak of W88 warhead data. Prosecutors charged him with 59 counts of mishandling classified files and never charged him with espionage. He pleaded guilty to one count and went free that day. In 2006 the government and five news organizations paid him about $1.6 million to settle his privacy suit.",
+    "record": "Lee, a Los Alamos scientist born in Taiwan, had spent 278 days in solitary confinement after investigators named him in the search for a leak of W88 warhead data ([Report on Oversight of the Wen Ho Lee Case (Senate Subcommittee, 2001; FAS mirror)](https://irp.fas.org/congress/2001_rpt/whl.html)). Prosecutors charged him with 59 counts of mishandling classified files and never charged him with espionage ([Report on Oversight of the Wen Ho Lee Case (Senate, FAS mirror)](https://irp.fas.org/congress/2001_rpt/whl.html); [Testimony of Attorney General Janet Reno on the Wen Ho Lee case (FAS mirror)](https://sgp.fas.org/congress/2000/reno.html)). He pleaded guilty to one count and went free that day. In 2006 the government and five news organizations paid him about $1.6 million to settle his privacy suit.",
     "reading": "The investigation narrowed to one man before it tested the evidence, and the W88 question has never reached a public answer. A defender who picks suspects by origin hands the Party a recruiting argument and leaves the real leak unfound.",
     "gapText": "Architecture Principles. The judge who freed Lee said the government had embarrassed the nation, and no principle had stopped the case before it reached him.",
     "fix": "Test every counterintelligence lead against the evidence before naming anyone, and keep ancestry off the suspect list."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

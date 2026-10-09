@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "In October 1954 Mao Zedong's government ordered demobilized soldiers in Xinjiang to form a production and construction corps that would farm, build and garrison the region.",
-    "record": "The Corps grew into a state within the region that runs its own cities, courts and police. It grows a large share of Xinjiang's cotton and settled Han migrants across Uyghur lands for decades. The Treasury Department sanctioned the Corps and two of its officials on July 31, 2020 for serious human rights abuse. In December customs officers began to hold its cotton at the border.",
+    "record": "The Corps grew into a state within the region that runs its own cities, courts and police. It grows a large share of Xinjiang's cotton and settled Han migrants across Uyghur lands for decades. The Treasury Department sanctioned the Corps and two of its officials on July 31, 2020 for serious human rights abuse ([Treasury press release sm1073: sanctions on Xinjiang Production and Construction Corps and officials](https://home.treasury.gov/news/press-releases/sm1073); [OFAC recent actions, July 31, 2020: Global Magnitsky designations](https://ofac.treasury.gov/recent-actions/20200731)). In December customs officers began to hold its cotton at the border ([CBP: detention order on cotton products made by the Xinjiang Production and Construction Corps](https://www.cbp.gov/newsroom/national-media-release/cbp-issues-detention-order-cotton-products-made-xinjiang-production); [CRS report R46631 (everycrsreport mirror at congress.gov)](https://www.congress.gov/crs_external_products/R/PDF/R46631/R46631.6.pdf)).",
     "reading": "Settlement turned soldiers from guests into hosts on Uyghur land, which is Stratagem 30. The Corps ran the method in one institution, a garrison that became an economy and then a supplier to American stores.",
     "gapText": "Data Architecture. Buyers traced cotton to a country rather than to the Corps that grew it, so the fiber reached American shelves through spinners abroad.",
     "fix": "Trace fiber to the farm with testing and records that follow it through every spinner."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

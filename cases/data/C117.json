@@ -28,10 +28,10 @@
   "gap": "Governance",
   "text": {
     "brief": "On January 27, 2023, Assistant Secretary of the Air Force Andrew Hunter wrote that a corn mill planned near Grand Forks Air Force Base posed a significant threat to national security.",
-    "record": "Fufeng Group of Shandong had bought about 370 acres twelve miles from the base, which hosts drone and space communications units. CFIUS had concluded in December 2022 that it lacked jurisdiction over the purchase. The city council voted in February 2023 to stop the project. Treasury later brought land near the base under review, and a rule of November 2024 added 59 more installations to the list.",
+    "record": "Fufeng Group of Shandong had bought about 370 acres twelve miles from the base, which hosts drone and space communications units ([Witness statement (Daly), House Agriculture Committee hearing, 118th Congress (congress.gov)](https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf)). CFIUS had concluded in December 2022 that it lacked jurisdiction over the purchase ([Senate committee hearing, 118th Congress (S. Hrg., CHRG-118shrg56337)](https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf)). The city council voted in February 2023 to stop the project. Treasury later brought land near the base under review, and a rule of November 2024 added 59 more installations to the list ([Federal Register, May 5, 2023: proposed rule adding military installations to 31 CFR Part 802 Appendix A (govinfo)](https://www.govinfo.gov/content/pkg/FR-2023-05-05/pdf/2023-09259.pdf); [Federal Register, November 7, 2024: Definition of Military Installation and the List of Military Installations (Treasury final rule)](https://www.federalregister.gov/documents/2024/11/07/2024-25773/definition-of-military-installation-and-the-list-of-military-installations-in-the-regulations)).",
     "reading": "The review system measured ownership and missed geography, so a buyer from the mainland could place a permanent facility beside a strategic base with no federal check. A city council made a national security decision because no federal office owned it.",
     "gapText": "Architecture Governance. No federal office owned land deals near bases that sat outside the list, so the decision fell to local officials.",
     "fix": "Tie review of land purchases to the capabilities a base protects, and update the list as missions change."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

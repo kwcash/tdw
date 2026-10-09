@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On June 19, 1995, border guards at Horgos detained Harry Wu as he entered from Kazakhstan on an American passport.",
-    "record": "Wu had spent nineteen years in the Party's labor camps before he left for the United States in 1985. He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991. A court convicted him of espionage in August 1995 and sentenced him to fifteen years, and the Party expelled him the same day. Hillary Clinton flew to the women's conference in Beijing two weeks later.",
+    "record": "Wu had spent nineteen years in the Party's labor camps before he left for the United States in 1985 ([S. Res. 148, 104th Congress: sense of the Senate on the arrest of Harry Wu (govinfo)](https://www.govinfo.gov/app/details/BILLS-104sres148ats)). He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991. A court convicted him of espionage in August 1995 and sentenced him to fifteen years, and the Party expelled him the same day ([Statement by the White House Press Secretary on the expulsion of Harry Wu, August 24, 1995 (Clinton White House archive)](https://clintonwhitehouse6.archives.gov/1995/08/1995-08-24-press-secretary-statement-on-china-expulsion-of-wu.html); [Amnesty International: Ding Zilin arrested, Harry Wu sentenced](https://www.amnesty.org/en/documents/asa17/058/1995/en/)). Hillary Clinton flew to the women's conference in Beijing two weeks later.",
     "reading": "The camps ran a production line with a prison at one end and an export market at the other, and each camp carried a company name to cross the sea, which is Stratagem 1. Wu proved the link with a hidden camera, work the defender's own customs service had left undone.",
     "gapText": "Data Architecture. Importers could not see a camp behind a company name, and customs kept no record that linked the two.",
     "fix": "Require importers to trace goods to the factory floor, and publish the list of known camp enterprises."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

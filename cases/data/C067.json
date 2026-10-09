@@ -27,10 +27,10 @@
   "gap": "Governance",
   "text": {
     "brief": "On November 30, 1989, George H. W. Bush vetoed a bill that would have let Chinese students stay in the United States after the massacre.",
-    "record": "Bush said he would protect the students by executive action, and his Executive Order 12711 of April 11, 1990 deferred their departure. The House voted to override the veto, and the Senate fell four votes short. In 1992 Congress passed the Chinese Student Protection Act, which let tens of thousands of students and scholars from the People's Republic apply for permanent residence.",
+    "record": "Bush said he would protect the students by executive action, and his Executive Order 12711 of April 11, 1990 deferred their departure ([Executive Order 12711 of April 11, 1990 (Federal Register, 55 FR 13897)](https://archives.federalregister.gov/issue_slice/1990/4/13/13897-13898.pdf); [Executive Order 12711 (American Presidency Project)](https://www.presidency.ucsb.edu/documents/executive-order-12711-policy-implementation-with-respect-nationals-the-peoples-republic)). The House voted to override the veto, and the Senate fell four votes short. In 1992 Congress passed the Chinese Student Protection Act, which let tens of thousands of students and scholars from the People's Republic apply for permanent residence ([Chinese Student Protection Act of 1992, Pub. L. 102-404, 106 Stat. 1969 (govinfo)](https://www.govinfo.gov/content/pkg/STATUTE-106/pdf/STATUTE-106-Pg1969.pdf); [Chinese Student Protection Act of 1992, compilation (govinfo)](https://www.govinfo.gov/content/pkg/COMPS-1364/pdf/COMPS-1364.pdf)).",
     "reading": "Both branches chose to shield the people rather than return them to the Party's reach, and they argued only over the instrument. The Party later built talent programs aimed at this generation of graduates, programs that treat ancestry as a claim on loyalty that American law rejects.",
     "gapText": "Architecture Governance. The design held because Congress kept pressing after the veto and the President answered with an order of his own.",
     "fix": "Keep a standing path to stay for students and scholars whose home state turns on them, so protection never waits for a veto fight."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

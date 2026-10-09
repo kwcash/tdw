@@ -1,0 +1,218 @@
+[
+ {
+  "id": "C067",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Chinese Student Protection Act of 1992, Pub. L. 102-404, 106 Stat. 1969 (govinfo)",
+   "Chinese Student Protection Act of 1992, compilation (govinfo)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/STATUTE-106/pdf/STATUTE-106-Pg1969.pdf",
+   "https://www.govinfo.gov/content/pkg/COMPS-1364/pdf/COMPS-1364.pdf"
+  ],
+  "notes": "Statute: an Act 'to provide for the adjustment of status' of certain nationals of the People's Republic of China, October 9, 1992, with an application period of 12 months. 'Tens of thousands' is the case's gloss and was not checked."
+ },
+ {
+  "id": "C068",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "ADST oral history: Spy vs. Spy, the Yin-he incident (secondary)",
+   "Arms Control Wonk: The Yinhe Incident (Carnegie researcher's blog, secondary)"
+  ],
+  "url": [
+   "https://adst.org/?p=25291",
+   "https://www.armscontrolwonk.com/archive/602067/the-yinhe-incident/"
+  ],
+  "notes": "Secondary sources: the US said the Yinhe sailed from a Chinese port with an illicit cargo of thiodiglycol and thionyl chloride, precursors of mustard gas, bound for Iran (1993). ADST recounts the evidence John Tkacik handled; the blog quotes the New York Times and says the intelligence 'all proved to be wrong'. Primary US government records were not found."
+ },
+ {
+  "id": "C068",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "ADST oral history: Spy vs. Spy, the Yin-he incident (secondary)",
+   "Arms Control Wonk: The Yinhe Incident (secondary)"
+  ],
+  "url": [
+   "https://adst.org/?p=25291",
+   "https://www.armscontrolwonk.com/archive/602067/the-yinhe-incident/"
+  ],
+  "notes": "Secondary: the ship was inspected at Dammam with Saudi participation (Sha Zukang led the Chinese side) and 'carrying no such cargo'. The early-September date and the 628 containers were not found in the text read."
+ },
+ {
+  "id": "C069",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Executive Order 12850 of May 28, 1993 (National Archives)",
+   "Executive Order 12850 (Clinton White House archive)"
+  ],
+  "url": [
+   "https://www.archives.gov/files/federal-register/executive-orders/pdf/12850.pdf",
+   "https://clintonwhitehouse6.archives.gov/1993/05/1993-05-28-executive-order-12850-on-china-mfn.html"
+  ],
+  "notes": "The order requires the Secretary of State to recommend against extending Most-Favored-Nation status for China after July 3, 1994 unless China is complying with the freedom of emigration objectives and the 1992 prison-labor agreement, and then makes progress 'overall, significant progress' on further listed human-rights areas."
+ },
+ {
+  "id": "C069",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "Human Rights Watch/Asia: China, no progress on human rights (May 4, 1994)",
+   "Amnesty International: Wei Jingsheng held in secret for 16 months (August 4, 1995)"
+  ],
+  "url": [
+   "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+   "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170521995en.pdf"
+  ],
+  "notes": "NGO reports: HRW names Wei Jingsheng among those 'silenced' and mentions Shattuck; Amnesty says Wei Jingsheng was held in secret for 16 months as of August 1995, which counts back to spring 1994. The exact arrest date, April 1, 1994, and the link to the Shattuck meeting are not in the snippets."
+ },
+ {
+  "id": "C069",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "The President's News Conference, May 26, 1994 (Clinton White House archive)",
+   "Public Papers of the Presidents, 1994, Book I, p. 991 (govinfo)"
+  ],
+  "url": [
+   "https://clintonwhitehouse6.archives.gov/1994/05/1994-05-26-president-in-press-conference-on-china-mfn-status.html",
+   "https://www.govinfo.gov/content/pkg/PPP-1994-book1/pdf/PPP-1994-book1-doc-pg991.pdf"
+  ],
+  "notes": "Clinton's remarks: Secretary Christopher reported on the conditions in last year's executive order; 'there was progress made in important areas, including the resolution of all emigration cases, the establishment of a memorandum' on prison labor, though China did not make overall significant progress in all the areas; Clinton decided to renew MFN anyway."
+ },
+ {
+  "id": "C070",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "S. Res. 148, 104th Congress: sense of the Senate on the arrest of Harry Wu (govinfo)",
+  "url": "https://www.govinfo.gov/app/details/BILLS-104sres148ats",
+  "notes": "Senate resolution recitals: Peter H. Wu, known as Harry Wu, spent 19 years in Chinese labor camps and was arrested in 1995 on entering China. His departure for the United States in 1985 was not in the snippet; Britannica returned HTTP 403."
+ },
+ {
+  "id": "C070",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Only Britannica was offered and it returned HTTP 403. Wu's covert filming and the 1991 60 Minutes broadcast are unchecked."
+ },
+ {
+  "id": "C070",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Statement by the White House Press Secretary on the expulsion of Harry Wu, August 24, 1995 (Clinton White House archive)",
+   "Amnesty International: Ding Zilin arrested, Harry Wu sentenced"
+  ],
+  "url": [
+   "https://clintonwhitehouse6.archives.gov/1995/08/1995-08-24-press-secretary-statement-on-china-expulsion-of-wu.html",
+   "https://www.amnesty.org/en/documents/asa17/058/1995/en/"
+  ],
+  "notes": "White House statement: the PRC 'has expelled Harry Wu from the country'; 'Wu was convicted on Aug. 24 and sentenced to 15 years imprisonment.' Amnesty's bulletin on the sentence is dated 23 August 1995, so a one-day discrepancy exists between sources about the conviction date; 'espionage' as the charge is not in the snippets."
+ },
+ {
+  "id": "C071",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Federal Register, January 24, 2002: notices of Trade Adjustment Assistance petitions (Magnequench, Anderson, Indiana)",
+   "USCC statement of Commissioner Carolyn Bartholomew (Magnequench and rare-earth magnets)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/FR-2002-01-24/pdf/02-1773.pdf",
+   "https://www.uscc.gov/sites/default/files/Statement%20of%20Carolyn%20Bartholomew%20July%202005.pdf"
+  ],
+  "notes": "A Labor Department notice lists a worker-adjustment petition by Magnequench workers in Indiana (petition dates in November 2001); the Commission statement discusses China's acquisition of the bonded-magnet maker. The move of lines to Tianjin and the 2002 closure of the Anderson plant were not in the text read. A helper's lead, unverified: sources give the closure between late 2001 and 2004 and do not name Tianjin."
+ },
+ {
+  "id": "C072",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "CECC analysis: Government policy on Tibetan reincarnation leads to expulsions, detentions",
+  "url": "https://www.cecc.gov/publications/commission-analysis/government-policy-on-tibetan-reincarnation-leads-to-expulsions",
+  "notes": "US congressional commission analysis: the Chinese government dismissed as 'illegal and invalid' the Dalai Lama's May 1995 recognition of Gedun Choekyi Nyima and installed Gyaltsen Norbu in December 1995. The golden-urn lottery in November is not in the text read."
+ },
+ {
+  "id": "C072",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "State Department 2023 Report on International Religious Freedom: Tibet",
+   "USCIRF: Gedhun Choekyi Nyima, freedom of religion or belief victims database"
+  ],
+  "url": [
+   "https://2021-2025.state.gov/reports/2023-report-on-international-religious-freedom/china/tibet/",
+   "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/gedhun-choekyi-nyima"
+  ],
+  "notes": "State Department: 'The Dalai Lama-recognized Panchen Lama, Gedhun Choekyi Nyima, disappeared in 1995 at the age of six.' USCIRF lists the date of detainment as May 17, 1995 and his current status as unknown."
+ },
+ {
+  "id": "C072",
+  "idx": 4,
+  "verdict": "supported",
+  "label": [
+   "CECC: Chairs welcome passage of the Tibetan Policy and Support Act (2020)",
+   "State Department 2020 Report on International Religious Freedom: Tibet"
+  ],
+  "url": [
+   "https://www.cecc.gov/media-center/press-releases/chairs-welcome-passage-of-the-tibetan-policy-and-support-act",
+   "https://www.state.gov/wp-content/uploads/2021/05/240282-TIBET-2020-INTERNATIONAL-RELIGIOUS-FREEDOM-REPORT.pdf"
+  ],
+  "notes": "CECC chairs' statement: the Act, passed in 2020, 'stands with the Tibetan people and against any effort by the Chinese Communist Party to interfere with the religious process of identifying' the Dalai Lama's reincarnation; the State report discusses the Act and the succession issue. The exact statutory wording was not read; check section 342 of the Act."
+ },
+ {
+  "id": "C073",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "CRS In Focus IF12371: Taiwan presidents' travel (via EveryCRSReport)",
+  "url": "https://www.everycrsreport.com/files/2023-04-04_IF12371_8c02902da8b53bb7fd8ac59ac780d0e8a24c4618.pdf",
+  "notes": "CRS: the concurrent resolution 'Expressing the sense of the Congress regarding a private visit by President Lee Teng-hui' passed '396-0 in the House, and 97-1 in the Senate'; Lee visited Cornell in June 1995."
+ },
+ {
+  "id": "C073",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "CRS report 97-484: China-U.S. relations, chronology of developments during the Clinton administration (via EveryCRSReport)",
+   "CRS In Focus IF12371"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/reports/97-484.html",
+   "https://www.everycrsreport.com/files/2023-04-04_IF12371_8c02902da8b53bb7fd8ac59ac780d0e8a24c4618.pdf"
+  ],
+  "notes": "CRS: 'In response' to Lee's visit 'the PRC carried out missile launches, live-fire exercises'; tensions reached a zenith in March 1996 'when China began conducting ballistic missile tests'. The July 1995 tests and the timing days before Taiwan's first direct presidential election are not in the snippets."
+ },
+ {
+  "id": "C074",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "House Report 105-829: Investigation of political fundraising improprieties and possible violations of law (govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/CRPT-105hrpt829/pdf/CRPT-105hrpt829-vol1.pdf",
+  "notes": "House committee report: Johnny Chung 'told Federal investigators that he funneled tens of thousands of dollars from a Chinese military officer, Liu Chao-ying'; 'the money came from the People's Liberation Army through Liu Chao-ying, a Chinese aerospace executive whose father' [General Liu Huaqing, per other reports] is named in the report."
+ },
+ {
+  "id": "C074",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Senate Report 105-167, Vol. 1: Investigation of illegal or improper activities in connection with 1996 federal election campaigns (Committee on Governmental Affairs)",
+   "Senate Report 105-167, Vol. 6 (minority views)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/CRPT-105srpt167/pdf/CRPT-105srpt167-pt1.pdf",
+   "https://www.congress.gov/105/crpt/srpt167/CRPT-105srpt167-pt6.pdf"
+  ],
+  "notes": "The Committee's final report (1998) includes a chapter 'The China Connection: Summary of Committee's Findings Relating to the Efforts' of the PRC to influence elections; Volume 6 carries minority views contesting the conclusions. The majority and minority wording on the extent of the plan was not read in full."
+ },
+ {
+  "id": "C074",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Senate report volume read (first pages only, the report runs thousands of pages) did not contain '$2.8 million', citizenship or surnames in the text captured. The DNC's returned donations and its calls to donors with Asian surnames are unchecked."
+ }
+]

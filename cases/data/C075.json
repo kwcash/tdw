@@ -28,10 +28,10 @@
   "gap": "Application",
   "text": {
     "brief": "On May 25, 1999, Representative Christopher Cox released a select committee report on how American technology had reached the Party's rocket and missile programs.",
-    "record": "A Long March 3B had crashed on launch at Xichang in February 1996 with a Loral satellite aboard. Loral and Hughes engineers shared failure analyses with Chinese rocket engineers after that crash and an earlier one, and the State Department charged both companies with exporting controlled data without a license. Congress returned commercial satellites to the Munitions List in 1999. Loral paid $14 million in 2002, and Boeing paid $32 million in 2003 for violations at the Hughes unit it had bought.",
+    "record": "A Long March 3B had crashed on launch at Xichang in February 1996 with a Loral satellite aboard ([House Report 105-851 (Cox Committee), Chapter 6: the Intelsat 708 launch failure (govinfo)](https://www.govinfo.gov/content/pkg/GPO-CRPT-105hrpt851/html/ch6bod.html)). Loral and Hughes engineers shared failure analyses with Chinese rocket engineers after that crash and an earlier one, and the State Department charged both companies with exporting controlled data without a license. Congress returned commercial satellites to the Munitions List in 1999 ([CRS report 98-485: China, possible missile technology transfers under U.S. satellite export policy (via EveryCRSReport)](https://www.everycrsreport.com/reports/98-485.html)). Loral paid $14 million in 2002, and Boeing paid $32 million in 2003 for violations at the Hughes unit it had bought ([CRS report 98-485 (2003 edition, via EveryCRSReport)](https://www.everycrsreport.com/files/20030327_98-485F_9e792d372e35fdcfa67dbe27d0ae626afb8b9c56.pdf)).",
     "reading": "Knowledge ran downhill from a commercial review into a launch program that shares its engineering with the Party's missiles, which is Stratagem 12. Congress answered with the heaviest tool it had, and the new rules cost American satellite makers business for years.",
     "gapText": "Application Architecture. The license routine covered satellites and launch services but not the failure reviews that followed a crash.",
     "fix": "Treat failure analysis as controlled data under every export license, and brief engineers on the line before they sit down with a foreign launcher."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

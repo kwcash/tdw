@@ -28,10 +28,10 @@
   "gap": "Business",
   "text": {
     "brief": "On September 30, 2018, Ambassador Terry Branstad wrote in the Des Moines Register that a leading newspaper on the mainland had refused to print his essay.",
-    "record": "A week earlier China Daily had paid for a four-page supplement in the Register that warned Iowa farmers about the costs of the trade war. The Party's retaliatory tariffs that July had hit soybeans and other farm goods, and analysts found them aimed at counties that had voted for the President in 2016. Soybean exports to the mainland fell from about $12 billion in 2017 to about $3 billion in 2018. The Agriculture Department announced about $28 billion in aid for farmers over two years.",
+    "record": "A week earlier China Daily had paid for a four-page supplement in the Register that warned Iowa farmers about the costs of the trade war. The Party's retaliatory tariffs that July had hit soybeans and other farm goods, and analysts found them aimed at counties that had voted for the President in 2016 ([Fajgelbaum, Goldberg, Kennedy and Khandelwal, The Return to Protectionism (NBER working paper 25638)](https://www.nber.org/system/files/working_papers/w25638/revisions/w25638.rev0.pdf); [Blanchard, Bown and Chor, Did Trump's trade war impact the 2018 election? (NBER working paper 26434)](https://www.nber.org/system/files/working_papers/w26434/w26434.pdf)). Soybean exports to the mainland fell from about $12 billion in 2017 to about $3 billion in 2018. The Agriculture Department announced about $28 billion in aid for farmers over two years ([CRS report R45310: Farm policy, USDA's trade aid package (updated September 26, 2018)](https://www.congress.gov/crs_external_products/R/PDF/R45310/R45310.7.pdf); [CRS report R45865: Farm policy, USDA's 2019 trade aid package (updated November 26, 2019)](https://www.congress.gov/crs_external_products/R/PDF/R45865/R45865.7.pdf)).",
     "reading": "The Party picked targets for their weight in American politics rather than their weight in trade, which is Stratagem 26, and then spoke to the farmers in their own paper. Washington answered with aid, and the buyers moved to Brazil.",
     "gapText": "Business Architecture. American farm exports depended on one buyer that could shift its purchases overnight, and no plan spread that risk before the tariffs came.",
     "fix": "Build export markets for farm goods in several countries before a trade fight begins, so one buyer cannot hold a state's farmers hostage."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

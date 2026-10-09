@@ -28,10 +28,10 @@
   "gap": "Application",
   "text": {
     "brief": "In May and June 2020 Julien Jin, a Zoom employee in the People's Republic who served as the company's liaison to Party security services, shut down meetings that commemorated the Tiananmen massacre.",
-    "record": "Prosecutors said Jin and others fabricated evidence that the meetings broke the terms of service, created fake accounts in dissidents' names and passed users' names and email addresses to officials of the People's Republic. At least four meetings went dark, and many participants lived in the United States, some in Queens and on Long Island. The Justice Department charged Jin on December 18, 2020. He remains outside American custody.",
+    "record": "Prosecutors said Jin and others fabricated evidence that the meetings broke the terms of service, created fake accounts in dissidents' names and passed users' names and email addresses to officials of the People's Republic ([Complaint affidavit, United States v. Jin Xinjiang et al. (E.D.N.Y.; U.S. Attorney's Office copy)](https://www.justice.gov/usao-edny/media/1287481/dl)). At least four meetings went dark, and many participants lived in the United States, some in Queens and on Long Island. The Justice Department charged Jin on December 18, 2020. He remains outside American custody.",
     "reading": "The Party's police reached into an American platform's trust and safety process and censored Americans on American soil, which is Stratagem 30. No police station was needed when a platform's own employee could end the meeting.",
     "gapText": "Application Architecture. The platform's moderation routine accepted evidence from an employee who answered to a foreign police service.",
     "fix": "Wall off decisions about American users from staff subject to a foreign security service, and log every takedown request by its source."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

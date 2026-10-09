@@ -27,10 +27,10 @@
   "gap": "Business",
   "text": {
     "brief": "In July 2014 Judge Eldon Fallon held Taishan Gypsum in contempt and barred it from doing business in the United States after it walked out of his court.",
-    "record": "Builders had installed drywall from the People's Republic in thousands of homes after the hurricanes of 2004 and 2005. The boards released sulfur gases that corroded wiring and appliances, and many families left their homes. Taishan, a subsidiary of a state-owned building materials group, defaulted and then argued that its parent enjoyed sovereign immunity. The court rejected the claim, and Taishan agreed in 2019 to pay $248 million.",
+    "record": "Builders had installed drywall from the People's Republic in thousands of homes after the hurricanes of 2004 and 2005 ([In re Chinese-Manufactured Drywall Products Liability Litigation, E.D. La. MDL 2047 (govinfo)](https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-44.pdf); [CPSC: Investigation of imported drywall, status update, October 2009](https://www.cpsc.gov/s3fs-public/pdfs/blk_media_oct2009status.pdf)). The boards released sulfur gases that corroded wiring and appliances, and many families left their homes. Taishan, a subsidiary of a state-owned building materials group, defaulted and then argued that its parent enjoyed sovereign immunity. The court rejected the claim, and Taishan agreed in 2019 to pay $248 million.",
     "reading": "A state-owned supplier treated an American court as optional and retreated from it until the court threatened its parent's business, which is Stratagem 36. The families waited more than a decade for money their own courts had awarded.",
     "gapText": "Business Architecture. Importers carried no bond or insurance for a foreign supplier that American courts struggled to reach.",
     "fix": "Require importers of building materials to carry insurance or a bond that answers for defects, whoever made them."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -1,0 +1,214 @@
+[
+ {
+  "id": "C074",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "House Report 105-829, Vol. 1: Investigation of political fundraising improprieties (govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/CRPT-105hrpt829/pdf/CRPT-105hrpt829-vol1.pdf",
+  "notes": "House committee report: the DNC prepared two questionnaires (one for individuals, one for corporate donors) for telephone interviews of donors, and the committee discusses the background of those involved in illegal contributions. The figure of about $2.8 million returned and the calls to donors with Asian surnames were not in the snippets."
+ },
+ {
+  "id": "C075",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "House Report 105-851 (Cox Committee), Chapter 6: the Intelsat 708 launch failure (govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/GPO-CRPT-105hrpt851/html/ch6bod.html",
+  "notes": "The Cox report's chapter 6 summary: 'On February 15, 1996, a Long March 3B rocket carrying the U.S.-built Intelsat 708 satellite' crashed at Xichang; Loral was the satellite's builder and led the review."
+ },
+ {
+  "id": "C075",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "CRS report 98-485: China, possible missile technology transfers under U.S. satellite export policy (via EveryCRSReport)",
+  "url": "https://www.everycrsreport.com/reports/98-485.html",
+  "notes": "CRS: the FY1999 National Defense Authorization Act (P.L. 105-261) was passed in 1998 and moved satellite export licensing back to the State Department's Munitions List; the effective date, March 15, 1999, is likely the source of '1999' in the sentence. The sentence's year should be checked against the Act's date (October 1998)."
+ },
+ {
+  "id": "C075",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "CRS report 98-485 (2003 edition, via EveryCRSReport)",
+  "url": "https://www.everycrsreport.com/files/20030327_98-485F_9e792d372e35fdcfa67dbe27d0ae626afb8b9c56.pdf",
+  "notes": "CRS: on January 9, 2002 Loral announced a $20 million settlement 'whereby it agreed to pay a civil fine of $14 million to the State Department' and to spend at least $6 million on compliance; in early 2003 Hughes Electronics and Boeing agreed to a civil penalty of $32 million."
+ },
+ {
+  "id": "C076",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Board of Immigration Appeals, Interim Decision 3215 (Golden Venture passengers; DOJ EOIR)",
+  "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3215.pdf",
+  "notes": "BIA decision: the Golden Venture, with some 300 passengers and a crew of 13 Indonesian nationals, 'ran aground on a sandbar off the coast of New York' 100 to 200 yards off the Rockaway Peninsula on June 6, 1993. The passage read says the Coast Guard recovered the bodies of four passengers who drowned and three other passengers died later, which is seven, not ten; the commonly cited total of ten is not shown in the text read."
+ },
+ {
+  "id": "C078",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "State Department 1998 Country Report on Human Rights Practices: China",
+   "Human Rights Watch chronology: China, Hong Kong, Tibet (April-June 1998)"
+  ],
+  "url": [
+   "https://1997-2001.state.gov/global/human_rights/1998_hrp_report/china.html",
+   "https://www.hrw.org/legacy/campaigns/china-98/chron298.htm"
+  ],
+  "notes": "State report: 'Tiananmen student leader Wang Dan was released on medical parole' and allowed to go abroad in 1998. HRW's April 1998 chronology (an NGO) records the release into exile of Wang Dan in April. Clinton's visit was in late June 1998."
+ },
+ {
+  "id": "C078",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "State Department 1998 Country Report on Human Rights Practices: China",
+   "Human Rights Watch: Nipped in the Bud, the suppression of the China Democracy Party (2000)"
+  ],
+  "url": [
+   "https://1997-2001.state.gov/global/human_rights/1998_hrp_report/china.html",
+   "https://www.hrw.org/report/2000/09/01/china-nipped-bud/suppression-china-democracy-party"
+  ],
+  "notes": "State report: 'in December, three of its leaders were sentenced to lengthy jail terms' (Wang Youcai, Xu Wenli, Qin Yongmin), a warning to other activists. HRW (NGO) documents the suppression, with sentences of up to thirteen years."
+ },
+ {
+  "id": "C079",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Remarks of Under Secretary Pickering, June 17, 1999: accidental bombing of the PRC embassy in Belgrade",
+   "CRS report RS20547: Chinese embassy bombing in Belgrade, compensation issues"
+  ],
+  "url": [
+   "https://1997-2001.state.gov/policy_remarks/1999/990617_pickering_emb.html",
+   "https://www.everycrsreport.com/reports/RS20547.html"
+  ],
+  "notes": "State Department: 'on 7 May 1999 one of the fleet of B-2 bombers from Whiteman AFB' dropped five 2,000-pound GPS-guided bombs on the building targeted, which proved to be the embassy. CRS: the payment was to the families of 'the 3 killed and to the 27 injured'. That the dead were journalists is not stated in the text read; a helper's lead, unverified: a CRS report calls them journalists, an earlier one embassy employees."
+ },
+ {
+  "id": "C079",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "CRS report RS20547: Chinese embassy bombing in Belgrade, compensation issues",
+   "State Department, December 16, 1999: US-China agreement on embassy bombing compensation"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/reports/RS20547.html",
+   "https://1997-2001.state.gov/briefings/statements/1999/ps991216b.html"
+  ],
+  "notes": "CRS: on August 25, 1999 the United States made a 'voluntary humanitarian payment of $4.5 million to the families of the 3 killed and to the 27 injured'. State on December 16, 1999: 'We will seek funding in Congress so that we can provide $28 million for damages to the Chinese Embassy', and the Chinese would pay $2.87 million for damage to US facilities."
+ },
+ {
+  "id": "C080",
+  "idx": 0,
+  "verdict": "contradicted",
+  "label": [
+   "Amnesty International: China, the crackdown on Falun Gong (March 2000)",
+   "H. Res. 605, 111th Congress (govinfo)"
+  ],
+  "url": [
+   "https://www.amnesty.org/ar/wp-content/uploads/2021/12/ASA170112000ENGLISH.pdf",
+   "https://www.govinfo.gov/content/pkg/BILLS-111hres605ih/html/BILLS-111hres605ih.htm"
+  ],
+  "notes": "Amnesty: 'On 22 July 1999, the Ministry of Civil Affairs issued a Decision banning' the Falun Dafa research society. The House resolution: 'on July 20, 1999, Chinese police began arresting leading Falun Gong practitioners; on July 22, 1999, Chinese state media began a major propaganda campaign' to ban it. So July 20 dates the start of the crackdown and arrests, and July 22 the formal ban. Text left unchanged for the author."
+ },
+ {
+  "id": "C080",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "H. Res. 605, 111th Congress (govinfo)",
+   "CECC hearing statement by Caylan Ford: Falun Gong in China, review and update (2012)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/BILLS-111hres605ih/html/BILLS-111hres605ih.htm",
+   "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/hearings/2012/CECC%20Hearing%20Testimony%20-%20Caylan%20Ford%20-%2012.18.12.pdf"
+  ],
+  "notes": "House resolution recitals: Jiang Zemin ordered the creation of the 6-10 office on June 10, 1999, an extrajudicial security apparatus mandated to 'eradicate' Falun Gong. CECC witness statement (a witness's account, not a Commission finding): the 610 Office mandated that authorities transform every practitioner, forced labor camp terms and 'transformation' that ends when the victim renounces Falun Gong."
+ },
+ {
+  "id": "C081",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Report on Oversight of the Wen Ho Lee Case (Senate Subcommittee, 2001; FAS mirror)",
+  "url": "https://irp.fas.org/congress/2001_rpt/whl.html",
+  "notes": "Senate oversight report (hosted by the Federation of American Scientists): Lee was held 278 days ('time-served at 278 days'), 'unusually strict pretrial confinement', in the investigation of W-88 warhead information at Los Alamos. His birthplace, Taiwan, was not in the snippets."
+ },
+ {
+  "id": "C081",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Report on Oversight of the Wen Ho Lee Case (Senate, FAS mirror)",
+   "Testimony of Attorney General Janet Reno on the Wen Ho Lee case (FAS mirror)"
+  ],
+  "url": [
+   "https://irp.fas.org/congress/2001_rpt/whl.html",
+   "https://sgp.fas.org/congress/2000/reno.html"
+  ],
+  "notes": "The Senate report refers to the 'fifty-nine felony counts' under the Atomic Energy Act and the plea to one count; Reno's testimony explains 'why we charged Dr. Lee as we did'. That no espionage charge was brought is an inference from the Atomic Energy Act counts."
+ },
+ {
+  "id": "C081",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CourtListener opinion page returned no text (HTTP 202). The 2006 settlement of about $1.6 million is unchecked."
+ },
+ {
+  "id": "C082",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "CRS report RS20691: China and permanent normal trade relations (via EveryCRSReport)",
+   "U.S. Senate roll call vote 106-2-251 on H.R. 4444 (September 19, 2000)"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/files/20010717_RS20691_9d7dd0b47ef14e2812416db8a52a844821b20362.pdf",
+   "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1062/vote_106_2_00251.htm"
+  ],
+  "notes": "CRS vote table: H.R. 4444 passed the House on May 24, 2000 (237-197). Senate roll call: passage of H.R. 4444, to authorize extension of normal trade relations treatment to China, 83-15 on September 19, 2000."
+ },
+ {
+  "id": "C082",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "WTO: China, member information",
+   "WTO: Accessions, China"
+  ],
+  "url": [
+   "https://www.wto.org/english/thewto_e/countries_e/china_e.htm",
+   "https://www.wto.org/english/thewto_e/acc_e/a1_chine_e.htm"
+  ],
+  "notes": "WTO: China became a member on 11 December 2001."
+ },
+ {
+  "id": "C082",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "Acemoglu, Autor, Dorn, Hanson and Price, Import Competition and the Great US Employment Sag of the 2000s (MIT copy)",
+   "NBER working paper 21906 (same study)"
+  ],
+  "url": [
+   "https://economics.mit.edu/sites/default/files/publications/ADH-China-Shock-Published.pdf",
+   "https://www.nber.org/system/files/working_papers/w21906/w21906.pdf"
+  ],
+  "notes": "Academic study (secondary): import growth from China between 1999 and 2011 'cost 2.0 to 2.4 million' US jobs (estimate range). A published economists' estimate, contested in the literature."
+ },
+ {
+  "id": "C083",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Letter from Ambassador Prueher to Chinese Foreign Minister Tang, April 11, 2001 (Bush White House archive)",
+  "url": "https://georgewbush-whitehouse.archives.gov/news/releases/2001/04/20010411-1.html",
+  "notes": "The letter says 'We are very sorry the entering of China's airspace and the landing did not have verbal clearance' and that the President and Secretary Powell 'have expressed their sincere regret over your missing pilot'. The crew size of 24 and the eleven days of detention are not in the letter; the Navy History page failed TLS verification."
+ },
+ {
+  "id": "C083",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Navy History and Heritage Command page failed TLS verification on the runner. The return of the EP-3 in pieces aboard a Russian cargo plane in July 2001 is unchecked."
+ }
+]

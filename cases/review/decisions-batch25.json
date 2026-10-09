@@ -1,0 +1,212 @@
+[
+ {
+  "id": "C093",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "In re Chinese-Manufactured Drywall Products Liability Litigation, E.D. La. MDL 2047 (govinfo)",
+   "CPSC: Investigation of imported drywall, status update, October 2009"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-44.pdf",
+   "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_oct2009status.pdf"
+  ],
+  "notes": "Court opinion: 'From 2004 through 2006, the housing boom in Florida and rebuilding efforts' after Katrina and Rita created a drywall shortage, and Chinese drywall, 'largely manufactured by two groups of defendants' including Taishan, was imported. CPSC (federal agency): imported drywall homes were largely built in 2006 to 2007."
+ },
+ {
+  "id": "C093",
+  "idx": 3,
+  "verdict": "contradicted",
+  "label": [
+   "E.D. La. MDL 2047: Chinese-Manufactured Drywall Products Liability Litigation, court page",
+   "In re Chinese-Manufactured Drywall Products Liability Litigation (govinfo)"
+  ],
+  "url": [
+   "https://www.laed.uscourts.gov/case-information/mdl-mass-class-action/drywall",
+   "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-116.pdf"
+  ],
+  "notes": "The court's MDL page lists, for March 10, 2016: 'The Court issued an Order and Reasons granting Defendant CNBM Group's Motion to Dismiss under the Foreign Sovereign Immunities Act.' That is the opposite of 'the court rejected the claim' for the state-owned parent, unless a later ruling or appeal reversed it; later rulings and the 2019 settlement ($248 million) were not read. A helper agent flagged the same point. Text left unchanged for the author."
+ },
+ {
+  "id": "C094",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Senate/CECC hearing on Google and China (March 2010; govinfo CHRG-111jhrg56161)",
+  "url": "https://www.govinfo.gov/content/pkg/CHRG-111jhrg56161/pdf/CHRG-111jhrg56161.pdf",
+  "notes": "Hearing record quoting Google: 'earlier this week we stopped censoring our search services—Google Search, Google News, and Google Images—on Google.cn. Users visiting Google.cn are now being redirected to Google.com.hk', the uncensored site in Hong Kong."
+ },
+ {
+  "id": "C094",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Washington Post article timed out on the runner. The 2013 claim that the intruders reached Google's records of surveillance orders is media-only and unchecked."
+ },
+ {
+  "id": "C095",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "CECC: Beijing court sentences Liu Xiaobo to 11 years (January 5, 2010)",
+   "The Nobel Peace Prize 2010: speed read"
+  ],
+  "url": [
+   "https://www.cecc.gov/publications/commission-analysis/beijing-court-sentences-liu-xiaobo-to-11-years",
+   "https://www.nobelprize.org/prizes/peace/2010/speedread/"
+  ],
+  "notes": "CECC: the Beijing No. 1 Intermediate People's Court sentenced Liu Xiaobo on December 25, 2009 to 11 years for 'inciting subversion of state power', citing Charter 08 and his essays. The Nobel Foundation page confirms the charge. The figure of more than ten thousand signers is not on these pages."
+ },
+ {
+  "id": "C095",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "The Nobel Peace Prize 2010: Liu Xiaobo, facts",
+  "url": "https://www.nobelprize.org/prizes/peace/2010/xiaobo/facts/",
+  "notes": "Nobel Foundation: Liu Xiaobo, born 28 December 1955, died 13 July 2017 in Shenyang. The cause of death, liver cancer, and death in custody were not in the snippet read."
+ },
+ {
+  "id": "C096",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "DOJ Office of Public Affairs release via FBI: Michigan man sentenced 48 months for attempting to spy for the PRC (January 21, 2011)"
+  ],
+  "url": [
+   "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm"
+  ],
+  "notes": "DOJ release: Glenn Duffie Shriver, who studied in China, was paid by PRC intelligence officers (more than $70,000 from 2005 to 2010) and applied to the State Department Foreign Service and the CIA. The woman who placed the ad is not named in the snippet."
+ },
+ {
+  "id": "C096",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "DOJ release via FBI: Michigan man pleads guilty (October 22, 2010)",
+   "DOJ release via FBI: Michigan man sentenced to 48 months (January 21, 2011)"
+  ],
+  "url": [
+   "https://archives.fbi.gov/archives/washingtondc/press-releases/2010/wfo102210a.htm",
+   "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm"
+  ],
+  "notes": "Releases: Shriver 'pleaded guilty today' on October 22, 2010 to conspiracy to deliver national defense information, and was sentenced to 48 months on January 21, 2011."
+ },
+ {
+  "id": "C097",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "CECC hearing record, 2012: Chen Guangcheng",
+   "CRS report R42554: U.S.-China diplomacy over Chinese legal advocate Chen Guangcheng (May 29, 2012)"
+  ],
+  "url": [
+   "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/hearings/2012/CECC%20Hearing%20-%20Recent%20Developments%20and%20History%20of%20the%20Chen%20Guangcheng%20Case%20-%205.3.12.pdf",
+   "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf"
+  ],
+  "notes": "CECC hearing text: villagers told Chen of forced abortions and sterilizations, and he documented them in 2005 for a class action; CRS: his 'four years of imprisonment followed an irregular trial at the Yinan County People's Court'. 'More than four years' follows from his release in September 2010 after about four years and three months."
+ },
+ {
+  "id": "C097",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "State Department background briefing on Chen Guangcheng, May 2012",
+   "CRS report R42554 (May 29, 2012)"
+  ],
+  "url": [
+   "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+   "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf"
+  ],
+  "notes": "State: Chen Guangcheng entered the US Embassy on April 26. CRS: he escaped from illegal house arrest in Shandong on April 20, 2012 and sought refuge at the Embassy. The friends who drove him to Beijing are not named in the snippets."
+ },
+ {
+  "id": "C097",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "State Department background briefing on Chen Guangcheng, May 2012",
+   "CRS report R42554 (May 29, 2012)"
+  ],
+  "url": [
+   "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+   "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf"
+  ],
+  "notes": "State and CRS: Chen accepted verbal understandings that let him leave the Embassy on May 2 and study, then 'changed his mind' within hours, fearing for his family, according to the CRS account; China never publicly confirmed the terms."
+ },
+ {
+  "id": "C097",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "CRS report R42554 (May 29, 2012)",
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "notes": "CRS: Chen, his wife Yuan Weijing and their two children arrived in the United States on May 19, 2012 (Newark), bound for New York University."
+ },
+ {
+  "id": "C098",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CRS report on the South China Sea offered for the April 2012 Scarborough Shoal standoff did not contain the event in the snippets read."
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CRS report snippets did not show the US-brokered mutual withdrawal in June 2012, and the congress.gov testimony page timed out. A State Department source was not found."
+ },
+ {
+  "id": "C098",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "Permanent Court of Arbitration, press release no. 11: The South China Sea Arbitration (12 July 2016)",
+   "Permanent Court of Arbitration: press release page"
+  ],
+  "url": [
+   "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Press-Release-No-11-English.pdf",
+   "https://pca-cpa.org/en/news/pca-press-release-the-south-china-sea-arbitration-the-republic-of-the-philippines-v-the-peoples-republic-of-china/"
+  ],
+  "notes": "Tribunal press release of 12 July 2016: 'the Tribunal concluded that there was no legal basis for China to claim historic rights to resources within the sea areas falling within the \"nine-dash line\"'."
+ },
+ {
+  "id": "C099",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "State Department: Conviction and sentencing of Ilham Tohti (September 2014)",
+   "USCIRF: Ilham Tohti, freedom of religion or belief victims database"
+  ],
+  "url": [
+   "https://2009-2017.state.gov/secretary/remarks/2014/09/232026.htm",
+   "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/ilham-tohti"
+  ],
+  "notes": "State statement on the conviction and sentencing of Ilham Tohti; USCIRF lists the sentence as life imprisonment, with separatism as the reason, in 2014. The Urumqi court, the month, and the prison terms for seven students were not matched in the snippets."
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The European Parliament page returned no text and the Council of Europe page returned HTTP 403. The 2019 Vaclav Havel and Sakharov prizes are unchecked."
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both CRS In Focus PDFs on the South China Sea did not mention Fiery Cross, Subi, Mischief or missiles in the text read."
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The DOJ press page returned an empty page to the runner. The December 2018 APT10 indictment is unchecked here; a court record or FBI page may serve."
+ }
+]

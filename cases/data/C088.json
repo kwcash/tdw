@@ -28,10 +28,10 @@
   "gap": "Governance",
   "text": {
     "brief": "On June 23, 2005, Fu Chengyu of CNOOC offered $18.5 billion in cash for the American oil company Unocal.",
-    "record": "CNOOC's parent was a state company, and state banks supplied cheap loans for the offer. The House voted 398 to 15 for a resolution that the sale would threaten national security, and Congress wrote a delay into the energy bill. CNOOC withdrew on August 2, and Unocal went to Chevron.",
+    "record": "CNOOC's parent was a state company, and state banks supplied cheap loans for the offer. The House voted 398 to 15 for a resolution that the sale would threaten national security, and Congress wrote a delay into the energy bill ([H. Res. 344, 109th Congress (govinfo)](https://www.govinfo.gov/content/pkg/BILLS-109hres344ih/html/BILLS-109hres344ih.htm); [CRS report RL33093: CNOOC-Unocal (via EveryCRSReport)](https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf)). CNOOC withdrew on August 2, and Unocal went to Chevron ([CRS report RL33093: CNOOC-Unocal chronology (via EveryCRSReport)](https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf)).",
     "reading": "State financing gave the bidder a cost of capital no private rival could match, and the bid probed how Washington would answer, which is Stratagem 13. Congress answered with a vote rather than a rule, and later buyers from the mainland favored smaller assets and minority stakes.",
     "gapText": "Architecture Governance. The review process had no clear owner for a deal in which a state lender stood behind a listed company, so Congress filled the gap with a floor vote.",
     "fix": "Treat state financing as state ownership in every investment review, and decide such cases by rule rather than in the heat of a headline."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

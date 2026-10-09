@@ -1,0 +1,192 @@
+[
+ {
+  "id": "C083",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "CRS report RL30946: China-U.S. aircraft collision incident of April 2001 (via EveryCRSReport)",
+  "url": "https://www.everycrsreport.com/reports/RL30946.html",
+  "notes": "CRS: on May 29 the US Embassy in Beijing announced an agreement under which the EP-3 'would be disassembled and transported back' by a Russian An-124 cargo plane. The July timing was not in the snippet read."
+ },
+ {
+  "id": "C084",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "CRS report RL33001: U.S.-China counterterrorism cooperation (via EveryCRSReport)",
+   "CRS report RL31213: China's relations with Central Asian states and problems with terrorism"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/reports/RL33001.html",
+   "https://www.everycrsreport.com/reports/RL31213.html"
+  ],
+  "notes": "CRS: the Bush Administration designated the PRC-targeted East Turkistan Islamic Movement (ETIM) as a terrorist organization in August 2002 (Armitage's announcement of August 26, 2002), after the PRC pressed Uighur separatism as terrorism since September 11. That the Party 'sought the listing since the September 11 attacks' is the CRS's framing of PRC efforts, not shown as a quotation here."
+ },
+ {
+  "id": "C084",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "State Department Country Reports on Terrorism 2020: China (Hong Kong and Macau)",
+   "Federal Register, November 5, 2020: revocation of the designation of the Eastern Turkistan Islamic Movement"
+  ],
+  "url": [
+   "https://www.state.gov/reports/country-reports-on-terrorism-2020/china",
+   "https://www.federalregister.gov/documents/2020/11/05/2020-24620/in-the-matter-of-the-designation-of-the-eastern-turkistan-islamic-movement-also-known-as-etim-as-a"
+  ],
+  "notes": "State: 'The United States, however, has seen no credible evidence for more than a decade that the group still exists and removed it from the Terrorist Exclusion List in November 2020.' The Federal Register notice (Public Notice 11252, published November 5, 2020) records the revocation of the ETIM designation under section 212(a)(3)(B)(vi)(II)."
+ },
+ {
+  "id": "C085",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Yanzhong Huang, The SARS Epidemic and Its Aftermath in China: A Political Perspective (National Academies Press, via NCBI Bookshelf)",
+  "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+  "notes": "Academic chapter (secondary) discusses Health Minister Zhang Wenkang's handling of the outbreak and Jiang Yanyong's disclosures. The April 3 press conference and the figure of twelve cases were not matched in the text read; the PMC copy of another article returned a CAPTCHA page."
+ },
+ {
+  "id": "C085",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Yanzhong Huang, The SARS Epidemic and Its Aftermath in China (NAP via NCBI Bookshelf)",
+  "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/",
+  "notes": "Academic chapter (secondary): on April 20 the Health Minister Zhang Wenkang and Beijing mayor Meng Xuenong were removed. The Time magazine article and the jump in the reported count from 37 to 339 were not matched; a helper's lead notes that 339 did not appear in any snippet."
+ },
+ {
+  "id": "C085",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "The chronology of the 2002-2003 SARS mini pandemic (PubMed Central)",
+   "Yanzhong Huang, The SARS Epidemic and Its Aftermath in China (NAP via NCBI Bookshelf)"
+  ],
+  "url": [
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7106085/",
+   "https://www.ncbi.nlm.nih.gov/sites/books/NBK92479/"
+  ],
+  "notes": "Two scholarly sources (secondary): SARS emerged in Guangdong in autumn 2002 with the earliest case in November 2002; the NAP chapter describes the delay in reporting and news conference. 'Officials suppressed reports' is the academic account, not a primary document."
+ },
+ {
+  "id": "C085",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "WHO: Summary of probable SARS cases with onset of illness from 1 November 2002 to 31 July 2003",
+  "url": "https://www.who.int/publications/m/item/summary-of-probable-sars-cases-with-onset-of-illness-from-1-november-2002-to-31-july-2003",
+  "notes": "WHO table: 8,096 probable cases and 774 deaths by country and area, from China and the other places affected (about thirty countries and areas)."
+ },
+ {
+  "id": "C085",
+  "idx": 4,
+  "verdict": "partial",
+  "label": [
+   "CECC: Chinese authorities free Dr. Jiang Yanyong from house arrest",
+   "Human Rights Watch: The Tiananmen Legacy, ongoing persecution of those seeking reassessment"
+  ],
+  "url": [
+   "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-free-dr-jiang-yanyong-from-house-arrest",
+   "https://www.hrw.org/sites/default/files/related_material/The%20Tiananmen%20Legacy_3.pdf"
+  ],
+  "notes": "CECC: Jiang's 2004 letter called on the Party to reassess the verdict on the 1989 movement; he and his wife were detained from about June 1, 2004. HRW (NGO): Jiang told foreign media that security forces were dispatched in response to his letter and describes seven weeks of detention. Whether 'the army' detained him is not stated in the snippets; HRW says state security forces."
+ },
+ {
+  "id": "C086",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Computerworld: Q&A, reverse hacker describes ordeal (media only)",
+   "The Register: Employee fired for probing bad guys awarded $4.7m (media only)"
+  ],
+  "url": [
+   "https://www.computerworld.com/article/1642797/q-a-reverse-hacker-describes-ordeal.html",
+   "https://www.theregister.com/2007/02/16/sandia_verdict/"
+  ],
+  "notes": "Media only: Shawn Carpenter, a Sandia network analyst, investigated Titan Rain intrusions (traced to China), took his findings to Army counterintelligence and the FBI, and 'was fired in January 2005 after he shared information'. Court records or a Sandia statement would be the primary source."
+ },
+ {
+  "id": "C086",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "The Register: Employee fired for probing bad guys awarded $4.7m (media only)",
+   "Computerworld: Six months later, Sandia back-hacker still waits for his $4.7M (media only)"
+  ],
+  "url": [
+   "https://www.theregister.com/2007/02/16/sandia_verdict/",
+   "https://www.computerworld.com/?p=1579540"
+  ],
+  "notes": "Media only: a New Mexico jury awarded Carpenter $4.7 million in February 2007. One Computerworld Q&A says $4.3 million, so the figure varies by outlet; no court document was read."
+ },
+ {
+  "id": "C087",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "CECC: Chinese authorities release journalist and democracy advocate Shi Tao early",
+   "Dui Hua Foundation: April 2004, exposing Yahoo!'s role in the crackdown on journalist Shi Tao (NGO)"
+  ],
+  "url": [
+   "https://www.cecc.gov/publications/commission-analysis/chinese-authorities-release-journalist-and-democracy-advocate-shi",
+   "https://duihua.org/?p=6506"
+  ],
+  "notes": "CECC: Shi Tao's sentence was ten years for disclosing 'state secrets'. Dui Hua (NGO): arrested in November 2004, he was sentenced in 2005 by a Hunan court. The April 2005 date and the Changsha court's name were not matched."
+ },
+ {
+  "id": "C087",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "The Register: Yahoo settles with jailed Chinese journalists (media only)",
+  "url": "https://www.theregister.com/2007/11/13/yahoo_settles_lawsuit_from_jailed_chinese_journalists/",
+  "notes": "Media only: Yahoo settled with the families a week after a congressional hearing that scrutinized its role in Shi Tao's jailing; Lantos is named. The 'moral pygmies' quote was not in the snippets; the eWeek page returned HTTP 403."
+ },
+ {
+  "id": "C088",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "H. Res. 344, 109th Congress (govinfo)",
+   "CRS report RL33093: CNOOC-Unocal (via EveryCRSReport)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/BILLS-109hres344ih/html/BILLS-109hres344ih.htm",
+   "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf"
+  ],
+  "notes": "House resolution text: the sense of the House that 'a Chinese state-owned energy company exercising control of critical United States energy infrastructure' could threaten national security. The vote count 398 to 15 and the delay written into the energy bill were not found in the snippets (the CRS chronology lists H.Res. 344)."
+ },
+ {
+  "id": "C088",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "CRS report RL33093: CNOOC-Unocal chronology (via EveryCRSReport)",
+  "url": "https://www.everycrsreport.com/files/20050915_RL33093_2292d67cec61aaafbba3433d0a7509712dd2f7dd.pdf",
+  "notes": "CRS chronology: CNOOC withdrew its bid on August 2, 2005; 'On August 10, 2005, Unocal stockholders voted' on the Chevron merger."
+ },
+ {
+  "id": "C089",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "NASA Orbital Debris Quarterly News, Vol. 11 Issue 2 (April 2007): Chinese anti-satellite test",
+   "NASA Johnson: the characteristics and consequences of the break-up of the Fengyun-1C spacecraft (NTRS)"
+  ],
+  "url": [
+   "https://orbitaldebris.jsc.nasa.gov/quarterly-news/pdfs/odqnv11i2.pdf",
+   "https://ntrs.nasa.gov/api/citations/20070007324/downloads/20070007324.pdf"
+  ],
+  "notes": "NASA: on 11 January 2007 the retired Fengyun-1C weather satellite, in an orbit of 845 by 865 km, was intercepted by a ballistic kinetic kill vehicle launched from the Xichang area; the test created the worst debris cloud in history."
+ },
+ {
+  "id": "C089",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The NASA newsletter did not contain '23 January' or Chinese government confirmation in the text read. The twelve days of silence is unchecked here."
+ },
+ {
+  "id": "C089",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The NDU Press and Defense Department report pages returned HTTP 403. The 2015 formation of the Strategic Support Force and its 2024 split are unchecked."
+ }
+]

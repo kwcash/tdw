@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On December 23, 2021, Joe Biden signed the Uyghur Forced Labor Prevention Act after the House passed it 428 to 1 and the Senate without objection.",
-    "record": "The Act presumes that goods made wholly or in part in Xinjiang involve forced labor and bars them unless an importer proves otherwise by clear and convincing evidence. The same presumption covers companies on a published entity list. The presumption took effect on June 21, 2022. Customs officers have since held thousands of shipments of solar parts, apparel and other goods.",
+    "record": "The Act presumes that goods made wholly or in part in Xinjiang involve forced labor and bars them unless an importer proves otherwise by clear and convincing evidence. The same presumption covers companies on a published entity list. The presumption took effect on June 21, 2022 ([CBP fact sheet: Uyghur Forced Labor Prevention Act of 2021 (Publication No. 1791-0522)](https://www.cbp.gov/sites/default/files/assets/documents/2022-Jun/UFLPA%20Fact%20Sheet_FINAL.pdf)). Customs officers have since held thousands of shipments of solar parts, apparel and other goods.",
     "reading": "The Act put the burden of proof on the importer that holds the supply chain data, which answers the Party's refusal to allow independent audits in Xinjiang. It counters goods that cross the sea under false names, which is Stratagem 1, and its reach depends on how fast the entity list grows.",
     "gapText": "Data Architecture. The design held because it put the burden of proof where the data sits.",
     "fix": "Extend the presumption to other regions where the state runs labor transfer programs, and publish enforcement data by product."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

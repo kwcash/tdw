@@ -1,0 +1,156 @@
+[
+ {
+  "id": "C101",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "Plea agreement, United States v. Mo Hailong, No. 4:13-CR-147 (S.D. Iowa; DOJ copy)",
+   "FBI: Sentencing in corn seed intellectual property theft case"
+  ],
+  "url": [
+   "https://justice.gov/opa/file/816096/dl?inline=",
+   "https://www.fbi.gov/news/stories/sentencing-in-corn-seed-intellectual-property-theft-case"
+  ],
+  "notes": "Court filing: the plea agreement of Mo Hailong (Robert Mo) with the United States describes the inbred seed of Pioneer and Monsanto as trade secrets. FBI story: Mo, 46, a legal permanent resident, was sentenced in Iowa the previous month. The plea date, January 27, 2016, and the 36-month term were not in the snippets."
+ },
+ {
+  "id": "C102",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Attorney General v. Wynn, No. 22-5328 (D.C. Cir., June 14, 2024)",
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "notes": "D.C. Circuit opinion: Wynn 'raised the issue with administration officials and the former President both in person and over the telephone' in mid-to-late 2017 after Sun Lijun's request about the removal of a Chinese dissident. The DOJ press-release PDF returned no text."
+ },
+ {
+  "id": "C102",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "White House statement on executive grants of clemency, January 19, 2021 (Trump White House archive)",
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/",
+  "notes": "Official statement: Trump granted a full pardon to Elliott Broidy among 73 pardons. Broidy's 2020 guilty plea (the OIG press release returned HTTP 403) was not read."
+ },
+ {
+  "id": "C102",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "Attorney General v. Wynn, No. 22-5328 (D.C. Cir., June 14, 2024)",
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "notes": "D.C. Circuit: the Department 'filed suit in federal court to force him to register', and 'the district court properly dismissed the government's' complaint because Wynn ceased acting as a foreign agent. The filing year, 2022, was not in the snippet."
+ },
+ {
+  "id": "C102",
+  "idx": 4,
+  "verdict": "supported",
+  "label": "Attorney General v. Wynn, No. 22-5328 (D.C. Cir., argued November 14, 2023, decided June 14, 2024)",
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "notes": "D.C. Circuit: Wynn 'has no present obligation to register' because he 'ceased any such activity' years earlier; decided June 14, 2024."
+ },
+ {
+  "id": "C103",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "United States v. Xu, No. 22-4020 (6th Cir.; govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca6-22-04020/pdf/USCOURTS-ca6-22-04020-1.pdf",
+  "notes": "Sixth Circuit opinion: Yanjun Xu, a Chinese Ministry of State Security officer, was arrested by Belgian police in April 2018 and prosecuted for attempted theft of GE Aviation's composite fan-blade technology and economic espionage. The jury verdict month, November 2021, was not in the snippet; the DOJ release returned no text."
+ },
+ {
+  "id": "C103",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "United States v. Xu, No. 22-4020 (6th Cir.; govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca6-22-04020/pdf/USCOURTS-ca6-22-04020-1.pdf",
+  "notes": "Sixth Circuit opinion: Xu was sentenced to 240 months (20 years). The sentencing date, November 2022, was not in the snippet; the DOJ release returned no text."
+ },
+ {
+  "id": "C103",
+  "idx": 4,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both DOJ press-release pages returned no text to the runner. Ji Chaoqun's Army Reserve enlistment in 2016 and his September 2022 conviction are unchecked."
+ },
+ {
+  "id": "C104",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Criminal complaint affidavit, United States v. Jerry Chun Shing Lee, No. 1:18-mj-18 (E.D. Va.; DOJ copy)",
+  "url": "https://www.justice.gov/opa/press-release/file/1026646/dl",
+  "notes": "Court filing: the affidavit describes Lee's notebook with handwritten operational notes from asset meetings and his transit through Honolulu. The August 2012 date of the hotel-room search, the 2007 departure and 'true names' are not in the snippets; the DOJ press release returned no text."
+ },
+ {
+  "id": "C104",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Criminal complaint affidavit, United States v. Jerry Chun Shing Lee (filed January 13, 2018)",
+  "url": "https://www.justice.gov/opa/press-release/file/1026646/dl",
+  "notes": "Court filing: complaint and arrest-warrant affidavit filed 01/13/18 in the Eastern District of Virginia. The arrest date, January 15, 2018 at JFK, was not matched."
+ },
+ {
+  "id": "C104",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both DOJ press-release pages returned no text. The guilty plea (May 2019) and the 19-year sentence (November 2019) are unchecked."
+ },
+ {
+  "id": "C105",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Commerce page returned HTTP 403 and the DOJ release returned no text. ZTE's 2017 guilty plea and $1.19 billion payment are unchecked."
+ },
+ {
+  "id": "C105",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both Commerce pages returned HTTP 403. The June 2018 settlement terms and the fate of the Senate amendment are unchecked."
+ },
+ {
+  "id": "C106",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "Fajgelbaum, Goldberg, Kennedy and Khandelwal, The Return to Protectionism (NBER working paper 25638)",
+   "Blanchard, Bown and Chor, Did Trump's trade war impact the 2018 election? (NBER working paper 26434)"
+  ],
+  "url": [
+   "https://www.nber.org/system/files/working_papers/w25638/revisions/w25638.rev0.pdf",
+   "https://www.nber.org/system/files/working_papers/w26434/w26434.pdf"
+  ],
+  "notes": "Academic studies (secondary): the 2018 retaliatory tariffs fell on US exports from politically competitive counties and were aimed at Republican-leaning places (NBER 25638: tariffs 'favored sectors located in politically competitive counties, but retaliatory tariffs offset the benefits'; NBER 26434: Republican House candidates lost vote share). That the retaliation hit soybeans in July 2018 and targeted counties that voted for Trump in 2016 is the studies' general finding, not a quotation checked word by word."
+ },
+ {
+  "id": "C106",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CRS report read (R45310) gives the $12 billion aid package and describes targeted export values but not the soybean figures of about $12 billion in 2017 and $3 billion in 2018 in the snippets; the other CRS page returned HTTP 403."
+ },
+ {
+  "id": "C106",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "CRS report R45310: Farm policy, USDA's trade aid package (updated September 26, 2018)",
+   "CRS report R45865: Farm policy, USDA's 2019 trade aid package (updated November 26, 2019)"
+  ],
+  "url": [
+   "https://www.congress.gov/crs_external_products/R/PDF/R45310/R45310.7.pdf",
+   "https://www.congress.gov/crs_external_products/R/PDF/R45865/R45865.7.pdf"
+  ],
+  "notes": "CRS: USDA announced up to $12 billion in trade aid in 2018 and, on May 23, 2019, Secretary Perdue announced a second package of up to $16 billion. The 'about $28 billion over two years' is the sum of the two announcements."
+ },
+ {
+  "id": "C107",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Global Affairs Canada backgrounder timed out on the runner. The same-week detention of Spavor and the 1,019 days are unchecked. A helper agent noted that Meng was arrested December 1, 2018 and Spavor and Kovrig detained December 10, 2018, so 'the same week' may be loose, and its own count from December 10, 2018 to September 24, 2021 gives 1,019 days."
+ }
+]

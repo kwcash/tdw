@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On May 8, 1999, Ambassador James Sasser sat inside the American embassy in Beijing while protesters threw stones and firebombs at its walls.",
-    "record": "A B-2 bomber had struck the People's Republic's embassy in Belgrade with guided bombs during NATO's war over Kosovo, and the strike killed three Chinese journalists. The CIA had marked the building from outdated maps as a Yugoslav military supply office. The Party bused students to the American embassy and consulates, and protesters burned the consul general's residence in Chengdu. Washington apologized and paid $4.5 million to the victims' families and $28 million for the damage to the embassy.",
+    "record": "A B-2 bomber had struck the People's Republic's embassy in Belgrade with guided bombs during NATO's war over Kosovo, and the strike killed three Chinese journalists ([Remarks of Under Secretary Pickering, June 17, 1999: accidental bombing of the PRC embassy in Belgrade](https://1997-2001.state.gov/policy_remarks/1999/990617_pickering_emb.html); [CRS report RS20547: Chinese embassy bombing in Belgrade, compensation issues](https://www.everycrsreport.com/reports/RS20547.html)). The CIA had marked the building from outdated maps as a Yugoslav military supply office. The Party bused students to the American embassy and consulates, and protesters burned the consul general's residence in Chengdu. Washington apologized and paid $4.5 million to the victims' families and $28 million for the damage to the embassy ([CRS report RS20547: Chinese embassy bombing in Belgrade, compensation issues](https://www.everycrsreport.com/reports/RS20547.html); [State Department, December 16, 1999: US-China agreement on embassy bombing compensation](https://1997-2001.state.gov/briefings/statements/1999/ps991216b.html)).",
     "reading": "The Party set a real American error inside its story of national humiliation and staged the anger it wanted, which is Stratagem 14. It opened the protests and closed them on its own schedule.",
     "gapText": "Data Architecture. The targeting database carried an outdated address, and no check caught it before the strike.",
     "fix": "Verify every fixed target against current sources and a no-strike list, and publish the investigation when a strike goes wrong."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

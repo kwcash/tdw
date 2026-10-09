@@ -28,10 +28,10 @@
   "gap": "Application",
   "text": {
     "brief": "In May 2017 a request from Vice Minister of Public Security Sun Lijun reached the casino executive Steve Wynn.",
-    "record": "Sun wanted the exiled businessman Guo Wengui removed from the United States, and the fundraiser Elliott Broidy brokered the approach. Wynn pressed the request with the President and other officials until October 2017. Broidy pleaded guilty in 2020 to a related charge and received a pardon in January 2021. The Justice Department sued in 2022 to force Wynn to register as a foreign agent, and the courts dismissed the suit. The appeals court held on June 14, 2024 that the duty to register ended when the representation ended.",
+    "record": "Sun wanted the exiled businessman Guo Wengui removed from the United States, and the fundraiser Elliott Broidy brokered the approach. Wynn pressed the request with the President and other officials until October 2017 ([Attorney General v. Wynn, No. 22-5328 (D.C. Cir., June 14, 2024)](https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf)). Broidy pleaded guilty in 2020 to a related charge and received a pardon in January 2021 ([White House statement on executive grants of clemency, January 19, 2021 (Trump White House archive)](https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/)). The Justice Department sued in 2022 to force Wynn to register as a foreign agent, and the courts dismissed the suit ([Attorney General v. Wynn, No. 22-5328 (D.C. Cir., June 14, 2024)](https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf)). The appeals court held on June 14, 2024 that the duty to register ended when the representation ended ([Attorney General v. Wynn, No. 22-5328 (D.C. Cir., argued November 14, 2023, decided June 14, 2024)](https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf)).",
     "reading": "The Party reached the Oval Office through Americans with access, which is Stratagem 3. The courts read the registration law to expire with the relationship, so a finished influence campaign owes the public no record.",
     "gapText": "Application Architecture. The registration routine tracked agents while they worked and lost them once the work ended.",
     "fix": "Require disclosure of past foreign agency within a set period, whether or not the relationship continues."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

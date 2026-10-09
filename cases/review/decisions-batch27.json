@@ -1,0 +1,194 @@
+[
+ {
+  "id": "C107",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Sentencing of Canadian Citizen Michael Spavor (U.S. Department of State statement)",
+  "url": "https://2021-2025.state.gov/sentencing-of-canadian-citizen-michael-spavor/",
+  "notes": "State Department statement: the United States calls on the PRC to release 'Canadian citizens Michael Spavor and Michael Kovrig' and condemns 'these arbitrary detentions'. The Global Affairs Canada backgrounder timed out. The December 2018 start and the 1,019-day count are not on this page; a helper's own count from December 10, 2018 to September 24, 2021 gives 1,019 days, and Meng was arrested on December 1, so 'the same week' may be loose."
+ },
+ {
+  "id": "C107",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Sentencing of Canadian Citizen Michael Spavor (U.S. Department of State statement)",
+  "url": "https://2021-2025.state.gov/sentencing-of-canadian-citizen-michael-spavor/",
+  "notes": "State Department statement: it condemns 'the sentence imposed against Mr. Spavor on August 10' (the page is titled for the sentencing). The eleven years and the espionage charge are not in the snippet; the Global Affairs Canada backgrounder timed out and the PRC foreign ministry page returned a maintenance notice."
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both Justice Department pages (the deferred prosecution agreement PDF and the press release) returned no text to the runner. Meng's September 24, 2021 agreement is unchecked."
+ },
+ {
+  "id": "C108",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "White House statement on the Trump-Xi working dinner, December 1, 2018 (Trump White House archive)",
+   "White House statement on China's class scheduling of fentanyl (Trump White House archive)"
+  ],
+  "url": [
+   "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-presidents-working-dinner-china/",
+   "https://trumpwhitehouse.archives.gov/briefings-statements/statement-chinas-class-scheduling-fentanyl/"
+  ],
+  "notes": "Official statements (US account): after the dinner in Buenos Aires on December 1, 2018, the White House said President Xi 'has agreed to designate Fentanyl as a Controlled Substance'; the later statement welcomes China 'following through on its pledge' with scheduling effective May 1 (2019)."
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both CDC pages (the NCHS data brief PDFs) returned HTTP 403. The 70,000-a-year figure for 2021 and 2022 is unchecked."
+ },
+ {
+  "id": "C108",
+  "idx": 4,
+  "verdict": "partial",
+  "label": [
+   "State Department: U.S.-PRC Counternarcotics Working Group progress on illicit synthetic drugs",
+   "Director's report, Office of National Drug Control Policy (Biden White House archive, December 2024)"
+  ],
+  "url": [
+   "https://2021-2025.state.gov/u-s-prc-counternarcotics-working-group-progress-on-illicit-synthetic-drugs-including-fentanyl/",
+   "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/12/Directors-Report-on-the-Decisive-Years-in-Americas-Overdose.pdf"
+  ],
+  "notes": "ONDCP report: the 'landmark agreement between the two Presidents at the Woodside Summit in November 2023' restarted bilateral counternarcotics cooperation and created the Counternarcotics Working Group. The State page records PRC announcements on scheduling precursor chemicals. Neither snippet says in so many words that Beijing agreed in November 2023 to curb precursor exports. US government account."
+ },
+ {
+  "id": "C108",
+  "idx": 5,
+  "verdict": "supported",
+  "label": [
+   "House Select Committee on the CCP, The CCP's Role in the Fentanyl Crisis (GPO)",
+   "House Select Committee press release on the fentanyl report"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_2_C44-PURL-gpo224301/pdf/GOVPUB-Y4_2_C44-PURL-gpo224301.pdf",
+   "https://chinaselectcommittee.house.gov/media/press-releases/select-committee-unveils-findings-ccps-role-american-fentanyl-epidemic-report"
+  ],
+  "notes": "Committee report: the committee says its investigation established that the PRC government 'directly subsidizes the manufacturing and export of illicit fentanyl materials and other synthetic narcotics through tax rebates'. This is a congressional committee's own finding. The report year, 2024, was not in the snippet."
+ },
+ {
+  "id": "C109",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Complaint affidavit, United States v. Jin Xinjiang et al. (E.D.N.Y.; U.S. Attorney's Office copy)",
+  "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+  "notes": "Court filing: the affidavit says Jin, Huang and co-conspirators 'fabricated evidence of TOS violations to provide pretextual justification for terminating the meetings, as well as certain participants' accounts', and describes the meetings commemorating the Tiananmen Square massacre. The fake accounts and the passing of users' names and email addresses to PRC officials were not in the snippets; the DOJ press release returned no text. The filing does not name the company; it calls it Company-1."
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Justice Department and FBI press-release pages returned no text, so the December 18, 2020 charging date is unchecked."
+ },
+ {
+  "id": "C110",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "State Department briefing on designating five Chinese media entities as foreign missions (February 18, 2020)",
+   "State Department press statement: personnel cap on designated PRC state media entities (March 2, 2020)"
+  ],
+  "url": [
+   "https://2017-2021.state.gov/senior-state-department-officials-on-the-office-of-foreign-missions-designation-of-chinese-media-entities-as-foreign-missions/",
+   "https://2017-2021.state.gov/institution-of-a-personnel-cap-on-designated-prc-state-media-entities/index.html"
+  ],
+  "notes": "State Department pages: the briefing names Xinhua, CGTN, China Radio International, China Daily Distribution Corporation and Hai Tian Development USA as foreign missions; the March 2, 2020 statement sets a cap on Chinese citizens they may employ (the cap of 100 appears in the statement) and says they were designated on February 18, 2020. US government account."
+ },
+ {
+  "id": "C110",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Foreign ministry spokesperson: China takes countermeasures against restrictive measures on Chinese media in the US (PRC Ministry of Foreign Affairs)",
+  "url": "https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/fyrbt/202405/t20240530_11349642.html",
+  "notes": "PRC foreign ministry statement (the PRC's own account): it requires the China-based branches of the New York Times, the Wall Street Journal and the Washington Post to hand back press cards within ten days and bars their staff from working as journalists in the PRC 'including its Hong Kong and Macao Special Administrative Regions'. The March 17 date and the 'about a dozen' count were not in the snippet; the page's URL carries a 2024 stamp, so the original 2020 date is unconfirmed. The State statement found (of February 19, 2020) is about the three Wall Street Journal correspondents and does not cover this sentence."
+ },
+ {
+  "id": "C111",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Treasury press release sm1073: sanctions on Xinjiang Production and Construction Corps and officials",
+   "OFAC recent actions, July 31, 2020: Global Magnitsky designations"
+  ],
+  "url": [
+   "https://home.treasury.gov/news/press-releases/sm1073",
+   "https://ofac.treasury.gov/recent-actions/20200731"
+  ],
+  "notes": "Treasury: the Corps, Sun Jinlong and Peng Jiarui were designated under the Global Magnitsky authority 'for their connection to serious human rights abuse against ethnic minorities in Xinjiang'; OFAC's July 31, 2020 action lists the two officials on the SDN list."
+ },
+ {
+  "id": "C111",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "CBP: detention order on cotton products made by the Xinjiang Production and Construction Corps",
+   "CRS report R46631 (everycrsreport mirror at congress.gov)"
+  ],
+  "url": [
+   "https://www.cbp.gov/newsroom/national-media-release/cbp-issues-detention-order-cotton-products-made-xinjiang-production",
+   "https://www.congress.gov/crs_external_products/R/PDF/R46631/R46631.6.pdf"
+  ],
+  "notes": "CBP: personnel at all US ports 'will detain shipments containing cotton and cotton products originating from' the Corps under a Withhold Release Order. The CRS report cites the CBP release of December 2, 2020 (and dates the WRO to November 30, 2020)."
+ },
+ {
+  "id": "C112",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Federation of American Scientists (NGO): the second nuclear missile silo field near Hami, July 26, 2021",
+   "Federation of American Scientists (NGO): A closer look at China's missile silo construction"
+  ],
+  "url": [
+   "https://fas.org/publication/china-is-building-a-second-nuclear-missile-silo-field/",
+   "https://fas.org/publication/a-closer-look-at-chinas-missile-silo-construction/"
+  ],
+  "notes": "NGO research (secondary): FAS reported a second silo field near Hami, its grid outline suggesting 'approximately 110 silos', after the Yumen report earlier that month; a later FAS post says at least three vast silo fields were under construction near Yumen, Hami and Ordos."
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both Defense Department pages (the 2024 China Military Power Report and its fact sheet) returned HTTP 403 to the runner. The 600-warhead and 1,000-by-2030 figures are unchecked."
+ },
+ {
+  "id": "C113",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Steve Simon announces WTA's decision to suspend tournaments in China (WTA, December 1, 2021; the tour's own statement)",
+   "CECC hearing statement on corporate coercion by the PRC (Congressional-Executive Commission on China)"
+  ],
+  "url": [
+   "https://www.wtatennis.com/news/2384758/steve-simon-announces-wtas-decision-to-suspend-tournaments-in-china",
+   "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/CECC%20Hearing%20Testimony%20-%20Jenny%20Wang.pdf"
+  ],
+  "notes": "WTA's own statement: Simon announced 'the immediate suspension of all WTA tournaments in China, including Hong Kong' on December 1, 2021. A hearing statement on the CECC site says the WTA's involvement in China was worth more than $1 billion and included a ten-year deal for the WTA Finals. 'Its richest market' is a characterization neither page states in those words."
+ },
+ {
+  "id": "C113",
+  "idx": 4,
+  "verdict": "partial",
+  "label": "The WTA to resume tournaments in China this fall (WTA, April 13, 2023; the tour's own statement)",
+  "url": "https://www.wtatennis.com/news/3147537/the-wta-to-resume-tournaments-in-china-this-fall",
+  "notes": "WTA's own statement of April 13, 2023: the tour will resume tournaments in China that fall. The word 'investigation' was not found on the page, so 'without the investigation it had demanded' is neither confirmed nor contradicted by this statement."
+ },
+ {
+  "id": "C114",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "CBP fact sheet: Uyghur Forced Labor Prevention Act of 2021 (Publication No. 1791-0522)",
+  "url": "https://www.cbp.gov/sites/default/files/assets/documents/2022-Jun/UFLPA%20Fact%20Sheet_FINAL.pdf",
+  "notes": "CBP: 'Beginning June 21, 2022, CBP will apply a rebuttable presumption' that goods produced wholly or in part in Xinjiang or by listed entities are not allowed to enter the United States; an importer may rebut it with 'clear and convincing evidence'."
+ }
+]

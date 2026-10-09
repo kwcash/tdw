@@ -1,0 +1,94 @@
+[
+ {
+  "id": "C115",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "CRS In Focus IF11953: Evergrande Group and China's debt challenges (updated August 8, 2024)",
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "notes": "CRS: 'In 2021, Evergrande was unable to repay $305 billion (2% of China's GDP) it owed to PRC and foreign creditors', not counting off-book liabilities. The page does not say the default was on dollar bonds or in December; a USCC chapter that was also read says many developers defaulted on dollar-denominated bonds without naming Evergrande's month."
+ },
+ {
+  "id": "C115",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "USCC 2023 annual report, chapter 3 section 2 (fiscal, financial and property-sector risks)",
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "notes": "USCC: describes the presale system in which families took mortgages on yet-to-be-built flats and developers' defaults left presold units unfinished. A footnote cites Bloomberg News, 'Sweeping Mortgage Boycott Changes the Face of Dissent in China' (August 2, 2022). The body text read does not state the 2022 boycott or 'scores of cities'."
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Neither the CRS In Focus nor the USCC chapter mentions the Chapter 15 filing in New York in August 2023 or the September 2023 detention of Hui Ka Yan."
+ },
+ {
+  "id": "C117",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Witness statement (Daly), House Agriculture Committee hearing, 118th Congress (congress.gov)",
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "notes": "Congressional hearing statement: 'the Fufeng Group's acquisition of 370 acres of land to build a wet corn mill plant near the Grand Forks Air Force Base in North Dakota'. Shandong, the twelve-mile distance and the drone and space-communications units were not in the snippets."
+ },
+ {
+  "id": "C117",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Senate committee hearing, 118th Congress (S. Hrg., CHRG-118shrg56337)",
+  "url": "https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf",
+  "notes": "Senate hearing transcript: a Chinese-linked company tried in 2022 to build a corn milling plant near Grand Forks Air Force Base and 'Treasury later determined that they did not have the proper jurisdiction to act in this case' (Treasury chairs CFIUS). This is a statement made at a hearing. December 2022 is not on the page."
+ },
+ {
+  "id": "C117",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "Federal Register, May 5, 2023: proposed rule adding military installations to 31 CFR Part 802 Appendix A (govinfo)",
+   "Federal Register, November 7, 2024: Definition of Military Installation and the List of Military Installations (Treasury final rule)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/FR-2023-05-05/pdf/2023-09259.pdf",
+   "https://www.federalregister.gov/documents/2024/11/07/2024-25773/definition-of-military-installation-and-the-list-of-military-installations-in-the-regulations"
+  ],
+  "notes": "Federal Register: the 2023 proposed rule's list includes Grand Forks Air Force Base among installations; the November 2024 final rule's background says the July 19, 2024 proposal would 'add 59 military installations to the appendix'. The page text read does not itself state the final count of 59 or that land near the base was 'brought under review'."
+ },
+ {
+  "id": "C118",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "CNN report on the Mintz Group fine, syndicated by KTVZ (media only)",
+  "url": "https://ktvz.com/?p=1204106",
+  "notes": "News report (media only; no government page found): 'In April, police questioned staff at the Shanghai offices of global consulting giant Bain & Company.' A congressional hearing transcript also names Bain among US consulting firms whose local staff were targeted but gives no month."
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The House hearing transcript read says Chinese security forces raided and imprisoned local staff at Capvision, Bain and Mintz; it does not mention the May state television report or the foreign-spies accusation."
+ },
+ {
+  "id": "C118",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "Xinhua: China revises Counter-Espionage Law (NPC English-language site, April 27, 2023)",
+   "A&O Shearman (law firm): the revised PRC Counter-Espionage law, what has really changed"
+  ],
+  "url": [
+   "https://subsites.chinadaily.com.cn/npc/2023-04/27/c_882140.htm",
+   "https://www.aoshearman.com/en/insights/the-revised-prc-counter-espionage-law-what-has-really-changed"
+  ],
+  "notes": "PRC state news agency on the NPC site (the PRC's own account): the revised law 'will take effect on July 1, 2023' and includes 'all documents, data, materials and articles concerning national security and interests'. The law firm's analysis (secondary) agrees on the July 1, 2023 effective date and describes the new Article 4 language on documents and data."
+ },
+ {
+  "id": "C118",
+  "idx": 4,
+  "verdict": "contradicted",
+  "label": "",
+  "url": "",
+  "notes": "Two news reports (media only) say the Beijing Municipal Bureau of Statistics ruling is dated July 5 and its website statement July 14, with a fine of 10.69 million yuan (about $1.49 million) for 'foreign-related statistical investigations'; the news broke in August (Al Jazeera, August 22, 2023). The amount matches; 'in August' matches when the fine became public, not the dates on the ruling."
+ }
+]

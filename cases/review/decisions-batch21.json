@@ -1,0 +1,204 @@
+[
+ {
+  "id": "C061",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Christian Science Monitor, April 8, 1983 (media only)",
+   "Christian Science Monitor, April 5, 1983 wire digest (media only)"
+  ],
+  "url": [
+   "https://www.csmonitor.com/1983/0408/040870.html",
+   "https://www.csmonitor.com/layout/set/amphtml/1983/0405/040524.html"
+  ],
+  "notes": "Media only: the Monitor reports Beijing cut off sports and cultural exchanges for the rest of 1983 over Washington's granting of asylum to Hu Na, and its April 5 digest says the Justice Department announced the asylum decision. The date April 4 and Reagan's role were not found in the text read; a Justice Department or White House record is the primary source."
+ },
+ {
+  "id": "C062",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "CRS report RL32496, U.S.-China Military Contacts: Issues for Congress (Shirley A. Kan, July 29, 2014; EveryCRSReport mirror)",
+  "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+  "notes": "CRS: 'direct commercial sales to the PLA that included Sikorsky Aircraft's sale of 24 S-70C transport helicopters', and 1985-1987 government-to-government programs including modernization of artillery ammunition production and torpedoes. The link is a mirror of the Congressional Research Service report."
+ },
+ {
+  "id": "C062",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "CRS report RL32496 (EveryCRSReport mirror)",
+   "GAO NSIAD-98-176: China, military items exported (via govinfo)"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+   "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf"
+  ],
+  "notes": "Both name the Peace Pearl program, the F-8 avionics modernization. The year 1986, the value of about $550 million and the 55 J-8II interceptors were not in the snippets."
+ },
+ {
+  "id": "C062",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "The President's News Conference, June 5, 1989 (American Presidency Project)",
+   "State Department Office of the Historian: Tiananmen Square, 1989"
+  ],
+  "url": [
+   "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-45",
+   "https://history.state.gov/milestones/1989-1992/tiananmen-square"
+  ],
+  "notes": "Bush's conference text: 'I am ordering the following actions: suspension of all government-to-government sales and commercial exports of weapons', suspension of visits between military leaders and sympathetic review of Chinese students' requests to extend their stay. The State Department milestone confirms the suspension of military sales."
+ },
+ {
+  "id": "C062",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CRS and GAO documents name Peace Pearl and, separately, the Su-27, but the snippets do not connect China's 1990 withdrawal from Peace Pearl to buying Su-27s. Unchecked."
+ },
+ {
+  "id": "C063",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "ADST oral history: A Dissident for Dinner, George H. W. Bush's ill-fated banquet in China (secondary)",
+  "url": "https://adst.org/2015/09/a-dissident-for-dinner-george-h-w-bushs-ill-fated-banquet-in-china/",
+  "notes": "Diplomatic oral-history project (secondary): the US Embassy proposed inviting several people, including Fang Lizhi, to the February 26, 1989 state dinner for Bush; Chinese authorities objected. Britannica returned HTTP 403."
+ },
+ {
+  "id": "C063",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "S. Res. 476, 112th Congress (govinfo)",
+   "National Security Archive: Tiananmen Square 1989, the declassified history"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+   "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/"
+  ],
+  "notes": "Senate resolution recitals: 'on June 5, 1989, Fang Lizhi and Li Shuxian were escorted by United States diplomats to the United States Embassy in Beijing'. The National Security Archive (independent research institute) publishes the declassified cables on the embassy's decision to shelter them."
+ },
+ {
+  "id": "C063",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "S. Res. 476, 112th Congress (govinfo)",
+   "National Security Archive: Tiananmen Square 1989, the declassified history (documents)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+   "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/"
+  ],
+  "notes": "Senate resolution: the authorities accused the pair of 'counterrevolutionary propaganda' and denounced Fang as the 'instigator of chaos'. The Archive's cable summary says Chinese authorities had issued an arrest warrant for Fang and his wife. A helper's lead, unverified: the cable's own wording is 'counter-propaganda and instigation', not 'counterrevolutionary'."
+ },
+ {
+  "id": "C063",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "S. Res. 476, 112th Congress (govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+  "notes": "Senate resolution: 'on June 25, 1990, Fang Lizhi and Li Shuxian' left for the United Kingdom after a year in the embassy."
+ },
+ {
+  "id": "C064",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Amnesty International, China: Preliminary report on repression after 4 June 1989 (ASA 17/09/90)",
+   "Human Rights Watch / Asia Watch: Detained in China and Tibet, update"
+  ],
+  "url": [
+   "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+   "https://www.hrw.org/reports/pdfs/c/china/china945.pdf"
+  ],
+  "notes": "NGO reports: Xiao Bin, a 42-year-old worker in Dalian, 'was arrested on 11 June after he was shown on Chinese national television'. The number to call and the two women who reported him within hours are not in the snippets."
+ },
+ {
+  "id": "C064",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Amnesty International, ASA 17/09/90",
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+  "notes": "NGO report: Xiao Bin was tried in Dalian, found guilty of spreading rumours and 'vilifying the righteous act' of the martial-law troops, and sentenced (the text read matches '10 years'). Human Rights Watch lists him as serving ten years."
+ },
+ {
+  "id": "C064",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "Amnesty International, ASA 17/09/90",
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+  "notes": "NGO report covering the June 1989 repression: the page contains the date 13 June, the number 21, 'wanted', Wang Dan and the Ministry of Public Security, but the snippets do not show the wanted list of 21 student leaders directly."
+ },
+ {
+  "id": "C065",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "State Department Office of the Historian: Tiananmen Square, 1989",
+   "GAO testimony T-NSIAD-98-171: China, U.S. export controls (via govinfo)"
+  ],
+  "url": [
+   "https://history.state.gov/milestones/1989-1992/tiananmen-square",
+   "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-NSIAD-98-171/pdf/GAOREPORTS-T-NSIAD-98-171.pdf"
+  ],
+  "notes": "State milestone: Bush denounced the crackdown and suspended military sales and high-level exchanges. GAO: 'the President announced sanctions on China' on June 5 and Congress codified the weapons prohibition in February 1990. The June 20 date for the suspension of high-level exchanges was not found."
+ },
+ {
+  "id": "C065",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "State Department Office of the Historian: Brent Scowcroft remarks, China Conference 2006",
+   "ADST: Managing a Massacre, the ramifications of Tiananmen Square (secondary)"
+  ],
+  "url": [
+   "https://history.state.gov/conferences/2006-china-cold-war/scowcroft",
+   "https://adst.org/2014/05/managing-a-massacre-the-ramifications-of-tiananmen-square/"
+  ],
+  "notes": "Scowcroft (official conference transcript): he and Deputy Secretary Eagleburger flew to Beijing on a C-141 on a quiet mission after an exchange with Deng's side. ADST (secondary) describes the secret mission. The concealment until December and the reporters tracing the first visit were not in the snippets."
+ },
+ {
+  "id": "C066",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "USCC testimony of Dean Cheng: PLA perspectives on network warfare in informationized local wars",
+   "Jamestown Foundation China Brief: China's new military strategy, winning informationized local wars (think tank)"
+  ],
+  "url": [
+   "https://www.uscc.gov/sites/default/files/2022-02/Dean_Cheng_Testimony.pdf",
+   "https://jamestown.org/chinas-new-military-strategy-winning-informationized-local-wars/"
+  ],
+  "notes": "US-China Commission testimony and a think-tank brief both describe the January 1993 military strategic guideline under Jiang Zemin, which placed 'the basis of preparations for military struggle on winning local wars under modern conditions, particularly high-technology conditions'. The Jamestown piece is a secondary reading of the PRC document."
+ },
+ {
+  "id": "C066",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "PRC White Paper on China's National Defense in 2004 (FAS mirror)",
+   "Jamestown Foundation: China's Military Strategy 2015 (white paper text)"
+  ],
+  "url": [
+   "https://nuke.fas.org/guide/china/doctrine/natdef2004.html",
+   "https://jamestown.org/wp-content/uploads/2016/07/China%E2%80%99s-Military-Strategy-2015.pdf"
+  ],
+  "notes": "The 2004 white paper (hosted by the Federation of American Scientists) discusses local wars and the revolution in military affairs; the 2015 white paper text says the 1993 guideline took 'winning local wars in conditions of modern technology, particularly high technology' as its basis and now stresses informationization. The word 'informatized' replacing 'high-technology' in the 2004 revision was not matched in the snippets."
+ },
+ {
+  "id": "C067",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Executive Order 12711 of April 11, 1990 (Federal Register, 55 FR 13897)",
+   "Executive Order 12711 (American Presidency Project)"
+  ],
+  "url": [
+   "https://archives.federalregister.gov/issue_slice/1990/4/13/13897-13898.pdf",
+   "https://www.presidency.ucsb.edu/documents/executive-order-12711-policy-implementation-with-respect-nationals-the-peoples-republic"
+  ],
+  "notes": "Executive Order 12711 of April 11, 1990, 'Policy Implementation With Respect to Nationals of the People's Republic of China': the Attorney General is directed to take steps to defer enforced departure of PRC nationals present in the United States. Bush's statement that he would act by executive action was not checked."
+ }
+]
