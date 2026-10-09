@@ -1,4 +1,241 @@
 {
-  "from_cases": true,
-  "requests": []
+ "from_cases": false,
+ "requests": [
+  {
+   "id": "F001",
+   "url": "https://tsm.schar.gmu.edu/strait-snapshot-august-2026-update/",
+   "grep": [
+    "69 percent",
+    "69%",
+    "Trump",
+    "visit",
+    "year-over-year",
+    "year on year"
+   ],
+   "excerpt": 500,
+   "note": "69 percent; no flights during Trump visit in May"
+  },
+  {
+   "id": "F001",
+   "url": "https://www.aljazeera.com/news/2026/5/22/us-pausing-14bn-arms-sale-to-taiwan-due-to-iran-war-navy-chief-says",
+   "grep": [
+    "14 billion",
+    "$14",
+    "14bn",
+    "Acting",
+    "Iran",
+    "APEC",
+    "Shenzhen",
+    "September"
+   ],
+   "excerpt": 500,
+   "note": "Acting Navy Secretary said in May a $14B package waited on the Iran war; September reports on APEC"
+  },
+  {
+   "id": "F003",
+   "url": "https://english.www.gov.cn/news/202510/23/content_WS68fa3825c6d00ca5f9a06fbe.html",
+   "grep": [
+    "centenary",
+    "100th",
+    "2027",
+    "anniversary",
+    "Plenary",
+    "world-class"
+   ],
+   "excerpt": 0,
+   "note": "PLA centenary goal 2027 repeated at Fourth Plenum"
+  },
+  {
+   "id": "F003",
+   "url": "https://www.aljazeera.com/news/2026/9/21/china-expels-two-top-disloyal-military-leaders-from-communist-party",
+   "grep": [
+    "vice chairman",
+    "Central Military Commission",
+    "expelled",
+    "Xi Jinping",
+    "only",
+    "Zhang",
+    "He Weidong"
+   ],
+   "excerpt": 500,
+   "note": "two vice chairmen expelled; CMC holds only Xi and one vice chairman"
+  },
+  {
+   "id": "F005",
+   "url": "https://www.nbcnews.com/world/asia/hong-kong-company-concession-panama-canal-ports-ruled-unconstitutional-rcna256664",
+   "grep": [
+    "January",
+    "29",
+    "Maersk",
+    "MSC",
+    "interim",
+    "ruled",
+    "Thursday",
+    "Wednesday",
+    "Tuesday"
+   ],
+   "excerpt": 700,
+   "note": "Supreme Court voided concession on January 29, 2026; Maersk and MSC units took over"
+  },
+  {
+   "id": "F006",
+   "url": "https://focustaiwan.tw/society/202604010018",
+   "grep": [
+    "Hai Hong",
+    "barge",
+    "Matsu",
+    "March",
+    "cable",
+    "prosecutor"
+   ],
+   "excerpt": 500,
+   "note": "barge Hai Hong Gong 66 damaged Taiwan-Matsu No. 3 cable in March 2026"
+  },
+  {
+   "id": "F017",
+   "url": "https://www.scotusblog.com/cases/learning-resources-inc-v-trump/",
+   "grep": [
+    "February 20",
+    "Feb. 20",
+    "IEEPA",
+    "fentanyl",
+    "struck",
+    "ruled"
+   ],
+   "excerpt": 500,
+   "note": "Feb 20, 2026 Supreme Court struck down emergency-power tariffs"
+  },
+  {
+   "id": "F017",
+   "url": "https://www.whitehouse.gov/fact-sheets/2025/11/fact-sheet-president-donald-j-trump-strikes-deal-on-economic-and-trade-relations-with-china/",
+   "grep": [
+    "fentanyl",
+    "precursor",
+    "Busan",
+    "Korea",
+    "Gyeongju"
+   ],
+   "excerpt": 0,
+   "note": "Party agreed Nov 2025 to control more fentanyl precursors after Busan meeting"
+  },
+  {
+   "id": "F028",
+   "url": "https://www.armscontrol.org/act/2026-03/news/new-start-expires-us-urges-modernized-treaty",
+   "grep": [
+    "February 5",
+    "Feb. 5",
+    "expire",
+    "China",
+    "talks",
+    "refus",
+    "successor"
+   ],
+   "excerpt": 500,
+   "note": "New START expired Feb 5, 2026; Party refused talks"
+  },
+  {
+   "id": "F007",
+   "url": "https://www.scmp.com/economy/global-economy/article/3363037/china-sanctions-slew-us-entities-heightens-scrutiny-drone-exports",
+   "grep": [
+    "August 5",
+    "Aug 5",
+    "seven",
+    "drone",
+    "entities",
+    "Ministry of Commerce"
+   ],
+   "excerpt": 500,
+   "note": "MOFCOM tightened drone exports, sanctioned seven US entities on Aug 5, 2026"
+  },
+  {
+   "id": "F002",
+   "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/08/20/2003862831",
+   "grep": [
+    "Nov. 28",
+    "11,051",
+    "19.65",
+    "officials"
+   ],
+   "excerpt": 300,
+   "note": "11,051 local officials on Nov 28, 2026"
+  },
+  {
+   "id": "F002",
+   "url": "https://focustaiwan.tw/politics/202608280025",
+   "grep": [
+    "referendum",
+    "nuclear",
+    "November 28",
+    "Nov. 28"
+   ],
+   "excerpt": 500,
+   "note": "ballot carries a nuclear policy referendum"
+  },
+  {
+   "id": "F004",
+   "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/07/16/2003860849",
+   "grep": [
+    "three",
+    "airmen",
+    "air force",
+    "July",
+    "April",
+    "six"
+   ],
+   "excerpt": 600,
+   "note": "six service members in April 2026; three airmen July 2026"
+  },
+  {
+   "id": "F004",
+   "url": "https://thedefensepost.com/2025/03/28/taiwan-spying-china/",
+   "grep": [
+    "four",
+    "presidential",
+    "guard",
+    "March",
+    "Republic of China",
+    "People"
+   ],
+   "excerpt": 500,
+   "note": "four soldiers convicted March 2025, three presidential guards"
+  },
+  {
+   "id": "F029",
+   "url": "https://www.cov.com/en/news-and-insights/insights/2026/01/us-commerce-department-revises-license-review-policy-for-exports-of-certain-advanced-computing-commodities-to-china-and-macau",
+   "grep": [
+    "January 13",
+    "case-by-case",
+    "H200",
+    "25",
+    "cap"
+   ],
+   "excerpt": 300,
+   "note": "Commerce rule Jan 13, 2026: case-by-case licensing, volume cap"
+  },
+  {
+   "id": "F010",
+   "url": "https://www.engadget.com/big-tech/china-reportedly-has-a-prototype-euv-machine-built-by-ex-asml-employees-235833756.html",
+   "grep": [
+    "December",
+    "Reuters",
+    "wafer",
+    "prototype",
+    "light"
+   ],
+   "excerpt": 300,
+   "note": "Reuters Dec 2025: prototype EUV, produces light but no chips"
+  },
+  {
+   "id": "F014",
+   "url": "https://www.nbcnews.com/politics/2024-election/chinese-influence-operation-targets-us-down-ballot-races-rcna176960",
+   "grep": [
+    "October",
+    "Microsoft",
+    "down-ballot",
+    "criticized"
+   ],
+   "excerpt": 300,
+   "note": "Microsoft reported Oct 2024 down-ballot targeting"
+  }
+ ]
 }

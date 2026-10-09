@@ -6,7 +6,9 @@ runner, which has the open internet that a locked-down sandbox does not.
 
 REQUESTS.json:
   {"from_cases": true,                      # also check every [label](url) in data/*.json
-   "requests": [{"id": "F001", "url": "https://...", "terms": ["69 percent", "August 2026"], "note": "..."}]}
+   "requests": [{"id": "F001", "url": "https://...", "terms": ["69 percent", "August 2026"], "note": "...",
+                 "grep": ["Trump", "$14"],   # optional: up to 3 wide snippets per term, found anywhere on the page
+                 "excerpt": 800}]}           # optional: first N characters of the page text
 
 For each URL the report gives the HTTP status, final URL, page title, and for each
 term whether the page text contains it, with a snippet. "terms_found" is a coverage
@@ -67,7 +69,19 @@ def check_terms(text, terms):
     return res
 
 
-def fetch(url, terms):
+def grep_snippets(text, term, width=130, limit=3):
+    low, flat = text.lower(), re.sub(r'(?<=\d),(?=\d)', '', text.lower())
+    spots = []
+    for v in variants(term):
+        for src in (low, flat):
+            i = src.find(v)
+            while i != -1 and len(spots) < limit and (src is low):
+                spots.append(text[max(0, i - width): i + len(v) + width])
+                i = src.find(v, i + len(v) + width)
+    return spots[:limit]
+
+
+def fetch(url, terms, grep=(), excerpt=0):
     out = {'url': url, 'status': None, 'final_url': None, 'title': None, 'bytes': 0, 'error': None}
     bad = safe_host(url)
     if bad:
@@ -86,6 +100,10 @@ def fetch(url, terms):
             if terms:
                 out['terms'] = check_terms(text, terms)
                 out['terms_found'] = f"{sum(1 for v in out['terms'].values() if v)}/{len(terms)}"
+            if grep:
+                out['grep'] = {g: grep_snippets(text, g) for g in grep}
+            if excerpt:
+                out['excerpt'] = text[:min(int(excerpt), 3000)]
             if not text:
                 out['note'] = 'no extractable text (PDF, image or empty); only the status is checked'
             return out
@@ -136,7 +154,7 @@ def main():
     report = []
     print('=== FETCH REPORT BEGIN ===', flush=True)
     for i, r in enumerate(reqs):
-        res = fetch(r['url'], r.get('terms', []))
+        res = fetch(r['url'], r.get('terms', []), r.get('grep', ()), r.get('excerpt', 0))
         res.update(id=r.get('id'), claim=r.get('note'))
         report.append(res)
         print('FETCH ' + json.dumps(res, ensure_ascii=False), flush=True)
