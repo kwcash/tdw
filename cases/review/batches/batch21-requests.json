@@ -1,0 +1,557 @@
+[
+ {
+  "id": "C061",
+  "idx": 2,
+  "url": "https://www.csmonitor.com/1983/0408/040870.html",
+  "grep": [
+   "Hu Na",
+   "asylum",
+   "April 4",
+   "tennis",
+   "exchanges"
+  ],
+  "excerpt": 0,
+  "note": "media only: Christian Science Monitor 8 Apr 1983 on Hu Na asylum",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C061",
+  "idx": 2,
+  "url": "https://www.csmonitor.com/layout/set/amphtml/1983/0405/040524.html",
+  "grep": [
+   "Hu Na",
+   "asylum",
+   "tennis",
+   "Justice Department",
+   "Reagan"
+  ],
+  "excerpt": 0,
+  "note": "media only: Christian Science Monitor 5 Apr 1983",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 0,
+  "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+  "grep": [
+   "Black Hawk",
+   "S-70C",
+   "24",
+   "artillery",
+   "torpedo"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL32496 US arms sales to China (secondary official)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+  "grep": [
+   "Black Hawk",
+   "helicopter",
+   "radar",
+   "torpedo",
+   "Peace Pearl"
+  ],
+  "excerpt": 0,
+  "note": "GAO NSIAD-98-176 China arms sales",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 1,
+  "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+  "grep": [
+   "Peace Pearl",
+   "J-8",
+   "$550 million",
+   "1986",
+   "avionics"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL32496 US arms sales to China",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+  "grep": [
+   "Peace Pearl",
+   "F-8",
+   "$550 million",
+   "55",
+   "avionics"
+  ],
+  "excerpt": 0,
+  "note": "GAO NSIAD-98-176 China arms sales",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 2,
+  "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-45",
+  "grep": [
+   "government-to-government",
+   "weapons",
+   "suspend",
+   "students",
+   "Red Cross"
+  ],
+  "excerpt": 0,
+  "note": "Bush news conference 5 June 1989 (UCSB hosting of Public Papers)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 2,
+  "url": "https://history.state.gov/milestones/1989-1992/tiananmen-square",
+  "grep": [
+   "Tiananmen",
+   "military sales",
+   "suspended",
+   "high level",
+   "Bush"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian Milestones",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 3,
+  "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+  "grep": [
+   "Peace Pearl",
+   "Su-27",
+   "1990",
+   "J-8",
+   "terminat"
+  ],
+  "excerpt": 0,
+  "note": "CRS RL32496 US arms sales to China",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C062",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+  "grep": [
+   "Peace Pearl",
+   "Su-27",
+   "1990",
+   "Russia",
+   "avionics"
+  ],
+  "excerpt": 0,
+  "note": "GAO NSIAD-98-176 China arms sales",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 0,
+  "url": "https://adst.org/2015/09/a-dissident-for-dinner-george-h-w-bushs-ill-fated-banquet-in-china/",
+  "grep": [
+   "Fang Lizhi",
+   "banquet",
+   "Bush",
+   "Lilley",
+   "dinner"
+  ],
+  "excerpt": 0,
+  "note": "ADST oral-history compilation (secondary)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 0,
+  "url": "https://www.britannica.com/biography/Fang-Lizhi",
+  "grep": [
+   "Fang Lizhi",
+   "1986",
+   "student",
+   "protests",
+   "dismissed"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Britannica",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+  "grep": [
+   "Fang Lizhi",
+   "Li Shuxian",
+   "June 5, 1989",
+   "embassy",
+   "Lilley"
+  ],
+  "excerpt": 0,
+  "note": "Senate resolution text (S.Res.476, 112th) - congressional record text",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 1,
+  "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/",
+  "grep": [
+   "Fang Lizhi",
+   "June 5",
+   "embassy",
+   "Li Shuxian",
+   "sanctuary"
+  ],
+  "excerpt": 0,
+  "note": "National Security Archive declassified cables (research archive)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 2,
+  "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/",
+  "grep": [
+   "arrest warrant",
+   "Fang Lizhi",
+   "Li Shuxian",
+   "counter-propaganda",
+   "counterrevolutionary"
+  ],
+  "excerpt": 0,
+  "note": "National Security Archive declassified cables",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 2,
+  "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/index.html",
+  "grep": [
+   "Fang Lizhi",
+   "arrest",
+   "warrant",
+   "embassy",
+   "June"
+  ],
+  "excerpt": 0,
+  "note": "National Security Archive Tiananmen declassified history",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+  "grep": [
+   "June 25, 1990",
+   "Fang Lizhi",
+   "Li Shuxian",
+   "United Kingdom",
+   "June 1989"
+  ],
+  "excerpt": 0,
+  "note": "Senate resolution text (S.Res.476, 112th)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C063",
+  "idx": 3,
+  "url": "https://www.britannica.com/biography/Fang-Lizhi",
+  "grep": [
+   "Fang Lizhi",
+   "June 1990",
+   "embassy",
+   "England",
+   "Britain"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Britannica",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 0,
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+  "grep": [
+   "Xiao Bin",
+   "ABC",
+   "television",
+   "Dalian",
+   "11 June"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International ASA 17/09/90 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 0,
+  "url": "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+  "grep": [
+   "Xiao Bin",
+   "ABC",
+   "television",
+   "Dalian",
+   "paroled"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch/Asia 1994 report (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 2,
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+  "grep": [
+   "Xiao Bin",
+   "10 years",
+   "counter-revolutionary",
+   "Dalian",
+   "incitement"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International ASA 17/09/90 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 2,
+  "url": "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+  "grep": [
+   "Xiao Bin",
+   "ten years",
+   "10 years",
+   "Dalian",
+   "sentenced"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch/Asia 1994 report (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 3,
+  "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+  "grep": [
+   "13 June",
+   "21",
+   "wanted",
+   "Wang Dan",
+   "Ministry of Public Security"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International ASA 17/09/90 (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C064",
+  "idx": 3,
+  "url": "https://www.amnesty.org/fr/wp-content/uploads/2021/06/asa170071999en.pdf",
+  "grep": [
+   "13 June",
+   "21",
+   "most wanted",
+   "Wang Dan",
+   "student leaders"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International 1999 Tiananmen report (NGO)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C065",
+  "idx": 0,
+  "url": "https://history.state.gov/milestones/1989-1992/tiananmen-square",
+  "grep": [
+   "Tiananmen",
+   "military sales",
+   "suspended",
+   "high level",
+   "Bush"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian Milestones",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C065",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-NSIAD-98-171/pdf/GAOREPORTS-T-NSIAD-98-171.pdf",
+  "grep": [
+   "June 5",
+   "June 20",
+   "1989",
+   "suspend",
+   "high-level"
+  ],
+  "excerpt": 0,
+  "note": "GAO testimony T-NSIAD-98-171 on post-1989 sanctions",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C065",
+  "idx": 3,
+  "url": "https://history.state.gov/conferences/2006-china-cold-war/scowcroft",
+  "grep": [
+   "Scowcroft",
+   "Eagleburger",
+   "Beijing",
+   "December",
+   "secret"
+  ],
+  "excerpt": 0,
+  "note": "Office of the Historian conference transcript, Scowcroft",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C065",
+  "idx": 3,
+  "url": "https://adst.org/2014/05/managing-a-massacre-the-ramifications-of-tiananmen-square/",
+  "grep": [
+   "Eagleburger",
+   "Scowcroft",
+   "December 1989",
+   "secret",
+   "July"
+  ],
+  "excerpt": 0,
+  "note": "ADST oral history (secondary)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C066",
+  "idx": 2,
+  "url": "https://www.uscc.gov/sites/default/files/2022-02/Dean_Cheng_Testimony.pdf",
+  "grep": [
+   "1993",
+   "high-technology conditions",
+   "local wars",
+   "Jiang Zemin",
+   "informationized"
+  ],
+  "excerpt": 0,
+  "note": "USCC testimony (secondary, think-tank author)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C066",
+  "idx": 2,
+  "url": "https://jamestown.org/chinas-new-military-strategy-winning-informationized-local-wars/",
+  "grep": [
+   "1993",
+   "high-technology conditions",
+   "local wars",
+   "Jiang Zemin",
+   "guideline"
+  ],
+  "excerpt": 0,
+  "note": "think tank: Jamestown Foundation",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C066",
+  "idx": 3,
+  "url": "https://nuke.fas.org/guide/china/doctrine/natdef2004.html",
+  "grep": [
+   "White Paper on China's National Defense in 2004",
+   "informationization",
+   "local wars",
+   "military strategic guideline",
+   "active defense"
+  ],
+  "excerpt": 0,
+  "note": "PRC 2004 defense white paper (FAS mirror)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C066",
+  "idx": 3,
+  "url": "https://jamestown.org/wp-content/uploads/2016/07/China%E2%80%99s-Military-Strategy-2015.pdf",
+  "grep": [
+   "China's Military Strategy",
+   "2004",
+   "informationization",
+   "local wars",
+   "military strategic guideline"
+  ],
+  "excerpt": 0,
+  "note": "PRC 2015 defense white paper (Jamestown-hosted copy of official text)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C067",
+  "idx": 0,
+  "url": "https://archives.federalregister.gov/issue_slice/1990/4/13/13897-13898.pdf",
+  "grep": [
+   "12711",
+   "April 11, 1990",
+   "deferred",
+   "People's Republic of China",
+   "June 5, 1989"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register 55 FR 13897 (EO 12711)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C067",
+  "idx": 0,
+  "url": "https://www.presidency.ucsb.edu/documents/executive-order-12711-policy-implementation-with-respect-nationals-the-peoples-republic",
+  "grep": [
+   "12711",
+   "April 11, 1990",
+   "enforced departure",
+   "People's Republic of China",
+   "Bush"
+  ],
+  "excerpt": 0,
+  "note": "American Presidency Project text of EO 12711",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]

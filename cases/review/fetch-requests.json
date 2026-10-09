@@ -2,456 +2,559 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C055",
-   "idx": 3,
-   "url": "https://kids.britannica.com/students/article/Wei-Jingsheng/314107",
+   "id": "C061",
+   "idx": 2,
+   "url": "https://www.csmonitor.com/1983/0408/040870.html",
    "grep": [
-    "Wei Jingsheng",
-    "15 years",
-    "1979",
-    "state secrets"
+    "Hu Na",
+    "asylum",
+    "April 4",
+    "tennis",
+    "exchanges"
    ],
    "excerpt": 0,
-   "note": "secondary, Britannica Students",
-   "ua": "browser",
-   "grep_width": 200
+   "note": "media only: Christian Science Monitor 8 Apr 1983 on Hu Na asylum",
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C055",
-   "idx": 3,
-   "url": "https://www.britannica.com/topic/Beijing-Spring",
+   "id": "C061",
+   "idx": 2,
+   "url": "https://www.csmonitor.com/layout/set/amphtml/1983/0405/040524.html",
    "grep": [
-    "Wei Jingsheng",
-    "15 years",
-    "October 1979",
+    "Hu Na",
+    "asylum",
+    "tennis",
+    "Justice Department",
+    "Reagan"
+   ],
+   "excerpt": 0,
+   "note": "media only: Christian Science Monitor 5 Apr 1983",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 0,
+   "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+   "grep": [
+    "Black Hawk",
+    "S-70C",
+    "24",
+    "artillery",
+    "torpedo"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL32496 US arms sales to China (secondary official)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 0,
+   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+   "grep": [
+    "Black Hawk",
+    "helicopter",
+    "radar",
+    "torpedo",
+    "Peace Pearl"
+   ],
+   "excerpt": 0,
+   "note": "GAO NSIAD-98-176 China arms sales",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 1,
+   "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+   "grep": [
+    "Peace Pearl",
+    "J-8",
+    "$550 million",
+    "1986",
+    "avionics"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL32496 US arms sales to China",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 1,
+   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+   "grep": [
+    "Peace Pearl",
+    "F-8",
+    "$550 million",
+    "55",
+    "avionics"
+   ],
+   "excerpt": 0,
+   "note": "GAO NSIAD-98-176 China arms sales",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 2,
+   "url": "https://www.presidency.ucsb.edu/documents/the-presidents-news-conference-45",
+   "grep": [
+    "government-to-government",
+    "weapons",
+    "suspend",
+    "students",
+    "Red Cross"
+   ],
+   "excerpt": 0,
+   "note": "Bush news conference 5 June 1989 (UCSB hosting of Public Papers)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 2,
+   "url": "https://history.state.gov/milestones/1989-1992/tiananmen-square",
+   "grep": [
+    "Tiananmen",
+    "military sales",
+    "suspended",
+    "high level",
+    "Bush"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 3,
+   "url": "https://www.everycrsreport.com/files/20140729_RL32496_3349f0d2cac40b0ee0c179598f3d87013ec611d1.html",
+   "grep": [
+    "Peace Pearl",
+    "Su-27",
+    "1990",
+    "J-8",
+    "terminat"
+   ],
+   "excerpt": 0,
+   "note": "CRS RL32496 US arms sales to China",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C062",
+   "idx": 3,
+   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-NSIAD-98-176/pdf/GAOREPORTS-GAO-NSIAD-98-176.pdf",
+   "grep": [
+    "Peace Pearl",
+    "Su-27",
+    "1990",
+    "Russia",
+    "avionics"
+   ],
+   "excerpt": 0,
+   "note": "GAO NSIAD-98-176 China arms sales",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 0,
+   "url": "https://adst.org/2015/09/a-dissident-for-dinner-george-h-w-bushs-ill-fated-banquet-in-china/",
+   "grep": [
+    "Fang Lizhi",
+    "banquet",
+    "Bush",
+    "Lilley",
+    "dinner"
+   ],
+   "excerpt": 0,
+   "note": "ADST oral-history compilation (secondary)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 0,
+   "url": "https://www.britannica.com/biography/Fang-Lizhi",
+   "grep": [
+    "Fang Lizhi",
+    "1986",
+    "student",
+    "protests",
+    "dismissed"
+   ],
+   "excerpt": 0,
+   "note": "secondary: Britannica",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 1,
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+   "grep": [
+    "Fang Lizhi",
+    "Li Shuxian",
+    "June 5, 1989",
+    "embassy",
+    "Lilley"
+   ],
+   "excerpt": 0,
+   "note": "Senate resolution text (S.Res.476, 112th) - congressional record text",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 1,
+   "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/",
+   "grep": [
+    "Fang Lizhi",
+    "June 5",
+    "embassy",
+    "Li Shuxian",
+    "sanctuary"
+   ],
+   "excerpt": 0,
+   "note": "National Security Archive declassified cables (research archive)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 2,
+   "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/documents/",
+   "grep": [
+    "arrest warrant",
+    "Fang Lizhi",
+    "Li Shuxian",
+    "counter-propaganda",
+    "counterrevolutionary"
+   ],
+   "excerpt": 0,
+   "note": "National Security Archive declassified cables",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 2,
+   "url": "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB16/index.html",
+   "grep": [
+    "Fang Lizhi",
+    "arrest",
+    "warrant",
+    "embassy",
+    "June"
+   ],
+   "excerpt": 0,
+   "note": "National Security Archive Tiananmen declassified history",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 3,
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-112sres476is/html/BILLS-112sres476is.htm",
+   "grep": [
+    "June 25, 1990",
+    "Fang Lizhi",
+    "Li Shuxian",
+    "United Kingdom",
+    "June 1989"
+   ],
+   "excerpt": 0,
+   "note": "Senate resolution text (S.Res.476, 112th)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C063",
+   "idx": 3,
+   "url": "https://www.britannica.com/biography/Fang-Lizhi",
+   "grep": [
+    "Fang Lizhi",
+    "June 1990",
+    "embassy",
+    "England",
+    "Britain"
+   ],
+   "excerpt": 0,
+   "note": "secondary: Britannica",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C064",
+   "idx": 0,
+   "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+   "grep": [
+    "Xiao Bin",
+    "ABC",
+    "television",
+    "Dalian",
+    "11 June"
+   ],
+   "excerpt": 0,
+   "note": "Amnesty International ASA 17/09/90 (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C064",
+   "idx": 0,
+   "url": "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+   "grep": [
+    "Xiao Bin",
+    "ABC",
+    "television",
+    "Dalian",
+    "paroled"
+   ],
+   "excerpt": 0,
+   "note": "Human Rights Watch/Asia 1994 report (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C064",
+   "idx": 2,
+   "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
+   "grep": [
+    "Xiao Bin",
+    "10 years",
+    "counter-revolutionary",
+    "Dalian",
+    "incitement"
+   ],
+   "excerpt": 0,
+   "note": "Amnesty International ASA 17/09/90 (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C064",
+   "idx": 2,
+   "url": "https://www.hrw.org/reports/pdfs/c/china/china945.pdf",
+   "grep": [
+    "Xiao Bin",
+    "ten years",
+    "10 years",
+    "Dalian",
     "sentenced"
    ],
    "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
+   "note": "Human Rights Watch/Asia 1994 report (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C055",
-   "idx": 4,
-   "url": "https://www.britannica.com/topic/Beijing-Spring",
-   "grep": [
-    "Democracy Wall",
-    "December 1979",
-    "park",
-    "register",
-    "Yuetan"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C055",
-   "idx": 4,
-   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d279",
-   "grep": [
-    "Democracy Wall",
-    "Wei Jingsheng",
-    "park",
-    "registration",
-    "Beijing"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1977-80 vol XIII (candidate; content not confirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C055",
-   "idx": 5,
-   "url": "https://www.britannica.com/topic/Beijing-Spring",
-   "grep": [
-    "big-character",
-    "1980",
-    "constitution",
-    "National People's Congress"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (candidate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C055",
-   "idx": 5,
-   "url": "https://www.britannica.com/place/China/Constitutional-framework",
-   "grep": [
-    "big-character",
-    "1980",
-    "four bigs",
-    "constitution",
-    "posters"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (candidate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C056",
-   "idx": 0,
-   "url": "https://www.state.gov/china-24-227",
-   "grep": [
-    "January 31, 1979",
-    "Cooperation in Science and Technology",
-    "Agreement",
-    "extended"
-   ],
-   "excerpt": 0,
-   "note": "State Dept treaty listing, Feb 2024 extension",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C056",
-   "idx": 0,
-   "url": "https://history.state.gov/departmenthistory/visits/china",
-   "grep": [
-    "Deng",
-    "1979",
-    "January 29",
-    "Carter"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian, visits by Chinese leaders",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C056",
-   "idx": 2,
-   "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
-   "grep": [
-    "August 27, 2023",
-    "extended",
-    "Science and Technology",
-    "2023",
-    "five"
-   ],
-   "excerpt": 0,
-   "note": "State Dept release on amendment and extension",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C056",
-   "idx": 2,
-   "url": "https://www.state.gov/china-24-227",
-   "grep": [
-    "August 27, 2023",
-    "extend",
-    "February 27, 2024",
-    "Science and Technology",
-    "Exchange of Notes"
-   ],
-   "excerpt": 0,
-   "note": "State Dept treaty listing, Feb 2024 extension (short extensions)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C056",
+   "id": "C064",
    "idx": 3,
-   "url": "https://www.state.gov/china-24-1213",
+   "url": "https://www.amnesty.org/en/wp-content/uploads/2021/06/asa170091990en.pdf",
    "grep": [
-    "December 13, 2024",
-    "Protocol",
-    "Amending and Extending",
-    "Science and Technology"
+    "13 June",
+    "21",
+    "wanted",
+    "Wang Dan",
+    "Ministry of Public Security"
    ],
    "excerpt": 0,
-   "note": "State Dept treaty listing, Dec 2024 protocol",
-   "ua": "browser",
-   "grep_width": 200
+   "note": "Amnesty International ASA 17/09/90 (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C056",
+   "id": "C064",
    "idx": 3,
-   "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+   "url": "https://www.amnesty.org/fr/wp-content/uploads/2021/06/asa170071999en.pdf",
    "grep": [
-    "critical and emerging technologies",
-    "basic research",
-    "December 13",
-    "2024"
+    "13 June",
+    "21",
+    "most wanted",
+    "Wang Dan",
+    "student leaders"
    ],
    "excerpt": 0,
-   "note": "State Dept release on amendment and extension",
-   "ua": "browser",
-   "grep_width": 200
+   "note": "Amnesty International 1999 Tiananmen report (NGO)",
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C057",
-   "idx": 1,
-   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+   "id": "C065",
+   "idx": 0,
+   "url": "https://history.state.gov/milestones/1989-1992/tiananmen-square",
    "grep": [
-    "Vietnam",
-    "Deng",
-    "February 1979",
-    "Carter",
-    "January 29"
+    "Tiananmen",
+    "military sales",
+    "suspended",
+    "high level",
+    "Bush"
    ],
    "excerpt": 0,
    "note": "State Dept Office of the Historian Milestones",
    "ua": "browser",
-   "grep_width": 200
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C057",
-   "idx": 1,
-   "url": "https://digitalarchive.wilsoncenter.org/document/decisions-nvr-9-march-1979-oral-report-chinas-aggression-against-socialist-republic",
-   "grep": [
-    "17 February 1979",
-    "China",
-    "March 1979",
-    "Vietnam",
-    "aggression"
-   ],
-   "excerpt": 0,
-   "note": "Wilson Center Digital Archive, Vietnamese primary document (partisan)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C058",
+   "id": "C065",
    "idx": 0,
-   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-NSIAD-98-171/pdf/GAOREPORTS-T-NSIAD-98-171.pdf",
    "grep": [
-    "Mutual Defense Treaty",
-    "one year",
-    "January 1, 1979",
-    "terminate",
-    "Taiwan"
+    "June 5",
+    "June 20",
+    "1989",
+    "suspend",
+    "high-level"
    ],
    "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
+   "note": "GAO testimony T-NSIAD-98-171 on post-1989 sanctions",
    "ua": "browser",
-   "grep_width": 200
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C058",
-   "idx": 0,
-   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
-   "grep": [
-    "Mutual Defense Treaty",
-    "notice",
-    "Taiwan Relations Act",
-    "1979"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C058",
-   "idx": 1,
-   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
-   "grep": [
-    "administration",
-    "bill",
-    "Congress",
-    "Taiwan Relations Act",
-    "security"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C058",
-   "idx": 1,
-   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
-   "grep": [
-    "Taiwan Relations Act",
-    "Congress",
-    "security",
-    "legislation",
-    "1979"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C058",
-   "idx": 4,
-   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
-   "grep": [
-    "339",
-    "85",
-    "50",
-    "conference report",
-    "Taiwan Relations Act"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1977-80 vol XIII (conference-report votes 339-50, 85-4)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C059",
-   "idx": 2,
-   "url": "https://www.reaganlibrary.gov/archives/speech/united-states-china-joint-communique-united-states-arms-sales-taiwan",
-   "grep": [
-    "August 17",
-    "gradually",
-    "reduce",
-    "arms to Taiwan",
-    "1982"
-   ],
-   "excerpt": 0,
-   "note": "Reagan Library, text of the 1982 communique",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C059",
-   "idx": 2,
-   "url": "https://www.ait.org.tw/u-s-prc-joint-communique-1982/",
-   "grep": [
-    "intends gradually",
-    "reduce its sale of arms",
-    "Taiwan",
-    "August 17, 1982"
-   ],
-   "excerpt": 0,
-   "note": "AIT text of the 1982 communique",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C059",
-   "idx": 4,
-   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11665/IF11665.1.pdf",
-   "grep": [
-    "declassified",
-    "August 17, 1982",
-    "conditioned absolutely",
-    "2020",
-    "memo"
-   ],
-   "excerpt": 0,
-   "note": "CRS In Focus IF11665 (Oct 2020) on Six Assurances and Reagan memo",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C059",
-   "idx": 4,
-   "url": "https://web-archive-2022.ait.org.tw/our-relationship/policy-history/key-u-s-foreign-policy-documents-region/six-assurances-1982/index.html",
-   "grep": [
-    "Reagan",
-    "memo",
-    "declassified",
-    "conditioned absolutely",
-    "August 17, 1982"
-   ],
-   "excerpt": 0,
-   "note": "AIT declassified cables page (Taiwan Arms Sales and Six Assurances)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C060",
-   "idx": 0,
-   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
-   "grep": [
-    "Vincent Chin",
-    "Ebens",
-    "Chinese",
-    "auto",
-    "Japanese"
-   ],
-   "excerpt": 0,
-   "note": "Sixth Circuit opinion, United States v. Ebens",
-   "grep_width": 200
-  },
-  {
-   "id": "C060",
-   "idx": 0,
-   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
-   "grep": [
-    "Vincent Chin",
-    "Ebens",
-    "auto",
-    "Japanese",
-    "Chinese American"
-   ],
-   "excerpt": 0,
-   "note": "DOJ blog (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C060",
-   "idx": 2,
-   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
-   "grep": [
-    "probation",
-    "$3,000",
-    "Ebens",
-    "Nitz",
-    "manslaughter"
-   ],
-   "excerpt": 0,
-   "note": "DOJ blog (official)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C060",
-   "idx": 2,
-   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
-   "grep": [
-    "probation",
-    "$3,720",
-    "Nitz",
-    "stepson",
-    "manslaughter"
-   ],
-   "excerpt": 0,
-   "note": "Sixth Circuit opinion (snippet says fined $3,720, not $3,000)",
-   "grep_width": 200
-  },
-  {
-   "id": "C060",
+   "id": "C065",
    "idx": 3,
-   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+   "url": "https://history.state.gov/conferences/2006-china-cold-war/scowcroft",
    "grep": [
-    "civil rights",
-    "1984",
-    "reversed",
-    "Ebens",
-    "new trial"
+    "Scowcroft",
+    "Eagleburger",
+    "Beijing",
+    "December",
+    "secret"
    ],
    "excerpt": 0,
-   "note": "Sixth Circuit opinion, United States v. Ebens",
-   "grep_width": 200
+   "note": "Office of the Historian conference transcript, Scowcroft",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
   },
   {
-   "id": "C060",
+   "id": "C065",
    "idx": 3,
-   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+   "url": "https://adst.org/2014/05/managing-a-massacre-the-ramifications-of-tiananmen-square/",
    "grep": [
-    "acquitted",
-    "1987",
-    "retrial",
-    "Ebens",
-    "civil rights"
+    "Eagleburger",
+    "Scowcroft",
+    "December 1989",
+    "secret",
+    "July"
    ],
    "excerpt": 0,
-   "note": "DOJ blog (official)",
+   "note": "ADST oral history (secondary)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 2,
+   "url": "https://www.uscc.gov/sites/default/files/2022-02/Dean_Cheng_Testimony.pdf",
+   "grep": [
+    "1993",
+    "high-technology conditions",
+    "local wars",
+    "Jiang Zemin",
+    "informationized"
+   ],
+   "excerpt": 0,
+   "note": "USCC testimony (secondary, think-tank author)",
    "ua": "browser",
-   "grep_width": 200
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 2,
+   "url": "https://jamestown.org/chinas-new-military-strategy-winning-informationized-local-wars/",
+   "grep": [
+    "1993",
+    "high-technology conditions",
+    "local wars",
+    "Jiang Zemin",
+    "guideline"
+   ],
+   "excerpt": 0,
+   "note": "think tank: Jamestown Foundation",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 3,
+   "url": "https://nuke.fas.org/guide/china/doctrine/natdef2004.html",
+   "grep": [
+    "White Paper on China's National Defense in 2004",
+    "informationization",
+    "local wars",
+    "military strategic guideline",
+    "active defense"
+   ],
+   "excerpt": 0,
+   "note": "PRC 2004 defense white paper (FAS mirror)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C066",
+   "idx": 3,
+   "url": "https://jamestown.org/wp-content/uploads/2016/07/China%E2%80%99s-Military-Strategy-2015.pdf",
+   "grep": [
+    "China's Military Strategy",
+    "2004",
+    "informationization",
+    "local wars",
+    "military strategic guideline"
+   ],
+   "excerpt": 0,
+   "note": "PRC 2015 defense white paper (Jamestown-hosted copy of official text)",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C067",
+   "idx": 0,
+   "url": "https://archives.federalregister.gov/issue_slice/1990/4/13/13897-13898.pdf",
+   "grep": [
+    "12711",
+    "April 11, 1990",
+    "deferred",
+    "People's Republic of China",
+    "June 5, 1989"
+   ],
+   "excerpt": 0,
+   "note": "Federal Register 55 FR 13897 (EO 12711)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C067",
+   "idx": 0,
+   "url": "https://www.presidency.ucsb.edu/documents/executive-order-12711-policy-implementation-with-respect-nationals-the-peoples-republic",
+   "grep": [
+    "12711",
+    "April 11, 1990",
+    "enforced departure",
+    "People's Republic of China",
+    "Bush"
+   ],
+   "excerpt": 0,
+   "note": "American Presidency Project text of EO 12711",
+   "grep_width": 170,
+   "grep_limit": 2
   }
  ]
 }
