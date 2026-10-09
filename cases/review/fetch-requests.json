@@ -2,508 +2,500 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C038",
-   "idx": 1,
-   "url": "https://history.state.gov/historicaldocuments/frus1952-54v02p2/d298",
-   "grep": [
-    "Hunter",
-    "Brain Washing",
-    "Red China"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1952-54 (confirms Hunter book only; 1950 article unconfirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C038",
-   "idx": 2,
-   "url": "https://www.federalregister.gov/executive-order/10631",
-   "grep": [
-    "10631",
-    "Code of Conduct",
-    "August 17, 1955",
-    "Eisenhower"
-   ],
-   "excerpt": 0,
-   "note": "Federal Register EO 10631",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C038",
-   "idx": 2,
-   "url": "https://www.archives.gov/federal-register/codification/executive-order/10631.html",
-   "grep": [
-    "10631",
-    "Code of Conduct",
-    "August 17, 1955",
-    "Armed Forces"
-   ],
-   "excerpt": 0,
-   "note": "National Archives EO 10631 (amended text)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C039",
-   "idx": 0,
-   "url": "https://history.state.gov/milestones/1953-1960/taiwan-strait-crises",
-   "grep": [
-    "September 1954",
-    "Mutual Defense Treaty",
-    "December 2, 1954",
-    "Jinmen",
-    "Taiwan"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C039",
-   "idx": 2,
-   "url": "https://www.govinfo.gov/content/pkg/STATUTE-69/pdf/STATUTE-69-Pg7.pdf",
-   "grep": [
-    "January 29, 1955",
-    "Formosa",
-    "Pescadores",
-    "Public Law 4",
-    "Joint Resolution"
-   ],
-   "excerpt": 0,
-   "note": "Statutes at Large vol 69 p. 7 (Formosa Resolution)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C039",
-   "idx": 2,
-   "url": "https://history.state.gov/historicaldocuments/frus1955-57v02/d56",
-   "grep": [
-    "Formosa",
-    "January 29, 1955",
-    "Pescadores",
-    "Joint Resolution"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1955-57 vol II, Formosa resolution",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C040",
-   "idx": 0,
-   "url": "https://aerospace.caltech.edu/about/legends-of-galcit/qian-xuesen-tsien-hsue-shen",
-   "grep": [
-    "Tsien",
-    "clearance",
-    "1950",
-    "Communist",
-    "revoked"
-   ],
-   "excerpt": 0,
-   "note": "Caltech official page (secondary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C040",
-   "idx": 0,
-   "url": "https://library.caltech.edu/c.php?g=1245983&p=9125566",
-   "grep": [
-    "Tsien",
-    "security clearance",
-    "1950",
-    "Communist",
-    "revoked"
-   ],
-   "excerpt": 0,
-   "note": "Caltech library exhibit (secondary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C040",
-   "idx": 1,
-   "url": "https://aerospace.caltech.edu/about/legends-of-galcit/qian-xuesen-tsien-hsue-shen",
-   "grep": [
-    "1955",
-    "house arrest",
-    "pilots",
-    "September",
-    "deport"
-   ],
-   "excerpt": 0,
-   "note": "Caltech official page (secondary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C040",
-   "idx": 1,
-   "url": "https://collections.archives.caltech.edu/repositories/2/resources/236",
-   "grep": [
-    "Tsien",
-    "1955",
-    "China",
-    "clearance",
-    "house arrest"
-   ],
-   "excerpt": 0,
-   "note": "Caltech Archives finding aid (secondary)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C041",
-   "idx": 2,
-   "url": "https://www.nps.gov/articles/upload/11-Essay-11-Cold-War.pdf",
-   "grep": [
-    "Confession Program",
-    "30,000",
-    "1965",
-    "confess",
-    "Chinese"
-   ],
-   "excerpt": 0,
-   "note": "NPS essay (candidate; the 30,000 figure not confirmed in search snippet)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C041",
-   "idx": 2,
-   "url": "https://www.archives.gov/research/chinese-americans/guide",
-   "grep": [
-    "Confession",
-    "1965",
-    "30,000",
-    "paper",
-    "Chinese"
-   ],
-   "excerpt": 0,
-   "note": "National Archives guide (candidate; figure not confirmed in snippet)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C042",
-   "idx": 0,
-   "url": "https://www.britannica.com/event/Hundred-Flowers-Campaign",
-   "grep": [
-    "Hundred Flowers",
-    "1957",
-    "Mao",
-    "criticism",
-    "intellectuals"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C042",
-   "idx": 0,
-   "url": "https://history.state.gov/historicaldocuments/frus1955-57v03/d274",
-   "grep": [
-    "Hundred Flowers",
-    "Peking University",
-    "posters",
-    "criticism",
-    "1957"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1955-57 vol III (candidate; content not confirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C042",
-   "idx": 1,
-   "url": "https://id.loc.gov/authorities/subjects/sh85024125.html",
-   "grep": [
-    "550,000",
-    "Antirightist",
-    "1957",
-    "rightists"
-   ],
-   "excerpt": 0,
-   "note": "Library of Congress subject authority note (the 550,000 estimate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C042",
-   "idx": 1,
-   "url": "https://www.britannica.com/event/Hundred-Flowers-Campaign",
-   "grep": [
-    "People's Daily",
-    "June 8",
-    "rightists",
-    "Anti-Rightist",
-    "550,000"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (June 8 editorial not confirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C043",
-   "idx": 1,
-   "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d248",
-   "grep": [
-    "Sidewinder",
-    "24 September",
-    "convoy",
-    "Seventh Fleet",
-    "Kinmen"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1958-60 vol XIX, report by Commander US Taiwan Defense Command",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C043",
-   "idx": 1,
-   "url": "https://history.state.gov/milestones/1953-1960/taiwan-strait-crises",
-   "grep": [
-    "Seventh Fleet",
-    "escort",
-    "September 1958",
-    "Jinmen",
-    "Sidewinder"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C043",
-   "idx": 2,
-   "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d267",
-   "grep": [
-    "odd",
-    "Quemoy",
-    "alternate",
-    "Defense Minister",
-    "October"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1958-60 vol XIX, draft statement noting odd-day firing",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C043",
-   "idx": 2,
-   "url": "https://www.britannica.com/event/Taiwan-Strait-crises",
-   "grep": [
-    "alternate days",
-    "1979",
-    "odd",
-    "Jinmen",
-    "1958"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (Jan 1 1979 end date)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 0,
-   "url": "https://www.britannica.com/topic/Lu-shan-Conference",
-   "grep": [
-    "Peng Dehuai",
-    "July 23",
-    "anti-Party",
-    "Lushan",
-    "1959"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 0,
-   "url": "https://www.cia.gov/readingroom/docs/polo-23.pdf",
-   "grep": [
-    "Peng Te-huai",
-    "anti-party clique",
-    "July 14",
-    "Lushan",
-    "Mao"
-   ],
-   "excerpt": 0,
-   "note": "CIA Polo series, text of Peng letter (Red Guard source)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 1,
-   "url": "https://www.britannica.com/topic/Lu-shan-Conference",
-   "grep": [
-    "right opportunism",
-    "Great Leap Forward",
-    "cadres",
-    "Peng Dehuai",
-    "campaign"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 1,
-   "url": "https://www.britannica.com/biography/Mao-Zedong/Formation-of-the-Peoples-Republic-of-China",
-   "grep": [
-    "right opportunism",
-    "Peng Dehuai",
-    "Lushan",
-    "grain",
-    "Great Leap Forward"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica Mao biography",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 2,
-   "url": "https://www.britannica.com/facts/Great-Leap-Forward",
-   "grep": [
-    "45 million",
-    "famine",
-    "1959",
-    "1961",
-    "million"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (death toll ranges)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C044",
-   "idx": 2,
-   "url": "https://www.britannica.com/science/famine",
-   "grep": [
-    "Chinese famine",
-    "1959",
-    "1961",
-    "million",
-    "15"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica famine entry",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C045",
-   "idx": 0,
-   "url": "https://www.cia.gov/readingroom/docs/COVERT%20ACTION%20IN%20HIGH%20ALT[14688685].pdf",
-   "grep": [
-    "10 March 1959",
-    "Lhasa",
-    "Dalai Lama",
-    "artillery",
-    "Tibetans"
-   ],
-   "excerpt": 0,
-   "note": "CIA internal history 'Covert Action in High Altitude'",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C045",
-   "idx": 0,
-   "url": "https://www.britannica.com/biography/Dalai-Lama-14th",
-   "grep": [
-    "March 10, 1959",
-    "Lhasa",
-    "uprising",
-    "Dalai Lama",
-    "India"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C045",
-   "idx": 1,
-   "url": "https://www.cia.gov/stories/story/spy-sites-camp-hale/",
-   "grep": [
-    "Camp Hale",
-    "1958",
-    "1964",
-    "Tibetan",
-    "Colorado"
-   ],
-   "excerpt": 0,
-   "note": "CIA official story page",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C045",
-   "idx": 1,
-   "url": "https://www.cia.gov/readingroom/docs/COVERT%20ACTION%20IN%20HIGH%20ALT[14688685].pdf",
-   "grep": [
-    "Athar",
-    "Lhotse",
-    "radio",
-    "Camp Hale",
-    "Dalai Lama"
-   ],
-   "excerpt": 0,
-   "note": "CIA internal history (radio operators)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C045",
-   "idx": 2,
-   "url": "https://www.cia.gov/readingroom/docs/COVERT%20ACTION%20IN%20HIGH%20ALT[14688685].pdf",
-   "grep": [
-    "1969",
-    "1970",
-    "terminat",
-    "Tibetan",
-    "phase"
-   ],
-   "excerpt": 0,
-   "note": "CIA internal history (candidate; wind-down not confirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
    "id": "C046",
    "idx": 0,
-   "url": "https://history.state.gov/historicaldocuments/frus1961-63v25/d318",
+   "url": "https://www.britannica.com/place/Hong-Kong/Postwar-Hong-Kong",
    "grep": [
+    "1962",
     "Hong Kong",
     "refugees",
-    "1962",
-    "influx",
-    "turned back"
+    "Guangdong",
+    "border"
    ],
    "excerpt": 0,
-   "note": "FRUS 1961-63 vol XXV (weak candidate; UN refugee committee mention)",
+   "note": "secondary, Britannica (weak candidate)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C047",
+   "idx": 1,
+   "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device",
+   "grep": [
+    "October 16, 1964",
+    "Chinese",
+    "nuclear",
+    "Communist"
+   ],
+   "excerpt": 0,
+   "note": "American Presidency Project, LBJ statement (test date)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C047",
+   "idx": 1,
+   "url": "https://history.state.gov/historicaldocuments/frus1964-68v30/summary",
+   "grep": [
+    "October 16, 1964",
+    "nuclear",
+    "Khrushchev",
+    "Lop Nor"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1964-68 vol XXX summary (Khrushchev ouster not confirmed)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C047",
+   "idx": 2,
+   "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device",
+   "grep": [
+    "surprise",
+    "unexpected",
+    "Chinese Communist",
+    "nuclear",
+    "October 16, 1964"
+   ],
+   "excerpt": 0,
+   "note": "American Presidency Project, LBJ statement",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C048",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1964-68v30/d115",
+   "grep": [
+    "railroad",
+    "anti-aircraft",
+    "North Vietnam",
+    "engineer",
+    "Chinese"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1964-68 vol XXX (partial candidate: 1965 Chinese units in N. Vietnam)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C049",
+   "idx": 0,
+   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
+   "grep": [
+    "Rittenberg",
+    "1945",
+    "Army",
+    "Chinese Communist Party"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Wilson Center person page",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C049",
+   "idx": 1,
+   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
+   "grep": [
+    "Rittenberg",
+    "1949",
+    "1955",
+    "1968",
+    "1977"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Wilson Center person page (arrest dates)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C049",
+   "idx": 1,
+   "url": "https://id.loc.gov/authorities/names/nr93000905.html",
+   "grep": [
+    "Rittenberg",
+    "1949",
+    "imprison",
+    "China",
+    "1977"
+   ],
+   "excerpt": 0,
+   "note": "Library of Congress name authority (candidate)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C049",
+   "idx": 2,
+   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
+   "grep": [
+    "Rittenberg",
+    "1980",
+    "United States",
+    "business",
+    "advis"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Wilson Center (snippet says returned to US 1979; check)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C050",
+   "idx": 0,
+   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/evo-media-document/Dissidents-Who-Have-Suffered-for-Human-Rights-in-China-A-Look-Back-and-A-Look-Forward.pdf",
+   "grep": [
+    "Lin Zhao",
+    "Peking University",
+    "rightist",
+    "1960",
+    "1968"
+   ],
+   "excerpt": 0,
+   "note": "CECC report (candidate; Lin Zhao details not confirmed in snippet)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 1,
+   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
+   "grep": [
+    "table tennis",
+    "April 6, 1971",
+    "invited",
+    "Ping-Pong",
+    "1971"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 1,
+   "url": "https://www.archives.gov/press/press-releases/2008/nr08-110",
+   "grep": [
+    "Ping",
+    "April 10",
+    "Hong Kong",
+    "Mao",
+    "table tennis"
+   ],
+   "excerpt": 0,
+   "note": "National Archives press release (Ping Pong diplomacy)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 2,
+   "url": "https://www.nixonlibrary.gov/research/almanac/april-14-1971",
+   "grep": [
+    "table tennis",
+    "Chou",
+    "Great Hall",
+    "April 14, 1971",
+    "Zhou"
+   ],
+   "excerpt": 0,
+   "note": "Nixon Library almanac, April 14 1971",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 2,
+   "url": "https://www.archives.gov/press/press-releases/2008/nr08-110",
+   "grep": [
+    "Great Hall",
+    "Zhou",
+    "Chou",
+    "April 14",
+    "table tennis"
+   ],
+   "excerpt": 0,
+   "note": "National Archives press release",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 3,
+   "url": "https://www.nixonlibrary.gov/research/almanac/april-14-1971",
+   "grep": [
+    "embargo",
+    "trade",
+    "China",
+    "Nixon",
+    "April 14, 1971"
+   ],
+   "excerpt": 0,
+   "note": "Nixon Library almanac, April 14 1971",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C051",
+   "idx": 3,
+   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
+   "grep": [
+    "restrictions",
+    "trade",
+    "1971",
+    "table tennis",
+    "travel"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d139",
+   "grep": [
+    "Yahya",
+    "Pakistan",
+    "Chou En-lai",
+    "July 9, 1971"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1969-76 vol XVII, Kissinger-Zhou memcon (Pakistan channel)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 0,
+   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
+   "grep": [
+    "Dacca",
+    "East Pakistan",
+    "March 28, 1971",
+    "Blood",
+    "genocide"
+   ],
+   "excerpt": 0,
+   "note": "secondary, National Security Archive (crackdown)",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 1,
+   "url": "https://history.state.gov/historicaldocuments/frus1969-76ve13/d9",
+   "grep": [
+    "seventeen hours",
+    "Chou En-lai",
+    "July 14, 1971",
+    "Yeh Chien-ying"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1969-76 vol E-13, Kissinger memo 'My Talks with Chou En-lai' (Seventeen hours)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 1,
+   "url": "https://www.presidency.ucsb.edu/documents/remarks-the-nation-announcing-acceptance-invitation-visit-the-peoples-republic-china",
+   "grep": [
+    "Chou En-lai",
+    "invitation",
+    "before May 1972",
+    "July 15, 1971"
+   ],
+   "excerpt": 0,
+   "note": "American Presidency Project, Nixon remarks 15 July 1971",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 2,
+   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
+   "grep": [
+    "April 6, 1971",
+    "Dacca",
+    "Blood",
+    "dissent",
+    "genocide"
+   ],
+   "excerpt": 0,
+   "note": "secondary, National Security Archive reproduction of the Blood cable",
+   "grep_width": 200
+  },
+  {
+   "id": "C052",
+   "idx": 3,
+   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
+   "grep": [
+    "Blood",
+    "recalled",
+    "June 1971",
+    "Dacca"
+   ],
+   "excerpt": 0,
+   "note": "secondary, National Security Archive (candidate; recall not confirmed in snippet)",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 0,
+   "url": "https://ask.un.org/faq/320138",
+   "grep": [
+    "2758",
+    "76",
+    "35",
+    "17 abstentions",
+    "25 October 1971"
+   ],
+   "excerpt": 0,
+   "note": "UN Dag Hammarskjold Library FAQ",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 0,
+   "url": "https://legal.un.org/unjuridicalyearbook/pdfs/english/by_volume/1972/chpVI.pdf",
+   "grep": [
+    "2758",
+    "76",
+    "35",
+    "abstentions",
+    "People's Republic of China"
+   ],
+   "excerpt": 0,
+   "note": "UN Juridical Yearbook 1972",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 1,
+   "url": "https://documents.un.org/doc/resolution/gen/nr0/327/74/pdf/nr032774.pdf?OpenElement=",
+   "grep": [
+    "2758 (XXVI)",
+    "Chiang Kai-shek",
+    "lawful rights",
+    "People's Republic of China",
+    "expel"
+   ],
+   "excerpt": 0,
+   "note": "UN document, GA 26th session resolutions",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 1,
+   "url": "https://treaties.un.org/doc/Publication/MTDSG/Historical%20Information/mtdsg.history-old.en.pdf",
+   "grep": [
+    "2758",
+    "Chiang Kai-shek",
+    "expel",
+    "1971",
+    "China"
+   ],
+   "excerpt": 0,
+   "note": "UN Treaty Collection historical information",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 4,
+   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12646/IF12646.7.pdf",
+   "grep": [
+    "2758",
+    "State Department",
+    "Taiwan",
+    "motions",
+    "2024"
+   ],
+   "excerpt": 0,
+   "note": "CRS In Focus IF12646 (note: snippet gives State statement as March 2025)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C053",
+   "idx": 4,
+   "url": "https://www.europarl.europa.eu/doceo/document/TA-10-2024-0030_EN.html",
+   "grep": [
+    "2758",
+    "24 October 2024",
+    "Taiwan",
+    "misinterpretation"
+   ],
+   "excerpt": 0,
+   "note": "European Parliament text adopted 24 Oct 2024",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C054",
+   "idx": 0,
+   "url": "https://www.ait.org.tw/u-s-prc-joint-communique-1972/",
+   "grep": [
+    "all Chinese on either side of the Taiwan Strait",
+    "one China",
+    "does not challenge that position",
+    "February 28, 1972"
+   ],
+   "excerpt": 0,
+   "note": "AIT text of the Shanghai Communique",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C054",
+   "idx": 0,
+   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
+   "grep": [
+    "Shanghai Communiqué",
+    "one China",
+    "Taiwan Strait",
+    "1972"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones (dates the communique Feb 27)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C055",
+   "idx": 2,
+   "url": "https://www.britannica.com/topic/Beijing-Spring",
+   "grep": [
+    "Wei Jingsheng",
+    "Deng",
+    "despot",
+    "March 1979",
+    "arrested"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Britannica",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C055",
+   "idx": 2,
+   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/evo-media-document/Dissidents-Who-Have-Suffered-for-Human-Rights-in-China-A-Look-Back-and-A-Look-Forward.pdf",
+   "grep": [
+    "Wei Jingsheng",
+    "March 29, 1979",
+    "dictator",
+    "15 years"
+   ],
+   "excerpt": 0,
+   "note": "CECC report (candidate)",
    "ua": "browser",
    "grep_width": 200
   }
