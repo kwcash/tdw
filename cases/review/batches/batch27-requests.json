@@ -1,0 +1,538 @@
+[
+ {
+  "id": "C107",
+  "idx": 1,
+  "url": "https://2021-2025.state.gov/sentencing-of-canadian-citizen-michael-spavor/",
+  "grep": [
+   "Spavor",
+   "Kovrig",
+   "December 2018",
+   "arbitrar"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on Spavor sentencing",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C107",
+  "idx": 2,
+  "url": "https://www.canada.ca/en/global-affairs/news/2021/08/backgrounder--michael-spavor-verdict-pronouncement.html",
+  "grep": [
+   "Spavor",
+   "Dandong",
+   "11 years",
+   "espionage",
+   "verdict"
+  ],
+  "excerpt": 0,
+  "note": "Global Affairs Canada backgrounder on Spavor verdict",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C107",
+  "idx": 2,
+  "url": "https://www.mfa.gov.cn/ce/ceca//eng/sgxw/t1898900.htm",
+  "grep": [
+   "Spavor",
+   "Dandong",
+   "11 years",
+   "state secrets"
+  ],
+  "excerpt": 0,
+  "note": "PRC embassy in Canada statement on the Spavor judgement",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/press-release/file/1436211/dl",
+  "grep": [
+   "Meng",
+   "deferred prosecution",
+   "Huawei",
+   "Financial Institution 1"
+  ],
+  "excerpt": 0,
+  "note": "Meng deferred prosecution agreement (E.D.N.Y.)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/huawei-cfo-wanzhou-meng-admits-misleading-global-financial-institution",
+  "grep": [
+   "Meng Wanzhou",
+   "deferred prosecution",
+   "Huawei",
+   "September 24, 2021"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Meng DPA",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 0,
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-presidents-working-dinner-china/",
+  "grep": [
+   "Fentanyl",
+   "Controlled Substance",
+   "President Xi",
+   "maximum penalty"
+  ],
+  "excerpt": 0,
+  "note": "White House statement on Dec 1, 2018 Buenos Aires dinner",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 0,
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-chinas-class-scheduling-fentanyl/",
+  "grep": [
+   "fentanyl",
+   "class",
+   "May 1",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "White House/ONDCP statement on China class scheduling of fentanyl",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://www.cdc.gov/nchs/data/databriefs/db491.pdf",
+  "grep": [
+   "synthetic opioids",
+   "73,838",
+   "2022",
+   "fentanyl"
+  ],
+  "excerpt": 0,
+  "note": "CDC NCHS Data Brief 491 (2022 data)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://www.cdc.gov/nchs/products/databriefs/db457.htm",
+  "grep": [
+   "synthetic opioids",
+   "70,601",
+   "2021",
+   "fentanyl"
+  ],
+  "excerpt": 0,
+  "note": "CDC NCHS Data Brief 457 (2021 data)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 4,
+  "url": "https://2021-2025.state.gov/u-s-prc-counternarcotics-working-group-progress-on-illicit-synthetic-drugs-including-fentanyl/",
+  "grep": [
+   "Counternarcotics Working Group",
+   "Woodside",
+   "November 2023",
+   "precursor",
+   "PRC"
+  ],
+  "excerpt": 0,
+  "note": "State Dept page on US-PRC counternarcotics working group",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 4,
+  "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/12/Directors-Report-on-the-Decisive-Years-in-Americas-Overdose.pdf",
+  "grep": [
+   "Woodside",
+   "counternarcotics",
+   "precursor",
+   "November 2023"
+  ],
+  "excerpt": 0,
+  "note": "ONDCP Director's report (White House)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 5,
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_2_C44-PURL-gpo224301/pdf/GOVPUB-Y4_2_C44-PURL-gpo224301.pdf",
+  "grep": [
+   "tax rebate",
+   "VAT",
+   "fentanyl analogues",
+   "precursor",
+   "Select Committee"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee on the CCP report, The CCP's Role in the Fentanyl Crisis (Apr 2024)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 5,
+  "url": "https://chinaselectcommittee.house.gov/media/press-releases/select-committee-unveils-findings-ccps-role-american-fentanyl-epidemic-report",
+  "grep": [
+   "tax rebate",
+   "fentanyl",
+   "export",
+   "Select Committee"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee release on fentanyl report",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+  "grep": [
+   "Jin",
+   "Company-1",
+   "terms of service",
+   "fabricated",
+   "Tiananmen"
+  ],
+  "excerpt": 0,
+  "note": "E.D.N.Y. criminal complaint v. Jin (2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/china-based-executive-us-telecommunications-company-charged-disrupting-video-meetings",
+  "grep": [
+   "Jin",
+   "terms of service",
+   "fabricated",
+   "Tiananmen",
+   "dissidents"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on charges v. Jin (Dec 18, 2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/archives/opa/pr/china-based-executive-us-telecommunications-company-charged-disrupting-video-meetings",
+  "grep": [
+   "Jin",
+   "charged",
+   "Tiananmen",
+   "December 18, 2020"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on charges v. Jin",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://fbi.gov/news/press-releases/china-based-executive-at-us-telecommunications-company-charged-with-disrupting-video-meetings-commemorating-tiananmen-square-massacre",
+  "grep": [
+   "Jin",
+   "charged",
+   "Tiananmen",
+   "December 18, 2020"
+  ],
+  "excerpt": 0,
+  "note": "FBI copy of DOJ release on charges v. Jin",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C110",
+  "idx": 1,
+  "url": "https://2017-2021.state.gov/senior-state-department-officials-on-the-office-of-foreign-missions-designation-of-chinese-media-entities-as-foreign-missions/",
+  "grep": [
+   "Xinhua",
+   "CGTN",
+   "China Radio International",
+   "China Daily Distribution Corporation",
+   "foreign missions"
+  ],
+  "excerpt": 0,
+  "note": "State Dept briefing on Feb 2020 designation of five PRC media entities",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C110",
+  "idx": 1,
+  "url": "https://2017-2021.state.gov/institution-of-a-personnel-cap-on-designated-prc-state-media-entities/index.html",
+  "grep": [
+   "personnel cap",
+   "Chinese citizens",
+   "March 2",
+   "Xinhua",
+   "100"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on March 2020 personnel cap",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C110",
+  "idx": 2,
+  "url": "https://2017-2021.state.gov/chinese-action-against-journalists",
+  "grep": [
+   "New York Times",
+   "Wall Street Journal",
+   "Washington Post",
+   "Hong Kong",
+   "March 17"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on PRC action against journalists (Mar 2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C110",
+  "idx": 2,
+  "url": "https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/fyrbt/202405/t20240530_11349642.html",
+  "grep": [
+   "New York Times",
+   "Wall Street Journal",
+   "Washington Post",
+   "Hong Kong",
+   "Macao"
+  ],
+  "excerpt": 0,
+  "note": "PRC Foreign Ministry countermeasures statement (Mar 2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C111",
+  "idx": 2,
+  "url": "https://home.treasury.gov/news/press-releases/sm1073",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "Sun Jinlong",
+   "Peng Jiarui",
+   "serious human rights abuse"
+  ],
+  "excerpt": 0,
+  "note": "Treasury release on XPCC Global Magnitsky sanctions (July 31, 2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C111",
+  "idx": 2,
+  "url": "https://ofac.treasury.gov/recent-actions/20200731",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "Sun Jinlong",
+   "Peng Jiarui",
+   "GLOMAG"
+  ],
+  "excerpt": 0,
+  "note": "OFAC recent actions 7/31/2020",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C111",
+  "idx": 3,
+  "url": "https://www.cbp.gov/newsroom/national-media-release/cbp-issues-detention-order-cotton-products-made-xinjiang-production",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "cotton",
+   "XPCC",
+   "detention order"
+  ],
+  "excerpt": 0,
+  "note": "CBP release on XPCC cotton detention order (Dec 2020)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C111",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R46631/R46631.6.pdf",
+  "grep": [
+   "XPCC",
+   "cotton",
+   "Xinjiang Production and Construction Corps",
+   "withhold release order"
+  ],
+  "excerpt": 0,
+  "note": "CRS R46631 on Section 307 and forced labor imports",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 0,
+  "url": "https://fas.org/publication/china-is-building-a-second-nuclear-missile-silo-field/",
+  "grep": [
+   "Hami",
+   "110",
+   "silos",
+   "second"
+  ],
+  "excerpt": 0,
+  "note": "think tank (FAS): second silo field near Hami",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 0,
+  "url": "https://fas.org/publication/a-closer-look-at-chinas-missile-silo-construction/",
+  "grep": [
+   "Ordos",
+   "Hami",
+   "Yumen",
+   "silo"
+  ],
+  "excerpt": 0,
+  "note": "think tank (FAS): third field near Ordos",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://media.defense.gov/2024/Dec/18/2003615417/-1/-1/0/2024-CMPR-FACT-SHEET.PDF",
+  "grep": [
+   "600",
+   "operational nuclear warheads",
+   "1,000",
+   "2030",
+   "mid-2024"
+  ],
+  "excerpt": 0,
+  "note": "DoD 2024 China Military Power Report fact sheet",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://media.defense.gov/2024/dec/18/2003615520/-1/-1/0/military-and-security-developments-involving-the-peoples-republic-of-china-2024.pdf",
+  "grep": [
+   "600 operational nuclear warheads",
+   "1,000",
+   "2030",
+   "mid-2024"
+  ],
+  "excerpt": 0,
+  "note": "DoD 2024 China Military Power Report (full)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C113",
+  "idx": 2,
+  "url": "https://www.wtatennis.com/news/2384758/steve-simon-announces-wtas-decision-to-suspend-tournaments-in-china",
+  "grep": [
+   "Steve Simon",
+   "suspend",
+   "Peng Shuai",
+   "China",
+   "Hong Kong"
+  ],
+  "excerpt": 0,
+  "note": "WTA announcement of China suspension (Dec 1, 2021)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C113",
+  "idx": 2,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/CECC%20Hearing%20Testimony%20-%20Jenny%20Wang.pdf",
+  "grep": [
+   "WTA",
+   "Simon",
+   "$1 billion",
+   "Peng Shuai",
+   "WTA Finals"
+  ],
+  "excerpt": 0,
+  "note": "CECC hearing testimony on WTA financial stake in China",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C113",
+  "idx": 4,
+  "url": "https://www.wtatennis.com/news/3147537/the-wta-to-resume-tournaments-in-china-this-fall",
+  "grep": [
+   "WTA",
+   "resume",
+   "China",
+   "Peng Shuai",
+   "investigation"
+  ],
+  "excerpt": 0,
+  "note": "WTA announcement resuming China tournaments (2023)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C114",
+  "idx": 2,
+  "url": "https://www.cbp.gov/sites/default/files/assets/documents/2022-Jun/UFLPA%20Fact%20Sheet_FINAL.pdf",
+  "grep": [
+   "June 21, 2022",
+   "rebuttable presumption",
+   "clear and convincing",
+   "Xinjiang"
+  ],
+  "excerpt": 0,
+  "note": "CBP UFLPA fact sheet",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
