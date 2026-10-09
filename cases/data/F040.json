@@ -31,11 +31,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A materials professor in Ohio co-authors a paper in 2031 with a mainland institute on AI-designed heat shields. Eight months later the same institute's name appears on a hypersonic glide vehicle program.",
-    "record": "The Defense Department's 2026 list of Chinese military companies grew by 65 names. The Party's military-civil fusion strategy directs civilian research toward military use. Federal research-security rules since 2021 require disclosure of foreign support and training.",
+    "record": "The Defense Department's 2026 list of Chinese military companies grew by 65 names ([Federal Register (June 2026 list)](https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies); [WilmerHale](https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies)). The Party's military-civil fusion strategy directs civilian research toward military use. Federal research-security rules since 2021 require disclosure of foreign support and training ([NSPM-33](https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-united-states-government-supported-research-development-national-security-policy/)).",
     "reading": "The Party lets foreign universities fund and perform frontier research, then carries the results home. The partnership looks academic and runs through institutes that serve the PLA. The American lab does the work and never sees where it ends. This is Stratagem 3, kill with a borrowed knife.",
     "coreEvent": "A federal action cites an American university collaboration that moved controlled technology to an institution tied to the PLA before 2034.",
     "gapText": "Architecture Governance. Universities judge partners on academic standing and ignore the military programs behind them.",
     "fix": "Review projects, not people, and list the institutions that feed the PLA. Ancestry is not loyalty."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -31,13 +31,13 @@
   "gap": "Governance",
   "text": {
     "brief": "A general counsel in San Diego reads a ruling from a Chongqing court in 2032. It sets a global royalty rate for her company's 6G patents and every rival's, and her board meets in an hour.",
-    "record": "A Chongqing court set global royalty rates in a patent dispute in December 2023. Wuhan courts issued anti-suit injunctions in 2020 that barred parties from litigating abroad. The European Union challenged those injunctions at the World Trade Organization in February 2022.",
+    "record": "A Chongqing court set global royalty rates in a patent dispute in December 2023. Wuhan courts issued anti-suit injunctions in 2020 that barred parties from litigating abroad ([WTO](https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds611_e.htm)). The European Union challenged those injunctions at the World Trade Organization in February 2022 ([WTO](https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds611_e.htm)).",
     "reading": "The Party turns patents and courts into a rate-setting machine. Mainland courts set global prices for essential patents, and foreign firms either accept the rate or lose the mainland market. The guest's court sets the host's prices. This is Stratagem 30, make the host and the guest exchange places.",
     "coreEvent": "A mainland court sets a global royalty rate binding an American firm's worldwide portfolio before 2035.",
     "gapText": "Architecture Governance. No allied rule decides which court sets a global price, so the fastest court wins.",
     "fix": "Agree with allies that global rates need consent or an agreed forum, and refuse to enforce rulings that skip both."
   },
-  "status": "unsourced",
+  "status": "sourced",
   "book": {
     "notes": [
       {

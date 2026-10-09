@@ -1,0 +1,154 @@
+[
+ {
+  "id": "F009",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Anthropic",
+  "url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+  "notes": "Company statement dated Sep 4, 2025: entities more than 50% owned by companies headquartered in unsupported regions such as China. Anthropic is the vendor of the model that helped build this dataset."
+ },
+ {
+  "id": "F018",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "State Department",
+   "WHO"
+  ],
+  "url": [
+   "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/termination-of-u-s-membership-in-the-world-health-organization-who-joint-statement-by-secretary-of-state-rubio-and-secretary-of-health-and-human-services-kennedy",
+   "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states"
+  ],
+  "notes": "Joint State/HHS statement dated January 22, 2026; WHO statement of 24 January regrets the notification. The two sides disagree on whether the withdrawal was approved."
+ },
+ {
+  "id": "F020",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "White House fact sheet",
+  "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+  "notes": "Fact sheet: issuers must be able to seize, freeze or burn payment stablecoins and comply with lawful orders. The statute PDF could not be read by the runner; replace with the public law (P.L. 119-27) when readable."
+ },
+ {
+  "id": "F037",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Federal Register (2024 rule)",
+   "BIS advisory opinions"
+  ],
+  "url": [
+   "https://www.federalregister.gov/documents/2024/07/18/2024-15810/standards-related-activities-and-the-export-administration-regulations",
+   "https://media.bis.gov/learn-support/advisory-opinions"
+  ],
+  "notes": "2024 interim final rule effective July 18, 2024; BIS lists a 08/19/19 general advisory opinion on standards with a listed entity. Whether 2019 \"eased\" rules is the case author's characterization; the opinion is a clarification."
+ },
+ {
+  "id": "F038",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "USTR",
+  "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2025/november/ustr-suspension-action-section-301-investigation-chinas-targeting-maritime-logistics-and",
+  "notes": "USTR: action suspended for one year from 12:01 am Nov 10, 2025, following the leaders' trade deal. The word \"fees\" is in the Federal Register notice, not this release."
+ },
+ {
+  "id": "F039",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Federal Register",
+  "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00592/securing-the-information-and-communications-technology-and-services-supply-chain-connected-vehicles",
+  "notes": "Final rule, 90 FR, Jan 16 2025: software prohibitions start with model year 2027; covers PRC and Russia nexus."
+ },
+ {
+  "id": "F040",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Federal Register (June 2026 list)",
+   "WilmerHale"
+  ],
+  "url": [
+   "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+   "https://www.wilmerhale.com/en/insights/client-alerts/20260611-pentagon-adds-65-new-entities-to-the-1260h-list-of-chinese-military-companies"
+  ],
+  "notes": "Federal Register notice of June 10, 2026 lists the entities (Alibaba, Baidu, BYD...). It does not say how many are new; the count of 65 comes from a law-firm client alert (secondary)."
+ },
+ {
+  "id": "F040",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "NSPM-33",
+  "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-united-states-government-supported-research-development-national-security-policy/",
+  "notes": "NSPM-33 (Jan 14 2021) directs disclosure of potential conflicts of interest and commitment, including foreign ties. \"Training\" is not specifically shown."
+ },
+ {
+  "id": "F041",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "IRS",
+  "url": "https://www.irs.gov/newsroom/treasury-irs-provide-guidance-for-certain-energy-tax-credits-regarding-material-assistance-provided-by-prohibited-foreign-entities-under-the-one-big-beautiful-bill",
+  "notes": "IRS/Treasury guidance on material assistance from prohibited foreign entities (Notice 2026-15). The law uses \"prohibited foreign entity\"; the case says \"foreign entities of concern\" which was the earlier term."
+ },
+ {
+  "id": "F041",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "EIA (2024)",
+   "EIA (2025)"
+  ],
+  "url": [
+   "https://www.eia.gov/todayinenergy/detail.php?id=64705",
+   "https://www.eia.gov/todayinenergy/detail.php?id=67205"
+  ],
+  "notes": "EIA: utility battery capacity +66% in 2024; record 15 GW added in 2025. EIA does not say the cells came from the mainland; that half is unsourced."
+ },
+ {
+  "id": "F042",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Justice Department",
+  "url": "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology",
+  "notes": "DOJ release dated Friday Jan 30, 2026: \"Yesterday, a federal jury in San Francisco convicted...\" (Jan 29)."
+ },
+ {
+  "id": "F042",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "RAND",
+  "url": "https://www.rand.org/pubs/research_reports/RRA2849-1.html",
+  "notes": "RAND report of May 30, 2024 on securing model weights against attackers up to nation-state operations. The exact \"cannot defend against the best state attackers\" is the case author's paraphrase; check the report text."
+ },
+ {
+  "id": "F043",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "WTO",
+  "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds611_e.htm",
+  "notes": "WTO DS611 summary: anti-suit injunctions begin August 2020 with a decision of the Supreme People's Court. The Wuhan court order (Sept 2020, Xiaomi v InterDigital) is in Appendix H note 7/5 but is not on this page."
+ },
+ {
+  "id": "F043",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "WTO",
+  "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds611_e.htm",
+  "notes": "\"On 18 February 2022, the European Union requested consultations\"."
+ },
+ {
+  "id": "F044",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Dalai Lama",
+  "url": "https://www.dalailama.com/news/statement-affirming-the-continuation-of-the-institution-of-dalai-lama",
+  "notes": "Statement: \"the Gaden Phodrang Trust has sole authority to recognize the future reincarnation\". Page is headed with the 2 July 2025 release; the signature line reads 21 May 2025."
+ },
+ {
+  "id": "F044",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "USCIRF",
+  "url": "https://www.uscirf.gov/release-statements/uscirf-welcomes-enactment-tibet-policy-and-support-act",
+  "notes": "USCIRF: policy affirming the right of the Tibetan Buddhist community to select its leaders; sanctions on officials who interfere. \"Alone\" is stronger than the enacted wording (exclusively spiritual matter; the 14th Dalai Lama's wishes should play a key role); replace with the statute text."
+ }
+]

@@ -1,0 +1,277 @@
+[
+ {
+  "id": "F019",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edmi/pr/chinese-nationals-charged-conspiracy-and-smuggling-dangerous-biological-pathogen-us",
+  "grep": [
+   "Fusarium",
+   "Michigan",
+   "smuggl",
+   "June"
+  ],
+  "excerpt": 500,
+  "note": "DOJ Fusarium case",
+  "ua": "browser"
+ },
+ {
+  "id": "F045",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edny/pr/former-high-ranking-new-york-state-government-employee-charged-acting-undisclosed",
+  "grep": [
+   "Linda Sun",
+   "agent",
+   "Executive Chamber",
+   "September"
+  ],
+  "excerpt": 500,
+  "note": "Linda Sun charged",
+  "ua": "browser"
+ },
+ {
+  "id": "F046",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edny/pr/two-individuals-arrested-operating-undeclared-police-station-chinese-government",
+  "grep": [
+   "police station",
+   "Ministry of Public Security",
+   "Lu Jianwang",
+   "Chen Jinping"
+  ],
+  "excerpt": 500,
+  "note": "Police station arrests",
+  "ua": "browser"
+ },
+ {
+  "id": "F046",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edny/pr/new-york-city-resident-pleads-guilty-operating-secret-police-station-chinese",
+  "grep": [
+   "pleaded guilty",
+   "Chen Jinping",
+   "December"
+  ],
+  "excerpt": 500,
+  "note": "Chen plea",
+  "ua": "browser"
+ },
+ {
+  "id": "F023",
+  "idx": 2,
+  "url": "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf",
+  "grep": [
+   "277,398",
+   "China"
+  ],
+  "excerpt": 200,
+  "note": "Open Doors fast facts (PDF debug)"
+ },
+ {
+  "id": "F024",
+  "idx": 1,
+  "url": "https://media.ca11.uscourts.gov/opinions/pub/files/202312737.pdf",
+  "grep": [
+   "Senate Bill 264",
+   "Shen",
+   "Chinese"
+  ],
+  "excerpt": 200,
+  "note": "11th Cir. opinion (PDF debug)"
+ },
+ {
+  "id": "F024",
+  "idx": 2,
+  "url": "https://www.usda.gov/about-usda/news/press-releases/2025/07/08/farm-security-national-security-trump-administration-takes-bold-action-elevate-american-agriculture",
+  "grep": [
+   "National Farm Security Action Plan",
+   "foreign adversar",
+   "farmland"
+  ],
+  "excerpt": 300,
+  "note": "USDA plan",
+  "ua": "browser"
+ },
+ {
+  "id": "F030",
+  "idx": 1,
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+  "grep": [
+   "talking points",
+   "censorship",
+   "CAISI"
+  ],
+  "excerpt": 200,
+  "note": "AI Action Plan (PDF debug)"
+ },
+ {
+  "id": "F035",
+  "idx": 0,
+  "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/84aeb15bbe33894365d33f52e027c5268ba95dcf/TSMC%204Q24%20Transcript.pdf",
+  "grep": [
+   "Arizona",
+   "high volume"
+  ],
+  "excerpt": 200,
+  "note": "TSMC 4Q24 transcript",
+  "ua": "browser"
+ },
+ {
+  "id": "F035",
+  "idx": 0,
+  "url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+  "grep": [
+   "N4",
+   "Q4 2024",
+   "volume production"
+  ],
+  "excerpt": 200,
+  "note": "TSMC Arizona page",
+  "ua": "browser"
+ },
+ {
+  "id": "F055",
+  "idx": 2,
+  "url": "https://www.gao.gov/assets/gao-11-95.pdf",
+  "grep": [
+   "heparin",
+   "China",
+   "2008"
+  ],
+  "excerpt": 200,
+  "note": "GAO heparin",
+  "ua": "browser"
+ },
+ {
+  "id": "F056",
+  "idx": 2,
+  "url": "https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/NCSC_China_Genomics_Fact_Sheet_2021revision20210203.pdf",
+  "grep": [
+   "BGI",
+   "prenatal",
+   "PLA",
+   "genetic"
+  ],
+  "excerpt": 200,
+  "note": "NCSC genomics fact sheet (PDF debug)"
+ },
+ {
+  "id": "F053",
+  "idx": 2,
+  "url": "https://www.grandforksgov.com/business/fufeng-usa-development",
+  "grep": [
+   "CFIUS",
+   "jurisdiction",
+   "Air Force"
+  ],
+  "excerpt": 300,
+  "note": "Grand Forks Fufeng page"
+ },
+ {
+  "id": "F008",
+  "idx": 2,
+  "url": "https://www.mca.gov.cn/zt/n2643/n2647/c1662004999979993329/content.html",
+  "grep": [
+   "第七条",
+   "支持、协助和配合"
+  ],
+  "excerpt": 100,
+  "note": "National Intelligence Law (MCA copy)"
+ },
+ {
+  "id": "F008",
+  "idx": 2,
+  "url": "https://www.12339.gov.cn/article/h5_law_con/4",
+  "grep": [
+   "第七条",
+   "支持、协助和配合"
+  ],
+  "excerpt": 100,
+  "note": "National Intelligence Law (12339 copy)"
+ },
+ {
+  "id": "F021",
+  "idx": 0,
+  "url": "https://en.moj.gov.cn/2025-03/25/c_1080689.htm",
+  "grep": [
+   "Anti-Foreign Sanctions Law",
+   "2021",
+   "countermeasures"
+  ],
+  "excerpt": 300,
+  "note": "Regulation implementing AFSL (MOJ)"
+ },
+ {
+  "id": "F021",
+  "idx": 2,
+  "url": "https://us.china-embassy.gov.cn/eng/zmgx/zxxx/202504/t20250409_11590915.htm",
+  "grep": [
+   "unreliable entity",
+   "Taiwan",
+   "military",
+   "six US"
+  ],
+  "excerpt": 300,
+  "note": "PRC adds six US firms to UEL April 2025"
+ },
+ {
+  "id": "F041",
+  "idx": 1,
+  "url": "https://www.mofcom.gov.cn/syxwfb/art/2025/art_072f1b88bcb4415fae1f05bbd569fd50.html",
+  "grep": [
+   "电池",
+   "正极",
+   "磷酸",
+   "锂"
+  ],
+  "excerpt": 200,
+  "note": "MOFCOM Q&A on technology export catalogue"
+ },
+ {
+  "id": "F043",
+  "idx": 0,
+  "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds632_e.htm",
+  "grep": [
+   "Chongqing",
+   "royalt",
+   "OPPO",
+   "global"
+  ],
+  "excerpt": 300,
+  "note": "WTO DS632 royalties dispute"
+ },
+ {
+  "id": "F015",
+  "idx": 1,
+  "url": "https://www.ftc.gov/legal-library/browse/statutes/protecting-americans-data-foreign-adversaries-act-2024-padfaa",
+  "grep": [
+   "data broker",
+   "foreign adversary",
+   "sensitive data"
+  ],
+  "excerpt": 200,
+  "note": "PADFAA via FTC",
+  "ua": "browser"
+ },
+ {
+  "id": "F015",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-118hr7520rh/html/BILLS-118hr7520rh.htm",
+  "grep": [
+   "data broker",
+   "foreign adversary"
+  ],
+  "excerpt": 200,
+  "note": "PADFAA bill text (reported)"
+ },
+ {
+  "id": "F058",
+  "idx": 0,
+  "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfhhis01.txt",
+  "grep": [
+   "China, Mainland",
+   "1,3",
+   "2013"
+  ],
+  "excerpt": 500,
+  "note": "TIC historical holdings"
+ }
+]

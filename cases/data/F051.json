@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "A Navy destroyer in the Red Sea knocks down its fourth drone of the night in 2030. The wreckage carries a motor controller and a navigation chip from a Shenzhen firm that sells to anyone.",
-    "record": "Treasury and Commerce have designated hundreds of mainland firms since 2022 for supplying Russia's military industry. Investigators have found mainland-made components in drones used by Russia and by forces aligned with Iran. The Party calls its exports ordinary commerce.",
+    "record": "Treasury and Commerce have designated hundreds of mainland firms since 2022 for supplying Russia's military industry ([USCC](https://www.uscc.gov/research/chinas-facilitation-sanctions-and-export-control-evasion); [Treasury](https://home.treasury.gov/news/press-releases/jy2700)). Investigators have found mainland-made components in drones used by Russia and by forces aligned with Iran. The Party calls its exports ordinary commerce.",
     "reading": "The Party arms America's adversaries through trade it can disown. Components move through traders in third countries, and the Party's hands stay clean while American sailors take the fire. This is Stratagem 3, kill with a borrowed knife.",
     "coreEvent": "American officials attribute American casualties to weapons that carried components supplied from the mainland before 2033.",
     "gapText": "Data Architecture. Forensics on captured weapons sit in classified files, so the suppliers pay no public price.",
     "fix": "Publish component forensics fast and tie each finding to sanctions on the supplier."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

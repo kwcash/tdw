@@ -31,11 +31,11 @@
   "gap": "Business",
   "text": {
     "brief": "In 2034 a Navy program manager signs off on a repair plan for a destroyer damaged in an exercise collision. The only drydock free for two years sits in Busan.",
-    "record": "Mainland yards build more than half of the world's commercial ships by tonnage, and American yards build under one percent. Federal law bars the Navy from building its warships in foreign yards. The United States suspended its port fees on mainland-built ships in November 2025 as part of the trade truce.",
+    "record": "Mainland yards build more than half of the world's commercial ships by tonnage, and American yards build under one percent. Federal law bars the Navy from building its warships in foreign yards. The United States suspended its port fees on mainland-built ships in November 2025 as part of the trade truce ([USTR](https://ustr.gov/about/policy-offices/press-office/press-releases/2025/november/ustr-suspension-action-section-301-investigation-chinas-targeting-maritime-logistics-and)).",
     "reading": "The Party does not need to sink the fleet. It needs only to outbuild it over twenty years and wait for a war of attrition in which the side that can replace ships wins. This is Stratagem 4, wait at ease for the weary enemy.",
     "coreEvent": "A South Korean or Japanese yard begins building a vessel for the US Navy before 2032.",
     "gapText": "Business Architecture. The defenders buy ships one budget at a time, and the Party builds yards for decades.",
     "fix": "Treat shipbuilding capacity as a shared allied asset and fund it with contracts long enough to build yards."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

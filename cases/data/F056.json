@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "A fertility clinic chain in Florida switches its prenatal test vendor in 2030 to a lab in Singapore that charges half the price. The lab's sequencing partner files its results with a firm in Shenzhen.",
-    "record": "The BIOSECURE Act became law on December 18, 2025. The Justice Department's bulk data rule took effect on April 8, 2025 and bars transfers of Americans' genomic data to countries of concern. Reporting in 2021 found that BGI developed its prenatal test with the PLA and sold it in more than fifty countries.",
+    "record": "The BIOSECURE Act became law on December 18, 2025 ([Senate Armed Services Committee](https://www.armed-services.senate.gov/press-releases/sasc-chairman-wicker-and-ranking-member-reed-commend-final-passage-of-the-fiscal-year-2026-national-defense-authorization-act); [Davis Polk](https://www.davispolk.com/insights/client-update/u-s-updates-outbound-investment-rule-adopts-biosecure-act)). The Justice Department's bulk data rule took effect on April 8, 2025 and bars transfers of Americans' genomic data to countries of concern ([Federal Register](https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern)). Reporting in 2021 found that BGI developed its prenatal test with the PLA and sold it in more than fifty countries.",
     "reading": "The Party gathers genomes through cheap tests and third-country labs. Each sample looks like health care, and the database it feeds serves the state. This is Stratagem 10, hide a knife behind a smile.",
     "coreEvent": "A federal regulator finds Party-linked access to bulk American genomic data through a third-country intermediary before 2035.",
     "gapText": "Data Architecture. Genomic data leaves the country through contracts no regulator reads.",
     "fix": "Enforce the rules that exist, and make every lab certify where the data goes."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

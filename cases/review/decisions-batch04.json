@@ -1,0 +1,78 @@
+[
+ {
+  "id": "F048",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "FBI IC3",
+  "url": "https://www.ic3.gov/PSA/2025/PSA250515",
+  "notes": "Alert I-051525-PSA, May 15 2025: text and AI-generated voice messages impersonating senior US officials since April 2025."
+ },
+ {
+  "id": "F050",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Federal Register",
+  "url": "https://www.federalregister.gov/documents/2025/01/07/2025-00070/notice-of-availability-of-designation-of-chinese-military-companies",
+  "notes": "Notice dated January 2, 2025 (published Jan 7) lists Tencent Holdings Limited."
+ },
+ {
+  "id": "F051",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "USCC",
+   "Treasury"
+  ],
+  "url": [
+   "https://www.uscc.gov/research/chinas-facilitation-sanctions-and-export-control-evasion",
+   "https://home.treasury.gov/news/press-releases/jy2700"
+  ],
+  "notes": "USCC: BIS added 125 Chinese/HK entities to the Entity List Feb 2022 to Aug 2025 for aiding Russia. Treasury: Oct 2024 action across 17 jurisdictions including the PRC. \"Hundreds\" combined is not stated in either."
+ },
+ {
+  "id": "F053",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Federal Register",
+  "url": "https://www.federalregister.gov/documents/2025/03/26/2025-05199/beneficial-ownership-information-reporting-requirement-revision-and-deadline-extension",
+  "notes": "FinCEN interim final rule (announced March 21, published March 26 2025): entities formerly \"domestic reporting companies\" are exempt."
+ },
+ {
+  "id": "F055",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "White House",
+  "url": "https://www.whitehouse.gov/presidential-actions/2025/08/ensuring-american-pharmaceutical-supply-chain-resilience-by-filling-the-strategic-active-pharmaceutical-ingredients-reserve/",
+  "notes": "EO 14336 (Aug 13, 2025): list of approximately 26 critical drugs; fill the reserve. The EO directs the list and the stockpile; the \"ordered filled with 26 drugs\" phrasing compresses two steps."
+ },
+ {
+  "id": "F056",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Senate Armed Services Committee",
+   "Davis Polk"
+  ],
+  "url": [
+   "https://www.armed-services.senate.gov/press-releases/sasc-chairman-wicker-and-ranking-member-reed-commend-final-passage-of-the-fiscal-year-2026-national-defense-authorization-act",
+   "https://www.davispolk.com/insights/client-update/u-s-updates-outbound-investment-rule-adopts-biosecure-act"
+  ],
+  "notes": "SASC release: FY26 NDAA includes the BioSecure Act. Davis Polk (law firm client alert, secondary): NDAA signed December 18, 2025."
+ },
+ {
+  "id": "F056",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Federal Register",
+  "url": "https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern",
+  "notes": "Rule effective April 8, 2025 and covers human omic data per its definitions; the page text read mentions genomic data in the background only. Confirm the \"human genomic data\" definition in 28 CFR 202."
+ },
+ {
+  "id": "F057",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "National Bureau of Statistics",
+  "url": "https://www.stats.gov.cn/english/PressRelease/202609/t20260916_1965342.html",
+  "notes": "PRC NBS release: Jan-Aug 2026 real estate development investment 4,797.9 billion yuan, down 19.9% (comparable basis). Official PRC statistic."
+ }
+]

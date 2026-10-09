@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "During a crisis in the Strait in 2032, a video of the commander of Indo-Pacific Command ordering strikes on mainland ports spreads to 40 million phones in two hours. The admiral is on a flight to Guam.",
-    "record": "The FBI warned in May 2025 that criminals and hostile actors were using AI voice messages to impersonate senior American officials. The Coalition for Content Provenance and Authenticity publishes an open standard for content credentials. Few government agencies attach those credentials to their own video.",
+    "record": "The FBI warned in May 2025 that criminals and hostile actors were using AI voice messages to impersonate senior American officials ([FBI IC3](https://www.ic3.gov/PSA/2025/PSA250515)). The Coalition for Content Provenance and Authenticity publishes an open standard for content credentials. Few government agencies attach those credentials to their own video.",
     "reading": "The Party fills the first hours of a crisis with synthetic orders and confessions. Allies hesitate, markets panic and the real chain of command spends its time denying. This is Stratagem 7, create something from nothing.",
     "coreEvent": "A synthetic video of a senior American or Taiwanese official spreads widely during a crisis before 2036.",
     "gapText": "Data Architecture. Governments publish official video with no proof of origin, so a fake order and a real one look the same.",
     "fix": "Sign every official video and establish verified channels before the crisis."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -32,13 +32,13 @@
   "gap": "Principles",
   "text": {
     "brief": "A junior engineer from a Texas telecom firm attends her first 3GPP meeting on 6G in 2030. The rapporteur, the chair and half the contributors on her work item come from firms that answer to mainland law.",
-    "record": "The Commerce Department eased rules in 2019 and 2024 so American firms could keep working in standards bodies alongside listed mainland companies. The Party's delegates entered bodies such as the ITU and 3GPP as newcomers and now draft much of the text. The ITU elects its leadership at plenipotentiary conferences every four years.",
+    "record": "The Commerce Department eased rules in 2019 and 2024 so American firms could keep working in standards bodies alongside listed mainland companies ([Federal Register (2024 rule)](https://www.federalregister.gov/documents/2024/07/18/2024-15810/standards-related-activities-and-the-export-administration-regulations); [BIS advisory opinions](https://media.bis.gov/learn-support/advisory-opinions)). The Party's delegates entered bodies such as the ITU and 3GPP as newcomers and now draft much of the text. The ITU elects its leadership at plenipotentiary conferences every four years.",
     "reading": "Standards bodies reward whoever shows up with engineers and drafts. The Party funds both at scale and turns seats into rules that suit its surveillance-friendly designs. The host ends up obeying rules the guest wrote. This is Stratagem 30, make the host and the guest exchange places.",
     "coreEvent": "Delegates from firms under mainland law hold the most rapporteur and chair posts in 3GPP's 6G work items in 2030.",
     "gapText": "Architecture Principles. The United States treats standards as private business while the Party treats them as national strategy.",
     "fix": "Build a standards workforce with public support and let merit decide every contribution."
   },
-  "status": "unsourced",
+  "status": "sourced",
   "book": {
     "notes": [
       {

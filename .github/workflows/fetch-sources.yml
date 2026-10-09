@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install the PDF reader
-        run: python3 -m pip install --quiet pypdf
+        run: python3 -m pip install --quiet pypdf cryptography
       - name: Fetch the sources
         env:
           REQUESTS: ${{ inputs.requests || 'cases/review/fetch-requests.json' }}

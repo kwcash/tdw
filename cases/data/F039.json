@@ -32,11 +32,11 @@
   "gap": "Application",
   "text": {
     "brief": "A warehouse manager in Memphis signs a lease in 2032 for forty humanoid robots from a mainland maker at half the price of any rival. The robots map the building on their first night and send the map to the vendor's cloud.",
-    "record": "Mainland factories install more industrial robots each year than the rest of the world combined. The Party's Fifteenth Five-Year Plan makes AI and advanced manufacturing central priorities. The Commerce Department barred mainland software from connected vehicles starting with model year 2027.",
+    "record": "Mainland factories install more industrial robots each year than the rest of the world combined. The Party's Fifteenth Five-Year Plan makes AI and advanced manufacturing central priorities. The Commerce Department barred mainland software from connected vehicles starting with model year 2027 ([Federal Register](https://www.federalregister.gov/documents/2025/01/16/2025-00592/securing-the-information-and-communications-technology-and-services-supply-chain-connected-vehicles)).",
     "reading": "Cheap robots enter American warehouses, hospitals and homes with cameras, microphones and remote updates. The 2017 National Intelligence Law obliges their makers to help the state. Each robot is a sensor on the host's floor and a hand the vendor can move. This is Stratagem 24, borrow the road to conquer Guo.",
     "coreEvent": "Mainland-made humanoid and service robots exceed a quarter of American unit sales before 2036.",
     "gapText": "Application Architecture. Robots enter American buildings under rules written for dishwashers.",
     "fix": "Apply one rule to every connected machine whatever its origin. Twin things, not people."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

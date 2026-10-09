@@ -31,11 +31,11 @@
   "gap": "Business",
   "text": {
     "brief": "A level designer in Los Angeles gets an order in 2031 to redraw a map in a hit shooter so an island off Asia's coast carries a different flag. The studio's largest investor and its biggest market both sit on the mainland.",
-    "record": "Mainland regulators must approve every game sold on the mainland. The Defense Department listed Tencent as a Chinese military company in January 2025. Mainland firms hold stakes in major American and European game studios.",
+    "record": "Mainland regulators must approve every game sold on the mainland. The Defense Department listed Tencent as a Chinese military company in January 2025 ([Federal Register](https://www.federalregister.gov/documents/2025/01/07/2025-00070/notice-of-availability-of-designation-of-chinese-military-companies)). Mainland firms hold stakes in major American and European game studios.",
     "reading": "The Party does not need to write games. It needs studios to anticipate the censor. Market access and investment teach designers which maps, flags and stories to avoid, and young players absorb the edited world. Punishing one studio teaches the rest. This is Stratagem 26, point at the mulberry while cursing the locust.",
     "coreEvent": "A top-selling game in the United States ships undisclosed content changes made for mainland regulators, and the changes come to light before 2034.",
     "gapText": "Business Architecture. Studios answer to investors and markets, and no one tells players what changed.",
     "fix": "Require a public note whenever a government shapes a game's content. Labels, not removals."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

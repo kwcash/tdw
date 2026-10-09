@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "A security engineer at an American frontier lab sees an outbound transfer of 1.8 terabytes at 3 a.m. in 2031. The account belongs to a senior researcher who resigned that afternoon, and the files match the model's weights.",
-    "record": "A federal jury convicted a former Google engineer on January 29, 2026 of stealing AI trade secrets for mainland companies. RAND researchers warned in 2024 that frontier labs could not defend model weights against the best state attackers. A model's weights hold years of compute and research in a single file.",
+    "record": "A federal jury convicted a former Google engineer on January 29, 2026 of stealing AI trade secrets for mainland companies ([Justice Department](https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology)). RAND researchers warned in 2024 that frontier labs could not defend model weights against the best state attackers ([RAND](https://www.rand.org/pubs/research_reports/RRA2849-1.html)). A model's weights hold years of compute and research in a single file.",
     "reading": "One copied file hands the Party years of compute and research. The Party recruits insiders with money and prestige and backs them with hackers who probe the training clusters. This is Stratagem 12, take the opportunity to pilfer a goat, aimed at the largest goat in the field.",
     "coreEvent": "Frontier model weights leave an American lab for an actor tied to the Party before 2034.",
     "gapText": "Data Architecture. The most valuable file in the industry sits on systems guarded like ordinary corporate data.",
     "fix": "Treat frontier weights like weapon designs, with few copies, two-person access and hardware protection. Judge insiders by conduct and never by ancestry."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -8,7 +8,8 @@ REQUESTS.json:
   {"from_cases": true,                      # also check every [label](url) in data/*.json
    "requests": [{"id": "F001", "url": "https://...", "terms": ["69 percent", "August 2026"], "note": "...",
                  "grep": ["Trump", "$14"],   # optional: up to 3 wide snippets per term, found anywhere on the page
-                 "excerpt": 800}]}           # optional: first N characters of the page text
+                 "excerpt": 800,             # optional: first N characters of the page text
+                 "ua": "browser"}]}          # optional: a browser-style User-Agent, for public pages that refuse bots
 
 For each URL the report gives the HTTP status, final URL, page title, and for each
 term whether the page text contains it, with a snippet. "terms_found" is a coverage
@@ -21,6 +22,7 @@ REQUESTS.json. The `from_cases` part is optional and imports this repo's helpers
 import html, ipaddress, json, os, re, socket, sys, time, urllib.error, urllib.parse, urllib.request
 
 UA = 'Mozilla/5.0 (compatible; source-check/1.0; +https://github.com)'
+BROWSER_UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 MAX_BYTES = 3_000_000
 MAX_PDF_BYTES = 30_000_000
 MAX_PDF_PAGES = 120
@@ -42,19 +44,25 @@ def safe_host(url):
 
 
 def pdf_text(raw):
-    """Text of the first pages of a PDF, or '' if pypdf is not installed or the file is scanned."""
+    """(text, error) for the first pages of a PDF. Error is '' on success."""
     try:
         import io
         from pypdf import PdfReader
-        pages = PdfReader(io.BytesIO(raw)).pages[:MAX_PDF_PAGES]
-        return re.sub(r'\s+', ' ', ' '.join((p.extract_text() or '') for p in pages)).strip()[:900_000]
-    except Exception:
-        return ''
+        r = PdfReader(io.BytesIO(raw))
+        if r.is_encrypted:
+            r.decrypt('')
+        pages = r.pages[:MAX_PDF_PAGES]
+        t = re.sub(r'\s+', ' ', ' '.join((p.extract_text() or '') for p in pages)).strip()[:900_000]
+        return t, ('' if t else f'no text layer in first {len(pages)} pages (scanned?)')
+    except Exception as e:
+        return '', f'{type(e).__name__}: {e}'[:200]
 
 
 def text_of(raw, ctype):
     if 'pdf' in ctype:
-        return pdf_text(raw)
+        text, err = pdf_text(raw)
+        text_of.pdf_error = err
+        return text
     if 'html' not in ctype and 'xml' not in ctype and 'text' not in ctype:
         return ''
     s = raw.decode('utf-8', 'replace')
@@ -99,7 +107,7 @@ def grep_snippets(text, term, width=130, limit=3):
     return out[:limit]
 
 
-def fetch(url, terms, grep=(), excerpt=0):
+def fetch(url, terms, grep=(), excerpt=0, ua=None):
     if url.startswith('http://'):
         url = 'https://' + url[len('http://'):]            # we only fetch over https
     out = {'url': url, 'status': None, 'final_url': None, 'title': None, 'bytes': 0, 'error': None}
@@ -109,7 +117,7 @@ def fetch(url, terms, grep=(), excerpt=0):
         return out
     for attempt in (1, 2):
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,*/*;q=0.5'})
+            req = urllib.request.Request(url, headers={'User-Agent': BROWSER_UA if ua == 'browser' else UA, 'Accept': 'text/html,application/xhtml+xml,*/*;q=0.5'})
             with urllib.request.urlopen(req, timeout=20) as r:
                 ctype = r.headers.get('Content-Type', '')
                 cap = MAX_PDF_BYTES if ('pdf' in ctype or url.lower().endswith('.pdf')) else MAX_BYTES
@@ -124,7 +132,10 @@ def fetch(url, terms, grep=(), excerpt=0):
                 out.update(status=r.status, final_url=r.geturl(), bytes=len(raw), content_type=ctype)
                 if time.time() >= deadline and got < cap:
                     out['note'] = 'read stopped at the 45 second limit; page may be cut short'
+            text_of.pdf_error = ''
             text = text_of(raw, ctype)
+            if text_of.pdf_error:
+                out['pdf_error'] = text_of.pdf_error
             m = re.search(r'(?is)<title[^>]*>(.*?)</title>', raw.decode('utf-8', 'replace'))
             out['title'] = re.sub(r'\s+', ' ', html.unescape(m.group(1))).strip()[:160] if m else None
             if terms:
@@ -184,7 +195,7 @@ def main():
     report = []
     print('=== FETCH REPORT BEGIN ===', flush=True)
     for i, r in enumerate(reqs):
-        res = fetch(r['url'], r.get('terms', []), r.get('grep', ()), r.get('excerpt', 0))
+        res = fetch(r['url'], r.get('terms', []), r.get('grep', ()), r.get('excerpt', 0), r.get('ua'))
         res.update(id=r.get('id'), claim=r.get('note'))
         report.append(res)
         print('FETCH ' + json.dumps(res, ensure_ascii=False), flush=True)
