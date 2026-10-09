@@ -32,11 +32,11 @@
   "gap": "Data",
   "text": {
     "brief": "A virologist at the CDC reads three statements in one day in 2042. The health ministry blames a rival province's lab, the army blames an American plot and a regional government blames the ministry.",
-    "record": "The CIA judged in January 2025, with low confidence, that a lab origin for COVID-19 was more likely than a natural one. The WHO's advisory group said in June 2025 that the evidence it had favored spillover from animals, and that it could not settle the question without data the mainland had withheld. The World Health Assembly has not yet adopted the pathogen-sharing annex to its pandemic agreement.",
+    "record": "The CIA judged in January 2025, with low confidence, that a lab origin for COVID-19 was more likely than a natural one ([ODNI Annual Threat Assessment 2025](https://archive.dni.gov/files/ODNI/documents/assessments/ATA-2025-Unclassified-Report.pdf)). The WHO's advisory group said in June 2025 that the evidence it had favored spillover from animals, and that it could not settle the question without data the mainland had withheld ([WHO: SAGO report on origins of COVID-19, June 27, 2025](https://www.who.int/news/item/27-06-2025-who-scientific-advisory-group-issues-report-on-origins-of-covid-19)). The World Health Assembly has not yet adopted the pathogen-sharing annex to its pandemic agreement.",
     "reading": "A split Party fills the air with charges so no one sees its empty rooms. Each faction blames another, and the ministry invites inspectors to labs already scrubbed of records. This is Stratagem 32, the empty fortress.",
     "coreEvent": "Rival factions accuse each other and the United States of engineering a novel pathogen that emerges on the mainland before 2046.",
     "gapText": "Data Architecture. Outbreak data still flows through the government that has the most to hide.",
     "fix": "Build genomic surveillance with allies that publishes sequences within days, whatever the source government says."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

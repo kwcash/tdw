@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "An intelligence analyst in 2044 counts eleven Party moves in nine days across trade, cyber, shipping and a film release. Each looks minor alone, and her tool shows that one machine-written plan produced them all.",
-    "record": "The PLA's white paper of 2019 named intelligentized warfare as the direction of military change. DeepSeek released a model in January 2025 that matched leading American systems at a fraction of the reported training cost. The two governments opened a dialogue on superintelligence in September 2026, and the White House ruled out joint regulation of frontier models.",
+    "record": "The PLA's white paper of 2019 named intelligentized warfare as the direction of military change. DeepSeek released a model in January 2025 that matched leading American systems at a fraction of the reported training cost. The two governments opened a dialogue on superintelligence in September 2026, and the White House ruled out joint regulation of frontier models ([White House fact sheet: state visit, September 2026](https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/)).",
     "reading": "The Party's machines chain stratagems across domains faster than any human staff can follow. Each move looks small, and the chain decides the contest. This is Stratagem 35, chain the stratagems.",
     "coreEvent": "The Party fields AI planning systems that chain operations across all twelve domains faster than any human staff before 2045.",
     "gapText": "Architecture Principles. American agencies judge each move inside their own domain, and the chain crosses all of them.",
     "fix": "Read the whole board in one place, with a staff and a machine that see every domain at once."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

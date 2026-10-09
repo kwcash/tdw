@@ -31,11 +31,11 @@
   "gap": "Business",
   "text": {
     "brief": "A satellite analyst in 2041 watches the parking lots empty at a consumer drone plant in Shenzhen and refill overnight with military trucks. The plant's motors and batteries still arrive through a trading house in Kuala Lumpur.",
-    "record": "A Navy intelligence estimate in 2023 put mainland shipbuilding capacity at about 232 times America's. The FCC added foreign-made drones and their components to its Covered List on December 22, 2025. Commerce suspended its rule extending export controls to affiliates of listed firms for one year in November 2025 under the trade truce.",
+    "record": "A Navy intelligence estimate in 2023 put mainland shipbuilding capacity at about 232 times America's ([CSIS: The Threat of China's Shipbuilding Empire](https://www.csis.org/analysis/threat-chinas-shipbuilding-empire)). The FCC added foreign-made drones and their components to its Covered List on December 22, 2025 ([FCC DA 25-1086 (Covered List)](https://docs.fcc.gov/public/attachments/DA-25-1086A1.pdf)). Commerce suspended its rule extending export controls to affiliates of listed firms for one year in November 2025 under the trade truce ([Federal Register: one-year suspension of affiliates rule (BIS)](https://www.federalregister.gov/documents/2025/11/12/2025-19846/one-year-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed-entities)).",
     "reading": "A faction of a split Party turns civilian factories into arsenals and borrows other nations' ports and traders as its road. Each shipment moves through a third country that sees ordinary commerce. This is Stratagem 24, borrow the road to conquer Guo.",
     "coreEvent": "A PLA faction converts civilian drone and shipbuilding lines to war production during an internal crisis before 2046.",
     "gapText": "Business Architecture. Allied firms still sell the inputs that let a civilian line become a military one.",
     "fix": "Treat dual-use inputs to mainland mass producers as military exports and track them through third countries."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

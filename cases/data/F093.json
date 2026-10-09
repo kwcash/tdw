@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A county clerk in Georgia needs a federal clearance in 2044 to certify local election software, a rule from an emergency declared in 2039 after a Party-linked cyberattack. The attack ended in a week, and the emergency did not.",
-    "record": "The Brennan Center counted 52 national emergencies in effect on September 16, 2026. Presidents renew them each year without a vote in Congress. The Supreme Court struck down tariffs imposed under emergency powers on February 20, 2026.",
+    "record": "The Brennan Center counted 52 national emergencies in effect on September 16, 2026. Presidents renew them each year without a vote in Congress. The Supreme Court struck down tariffs imposed under emergency powers on February 20, 2026 ([Supreme Court slip opinion, Learning Resources v. Trump (No. 24-1287)](https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf)).",
     "reading": "The Party sows discord with attacks that invite an overreaction. Each emergency power that outlives its crisis divides Americans, and Party media call it proof that democracy is a mask. This is Stratagem 33, sow discord among the enemy.",
     "coreEvent": "An emergency declared over a cyberattack attributed to the Party stays in force for more than five years and reaches election administration before 2046.",
     "gapText": "Architecture Governance. Emergencies end only when the executive chooses, and renewal needs no vote.",
     "fix": "Make every emergency expire unless Congress votes to extend it."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

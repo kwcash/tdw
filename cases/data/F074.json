@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A Coast Guard cutter off Alaska's North Slope shadows a mainland research icebreaker in 2041. The ship's sonar has mapped the same submarine route for the fourth summer in a row.",
-    "record": "The Party declared itself a near-Arctic state in its white paper of January 2018. The Coast Guard reported five mainland research vessels operating in the American Arctic in August 2025. Russian and mainland coast guard ships patrolled together in the Bering Sea in October 2024.",
+    "record": "The Party declared itself a near-Arctic state in its white paper of January 2018 ([China's Arctic Policy (State Council Information Office, Jan 2018)](https://english.www.gov.cn/archive/white_paper/2018/01/26/content_281476026660336.htm)). The Coast Guard reported five mainland research vessels operating in the American Arctic in August 2025. Russian and mainland coast guard ships patrolled together in the Bering Sea in October 2024.",
     "reading": "The Party enters the Arctic as a scientist and a customer. Russia needs its money, and research cruises map the seabed that submarines will need. This is Stratagem 1, deceive the heavens to cross the sea.",
     "coreEvent": "Russia grants a mainland company a long-term concession for a port or terminal on the Northern Sea Route before 2040.",
     "gapText": "Architecture Governance. The Arctic Council paused its work in 2022, and no forum sets rules for research by states from outside the region.",
     "fix": "Set disclosure rules for Arctic research cruises with allies and enforce them in American waters."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

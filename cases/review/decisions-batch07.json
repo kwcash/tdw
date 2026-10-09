@@ -1,0 +1,342 @@
+[
+ {
+  "id": "F071",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Focus Taiwan (CNA), Cabinet approves 2027 budget",
+  "url": "https://focustaiwan.tw/politics/202608200011",
+  "notes": "Secondary (Taiwan's Central News Agency, which the Taiwan government funds). Cabinet approved NT$1.1225 trillion (US$35.3 billion) for defense, 3.01% of GDP, down from 3.32% in the 2026 budget. A Taiwan Executive Yuan or DGBAS page is the primary source."
+ },
+ {
+  "id": "F071",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Ministry of National Defense (Taiwan) press release",
+   "Focus Taiwan (CNA), special act passed"
+  ],
+  "url": [
+   "https://www.mnd.gov.tw/en/News/PressRelease/86638",
+   "https://focustaiwan.tw/politics/202605080020"
+  ],
+  "notes": "Focus Taiwan (secondary): the Legislative Yuan passed the arms bill on May 8, 2026 with spending capped at NT$780 billion (US$24.8 billion), short of the NT$1.25 trillion the government requested; vote 59-0 after the KMT and TPP changed the bill. The MND release (primary) is about the Legislative Yuan's passage of the Special Act on Safeguarding National Security and Strengthening Asymmetric Warfare Capabilities Procurement; the figures are in the news report."
+ },
+ {
+  "id": "F071",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "President Lai, 2025 National Day Address",
+  "url": "https://english.president.gov.tw/News/7022",
+  "notes": "Office of the President of Taiwan: defense spending 'will exceed 3 percent of GDP next year, and will reach 5 percent of GDP by 2030'. Taiwan counts spending the NATO way."
+ },
+ {
+  "id": "F072",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The NCCU Election Study Center page loads but the December 2025 figure (62.0%) is in a chart or table that the text read did not capture. Needs a person to open the trend page."
+ },
+ {
+  "id": "F073",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Taiwan Coast Guard Administration, Feb 26, 2026",
+  "url": "https://www.cga.gov.tw/GipOpen/wSite/ct?xItem=167237&ctNode=9601&mp=eng",
+  "notes": "Taiwan's Coast Guard Administration (Feb 26, 2026) rebuts the China Coast Guard's 'regular patrol' claims near Kinmen. Confirms the patrols; 'since February 2024' and the two fishermen's deaths are not on the page. The Mainland Affairs Council page returned HTTP 403."
+ },
+ {
+  "id": "F074",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "China's Arctic Policy (State Council Information Office, Jan 2018)",
+  "url": "https://english.www.gov.cn/archive/white_paper/2018/01/26/content_281476026660336.htm",
+  "notes": "PRC State Council white paper: 'China is a Near-Arctic State'. The PRC's own statement."
+ },
+ {
+  "id": "F074",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "news.uscg.mil returned HTTP 403 on the runner; the Coast Guard's August 2025 release has not been read."
+ },
+ {
+  "id": "F074",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "news.uscg.mil returned HTTP 403 on the runner; the Coast Guard's October 2024 release has not been read."
+ },
+ {
+  "id": "F075",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Huawei 2025 Annual Report (company statement)",
+  "url": "https://www.huawei.com/en/news/2026/3/annual-report-2025",
+  "notes": "Company's own announcement: revenue CNY 880.9 billion, R&D CNY 192.3 billion, 21.8% of revenue. Huawei is a private company; the figures are unaudited by us."
+ },
+ {
+  "id": "F076",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "CSIS: The Threat of China's Shipbuilding Empire",
+  "url": "https://www.csis.org/analysis/threat-chinas-shipbuilding-empire",
+  "notes": "Secondary (think tank). CSIS says the mainland's naval shipbuilding capacity is 'over 230 times larger than that of the United States'. The 232 figure and the attribution to a 2023 Navy intelligence briefing are not in the text read; the primary is the Office of Naval Intelligence slide."
+ },
+ {
+  "id": "F076",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "FCC DA 25-1086 (Covered List)",
+  "url": "https://docs.fcc.gov/public/attachments/DA-25-1086A1.pdf",
+  "notes": "FCC Public Safety and Homeland Security Bureau public notice released December 22, 2025, adding uncrewed aircraft systems and UAS critical components produced abroad to the Covered List."
+ },
+ {
+  "id": "F076",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Federal Register: one-year suspension of affiliates rule (BIS)",
+  "url": "https://www.federalregister.gov/documents/2025/11/12/2025-19846/one-year-suspension-of-expansion-of-end-user-controls-for-affiliates-of-certain-listed-entities",
+  "notes": "BIS rule effective November 10, 2025: the amendments of the September 30, 2025 interim final rule (90 FR 47201) 'are stayed until November 9, 2026'. The link to the trade truce is not on the page."
+ },
+ {
+  "id": "F077",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Federal Reserve FEDS Note, Sept 25, 2026",
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decoupling-direct-investment-american-firms-retreat-from-china-20260925.html",
+  "notes": "Fed note by Cody Kallen: 'broad-based declines in U.S.-to-China greenfield FDI' tracked through 2025. 'Fell sharply after 2020 and never recovered' is our compression; the note's own wording and charts should be checked."
+ },
+ {
+  "id": "F077",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "IMF Country Report No. 26/44, China 2025 Article IV",
+  "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
+  "notes": "IMF staff report table: augmented debt (percent of GDP) 97.5, 98.7, 104.2, 111.3, 117.0, 126.6, 135.3, 141.5, 146.2, 150.0, 153.7 in an 11-year row. The year headers were not in the snippet; if the row runs 2020 to 2030, 126.6 is 2025 and 150.0 is 2029."
+ },
+ {
+  "id": "F078",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "ASPI Critical Technology Tracker (think tank)",
+  "url": "https://www.aspistrategist.org.au/aspis-critical-technology-tracker-2025-updates-and-10-new-technologies/",
+  "notes": "Secondary (think tank funded partly by the Australian government and defense firms). 'China now leads in 66 of the 74 technologies tracked, with the United States leading in the remaining eight.' The December 2025 date was not confirmed from the text."
+ },
+ {
+  "id": "F078",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "PRC Foreign Ministry press conference, March 18, 2020 (via PRC embassy)",
+  "url": "https://nz.china-embassy.gov.cn/eng/mfasr/202003/t20200319_880697.htm",
+  "notes": "PRC Foreign Ministry transcript: the PRC demanded that journalists of the New York Times, Wall Street Journal and Washington Post hand back their press cards within ten calendar days. The question is the reporter's; read the spokesperson's answer for the PRC's own framing."
+ },
+ {
+  "id": "F079",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The USCIS Hong Kong DED page loads but 'February 5, 2027' is not in the text read; the date may be written in another form. Re-read."
+ },
+ {
+  "id": "F079",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Freedom House: Ten Findings from Ten Years of Data on Transnational Repression",
+  "url": "https://freedomhouse.org/article/ten-findings-ten-years-data-transnational-repression",
+  "notes": "NGO (Freedom House), not a government body; the dataset is Freedom House's own. 'The Chinese government remains the most prolific perpetrator, committing 272 incidents, or 22 percent, of recorded cases'; 1,219 incidents by 48 governments, 2014 to 2024."
+ },
+ {
+  "id": "F079",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "congress.gov returned HTTP 403 on the runner."
+ },
+ {
+  "id": "F080",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Freedom House: Ten Findings from Ten Years of Data on Transnational Repression",
+  "url": "https://freedomhouse.org/article/ten-findings-ten-years-data-transnational-repression",
+  "notes": "Same Freedom House page: 'the most prolific perpetrator, committing 272 incidents, or 22 percent, of recorded cases'. NGO source."
+ },
+ {
+  "id": "F080",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "justice.gov usao and opa pages return HTTP 200 with no readable text on the runner (see F046). A person needs to open the DOJ press release."
+ },
+ {
+  "id": "F080",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "CECC chairs' statement on release of Xinjiang Police Files, May 24, 2022",
+  "url": "https://www.cecc.gov/media-center/press-releases/chairs%E2%80%99-statement-on-release-of-xinjiang-police-files",
+  "notes": "US congressional-executive commission statement on the release of the files. It confirms the release in May 2022; the 'registries that tracked families and travel' detail is not in the text read."
+ },
+ {
+  "id": "F084",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "State Department press briefing, April 17, 2025",
+   "Treasury press release sb0243"
+  ],
+  "url": [
+   "https://www.state.gov/briefings/department-press-briefing-april-17-2025",
+   "https://home.treasury.gov/news/press-releases/sb0243"
+  ],
+  "notes": "State: 'Chang Guang Satellite Technology Co., Ltd. is directly supporting Iran-backed Houthi terrorist attacks on U.S. [interests]'. Treasury: designates '32 individuals and entities' in its largest sanctions action to date targeting the Houthis. That three of the 32 are mainland firms is not in the text read."
+ },
+ {
+  "id": "F085",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "FBI IC3 2025 Internet Crime Report",
+  "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+  "notes": "FBI IC3 table: ransomware complaints 3,611 (2025), 3,156 (2024), 2,825 (2023). The report is for complaints made to the IC3 and is not a count of all attacks."
+ },
+ {
+  "id": "F085",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Anthropic: disrupting an AI-orchestrated cyber espionage campaign (company statement)",
+  "url": "https://www.anthropic.com/news/disrupting-AI-espionage",
+  "notes": "Company's own report, noted as such because Anthropic is the vendor of the model that drafted this note: a group assessed 'with high confidence' to be Chinese state-sponsored used Claude Code against roughly thirty targets; AI performed '80-90%' of the campaign. The page says 'Chinese state-sponsored'; 'tied to the People's Republic' is a paraphrase."
+ },
+ {
+  "id": "F087",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "ODNI Annual Threat Assessment 2025",
+  "url": "https://archive.dni.gov/files/ODNI/documents/assessments/ATA-2025-Unclassified-Report.pdf",
+  "notes": "ATA (March 2025): 'CIA [assesses] that a research-related hypothesis is more likely than a natural origin hypothesis'. The January 2025 date and 'low confidence' are in CIA's January 2025 statement, not in the text read."
+ },
+ {
+  "id": "F087",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "WHO: SAGO report on origins of COVID-19, June 27, 2025",
+  "url": "https://www.who.int/news/item/27-06-2025-who-scientific-advisory-group-issues-report-on-origins-of-covid-19",
+  "notes": "WHO news item of June 27, 2025: Tedros says 'all hypotheses must remain on the table, including zoonotic spillover and lab leak' and appeals to China and others for information. Whether SAGO said the available evidence favored spillover needs the full SAGO report."
+ },
+ {
+  "id": "F089",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "IMF Country Report No. 26/44, China 2025 Article IV",
+  "url": "https://www.imf.org/-/media/files/publications/cr/2026/english/1chnea2026001-source-pdf.pdf",
+  "notes": "Same IMF table as F077: 126.6 and 150.0 in the augmented debt row. Year headers were not in the snippet."
+ },
+ {
+  "id": "F090",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Basic Law, Chapter I (Hong Kong SAR Government)",
+  "url": "https://www.basiclaw.gov.hk/en/basiclaw/chapter1.html",
+  "notes": "Article 5: 'the previous capitalist system and way of life shall remain unchanged for 50 years'. June 30, 2047 is arithmetic from the 1997 handover, not stated on the page."
+ },
+ {
+  "id": "F090",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Hong Kong government: Chief Executive on passage of the Safeguarding National Security Bill",
+  "url": "https://www.info.gov.hk/gia/general/202403/19/P2024031900717.htm",
+  "notes": "HKSAR government: the Safeguarding National Security Bill passed (March 19, 2024) fulfilling Article 23. The June 30, 2020 imposition of the NSL is not on this page."
+ },
+ {
+  "id": "F092",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "CRS product on Section 702 returned HTTP 403 (congress.gov). The June 12, 2026 lapse is unchecked."
+ },
+ {
+  "id": "F092",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "PCLOB statement, January 27, 2025",
+  "url": "https://documents.pclob.gov/prod/Documents/EventsAndPress/290ce816-6560-4e92-95a2-a9afcc72f378/PCLOB%20press%20release%20(1-27-25).pdf",
+  "notes": "Same PCLOB statement as F061: three members terminated, one remaining. Confirm the current board before presenting an unbroken lapse to October 2026."
+ },
+ {
+  "id": "F093",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Supreme Court slip opinion, Learning Resources v. Trump (No. 24-1287)",
+  "url": "https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf",
+  "notes": "Decided February 20, 2026; the question presented is 'whether the International Emergency Economic Powers Act (IEEPA) authorizes the President to impose tariffs.' The holding text (that it does not) was not in the snippet; check the syllabus."
+ },
+ {
+  "id": "F094",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "justice.gov OPA page returned HTTP 200 with no readable text on the runner."
+ },
+ {
+  "id": "F094",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "opm.gov returned HTTP 404; the House Oversight page does not contain '21.5 million' in the text read."
+ },
+ {
+  "id": "F098",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "eng.mod.gov.cn failed the runner's TLS verification (certificate verify failed). Not bypassed. Look for the same white paper on english.www.gov.cn."
+ },
+ {
+  "id": "F098",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "White House fact sheet: state visit, September 2026",
+  "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-advances-a-fair-and-reciprocal-relationship-with-china-while-hosting-historic-state-visit/",
+  "notes": "Same White House fact sheet as F070: the two countries 'established the U.S.-China Super Intelligence (SI) Dialogue'. The statement that the White House ruled out joint regulation of frontier models is not in the text read."
+ },
+ {
+  "id": "F099",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "arXiv:2412.12140, Frontier AI systems have surpassed the self-replicating red line",
+  "url": "https://arxiv.org/abs/2412.12140",
+  "notes": "Preprint, not peer reviewed: systems driven by Llama31-70B-Instruct and Qwen25-72B-Instruct surpassed the self-replicating red line. The Fudan affiliation (on the paper) and the 'when told to do so' instruction were not in the abstract text read."
+ },
+ {
+  "id": "F100",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "NSPM-11 (White House, June 5, 2026)",
+  "url": "https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/",
+  "notes": "'Within 90 days of the date of this memorandum, the Secretary of War shall issue an update to DOD Directive 3000.09 on Autonomy in Weapon Systems.' Dated June 5, 2026."
+ },
+ {
+  "id": "F100",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "war.gov returned HTTP 403 on the runner; the DoDD 3000.09 (January 2023) wording has not been read."
+ },
+ {
+  "id": "F100",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "ai.mil returned HTTP 403 on the runner; the CDAO award terms have not been read."
+ }
+]

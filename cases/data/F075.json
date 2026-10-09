@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "A telecom minister in Nairobi signs a 6G contract in 2037 that bundles towers, cloud, payments and a national ID system from one mainland vendor. The price runs half of any Western bid, and the financing needs no audit.",
-    "record": "Huawei reported revenue of CNY 880.9 billion for 2025 and spent CNY 192.3 billion on research, about 22 percent of revenue. The Party has financed digital networks across Asia, Africa and Latin America under its Digital Silk Road since 2015. Western vendors compete country by country and rarely offer financing on the same terms.",
+    "record": "Huawei reported revenue of CNY 880.9 billion for 2025 and spent CNY 192.3 billion on research, about 22 percent of revenue ([Huawei 2025 Annual Report (company statement)](https://www.huawei.com/en/news/2026/3/annual-report-2025)). The Party has financed digital networks across Asia, Africa and Latin America under its Digital Silk Road since 2015. Western vendors compete country by country and rarely offer financing on the same terms.",
     "reading": "The Party builds the stack that poorer countries can afford and becomes host of their networks. Standards, data centers and payments come as one package, and leaving later costs more than joining. This is Stratagem 30, make the host and the guest exchange places.",
     "coreEvent": "Most African Union members run their mobile core networks and national data centers on mainland equipment before 2045.",
     "gapText": "Architecture Principles. America treats connectivity abroad as trade, and the Party treats it as statecraft.",
     "fix": "Finance an open and affordable allied stack as national security rather than export promotion."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

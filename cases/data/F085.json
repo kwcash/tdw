@@ -32,11 +32,11 @@
   "gap": "Application",
   "text": {
     "brief": "A hospital administrator in Tulsa diverts ambulances in 2041 after ransomware locks her records. The crew that claims the attack writes in Russian, its code carries a mainland lab's fingerprints and each Party faction blames the other.",
-    "record": "The FBI's Internet Crime Complaint Center logged more than 3,600 ransomware complaints in 2025, up from 3,156 in 2024. The ransomware attack on Change Healthcare in 2024 exposed data on 192.7 million people. Anthropic reported in November 2025 that a state-sponsored group it tied to the People's Republic used AI agents for 80 to 90 percent of an espionage campaign against about 30 organizations.",
+    "record": "The FBI's Internet Crime Complaint Center logged more than 3,600 ransomware complaints in 2025, up from 3,156 in 2024 ([FBI IC3 2025 Internet Crime Report](https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf)). The ransomware attack on Change Healthcare in 2024 exposed data on 192.7 million people. Anthropic reported in November 2025 that a state-sponsored group it tied to the People's Republic used AI agents for 80 to 90 percent of an espionage campaign against about 30 organizations ([Anthropic: disrupting an AI-orchestrated cyber espionage campaign (company statement)](https://www.anthropic.com/news/disrupting-AI-espionage)).",
     "reading": "A faction of a split Party hires criminal crews and AI agents to strike American targets, and every clue points somewhere else. Rival factions and foreign gangs share the blame, and the muddy water hides the hand. This is Stratagem 20, muddy the waters to catch the fish.",
     "coreEvent": "Investigators trace ransomware that shut more than 100 American hospitals in one week to a PLA faction before 2046.",
     "gapText": "Application Architecture. Hospital systems run on software that one intrusion can lock, and recovery depends on paying the criminals.",
     "fix": "Fund offline recovery for every hospital and strike the crews' infrastructure without waiting for attribution."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

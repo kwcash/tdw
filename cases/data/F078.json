@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "A materials scientist in Ohio learns in 2042 that the breakthrough her lab chased for six years appeared in a mainland journal in 2039. The paper ran in Chinese behind a database no American library could reach, and no one in her field had read it.",
-    "record": "The Australian Strategic Policy Institute found in December 2025 that mainland institutions led research in 66 of 74 critical technologies. The mainland's largest academic database, CNKI, restricted foreign access to several collections in 2023. The Party expelled American reporters from three newspapers in 2020.",
+    "record": "The Australian Strategic Policy Institute found in December 2025 that mainland institutions led research in 66 of 74 critical technologies ([ASPI Critical Technology Tracker (think tank)](https://www.aspistrategist.org.au/aspis-critical-technology-tracker-2025-updates-and-10-new-technologies/)). The mainland's largest academic database, CNKI, restricted foreign access to several collections in 2023. The Party expelled American reporters from three newspapers in 2020 ([PRC Foreign Ministry press conference, March 18, 2020 (via PRC embassy)](https://nz.china-embassy.gov.cn/eng/mfasr/202003/t20200319_880697.htm)).",
     "reading": "The Party reads everything American science publishes and shares less of what it learns. Its journals, databases and patent files grow harder to reach, and it waits across the river while America's lead burns down. This is Stratagem 9, watch the fire from across the river.",
     "coreEvent": "Mainland institutions publish more than half of the world's most cited papers in artificial intelligence before 2040.",
     "gapText": "Architecture Principles. American research security assumes America leads and guards what it knows, not what it fails to read.",
     "fix": "Read the rival's science at scale and treat that reading as a national asset."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A Taiwanese conscript stands the night watch on Kinmen in 2040, the same post his father held in 2012. The Party has fired no shot across the Strait in fourteen years, and the island's defense budget has shrunk as a share of its economy for three straight years.",
-    "record": "Taiwan's cabinet proposed NT$1.12 trillion for defense in 2027, or 3.01 percent of GDP, down from 3.32 percent in 2026. The legislature passed a special arms act of NT$780 billion in May 2026, well short of the NT$1.25 trillion the government sought. President Lai Ching-te has pledged to reach 5 percent of GDP by 2030.",
+    "record": "Taiwan's cabinet proposed NT$1.12 trillion for defense in 2027, or 3.01 percent of GDP, down from 3.32 percent in 2026 ([Focus Taiwan (CNA), Cabinet approves 2027 budget](https://focustaiwan.tw/politics/202608200011)). The legislature passed a special arms act of NT$780 billion in May 2026, well short of the NT$1.25 trillion the government sought ([Ministry of National Defense (Taiwan) press release](https://www.mnd.gov.tw/en/News/PressRelease/86638); [Focus Taiwan (CNA), special act passed](https://focustaiwan.tw/politics/202605080020)). President Lai Ching-te has pledged to reach 5 percent of GDP by 2030 ([President Lai, 2025 National Day Address](https://english.president.gov.tw/News/7022)).",
     "reading": "The Party waits at ease. Each quiet year makes the next defense vote harder in Taipei and in Washington, and the Party plans in decades while its rivals budget in years. This is Stratagem 4, wait at ease for the weary enemy.",
     "coreEvent": "American security assistance to Taiwan lapses for a full fiscal year before 2042.",
     "gapText": "Architecture Governance. Deterrence in the Strait rests on annual votes, and the Party plans in decades.",
     "fix": "Fund Taiwan's defense on a multiyear schedule and write the authority to outlast any one Congress."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }
