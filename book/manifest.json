@@ -1,0 +1,371 @@
+{
+ "source": "6b981e79-KDP_MASTER.md",
+ "source_sha256": "0af73e46217931b40b5244333b421056d2b4141cc43111d5b054ae494248057c",
+ "source_bytes": 619146,
+ "sections": [
+  {
+   "path": "front/00-metadata.md",
+   "dir": "front",
+   "level": 0,
+   "title": "Metadata",
+   "words": 52
+  },
+  {
+   "path": "front/01-copyright.md",
+   "dir": "front",
+   "level": 2,
+   "title": "Copyright {.unnumbered .unlisted}",
+   "words": 238
+  },
+  {
+   "path": "front/02-dedication.md",
+   "dir": "front",
+   "level": 2,
+   "title": "Dedication {.unnumbered .unlisted}",
+   "words": 14
+  },
+  {
+   "path": "front/03-epigraph.md",
+   "dir": "front",
+   "level": 2,
+   "title": "Epigraph {.unnumbered .unlisted}",
+   "words": 32
+  },
+  {
+   "path": "front/04-authors-note.md",
+   "dir": "front",
+   "level": 2,
+   "title": "Author's Note",
+   "words": 1673
+  },
+  {
+   "path": "front/05-the-stack.md",
+   "dir": "front",
+   "level": 2,
+   "title": "The Stack",
+   "words": 1797
+  },
+  {
+   "path": "front/06-prologue-two-men-with-nothing.md",
+   "dir": "front",
+   "level": 2,
+   "title": "Prologue: Two Men With Nothing",
+   "words": 2265
+  },
+  {
+   "path": "part-1/00-part.md",
+   "dir": "part-1",
+   "level": 1,
+   "title": "Part I. The Weapon Fired",
+   "words": 6
+  },
+  {
+   "path": "part-1/01-hong-kong-the-national-security-law.md",
+   "dir": "part-1",
+   "level": 2,
+   "title": "Hong Kong: The National Security Law",
+   "words": 5039
+  },
+  {
+   "path": "part-1/02-technology-ip-the-one-way-transfer.md",
+   "dir": "part-1",
+   "level": 2,
+   "title": "Technology IP: The One-Way Transfer",
+   "words": 4584
+  },
+  {
+   "path": "part-2/00-part.md",
+   "dir": "part-2",
+   "level": 1,
+   "title": "Part II. Totality",
+   "words": 4
+  },
+  {
+   "path": "part-2/01-total-domain-war-not-asymmetric-war.md",
+   "dir": "part-2",
+   "level": 2,
+   "title": "Total Domain War, Not Asymmetric War",
+   "words": 1467
+  },
+  {
+   "path": "part-2/02-we-built-this.md",
+   "dir": "part-2",
+   "level": 2,
+   "title": "We Built This",
+   "words": 2052
+  },
+  {
+   "path": "part-2/03-how-to-read-the-machine.md",
+   "dir": "part-2",
+   "level": 2,
+   "title": "How to Read the Machine",
+   "words": 547
+  },
+  {
+   "path": "part-3/00-part.md",
+   "dir": "part-3",
+   "level": 1,
+   "title": "Part III. The Lifecycle",
+   "words": 5
+  },
+  {
+   "path": "part-3/01-attract.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "Attract",
+   "words": 5475
+  },
+  {
+   "path": "part-3/02-accommodate.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "Accommodate",
+   "words": 6267
+  },
+  {
+   "path": "part-3/03-military-civil-fusion.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "Military-Civil Fusion",
+   "words": 3961
+  },
+  {
+   "path": "part-3/04-the-long-arm.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "The Long Arm",
+   "words": 3387
+  },
+  {
+   "path": "part-3/05-protocols-and-ports.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "Protocols and Ports",
+   "words": 4641
+  },
+  {
+   "path": "part-3/06-covid-19.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "COVID-19",
+   "words": 4799
+  },
+  {
+   "path": "part-3/07-taiwan-the-republic-of-china.md",
+   "dir": "part-3",
+   "level": 2,
+   "title": "Taiwan: The Republic of China",
+   "words": 5249
+  },
+  {
+   "path": "part-4/00-part.md",
+   "dir": "part-4",
+   "level": 1,
+   "title": "Part IV. The Host Turns",
+   "words": 6
+  },
+  {
+   "path": "part-4/01-financial-control.md",
+   "dir": "part-4",
+   "level": 2,
+   "title": "Financial Control",
+   "words": 3748
+  },
+  {
+   "path": "part-4/02-the-pen-from-the-inside.md",
+   "dir": "part-4",
+   "level": 2,
+   "title": "The Pen From the Inside",
+   "words": 4493
+  },
+  {
+   "path": "part-5/00-part.md",
+   "dir": "part-5",
+   "level": 1,
+   "title": "Part V. The Opening",
+   "words": 5
+  },
+  {
+   "path": "part-5/01-coherence-without-command.md",
+   "dir": "part-5",
+   "level": 2,
+   "title": "Coherence Without Command",
+   "words": 2106
+  },
+  {
+   "path": "part-5/02-the-roadmap.md",
+   "dir": "part-5",
+   "level": 2,
+   "title": "The Roadmap",
+   "words": 700
+  },
+  {
+   "path": "part-5/03-the-generation-that-builds-it.md",
+   "dir": "part-5",
+   "level": 2,
+   "title": "The Generation That Builds It",
+   "words": 1370
+  },
+  {
+   "path": "appendices/00-appendices.md",
+   "dir": "appendices",
+   "level": 1,
+   "title": "Appendices",
+   "words": 2
+  },
+  {
+   "path": "appendices/01-appendix-a-the-stack-in-full.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix A. The Stack in Full",
+   "words": 3254
+  },
+  {
+   "path": "appendices/02-appendix-b-the-thirty-six-stratagems-in-full.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix B. The Thirty-Six Stratagems in Full",
+   "words": 3696
+  },
+  {
+   "path": "appendices/03-appendix-c-the-ten-dimensions-and-twelve-domains-in-full.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix C. The Ten Dimensions and Twelve Domains in Full",
+   "words": 3562
+  },
+  {
+   "path": "appendices/04-appendix-d-the-doctrine-crosswalk.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix D. The Doctrine Crosswalk",
+   "words": 1395
+  },
+  {
+   "path": "appendices/05-appendix-e-the-digital-twin.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix E. The Digital Twin",
+   "words": 3899
+  },
+  {
+   "path": "appendices/06-appendix-f-the-consolidated-roadmap.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix F. The Consolidated Roadmap",
+   "words": 2834
+  },
+  {
+   "path": "appendices/07-appendix-g-the-shelf.md",
+   "dir": "appendices",
+   "level": 2,
+   "title": "Appendix G. The Shelf",
+   "words": 1277
+  },
+  {
+   "path": "appendix-h/00-notes-intro.md",
+   "dir": "appendix-h",
+   "level": 2,
+   "title": "Appendix H. Notes and Sourcing, by Chapter",
+   "words": 194
+  },
+  {
+   "path": "appendix-h/01-hong-kong.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Hong Kong",
+   "words": 1667
+  },
+  {
+   "path": "appendix-h/02-technology-ip.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Technology IP",
+   "words": 1409
+  },
+  {
+   "path": "appendix-h/03-attract-the-borrowed-knife.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Attract (The Borrowed Knife)",
+   "words": 1155
+  },
+  {
+   "path": "appendix-h/04-accommodate-the-war-for-the-mind.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Accommodate (The War for the Mind)",
+   "words": 1180
+  },
+  {
+   "path": "appendix-h/05-control-military-civil-fusion.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Control (Military-Civil Fusion)",
+   "words": 871
+  },
+  {
+   "path": "appendix-h/06-the-long-arm.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "The Long Arm",
+   "words": 479
+  },
+  {
+   "path": "appendix-h/07-protocols-and-ports.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Protocols and Ports",
+   "words": 1116
+  },
+  {
+   "path": "appendix-h/08-extract-covid-19.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Extract (COVID-19)",
+   "words": 1193
+  },
+  {
+   "path": "appendix-h/09-consume-taiwan.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Consume (Taiwan)",
+   "words": 1134
+  },
+  {
+   "path": "appendix-h/10-financial-control.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "Financial Control",
+   "words": 746
+  },
+  {
+   "path": "appendix-h/11-the-pen-from-the-inside.md",
+   "dir": "appendix-h",
+   "level": 3,
+   "title": "The Pen From the Inside",
+   "words": 997
+  },
+  {
+   "path": "back/00-acknowledgments.md",
+   "dir": "back",
+   "level": 2,
+   "title": "Acknowledgments {.unnumbered}",
+   "words": 9
+  },
+  {
+   "path": "back/01-about-the-author.md",
+   "dir": "back",
+   "level": 2,
+   "title": "About the Author {.unnumbered}",
+   "words": 19
+  },
+  {
+   "path": "back/02-a-note-on-what-comes-next.md",
+   "dir": "back",
+   "level": 2,
+   "title": "A Note on What Comes Next {.unnumbered}",
+   "words": 126
+  }
+ ]
+}
