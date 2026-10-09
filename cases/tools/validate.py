@@ -84,6 +84,8 @@ def main():
             for b in BANNED:
                 if b in v:
                     E(cid, f'{f}: contains {b!r}')
+            if re.search(r'\]\(https?://[^\s)]*\([^\s)]*\)', v):
+                E(cid, f'{f}: a link URL contains parentheses; write them as %28 and %29 or the game cuts the link short')
             if NEEDED.search(v):
                 W(cid, f'{f}: has a [NEEDED] tag')
             if ACTOR.search(v):

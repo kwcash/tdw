@@ -22,6 +22,7 @@ BREAKS = {
     'book note that does not exist': ('C053', lambda c: c['book']['notes'][0].update(n=99)),
     'book fit not allowed': ('C053', lambda c: c['book']['notes'][0].update(fit='maybe')),
     'unknown field':        ('C001', lambda c: c.update(colour='red')),
+    'link URL with parentheses': ('C001', lambda c: c['text'].update(fix=c['text']['fix'] + ' ([x](https://example.org/a_(b).pdf))')),
 }
 
 def run(root):

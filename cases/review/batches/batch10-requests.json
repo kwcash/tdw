@@ -1,0 +1,228 @@
+[
+ {
+  "id": "F068",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
+  "grep": [
+   "1.2 trillion",
+   "7,800",
+   "185 billion",
+   "interceptors"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of CBO Golden Dome PDF",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F068",
+  "idx": 2,
+  "url": "https://web.archive.org/web/2026id_/https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
+  "grep": [
+   "low 600s",
+   "1,000 warheads",
+   "over 1,000"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of DoD CMPR 2025",
+  "ua": "browser",
+  "grep_width": 240
+ },
+ {
+  "id": "F065",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+  "grep": [
+   "13",
+   "Armed Forces",
+   "foreign adversar",
+   "February"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of FTC PADFAA release",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F100",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf",
+  "grep": [
+   "appropriate levels of human judgment",
+   "January 25, 2023"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of DoDD 3000.09",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F074",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.news.uscg.mil/Press-Releases/article/4276832/coast-guard-continues-response-to-chinese-research-vessel-activity-in-us-arctic/",
+  "grep": [
+   "five",
+   "research vessels",
+   "Xue Long",
+   "Arctic District"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of USCG Aug 2025 release",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F074",
+  "idx": 2,
+  "url": "https://web.archive.org/web/2026id_/https://www.news.uscg.mil/Press-Releases/Article/3922625/us-coast-guard-encounters-joint-chinese-coast-guard-russian-border-guard-patrol/",
+  "grep": [
+   "Bering",
+   "Russian",
+   "Chinese Coast Guard",
+   "October"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of USCG Oct 2024 release",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F088",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.swift.com/sites/default/files/files/global-currency-tracker_july-2026.pdf",
+  "grep": [
+   "3.10",
+   "5th",
+   "fifth",
+   "excluding"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of SWIFT July 2026 tracker",
+  "ua": "browser",
+  "grep_width": 240
+ },
+ {
+  "id": "F088",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.swift.com/swift-resource/252596/download",
+  "grep": [
+   "3.10",
+   "5th",
+   "fifth",
+   "excluding"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of SWIFT August 2026 tracker",
+  "ua": "browser",
+  "grep_width": 240
+ },
+ {
+  "id": "F054",
+  "idx": 0,
+  "url": "https://web.archive.org/web/2026id_/https://www.hhs.gov/press-room/united-states-completes-who-withdrawal.html",
+  "grep": [
+   "January 22",
+   "withdraw"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of HHS WHO withdrawal",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F062",
+  "idx": 2,
+  "url": "https://web.archive.org/web/2026id_/https://www.pnas.org/doi/10.1073/pnas.2216248120",
+  "grep": [
+   "2,621",
+   "2010",
+   "2021",
+   "return migration"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of PNAS paper",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F070",
+  "idx": 3,
+  "url": "https://web.archive.org/web/2026id_/https://www.war.gov/News/Transcripts/Transcript/Article/3293101/pentagon-press-secretary-air-force-brig-gen-pat-ryder-holds-an-on-camera-press/",
+  "grep": [
+   "declined",
+   "call",
+   "balloon"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of Ryder briefing",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F066",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.spaceforce.mil/About-Us/Fact-Sheets/Fact-Sheet-Display/Article/4297159/space-threat-fact-sheet/",
+  "grep": [
+   "SJ-21",
+   "SJ-25",
+   "dogfight"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of Space Force threat fact sheet",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F062",
+  "idx": 0,
+  "url": "https://web.archive.org/web/2026id_/https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related",
+  "grep": [
+   "China Initiative",
+   "February 23, 2022",
+   "ended"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of Olsen remarks",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F073",
+  "idx": 1,
+  "url": "https://web.archive.org/web/2026id_/https://www.mac.gov.tw/EN/News_Content.aspx?n=2BA0753CBE348412&sms=E828F60C4AFBAF90&s=F04508A2EB8B18A3",
+  "grep": [
+   "capsiz",
+   "died",
+   "two",
+   "February"
+  ],
+  "excerpt": 0,
+  "note": "Wayback copy of MAC Kinmen",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "F052",
+  "idx": 2,
+  "url": "https://www.federalregister.gov/api/v1/documents/2026-11571.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=document_number",
+  "grep": [
+   "title",
+   "abstract",
+   "publication_date"
+  ],
+  "excerpt": 1500,
+  "note": "Federal Register API: 1260H notice June 2026 (JSON now read as text)"
+ },
+ {
+  "id": "F099",
+  "idx": 1,
+  "url": "https://www.federalregister.gov/api/v1/documents/2024-01580.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=type",
+  "grep": [
+   "title",
+   "abstract",
+   "publication_date"
+  ],
+  "excerpt": 1500,
+  "note": "Federal Register API: Commerce IaaS notice Jan 2024 (JSON now read as text)"
+ }
+]

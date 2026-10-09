@@ -64,7 +64,7 @@ def text_of(raw, ctype):
         text, err = pdf_text(raw)
         text_of.pdf_error = err
         return text
-    if 'html' not in ctype and 'xml' not in ctype and 'text' not in ctype:
+    if 'html' not in ctype and 'xml' not in ctype and 'text' not in ctype and 'json' not in ctype:
         return ''
     s = raw.decode('utf-8', 'replace')
     s = re.sub(r'(?is)<(script|style|noscript|svg)\b.*?</\1>', ' ', s)

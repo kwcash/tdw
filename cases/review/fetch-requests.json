@@ -2,50 +2,96 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "F086",
+   "id": "F068",
    "idx": 1,
-   "url": "https://arkansasag.gov/news-release/attorney-general-griffin-orders-divestment-of-chinese-owned-land-and-imposes-280000-civil-penalty/",
+   "url": "https://web.archive.org/web/2026id_/https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
    "grep": [
-    "160 acres",
-    "280,000",
-    "Syngenta",
+    "1.2 trillion",
+    "7,800",
+    "185 billion",
+    "interceptors"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of CBO Golden Dome PDF",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F068",
+   "idx": 2,
+   "url": "https://web.archive.org/web/2026id_/https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
+   "grep": [
+    "low 600s",
+    "1,000 warheads",
+    "over 1,000"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of DoD CMPR 2025",
+   "ua": "browser",
+   "grep_width": 240
+  },
+  {
+   "id": "F065",
+   "idx": 1,
+   "url": "https://web.archive.org/web/2026id_/https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+   "grep": [
+    "13",
+    "Armed Forces",
+    "foreign adversar",
+    "February"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of FTC PADFAA release",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F100",
+   "idx": 1,
+   "url": "https://web.archive.org/web/2026id_/https://www.esd.whs.mil/portals/54/documents/dd/issuances/dodd/300009p.pdf",
+   "grep": [
+    "appropriate levels of human judgment",
+    "January 25, 2023"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of DoDD 3000.09",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F074",
+   "idx": 1,
+   "url": "https://web.archive.org/web/2026id_/https://www.news.uscg.mil/Press-Releases/article/4276832/coast-guard-continues-response-to-chinese-research-vessel-activity-in-us-arctic/",
+   "grep": [
+    "five",
+    "research vessels",
+    "Xue Long",
+    "Arctic District"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of USCG Aug 2025 release",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F074",
+   "idx": 2,
+   "url": "https://web.archive.org/web/2026id_/https://www.news.uscg.mil/Press-Releases/Article/3922625/us-coast-guard-encounters-joint-chinese-coast-guard-russian-border-guard-patrol/",
+   "grep": [
+    "Bering",
+    "Russian",
+    "Chinese Coast Guard",
     "October"
    ],
    "excerpt": 0,
-   "note": "Arkansas AG: divestment order",
-   "ua": "browser"
-  },
-  {
-   "id": "F086",
-   "idx": 1,
-   "url": "https://arkansasag.gov/news-release/attorney-general-griffin-collects-280000-fine-payment-from-chinese-state-owned-syngenta-seeds-llc/",
-   "grep": [
-    "280,000",
-    "paid",
-    "Syngenta"
-   ],
-   "excerpt": 0,
-   "note": "Arkansas AG: fine paid",
-   "ua": "browser"
-  },
-  {
-   "id": "F094",
-   "idx": 0,
-   "url": "https://www.fbi.gov/wanted/cyber/chinese-pla-members-54th-research-institute",
-   "grep": [
-    "145 million",
-    "Equifax",
-    "54th Research Institute",
-    "January 28, 2020"
-   ],
-   "excerpt": 0,
-   "note": "FBI wanted page: Equifax defendants",
-   "ua": "browser"
+   "note": "Wayback copy of USCG Oct 2024 release",
+   "ua": "browser",
+   "grep_width": 200
   },
   {
    "id": "F088",
    "idx": 1,
-   "url": "https://www.swift.com/sites/default/files/files/global-currency-tracker_july-2026.pdf",
+   "url": "https://web.archive.org/web/2026id_/https://www.swift.com/sites/default/files/files/global-currency-tracker_july-2026.pdf",
    "grep": [
     "3.10",
     "5th",
@@ -53,14 +99,14 @@
     "excluding"
    ],
    "excerpt": 0,
-   "note": "SWIFT Global Currency Tracker, July 2026 edition",
+   "note": "Wayback copy of SWIFT July 2026 tracker",
    "ua": "browser",
    "grep_width": 240
   },
   {
    "id": "F088",
    "idx": 1,
-   "url": "https://www.swift.com/swift-resource/252596/download",
+   "url": "https://web.archive.org/web/2026id_/https://www.swift.com/swift-resource/252596/download",
    "grep": [
     "3.10",
     "5th",
@@ -68,222 +114,118 @@
     "excluding"
    ],
    "excerpt": 0,
-   "note": "SWIFT Global Currency Tracker, August 2026 edition",
+   "note": "Wayback copy of SWIFT August 2026 tracker",
    "ua": "browser",
    "grep_width": 240
-  },
-  {
-   "id": "F088",
-   "idx": 2,
-   "url": "https://www.swift.com/sites/default/files/files/global-currency-tracker_july-2026.pdf",
-   "grep": [
-    "USD",
-    "US dollar",
-    "50"
-   ],
-   "excerpt": 0,
-   "note": "SWIFT tracker: dollar share",
-   "ua": "browser",
-   "grep_width": 240,
-   "grep_limit": 4
-  },
-  {
-   "id": "F088",
-   "idx": 0,
-   "url": "https://www.cips.com.cn/kjjqgsyyingw/articleFileDir/2025-12/10/48836285c839409ca4b6027a26e4b331.pdf",
-   "grep": [
-    "180",
-    "175",
-    "2025",
-    "2024"
-   ],
-   "excerpt": 900,
-   "note": "CIPS statistical business data",
-   "ua": "browser",
-   "grep_width": 300,
-   "grep_limit": 4
-  },
-  {
-   "id": "F088",
-   "idx": 0,
-   "url": "https://www.cips.com.cn/kjjqgsyyingw/articleFileDir/2025-12/10/7776329b413141ea94e6e5588d8d048c.pdf",
-   "grep": [
-    "180",
-    "175",
-    "2025",
-    "2024"
-   ],
-   "excerpt": 900,
-   "note": "CIPS statistical business data (second file)",
-   "ua": "browser",
-   "grep_width": 300,
-   "grep_limit": 4
   },
   {
    "id": "F054",
    "idx": 0,
-   "url": "https://www.hhs.gov/press-room/united-states-completes-who-withdrawal.html",
+   "url": "https://web.archive.org/web/2026id_/https://www.hhs.gov/press-room/united-states-completes-who-withdrawal.html",
    "grep": [
     "January 22",
     "withdraw"
    ],
    "excerpt": 0,
-   "note": "HHS: US completes WHO withdrawal",
-   "ua": "browser"
-  },
-  {
-   "id": "F054",
-   "idx": 0,
-   "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/termination-of-u-s-membership-in-the-world-health-organization-who-joint-statement-by-secretary-of-state-rubio-and-secretary-of-health-and-human-services-kennedy",
-   "grep": [
-    "January 22",
-    "withdraw",
-    "WHO"
-   ],
-   "excerpt": 0,
-   "note": "State: joint statement on WHO withdrawal"
-  },
-  {
-   "id": "F092",
-   "idx": 1,
-   "url": "https://www.congress.gov/crs_external_products/LSB/PDF/LSB11444/LSB11444.1.pdf",
-   "grep": [
-    "June 12, 2026",
-    "repeal",
-    "702"
-   ],
-   "excerpt": 0,
-   "note": "CRS LSB11444 on 702 repeal",
-   "ua": "browser"
-  },
-  {
-   "id": "F029",
-   "idx": 0,
-   "url": "https://www.federalregister.gov/documents/2026/01/15/2026-00789/revision-to-license-review-policy-for-advanced-computing-commodities",
-   "grep": [
-    "H200",
-    "case-by-case",
-    "25 percent",
-    "December 8"
-   ],
-   "excerpt": 0,
-   "note": "BIS revision to license review policy (Jan 2026)"
-  },
-  {
-   "id": "F014",
-   "idx": 2,
-   "url": "https://www.justice.gov/ag/media/1388541/dl",
-   "grep": [
-    "Foreign Influence Task Force",
-    "disbanded",
-    "FARA"
-   ],
-   "excerpt": 0,
-   "note": "AG memo of Feb 5, 2025 (document 1388541)",
-   "ua": "browser"
-  },
-  {
-   "id": "F014",
-   "idx": 2,
-   "url": "https://www.justice.gov/ag/media/1388506/dl?inline=",
-   "grep": [
-    "Foreign Influence Task Force",
-    "disbanded",
-    "FARA"
-   ],
-   "excerpt": 0,
-   "note": "AG memo of Feb 5, 2025 (document 1388506)",
-   "ua": "browser"
-  },
-  {
-   "id": "F017",
-   "idx": 2,
-   "url": "https://www.cdc.gov/nchs/pressroom/releases/20260513.html",
-   "grep": [
-    "2025",
-    "decrease",
-    "81,313"
-   ],
-   "excerpt": 0,
-   "note": "CDC NCHS: overdose deaths 2025"
-  },
-  {
-   "id": "F017",
-   "idx": 2,
-   "url": "https://www.cdc.gov/nchs/pressroom/releases/20250514.html",
-   "grep": [
-    "2024",
-    "decrease",
-    "26.9"
-   ],
-   "excerpt": 0,
-   "note": "CDC NCHS: overdose deaths 2024"
-  },
-  {
-   "id": "F081",
-   "idx": 0,
-   "url": "https://www.nature.com/articles/s41562-025-02194-6",
-   "grep": [
-    "64.4",
-    "personal",
-    "GPT-4",
-    "persuasive"
-   ],
-   "excerpt": 0,
-   "note": "Nature Human Behaviour GPT-4 persuasion",
+   "note": "Wayback copy of HHS WHO withdrawal",
    "ua": "browser",
-   "grep_width": 240
+   "grep_width": 200
+  },
+  {
+   "id": "F062",
+   "idx": 2,
+   "url": "https://web.archive.org/web/2026id_/https://www.pnas.org/doi/10.1073/pnas.2216248120",
+   "grep": [
+    "2,621",
+    "2010",
+    "2021",
+    "return migration"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of PNAS paper",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F070",
+   "idx": 3,
+   "url": "https://web.archive.org/web/2026id_/https://www.war.gov/News/Transcripts/Transcript/Article/3293101/pentagon-press-secretary-air-force-brig-gen-pat-ryder-holds-an-on-camera-press/",
+   "grep": [
+    "declined",
+    "call",
+    "balloon"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of Ryder briefing",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F066",
+   "idx": 1,
+   "url": "https://web.archive.org/web/2026id_/https://www.spaceforce.mil/About-Us/Fact-Sheets/Fact-Sheet-Display/Article/4297159/space-threat-fact-sheet/",
+   "grep": [
+    "SJ-21",
+    "SJ-25",
+    "dogfight"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of Space Force threat fact sheet",
+   "ua": "browser",
+   "grep_width": 200
   },
   {
    "id": "F062",
    "idx": 0,
-   "url": "https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related",
+   "url": "https://web.archive.org/web/2026id_/https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related",
    "grep": [
     "China Initiative",
     "February 23, 2022",
     "ended"
    ],
    "excerpt": 0,
-   "note": "DOJ NSD China Initiative page",
-   "ua": "browser"
+   "note": "Wayback copy of Olsen remarks",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "F073",
+   "idx": 1,
+   "url": "https://web.archive.org/web/2026id_/https://www.mac.gov.tw/EN/News_Content.aspx?n=2BA0753CBE348412&sms=E828F60C4AFBAF90&s=F04508A2EB8B18A3",
+   "grep": [
+    "capsiz",
+    "died",
+    "two",
+    "February"
+   ],
+   "excerpt": 0,
+   "note": "Wayback copy of MAC Kinmen",
+   "ua": "browser",
+   "grep_width": 200
   },
   {
    "id": "F052",
    "idx": 2,
-   "url": "https://www.federalregister.gov/api/v1/documents/2026-11571.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=document_number&fields[]=raw_text_url",
+   "url": "https://www.federalregister.gov/api/v1/documents/2026-11571.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=document_number",
    "grep": [
     "title",
     "abstract",
-    "publication_date",
-    "raw_text_url"
+    "publication_date"
    ],
-   "excerpt": 1200,
-   "note": "Federal Register API: 1260H notice June 2026"
+   "excerpt": 1500,
+   "note": "Federal Register API: 1260H notice June 2026 (JSON now read as text)"
   },
   {
    "id": "F099",
    "idx": 1,
-   "url": "https://www.federalregister.gov/api/v1/documents/2024-01580.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=type&fields[]=raw_text_url",
+   "url": "https://www.federalregister.gov/api/v1/documents/2024-01580.json?fields[]=title&fields[]=abstract&fields[]=publication_date&fields[]=type",
    "grep": [
     "title",
     "abstract",
-    "publication_date",
-    "raw_text_url"
+    "publication_date"
    ],
    "excerpt": 1500,
-   "note": "Federal Register API: Commerce IaaS notice Jan 2024"
-  },
-  {
-   "id": "F100",
-   "idx": 1,
-   "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/300009p.pdf",
-   "grep": [
-    "appropriate levels of human judgment",
-    "January 25, 2023"
-   ],
-   "excerpt": 0,
-   "note": "DoDD 3000.09 (mixed-case path)",
-   "ua": "browser"
+   "note": "Federal Register API: Commerce IaaS notice Jan 2024 (JSON now read as text)"
   }
  ]
 }

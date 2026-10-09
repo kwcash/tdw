@@ -114,6 +114,7 @@ def decide(args):
         lab, url = d.get('label', ''), d.get('url', '')
         lab = ' ;; '.join(lab) if isinstance(lab, list) else lab
         url = ' ;; '.join(url) if isinstance(url, list) else url
+        url = url.replace('(', '%28').replace(')', '%29')   # a bare ) ends a markdown link early
         rows.append({'id': d['id'], 'idx': d['idx'], 'checkable': 1, 'has_link': 0, 'sentence': parts[int(d['idx']) * 2],
                      'verdict': d['verdict'], 'add_label': lab, 'add_url': url, 'notes': d.get('notes', '')})
     tmp = os.path.join(os.path.dirname(path), '.decide-tmp.csv')
