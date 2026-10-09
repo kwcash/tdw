@@ -32,11 +32,11 @@
   "gap": "Governance",
   "text": {
     "brief": "An FBI analyst in 2041 opens a leaked archive of eleven terabytes from the Party's United Front Work Department. The files name forty thousand foreigners, and some of the names are forgeries.",
-    "record": "The China Cables of 2019 and the Xinjiang Police Files of 2022 showed what leaked Party records can prove. A hacker offered data on about one billion residents from a Shanghai police database for sale in 2022. Wang Lijun's flight to the American consulate in Chengdu in 2012 exposed the crimes that brought down Bo Xilai.",
+    "record": "The China Cables of 2019 and the Xinjiang Police Files of 2022 showed what leaked Party records can prove ([CECC chairs' statement on release of Xinjiang Police Files, May 24, 2022](https://www.cecc.gov/media-center/press-releases/chairs%E2%80%99-statement-on-release-of-xinjiang-police-files)). A hacker offered data on about one billion residents from a Shanghai police database for sale in 2022. Wang Lijun's flight to the American consulate in Chengdu in 2012 exposed the crimes that brought down Bo Xilai.",
     "reading": "A faction wounds itself to win Western trust. It leaks the Party's own files, true and forged together, and each name it burns serves its war at home. This is Stratagem 34, inflict injury on yourself to win trust.",
     "coreEvent": "A defecting faction releases archives of the Party's United Front and security services that name thousands of foreigners before 2046.",
     "gapText": "Architecture Governance. No rule says how a democracy verifies and uses a leaked archive before acting on the names in it.",
     "fix": "Set rules for verification and use before the archive arrives, and treat a name as a lead, never as proof."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

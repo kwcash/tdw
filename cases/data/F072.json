@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "A retired teacher in Tainan takes a video call in 2044 from the AI tutor her granddaughter uses. The tutor speaks her Taiwanese Hokkien without an accent and asks, gently, why she still distrusts the mainland.",
-    "record": "In the Election Study Center's survey at National Chengchi University, 62.0 percent of Taiwan's people identified as Taiwanese only in December 2025. The Party's rules for generative AI require services to uphold core socialist values. Alibaba's Qwen models were the most downloaded model family on Hugging Face in 2025.",
+    "record": "In the Election Study Center's survey at National Chengchi University, 62.0 percent of Taiwan's people identified as Taiwanese only in December 2025. The Party's rules for generative AI require services to uphold core socialist values ([Cyberspace Administration of China: Interim Measures for the Management of Generative AI Services (Chinese text)](https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm); [English translation (China Law Translate, secondary)](https://www.chinalawtranslate.com/en/generative-ai-interim/)). Alibaba's Qwen models were the most downloaded model family on Hugging Face in 2025.",
     "reading": "The Party absorbs Taiwan without a landing. Persuasion engines speak to each voter in her own dialect, trade and tourism bind each town and the change arrives as convenience. This is Stratagem 1, deceive the heavens to cross the sea.",
     "coreEvent": "A government in Taipei signs a political framework with the Party that names unification as its goal before 2049.",
     "gapText": "Architecture Principles. Democracies guard the ballot and leave unmarked the persuasion that comes before it.",
     "fix": "Label machine persuasion at the source, name its sponsor and leave lawful speech alone."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "A battery chemist at a national laboratory in Illinois accepts an offer from a Shenzhen institute in 2031. Born in Wuhan and a citizen since 2015, she spent two years under an investigation that closed without a charge.",
-    "record": "The Justice Department ended its China Initiative in February 2022. MIT Technology Review found that 130 of the 148 people charged under it were of Chinese heritage. A study in PNAS found that departures of scientists of Chinese descent from the United States rose from about 900 in 2010 to 2,621 in 2021. House appropriators wrote language to restore the initiative in September 2025 and dropped it in January 2026.",
+    "record": "The Justice Department ended its China Initiative in February 2022. MIT Technology Review found that 130 of the 148 people charged under it were of Chinese heritage. A study in PNAS found that departures of scientists of Chinese descent from the United States rose from about 900 in 2010 to 2,621 in 2021. House appropriators wrote language to restore the initiative in September 2025 and dropped it in January 2026 ([House Appropriations Committee: FY26 Commerce, Justice, Science bill release (July 14, 2025)](https://appropriations.house.gov/news/press-releases/committee-releases-fy26-commerce-justice-science-and-related-agencies); [CJS division of the January 2026 appropriations bill (explanatory statement)](https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf)).",
     "reading": "The Party does not need to recruit when suspicion does the work. Each case against an innocent scientist tells the rest where they are unwelcome, and the talent programs wait with offers. This is Stratagem 9, watch the fire from across the river.",
     "coreEvent": "A peer-reviewed study published before 2034 finds a record year for departures of scientists of Chinese descent from American institutions.",
     "gapText": "Architecture Principles. A security policy that sorts people by ancestry drives out the talent it exists to protect.",
     "fix": "Judge every researcher on documented conduct under one standard. Ancestry is not loyalty, and it is not evidence of betrayal."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

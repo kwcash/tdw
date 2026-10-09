@@ -1,0 +1,68 @@
+[
+ {
+  "id": "F083",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Cyberspace Administration of China: Interim Measures for the Management of Generative AI Services (Chinese text)",
+   "English translation (China Law Translate, secondary)"
+  ],
+  "url": [
+   "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+   "https://www.chinalawtranslate.com/en/generative-ai-interim/"
+  ],
+  "notes": "CAC (the Cyberspace Administration, the Party-state internet regulator) published Order No. 15 on July 13, 2023 (signed July 10): the Interim Measures take effect August 15, 2023, and Article 4(1) requires providers to 'uphold the Core Socialist Values' (坚持社会主义核心价值观) and not generate prohibited content. The English link is a private translator's site, secondary; the CAC page is the PRC's own text."
+ },
+ {
+  "id": "F072",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Cyberspace Administration of China: Interim Measures for the Management of Generative AI Services (Chinese text)",
+   "English translation (China Law Translate, secondary)"
+  ],
+  "url": [
+   "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+   "https://www.chinalawtranslate.com/en/generative-ai-interim/"
+  ],
+  "notes": "CAC (the Cyberspace Administration, the Party-state internet regulator) published Order No. 15 on July 13, 2023 (signed July 10): the Interim Measures take effect August 15, 2023, and Article 4(1) requires providers to 'uphold the Core Socialist Values' (坚持社会主义核心价值观) and not generate prohibited content. The English link is a private translator's site, secondary; the CAC page is the PRC's own text."
+ },
+ {
+  "id": "F097",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Xinhua: China's commercial space sector logged 50 launches in 2025 (quoting CNSA)",
+  "url": "https://english.news.cn/20260120/4031eed2e3bf4b1fab497273eb7641e2/c.html",
+  "notes": "PRC state media quoting the China National Space Administration: 50 commercial launches in 2025, '54 percent of the country's total number of space missions', which implies about 92. The figure 92 and 'a national record' are not stated on the page; SpaceNews (secondary) reports 92, but spacenews.com returned HTTP 403 to the runner."
+ },
+ {
+  "id": "F062",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "House Appropriations Committee: FY26 Commerce, Justice, Science bill release (July 14, 2025)",
+   "CJS division of the January 2026 appropriations bill (explanatory statement)"
+  ],
+  "url": [
+   "https://appropriations.house.gov/news/press-releases/committee-releases-fy26-commerce-justice-science-and-related-agencies",
+   "https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf"
+  ],
+  "notes": "Committee release: the FY26 bill 'Directing the re-establishment of the DOJ China Initiative'. The release is dated July 14, 2025; the September 2025 timing in our sentence is not on it. The second link is the January 2026 CJS division text: the phrase 'China Initiative' does not occur in the text read, which supports 'dropped' but rests on an absence in machine-read text that has spacing errors. A person should search the PDF."
+ },
+ {
+  "id": "F035",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "sec.gov returned HTTP 403 to the runner (SEC wants a contact in the User-Agent). The TSMC filing saying the Arizona site has been in volume production since late 2024 is known only from a search summary. Commerce's April 2024 award terms expected high-volume production in the first half of 2025, so the sentence's 'late 2024' needs the filing itself."
+ },
+ {
+  "id": "F095",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "CECC chairs' statement on release of Xinjiang Police Files, May 24, 2022",
+  "url": "https://www.cecc.gov/media-center/press-releases/chairs%E2%80%99-statement-on-release-of-xinjiang-police-files",
+  "notes": "Same CECC statement as F080[2]: it confirms the May 2022 release of the Xinjiang Police Files. The 2019 China Cables are not covered, and 'showed what leaked Party records can prove' is the case's argument, not the statement's."
+ }
+]

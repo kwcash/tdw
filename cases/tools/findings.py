@@ -64,7 +64,7 @@ def main():
     w('- **Nothing here is `verified`.** `sourced` means a link was attached after a fetch tool read the page text for the key terms. It does not mean a person read the page against the sentence. `verified` needs a named person and a date, and the count is **%d**.' % len(verified))
     w('- Government, court, statute and official-body pages came first. Where only media, a think tank, a company or an NGO had the fact, the link label says so and this file flags it. Primary sources have a perspective too: a PRC ministry page states PRC policy, a White House fact sheet states the US account.')
     w('- Pages were read by a script on a GitHub Actions runner, which sees the text only. Charts, tables rendered as images, and pages that block the runner were not read. Those cases are listed under "Checked, not settled".')
-    w('- Anthropic, the vendor of the assistant that did this pass, authored one source (F085[2], the November 2025 espionage report). It is labeled as the company\'s own statement.')
+    w('- Anthropic, the vendor of the assistant that did this pass, authored three of the sources (F009[1], F009[2] and F085[2]). Each is labeled as the company\'s own statement.')
     w('')
     w('## Counts')
     w('')
@@ -96,7 +96,7 @@ def main():
     sec = sorted((k, d) for k, d in last.items() if d['verdict'] in ('supported', 'partial') and SECONDARY.search(d.get('notes', '') + ' ' + str(d.get('label', ''))))
     w(f'## Links that are not government or court pages ({len(sec)})')
     w('')
-    w('Each of these has a government or primary source that would be better. The label on the link says what the source is.')
+    w('Each entry has at least one link that is not a government or court page: a company, NGO, think tank, news agency, preprint, translator or archive. Where a government page would be better, say so in review; the label on the link says what the source is.')
     w('')
     for (cid, i), d in sec:
         lab = d['label'] if isinstance(d['label'], str) else '; '.join(d['label'])
