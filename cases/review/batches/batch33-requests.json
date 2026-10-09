@@ -522,5 +522,35 @@
   "ua": "browser",
   "grep_width": 170,
   "grep_limit": 2
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+  "grep": [
+   "DEC. 18, 2025",
+   "PUBLIC LAW 119"
+  ],
+  "excerpt": 0,
+  "note": "Public Law 119-60 first page: enactment date (US Congress)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.europarl.europa.eu/topics/en/article/20191018STO64607/ilham-tohti-wins-2019-sakharov-prize-for-freedom-of-thought",
+  "grep": [
+   "Ilham Tohti",
+   "Sakharov",
+   "2019",
+   "Uyghur"
+  ],
+  "excerpt": 0,
+  "note": "European Parliament topics article on the 2019 Sakharov Prize (EU institution)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
  }
 ]
