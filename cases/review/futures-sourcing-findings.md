@@ -1,13 +1,13 @@
 # Futures sourcing pass: findings
 
-Generated 2026-10-09 by `tools/findings.py` from `decisions-log.jsonl`. Do not edit by hand; rerun the script.
+Generated 2026-10-09 by `tools/findings.py --kind futures` from `decisions-log.jsonl`. Do not edit by hand; rerun the script.
 
 ## Read this first
 
 - **Nothing here is `verified`.** `sourced` means a link was attached after a fetch tool read the page text for the key terms. It does not mean a person read the page against the sentence. `verified` needs a named person and a date, and the count is **0**.
-- Government, court, statute and official-body pages came first. Where only media, a think tank, a company or an NGO had the fact, the link label says so and this file flags it. Primary sources have a perspective too: a PRC ministry page states PRC policy, a White House fact sheet states the US account.
-- Pages were read by a script on a GitHub Actions runner, which sees the text only. Charts, tables rendered as images, and pages that block the runner were not read. Those cases are listed under "Checked, not settled".
-- Anthropic, the vendor of the assistant that did this pass, authored three of the sources (F009[1], F009[2] and F085[2]). Each is labeled as the company's own statement.
+- Government, court, statute, treaty, archive and official-body pages came first. Where only media, a think tank, a company, an NGO or a reference work had the fact, the link label says so and this file flags it. Primary sources have a perspective too: a PRC ministry page states PRC policy, a White House fact sheet states the US account, and a wartime document records what its author believed.
+- Pages were read by a script on a GitHub Actions runner, which sees the text only. Scanned images, charts, tables rendered as images, and pages that block the runner were not read. Those cases are listed under "Checked, not settled".
+- Anthropic, the vendor of the assistant that did this pass, authored some of the sources (F009[1], F009[2], F085[2]). Each is labeled as the company's own statement.
 
 ## Counts
 
@@ -137,7 +137,7 @@ The note says what the page supports and what is still open.
 
 ## Checked, not settled (17)
 
-A page was tried (blocked, empty, wrong content, or the figure is in a chart). No link was added. Hosts that refused the runner: ftc.gov, hhs.gov, usda.gov, gao.gov, pnas.org, cbo.gov, spaceforce.mil, war.gov, congress.gov, news.uscg.mil, aps.org, mac.gov.tw, and justice.gov pages that return empty text. TLS failures (not bypassed): npc.gov.cn, english.scio.gov.cn, kinmen.gov.tw, eng.mod.gov.cn.
+A page was tried (blocked, empty, wrong content, or the figure is in a chart or a scan). No link was added. Hosts that refused the runner: ftc.gov, hhs.gov, usda.gov, gao.gov, pnas.org, cbo.gov, spaceforce.mil, war.gov, congress.gov, news.uscg.mil, aps.org, mac.gov.tw, swift.com, sec.gov, spacenews.com, and justice.gov pages that return empty text. TLS failures (not bypassed): npc.gov.cn, english.scio.gov.cn, kinmen.gov.tw, eng.mod.gov.cn. Archive.org copies were rate limited (HTTP 429).
 
 - **F035[0]** TSMC began volume production in Arizona in late 2024 and plans more advanced plants there.  
   sec.gov returned HTTP 403 to the runner (SEC wants a contact in the User-Agent). The TSMC filing saying the Arizona site has been in volume production since late 2024 is known only from a search summary. Commerce's April 2024 award terms expected high-volume production in the first half of 2025, so the sentence's 'late 2024' needs the filing itself.
@@ -176,7 +176,7 @@ A page was tried (blocked, empty, wrong content, or the figure is in a chart). N
 
 ## Links that are not government or court pages (25)
 
-Each entry has at least one link that is not a government or court page: a company, NGO, think tank, news agency, preprint, translator or archive. Where a government page would be better, say so in review; the label on the link says what the source is.
+Each entry has at least one link that is not a government or court page: a company, NGO, think tank, news agency, preprint, translator, reference work or archive. Where a government page would be better, say so in review; the label on the link says what the source is.
 
 - **F008[0]** pv magazine, reporting Reuters
 - **F009[1]** Anthropic
@@ -211,7 +211,7 @@ Each entry has at least one link that is not a government or court page: a compa
 
 ## Checkable sentences nobody has tried yet (62)
 
-80 checkable sentences still have no link; 18 of them were tried and are listed above as unresolved. The rest carry a date, number or named act and have not been looked at. Some are Taiwan, Hong Kong or PRC government facts a person on an unblocked network could settle in minutes.
+80 checkable sentences still have no link; 18 of them were tried and are listed above as unresolved. The rest carry a date, number or named act and have not been looked at.
 
 - **F001[1]** Two New Zealand navy ships transited the Strait in late September.
 - **F002[2]** Before the 2024 elections prosecutors investigated village wardens over subsidized mainland trips and gamblers over illegal betting on the results.

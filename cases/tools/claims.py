@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # -I drops the s
 from tdwcases import DATA, case_files, load_json, dump_json, LINK
 
 SPLIT = re.compile(r'(?<=[.!?])(\s+)(?=[A-Z"“])')
-ABBR = re.compile(r'\b(Mr|Mrs|Dr|St|No|Inc|Corp|Ltd|Co|vs|Jr|Sr)\.$')
+ABBR = re.compile(r'\b([A-Z]|v|vs|Mr|Mrs|Dr|St|No|Inc|Corp|Ltd|Co|Jr|Sr)\.$')   # initials ("George H. W. Bush") and "v." are not sentence ends
 CHECKABLE = re.compile(r'\d|\b(January|February|March|April|May|June|July|August|September|October|November|December)\b|\b(said|reported|announced|convicted|sentenced|sanctioned|signed|struck|ruled|added|issued|filed|expelled|closed)\b')
 FIELDS = ['id', 'idx', 'checkable', 'has_link', 'sentence', 'verdict', 'add_label', 'add_url', 'notes']
 VERDICTS = {'', 'supported', 'partial', 'unsupported', 'contradicted', 'unresolved'}
