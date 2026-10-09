@@ -2,297 +2,243 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "F008",
+   "id": "F022",
    "idx": 0,
-   "url": "https://www.pv-magazine.com/2025/05/14/hidden-devices-found-in-chinese-made-inverters-in-the-us-reports-reuters/",
+   "url": "https://www.info.gov.hk/gia/general/202512/15/P2025121500629.htm",
    "grep": [
-    "Reuters",
-    "undocumented",
-    "communication devices",
-    "batteries",
-    "cellular"
+    "15 December 2025",
+    "collude",
+    "seditious",
+    "Lai Chee-ying"
    ],
    "excerpt": 0,
-   "note": "Reuters May 2025 undocumented comms devices in inverters and batteries"
+   "note": "Lai convicted Dec 15 2025: collusion + sedition"
   },
   {
-   "id": "F008",
-   "idx": 2,
-   "url": "http://www.npc.gov.cn/zgrdw/npc/////////xinwen/2018-06/12/content_2055873.htm",
-   "grep": [
-    "第七条",
-    "支持、协助和配合",
-    "2017年6月27日"
-   ],
-   "excerpt": 0,
-   "note": "National Intelligence Law Art. 7 (2017)"
-  },
-  {
-   "id": "F009",
-   "idx": 0,
-   "url": "https://chinaselectcommittee.house.gov/media/reports/deepseek-unmasked-exposing-the-ccp-s-latest-tool-for-spying-stealing-and-subverting-us-export-control-restrictions",
-   "grep": [
-    "OpenAI",
-    "distillation",
-    "January"
-   ],
-   "excerpt": 0,
-   "note": "OpenAI evidence DeepSeek distillation (committee report)"
-  },
-  {
-   "id": "F009",
+   "id": "F022",
    "idx": 1,
-   "url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
+   "url": "https://www.info.gov.hk/gia/general/202602/09/P2026020900687.htm",
    "grep": [
-    "September",
-    "50%",
-    "China",
-    "majority-owned"
+    "sentenc",
+    "Lai Chee-ying",
+    "20 years",
+    "9 February"
    ],
    "excerpt": 0,
-   "note": "Anthropic barred PRC-controlled companies Sept 2025"
+   "note": "Lai sentenced Feb 9 2026"
   },
   {
-   "id": "F009",
+   "id": "F023",
+   "idx": 0,
+   "url": "https://www.state.gov/briefings/department-press-briefing-may-29-2025",
+   "grep": [
+    "revoke",
+    "Chinese Communist Party",
+    "critical fields",
+    "Chinese students"
+   ],
+   "excerpt": 0,
+   "note": "Rubio May 2025 visa revocation for CCP-linked or critical-field students"
+  },
+  {
+   "id": "F023",
    "idx": 2,
-   "url": "https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks",
+   "url": "https://opendoorsdata.org/annual-release/international-students/",
+   "grep": [
+    "277,398",
+    "2023/24",
+    "China"
+   ],
+   "excerpt": 0,
+   "note": "277,398 mainland students 2023/24"
+  },
+  {
+   "id": "F024",
+   "idx": 0,
+   "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00017F.htm",
+   "grep": [
+    "China",
+    "Iran",
+    "North Korea",
+    "Russia",
+    "real property",
+    "designated country"
+   ],
+   "excerpt": 0,
+   "note": "Texas SB 17 2025 land purchase restriction"
+  },
+  {
+   "id": "F024",
+   "idx": 1,
+   "url": "https://www.courtlistener.com/docket/67412885/shen-v-simpson/",
+   "grep": [
+    "Shen",
+    "Simpson",
+    "SB 264",
+    "Florida",
+    "Chinese"
+   ],
+   "excerpt": 0,
+   "note": "Florida 2023 law federal litigation"
+  },
+  {
+   "id": "F024",
+   "idx": 2,
+   "url": "https://www.usda.gov/about-usda/news/press-releases/2025/07/08/farm-security-national-security-trump-administration-takes-bold-action-elevate-american-agriculture",
+   "grep": [
+    "National Farm Security Action Plan",
+    "July 8",
+    "farmland",
+    "foreign adversar"
+   ],
+   "excerpt": 0,
+   "note": "USDA farm security action plan July 2025"
+  },
+  {
+   "id": "F027",
+   "idx": 0,
+   "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
+   "grep": [
+    "Volt Typhoon",
+    "February 7, 2024",
+    "pre-position",
+    "critical infrastructure",
+    "at least five years"
+   ],
+   "excerpt": 0,
+   "note": "CISA NSA FBI Volt Typhoon advisory Feb 7 2024"
+  },
+  {
+   "id": "F027",
+   "idx": 2,
+   "url": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques",
+   "grep": [
+    "Guam",
+    "May 24",
+    "2023",
+    "Volt Typhoon"
+   ],
+   "excerpt": 0,
+   "note": "Microsoft May 2023 Volt Typhoon Guam"
+  },
+  {
+   "id": "F030",
+   "idx": 1,
+   "url": "https://www.ai.gov/action-plan",
+   "grep": [
+    "talking points",
+    "censorship",
+    "CAISI",
+    "People's Republic of China",
+    "frontier models"
+   ],
+   "excerpt": 0,
+   "note": "AI Action Plan July 2025: evaluate PRC models for CCP talking points"
+  },
+  {
+   "id": "F030",
+   "idx": 2,
+   "url": "https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks",
    "grep": [
     "DeepSeek",
-    "Moonshot",
-    "MiniMax",
-    "February",
-    "23"
+    "September 30, 2025",
+    "CAISI",
+    "censorship"
    ],
    "excerpt": 0,
-   "note": "Anthropic named DeepSeek, Moonshot, MiniMax Feb 23 2026"
+   "note": "CAISI DeepSeek evaluation 2025"
   },
   {
-   "id": "F009",
-   "idx": 3,
-   "url": "https://www.federalregister.gov/documents/2024/01/29/2024-01580/taking-additional-steps-to-address-the-national-emergency-with-respect-to-significant-malicious",
-   "grep": [
-    "Customer Identification Program",
-    "Infrastructure as a Service",
-    "January 29, 2024",
-    "foreign"
-   ],
-   "excerpt": 0,
-   "note": "Commerce KYC proposed rule Jan 2024"
-  },
-  {
-   "id": "F013",
+   "id": "F033",
    "idx": 0,
-   "url": "https://www.fmprc.gov.cn/eng./xw/fyrbt/202507/t20250721_11674380.html",
+   "url": "https://www.kinmen.gov.tw/en/News_Content.aspx?n=9A3902C9F2F1C945&sms=4BCC795D7C63BD97&s=0599EDBA46C7FFCD",
    "grep": [
-    "Wells Fargo",
-    "Mao",
-    "criminal case",
-    "exit"
+    "August",
+    "2018",
+    "water",
+    "Fujian",
+    "pipeline"
    ],
    "excerpt": 0,
-   "note": "MFA confirms exit ban on Wells Fargo banker July 21 2025"
+   "note": "Kinmen water from Fujian since Aug 2018"
   },
   {
-   "id": "F015",
-   "idx": 1,
-   "url": "https://www.ftc.gov/legal-library/browse/statutes/protecting-americans-data-foreign-adversaries-act-2024-padfaa",
-   "grep": [
-    "data broker",
-    "foreign adversary",
-    "sensitive data"
-   ],
-   "excerpt": 0,
-   "note": "PADFAA bars data brokers selling to foreign adversary entities"
-  },
-  {
-   "id": "F015",
-   "idx": 2,
-   "url": "https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern",
-   "grep": [
-    "April 8, 2025",
-    "effective",
-    "28 CFR"
-   ],
-   "excerpt": 0,
-   "note": "DOJ bulk data rule effective April 8 2025"
-  },
-  {
-   "id": "F018",
+   "id": "F033",
    "idx": 0,
-   "url": "https://www.hhs.gov/press-room/united-states-completes-who-withdrawal.html",
+   "url": "https://english.news.cn/20250813/54bc89feaae2410e9e01eb2260ccea0e/c.html",
    "grep": [
-    "January 22, 2026",
-    "withdrawal",
-    "World Health Organization"
+    "2018",
+    "Kinmen",
+    "Fujian",
+    "water"
    ],
    "excerpt": 0,
-   "note": "US completed WHO withdrawal Jan 22 2026"
+   "note": "Xinhua: Fujian-Kinmen water since 2018"
   },
   {
-   "id": "F018",
-   "idx": 1,
-   "url": "https://www.who.int/news/item/20-05-2025-world-health-assembly-adopts-historic-pandemic-agreement-to-make-the-world-more-equitable-and-safer-from-future-pandemics",
-   "grep": [
-    "20 May 2025",
-    "adopted",
-    "Pandemic Agreement"
-   ],
-   "excerpt": 0,
-   "note": "WHA adopted Pandemic Agreement May 20 2025"
-  },
-  {
-   "id": "F018",
-   "idx": 2,
-   "url": "https://en.nhc.gov.cn/2025-05/20/c_86469.htm",
-   "grep": [
-    "500 million",
-    "five years",
-    "contribution",
-    "WHO"
-   ],
-   "excerpt": 0,
-   "note": "China pledged $500M to WHO over five years May 2025"
-  },
-  {
-   "id": "F018",
-   "idx": 2,
-   "url": "https://english.news.cn/20250520/d1bcf9b634ce42568be541b30b3460e8/c.html",
-   "grep": [
-    "500 million",
-    "five years",
-    "donat"
-   ],
-   "excerpt": 0,
-   "note": "China pledged $500M to WHO (Xinhua)"
-  },
-  {
-   "id": "F019",
+   "id": "F035",
    "idx": 0,
-   "url": "https://www.justice.gov/usao-edmi/pr/chinese-nationals-charged-conspiracy-and-smuggling-dangerous-biological-pathogen-us",
+   "url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
    "grep": [
-    "Fusarium graminearum",
-    "University of Michigan",
-    "June 3",
-    "2025",
-    "smuggl"
+    "N4",
+    "Q4 2024",
+    "volume production",
+    "Arizona"
    ],
    "excerpt": 0,
-   "note": "DOJ charged two PRC researchers June 3 2025 Fusarium"
+   "note": "TSMC Arizona volume production late 2024"
   },
   {
-   "id": "F020",
-   "idx": 1,
-   "url": "https://www.bis.org/speeches/sp241031.htm",
-   "grep": [
-    "mBridge",
-    "leaving",
-    "partners",
-    "BIS"
-   ],
-   "excerpt": 0,
-   "note": "BIS left mBridge Oct 2024"
-  },
-  {
-   "id": "F020",
-   "idx": 1,
-   "url": "https://www.bis.org/about/bisih/topics/cbdc/mcbdc_bridge.htm",
-   "grep": [
-    "October 2024",
-    "handing",
-    "partners",
-    "concluded"
-   ],
-   "excerpt": 0,
-   "note": "BIS mBridge project page"
-  },
-  {
-   "id": "F020",
-   "idx": 2,
-   "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2025/07/20250729-4/",
-   "grep": [
-    "1 August 2025",
-    "stablecoin"
-   ],
-   "excerpt": 0,
-   "note": "HK stablecoin regime effective Aug 1 2025"
-  },
-  {
-   "id": "F020",
-   "idx": 3,
-   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text",
-   "grep": [
-    "lawful order",
-    "seize",
-    "freeze",
-    "payment stablecoin"
-   ],
-   "excerpt": 0,
-   "note": "GENIUS Act lawful order freeze power"
-  },
-  {
-   "id": "F021",
+   "id": "F036",
    "idx": 0,
-   "url": "http://www.npc.gov.cn/englishnpc/c23934/202106/469e4015f8df41c881d69ab86cbd4aaa.shtml",
+   "url": "https://homeland.house.gov/2024/09/12/new-investigation-by-house-homeland-select-committee-on-the-ccp-finds-potential-chinese-threats-to-u-s-port-infrastructure-security/",
    "grep": [
-    "Anti-Foreign Sanctions Law",
-    "adopted",
-    "sanctions"
+    "80 percent",
+    "80%",
+    "cellular modems",
+    "ZPMC",
+    "September 12"
    ],
    "excerpt": 0,
-   "note": "AFSL adopted June 2021"
+   "note": "Joint House report Sept 12 2024: ZPMC ~80%, modems"
   },
   {
-   "id": "F021",
-   "idx": 0,
-   "url": "https://english.mofcom.gov.cn/Policies/GeneralPolicies/art/2021/art_98677d0ed28b41b9adeff27b00c9d001.html",
-   "grep": [
-    "legal proceedings",
-    "compensation",
-    "Article 9",
-    "January 9, 2021"
-   ],
-   "excerpt": 0,
-   "note": "MOFCOM Order No. 1 of 2021 right to sue"
-  },
-  {
-   "id": "F021",
+   "id": "F036",
    "idx": 1,
-   "url": "https://www.federalregister.gov/documents/2023/12/26/2023-28662/taking-additional-steps-with-respect-to-the-russian-federations-harmful-activities",
+   "url": "https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2024/02/21/on-the-record-press-call-on-the-biden-harris-administration-initiative-to-bolster-the-cybersecurity-of-u-s-ports/",
    "grep": [
-    "foreign financial institution",
-    "military-industrial base",
-    "December 22, 2023"
+    "$20 billion",
+    "cranes",
+    "executive order",
+    "invest"
    ],
    "excerpt": 0,
-   "note": "EO 14114 foreign banks risk sanctions"
+   "note": "Feb 2024 executive order funded American crane production?"
   },
   {
-   "id": "F021",
-   "idx": 2,
-   "url": "http://english.scio.gov.cn/pressroom/2025-04/05/content_117807312.html",
+   "id": "F036",
+   "idx": 1,
+   "url": "https://www.federalregister.gov/documents/2024/02/23/2024-03822/issuance-of-maritime-security-marsec-directive-105-4-cyber-risk-management-actions-for-ship-to-shore",
    "grep": [
-    "unreliable entity",
-    "US firms",
-    "Taiwan",
-    "defense",
-    "military"
+    "MARSEC Directive 105-4",
+    "cranes",
+    "People's Republic of China",
+    "80"
    ],
    "excerpt": 0,
-   "note": "PRC adds US firms to UEL April 2025"
+   "note": "MARSEC Directive 105-4 PRC cranes"
   },
   {
-   "id": "F021",
-   "idx": 2,
-   "url": "http://english.scio.gov.cn/m/pressroom/2025-01/15/content_117665049.html",
+   "id": "F023",
+   "idx": 1,
+   "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-aug-25-2025/",
    "grep": [
-    "unreliable entit",
-    "Lockheed",
-    "Anduril",
-    "Taiwan",
-    "arms"
+    "600,000",
+    "students",
+    "Chinese"
    ],
    "excerpt": 0,
-   "note": "PRC adds 7 US firms Jan 2025"
+   "note": "Trump Aug 2025: welcome 600,000 Chinese students"
   }
  ]
 }

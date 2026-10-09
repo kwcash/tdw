@@ -1,0 +1,241 @@
+[
+ {
+  "id": "F022",
+  "idx": 0,
+  "url": "https://www.info.gov.hk/gia/general/202512/15/P2025121500629.htm",
+  "grep": [
+   "15 December 2025",
+   "collude",
+   "seditious",
+   "Lai Chee-ying"
+  ],
+  "excerpt": 0,
+  "note": "Lai convicted Dec 15 2025: collusion + sedition"
+ },
+ {
+  "id": "F022",
+  "idx": 1,
+  "url": "https://www.info.gov.hk/gia/general/202602/09/P2026020900687.htm",
+  "grep": [
+   "sentenc",
+   "Lai Chee-ying",
+   "20 years",
+   "9 February"
+  ],
+  "excerpt": 0,
+  "note": "Lai sentenced Feb 9 2026"
+ },
+ {
+  "id": "F023",
+  "idx": 0,
+  "url": "https://www.state.gov/briefings/department-press-briefing-may-29-2025",
+  "grep": [
+   "revoke",
+   "Chinese Communist Party",
+   "critical fields",
+   "Chinese students"
+  ],
+  "excerpt": 0,
+  "note": "Rubio May 2025 visa revocation for CCP-linked or critical-field students"
+ },
+ {
+  "id": "F023",
+  "idx": 2,
+  "url": "https://opendoorsdata.org/annual-release/international-students/",
+  "grep": [
+   "277,398",
+   "2023/24",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "277,398 mainland students 2023/24"
+ },
+ {
+  "id": "F024",
+  "idx": 0,
+  "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00017F.htm",
+  "grep": [
+   "China",
+   "Iran",
+   "North Korea",
+   "Russia",
+   "real property",
+   "designated country"
+  ],
+  "excerpt": 0,
+  "note": "Texas SB 17 2025 land purchase restriction"
+ },
+ {
+  "id": "F024",
+  "idx": 1,
+  "url": "https://www.courtlistener.com/docket/67412885/shen-v-simpson/",
+  "grep": [
+   "Shen",
+   "Simpson",
+   "SB 264",
+   "Florida",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "Florida 2023 law federal litigation"
+ },
+ {
+  "id": "F024",
+  "idx": 2,
+  "url": "https://www.usda.gov/about-usda/news/press-releases/2025/07/08/farm-security-national-security-trump-administration-takes-bold-action-elevate-american-agriculture",
+  "grep": [
+   "National Farm Security Action Plan",
+   "July 8",
+   "farmland",
+   "foreign adversar"
+  ],
+  "excerpt": 0,
+  "note": "USDA farm security action plan July 2025"
+ },
+ {
+  "id": "F027",
+  "idx": 0,
+  "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
+  "grep": [
+   "Volt Typhoon",
+   "February 7, 2024",
+   "pre-position",
+   "critical infrastructure",
+   "at least five years"
+  ],
+  "excerpt": 0,
+  "note": "CISA NSA FBI Volt Typhoon advisory Feb 7 2024"
+ },
+ {
+  "id": "F027",
+  "idx": 2,
+  "url": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques",
+  "grep": [
+   "Guam",
+   "May 24",
+   "2023",
+   "Volt Typhoon"
+  ],
+  "excerpt": 0,
+  "note": "Microsoft May 2023 Volt Typhoon Guam"
+ },
+ {
+  "id": "F030",
+  "idx": 1,
+  "url": "https://www.ai.gov/action-plan",
+  "grep": [
+   "talking points",
+   "censorship",
+   "CAISI",
+   "People's Republic of China",
+   "frontier models"
+  ],
+  "excerpt": 0,
+  "note": "AI Action Plan July 2025: evaluate PRC models for CCP talking points"
+ },
+ {
+  "id": "F030",
+  "idx": 2,
+  "url": "https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks",
+  "grep": [
+   "DeepSeek",
+   "September 30, 2025",
+   "CAISI",
+   "censorship"
+  ],
+  "excerpt": 0,
+  "note": "CAISI DeepSeek evaluation 2025"
+ },
+ {
+  "id": "F033",
+  "idx": 0,
+  "url": "https://www.kinmen.gov.tw/en/News_Content.aspx?n=9A3902C9F2F1C945&sms=4BCC795D7C63BD97&s=0599EDBA46C7FFCD",
+  "grep": [
+   "August",
+   "2018",
+   "water",
+   "Fujian",
+   "pipeline"
+  ],
+  "excerpt": 0,
+  "note": "Kinmen water from Fujian since Aug 2018"
+ },
+ {
+  "id": "F033",
+  "idx": 0,
+  "url": "https://english.news.cn/20250813/54bc89feaae2410e9e01eb2260ccea0e/c.html",
+  "grep": [
+   "2018",
+   "Kinmen",
+   "Fujian",
+   "water"
+  ],
+  "excerpt": 0,
+  "note": "Xinhua: Fujian-Kinmen water since 2018"
+ },
+ {
+  "id": "F035",
+  "idx": 0,
+  "url": "https://www.tsmc.com/static/abouttsmcaz/index.htm",
+  "grep": [
+   "N4",
+   "Q4 2024",
+   "volume production",
+   "Arizona"
+  ],
+  "excerpt": 0,
+  "note": "TSMC Arizona volume production late 2024"
+ },
+ {
+  "id": "F036",
+  "idx": 0,
+  "url": "https://homeland.house.gov/2024/09/12/new-investigation-by-house-homeland-select-committee-on-the-ccp-finds-potential-chinese-threats-to-u-s-port-infrastructure-security/",
+  "grep": [
+   "80 percent",
+   "80%",
+   "cellular modems",
+   "ZPMC",
+   "September 12"
+  ],
+  "excerpt": 0,
+  "note": "Joint House report Sept 12 2024: ZPMC ~80%, modems"
+ },
+ {
+  "id": "F036",
+  "idx": 1,
+  "url": "https://bidenwhitehouse.archives.gov/briefing-room/press-briefings/2024/02/21/on-the-record-press-call-on-the-biden-harris-administration-initiative-to-bolster-the-cybersecurity-of-u-s-ports/",
+  "grep": [
+   "$20 billion",
+   "cranes",
+   "executive order",
+   "invest"
+  ],
+  "excerpt": 0,
+  "note": "Feb 2024 executive order funded American crane production?"
+ },
+ {
+  "id": "F036",
+  "idx": 1,
+  "url": "https://www.federalregister.gov/documents/2024/02/23/2024-03822/issuance-of-maritime-security-marsec-directive-105-4-cyber-risk-management-actions-for-ship-to-shore",
+  "grep": [
+   "MARSEC Directive 105-4",
+   "cranes",
+   "People's Republic of China",
+   "80"
+  ],
+  "excerpt": 0,
+  "note": "MARSEC Directive 105-4 PRC cranes"
+ },
+ {
+  "id": "F023",
+  "idx": 1,
+  "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-aug-25-2025/",
+  "grep": [
+   "600,000",
+   "students",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "Trump Aug 2025: welcome 600,000 Chinese students"
+ }
+]
