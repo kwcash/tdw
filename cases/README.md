@@ -55,11 +55,24 @@ python3 -I tools/validate.py --strict   # warnings fail too (use at launch)
 python3 -I tools/build.py               # write build/content.json for the game
 python3 -I tools/build.py --sources     # also write build/sources.json: every URL and the cases citing it
 python3 -I tools/build.py --verify PATH # rebuild and compare to an existing content.json
-python3 -I tools/test_validate.py       # negative tests: the validator catches 11 kinds of break
+
 ```
 
 `build.py --verify` against the original game `content.json` passes: the 220
 files rebuild it exactly, so the game is unchanged by this move.
+
+## Sourcing pass
+
+```bash
+python3 -I tools/claims.py export --kind futures --status unsourced > review/futures-unsourced.csv
+# fill verdict (supported | partial | unsupported | contradicted), add_label, add_url
+python3 -I tools/claims.py apply review/futures-unsourced.csv --dry-run
+```
+
+`review/futures-unsourced.csv` has one row per sentence of the 78 unsourced
+future scenarios (239 sentences, 194 of them checkable). `apply` links supported
+claims, tags unsupported ones `[NEEDED: source]`, never sets `verified`, and
+refuses to run if a sentence changed since export.
 
 ## Adding or changing a case
 
