@@ -1,0 +1,100 @@
+[
+ {
+  "id": "F045",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Indictment, United States v. Sun and Hu (E.D.N.Y. 24-cr-346)",
+   "CourtListener docket, United States v. Sun"
+  ],
+  "url": [
+   "https://www.justice.gov/d9/2024-09/sun_and_hu_indictment.pdf",
+   "https://www.courtlistener.com/docket/69124149/united-states-v-sun/"
+  ],
+  "notes": "Indictment: 'SUN also acted as an undisclosed agent of the Government of the PRC and the CCP', including 'blocking representatives of the Taiwanese government from having access to the NYS governor's office'; Sun held posts under 'Politician-1' and 'Politician-2' (unnamed in the indictment). Court docket: indictment filed Aug 26, 2024, redacted version and order to unseal Sept 3, 2024. The grand jury returned it in August; it became public in September. CourtListener is a non-profit archive of the federal docket, not a court."
+ },
+ {
+  "id": "F046",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Amended complaint, United States v. Lu Jianwang and Chen Jinping (E.D.N.Y. 23-mj-265)",
+   "CourtListener docket, United States v. Jianwang"
+  ],
+  "url": [
+   "https://www.justice.gov/d9/2023-04/police_station_-_23-mj-265_amended_complaint_signed.pdf",
+   "https://www.courtlistener.com/docket/67672835/united-states-v-jianwang/"
+  ],
+  "notes": "Complaint: Lu and Chen 'operated an unofficial police station in New York City on behalf of the Fuzhou Municipal Public Security Bureau', a provincial branch of the Ministry of Public Security; docket: complaint entered 04/05/2023, order to unseal Apr 17, 2023. Docket also shows a plea hearing for Chen Jinping set for Dec 18, 2024 under a plea agreement to Count One; that he pleaded guilty that month rests on DOJ's release, which the runner could not read."
+ },
+ {
+  "id": "F080",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Amended complaint, United States v. Lu Jianwang and Chen Jinping (E.D.N.Y. 23-mj-265)",
+   "CourtListener docket, United States v. Jianwang"
+  ],
+  "url": [
+   "https://www.justice.gov/d9/2023-04/police_station_-_23-mj-265_amended_complaint_signed.pdf",
+   "https://www.courtlistener.com/docket/67672835/united-states-v-jianwang/"
+  ],
+  "notes": "Same court record as F046[0]. The complaint names the Fuzhou Municipal Public Security Bureau of the PRC Ministry of Public Security, a state agency; 'for the Party' is this case's shorthand for the PRC state. Complaint unsealed April 17, 2023."
+ },
+ {
+  "id": "F019",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "CourtListener docket, United States v. Jian (E.D. Mich. 2:25-mj-30353)",
+  "url": "https://www.courtlistener.com/docket/70445712/united-states-v-jian/",
+  "notes": "Docket: complaint sworn June 2, 2025 against Yunqing Jian and Zunyong Liu, orders to seal and unseal entered June 3, 2025, initial appearance June 3. The docket text does not name the fungus or the University of Michigan; the DOJ release (usao-edmi) was unreadable to the runner. 'Charged on June 3' is the unsealing date; the complaint is dated June 2."
+ },
+ {
+  "id": "F047",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Office of Legal Counsel opinion on the TikTok USDS Joint Venture (July 16, 2026)",
+  "url": "https://www.justice.gov/olc/media/1453136/dl",
+  "notes": "OLC (50 Op. O.L.C., July 16, 2026): 'In January 2026, the divestiture was finalized, and the TikTok USDS Joint Venture was established in the manner contemplated by the President's Executive Order.' The January 22 date is not in the text read. Executive Order 14352 was signed September 25, 2025."
+ },
+ {
+  "id": "F052",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Federal Register: Notice of Availability of Designation of Chinese Military Companies (June 10, 2026)",
+  "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+  "notes": "Federal Register API: published 2026-06-10; the Deputy Secretary of Defense determined the listed entities qualify as Chinese military companies. The count of 65 additions was not read; the list would need comparing with the January 2025 list."
+ },
+ {
+  "id": "F099",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "Federal Register: Commerce notice of proposed rulemaking on IaaS customer identification (Jan 29, 2024)",
+  "url": "https://www.federalregister.gov/documents/2024/01/29/2024-01580/taking-additional-steps-to-address-the-national-emergency-with-respect-to-significant-malicious",
+  "notes": "Federal Register API: proposed rule published 2024-01-29; it implements the January 19, 2021 executive order directing Commerce to propose regulations 'requiring U.S. Infrastructure as a Service (IaaS) providers of IaaS products to verify the identity of their foreign customers'. Proposed, not final; the page does not say whether it was finalized."
+ },
+ {
+  "id": "F061",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "",
+  "url": "",
+  "notes": "PCLOB's FY2027 budget justification (February 2026): 'At present, the Board has one Member and is operating in sub-quorum status.' That confirms the lack of a quorum into 2026. Link unchanged (the January 2025 PCLOB statement)."
+ },
+ {
+  "id": "F061",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "PCLOB FY2027 Congressional Budget Justification (February 2026)",
+  "url": "https://documents.pclob.gov/prod/Documents/FinancialReport/1084/FY27%20PCLOB%20CBJ%20-%20Final%20-%202.13.26.pdf",
+  "notes": "PCLOB budget justification lists 'Board Member Beth A. Williams, appointed to a term ending January 29, 2026', with a note that FY2023 NDAA section 6801 extends a Member's term up to one year after expiry at the Member's election. So she serves past her term from January 29, 2026. Status after February 2026 is not covered."
+ },
+ {
+  "id": "F092",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "",
+  "url": "",
+  "notes": "Same PCLOB FY2027 budget justification: one Member, sub-quorum status (February 2026). Link unchanged."
+ }
+]

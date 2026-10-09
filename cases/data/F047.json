@@ -32,7 +32,7 @@
   "gap": "Governance",
   "text": {
     "brief": "An auditor working for the TikTok USDS joint venture reads a commit log in 2030. The recommendation model that runs America's feed took its last major update from engineers in Beijing.",
-    "record": "The TikTok USDS joint venture closed on January 22, 2026. Oracle, Silver Lake and MGX hold 15 percent each, and ByteDance holds 19.9 percent ([TikTok](https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc?lang=en)). Oracle oversees the algorithm. The joint venture licenses ByteDance's recommendation technology.",
+    "record": "The TikTok USDS joint venture closed on January 22, 2026 ([Office of Legal Counsel opinion on the TikTok USDS Joint Venture (July 16, 2026)](https://www.justice.gov/olc/media/1453136/dl)). Oracle, Silver Lake and MGX hold 15 percent each, and ByteDance holds 19.9 percent ([TikTok](https://newsroom.tiktok.com/announcement-from-the-new-tiktok-usds-joint-venture-llc?lang=en)). Oracle oversees the algorithm. The joint venture licenses ByteDance's recommendation technology.",
     "reading": "The Party keeps the part that matters and sheds the part that draws fire. A new owner sits on top, and the model that decides what American users see still learns from the old one. This is Stratagem 21, slough off the cicada's golden shell.",
     "coreEvent": "An independent audit finds ByteDance engineers still updating the joint venture's recommendation model in 2030.",
     "gapText": "Architecture Governance. The deal settled ownership and left no owner of the objective function.",

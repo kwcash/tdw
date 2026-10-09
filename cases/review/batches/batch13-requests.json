@@ -1,0 +1,121 @@
+[
+ {
+  "id": "F083",
+  "idx": 1,
+  "url": "https://www.chinalawtranslate.com/en/generative-ai-interim/",
+  "grep": [
+   "core socialist values",
+   "August 15, 2023",
+   "Article 4"
+  ],
+  "excerpt": 0,
+  "note": "English translation of the Interim Measures (translator site)",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F083",
+  "idx": 1,
+  "url": "https://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm",
+  "grep": [
+   "社会主义核心价值观",
+   "2023年8月15日",
+   "第四条"
+  ],
+  "excerpt": 0,
+  "note": "CAC publication of the Interim Measures (Chinese)",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F097",
+  "idx": 1,
+  "url": "https://english.news.cn/20260120/4031eed2e3bf4b1fab497273eb7641e2/c.html",
+  "grep": [
+   "50 launches",
+   "54 percent",
+   "2025"
+  ],
+  "excerpt": 0,
+  "note": "Xinhua: commercial space sector 50 launches in 2025",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F097",
+  "idx": 1,
+  "url": "https://spacenews.com/china-caps-record-year-for-orbital-launches-with-tianhui-7-and-shijian-29-technology-test-missions/",
+  "grep": [
+   "92",
+   "record",
+   "2025"
+  ],
+  "excerpt": 0,
+  "note": "SpaceNews: 92 orbital launches in 2025",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F062",
+  "idx": 3,
+  "url": "https://appropriations.house.gov/news/press-releases/committee-releases-fy26-commerce-justice-science-and-related-agencies",
+  "grep": [
+   "China Initiative",
+   "September",
+   "2025"
+  ],
+  "excerpt": 0,
+  "note": "House Appropriations FY26 CJS release",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F062",
+  "idx": 3,
+  "url": "https://docs.house.gov/billsthisweek/20260105/Division%20A%20Commerce%20Justice%20Science.pdf",
+  "grep": [
+   "China Initiative",
+   "Initiative"
+  ],
+  "excerpt": 0,
+  "note": "Enacted-text CJS division (Jan 2026): is the China Initiative language there?",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F035",
+  "idx": 0,
+  "url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000024/tsmcexpandinvestmentintheu.htm",
+  "grep": [
+   "volume production",
+   "Arizona",
+   "late 2024"
+  ],
+  "excerpt": 0,
+  "note": "TSMC announcement filed with the SEC (Form 6-K), 2025",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ },
+ {
+  "id": "F072",
+  "idx": 0,
+  "url": "https://esc.nccu.edu.tw/eng/PageDoc?fid=7800",
+  "grep": [
+   "62.0",
+   "2025/12",
+   "Taiwanese"
+  ],
+  "excerpt": 0,
+  "note": "NCCU ESC English identity page",
+  "grep_width": 240,
+  "grep_limit": 3,
+  "ua": "browser"
+ }
+]

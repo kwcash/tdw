@@ -31,11 +31,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A governor's trade office signs a memorandum in 2030 with a mainland province covering agriculture, education and \"smart city\" data. The province's partner office sits inside the United Front Work Department.",
-    "record": "The Justice Department charged a former aide to two New York governors in September 2024 with acting as an undisclosed agent of the People's Republic. The United Front Work Department runs the Party's outreach to foreign officials and communities. State governments carry no general duty to register agents of foreign principals.",
+    "record": "The Justice Department charged a former aide to two New York governors in September 2024 with acting as an undisclosed agent of the People's Republic ([Indictment, United States v. Sun and Hu (E.D.N.Y. 24-cr-346)](https://www.justice.gov/d9/2024-09/sun_and_hu_indictment.pdf); [CourtListener docket, United States v. Sun](https://www.courtlistener.com/docket/69124149/united-states-v-sun/)). The United Front Work Department runs the Party's outreach to foreign officials and communities. State governments carry no general duty to register agents of foreign principals.",
     "reading": "The Party courts the parts of American government that federal law watches least. Trade missions, donations and sister-state pacts build friends inside governors' offices, and over time the friends shape decisions from inside. This is Stratagem 25, replace the beams with rotten timbers.",
     "coreEvent": "A state official faces charges for acting as an undisclosed agent of the People's Republic before 2034.",
     "gapText": "Architecture Governance. Federal law registers foreign agents in Washington and stops at the statehouse door.",
     "fix": "Extend disclosure to state government and publish every foreign memorandum. Sunlight works better than bans."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

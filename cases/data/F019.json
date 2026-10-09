@@ -31,11 +31,11 @@
   "gap": "Principles",
   "text": {
     "brief": "In July 2027 an extension agent in North Dakota sends a blighted wheat sample to a university lab. The strain matches nothing on file, and by evening a talk-radio host is naming the lab's foreign graduate students.",
-    "record": "The Justice Department charged two researchers from the People's Republic on June 3, 2025 with smuggling the crop fungus Fusarium graminearum into a University of Michigan lab. The fungus causes head blight in wheat and barley. American growers already lose heavily to it in wet years.",
+    "record": "The Justice Department charged two researchers from the People's Republic on June 3, 2025 with smuggling the crop fungus Fusarium graminearum into a University of Michigan lab ([CourtListener docket, United States v. Jian (E.D. Mich. 2:25-mj-30353)](https://www.courtlistener.com/docket/70445712/united-states-v-jian/)). The fungus causes head blight in wheat and barley. American growers already lose heavily to it in wet years.",
     "reading": "The Party does not need to release anything. A strange outbreak and a documented smuggling case invite Americans to suspect every Chinese researcher. Each blanket ban then proves the Party's story that the United States despises Chinese people, and the talent the ban expels goes home. This is Stratagem 9, watch the fire from across the river.",
     "coreEvent": "An American state enacts a law barring citizens of the People's Republic from agricultural or university research posts before 2029.",
     "gapText": "Architecture Principles. Suspicion attaches to nationality when the evidence attaches to conduct.",
     "fix": "Test the strain, trace the conduct and prosecute the person who broke the law. Keep nationality out of the charge sheet."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

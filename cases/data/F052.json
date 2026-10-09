@@ -31,11 +31,11 @@
   "gap": "Governance",
   "text": {
     "brief": "A partner at a Washington law firm files a lobbying registration in 2030 for a company on the Pentagon's list of Chinese military companies. The filing goes under the lobbying law and not the foreign agents law, so it reveals almost nothing.",
-    "record": "The Foreign Agents Registration Act exempts agents who register under the Lobbying Disclosure Act when they represent foreign commercial interests. The catalog's FARA gap shows that exemption at work from 2017 to 2024. The Defense Department added 65 companies to its list in June 2026.",
+    "record": "The Foreign Agents Registration Act exempts agents who register under the Lobbying Disclosure Act when they represent foreign commercial interests. The catalog's FARA gap shows that exemption at work from 2017 to 2024. The Defense Department added 65 companies to its list in June 2026 ([Federal Register: Notice of Availability of Designation of Chinese Military Companies (June 10, 2026)](https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies)).",
     "reading": "The Party does not need its own lobbyists. It hires the host's best firms, and the exemption lets them argue for listed companies with light disclosure. American talent does the work, and American law hides the client. This is Stratagem 3, kill with a borrowed knife.",
     "coreEvent": "Congress closes the lobbying exemption for companies controlled by foreign adversaries before 2033.",
     "gapText": "Architecture Governance. The law sorts foreign agents on the paperwork they choose, not on who controls the client.",
     "fix": "Require full foreign-agent registration for anyone who represents a company controlled by a foreign adversary."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }
