@@ -28,10 +28,10 @@
   "gap": "Principles",
   "text": {
     "brief": "In May 1892 the Chinese Consolidated Benevolent Association in San Francisco told Chinese residents across the country not to register under a new federal law that required them to carry a certificate of residence.",
-    "record": "The Chinese Exclusion Act of May 6, 1882, suspended the entry of Chinese laborers and barred Chinese immigrants from naturalization. The Geary Act of 1892 extended the ban and required every Chinese laborer to carry a certificate of residence on pain of arrest and deportation. The Supreme Court upheld the certificate in Fong Yue Ting v. United States in 1893, and Congress repealed exclusion only in December 1943.",
+    "record": "The Chinese Exclusion Act of May 6, 1882, suspended the entry of Chinese laborers and barred Chinese immigrants from naturalization ([National Archives, Milestone Documents: Chinese Exclusion Act (1882)](https://www.archives.gov/milestone-documents/chinese-exclusion-act)). The Geary Act of 1892 extended the ban and required every Chinese laborer to carry a certificate of residence on pain of arrest and deportation ([Fong Yue Ting v. United States, 149 U.S. 698 (1893)](https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf); [State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts](https://history.state.gov/milestones/1866-1898/chinese-immigration)). The Supreme Court upheld the certificate in Fong Yue Ting v. United States in 1893, and Congress repealed exclusion only in December 1943 ([Fong Yue Ting v. United States, 149 U.S. 698 (1893)](https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf); [State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts](https://history.state.gov/milestones/1866-1898/chinese-immigration)).",
     "reading": "Exclusion turned ancestry into a legal category and built a federal registry to enforce it. That registry was the Data and Surveillance domain, and the United States ran it on its own residents. The guardrail in Military-Civil Fusion answers it directly. Ancestry is not loyalty.",
     "gapText": "Architecture Principles. The defender wrote ancestry into law, so the registry answered a question no conduct had raised.",
     "fix": "Screen conduct and institutions, never ancestry, the rule the book's guardrails already hold."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

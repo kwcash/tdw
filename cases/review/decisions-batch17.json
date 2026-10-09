@@ -1,0 +1,168 @@
+[
+ {
+  "id": "C031",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "U.S. Senate: \"Communists in Government Service,\" McCarthy Says",
+   "U.S. Senate: Joseph R. McCarthy, a featured biography"
+  ],
+  "url": [
+   "https://www.senate.gov/about/powers-procedures/investigations/mccarthy-hearings/communists-in-government-service.htm",
+   "https://www.senate.gov/senators/FeaturedBios/Featured_Bio_McCarthy.htm"
+  ],
+  "notes": "Senate Historical Office: McCarthy's Lincoln Day address in Wheeling, West Virginia, on February 9, 1950, blamed failures in American foreign policy on Communist infiltration of the government. That the speech opened a campaign against the diplomats who had reported on the Party is the case's reading; the pages say 'State Department' only in the speech context."
+ },
+ {
+  "id": "C031",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "Truman Library: photograph of John Paton Davies after dismissal by Secretary Dulles",
+   "ADST oral history: The State Department Under the Red Scare (secondary)"
+  ],
+  "url": [
+   "https://www.trumanlibrary.gov/photograph-records/99-305",
+   "https://adst.org/2020/11/the-state-department-under-the-red-scare-mccarthys-campaign/"
+  ],
+  "notes": "Truman Library (National Archives): Davies was dismissed by Dulles on a five-member security board's finding; the page gives the date November 5, 1954. ADST (a diplomatic oral-history project, secondary) places Vincent and Davies among the China Hands who were forced out. Clubb's departure and whether disloyalty was ever proved are not covered; FRUS 1952-54 Vol. I document 200 discusses the State Department's loyalty-security boards."
+ },
+ {
+  "id": "C031",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Service v. Dulles, 354 U.S. 363 (1957), Cornell Legal Information Institute",
+  "url": "https://www.law.cornell.edu/supremecourt/text/354/363",
+  "notes": "Cornell Law School's reproduction of the US Reports opinion (secondary host): Service v. Dulles, decided June 17, 1957. The Court's holding for Service is the premise of 'restored'; 'after the department had lost its China specialists' is the author's characterization. The CourtListener copy returned no text."
+ },
+ {
+  "id": "C032",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "The Agrarian Reform Law of the People's Republic of China (Foreign Languages Press booklet, scan hosted by an academic)",
+  "url": "https://michaelharrison.org.uk/wp-content/uploads/2020/06/Agrarian-Reform-Law-ofthe-PRC-1950.pdf",
+  "notes": "Scan of the official English edition of the law and its implementing decisions. The date June 30, 1950 was not found in the OCR text read, and 'carried the base-area practice across the mainland' is the case's reading. A private website hosts the scan."
+ },
+ {
+  "id": "C033",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS 1950, Vol. VII (Korea), Document 609",
+  "url": "https://history.state.gov/historicaldocuments/frus1950v07/d609",
+  "notes": "FRUS: a record of the Indian ambassador K. M. Panikkar's warnings relayed from Zhou Enlai about crossing the 38th parallel. That Washington discounted the message and when US troops crossed in early October are not in the snippets."
+ },
+ {
+  "id": "C033",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "National Archives blog: Blue Star Turned to Gold (the loss of Ens. Jesse L. Brown)",
+  "url": "https://rediscovering-black-history.blogs.archives.gov/2023/03/23/blue-star-turned-to-gold-the-loss-of-ens-jesse-l-brown/",
+  "notes": "National Archives blog (agency, secondary): mentions the Chinese intervention, the Yalu and Chosin, and says the first Chinese were encountered by November 1, 1950. The name Chinese People's Volunteers and the October 19 date are not clear from the snippets; a helper's lead, unverified, is that an Army history gives October 14 to 20 for the crossings. The Army history page failed DNS."
+ },
+ {
+  "id": "C034",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "The China Project: China's five-anti campaign of 1952 (media)",
+   "CCP Central Committee directive on the Five-Anti campaign, January 26, 1952 (translation hosted on commonprogram.science)"
+  ],
+  "url": [
+   "https://thechinaproject.com/2022/01/05/chinas-five-anti-campaign-of-1952/",
+   "https://commonprogram.science/documents/wufan%20cities.pdf"
+  ],
+  "notes": "Media account: the campaign was announced in January 1952 and targeted bribery, theft of state property, tax evasion, cheating on government contracts and theft of economic intelligence. The directive (an English translation hosted on a documents site) lists the five illegal acts: bribery, tax evasion, embezzlement and fraud of state property, cheating on government contracts, stealing economic intelligence."
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Only a Britannica page was offered and it returned HTTP 403. The 1956 joint ownership and Rong Yiren's founding of CITIC in 1979 are unchecked."
+ },
+ {
+  "id": "C035",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Wilson Center, CWIHP Working Paper 78: Leitenberg, China's False Allegations of the Use of Biological Weapons by the United States during the Korean War",
+  "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/cwihp_wp_78_china_false_bw_allegations_korean_war_march_16.pdf",
+  "notes": "Scholarly working paper from a Congress-chartered center (secondary): North Korea's foreign minister (Pak Hon Yong) made the charges in February 1952 and Zhou Enlai supported them in a public statement, expanding them on March 8. 'Infected insects' fits the paper's description of the objects allegedly dropped."
+ },
+ {
+  "id": "C035",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Wilson Center, CWIHP Working Paper 78 (Leitenberg)",
+  "url": "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/cwihp_wp_78_china_false_bw_allegations_korean_war_march_16.pdf",
+  "notes": "The working paper describes the International Scientific Commission (Joseph Needham and others) organized by the World Peace Council and the confessions of captured airmen. The September 1952 endorsement date was not in the snippets, and the CIA reading-room document did not contain 'International Scientific Commission'."
+ },
+ {
+  "id": "C035",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Wilson Center, Cold War International History Project Bulletin 11 (1998): new evidence on the allegations",
+   "Wilson Center blog: Soviet, Chinese and North Korean false allegations of biological weapons use"
+  ],
+  "url": [
+   "https://www.wilsoncenter.org/sites/default/files/media/documents/publication/CWIHPBulletin11_p4.pdf",
+   "https://wilsoncenter.org/blog-post/soviet-chinese-and-north-korean-false-allegations-biological-weapons-use-during-korean"
+  ],
+  "notes": "CWIHP Bulletin 11 prints documents from the Russian Presidential Archive, found by a Japanese reporter, showing the Soviet leadership concluded the allegations were false after Stalin's death; the Wilson Center blog states the charges were false and that China and North Korea still officially maintain them. Secondary scholarship presenting the documents."
+ },
+ {
+  "id": "C036",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "CIA: Extraordinary Fidelity: Two CIA Officers Imprisoned in China",
+   "CIA Center for the Study of Intelligence: Two CIA Prisoners in China"
+  ],
+  "url": [
+   "https://www.cia.gov/stories/story/extraordinary-fidelity-two-cia-officers-imprisoned-in-china/",
+   "https://www.cia.gov/resources/csi/static/Two-CIA-Prisoners-China.pdf"
+  ],
+  "notes": "CIA's own account (an agency telling its officers' story): a military tribunal convicted Downey, 'the Chief Culprit', and Fecteau, 'the Assistant Culprit', with life imprisonment and twenty years. The announcement date, November 1954, was not matched in the text read ('November 23, 1954' was not found)."
+ },
+ {
+  "id": "C036",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "CIA: Extraordinary Fidelity: Two CIA Officers Imprisoned in China",
+  "url": "https://www.cia.gov/stories/story/extraordinary-fidelity-two-cia-officers-imprisoned-in-china/",
+  "notes": "CIA's account of the imprisonment and release of the two officers; the dates December 1971 and March 1973 and Nixon's acknowledgement were not matched in the text read. The Library of Congress item returned HTTP 403."
+ },
+ {
+  "id": "C037",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "National Archives, Prologue: Revisiting Korea (myths about the war)",
+  "url": "https://archives.gov/publications/prologue/2002/summer/korean-myths-2.html",
+  "notes": "National Archives article discussing the dispute over non-repatriation of prisoners in the armistice talks. The figures (about 21,000 Chinese prisoners, about two thirds refusing) were not in the snippets; the Army history chapter returned HTTP 403."
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Army Center of Military History pages returned HTTP 403 and a DNS failure. The length of the repatriation dispute and the January 1954 arrival of about 14,000 prisoners in Taiwan are unchecked."
+ },
+ {
+  "id": "C038",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The National Archives article did not contain indoctrination, brainwash or confess in the text read; the Army history page returned HTTP 403."
+ },
+ {
+  "id": "C038",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Only a Britannica Kids page was offered and it returned HTTP 403. Edward Hunter's 1950 use of 'brainwashing' is unchecked."
+ }
+]

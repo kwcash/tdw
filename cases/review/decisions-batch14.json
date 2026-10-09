@@ -1,0 +1,136 @@
+[
+ {
+  "id": "C001",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "State Department Office of the Historian: China, country summary",
+  "url": "https://history.state.gov/countries/china/summary",
+  "notes": "Official: US-Chinese relations were 'private and largely commercial' and Sino-American trade grew 'under the Chinese system that limited foreign traders' access to a single port' (Guangzhou/Canton). The year 1757 is not on the page."
+ },
+ {
+  "id": "C001",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "National Park Service essay: Imperialism and Migration (Asian American theme study)",
+  "url": "https://www.nps.gov/articles/upload/01-Essay-1-Imperialism-and-Migration.pdf",
+  "notes": "US government essay: about a year after the Treaty of Paris (1783) the Empress of China 'slipped out of New York's harbor for Canton' in 1784, carrying ginseng. The February date and the exchange for tea and silk were not in the snippets read. The Founders Online page for Jay's papers returned no text."
+ },
+ {
+  "id": "C002",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "MIT Visualizing Cultures essay (university site) discusses the Terranova incident of 1821 but neither 'strangled' nor 'October' was in the text read; the USC US-China Exchange page failed TLS verification. The execution by strangulation in October 1821 is unchecked."
+ },
+ {
+  "id": "C003",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Library of Congress finding aid: Russell & Co., Guangzhou, records",
+   "Connecticut College exhibit essay: Delano's Dealings (secondary)"
+  ],
+  "url": [
+   "https://lcweb2.loc.gov/service/mss/eadxmlmss/eadpdfmss/2010/ms010075.pdf",
+   "https://omeka.conncoll.edu/exhibits/show/gold-journal/essays/delano"
+  ],
+  "notes": "LOC finding aid: Russell & Company, a trading house founded in 1819 in Canton, with the opium trade among its business. The college essay (secondary) says Warren Delano II made his fortune with Russell & Co. in the opium trade. 'Turkish opium', the minority share and Lin's confinement of the foreign community in spring 1839 were not in the text read; the Delano page names Warren Delano II, so check the sentence's 'Jr.'"
+ },
+ {
+  "id": "C003",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "State Department Office of the Historian: Treaty of Wangxia (1844) milestone",
+  "url": "https://history.state.gov/milestones/1830-1860/china-1",
+  "notes": "Official: the Treaty of Nanjing (1842) was the Anglo-Chinese treaty that the 1844 US treaty 'replicated'. 'Five ports' and the Americans' neutral-carrier trade were not in the text read."
+ },
+ {
+  "id": "C004",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Foreign Relations of the United States, 1943, China: treaty relinquishing extraterritorial rights",
+  "url": "https://history.state.gov/historicaldocuments/frus1943China/comp12",
+  "notes": "FRUS (Office of the Historian): 'Treaty between the United States and China for relinquishment of extraterritorial rights in China', dated January 11, 1943."
+ },
+ {
+  "id": "C005",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "House Executive Document 36-88: Chinese coolie trade (1860, via govinfo)",
+   "National Archives, Prologue: the Voyage of the Kate Hooper"
+  ],
+  "url": [
+   "https://www.govinfo.gov/app/details/SERIALSET-01057_00_00-004-0088-0000",
+   "https://www.archives.gov/publications/prologue/2001/summer/coolie-ship-kate-hooper-1"
+  ],
+  "notes": "The 1860 House document is the President's message transmitting information on the coolie trade; the govinfo link is a details page, so its text was not read. The National Archives article describes a coolie ship's 174-day voyage with a death of its captain and a mutiny, and recruitment by deception. That American diplomats reported kidnapping, deaths and mutinies is the likely content of the House document but was not confirmed from its text."
+ },
+ {
+  "id": "C007",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Treaty with China (Burlingame-Seward), 16 Stat. 739 (govinfo)",
+  "url": "https://www.govinfo.gov/link/statute/16/740",
+  "notes": "Statutes at Large text of the additional articles to the Treaty of 1858, signed by Secretary of State William H. Seward and Anson Burlingame, dated July 28, 1868."
+ },
+ {
+  "id": "C007",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "House History, Art and Archives: Anson Burlingame",
+   "State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts"
+  ],
+  "url": [
+   "https://history.house.gov/People/Listing/B/BURLINGAME,-Anson-(B001112)/",
+   "https://history.state.gov/milestones/1866-1898/chinese-immigration"
+  ],
+  "notes": "House biography: Burlingame appointed in 1867 as China's ambassador to negotiate treaties, died in St. Petersburg in 1870. State Department milestone: Congress passed the Chinese Exclusion Act in 1882 (fourteen years after 1868), suspending Chinese labor immigration."
+ },
+ {
+  "id": "C008",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Yale News: first Chinese student to graduate from an American university",
+   "Connecticut Humanities: Yung Wing's Dream, the Chinese Educational Mission"
+  ],
+  "url": [
+   "https://news.yale.edu/2025/10/01/first-chinese-student-graduate-american-university",
+   "https://connecticuthistory.org/yung-wings-dream-the-chinese-educational-mission-1872-1881/"
+  ],
+  "notes": "University and state-humanities pages (secondary): Yung Wing graduated from Yale College in 1854, the first Chinese student to graduate from an American university; the mission brought 120 Chinese students, starting in 1872. The 1875 end of the shipments and Yung Wing 'persuading the court' were not in the text read; the Yale archives finding aid returned no text."
+ },
+ {
+  "id": "C008",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "Yung Wing, My Life in China and America (1909; Project Gutenberg)",
+   "Connecticut Humanities: Yung Wing's Dream"
+  ],
+  "url": [
+   "https://www.gutenberg.org/files/54635/54635-h/54635-h.htm",
+   "https://connecticuthistory.org/yung-wings-dream-the-chinese-educational-mission-1872-1881/"
+  ],
+  "notes": "Primary and partisan: Yung Wing's own memoir says his application to the State Department for admission to West Point and Annapolis was answered 'There is no room provided for Chinese students.' The 1878 date and the commissioner's warning are not in the snippets; the Connecticut page says the students 'became more and more Americanized', which prompted the recall."
+ },
+ {
+  "id": "C008",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Connecticut Humanities: Yung Wing's Dream",
+  "url": "https://connecticuthistory.org/yung-wings-dream-the-chinese-educational-mission-1872-1881/",
+  "notes": "Secondary: the Chinese government recalled the students in 1881. Zhan Tianyou building the Beijing-Zhangjiakou railway without foreign engineers was not on any page read (the Library of Congress items returned HTTP 403)."
+ },
+ {
+  "id": "C009",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "National Archives, Milestone Documents: Chinese Exclusion Act (1882)",
+  "url": "https://www.archives.gov/milestone-documents/chinese-exclusion-act",
+  "notes": "Official text: 'An Act to execute certain treaty stipulations relating to Chinese', approved May 6, 1882; the coming of Chinese laborers suspended for ten years; section 14: no state or US court shall admit Chinese to citizenship."
+ }
+]

@@ -27,10 +27,10 @@
   "gap": "Application",
   "text": {
     "brief": "In January 1954 twenty-one American prisoners of war in Korea refused to come home and chose to go to the People's Republic.",
-    "record": "Captors had subjected American prisoners to daily indoctrination and pressure to inform on one another, and some prisoners signed confessions. The journalist Edward Hunter had popularized the word brainwashing in 1950. Dwight Eisenhower signed Executive Order 10631 on August 17, 1955, and gave every service member the Code of Conduct.",
+    "record": "Captors had subjected American prisoners to daily indoctrination and pressure to inform on one another, and some prisoners signed confessions. The journalist Edward Hunter had popularized the word brainwashing in 1950 ([FRUS 1952-54, Vol. II Part 2, Document 298](https://history.state.gov/historicaldocuments/frus1952-54v02p2/d298)). Dwight Eisenhower signed Executive Order 10631 on August 17, 1955, and gave every service member the Code of Conduct ([Federal Register: Executive Order 10631](https://www.federalregister.gov/executive-order/10631); [National Archives, Office of the Federal Register: Executive Order 10631](https://www.archives.gov/federal-register/codification/executive-order/10631.html)).",
     "reading": "The Code turned a lesson learned in the camps into a design rule every service member carries into captivity. Robert Lifton's study of 1961 drew its criteria of totalism from people who went through the same method.",
     "gapText": "Application Architecture. No routine prepared prisoners for captors who ran a psychological campaign rather than an interrogation.",
     "fix": "Train every service member and every traveler at risk in the captor's method before capture, the job survival schools now do."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

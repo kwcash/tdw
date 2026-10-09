@@ -29,10 +29,10 @@
   "gap": "Principles",
   "text": {
     "brief": "On January 10, 1946, George Marshall watched Nationalist and Communist negotiators announce a ceasefire in Chongqing.",
-    "record": "Marshall set up truce teams of American, Nationalist and Communist officers to police the ceasefire. Fighting resumed in Manchuria that spring as both sides raced for the ground the Soviets left. Marshall left China in January 1947 and blamed extremists on both sides for the failure.",
+    "record": "Marshall set up truce teams of American, Nationalist and Communist officers to police the ceasefire. Fighting resumed in Manchuria that spring as both sides raced for the ground the Soviets left. Marshall left China in January 1947 and blamed extremists on both sides for the failure ([FRUS 1946, Vol. X, Document 366 (Marshall statement, January 1947)](https://history.state.gov/historicaldocuments/frus1946v10/d366)).",
     "reading": "A truce with no enforcement served the side with the longer horizon, and the Party used the pause to build its forces in the northeast. Both sides broke the truce, and the record supports no claim that either one alone destroyed it.",
     "gapText": "Architecture Principles. The mediator had verification teams and no power to act on what they found.",
     "fix": "Tie any ceasefire to verification with consequences agreed before signature, or treat it as a pause the patient side will use."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

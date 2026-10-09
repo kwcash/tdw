@@ -28,10 +28,10 @@
   "gap": "Principles",
   "text": {
     "brief": "On December 17, 1943, Franklin Roosevelt signed the law that ended sixty-one years of Chinese exclusion.",
-    "record": "Japanese propaganda cited the exclusion laws to tell Chinese audiences that their American ally despised them. Roosevelt asked Congress to repeal the laws as a war measure, and the Magnuson Act allowed Chinese immigrants to naturalize. It set a quota of 105 entries a year.",
+    "record": "Japanese propaganda cited the exclusion laws to tell Chinese audiences that their American ally despised them. Roosevelt asked Congress to repeal the laws as a war measure, and the Magnuson Act allowed Chinese immigrants to naturalize. It set a quota of 105 entries a year ([Senate Report 35, 78th Congress: Repealing the Chinese Exclusion Laws and to Establish Quotas (govinfo)](https://www.govinfo.gov/content/pkg/SERIALSET-10757_00_00-094-0535-0000/pdf/SERIALSET-10757_00_00-094-0535-0000.pdf)).",
     "reading": "Repeal answered an enemy's information operation by removing its true material. The move echoes Emancipation, a coherence move that closed a door the adversary had pried open, and it cost little because the quota stayed token.",
     "gapText": "Architecture Principles. The ally's own statute supplied the enemy's best propaganda for a decade.",
     "fix": "Audit the statute book for grievances an adversary can quote, and fix them before the adversary uses them."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

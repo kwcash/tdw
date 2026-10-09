@@ -29,10 +29,10 @@
   "gap": "Data",
   "text": {
     "brief": "In December 1955 Everett Drumright, the American consul general in Hong Kong, reported to Washington that fraud ran through Chinese immigration and that the Party could exploit it.",
-    "record": "The Immigration and Naturalization Service offered Chinese Americans who had entered on false papers a chance to confess in exchange for possible adjustment of status. A confession had to name every relative in the same paper family, and the service used the files against people it suspected of leftist politics. About thirty thousand people confessed before the program ended in 1965.",
+    "record": "The Immigration and Naturalization Service offered Chinese Americans who had entered on false papers a chance to confess in exchange for possible adjustment of status. A confession had to name every relative in the same paper family, and the service used the files against people it suspected of leftist politics. About thirty thousand people confessed before the program ended in 1965 ([National Park Service essay: Cold War and Asian American communities](https://www.nps.gov/articles/upload/11-Essay-11-Cold-War.pdf)).",
     "reading": "The program traded legal status for a registry of families, the Data and Surveillance domain that the United States ran on its own residents. The Party runs the same join today through relatives at home, and the guardrail answers both.",
     "gapText": "Data Architecture. The defender collected family data under an amnesty and then used it for political screening.",
     "fix": "Bind any amnesty's data to its stated purpose by law, so a relief program never becomes a surveillance program."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

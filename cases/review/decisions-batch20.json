@@ -1,0 +1,140 @@
+[
+ {
+  "id": "C055",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both offered pages were Britannica and returned HTTP 403. Wei Jingsheng's fifteen-year sentence and its October date are unchecked."
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The FRUS document offered (1977-80 Vol. XIII, Document 279) mentions the Democracy Wall and Wei Jingsheng only in a footnote; the December move to a park and the registration rule were not in the text read; Britannica returned HTTP 403."
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both offered pages were Britannica and returned HTTP 403. The 1980 constitutional change on big-character posters is unchecked; the PRC constitution's text or a National People's Congress document is the primary source."
+ },
+ {
+  "id": "C056",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "State Department treaty record: China (24-227), Agreement on Cooperation in Science and Technology (signed January 31, 1979)",
+   "State Department Office of the Historian: China, People's Republic of: Visits by Foreign Leaders"
+  ],
+  "url": [
+   "https://www.state.gov/china-24-227",
+   "https://history.state.gov/departmenthistory/visits/china"
+  ],
+  "notes": "Official treaty record: the Agreement on Cooperation in Science and Technology of January 31, 1979, as amended and extended. Department history: Vice Premier Deng Xiaoping visited, met President Carter and attended a state dinner in 1979. That the photograph ran on front pages is media content not checked here."
+ },
+ {
+  "id": "C056",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "State Department treaty record: China (24-227), extension of the Science and Technology Agreement (exchange of notes February 22 and 27, 2024)",
+  "url": "https://www.state.gov/china-24-227",
+  "notes": "Official: the agreement was extended by exchange of notes on February 22 and 27, 2024, entering into force February 27, 2024. The August 2023 renewal date (a helper's lead: August 27, 2023) was not found in the text read."
+ },
+ {
+  "id": "C056",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "State Department: Amendment and Extension of the U.S.-PRC Science and Technology Agreement (December 13, 2024)",
+   "State Department treaty record: China (24-1213), protocol amending and extending the agreement"
+  ],
+  "url": [
+   "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+   "https://www.state.gov/china-24-1213"
+  ],
+  "notes": "State Department: on December 13, 2024 the United States and the PRC signed a protocol amending and extending the agreement; 'The amended Agreement covers only basic research', and the page discusses critical and emerging technologies as excluded. Earlier short extensions: the February 2024 exchange of notes."
+ },
+ {
+  "id": "C057",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "State Department Office of the Historian: Normalization of relations with China, 1977-1980 (milestone)",
+  "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+  "notes": "Official milestone: Deng Xiaoping's visit in January 1979, and Carter 'unsuccessfully attempted to dissuade Deng' from military action against Vietnam. The February 17 crossing, the twelve-day gap and the March withdrawal are not in the text read; the Wilson Center digital archive failed DNS."
+ },
+ {
+  "id": "C058",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "State Department Office of the Historian: Normalization of relations with China, 1977-1980 (milestone)",
+  "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+  "notes": "Official: the Joint Communique recognized the PRC as the sole legal government of China, effective January 1, 1979, with the US ending diplomatic relations with Taiwan. The one-year notice for the Mutual Defense Treaty was not in the text read (the treaty's Article X is the primary source)."
+ },
+ {
+  "id": "C058",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FRUS 1977-80, Vol. XIII, Document 235 (editorial note on the Taiwan legislation)",
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+  "notes": "FRUS: a House-Senate conference committee wrote the final version of the 'Taiwan omnibus legislation', and Carter's aides noted that 'Congress has obviously added its own touches'. That the administration's bill said little about security is not in the snippets; the milestone says the Taiwan Relations Act provides arms 'of a defensive character'."
+ },
+ {
+  "id": "C058",
+  "idx": 4,
+  "verdict": "supported",
+  "label": "FRUS 1977-80, Vol. XIII, Document 235 (editorial note)",
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+  "notes": "FRUS editorial note citing Congress and the Nation: 'The House adopted it on March 28 by a vote of 339-50, and the Senate did so on March 29 by an 85-4 vote.'"
+ },
+ {
+  "id": "C059",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Reagan Library: United States-China Joint Communique on United States Arms Sales to Taiwan, August 17, 1982",
+   "American Institute in Taiwan: U.S.-PRC Joint Communique (1982)"
+  ],
+  "url": [
+   "https://www.reaganlibrary.gov/archives/speech/united-states-china-joint-communique-united-states-arms-sales-taiwan",
+   "https://www.ait.org.tw/u-s-prc-joint-communique-1982/"
+  ],
+  "notes": "The communique's text: the United States 'intends to reduce gradually its sale of arms to Taiwan, leading, over a period of time, to a final resolution.' Issued August 17, 1982."
+ },
+ {
+  "id": "C059",
+  "idx": 4,
+  "verdict": "contradicted",
+  "label": "CRS In Focus IF11665: President Reagan's Six Assurances to Taiwan (October 8, 2020)",
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11665/IF11665.1.pdf",
+  "notes": "CRS (October 8, 2020): 'The Trump Administration in 2019 declassified an internal presidential memorandum Reagan issued on the day of the third communique's release.' So the memorandum was declassified in 2019, not 2020. The Six Assurances cables were a separate release (the AIT page 'Declassified Cables' is undated in the text read); the case may conflate the two. Text left unchanged for the author."
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CourtListener opinion page returned no text (HTTP 202) and the DOJ blog page returned an empty page; neither mentioned Vincent Chin or Ebens in the text read."
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CourtListener and DOJ pages returned no text. A helper's lead, unverified: the Sixth Circuit opinion gives the fine as $3,720, not $3,000."
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CourtListener and DOJ pages returned no text. The 1984 conviction, the reversal and the 1987 acquittal are unchecked."
+ }
+]

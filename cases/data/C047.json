@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On September 29, 1964, Secretary of State Dean Rusk told the press that the People's Republic might explode its first nuclear device in the near future.",
-    "record": "American intelligence had tracked the test site at Lop Nur and judged a test likely within months. The Party detonated its first device on October 16, 1964, two days after Nikita Khrushchev lost power in Moscow. Lyndon Johnson's statement that day said the test came as no surprise to the government.",
+    "record": "American intelligence had tracked the test site at Lop Nur and judged a test likely within months. The Party detonated its first device on October 16, 1964, two days after Nikita Khrushchev lost power in Moscow ([FRUS 1964-68, Vol. XXX: summary (the first Chinese nuclear explosion)](https://history.state.gov/historicaldocuments/frus1964-68v30/summary); [Statement by the President on the First Chinese Nuclear Device (American Presidency Project)](https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device)). Lyndon Johnson's statement that day said the test came as no surprise to the government ([Statement by the President on the First Chinese Nuclear Device, October 16, 1964 (American Presidency Project, UC Santa Barbara)](https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device)).",
     "reading": "The defender decided before the event and spent the surprise in advance, so the test landed as a confirmed forecast rather than a shock. Pre-announcement is the Phase principle run against a psychological effect.",
     "gapText": "Data Architecture. The warning held because an owner mapped it to a public statement before the event.",
     "fix": "Pre-announce what intelligence judges likely when surprise is the adversary's aim, as the United States did again before Russia's invasion of Ukraine in 2022."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

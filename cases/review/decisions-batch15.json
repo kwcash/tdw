@@ -1,0 +1,158 @@
+[
+ {
+  "id": "C009",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Fong Yue Ting v. United States, 149 U.S. 698 (1893)",
+   "State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts"
+  ],
+  "url": [
+   "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
+   "https://history.state.gov/milestones/1866-1898/chinese-immigration"
+  ],
+  "notes": "US Reports text describes the 1892 act's certificate of residence, the 'credible white witness' rule and deportation of laborers without a certificate. The State Department milestone says Congress voted in 1892 to extend exclusion for ten years (the Geary Act)."
+ },
+ {
+  "id": "C009",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Fong Yue Ting v. United States, 149 U.S. 698 (1893)",
+   "State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts"
+  ],
+  "url": [
+   "https://tile.loc.gov/storage-services/service/ll/usrep/usrep149/usrep149698/usrep149698.pdf",
+   "https://history.state.gov/milestones/1866-1898/chinese-immigration"
+  ],
+  "notes": "US Reports: the decision in the Fong Yue Ting cases (argued with Wong Quan and Lee Joe) is dated May 15, 1893 and upholds the act's certificate requirement. State Department: 'The Chinese Exclusion Acts were not repealed until 1943'. The month, December, was not on either page; the USCIS page on Edward Bing Kan did not contain 'December 1943' either."
+ },
+ {
+  "id": "C010",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Yick Wo v. Hopkins, 118 U.S. 356 (1886)",
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep118/usrep118356/usrep118356.pdf",
+  "notes": "US Reports text: the Fourteenth Amendment guarantees reach 'all persons within the territorial jurisdiction' and the Court condemns discrimination founded on race 'if it makes arbitrary and unjust discriminations'. The exact phrase 'evil eye and an unequal hand' and the date May 10, 1886 were not found in the OCR text read (OCR may have broken the phrase); search the opinion."
+ },
+ {
+  "id": "C011",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "United States v. Wong Kim Ark, 169 U.S. 649 (1898)",
+  "url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep169/usrep169649/usrep169649.pdf",
+  "notes": "US Reports text carries the date March 28, 1898 and holds that a child born in the United States to Chinese parents domiciled here 'becomes at the time of his birth a citizen of the United States'."
+ },
+ {
+  "id": "C012",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS 1905: Papers relating to the foreign relations of the United States (boycott dispatches)",
+  "url": "https://history.state.gov/historicaldocuments/frus1905/d221",
+  "notes": "FRUS documents the boycott of American goods in July 1905 (a dispatch of July 26, 1905) and a chapter on the Chinese boycott. That Shanghai merchants' guilds called it in May is not in the text read. A helper's lead, unverified: Minister Rockhill's dispatch says the boycott was set for about August 1, which would contradict 'began that July'; check the dispatch."
+ },
+ {
+  "id": "C012",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "FRUS 1905, Document 237: Rockhill to the Secretary of State, September 27, 1905",
+   "Theodore Roosevelt Center: Imperial edict of August 31, 1905"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1905/d237",
+   "https://www.theodorerooseveltcenter.org/digital-library/o282597/"
+  ],
+  "notes": "FRUS: Rockhill's dispatch of September 27, 1905 refers to the imperial edict, and quotes the Shanghai taotai declaring the boycott will continue 'notwithstanding' it. The Roosevelt Center (university-run archive) lists the Imperial edict of August 31, 1905. American pressure as the cause and the fading in 1906 are not on these pages."
+ },
+ {
+  "id": "C013",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "FRUS 1908, Document 54: Department of State to Minister Rockhill, May 27, 1908",
+   "House Document 1275, 60th Congress: Remission of a portion of the Chinese indemnity (govinfo)"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1908/d54",
+   "https://www.govinfo.gov/content/pkg/SERIALSET-05557_00_00-031-1275-0000/pdf/SERIALSET-05557_00_00-031-1275-0000.pdf"
+  ],
+  "notes": "FRUS: the Department encloses 'an act of Congress authorizing the return to' China of part of the indemnity exacted for the Boxer disturbances (May 27, 1908). The House document is the President's message transmitting the executive order and correspondence on the remission. The amount was not found in the text read (a helper's lead: the official figure is $10,785,286, which rounds to about $11 million); the Qing court's agreement to spend it on students bound for the US is not confirmed in these snippets."
+ },
+ {
+  "id": "C013",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Tsinghua University, Department of Sociology: History",
+  "url": "https://www.soc.tsinghua.edu.cn/en/About/History.htm",
+  "notes": "Tsinghua's own history: Tsinghua Xuetang was formally opened at Tsinghua Garden on the first day of the fourth lunar month of the third year of Xuantong (1911; April 29). The first scholars sailing in 1909 and the indemnity link were not in the text read."
+ },
+ {
+  "id": "C014",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "University of Hawaii at Manoa: Sun Yat-sen handout (Chinese Studies)",
+  "url": "https://manoa.hawaii.edu/chinesestudies/wp-content/uploads/2025/03/SYS-handout.pdf",
+  "notes": "University handout: Sun's Honolulu visits and fundraising for the revolution, linked to the Chee Kong Society (Zhigongtang, a Hongmen secret society) that was established to overthrow the Qing. The 1904 initiation date is not pinned down in the text read. Secondary."
+ },
+ {
+  "id": "C014",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Xinhua (Chinese): CPC Central Committee plan to deepen reform of Party and state institutions, March 21, 2018",
+   "Xinhua (English): CPC releases plan on deepening reform of Party and state institutions"
+  ],
+  "url": [
+   "https://www.xinhuanet.com/politics/2018-03/21/c_1122570517.htm",
+   "https://www.xinhuanet.com/english/2018-03/21/c_137055471.htm"
+  ],
+  "notes": "The plan itself, as published by Xinhua: the United Front Work Department takes over overseas Chinese affairs ('中央统战部统一管理侨务工作'), and the State Council's Overseas Chinese Affairs Office is not retained as a separate body. A PRC statement of its own decision."
+ },
+ {
+  "id": "C015",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS, Paris Peace Conference 1919, Vol. V, Document 32: meeting of April 30, 1919",
+  "url": "https://history.state.gov/historicaldocuments/frus1919Parisv05/d32",
+  "notes": "FRUS minutes of the 30 April 1919 meeting with Wilson, Clemenceau, Lloyd George and the Japanese delegates on Shantung: Japan states it would hand back the peninsula in full sovereignty to China 'retaining only the economic privileges granted to Germany'. Wilson's assent is the meeting's outcome and was not in the snippet."
+ },
+ {
+  "id": "C015",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "FRUS, Paris Peace Conference 1919, Vol. VI, Document 75",
+   "FRUS 1919, Vol. I, Document 344"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1919Parisv06/d75",
+   "https://history.state.gov/historicaldocuments/frus1919v01/d344"
+  ],
+  "notes": "FRUS: Clemenceau reports a letter from the Chinese Delegation saying they would sign the Treaty of Peace only with a reservation on Shantung; a Reinsch dispatch describes the popular indignation over the settlement. These show the dispute; the refusal to sign on June 28 is not in the text read."
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Only a Britannica page was offered and it returned HTTP 403. The Karakhan Manifesto's July 1919 date and its reaching Chinese readers in March 1920 are unchecked."
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Britannica returned HTTP 403; the only readable page was Wikipedia's article on the Second CCP Congress, which is not used as a source here. It mentions a resolution on participation in the Comintern (1922). Needs a primary document (the Congress's resolutions) or a scholarly source."
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The State Department milestone on the Chinese revolution covers the 1926-27 Northern Expedition and the Nationalist-Communist split but has no 'purge' or April 12 date; Britannica returned HTTP 403. The April 12, 1927 date and 'thousands killed' are unchecked."
+ }
+]

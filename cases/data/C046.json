@@ -28,10 +28,10 @@
   "gap": "Principles",
   "text": {
     "brief": "On May 23, 1962, John Kennedy told reporters that the United States would admit several thousand refugees who had fled the mainland into Hong Kong.",
-    "record": "Famine and a loosened border sent tens of thousands of people from Guangdong into Hong Kong in April and May 1962, and Hong Kong's government returned most of them. Kennedy used the attorney general's parole power to admit refugees outside the quota system. About fifteen thousand arrived over the next three years.",
+    "record": "Famine and a loosened border sent tens of thousands of people from Guangdong into Hong Kong in April and May 1962, and Hong Kong's government returned most of them ([FRUS 1961-63, Vol. XXV, Document 318: U.S. delegation report to the UNHCR Executive Committee](https://history.state.gov/historicaldocuments/frus1961-63v25/d318)). Kennedy used the attorney general's parole power to admit refugees outside the quota system. About fifteen thousand arrived over the next three years.",
     "reading": "The parole answered a famine the Party would not admit with a door the quota law would not open. The executive shielded people by decision because the statute had no rule for them.",
     "gapText": "Architecture Principles. The quota system had no category for people fleeing a famine their government denied.",
     "fix": "Keep a standing refugee authority with published criteria, so rescue does not depend on a press conference."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

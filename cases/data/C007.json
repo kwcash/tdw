@@ -28,10 +28,10 @@
   "gap": "Principles",
   "text": {
     "brief": "In November 1867 the Qing court appointed Anson Burlingame, who had recently finished six years as the American minister in Peking, to lead its first diplomatic mission to the West.",
-    "record": "Burlingame negotiated a treaty with Secretary of State William Seward that the two sides signed on July 28, 1868. It recognized the right of free migration and promised reciprocal access to schools, and it withheld naturalization. Congress reversed the migration promise within fourteen years, and Burlingame died on the mission in St. Petersburg in 1870.",
+    "record": "Burlingame negotiated a treaty with Secretary of State William Seward that the two sides signed on July 28, 1868 ([Treaty with China (Burlingame-Seward), 16 Stat. 739 (govinfo)](https://www.govinfo.gov/link/statute/16/740)). It recognized the right of free migration and promised reciprocal access to schools, and it withheld naturalization. Congress reversed the migration promise within fourteen years, and Burlingame died on the mission in St. Petersburg in 1870 ([House History, Art and Archives: Anson Burlingame](https://history.house.gov/People/Listing/B/BURLINGAME,-Anson-%28B001112%29/); [State Department Office of the Historian: Chinese Immigration and the Chinese Exclusion Acts](https://history.state.gov/milestones/1866-1898/chinese-immigration)).",
     "reading": "The Qing court borrowed an American's credibility to speak for it in Washington, and the words landed because they were American words. The promise then failed on the American side, and every later government in China learned what an American guarantee on migration was worth.",
     "gapText": "Architecture Principles. A treaty principle bound the executive while Congress kept the power to repeal it by statute.",
     "fix": "Make treaty promises and domestic statute answer to the same architecture contract, so one branch cannot silently void the other's word."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

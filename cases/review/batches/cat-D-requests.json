@@ -1,0 +1,1817 @@
+[
+ {
+  "id": "C093",
+  "idx": 0,
+  "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_oct2009status.pdf",
+  "grep": [
+   "drywall",
+   "China",
+   "hurricane",
+   "Katrina",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CPSC Oct 2009 imported drywall status update (official)",
+  "ua": "browser"
+ },
+ {
+  "id": "C093",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-44.pdf",
+  "grep": [
+   "Katrina",
+   "Rita",
+   "shortage",
+   "drywall",
+   "Taishan"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 court opinion, background on post-hurricane Chinese drywall imports"
+ },
+ {
+  "id": "C093",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-116.pdf",
+  "grep": [
+   "248,000,000",
+   "Taishan",
+   "Settlement Agreement",
+   "Amorin"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 order on Taishan $248M settlement (court record); covers settlement half of sentence"
+ },
+ {
+  "id": "C093",
+  "idx": 3,
+  "url": "https://www.laed.uscourts.gov/case-information/mdl-mass-class-action/drywall",
+  "grep": [
+   "CNBM",
+   "Foreign Sovereign Immunities Act",
+   "Taishan",
+   "sovereign"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 court page, looking for CNBM FSIA ruling (immunity half of sentence)",
+  "ua": "browser"
+ },
+ {
+  "id": "C094",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/CHRG-111jhrg56161/pdf/CHRG-111jhrg56161.pdf",
+  "grep": [
+   "Google.cn",
+   "Google.com.hk",
+   "Hong Kong",
+   "uncensored",
+   "censor"
+  ],
+  "excerpt": 0,
+  "note": "House hearing Mar 2010, Google testimony on ending censorship and Hong Kong redirect"
+ },
+ {
+  "id": "C094",
+  "idx": 2,
+  "url": "https://www.washingtonpost.com/world/national-security/chinese-hackers-who-breached-google-gained-access-to-sensitive-data-us-officials-say/2013/05/20/51330428-be34-11e2-89c9-3be8095fe767_story.html",
+  "grep": [
+   "Google",
+   "surveillance targets",
+   "Chinese intelligence",
+   "database",
+   "wiretap"
+  ],
+  "excerpt": 0,
+  "note": "media only: Washington Post May 2013 (no primary source found)"
+ },
+ {
+  "id": "C095",
+  "idx": 0,
+  "url": "https://www.cecc.gov/publications/commission-analysis/beijing-court-sentences-liu-xiaobo-to-11-years",
+  "grep": [
+   "Liu Xiaobo",
+   "11 years",
+   "inciting subversion",
+   "Charter 08",
+   "Article 105"
+  ],
+  "excerpt": 0,
+  "note": "CECC (US congressional commission) analysis of Liu Xiaobo sentence",
+  "ua": "browser"
+ },
+ {
+  "id": "C095",
+  "idx": 0,
+  "url": "https://www.nobelprize.org/prizes/peace/2010/speedread/",
+  "grep": [
+   "Liu Xiaobo",
+   "Charter 08",
+   "11 years",
+   "subversion"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Nobel Foundation 2010 Peace Prize speed read"
+ },
+ {
+  "id": "C095",
+  "idx": 3,
+  "url": "https://www.nobelprize.org/prizes/peace/2010/xiaobo/facts/",
+  "grep": [
+   "Liu Xiaobo",
+   "13 July 2017",
+   "liver cancer",
+   "Shenyang"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Nobel Foundation biographical facts page"
+ },
+ {
+  "id": "C096",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/michigan-man-sentenced-48-months-attempting-spy-people-s-republic-china",
+  "grep": [
+   "Shriver",
+   "70,000",
+   "Foreign Service",
+   "clandestine"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Shriver sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C096",
+  "idx": 0,
+  "url": "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm",
+  "grep": [
+   "Shriver",
+   "70,000",
+   "Foreign Service",
+   "48 months"
+  ],
+  "excerpt": 0,
+  "note": "FBI Washington Field Office release on Shriver sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C096",
+  "idx": 2,
+  "url": "https://archives.fbi.gov/archives/washingtondc/press-releases/2010/wfo102210a.htm",
+  "grep": [
+   "Shriver",
+   "pleaded guilty",
+   "October 22, 2010",
+   "national defense information"
+  ],
+  "excerpt": 0,
+  "note": "FBI WFO release on Shriver guilty plea (Oct 2010)",
+  "ua": "browser"
+ },
+ {
+  "id": "C096",
+  "idx": 2,
+  "url": "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm",
+  "grep": [
+   "Shriver",
+   "48 months",
+   "January 21, 2011",
+   "sentenced"
+  ],
+  "excerpt": 0,
+  "note": "FBI WFO release on Shriver 48-month sentence (Jan 2011)",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 0,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/hearings/2012/CECC%20Hearing%20-%20Recent%20Developments%20and%20History%20of%20the%20Chen%20Guangcheng%20Case%20-%205.3.12.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "Linyi",
+   "forced abortions",
+   "sterilizations",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CECC hearing May 3, 2012 on Chen Guangcheng case (congressional record)",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "Linyi",
+   "forced abortion",
+   "sterilization",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 (May 29, 2012) on Chen case",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 1,
+  "url": "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+  "grep": [
+   "Chen Guangcheng",
+   "April 26",
+   "Embassy",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "State Dept background briefing on Chen Guangcheng (May 2012)",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 1,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "April 26",
+   "Embassy",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 timeline of embassy entry",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 2,
+  "url": "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+  "grep": [
+   "Chen",
+   "May 2",
+   "hospital",
+   "Embassy",
+   "family"
+  ],
+  "excerpt": 0,
+  "note": "State Dept background briefing on Chen leaving embassy May 2",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen",
+   "May 2",
+   "hospital",
+   "changed his mind",
+   "Embassy"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 on Chen leaving embassy and reversing within hours",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen",
+   "May 19",
+   "Newark",
+   "New York University"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 timeline of Chen arrival in Newark May 19",
+  "ua": "browser"
+ },
+ {
+  "id": "C097",
+  "idx": 3,
+  "url": "https://2009-2017.state.gov/r/pa/prs/ps/2012/05/189290.htm",
+  "grep": [
+   "Chen Guangcheng",
+   "New York",
+   "May 19",
+   "student"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on Chen Guangcheng (May 2012)",
+  "ua": "browser"
+ },
+ {
+  "id": "C098",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42784/R42784.88.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "fishing",
+   "Philippine",
+   "maritime surveillance"
+  ],
+  "excerpt": 0,
+  "note": "CRS report on China's actions in South and East China Seas (Scarborough 2012)",
+  "ua": "browser"
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42784/R42784.88.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "withdraw",
+   "June",
+   "Philippine"
+  ],
+  "excerpt": 0,
+  "note": "CRS report on China's actions in South and East China Seas (June 2012 withdrawal)",
+  "ua": "browser"
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "url": "https://congress.gov/116/meeting/house/110841/witnesses/HHRG-116-FA05-Bio-PolingG-20200630.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "withdrawal",
+   "mutual"
+  ],
+  "excerpt": 0,
+  "note": "think tank (CSIS) testimony in House record, mentions US-brokered mutual withdrawal attempt",
+  "ua": "browser"
+ },
+ {
+  "id": "C098",
+  "idx": 3,
+  "url": "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Press-Release-No-11-English.pdf",
+  "grep": [
+   "historic rights",
+   "nine-dash line",
+   "12 July 2016",
+   "no legal basis"
+  ],
+  "excerpt": 0,
+  "note": "PCA press release on South China Sea Arbitration Award"
+ },
+ {
+  "id": "C098",
+  "idx": 3,
+  "url": "https://pca-cpa.org/en/news/pca-press-release-the-south-china-sea-arbitration-the-republic-of-the-philippines-v-the-peoples-republic-of-china/",
+  "grep": [
+   "historic rights",
+   "nine-dash line",
+   "12 July 2016",
+   "Convention"
+  ],
+  "excerpt": 0,
+  "note": "PCA press release page, South China Sea Arbitration"
+ },
+ {
+  "id": "C099",
+  "idx": 1,
+  "url": "https://2009-2017.state.gov/secretary/remarks/2014/09/232026.htm",
+  "grep": [
+   "Ilham Tohti",
+   "life",
+   "separatism",
+   "Urumqi"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on conviction and sentencing of Ilham Tohti (Sept 2014)",
+  "ua": "browser"
+ },
+ {
+  "id": "C099",
+  "idx": 1,
+  "url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/ilham-tohti",
+  "grep": [
+   "Tohti",
+   "students",
+   "separatism",
+   "life",
+   "2014"
+  ],
+  "excerpt": 0,
+  "note": "USCIRF (US government commission) database entry, covers students",
+  "ua": "browser"
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.europarl.europa.eu/news/en/press-room/20191018IPR64639/ilham-tohti-awarded-the-2019-sakharov-prize",
+  "grep": [
+   "Ilham Tohti",
+   "Sakharov",
+   "2019",
+   "European Parliament"
+  ],
+  "excerpt": 0,
+  "note": "European Parliament press release, Sakharov Prize 2019",
+  "ua": "browser"
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.coe.int/en/web/portal/-/2019-vaclav-havel-prize-shared-by-ilham-tohti-and-the-youth-initiative-for-human-rights",
+  "grep": [
+   "Havel Prize",
+   "Ilham Tohti",
+   "2019",
+   "Youth Initiative for Human Rights"
+  ],
+  "excerpt": 0,
+  "note": "Council of Europe release, Vaclav Havel Prize 2019",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF10607/IF10607.6.pdf",
+  "grep": [
+   "Fiery Cross",
+   "Subi",
+   "Mischief",
+   "missiles",
+   "2018"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus on South China Sea disputes (Feb 2021); found via search, content unverified",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF10607/IF10607.12.pdf",
+  "grep": [
+   "Fiery Cross",
+   "Subi",
+   "Mischief",
+   "missiles",
+   "2018"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus on South China Sea disputes (Aug 2023); found via search, content unverified",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/two-chinese-hackers-associated-ministry-state-security-charged-global-computer-intrusion",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "Ministry of State Security",
+   "APT10",
+   "Tianjin"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on APT10 indictment (Dec 20, 2018)",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/press-release/file/1121706",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "APT10",
+   "Tianjin State Security Bureau"
+  ],
+  "excerpt": 0,
+  "note": "APT10 indictment (S.D.N.Y.) text",
+  "ua": "browser"
+ },
+ {
+  "id": "C101",
+  "idx": 3,
+  "url": "https://justice.gov/opa/file/816096/dl?inline=",
+  "grep": [
+   "Mo Hailong",
+   "Dabeinong",
+   "Kings Nower",
+   "DuPont Pioneer",
+   "Monsanto"
+  ],
+  "excerpt": 0,
+  "note": "Court filing 4:13-cr-00147 Doc 596 filed 01/27/16 (plea stage); content unverified",
+  "ua": "browser"
+ },
+ {
+  "id": "C101",
+  "idx": 3,
+  "url": "https://www.fbi.gov/news/stories/sentencing-in-corn-seed-intellectual-property-theft-case",
+  "grep": [
+   "Mo Hailong",
+   "36 months",
+   "October",
+   "DuPont Pioneer",
+   "Monsanto"
+  ],
+  "excerpt": 0,
+  "note": "FBI story on Mo Hailong sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 1,
+  "url": "https://justice.gov/opa/press-release/file/1506786/download",
+  "grep": [
+   "Wynn",
+   "October 2017",
+   "Sun Lijun",
+   "President",
+   "Broidy"
+  ],
+  "excerpt": 0,
+  "note": "DOJ complaint v. Wynn (D.D.C. 2022)",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 1,
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "grep": [
+   "Wynn",
+   "October 2017",
+   "Sun Lijun",
+   "President",
+   "register"
+  ],
+  "excerpt": 0,
+  "note": "D.C. Circuit opinion No. 22-5328 (June 2024)",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 2,
+  "url": "https://oig.justice.gov/news/press-release/elliott-broidy-pleads-guilty-back-channel-lobbying-campaign-drop-1mdb",
+  "grep": [
+   "Broidy",
+   "pleaded guilty",
+   "October 20, 2020",
+   "unregistered agent",
+   "1MDB"
+  ],
+  "excerpt": 0,
+  "note": "DOJ OIG release on Broidy guilty plea",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 2,
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-executive-grants-clemency-012021/",
+  "grep": [
+   "Elliott Broidy",
+   "full pardon",
+   "January 19, 2021",
+   "clemency"
+  ],
+  "excerpt": 0,
+  "note": "White House statement on clemency grants Jan 2021",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 3,
+  "url": "https://justice.gov/opa/press-release/file/1506786/download",
+  "grep": [
+   "Wynn",
+   "Foreign Agents Registration Act",
+   "register",
+   "complaint",
+   "Sun Lijun"
+  ],
+  "excerpt": 0,
+  "note": "DOJ complaint v. Wynn (2022)",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 3,
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "grep": [
+   "Wynn",
+   "Foreign Agents Registration Act",
+   "dismiss",
+   "register",
+   "McGoff"
+  ],
+  "excerpt": 0,
+  "note": "D.C. Circuit opinion No. 22-5328 affirming dismissal",
+  "ua": "browser"
+ },
+ {
+  "id": "C102",
+  "idx": 4,
+  "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/06/22-5328-2059847.pdf",
+  "grep": [
+   "Wynn",
+   "McGoff",
+   "June 14, 2024",
+   "no present duty to register",
+   "ceased"
+  ],
+  "excerpt": 0,
+  "note": "D.C. Circuit opinion No. 22-5328 (June 2024)",
+  "ua": "browser"
+ },
+ {
+  "id": "C103",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca6-22-04020/pdf/USCOURTS-ca6-22-04020-1.pdf",
+  "grep": [
+   "Xu Yanjun",
+   "Belgium",
+   "extradited",
+   "economic espionage",
+   "November 2021"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion No. 22-4020 (affirming Xu conviction)"
+ },
+ {
+  "id": "C103",
+  "idx": 2,
+  "url": "https://justice.gov/opa/pr/jury-convicts-chinese-intelligence-officer-espionage-crimes-attempting-steal-trade-secrets",
+  "grep": [
+   "Xu Yanjun",
+   "Belgium",
+   "jury",
+   "economic espionage",
+   "November 5, 2021"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Xu conviction (may return empty)",
+  "ua": "browser"
+ },
+ {
+  "id": "C103",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca6-22-04020/pdf/USCOURTS-ca6-22-04020-1.pdf",
+  "grep": [
+   "Xu Yanjun",
+   "240 months",
+   "sentenced",
+   "20 years",
+   "GE Aviation"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion No. 22-4020 on sentence"
+ },
+ {
+  "id": "C103",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/chinese-government-intelligence-officer-sentenced-20-years-prison-espionage-crimes-attempting",
+  "grep": [
+   "Xu Yanjun",
+   "20 years",
+   "GE Aviation",
+   "Ministry of State Security",
+   "November 16, 2022"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Xu sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C103",
+  "idx": 4,
+  "url": "https://www.justice.gov/archives/opa/pr/chinese-national-sentenced-eight-years-acting-within-united-states-unregistered-agent-people",
+  "grep": [
+   "Ji Chaoqun",
+   "Xu Yanjun",
+   "Army Reserve",
+   "2016",
+   "September 2022"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Ji Chaoqun sentencing (cites conviction, Xu direction)",
+  "ua": "browser"
+ },
+ {
+  "id": "C103",
+  "idx": 4,
+  "url": "https://justice.gov/opa/press-release/file/1096411/download",
+  "grep": [
+   "Ji Chaoqun",
+   "Xu",
+   "Army Reserve",
+   "2016",
+   "Ministry of State Security"
+  ],
+  "excerpt": 0,
+  "note": "Criminal complaint v. Ji Chaoqun (2018)",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/former-cia-officer-pleads-guilty-conspiracy-commit-espionage",
+  "grep": [
+   "Jerry Chun Shing Lee",
+   "Honolulu",
+   "August 2012",
+   "true names",
+   "2007"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Lee guilty plea (notebooks, Honolulu search)",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 0,
+  "url": "https://www.justice.gov/opa/press-release/file/1026646/dl",
+  "grep": [
+   "Lee",
+   "Honolulu",
+   "August 2012",
+   "true name",
+   "notebook"
+  ],
+  "excerpt": 0,
+  "note": "Criminal complaint affidavit v. Lee (Jan 2018)",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 2,
+  "url": "https://www.justice.gov/archives/opa/pr/former-cia-officer-arrested-retaining-classified-information",
+  "grep": [
+   "Jerry Chun Shing Lee",
+   "arrested",
+   "Kennedy",
+   "2018"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Lee arrest (Jan 2018)",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 2,
+  "url": "https://www.justice.gov/opa/press-release/file/1026646/dl",
+  "grep": [
+   "Lee",
+   "arrest",
+   "January 15, 2018",
+   "Eastern District of Virginia"
+  ],
+  "excerpt": 0,
+  "note": "Criminal complaint v. Lee, filed 01/13/18",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/former-cia-officer-sentenced-conspiracy-commit-espionage",
+  "grep": [
+   "Jerry Chun Shing Lee",
+   "19 years",
+   "conspiracy to deliver national defense information",
+   "November 22, 2019"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Lee sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C104",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/former-cia-officer-pleads-guilty-conspiracy-commit-espionage",
+  "grep": [
+   "Jerry Chun Shing Lee",
+   "pleaded guilty",
+   "national defense information",
+   "May 2019"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Lee guilty plea",
+  "ua": "browser"
+ },
+ {
+  "id": "C105",
+  "idx": 0,
+  "url": "https://2017-2021.commerce.gov/news/press-releases/2017/03/secretary-commerce-wilbur-l-ross-jr-announces-119-billion-penalty.html",
+  "grep": [
+   "ZTE",
+   "1.19 billion",
+   "Iran",
+   "North Korea"
+  ],
+  "excerpt": 0,
+  "note": "Commerce Dept release, $1.19B ZTE penalty (Mar 2017)",
+  "ua": "browser"
+ },
+ {
+  "id": "C105",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/zte-corporation-pleads-guilty-violating-us-sanctions-sending-us-origin-items-iran",
+  "grep": [
+   "ZTE",
+   "pleaded guilty",
+   "Iran",
+   "430,488,798"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on ZTE guilty plea",
+  "ua": "browser"
+ },
+ {
+  "id": "C105",
+  "idx": 3,
+  "url": "https://www.commerce.gov/news/press-releases/2018/06/secretary-ross-announces-14-billion-zte-settlement-zte-board-management",
+  "grep": [
+   "ZTE",
+   "$1 billion",
+   "$400 million",
+   "escrow",
+   "board"
+  ],
+  "excerpt": 0,
+  "note": "Commerce Dept release on June 2018 ZTE settlement; Senate/conference half of sentence not sourced",
+  "ua": "browser"
+ },
+ {
+  "id": "C105",
+  "idx": 3,
+  "url": "https://www.commerce.gov/news/press-releases/2018/07/commerce-department-lifts-ban-after-zte-deposits-final-tranche-14",
+  "grep": [
+   "ZTE",
+   "$1 billion",
+   "$400 million",
+   "escrow",
+   "Denied Persons List"
+  ],
+  "excerpt": 0,
+  "note": "Commerce Dept release July 2018 lifting ZTE ban",
+  "ua": "browser"
+ },
+ {
+  "id": "C106",
+  "idx": 1,
+  "url": "https://www.nber.org/system/files/working_papers/w25638/revisions/w25638.rev0.pdf",
+  "grep": [
+   "retaliat",
+   "Republican",
+   "counties",
+   "2016",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "NBER working paper (secondary) on 2018 tariffs and retaliation incidence"
+ },
+ {
+  "id": "C106",
+  "idx": 1,
+  "url": "https://www.nber.org/system/files/working_papers/w26434/w26434.pdf",
+  "grep": [
+   "retaliat",
+   "Republican",
+   "counties",
+   "2016",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "NBER working paper (secondary) on trade war and 2018 election"
+ },
+ {
+  "id": "C106",
+  "idx": 2,
+  "url": "https://crsreports.congress.gov/product/pdf/R/R45903/4",
+  "grep": [
+   "soybean",
+   "25%",
+   "2017",
+   "$3",
+   "$12"
+  ],
+  "excerpt": 0,
+  "note": "CRS R45903 on retaliatory tariffs and US agriculture; soybean export figures",
+  "ua": "browser"
+ },
+ {
+  "id": "C106",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R45310/R45310.7.pdf",
+  "grep": [
+   "soybean",
+   "25%",
+   "2017",
+   "$3",
+   "$12"
+  ],
+  "excerpt": 0,
+  "note": "CRS R45310 on USDA 2018 trade aid package",
+  "ua": "browser"
+ },
+ {
+  "id": "C106",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R45310/R45310.7.pdf",
+  "grep": [
+   "$12 billion",
+   "Market Facilitation Program",
+   "Commodity Credit Corporation",
+   "trade"
+  ],
+  "excerpt": 0,
+  "note": "CRS R45310 on USDA 2018 trade aid ($12B)",
+  "ua": "browser"
+ },
+ {
+  "id": "C106",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R45865/R45865.7.pdf",
+  "grep": [
+   "$16 billion",
+   "Market Facilitation Program",
+   "2019",
+   "trade aid"
+  ],
+  "excerpt": 0,
+  "note": "CRS R45865 on USDA 2019 trade aid ($16B; 12+16=28)",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 1,
+  "url": "https://www.canada.ca/en/global-affairs/news/2021/08/backgrounder--michael-spavor-verdict-pronouncement.html",
+  "grep": [
+   "Spavor",
+   "Kovrig",
+   "December 10, 2018",
+   "detained"
+  ],
+  "excerpt": 0,
+  "note": "Global Affairs Canada backgrounder on Spavor; 1,019 days figure not found in any source",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 1,
+  "url": "https://2021-2025.state.gov/sentencing-of-canadian-citizen-michael-spavor/",
+  "grep": [
+   "Spavor",
+   "Kovrig",
+   "December 2018",
+   "arbitrar"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on Spavor sentencing",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 2,
+  "url": "https://www.canada.ca/en/global-affairs/news/2021/08/backgrounder--michael-spavor-verdict-pronouncement.html",
+  "grep": [
+   "Spavor",
+   "Dandong",
+   "11 years",
+   "espionage",
+   "verdict"
+  ],
+  "excerpt": 0,
+  "note": "Global Affairs Canada backgrounder on Spavor verdict",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 2,
+  "url": "https://www.mfa.gov.cn/ce/ceca//eng/sgxw/t1898900.htm",
+  "grep": [
+   "Spavor",
+   "Dandong",
+   "11 years",
+   "state secrets"
+  ],
+  "excerpt": 0,
+  "note": "PRC embassy in Canada statement on the Spavor judgement",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/press-release/file/1436211/dl",
+  "grep": [
+   "Meng",
+   "deferred prosecution",
+   "Huawei",
+   "Financial Institution 1"
+  ],
+  "excerpt": 0,
+  "note": "Meng deferred prosecution agreement (E.D.N.Y.)",
+  "ua": "browser"
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/huawei-cfo-wanzhou-meng-admits-misleading-global-financial-institution",
+  "grep": [
+   "Meng Wanzhou",
+   "deferred prosecution",
+   "Huawei",
+   "September 24, 2021"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Meng DPA",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 0,
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-press-secretary-regarding-presidents-working-dinner-china/",
+  "grep": [
+   "Fentanyl",
+   "Controlled Substance",
+   "President Xi",
+   "maximum penalty"
+  ],
+  "excerpt": 0,
+  "note": "White House statement on Dec 1, 2018 Buenos Aires dinner",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 0,
+  "url": "https://trumpwhitehouse.archives.gov/briefings-statements/statement-chinas-class-scheduling-fentanyl/",
+  "grep": [
+   "fentanyl",
+   "class",
+   "May 1",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "White House/ONDCP statement on China class scheduling of fentanyl",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://www.cdc.gov/nchs/data/databriefs/db491.pdf",
+  "grep": [
+   "synthetic opioids",
+   "73,838",
+   "2022",
+   "fentanyl"
+  ],
+  "excerpt": 0,
+  "note": "CDC NCHS Data Brief 491 (2022 data)",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://www.cdc.gov/nchs/products/databriefs/db457.htm",
+  "grep": [
+   "synthetic opioids",
+   "70,601",
+   "2021",
+   "fentanyl"
+  ],
+  "excerpt": 0,
+  "note": "CDC NCHS Data Brief 457 (2021 data)",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 4,
+  "url": "https://2021-2025.state.gov/u-s-prc-counternarcotics-working-group-progress-on-illicit-synthetic-drugs-including-fentanyl/",
+  "grep": [
+   "Counternarcotics Working Group",
+   "Woodside",
+   "November 2023",
+   "precursor",
+   "PRC"
+  ],
+  "excerpt": 0,
+  "note": "State Dept page on US-PRC counternarcotics working group",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 4,
+  "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2024/12/Directors-Report-on-the-Decisive-Years-in-Americas-Overdose.pdf",
+  "grep": [
+   "Woodside",
+   "counternarcotics",
+   "precursor",
+   "November 2023"
+  ],
+  "excerpt": 0,
+  "note": "ONDCP Director's report (White House)",
+  "ua": "browser"
+ },
+ {
+  "id": "C108",
+  "idx": 5,
+  "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y4_2_C44-PURL-gpo224301/pdf/GOVPUB-Y4_2_C44-PURL-gpo224301.pdf",
+  "grep": [
+   "tax rebate",
+   "VAT",
+   "fentanyl analogues",
+   "precursor",
+   "Select Committee"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee on the CCP report, The CCP's Role in the Fentanyl Crisis (Apr 2024)"
+ },
+ {
+  "id": "C108",
+  "idx": 5,
+  "url": "https://chinaselectcommittee.house.gov/media/press-releases/select-committee-unveils-findings-ccps-role-american-fentanyl-epidemic-report",
+  "grep": [
+   "tax rebate",
+   "fentanyl",
+   "export",
+   "Select Committee"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee release on fentanyl report",
+  "ua": "browser"
+ },
+ {
+  "id": "C109",
+  "idx": 0,
+  "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+  "grep": [
+   "Jin",
+   "Company-1",
+   "terms of service",
+   "fabricated",
+   "Tiananmen"
+  ],
+  "excerpt": 0,
+  "note": "E.D.N.Y. criminal complaint v. Jin (2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C109",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/china-based-executive-us-telecommunications-company-charged-disrupting-video-meetings",
+  "grep": [
+   "Jin",
+   "terms of service",
+   "fabricated",
+   "Tiananmen",
+   "dissidents"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on charges v. Jin (Dec 18, 2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/archives/opa/pr/china-based-executive-us-telecommunications-company-charged-disrupting-video-meetings",
+  "grep": [
+   "Jin",
+   "charged",
+   "Tiananmen",
+   "December 18, 2020"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on charges v. Jin",
+  "ua": "browser"
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://fbi.gov/news/press-releases/china-based-executive-at-us-telecommunications-company-charged-with-disrupting-video-meetings-commemorating-tiananmen-square-massacre",
+  "grep": [
+   "Jin",
+   "charged",
+   "Tiananmen",
+   "December 18, 2020"
+  ],
+  "excerpt": 0,
+  "note": "FBI copy of DOJ release on charges v. Jin",
+  "ua": "browser"
+ },
+ {
+  "id": "C110",
+  "idx": 1,
+  "url": "https://2017-2021.state.gov/senior-state-department-officials-on-the-office-of-foreign-missions-designation-of-chinese-media-entities-as-foreign-missions/",
+  "grep": [
+   "Xinhua",
+   "CGTN",
+   "China Radio International",
+   "China Daily Distribution Corporation",
+   "foreign missions"
+  ],
+  "excerpt": 0,
+  "note": "State Dept briefing on Feb 2020 designation of five PRC media entities",
+  "ua": "browser"
+ },
+ {
+  "id": "C110",
+  "idx": 1,
+  "url": "https://2017-2021.state.gov/institution-of-a-personnel-cap-on-designated-prc-state-media-entities/index.html",
+  "grep": [
+   "personnel cap",
+   "Chinese citizens",
+   "March 2",
+   "Xinhua",
+   "100"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on March 2020 personnel cap",
+  "ua": "browser"
+ },
+ {
+  "id": "C110",
+  "idx": 2,
+  "url": "https://2017-2021.state.gov/chinese-action-against-journalists",
+  "grep": [
+   "New York Times",
+   "Wall Street Journal",
+   "Washington Post",
+   "Hong Kong",
+   "March 17"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on PRC action against journalists (Mar 2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C110",
+  "idx": 2,
+  "url": "https://www.fmprc.gov.cn/mfa_eng/xw/fyrbt/fyrbt/202405/t20240530_11349642.html",
+  "grep": [
+   "New York Times",
+   "Wall Street Journal",
+   "Washington Post",
+   "Hong Kong",
+   "Macao"
+  ],
+  "excerpt": 0,
+  "note": "PRC Foreign Ministry countermeasures statement (Mar 2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C111",
+  "idx": 2,
+  "url": "https://home.treasury.gov/news/press-releases/sm1073",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "Sun Jinlong",
+   "Peng Jiarui",
+   "serious human rights abuse"
+  ],
+  "excerpt": 0,
+  "note": "Treasury release on XPCC Global Magnitsky sanctions (July 31, 2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C111",
+  "idx": 2,
+  "url": "https://ofac.treasury.gov/recent-actions/20200731",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "Sun Jinlong",
+   "Peng Jiarui",
+   "GLOMAG"
+  ],
+  "excerpt": 0,
+  "note": "OFAC recent actions 7/31/2020",
+  "ua": "browser"
+ },
+ {
+  "id": "C111",
+  "idx": 3,
+  "url": "https://www.cbp.gov/newsroom/national-media-release/cbp-issues-detention-order-cotton-products-made-xinjiang-production",
+  "grep": [
+   "Xinjiang Production and Construction Corps",
+   "cotton",
+   "XPCC",
+   "detention order"
+  ],
+  "excerpt": 0,
+  "note": "CBP release on XPCC cotton detention order (Dec 2020)",
+  "ua": "browser"
+ },
+ {
+  "id": "C111",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R46631/R46631.6.pdf",
+  "grep": [
+   "XPCC",
+   "cotton",
+   "Xinjiang Production and Construction Corps",
+   "withhold release order"
+  ],
+  "excerpt": 0,
+  "note": "CRS R46631 on Section 307 and forced labor imports",
+  "ua": "browser"
+ },
+ {
+  "id": "C112",
+  "idx": 0,
+  "url": "https://fas.org/publication/china-is-building-a-second-nuclear-missile-silo-field/",
+  "grep": [
+   "Hami",
+   "110",
+   "silos",
+   "second"
+  ],
+  "excerpt": 0,
+  "note": "think tank (FAS): second silo field near Hami"
+ },
+ {
+  "id": "C112",
+  "idx": 0,
+  "url": "https://fas.org/publication/a-closer-look-at-chinas-missile-silo-construction/",
+  "grep": [
+   "Ordos",
+   "Hami",
+   "Yumen",
+   "silo"
+  ],
+  "excerpt": 0,
+  "note": "think tank (FAS): third field near Ordos"
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://media.defense.gov/2024/Dec/18/2003615417/-1/-1/0/2024-CMPR-FACT-SHEET.PDF",
+  "grep": [
+   "600",
+   "operational nuclear warheads",
+   "1,000",
+   "2030",
+   "mid-2024"
+  ],
+  "excerpt": 0,
+  "note": "DoD 2024 China Military Power Report fact sheet",
+  "ua": "browser"
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://media.defense.gov/2024/dec/18/2003615520/-1/-1/0/military-and-security-developments-involving-the-peoples-republic-of-china-2024.pdf",
+  "grep": [
+   "600 operational nuclear warheads",
+   "1,000",
+   "2030",
+   "mid-2024"
+  ],
+  "excerpt": 0,
+  "note": "DoD 2024 China Military Power Report (full)",
+  "ua": "browser"
+ },
+ {
+  "id": "C113",
+  "idx": 2,
+  "url": "https://www.wtatennis.com/news/2384758/steve-simon-announces-wtas-decision-to-suspend-tournaments-in-china",
+  "grep": [
+   "Steve Simon",
+   "suspend",
+   "Peng Shuai",
+   "China",
+   "Hong Kong"
+  ],
+  "excerpt": 0,
+  "note": "WTA announcement of China suspension (Dec 1, 2021)"
+ },
+ {
+  "id": "C113",
+  "idx": 2,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/CECC%20Hearing%20Testimony%20-%20Jenny%20Wang.pdf",
+  "grep": [
+   "WTA",
+   "Simon",
+   "$1 billion",
+   "Peng Shuai",
+   "WTA Finals"
+  ],
+  "excerpt": 0,
+  "note": "CECC hearing testimony on WTA financial stake in China",
+  "ua": "browser"
+ },
+ {
+  "id": "C113",
+  "idx": 4,
+  "url": "https://www.wtatennis.com/news/3147537/the-wta-to-resume-tournaments-in-china-this-fall",
+  "grep": [
+   "WTA",
+   "resume",
+   "China",
+   "Peng Shuai",
+   "investigation"
+  ],
+  "excerpt": 0,
+  "note": "WTA announcement resuming China tournaments (2023)"
+ },
+ {
+  "id": "C114",
+  "idx": 2,
+  "url": "https://www.cbp.gov/sites/default/files/assets/documents/2022-Jun/UFLPA%20Fact%20Sheet_FINAL.pdf",
+  "grep": [
+   "June 21, 2022",
+   "rebuttable presumption",
+   "clear and convincing",
+   "Xinjiang"
+  ],
+  "excerpt": 0,
+  "note": "CBP UFLPA fact sheet",
+  "ua": "browser"
+ },
+ {
+  "id": "C114",
+  "idx": 2,
+  "url": "https://www.cbp.gov/trade/forced-labor/faqs-uflpa-enforcement",
+  "grep": [
+   "June 21, 2022",
+   "rebuttable presumption",
+   "clear and convincing",
+   "Xinjiang"
+  ],
+  "excerpt": 0,
+  "note": "CBP UFLPA enforcement FAQ",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "Evergrande",
+   "$305 billion",
+   "dollar",
+   "bonds",
+   "default"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 0,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "Evergrande",
+   "$306 billion",
+   "default",
+   "December 2021"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on China debt problems",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 2,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "mortgage",
+   "boycott",
+   "unfinished",
+   "presold",
+   "2022"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on mortgage boycotts",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "mortgage",
+   "boycott",
+   "unfinished",
+   "presold",
+   "2022"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "Chapter 15",
+   "Hui Ka Yan",
+   "August 2023",
+   "New York",
+   "bankruptcy"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser"
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "Chapter 15",
+   "Hui Ka Yan",
+   "Evergrande",
+   "bankruptcy",
+   "detained"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on China debt problems",
+  "ua": "browser"
+ },
+ {
+  "id": "C117",
+  "idx": 0,
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "370 acres",
+   "Air Force",
+   "CFIUS"
+  ],
+  "excerpt": 0,
+  "note": "House Agriculture Committee testimony (N. Daly, Mar 2024) on Fufeng Grand Forks",
+  "ua": "browser"
+ },
+ {
+  "id": "C117",
+  "idx": 0,
+  "url": "https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "Air Force Base",
+   "acres"
+  ],
+  "excerpt": 0,
+  "note": "Senate hearing S. Hrg 118-371",
+  "ua": "browser"
+ },
+ {
+  "id": "C117",
+  "idx": 1,
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "grep": [
+   "Fufeng",
+   "jurisdiction",
+   "CFIUS",
+   "Appendix A",
+   "Grand Forks"
+  ],
+  "excerpt": 0,
+  "note": "House Agriculture Committee testimony (N. Daly) on CFIUS jurisdiction",
+  "ua": "browser"
+ },
+ {
+  "id": "C117",
+  "idx": 1,
+  "url": "https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "CFIUS",
+   "jurisdiction"
+  ],
+  "excerpt": 0,
+  "note": "Senate hearing S. Hrg 118-371",
+  "ua": "browser"
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.valleynewslive.com/2023/02/07/grand-forks-officially-cancels-fufeng-project",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "City Council",
+   "vote",
+   "5-0"
+  ],
+  "excerpt": 0,
+  "note": "media only: Valley News Live, Feb 7, 2023"
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.grandforksherald.com/news/local/year-long-fufeng-debate-comes-to-an-end-after-grand-forks-council-members-vote-to-stop-project",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "council",
+   "vote",
+   "5-0"
+  ],
+  "excerpt": 0,
+  "note": "media only: Grand Forks Herald"
+ },
+ {
+  "id": "C117",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/FR-2023-05-05/pdf/2023-09259.pdf",
+  "grep": [
+   "Grand Forks Air Force Base",
+   "Grand Forks",
+   "military installations",
+   "Part 802"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register May 5, 2023 CFIUS real estate rule adding Grand Forks AFB"
+ },
+ {
+  "id": "C117",
+  "idx": 3,
+  "url": "https://www.federalregister.gov/documents/2024/11/07/2024-25773/definition-of-military-installation-and-the-list-of-military-installations-in-the-regulations",
+  "grep": [
+   "59",
+   "military installations",
+   "appendix",
+   "Part 802"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register Nov 2024 final rule adding military installations"
+ },
+ {
+  "id": "C118",
+  "idx": 1,
+  "url": "https://ktvz.com/?p=1204106",
+  "grep": [
+   "Bain",
+   "Shanghai",
+   "Mintz",
+   "April",
+   "questioned"
+  ],
+  "excerpt": 0,
+  "note": "media only: CNN syndication on Mintz fine and Bain Shanghai"
+ },
+ {
+  "id": "C118",
+  "idx": 1,
+  "url": "https://congress.gov/118/chrg/CHRG-118hhrg56257/CHRG-118hhrg56257.pdf",
+  "grep": [
+   "Bain",
+   "Capvision",
+   "Mintz",
+   "raid"
+  ],
+  "excerpt": 0,
+  "note": "House hearing transcript CHRG-118hhrg56257 (testimony mentions firms)",
+  "ua": "browser"
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "url": "https://congress.gov/118/chrg/CHRG-118hhrg56257/CHRG-118hhrg56257.pdf",
+  "grep": [
+   "Capvision",
+   "Bain",
+   "Mintz",
+   "spies"
+  ],
+  "excerpt": 0,
+  "note": "House hearing transcript CHRG-118hhrg56257 (mentions Capvision)",
+  "ua": "browser"
+ },
+ {
+  "id": "C118",
+  "idx": 3,
+  "url": "https://subsites.chinadaily.com.cn/npc/2023-04/27/c_882140.htm",
+  "grep": [
+   "Counter-Espionage Law",
+   "July 1",
+   "documents, data, materials",
+   "national security"
+  ],
+  "excerpt": 0,
+  "note": "PRC state media on NPC subsite: revised Counter-Espionage Law"
+ },
+ {
+  "id": "C118",
+  "idx": 3,
+  "url": "https://www.aoshearman.com/en/insights/the-revised-prc-counter-espionage-law-what-has-really-changed",
+  "grep": [
+   "Counter-Espionage Law",
+   "July 1, 2023",
+   "documents",
+   "data",
+   "national security"
+  ],
+  "excerpt": 0,
+  "note": "law firm commentary (secondary)"
+ },
+ {
+  "id": "C118",
+  "idx": 4,
+  "url": "https://www.aljazeera.com/economy/2023/8/22/china-fines-mintz-1-5m-for-unapproved-work-after-raids-on-beijing-office",
+  "grep": [
+   "Mintz",
+   "statistics",
+   "1.5 million",
+   "unapproved",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "media only: Al Jazeera Aug 2023"
+ },
+ {
+  "id": "C118",
+  "idx": 4,
+  "url": "https://ktvz.com/?p=1204106",
+  "grep": [
+   "Mintz",
+   "statistics",
+   "1.5 million",
+   "10.69 million yuan",
+   "fine"
+  ],
+  "excerpt": 0,
+  "note": "media only: CNN syndication Aug 2023"
+ },
+ {
+  "id": "C119",
+  "idx": 0,
+  "url": "https://chinaselectcommittee.house.gov/media/reports/deepseek-unmasked-exposing-ccps-latest-tool-spying-stealing-and-subverting-us-export",
+  "grep": [
+   "DeepSeek",
+   "R1",
+   "January 20",
+   "2025"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee report on DeepSeek (committee finding, not neutral)",
+  "ua": "browser"
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "url": "https://www.nasdaq.com/articles/whats-next-nvidia-deepseeks-ai-impact-and-589-billion-market-loss",
+  "grep": [
+   "Nvidia",
+   "$589 billion",
+   "DeepSeek",
+   "January 27",
+   "largest"
+  ],
+  "excerpt": 0,
+  "note": "media only: Nasdaq-hosted article"
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+  "grep": [
+   "People's Republic of China",
+   "servers",
+   "store",
+   "Personal Data"
+  ],
+  "excerpt": 0,
+  "note": "DeepSeek's own privacy policy (storage in PRC half of sentence)"
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://chinaselectcommittee.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/DeepSeek%20Final.pdf",
+  "grep": [
+   "National Intelligence Law",
+   "2017",
+   "Article 7",
+   "organization"
+  ],
+  "excerpt": 0,
+  "note": "secondary: House Select Committee DeepSeek report; NIL half of sentence",
+  "ua": "browser"
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+  "grep": [
+   "Prohibition on access to Department of Defense cloud-based resources",
+   "Iran",
+   "North Korea",
+   "December 18, 2025"
+  ],
+  "excerpt": 0,
+  "note": "Public Law 119-60 (FY2026 NDAA); section deep in a very long PDF",
+  "ua": "browser"
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF13197/IF13197.1.pdf",
+  "grep": [
+   "cloud",
+   "North Korea",
+   "Iran",
+   "Russia",
+   "FY2026"
+  ],
+  "excerpt": 0,
+  "note": "CRS IF13197 on FY2026 NDAA cyber/AI provisions",
+  "ua": "browser"
+ }
+]

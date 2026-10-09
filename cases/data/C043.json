@@ -29,10 +29,10 @@
   "gap": "Principles",
   "text": {
     "brief": "Party artillery opened fire on Kinmen on August 23, 1958.",
-    "record": "Tens of thousands of shells fell on the island on the first day. The Seventh Fleet escorted Nationalist resupply convoys from early September, and Nationalist pilots scored the first combat kills with American Sidewinder missiles on September 24. In October the Party announced it would shell only on odd-numbered days, and the ritual lasted until January 1, 1979.",
+    "record": "Tens of thousands of shells fell on the island on the first day. The Seventh Fleet escorted Nationalist resupply convoys from early September, and Nationalist pilots scored the first combat kills with American Sidewinder missiles on September 24 ([FRUS 1958-60, Vol. XIX, Document 248: report by the Commander, U.S. Taiwan Defense Command](https://history.state.gov/historicaldocuments/frus1958-60v19/d248)). In October the Party announced it would shell only on odd-numbered days, and the ritual lasted until January 1, 1979 ([FRUS 1958-60, Vol. XIX, Document 267](https://history.state.gov/historicaldocuments/frus1958-60v19/d267)).",
     "reading": "The Party turned artillery into a calendar, and the calendar carried a message about its claim on Taiwan with less risk than an assault. The Taiwan chapter's named exercises run the same Phase routine at larger scale.",
     "gapText": "Architecture Principles. The defender left its commitment to the offshore islands ambiguous, and the Party probed the ambiguity.",
     "fix": "State which positions a guarantee covers before the probe, and let ambiguity be a choice rather than a gap."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

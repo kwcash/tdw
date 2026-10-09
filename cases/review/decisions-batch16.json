@@ -1,0 +1,114 @@
+[
+ {
+  "id": "C019",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The UMKC finding aid for Edgar Snow returned no text to the runner (HTTP 202) and Britannica returned HTTP 403. A helper agent's lead, unverified: UMKC says five months and Snow reached Bao'an on July 13, 1936, so 'about four months' needs checking against his own account."
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The UMKC archival-object pages for the London (Gollancz) and New York (Random House) editions returned no text to the runner (HTTP 202). The 1937 and January 1938 publication dates are unchecked."
+ },
+ {
+  "id": "C020",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Judgment of the International Military Tribunal for the Far East, Vol. II Part B, Ch. VIII (Library of Congress)",
+  "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/Judgment-IMTFE-Vol-II-PartB-Chapter-VIII/Judgment-IMTFE-Vol-II-PartB-Chapter-VIII.pdf",
+  "notes": "The Tokyo tribunal's judgment: Japanese forces entered Nanking on 13 December 1937; civilians and prisoners of war were murdered on a mass scale ('estimates made at a later date indicate that the total ... murdered in Nanking and its vicinity during the first six weeks was over 200,000'). A victors' tribunal's findings, not a neutral count."
+ },
+ {
+  "id": "C022",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Independent Chinese PEN Center: Wang Shiwei (NGO, secondary)",
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-case-no-1",
+  "notes": "NGO biography of Wang Shiwei (1906 to July 1, 1947): his Yan'an writings of 1942, the 'Trotskyite' label. The Rectification Movement launching that spring and meetings denouncing him through May and June 1942 are not in the text read; the Columbia University trial-transcript PDF failed TLS verification."
+ },
+ {
+  "id": "C022",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Independent Chinese PEN Center: Wang Shiwei (NGO, secondary)",
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-case-no-1",
+  "notes": "NGO biography: Wang Shiwei was executed on July 1, 1947 (the Party's anniversary). His expulsion and detention under guard are not in the snippets."
+ },
+ {
+  "id": "C022",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Aisixiang essay by Fu Guoyong, \"Pursuing humanity: rereading Wang Shiwei\" (Chinese essay site, secondary)",
+  "url": "https://www.aisixiang.com/data/415.html",
+  "notes": "Chinese-language essay: 44 years after his death (1991) the 'Trotskyite spy' label was lifted by a body, with the Ministry of Public Security among the departments named; the Party Organization Department rejected the 'five-man anti-Party clique' in 1982. It is a commentary, not the Ministry's document; the official 1991 finding was not located."
+ },
+ {
+  "id": "C023",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Senate Report 35, 78th Congress: Repealing the Chinese Exclusion Laws and to Establish Quotas (govinfo)",
+  "url": "https://www.govinfo.gov/content/pkg/SERIALSET-10757_00_00-094-0535-0000/pdf/SERIALSET-10757_00_00-094-0535-0000.pdf",
+  "notes": "The Senate committee report: 'under the quota provisions the Chinese quota would be only 105 persons annually'; the quota 'amounts to 105 per annum', computed under section 11 of the Quota Act of 1924."
+ },
+ {
+  "id": "C024",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "National Park Service: Dr. Chien-Shiung Wu",
+  "url": "https://www.nps.gov/people/dr-chienshiung-wu.htm",
+  "notes": "US government page on Wu's Manhattan Project work at Columbia; the text read mentions xenon and Hanford. Fermi's team consulting her unpublished work during the 1944 reactor stall was not in the snippets, and the second NPS page did not mention xenon."
+ },
+ {
+  "id": "C024",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "NIST, \"Reversal of the Parity Conservation Law in Nuclear Physics\" (SP 958)",
+  "url": "https://nvlpubs.nist.gov/nistpubs/sp958-lide/111-115.pdf",
+  "notes": "NIST history: experiments at the National Bureau of Standards in late 1956 (Wu's cobalt-60 experiment) demonstrated that parity is not conserved in weak interactions, with the news in January 1957. Her 1954 citizenship was not on the page; Britannica returned HTTP 403."
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Army Center of Military History page failed DNS on the runner and Britannica returned HTTP 403. The August 9, 1945 Soviet entry into Manchuria is unchecked here."
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The FBI history page on the Second World War and Cold War does not mention Amerasia, Jaffe or a fine. The $2,500 fine and the absence of prison terms are unchecked."
+ },
+ {
+  "id": "C028",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "FRUS 1946, Vol. X, Document 366 (Marshall statement, January 1947)",
+  "url": "https://history.state.gov/historicaldocuments/frus1946v10/d366",
+  "notes": "FRUS: on January 5, 1947 Marshall's statement on the situation in China was released for publication on January 7; chapter XVII is titled 'Recall of General Marshall; reactions'. The statement's blame on extremists on both sides was not in the snippets."
+ },
+ {
+  "id": "C029",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "FRUS 1948, Vol. VIII, Document 333: telegram from the Consul General at Shanghai, August 19, 1948",
+  "url": "https://history.state.gov/historicaldocuments/frus1948v08/d333",
+  "notes": "FRUS telegram of August 19, 1948: 'Chinese radio announced tonight' the currency reform introducing the gold yuan. A further FRUS despatch (1949, Vol. IX, Document 684) narrates the inflation and the reform."
+ },
+ {
+  "id": "C030",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FRUS 1949, Vol. VIII, Document 1225: Consul General Clubb to the Secretary of State, October 29, 1949",
+  "url": "https://history.state.gov/historicaldocuments/frus1949v08/d1225",
+  "notes": "FRUS file on Angus Ward at Mukden: spy charges against consulate personnel and the isolation of the consulate. The October arrest on a charge of assaulting a Chinese employee, the conviction and the December expulsion were not in the snippets; the Library of Congress newspaper page returned HTTP 403."
+ }
+]

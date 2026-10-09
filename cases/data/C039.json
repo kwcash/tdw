@@ -28,10 +28,10 @@
   "gap": "Principles",
   "text": {
     "brief": "Party forces stormed the island of Yijiangshan off the Zhejiang coast on January 18, 1955.",
-    "record": "The shelling of Kinmen had begun the previous September, and the United States had signed a mutual defense treaty with the Republic of China in December 1954. Congress passed the Formosa Resolution within days of Yijiangshan and authorized the president in advance to use force to defend Taiwan and the Pescadores. Eisenhower signed it on January 29, 1955.",
+    "record": "The shelling of Kinmen had begun the previous September, and the United States had signed a mutual defense treaty with the Republic of China in December 1954 ([State Department Office of the Historian: The Taiwan Strait Crises, 1954-1955 and 1958](https://history.state.gov/milestones/1953-1960/taiwan-strait-crises)). Congress passed the Formosa Resolution within days of Yijiangshan and authorized the president in advance to use force to defend Taiwan and the Pescadores. Eisenhower signed it on January 29, 1955 ([Joint Resolution of January 29, 1955 (Formosa Resolution), 69 Stat. 7 (govinfo)](https://www.govinfo.gov/content/pkg/STATUTE-69/pdf/STATUTE-69-Pg7.pdf); [FRUS 1955-57, Vol. II, Document 56](https://history.state.gov/historicaldocuments/frus1955-57v02/d56)).",
     "reading": "Congress decided before the next event, which is the Phase principle a republic can run without surrendering oversight. The Hong Kong chapter finds the same rule in Britain's pledge of 2020, sixty-five years later.",
     "gapText": "Architecture Principles. The defender closed its Phase gap for one theater and let the authority lapse in 1974.",
     "fix": "Pass standing authorities for defined triggers, with sunsets and reporting, so the answer lands in hours without a new vote."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

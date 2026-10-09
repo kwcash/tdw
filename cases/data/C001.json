@@ -28,10 +28,10 @@
   "gap": "Business",
   "text": {
     "brief": "In August 1784 Samuel Shaw, supercargo of the Empress of China, anchored at Whampoa and learned the terms of the only gate the Qing court kept open to the West.",
-    "record": "The Qing court confined Western trade to Canton from 1757. Every foreign ship needed a licensed hong merchant to stand surety for its conduct and its duties, and foreigners lived in a strip of factories outside the city walls for the trading season. The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules.",
+    "record": "The Qing court confined Western trade to Canton from 1757 ([State Department Office of the Historian: China, country summary](https://history.state.gov/countries/china/summary)). Every foreign ship needed a licensed hong merchant to stand surety for its conduct and its duties, and foreigners lived in a strip of factories outside the city walls for the trading season. The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules ([National Park Service essay: Imperialism and Migration (Asian American theme study)](https://www.nps.gov/articles/upload/01-Essay-1-Imperialism-and-Migration.pdf)).",
     "reading": "The security merchant made one licensed person answer for every guest, a gate built on verification rather than trust. The gate held until opium moved outside it and the gatekeepers took a cut, which is where most later gates have failed.",
     "gapText": "Business Architecture. The gatekeepers earned from the traffic their office existed to stop.",
     "fix": "Verify every request at the gate and audit the gatekeeper's income, the discipline zero trust now names."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

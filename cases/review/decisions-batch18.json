@@ -1,0 +1,158 @@
+[
+ {
+  "id": "C038",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FRUS 1952-54, Vol. II Part 2, Document 298",
+  "url": "https://history.state.gov/historicaldocuments/frus1952-54v02p2/d298",
+  "notes": "FRUS document on Communist 'techniques for warping mental attitudes' names Edward Hunter's book on brain washing in Red China among two outstanding treatments. That Hunter popularized the word in 1950 is not stated in the snippet."
+ },
+ {
+  "id": "C038",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Federal Register: Executive Order 10631",
+   "National Archives, Office of the Federal Register: Executive Order 10631"
+  ],
+  "url": [
+   "https://www.federalregister.gov/executive-order/10631",
+   "https://www.archives.gov/federal-register/codification/executive-order/10631.html"
+  ],
+  "notes": "Executive Order 10631 of August 17, 1955: Code of Conduct for Members of the Armed Forces of the United States."
+ },
+ {
+  "id": "C039",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "State Department Office of the Historian: The Taiwan Strait Crises, 1954-1955 and 1958",
+  "url": "https://history.state.gov/milestones/1953-1960/taiwan-strait-crises",
+  "notes": "Official: the first Taiwan Strait crisis began with PRC shelling of Jinmen in September 1954, and the US signed the Mutual Defense Treaty with the ROC. The page text read did not give 'December 2, 1954'."
+ },
+ {
+  "id": "C039",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Joint Resolution of January 29, 1955 (Formosa Resolution), 69 Stat. 7 (govinfo)",
+   "FRUS 1955-57, Vol. II, Document 56"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/STATUTE-69/pdf/STATUTE-69-Pg7.pdf",
+   "https://history.state.gov/historicaldocuments/frus1955-57v02/d56"
+  ],
+  "notes": "Statutes at Large: Public Law 4, a joint resolution dated January 29, 1955, authorizing the President to employ the Armed Forces to protect Formosa and the Pescadores. The FRUS document carries the Eisenhower message and the resolution."
+ },
+ {
+  "id": "C040",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Caltech Library exhibit: Remembering JPL co-founder Tsien",
+  "url": "https://library.caltech.edu/c.php?g=1245983&p=9125566",
+  "notes": "Caltech exhibit (secondary): 'Political trouble began for Tsien in 1950 when his security clearance was revoked.' The month of June and the charge of Communist Party ties and his denial were not in the snippets; the Caltech aerospace page says he answered 'no' on an immigration questionnaire about organizations advocating overthrow of the US government."
+ },
+ {
+  "id": "C040",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Caltech Aerospace: Qian Xuesen (Tsien Hsue-Shen)",
+  "url": "https://aerospace.caltech.edu/about/legends-of-galcit/qian-xuesen-tsien-hsue-shen",
+  "notes": "Caltech (secondary): five years of secret diplomacy and negotiation; the travel ban was lifted on August 4 [1955]; American pilots appear in the account. The September 1955 sailing and the link to the release of American prisoners were not matched in the snippets."
+ },
+ {
+  "id": "C041",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "National Park Service essay: Cold War and Asian American communities",
+  "url": "https://www.nps.gov/articles/upload/11-Essay-11-Cold-War.pdf",
+  "notes": "US government essay mentions the Chinese Confession Program as a federal response to supposed infiltration by Chinese leftists. The figure of about thirty thousand confessions and the 1965 end were not found. A helper's lead, unverified: the National Archives' confession register covers 1957 to 1968."
+ },
+ {
+  "id": "C042",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS 1955-57, Vol. III, Document 274 (July 18, 1957)",
+  "url": "https://history.state.gov/historicaldocuments/frus1955-57v03/d274",
+  "notes": "FRUS memorandum on the recantation by 'rightists' in Communist China, referring to leaders of minority parties who had been encouraged to speak. The spring 1957 invitation and the posters and speeches are not in the snippets; Britannica returned HTTP 403."
+ },
+ {
+  "id": "C042",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Library of Congress authority page and Britannica both returned HTTP 403. The June 8 People's Daily editorial and the figure of more than 550,000 labeled rightists are unchecked."
+ },
+ {
+  "id": "C043",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FRUS 1958-60, Vol. XIX, Document 248: report by the Commander, U.S. Taiwan Defense Command",
+  "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d248",
+  "notes": "FRUS report on the 1958 crisis: the page contains the Seventh Fleet, convoy operations, 24 September and Sidewinder, in the Commander's account of operations. The snippets do not state that Nationalist pilots scored the first combat kills with Sidewinders on September 24."
+ },
+ {
+  "id": "C043",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "FRUS 1958-60, Vol. XIX, Document 267",
+  "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d267",
+  "notes": "FRUS: discusses the Chinese Communists' bombardment pattern in October 1958 and the risks of the Quemoy dispute. The announcement to shell on odd-numbered days only and its ending on January 1, 1979 are not in the snippets; Britannica returned HTTP 403."
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CIA reading-room PDF of leader profiles did not contain Peng Te-huai, Lushan or 'anti-party clique' in the text read; Britannica returned HTTP 403. The July 23 date and the purge are unchecked."
+ },
+ {
+  "id": "C044",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both offered pages were Britannica and returned HTTP 403."
+ },
+ {
+  "id": "C044",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both offered pages were Britannica and returned HTTP 403. The range of famine death estimates needs a scholarly source."
+ },
+ {
+  "id": "C045",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CIA reading-room document on covert action in the high altitudes returned no matches for Lhasa, Dalai Lama, March 1959 or artillery (it is probably a scanned image); Britannica returned HTTP 403."
+ },
+ {
+  "id": "C045",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "CIA: Spy Sites, Camp Hale",
+  "url": "https://www.cia.gov/stories/story/spy-sites-camp-hale/",
+  "notes": "CIA's own page: Tibetan freedom fighters were secretly trained by the CIA at Camp Hale, Colorado. The 1958 to 1964 span is in the page's text; the radio report of the Dalai Lama's flight by two CIA-trained Tibetans was not found (the CIA covert-action PDF returned no matches)."
+ },
+ {
+  "id": "C045",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CIA covert-action PDF returned no matches for 1969, 1970, termination or phase; it is probably a scanned image the extractor could not read."
+ },
+ {
+  "id": "C046",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS 1961-63, Vol. XXV, Document 318: U.S. delegation report to the UNHCR Executive Committee",
+  "url": "https://history.state.gov/historicaldocuments/frus1961-63v25/d318",
+  "notes": "FRUS: the delegate of the Republic of China noted 'the recent large influx of Chinese refugees from the mainland into Hong Kong' in the 1962 session. April and May, tens of thousands, and Hong Kong's return of most of them are not in the snippets."
+ }
+]
