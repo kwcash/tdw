@@ -1,0 +1,168 @@
+[
+ {
+  "id": "C045",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "FRUS 1969-76 vol. XVII, doc. 278: memorandum for the 40 Committee on support to the Dalai Lama and Tibetan operations, January 11, 1971",
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d278",
+  "notes": "US government record: funds for Tibetan operations other than guerrilla support 'have been gradually reduced from over $500,000 yearly before 1969 to $363,000 proposed for FY 1971', and the 40 Committee approved a CIA proposal 'to continue to reduce the forces from 1,800 to 300 over the next 3 years'. The memo does not link the wind-down to the opening to Beijing; that link is the sentence's interpretation."
+ },
+ {
+  "id": "C048",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "Alpha History: Chinese and Soviet involvement in Vietnam (educational site; secondary)",
+   "USC Scalar project: China's involvement in the war, 1964-1969 (university student project; secondary)"
+  ],
+  "url": [
+   "https://alphahistory.com/vietnamwar/chinese-and-soviet-involvement/",
+   "https://scalar.usc.edu/works/the-vietnam-war/chinas-involvement-in-the-war-1964-1969"
+  ],
+  "notes": "Secondary sources only; no government page found: Alpha History says that between 1965 and 1971 more than 320,000 Chinese troops were deployed in North Vietnam and the peak year was 1967 with around 170,000. The USC page gives the 320,000 figure. Neither attributes the numbers to Chinese sources. A China Quarterly article's footnote cites other estimates (Whiting: 50,000 sent; Vietnamese sources: 20,000), so the figures are contested."
+ },
+ {
+  "id": "C050",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Independent Chinese PEN Center: Case No. 14 (1960), Lin Zhao (NGO)",
+   "China Unofficial Archives: Lin Zhao (NGO archive)"
+  ],
+  "url": [
+   "https://www.chinesepen.org/english/?p=4153",
+   "https://minjian-danganguan.org/en/archive/14"
+  ],
+  "notes": "NGO accounts (no government record): Lin Zhao was sent to labor reform as a 'student Rightist' and arrested in 1960 as an 'active counterrevolutionary'; she was at Peking University, and the archive page says she 'was labeled a Rightist' in 1957. The PEN page also says she was admitted to Peking University in 1954."
+ },
+ {
+  "id": "C052",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "FRUS 1969-76 vol. XI: list of persons (Blood, Consul General in Dacca until June 1971)",
+   "FRUS 1969-76 vol. XI, doc. 20: Nixon-Kissinger telephone call, April 6, 1971, with editorial note on Blood's transfer",
+   "Foreign Service Journal, December 2004 (American Foreign Service Association; professional body)"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1969-76v11/persons",
+   "https://history.state.gov/historicaldocuments/frus1969-76v11/d20",
+   "https://afsa.org/sites/default/files/flipping_book/1204/63/"
+  ],
+  "notes": "State Department historians list Archer Blood as 'Consul General in Dacca until June 1971'; the editorial note to doc. 20 says President Nixon ordered Blood transferred from Dacca after the dissent cable. The Foreign Service Journal says he 'was recalled in June 1971'."
+ },
+ {
+  "id": "C054",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "FRUS 1977-80 vol. XIII, doc. 186: memorandum on the Chinese text of the joint communique",
+   "CRS report RL30341: China/Taiwan, evolution of the One China policy (everycrsreport mirror)"
+  ],
+  "url": [
+   "https://history.state.gov/historicaldocuments/frus1977-80v13/d186",
+   "https://www.everycrsreport.com/reports/RL30341.html"
+  ],
+  "notes": "State Department record: in the January 1 communique 'acknowledge' was rendered 'cheng-jen', where the Shanghai Communique used 'jen shih tao', and linguists would say 'cheng jen' denotes a stronger acceptance. CRS: 'In the Chinese text, the word for acknowledge is cheng ren (recognize)'."
+ },
+ {
+  "id": "C054",
+  "idx": 3,
+  "verdict": "supported",
+  "label": "CRS report RL30341: China/Taiwan, evolution of the One China policy (everycrsreport mirror)",
+  "url": "https://www.everycrsreport.com/reports/RL30341.html",
+  "notes": "CRS quoting the 1979 Taiwan Relations Act hearings: Deputy Secretary of State Warren Christopher answered that 'we regard the English text as being the binding text. We regard the word acknowledge as being the word that is determinative for the U.S.'"
+ },
+ {
+  "id": "C055",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "The Chinese democracy movement of 1978-1981: Beijing, March 1979 (Beijing Spring site, University of Vienna)",
+  "url": "https://beijing-spring.univie.ac.at/en/photos/big-character-posters/beijing-march-1979/",
+  "notes": "University of Vienna site: the dazibao 'Do We Want Democracy or a New Dictatorship' accused Deng Xiaoping of being a 'dictator like Mao' and 'Wei was arrested (on March 29)' because of it. Sources differ on the arrest date (March 28, March 29 and about April 1); one NGO page says 1978, which looks wrong."
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "Human Rights Watch: Wei Jingsheng released (1997; NGO)",
+   "Independent Chinese PEN Center: Case No. 33 (1979), Wei Jingsheng (NGO)"
+  ],
+  "url": [
+   "https://www.hrw.org/news/1997/11/16/wei-jingsheng-released",
+   "https://www.chinesepen.org/english/no-13-yu-zhang-33"
+  ],
+  "notes": "NGO accounts: Wei 'was sentenced on October 16, 1979 to fifteen years in jail', formally for leaking state secrets and counterrevolutionary propaganda. No court record was found."
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "verdict": "partial",
+  "label": [
+   "The Democracy Wall (Beijing Spring site, University of Vienna)",
+   "Opletal, The 1978-1981 Democracy Wall Movement (Journal of the European Association for Chinese Studies, 2021)"
+  ],
+  "url": [
+   "https://beijing-spring.univie.ac.at/en/the-democracy-movement-1978-1981/the-democracy-wall",
+   "https://journals.univie.ac.at/index.php/jeacs/article/download/6561/6579/15915"
+  ],
+  "notes": "Scholarly secondary sources: posters were allowed only in a special place in Yuetan Park, and 'authors have to show ID cards and register their posters beforehand'; the journal article says the Wall was moved from Xidan to the remoter Yuetan Park 'towards the end of 1979'. A requirement to register the writer's workplace was not found."
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "verdict": "supported",
+  "label": [
+   "Resolution of the Third Session of the Fifth National People's Congress on amending Article 45 of the Constitution, September 1980 (PRC government site)",
+   "Constitution of the PRC (1978), Article 45 (CPC member site)"
+  ],
+  "url": [
+   "https://jjjcz.mee.gov.cn/djfg/gjflfg/xf/198009/t19800901_444124.html",
+   "https://news.12371.cn/2015/03/18/ARTI1426667115741768.shtml?from=singlemessage"
+  ],
+  "notes": "PRC primary texts (the PRC's own record): the NPC resolution amends Article 45 so that the citizens' right to 'speak out freely, air views fully, hold great debates and write big-character posters' is removed, and the 1978 constitution's Article 45 contains that right. The ministry site republishes the NPC text; the date shown on the page is 1980-09-01."
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "United States v. Ebens, 800 F.2d 1422 (6th Cir. 1986) (public.resource.org copy)",
+   "US Commission on Civil Rights, report 85-008 (1985)"
+  ],
+  "url": [
+   "https://law.resource.org/pub/us/case/reporter/F2/800/800.F2d.1422.84-1757.html",
+   "https://usccr.gov/files/historical/1985/85-008.pdf"
+  ],
+  "notes": "Sixth Circuit: Chin was 'a United States citizen of Chinese descent'; Ebens made remarks 'about foreign car imports' and said, in words the opinion quotes with an obscenity, that Chin and others like him were why they were out of work; Ebens seemed to believe Chin was Japanese. The Civil Rights Commission report says the defendants 'allegedly blamed him for layoffs in the automobile industry'."
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Michigan Bar Journal, May 2009: Roland Hwang on the Vincent Chin case (State Bar of Michigan)",
+   "United States v. Ebens, 800 F.2d 1422 (6th Cir. 1986) (public.resource.org copy)"
+  ],
+  "url": [
+   "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
+   "https://law.resource.org/pub/us/case/reporter/F2/800/800.F2d.1422.84-1757.html"
+  ],
+  "notes": "Michigan Bar Journal: Chief Judge Charles Kaufman 'sentenced the men to three years probation and a fine of $3,000'. DISCREPANCY: the Sixth Circuit opinion says Ebens was placed on probation and 'fined $3,720', and the Civil Rights Commission report gives $3,780, which suggests $3,000 plus costs. Check the figure."
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "Michigan Bar Journal, May 2009: Roland Hwang on the Vincent Chin case (State Bar of Michigan)",
+   "United States v. Ebens, 800 F.2d 1422 (6th Cir. 1986) (public.resource.org copy)"
+  ],
+  "url": [
+   "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
+   "https://law.resource.org/pub/us/case/reporter/F2/800/800.F2d.1422.84-1757.html"
+  ],
+  "notes": "Michigan Bar Journal: the federal jury 'found Ebens guilty of federal civil rights violations'; he appealed to the Sixth Circuit, where 'a Cincinnati jury found him not guilty'. The Sixth Circuit opinion, decided September 11, 1986, says the judgment could not stand. The years 1984 and 1987 were not matched."
+ }
+]

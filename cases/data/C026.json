@@ -28,10 +28,10 @@
   "gap": "Governance",
   "text": {
     "brief": "On February 11, 1945, Franklin Roosevelt signed a secret agreement at Yalta that promised Joseph Stalin rights in Manchuria without telling Chiang Kai-shek.",
-    "record": "The agreement promised the Soviet Union a lease on Port Arthur, preeminent interests in Dairen and joint operation of the Manchurian railways. Roosevelt undertook to obtain Chiang's concurrence later. Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed.",
+    "record": "The agreement promised the Soviet Union a lease on Port Arthur, preeminent interests in Dairen and joint operation of the Manchurian railways. Roosevelt undertook to obtain Chiang's concurrence later. Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed ([Soviet Declaration of War on Japan, August 8, 1945 (Avalon Project, Yale Law School)](https://avalon.law.yale.edu/wwii/s4.asp); [FRUS 1945 vol. VII, doc. 565: Chiang Kai-shek memorandum on the Chinese Communists after Japan's surrender](https://history.state.gov/historicaldocuments/frus1945v07/d565)).",
     "reading": "Washington traded an ally's province for a partner's entry into the war, which is Stratagem 11 run against a friend. The Party then stood where the windfall fell, and the extent of Soviet arms transfers to it remains a real dispute among historians.",
     "gapText": "Architecture Governance. The alliance had no rule that bound its leaders to consult the ally whose territory they traded.",
     "fix": "Write consultation into the alliance's architecture contract, so no partner's sovereignty moves without the partner at the table."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

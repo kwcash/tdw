@@ -29,10 +29,10 @@
   "gap": "Governance",
   "text": {
     "brief": "In September 1821 a woman selling fruit from a boat beside the American ship Emily at Whampoa fell into the river and drowned. Qing officials charged a sailor named Francis Terranova with striking her with an earthenware jar.",
-    "record": "The American merchants tried Terranova aboard ship and refused to hand him over. Qing officials stopped all American trade until they did. The merchants surrendered him, a Qing court convicted him, and officials executed him by strangulation in October 1821.",
+    "record": "The American merchants tried Terranova aboard ship and refused to hand him over. Qing officials stopped all American trade until they did. The merchants surrendered him, a Qing court convicted him, and officials executed him by strangulation in October 1821 ([Foster Rhea Dulles, The Old China Trade, chapter 9 (1930 book; secondary)](https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/DULOCT/9*.html); [Protection of American Citizens Abroad: Extraterritoriality (reference encyclopedia; secondary)](https://www.americanforeignrelations.com/O-W/Protection-of-American-Citizens-Abroad-Extraterritoriality.html)).",
     "reading": "The Qing court proved that trade access could buy a person, and the merchants proved that a guest with no law of its own will pay. The episode fed the American demand for extraterritoriality that Caleb Cushing won in 1844.",
     "gapText": "Architecture Governance. No American authority held the jurisdiction question, so each merchant weighed his cargo against one sailor's life.",
     "fix": "Settle jurisdiction and consular access by treaty before the incident, so no trade lever can buy a citizen."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

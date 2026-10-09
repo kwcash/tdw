@@ -28,10 +28,10 @@
   "gap": "Business",
   "text": {
     "brief": "In July 2025 the ProPublica reporter Renee Dudley revealed that engineers in the People's Republic had maintained Pentagon cloud systems for years under the supervision of American digital escorts.",
-    "record": "The escorts held security clearances but often lacked the skill to judge the commands they entered for the engineers. Microsoft had run the arrangement for nearly a decade. After the report the company stopped using engineers in the People's Republic for Pentagon work, and the defense secretary ordered an outside audit. The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems.",
+    "record": "The escorts held security clearances but often lacked the skill to judge the commands they entered for the engineers. Microsoft had run the arrangement for nearly a decade. After the report the company stopped using engineers in the People's Republic for Pentagon work, and the defense secretary ordered an outside audit. The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems ([S. 1071 enrolled bill, National Defense Authorization Act for Fiscal Year 2026 (govinfo)](https://www.govinfo.gov/content/pkg/BILLS-119s1071enr/html/BILLS-119s1071enr.htm); [Public Law 119-60, December 18, 2025 (congress.gov)](https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf)).",
     "reading": "The design put a cleared American at the keyboard and a foreign engineer in charge of what the keyboard typed, which is Stratagem 30. Zero trust had no place in a system that trusted the escort to understand every command.",
     "gapText": "Business Architecture. A contractor routed support work through engineers the Pentagon would never clear, and the escort between them could not read what passed through.",
     "fix": "Apply zero trust to the maintainer as well as the user, and log every command that a foreign engineer could influence."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

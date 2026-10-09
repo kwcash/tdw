@@ -1,0 +1,164 @@
+[
+ {
+  "id": "C002",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Foster Rhea Dulles, The Old China Trade, chapter 9 (1930 book; secondary)",
+   "Protection of American Citizens Abroad: Extraterritoriality (reference encyclopedia; secondary)"
+  ],
+  "url": [
+   "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/DULOCT/9*.html",
+   "https://www.americanforeignrelations.com/O-W/Protection-of-American-Citizens-Abroad-Extraterritoriality.html"
+  ],
+  "notes": "Two secondary accounts: Dulles says Terranova was seized, given a second trial to which no Americans were admitted, and 'summarily strangled'; the encyclopedia says the magistrate sentenced him to death by strangulation after the Americans relented and surrendered him. Neither text read gives the month, October 1821; a helper noted that a Stanford record says October 27 and other accounts October 28. No Chinese or US government record was found."
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Journal of Asian Studies: The Soviet Offer to China of 1919 (Cambridge; secondary)",
+   "FRUS 1922 vol. I, doc. 775: State Department memorandum on Soviet declarations and notes to China",
+   "Sino-Soviet relations: the first phase, 1917-1920 (ANU Press; secondary)"
+  ],
+  "url": [
+   "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/abs/soviet-offer-to-china-of-1919/3B816D3DF9103C9AE7C05A51CB83B375",
+   "https://history.state.gov/historicaldocuments/frus1922v01/d775",
+   "https://openresearch-repository.anu.edu.au/items/2d31dd14-2192-40d0-8ec1-3b764d613597"
+  ],
+  "notes": "Journal article: the first major Soviet effort to win China was 'a manifesto of July 25, 1919'; a footnote says Millard's Review reported Soviet notes to China received March 21, 1920 and April 1, 1920. FRUS: a December 20, 1922 State Department memorandum lists the July 25, 1919 declaration but says 'so far we have not succeeded in finding' its text. ANU monograph: the manifesto 'pledged the new Soviet Government to restore to China the rights and privileges forcibly extracted by Tsarism' and the text the Chinese received later proved different. The March 1920 date is for the notes, not clearly for the manifesto reaching Chinese readers."
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Resolution of the Second National Congress of the CCP on joining the Third International, July 1922 (text hosted on Wikisource)",
+   "Ukaze on a Rag: Comintern order of 18 July 1922 (International Institute of Social History, Sneevliet Papers)"
+  ],
+  "url": [
+   "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E5%8A%A0%E5%85%A5%E7%AC%AC%E4%B8%89%E5%9B%BD%E9%99%85%E5%86%B3%E8%AE%AE%E6%A1%88",
+   "https://archief.socialhistory.org/en/node/2759"
+  ],
+  "notes": "The resolution of the Second Congress (July 1922) decided to join the Third International formally, accepting its 21 conditions, and says the Party is 'the Chinese section of the Communist International' (中国共产党为国际共产党之中国支部). The IISH archive page says the Comintern ordered the Party on 18 July 1922 to move from Shanghai to Canton and that the Party was officially its Chinese section from July 1922. The first is a wiki transcription of a Party document, not a Party site."
+ },
+ {
+  "id": "C016",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Twenty-First Century (Chinese University of Hong Kong): article quoting Chen Duxiu's report to the Comintern of June 30, 1922 (secondary)",
+  "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c083-200403013.pdf",
+  "notes": "Scholarly article quoting the report: from October 1921 to June 1922 the central organs spent 17,655 yuan; income was 16,655 yuan in Comintern grants and 1,000 raised by the Party. That is almost all of the spending. The marxists.org copy of the report was unreadable (character encoding); a second Chinese scholarly article cites the same figures."
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Hoover Institution: Chiang Chooses His Enemies (think tank; secondary)",
+   "The 12 April Coup of 1927: Actors, Motives, Consequences (European Research, 2021; secondary)"
+  ],
+  "url": [
+   "https://www.hoover.org/research/chiang-chooses-his-enemies",
+   "https://cyberleninka.ru/article/n/the-12-april-coup-of-1927-actors-motives-consequences"
+  ],
+  "notes": "Secondary accounts only, no government source: Hoover says the Shanghai purge began at four in the morning on April 12, 1927, and that 'up to five thousand were listed as missing' with no accurate count; the journal article, citing Smith, says the terror lasted to the end of 1927 and killed more than 2,000 Communists and worker militants in Shanghai. The death toll is an estimate; a 1938 account cites the Shanghai Municipal Police for nearly 400 workers killed on April 12 itself."
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Edgar Snow, Interviews With Mao Tse-tung (his own account, via marxists.org)",
+   "Season of High Adventure: Edgar Snow in China (UC Press; secondary)"
+  ],
+  "url": [
+   "https://www.marxists.org/reference/archive/mao/works/1936/11/x01.htm",
+   "https://publishing.cdlib.org/ucpressebooks/public/book/season-of-high-adventure-edgar-snow-in-china.html"
+  ],
+  "notes": "Snow's own account: 'I remained in Red China for four months.' The biography says Snow left on October 12, 1936 after having been welcomed four months earlier. A PRC foreign ministry page puts his arrival in Bao'an on July 13, 1936 with the help of Soong Ching Ling. A helper's lead that a finding aid says five months was not confirmed."
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "\"Who is CPC?\": Edgar Snow, the first Western journalist to introduce Red China to the world (PRC Ministry of Foreign Affairs, 2022)",
+  "url": "https://www.mfa.gov.cn/eng/zy/jj/zggcddwjw100ggs/gmqtjygml/202406/t20240606_11377907.html",
+  "notes": "PRC foreign ministry feature (the PRC's own account): 'In October 1937, a newly published book became an instant hit in London' and the book was Red Star Over China. The January 1938 New York edition and the claim about young volunteers going to Yan'an were not on the page."
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Soviet Declaration of War on Japan, August 8, 1945 (Avalon Project, Yale Law School)",
+   "FRUS 1945 vol. VII, doc. 565: Chiang Kai-shek memorandum on the Chinese Communists after Japan's surrender"
+  ],
+  "url": [
+   "https://avalon.law.yale.edu/wwii/s4.asp",
+   "https://history.state.gov/historicaldocuments/frus1945v07/d565"
+  ],
+  "notes": "Avalon text of the declaration of war handed to the Japanese ambassador on August 8, 1945 (the August 9 date was not matched by the grep). FRUS: Chiang's memorandum says Zhu De's orders of August 11, 1945 directed the Communist armies to coordinate with Soviet forces in China and Korea. This is the Nationalist leader's account of Communist moves, not an independent record of troops entering Manchuria. The DTIC document returned HTTP 403."
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "The Strange Case of Amerasia (Time, 1950; media only; hosted on whittakerchambers.org)",
+   "FBI Files on the Amerasia Affair: guide to the microfilm edition (ProQuest; commercial publisher)"
+  ],
+  "url": [
+   "https://whittakerchambers.org/case/time-1950/amerasia/",
+   "https://pq-static-content.proquest.com/collateral/media2/documents/101659.pdf"
+  ],
+  "notes": "Time magazine, 1950 (media only; no government record found): 'the court fined Jaffe $2,500, which he paid on the spot' and Larsen $500. The ProQuest guide to the FBI files says only Jaffe and Larsen pleaded guilty to any charge, unauthorized possession of government documents. That no one went to prison is inferred from the fines; no page states it."
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CITIC pages returned HTTP 521 and the china.org.cn page failed TLS verification (not bypassed). The 1956 joint ownership and the 1979 founding of CITIC remain unchecked."
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "FRUS 1952-54 vol. XV part 1 doc. 453 discusses Article 109 of the prisoner-of-war convention; it does not mention 14,000 prisoners going to Taiwan."
+ },
+ {
+  "id": "C042",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The Wilson Center Digital Archive page failed DNS on the runner. The June 8 People's Daily editorial and the figure of more than 550,000 rightists remain unchecked. A search summary said Mao told a Polish delegation about 450,000 had been exposed."
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Mao Zedong, Speech at the Lushan Conference, July 23, 1959 (Selected Works vol. 8, via marxists.org)",
+   "Mao Zedong, Speech at the Ninth Plenum of the Eighth Central Committee (Selected Works vol. 8, via marxists.org)"
+  ],
+  "url": [
+   "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_34.htm",
+   "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_59.htm"
+  ],
+  "notes": "Mao's speech of July 23, 1959; the editors' note describes Peng's 'Letter of Opinion' dated July 14, 1959. In the later plenum speech Mao says 'There emerged the right opportunist anti-party clique' at Lushan. The pages do not say Mao circulated the letter or that the conference voted to purge Peng. The marxists.org text of the Selected Works is a hosting archive, not a Party site."
+ },
+ {
+  "id": "C045",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "FRUS 1958-60 vol. XIX, doc. 367: Dulles briefing to the National Security Council on Tibet, March 26, 1959",
+  "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d367",
+  "notes": "US government record: 'Beginning on March 10 at Lhasa there had occurred a series of events which led to the flight from Lhasa of the Dalai Lama whom the Chinese Communists were about to kidnap and carry off to Peiping'; thousands of Tibetans took the Dalai Lama into protective custody. This is the CIA director's account to the NSC. Artillery shelling of the city is not in the passage read."
+ }
+]

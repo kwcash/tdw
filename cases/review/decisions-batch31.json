@@ -1,0 +1,154 @@
+[
+ {
+  "id": "C062",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "CRS report RL30700: China's foreign conventional arms acquisitions (everycrsreport mirror)",
+  "url": "https://www.everycrsreport.com/reports/RL30700.html",
+  "notes": "CRS: the PRC had looked to the United States for aircraft modernization under 'Peace Pearl'; after the Cold War ended the strategic rationale went away; the State Department announced on December 22, 1992 that the Bush administration would close out four suspended Foreign Military Sales cases, including an avionics upgrade for the F-8; and China acquired Su-27 fighters and other Russian systems. DISCREPANCY: the CRS describes a US suspension and a US close-out in 1992, not a Chinese withdrawal in 1990."
+ },
+ {
+  "id": "C066",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "Office of the Historian: The Gulf War, 1991 (US State Department)",
+   "GAO report PEMD-96-10: Operation Desert Storm air campaign (via govinfo)"
+  ],
+  "url": [
+   "https://history.state.gov/milestones/1989-1992/gulf-war",
+   "https://www.govinfo.gov/content/pkg/GAOREPORTS-PEMD-96-10/pdf/GAOREPORTS-PEMD-96-10.pdf"
+  ],
+  "notes": "GAO: Desert Storm was 'a sustained 43-day air campaign' from January 17 to February 28, 1991 and 'the main ground campaign occupied only the final 100 hours of the war' (43 days is six weeks and a day). The State Department history dates the air and ground war from January 16 (US time) to February 28, 1991, with an Iraqi defeat and retreat from Kuwait."
+ },
+ {
+  "id": "C070",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CECC roundtable testimony of Harry Wu (2005) was read for '60 Minutes', CBS and filming and none appeared; it mentions a 1991 State Council ban on forced-labor exports. Wu's covert filming and the 1991 broadcast remain unchecked."
+ },
+ {
+  "id": "C076",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Matter of Chang, 20 I&N Dec. 38 (BIA 1989) (Justice Department, EOIR)",
+   "Matter of J-S-, 24 I&N Dec. 520 (A.G. 2008) (Justice Department)"
+  ],
+  "url": [
+   "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3107.pdf",
+   "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3611.pdf"
+  ],
+  "notes": "Chang: the Board held that implementing the one couple, one child policy 'is not on its face persecutive' even if involuntary sterilization occurs, and the applicant must show it was applied on a protected ground. The Attorney General's 2008 decision cites section 601(a) of the 1996 Act, 'codified at section 101(a)(42)' of the INA, as the change in the legal framework. Neither page documents a split among immigration judges; that part is unchecked."
+ },
+ {
+  "id": "C076",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "8 U.S.C. 1101(a)(42) (US Code, 2023 edition, via govinfo)",
+   "Matter of J-S-, 24 I&N Dec. 520 (A.G. 2008) (Justice Department)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapI-sec1101.htm",
+   "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3611.pdf"
+  ],
+  "notes": "US Code: 'a person who has been forced to abort a pregnancy or to undergo involuntary sterilization, or who has been persecuted for failure or refusal to undergo such a procedure... shall be deemed to have been persecuted on account of political opinion'. The Attorney General's decision names this as section 601(a) of the Illegal Immigration Reform and Immigrant Responsibility Act of 1996, Pub. L. No. 104-208."
+ },
+ {
+  "id": "C080",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "Doe I v. Cisco Systems, Inc., No. 15-16909 (9th Cir. July 7, 2023), opinion as reproduced in the petition appendix (Supreme Court docket 24-856)",
+  "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141615995_2025.01.31%20-%20Cisco%20Cert%20Pet%20App.pdf",
+  "notes": "Court record: the Ninth Circuit opinion covers an action by Falun Gong practitioners against Cisco and two executives under the Alien Tort Statute and Torture Victim Protection Act; its table of contents includes 'Cisco's Contributions to the Golden Shield'; the district court number is 5:11-cv-02449 (N.D. Cal.), which indicates a 2011 filing. The allegation that Cisco built features to identify and track practitioners was not read in the snippets."
+ },
+ {
+  "id": "C080",
+  "idx": 4,
+  "verdict": "supported",
+  "label": [
+   "Supreme Court docket 24-856, Cisco Systems v. Doe I",
+   "Petition for a writ of certiorari, Cisco Systems v. Doe I (No. 24-856), with the Ninth Circuit opinion in its appendix"
+  ],
+  "url": [
+   "https://www.supremecourt.gov/docket/docketfiles/html/public/24-856.html",
+   "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141602824_2025.01.31%20-%20Cisco%20Cert%20Pet.pdf"
+  ],
+  "notes": "Court record: Ninth Circuit decision date July 7, 2023, rehearing denied September 3, 2024; Cisco petitioned for certiorari (docketed February 11, 2025). The opinion's summary says the panel affirmed dismissal of the claims against the executives, reversed the dismissal of the Alien Tort Statute claims against Cisco and reversed dismissal of one plaintiff's Torture Victim Protection Act claim, so 'most claims' is the sentence's characterization."
+ },
+ {
+  "id": "C081",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "Reporters Committee for Freedom of the Press: Settlement reached in Lee case (non-profit)",
+   "The Seattle Times: U.S., 5 news organizations settle Wen Ho Lee's lawsuit (June 3, 2006; media only)"
+  ],
+  "url": [
+   "https://www.rcfp.org/settlement-reached-lee-case-involving-reporters-subpoenas/",
+   "https://archive.seattletimes.com/archive/20060603/wenholee03/us-5-news-organizations-settle-wen-ho-lees-lawsuit"
+  ],
+  "notes": "The government agreed to pay Lee $895,000 and the five news organizations $750,000, a total the Seattle Times (from the Los Angeles Times) calls 'more than $1.6 million'; the Reporters Committee page dated June 2, 2006 gives the media payment. No government or court page was read; the Justice Department's settlement terms were not found."
+ },
+ {
+  "id": "C089",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "CRS report RS22652: China's anti-satellite weapon test (April 23, 2007)",
+   "China Leadership Monitor No. 20: Rogue Warriors? A Puzzled Look at the Chinese ASAT Test (Hoover Institution; think tank)"
+  ],
+  "url": [
+   "https://www.everycrsreport.com/files/20070423_RS22652_86cca19bea87ad2ae804edb0c6d1556a407f392a.html",
+   "https://www.hoover.org/sites/default/files/research/docs/clm20jm.pdf"
+  ],
+  "notes": "CRS: the test was on January 11, 2007; China 'did not give advance warnings and its Foreign Ministry did not issue a public statement until January 23', twelve days later. Hoover (a think tank): the Foreign Ministry at first 'continued to bob and weave... refusing to confirm or deny the test', so 'said nothing' is loose; it deflected questions before confirming. The PRC foreign ministry page for January 23 returned a maintenance notice."
+ },
+ {
+  "id": "C089",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "John Costello, testimony to the US-China Economic and Security Review Commission, February 15, 2018",
+   "CNA PLA Update, April 30, 2024: PLA creates Aerospace, Cyber, and Information Support Forces (think tank)"
+  ],
+  "url": [
+   "https://www.uscc.gov/sites/default/files/Costello_Written%20Testimony.pdf",
+   "https://www.cna.org/Newsletters/PLA%20Update/Issue-20/PLA-Update-Issue-20-April-30-2024.pdf"
+  ],
+  "notes": "USCC testimony: the Strategic Support Force was created in December 2015 and concerns the 'strategic frontiers' of space and cyberspace. CNA: the force, 'established in late 2015', was officially disbanded on April 19, 2024 and replaced by the Aerospace Force, Cyberspace Force and Information Support Force."
+ },
+ {
+  "id": "C090",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "New Zealand Treasury, Official Information Act response on Fonterra (2020)",
+  "url": "https://www.treasury.govt.nz/sites/default/files/2020-03/oia-20200010.pdf",
+  "notes": "NZ government document: Fonterra 'bought a 43 per cent stake' in Sanlu in 2005; in 2008 Sanlu 'was identified as the main culprit' in the melamine scandal, was prosecuted and bankrupted. Complaints from late 2007 and continued sales were not found; the China Daily page returned nothing matching and the china.org.cn page failed TLS verification."
+ },
+ {
+  "id": "C090",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Hong Kong Medical Journal, Dec. 2013 supplement: studies related to the melamine incident (Hong Kong Academy of Medicine)",
+   "What Can We Learn from the 2008 Melamine Crisis in China? (Biomedical and Environmental Sciences, 2009; Chinese CDC)"
+  ],
+  "url": [
+   "https://rfs.healthbureau.gov.hk/images/HKMJ/HKMJ_Vol19_No6_Supple8_Dec2013.pdf",
+   "https://www.besjournal.com/fileSWYXYHJKX/journal/article/swyxyhjkx/2009/2/PDF/bes200902005.pdf"
+  ],
+  "notes": "Both journals cite the PRC Ministry of Health: by the end of November 2008, 294,000 infants had been affected, more than 50,000 hospitalized, and six had died. The numbers are the PRC ministry's own, relayed by medical journals."
+ },
+ {
+  "id": "C090",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "dvm360 (veterinary trade media): Tentative settlement reached in pet-food lawsuits (April 3, 2008; media only)",
+  "url": "https://www.dvm360.com/view/tentative-settlement-reached-pet-food-lawsuits-0",
+  "notes": "Trade press: more than 150 brands of wet pet food were recalled from March 2007, and Menu Foods alone recalled '60 million cans and pouches'; the foods were tainted with melamine and cyanuric acid. The two mainland suppliers, wheat gluten and rice protein, and the pet deaths across the United States were not on the page; the FDA page returned HTTP 403."
+ }
+]

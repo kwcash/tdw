@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "On September 8, 2008, Prime Minister Helen Clark of New Zealand told her diplomats to go around provincial officials and warn the central government about poisoned infant formula.",
-    "record": "Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling. Local officials held the news through the Beijing Olympics. The formula sickened about 300,000 infants and killed six. A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 million packages of pet food.",
+    "record": "Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling ([New Zealand Treasury, Official Information Act response on Fonterra (2020)](https://www.treasury.govt.nz/sites/default/files/2020-03/oia-20200010.pdf)). Local officials held the news through the Beijing Olympics. The formula sickened about 300,000 infants and killed six ([Hong Kong Medical Journal, Dec. 2013 supplement: studies related to the melamine incident (Hong Kong Academy of Medicine)](https://rfs.healthbureau.gov.hk/images/HKMJ/HKMJ_Vol19_No6_Supple8_Dec2013.pdf); [What Can We Learn from the 2008 Melamine Crisis in China? (Biomedical and Environmental Sciences, 2009; Chinese CDC)](https://www.besjournal.com/fileSWYXYHJKX/journal/article/swyxyhjkx/2009/2/PDF/bes200902005.pdf)). A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 million packages of pet food ([dvm360 (veterinary trade media): Tentative settlement reached in pet-food lawsuits (April 3, 2008; media only)](https://www.dvm360.com/view/tentative-settlement-reached-pet-food-lawsuits-0)).",
     "reading": "Suppliers added melamine to fake protein readings, and the Olympic calendar kept the poison on shelves. The Party executed two men and jailed Sanlu's chairwoman for life in 2009, which is Stratagem 21, and left intact the system that had held the news.",
     "gapText": "Data Architecture. Protein tests measured nitrogen, so a cheap chemical rich in nitrogen passed as food.",
     "fix": "Test imported food and feed for what they contain rather than for a proxy, and share contamination findings across borders within days."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

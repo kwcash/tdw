@@ -28,10 +28,10 @@
   "gap": "Data",
   "text": {
     "brief": "FBI agents arrested the Amerasia editor Philip Jaffe and five others in June 1945.",
-    "record": "Agents had found hundreds of classified government documents in the magazine's New York office. Earlier warrantless entries by OSS officers and FBI agents weakened the case, and a grand jury declined to indict the diplomat John Service. Jaffe paid a fine of $2,500, and no one went to prison.",
+    "record": "Agents had found hundreds of classified government documents in the magazine's New York office. Earlier warrantless entries by OSS officers and FBI agents weakened the case, and a grand jury declined to indict the diplomat John Service. Jaffe paid a fine of $2,500, and no one went to prison ([The Strange Case of Amerasia (Time, 1950; media only; hosted on whittakerchambers.org)](https://whittakerchambers.org/case/time-1950/amerasia/); [FBI Files on the Amerasia Affair: guide to the microfilm edition (ProQuest; commercial publisher)](https://pq-static-content.proquest.com/collateral/media2/documents/101659.pdf)).",
     "reading": "The first China leak case failed on the defender's own procedure, and the failure fed a decade of suspicion that ruined careers more than it protected secrets. Bad process on a real breach produces both a free culprit and a purge.",
     "gapText": "Data Architecture. The defenders could not show how documents left their channels, and their own illegal entries spoiled the evidence.",
     "fix": "Log access to classified material by person and time, so a leak case rests on records rather than break-ins."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

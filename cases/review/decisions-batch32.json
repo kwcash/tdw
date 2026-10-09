@@ -1,0 +1,152 @@
+[
+ {
+  "id": "C094",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "SC Media: Google hackers wanted to know which Chinese intel operatives were being watched (trade press; media only)",
+   "Security Affairs: Google data breach, company's surveillance database hacked (media only)"
+  ],
+  "url": [
+   "https://www.scmagazine.com/news/google-hackers-wanted-to-know-which-chinese-intel-operatives-were-being-watched",
+   "https://securityaffairs.com/?p=14586"
+  ],
+  "notes": "Two trade-press reports of a Washington Post story, no government record: the Aurora intruders accessed a Google database 'which contained data about court orders that authorized surveillance of certain individuals, presumably included among them Chinese spies'; the repository also includes classified FISA orders. The year 2013 and the FBI link were not in the snippets. The Washington Post article itself timed out earlier."
+ },
+ {
+  "id": "C098",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "CRS report R42930: maritime territorial and exclusive economic zone disputes involving China (everycrsreport mirror, 2013)",
+  "url": "https://www.everycrsreport.com/files/20130123_R42930_70e04bc4533a3f94d62d7fd97ebe108394d4f0bd.html",
+  "notes": "CRS: 'China and the Philippines engaged in a prolonged standoff in 2012 over a dispute about which nation has the right to police Scarborough Shoal', which lies inside the Philippine EEZ and China's nine-dash line. The April 2012 detail (Philippine navy finding fishing boats, Chinese surveillance ships blocking an arrest) is not in the snippets; a later CRS report adds that China has controlled the shoal since the 2012 standoff."
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The CRS reports read mention the 2012 standoff but not the June 2012 mutual withdrawal brokered by the United States; the Inquirer page returned HTTP 403. A State Department source was not found."
+ },
+ {
+  "id": "C100",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "MIT Technology Review: The decline in Chinese cyberattacks, the story behind the numbers (media only; reports FireEye data)",
+  "url": "https://www.technologyreview.com/s/602705/the-decline-in-chinese-cyberattacks-the-story-behind-the-numbers/",
+  "notes": "Media report of company data: FireEye's June 2016 report found 'a significant decrease since early 2013 in the number of commercial attacks from China' across 72 groups, with a 'noticeable decline' beginning in mid-2014, and the article notes the September 2015 Obama-Xi agreement. DISCREPANCY in timing: the decline FireEye describes begins in mid-2014, before the September 2015 agreement, so 'in the months after' fits the reporting only loosely. The FireEye report itself was not read."
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "CRS report R42784: China primary issues for Congress, South China Sea (January 31, 2019 version, everycrsreport mirror)",
+  "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
+  "notes": "CRS: Fiery Cross, Subi and Mischief reefs are the three sites with lengthy airfields; in May 2018 the White House said CNBC had reported that China 'had installed anti-ship cruise missiles and surface-to-air missile systems on three manmade outposts', and 'in April, May, and June 2018' China was reported to have moved surface-to-air and anti-ship missile systems to its new facilities. These are reports; the CRS does not independently confirm the deployment."
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "FBI: Chinese hackers indicted (December 20, 2018)",
+   "FBI wanted page: APT 10 group",
+   "US Attorney SDNY press release: two Chinese hackers associated with the Ministry of State Security charged (December 2018)"
+  ],
+  "url": [
+   "https://www.fbi.gov/news/stories/chinese-hackers-indicted-122018",
+   "https://www.fbi.gov/wanted/cyber/apt-10-group",
+   "https://www.justice.gov/usao-sdny/page/file/1122721/dl"
+  ],
+  "notes": "Government pages: a grand jury in the Southern District of New York indicted Zhu Hua and Zhang Shilong on December 17, 2018; the indictment was unsealed on December 20. The press release says the APT10 Group members worked for Huaying Haitai and 'acted in association with the Chinese Ministry of State Security'. The Justice Department's own press-release page returned nothing, so the US Attorney's copy and the FBI pages were used."
+ },
+ {
+  "id": "C103",
+  "idx": 4,
+  "verdict": "supported",
+  "label": [
+   "Docket entry of September 26, 2022, United States v. Ji Chaoqun, No. 1:18-cr-00611 (N.D. Ill.; CourtListener RECAP copy)",
+   "Military Times: Ex-Army reservist convicted of illegally acting as Chinese agent (September 27, 2022; media only)"
+  ],
+  "url": [
+   "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.356808/gov.uscourts.ilnd.356808.372.0.pdf",
+   "https://www.militarytimes.com/news/your-army/2022/09/27/ex-army-reservist-convicted-of-illegally-acting-as-chinese-agent/"
+  ],
+  "notes": "Court record: the jury trial on 9/26/2022 ended with the jury finding Ji guilty on counts 1, 2 and 5 of the superseding indictment. Military Times (media only): Ji enlisted in the Army Reserve in 2016 under the MAVNI program and his immediate superior was Xu Yanjun of the Ministry of State Security."
+ },
+ {
+  "id": "C104",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "NPR, May 21, 2017: efforts in China to dismantle CIA operations (interview with Mark Mazzetti of the New York Times; media only)",
+   "TheJournal.ie, May 22, 2017: China killed or jailed up to 20 US spies in two years (media only)"
+  ],
+  "url": [
+   "https://www.npr.org/transcripts/529419491",
+   "https://www.thejournal.ie/article.php?id=3402151"
+  ],
+  "notes": "Media reports relaying the New York Times, which cited two former senior American officials: between 2010 and 2012 the Chinese dismantled the CIA's network of informants, and 'in all, 18 to 20 CIA sources in China were either killed or imprisoned'. No government record exists; the intelligence agencies did not confirm the count."
+ },
+ {
+  "id": "C104",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "NBC News: Former CIA officer sentenced to 19 years for conspiring with Chinese spies (November 2019; media only)",
+   "KPBS/NPR: Ex-CIA officer sentenced to 19 years for conspiracy to spy for China (November 22, 2019; media only)"
+  ],
+  "url": [
+   "https://www.nbcnews.com/politics/justice-department/former-cia-officer-sentenced-19-years-conspiring-chinese-spies-n1089341",
+   "https://kpbs.org/news/2019/11/22/ex-cia-officer-sentenced-to-19-years-for"
+  ],
+  "notes": "Media reports of a court event: Jerry Chun Shing Lee 'pleaded guilty in May to a single charge of conspiracy to provide national defense information to a foreign government' and was sentenced to 19 years on Friday, November 22, 2019. The Justice Department release returned no text."
+ },
+ {
+  "id": "C105",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "Federal Register, April 23, 2018: BIS notice on ZTE (govinfo)",
+   "Treasury press release sm0023, March 7, 2017: $100 million settlement with ZTE",
+   "USCC May 2018 trade bulletin"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/FR-2018-04-23/pdf/2018-08354.pdf",
+   "https://home.treasury.gov/news/press-releases/sm0023",
+   "https://www.uscc.gov/sites/default/files/Research/2018%20May%20Trade%20Bulletin.pdf"
+  ],
+  "notes": "BIS notice: under the March 23, 2017 order ZTE agreed to 'a record-high combined civil and criminal penalty of $1.19 billion' for shipping to Iran and North Korea, and entered a plea agreement with the Justice Department; USCC: ZTE 'pled guilty'. DISCREPANCY: $300 million of the $661 million civil penalty was suspended, and USCC says ZTE agreed to pay $892 million in forfeiture and fines, so 'had paid $1.19 billion' overstates what was actually paid."
+ },
+ {
+  "id": "C105",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "Federal Register, July 23, 2018: BIS notice on the June 8, 2018 superseding order for ZTE (govinfo)",
+   "BIS: ZTE superseding settlement agreement (E-2556)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/FR-2018-07-23/pdf/2018-15633.pdf",
+   "https://www.bis.gov/media/documents/e-2556.pdf"
+  ],
+  "notes": "BIS: on June 8, 2018 the Commerce undersecretary issued a Superseding Order under which ZTE would pay $1,000,000,000 to Commerce and place $400,000,000 in escrow at a US bank; the settlement agreement requires ZTE to replace its entire boards of directors and to terminate senior leadership at senior vice president level and above. The Senate amendment that died in conference was not checked (the Rubio press release failed DNS)."
+ },
+ {
+  "id": "C106",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The two USITC pages returned HTTP 403. The USDA Economic Research Service report read did not contain the figures $12.2 billion or $3.1 billion. The soybean export values for 2017 and 2018 remain unchecked."
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "verdict": "partial",
+  "label": "CRS report R47620 on Canada-PRC relations (congress.gov)",
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R47620/R47620.3.pdf",
+  "notes": "CRS: 'In September 2021, the PRC released the two Michaels... hours after Meng reached a deferred prosecution agreement with U.S. prosecutors that allowed her to return to China.' The day, September 24, is not on the page; the Justice Department agreement page returned no text."
+ }
+]

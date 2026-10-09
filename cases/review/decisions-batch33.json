@@ -1,0 +1,172 @@
+[
+ {
+  "id": "C099",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Ilham Tohti awarded the 2019 Sakharov Prize (European Parliament press release, October 2019)",
+  "url": "https://www.europarl.europa.eu/news/en/press-room/20191018IPR64639/ilham-tohti-awarded-the-2019-sakharov-prize",
+  "notes": "This link rests on a web-search result, not on a page the runner read: the runner got no text from the European Parliament pages (HTTP 202). The search result titled the press release 'Ilham Tohti awarded the 2019 Sakharov Prize' and reported that the Parliament announced the prize on 24 October 2019. The Vaclav Havel Prize (Council of Europe) was not confirmed; the Council of Europe page returned HTTP 403."
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Both CDC pages returned HTTP 403 and the NIDA overdose-death-rates page returned no extractable text (HTTP 202). The figures for synthetic opioid deaths in 2021 and 2022 remain unchecked."
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "verdict": "partial",
+  "label": [
+   "Zoom: Our perspective on the DOJ complaint (company statement, published December 18, 2020)",
+   "Amended complaint and affidavit, United States v. Jin Xinjiang et al., No. 20-MJ-1103 (E.D.N.Y.; Justice Department copy)"
+  ],
+  "url": [
+   "https://blog.zoom.us/our-perspective-on-the-doj-complaint/",
+   "https://www.justice.gov/d9/2023-04/jin_-_20-mj-1103_redacted_amended_complaint_signed.pdf"
+  ],
+  "notes": "Company's own statement: Zoom, the unnamed 'Company-1' in the filing, published its response to the Justice Department complaint on December 18, 2020 and says it terminated the China-based former employee charged. The court filing is docket 20-MJ-1103 in the Eastern District of New York. The Justice Department press release returned no text, so the charging date is inferred from the company's post."
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "verdict": "supported",
+  "label": [
+   "Federation of American Scientists (NGO): The 2024 DOD China Military Power Report",
+   "Arms Control Association (NGO): Pentagon says Chinese nuclear arsenal still growing (January/February 2025)"
+  ],
+  "url": [
+   "https://fas.org/publication/the-2024-dod-china-military-power-report/",
+   "https://www.armscontrol.org/act/2025-01/news/pentagon-says-chinese-nuclear-arsenal-still-growing"
+  ],
+  "notes": "NGO summaries of the Pentagon report (the report itself returned HTTP 403): the report estimates China as of mid-2024 had 'more than 600 nuclear warheads' and ACA quotes it that 'China will have over 1,000 operational nuclear warheads by 2030', and the arsenal 'likely exceeds 600 operational nuclear warheads as of mid-2024'. Second-hand, from advocacy and research groups."
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "China Evergrande Group announcement to the Hong Kong Stock Exchange, September 28, 2023 (HKEXnews)",
+   "Bangkok Post, September 28, 2023: Evergrande confirms police are watching chairman (Reuters and Bloomberg; media only)"
+  ],
+  "url": [
+   "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0929/2023092801875.pdf",
+   "https://www.bangkokpost.com/business/general/2654482"
+  ],
+  "notes": "Company filing: Hui Ka Yan 'has been subject to mandatory measures in accordance with the law due to suspicion of illegal crimes' and trading was suspended on 28 September 2023. Media: Bloomberg reported he was taken away by police and put under 'residential surveillance', a measure that 'falls short of formal detention or arrest', so 'detained' is loose. The New York bankruptcy filing in August 2023 was not confirmed (the DLA Piper page returned HTTP 429)."
+ },
+ {
+  "id": "C116",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "9to5Mac, November 9, 2022: Apple to restrict Everyone option in AirDrop in China (media only)",
+   "Macworld, November 10, 2022: Apple to limit AirDrop everyone setting to 10 minutes (media only)"
+  ],
+  "url": [
+   "https://9to5mac.com/2022/11/09/everyone-option-airdrop-10-minutes-china/",
+   "https://www.macworld.com/article/1377200/apple-to-limit-airdrop-everyone-setting-to-10-minutes.html"
+  ],
+  "notes": "Tech press (media only; Apple's own release notes were not read and, per 9to5Mac, did not mention the change): with iOS 16.1.1, released November 9, 2022, 'users in China will find that the Everyone option has changed to Everyone for 10 minutes'. Macworld adds that Apple would not say why and that the change would roll out elsewhere the next year."
+ },
+ {
+  "id": "C116",
+  "idx": 3,
+  "verdict": "supported",
+  "label": [
+   "CRS In Focus IF12265 on the 2022 protests in China (congress.gov)",
+   "Amnesty International (NGO), November 2022: China, government must not detain peaceful protesters",
+   "Human Rights Watch (NGO), November 2023: China, allow commemorations of White Paper protests"
+  ],
+  "url": [
+   "https://www.congress.gov/crs_external_products/IF/PDF/IF12265/IF12265.1.pdf",
+   "https://www.amnesty.org/en/latest/news/2022/11/china-lockdown-protests-covid/",
+   "https://www.hrw.org/news/2023/11/19/china-allow-commemorations-white-paper-protests"
+  ],
+  "notes": "CRS: demonstrations in Shanghai, Beijing 'and over a dozen other cities' were apparently triggered by the Urumqi apartment fire. Amnesty: a fire on 24 November in Urumqi killed 'at least 10 people according to government sources'; protesters held 'blank pieces of paper'. HRW: demonstrators held blank papers to symbolize censorship and at least 10 people were killed in the fire. The death toll is the government's figure; many Chinese blamed the lockdown."
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Grand Forks Herald, February 6, 2023: Year-long Fufeng debate comes to an end after council members vote to stop project (media only)",
+   "KFYR-TV, February 6, 2023: Grand Forks City Council officially cancels Fufeng project (media only)"
+  ],
+  "url": [
+   "https://www.grandforksherald.com/news/local/year-long-fufeng-debate-comes-to-an-end-after-grand-forks-council-members-vote-to-stop-project",
+   "https://www.kfyrtv.com/2023/02/07/grand-forks-city-council-officially-cancels-fufeng-project"
+  ],
+  "notes": "Local news (media only; the city's own page returned HTTP 403 and no council minutes were found): the Grand Forks City Council voted 5-0 on Monday, February 6, 2023 to stop the project, citing national security concerns. Valley News Live reports the same vote."
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "China Daily, May 9, 2023: Capvision accused of abetting foreign spy services (PRC state media)",
+   "Global Times, May 9, 2023: Leading consulting company probed in counter-espionage action (PRC state media)",
+   "Linklaters (law firm): China strengthens enforcement under the Anti-Espionage Law"
+  ],
+  "url": [
+   "https://www.chinadaily.com.cn/a/202305/09/WS645a1fe9a310b6054fad1f82.html",
+   "https://www.globaltimes.cn/page/202305/1290365.shtml",
+   "https://techinsights.linklaters.com/post/102if3y/china-strengthens-enforcement-under-the-anti-espionage-law"
+  ],
+  "notes": "PRC state media (the PRC's own account): according to a TV program aired on Monday (May 8, 2023), state security police found overseas organizations induced Chinese experts to provide intelligence to 'foreign intelligence forces', and Capvision was accused of being complicit; Global Times cites a CCTV report. The law firm notes a state media release dated 8 May 2023 on a raid on Capvision subsidiaries. The accusation is the state's; no independent confirmation."
+ },
+ {
+  "id": "C119",
+  "idx": 0,
+  "verdict": "partial",
+  "label": [
+   "DeepSeek-R1 Release, January 20, 2025 (DeepSeek; company statement)",
+   "Korea JoongAng Daily (Reuters report; media only): investors dump tech stocks after record Nvidia loss"
+  ],
+  "url": [
+   "https://deepseek.com/en/news/deepseek-r1/",
+   "https://www.koreajoongangdaily.com/business/investors-dump-tech-stocks-after-record-593-billion-nvidia-loss/12473281"
+  ],
+  "notes": "Company's own page: 'News January 20, 2025: DeepSeek-R1 Release'. Reuters, via the Korea paper: by Monday, January 27, the assistant 'had overtaken U.S. rival ChatGPT in do[wnloads]' (the snippet is cut off), which supports the app rising on US charts but does not itself say it topped the American download chart."
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Korea JoongAng Daily (Reuters report; media only): Investors dump tech stocks after record $593 billion Nvidia loss",
+  "url": "https://www.koreajoongangdaily.com/business/investors-dump-tech-stocks-after-record-593-billion-nvidia-loss/12473281",
+  "notes": "Reuters via the Korea paper (media only): the selloff evaporated '$593 billion of the chipmaker's market value, a record one-day loss for a Wall Street company'. DISCREPANCY in the figure: Reuters (LSEG data) says $593 billion; the $589 billion in the sentence matches Bloomberg-based reports (seen only in search summaries). The 'about' covers the gap, but the sources differ."
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "DeepSeek privacy policy (company statement; last updated Feb 10, 2026)",
+   "PRC National Intelligence Law (2017), English translation by China Law Translate (translator)",
+   "PRC National Intelligence Law (2017), translation hosted by Brown University (university)"
+  ],
+  "url": [
+   "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+   "https://www.chinalawtranslate.com/en/national-intelligence-law-of-the-p-r-c-2017/",
+   "https://cs.brown.edu/courses/cs180/sources/2017_PRC_NationalIntelligenceLaw.pdf"
+  ],
+  "notes": "Company's own policy: 'we directly collect, process and store your Personal Data in People's Republic of China'. Law, Article 7: 'All organizations and citizens shall support, assist, and cooperate with national intelligence efforts in accordance with law' (Brown's translation: 'state intelligence work'). The translations are not official PRC texts; the sentence's 'where the law requires organizations to assist' matches Article 7."
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "verdict": "partial",
+  "label": [
+   "S. 1071 enrolled bill, National Defense Authorization Act for Fiscal Year 2026 (govinfo)",
+   "Public Law 119-60, December 18, 2025 (congress.gov)"
+  ],
+  "url": [
+   "https://www.govinfo.gov/content/pkg/BILLS-119s1071enr/html/BILLS-119s1071enr.htm",
+   "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf"
+  ],
+  "notes": "Statute: the enrolled bill's table of contents lists 'Sec. 1692. Prohibition on access to Department of Defense cloud-based resources by certain individuals', and the public law header reads 'PUBLIC LAW 119-60, DEC. 18, 2025'. The operative text naming the People's Republic of China, Russia, Iran and North Korea was not in the snippets read; a CRS note on the same law lists those four as covered nations for a separate provision on AI systems."
+ }
+]

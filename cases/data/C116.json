@@ -28,12 +28,12 @@
   "gap": "Technology",
   "text": {
     "brief": "On October 13, 2022, Peng Lifa hung banners from the Sitong Bridge in Beijing that called for elections and an end to lockdowns.",
-    "record": "Police detained him within minutes, and he has not appeared in public since. His slogans spread from phone to phone by AirDrop, which lets nearby devices share files without a network. In November Apple limited AirDrop's open setting to ten minutes on phones sold in the People's Republic. After a fire in Urumqi killed at least ten people on November 24, protests spread to more than a dozen cities, and demonstrators held up blank sheets of paper.",
+    "record": "Police detained him within minutes, and he has not appeared in public since. His slogans spread from phone to phone by AirDrop, which lets nearby devices share files without a network. In November Apple limited AirDrop's open setting to ten minutes on phones sold in the People's Republic ([9to5Mac, November 9, 2022: Apple to restrict Everyone option in AirDrop in China (media only)](https://9to5mac.com/2022/11/09/everyone-option-airdrop-10-minutes-china/); [Macworld, November 10, 2022: Apple to limit AirDrop everyone setting to 10 minutes (media only)](https://www.macworld.com/article/1377200/apple-to-limit-airdrop-everyone-setting-to-10-minutes.html)). After a fire in Urumqi killed at least ten people on November 24, protests spread to more than a dozen cities, and demonstrators held up blank sheets of paper ([CRS In Focus IF12265 on the 2022 protests in China (congress.gov)](https://www.congress.gov/crs_external_products/IF/PDF/IF12265/IF12265.1.pdf); [Amnesty International (NGO), November 2022: China, government must not detain peaceful protesters](https://www.amnesty.org/en/latest/news/2022/11/china-lockdown-protests-covid/); [Human Rights Watch (NGO), November 2023: China, allow commemorations of White Paper protests](https://www.hrw.org/news/2023/11/19/china-allow-commemorations-white-paper-protests)).",
     "reading": "Apple did not say why the change reached mainland phones first, and the timing served the Party whether or not it asked. A feature that let people speak without a network lost its reach weeks before the largest protests in decades, which is Stratagem 19.",
     "gapText": "Technology Architecture. A channel that worked without a network depended on one company's choices, and that company built its phones inside the Party's reach.",
     "fix": "Require American technology firms to disclose feature changes made for a single country, with the date and the reason."
   },
-  "status": "unsourced",
+  "status": "sourced",
   "book": {
     "notes": [
       {
