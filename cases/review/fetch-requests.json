@@ -2,599 +2,555 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C094",
-   "idx": 2,
-   "url": "https://www.scmagazine.com/news/google-hackers-wanted-to-know-which-chinese-intel-operatives-were-being-watched",
-   "grep": [
-    "Google",
-    "surveillance",
-    "court orders",
-    "Chinese",
-    "database"
-   ],
-   "excerpt": 0,
-   "note": "media only: SC Magazine 2013 report summarising the Washington Post story on the Google intruders reaching a database of surveillance orders",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C094",
-   "idx": 2,
-   "url": "https://securityaffairs.com/?p=14586",
-   "grep": [
-    "Google",
-    "surveillance",
-    "FISA",
-    "court orders",
-    "Washington Post"
-   ],
-   "excerpt": 0,
-   "note": "media only: Security Affairs (security news blog) May 2013 post 'Google data breach, Company's Surveillance Database hacked' relaying the Washington Post report",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C094",
-   "idx": 2,
-   "url": "https://news.hitb.org/content/chinese-hackers-who-breached-google-reportedly-targeted-classified-data",
-   "grep": [
-    "Google",
-    "classified",
-    "surveillance",
-    "former",
-    "Chinese"
-   ],
-   "excerpt": 0,
-   "note": "media only: HITB news digest on the 2013 report that the Google hackers targeted classified surveillance data",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/files/20130123_R42930_70e04bc4533a3f94d62d7fd97ebe108394d4f0bd.html",
-   "grep": [
-    "Scarborough Shoal",
-    "April 2012",
-    "fishing",
-    "surveillance",
-    "Philippine"
-   ],
-   "excerpt": 0,
-   "note": "CRS R42930 'Maritime Territorial Disputes in East Asia: Issues for Congress' (Jan 2013) via everycrsreport.com (primary US government analysis); covers the 2012 Scarborough Shoal standoff",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/reports/R44555.html",
-   "grep": [
-    "Scarborough Shoal",
-    "2012",
-    "fishing",
-    "maritime surveillance",
-    "withdraw"
-   ],
-   "excerpt": 0,
-   "note": "CRS R44555 on the Philippines v. China UNCLOS arbitration (2016) via everycrsreport.com (primary US government analysis); background on the 2012 standoff",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 0,
-   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
-   "grep": [
-    "Scarborough Shoal",
-    "2012",
-    "Philippine",
-    "fishing",
-    "cordon"
-   ],
-   "excerpt": 0,
-   "note": "CRS R42784 'China's Actions in South and East China Seas' (Jan 2019 version) via everycrsreport.com (primary US government analysis); Scarborough Shoal 2012 episode",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 1,
-   "url": "https://www.everycrsreport.com/reports/R44555.html",
-   "grep": [
-    "Scarborough Shoal",
-    "withdraw",
-    "United States",
-    "June 2012",
-    "verbal agreement"
-   ],
-   "excerpt": 0,
-   "note": "CRS R44555 (2016) via everycrsreport.com (primary US government analysis); describes negotiations partly mediated by the United States and the agreement that vessels would leave",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 1,
-   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
-   "grep": [
-    "Scarborough Shoal",
-    "withdraw",
-    "verbal agreement",
-    "intermediated",
-    "United States"
-   ],
-   "excerpt": 0,
-   "note": "CRS R42784 (Jan 2019 version) via everycrsreport.com (primary US government analysis); negotiations 'intermediated by the United States' and reported agreement that all vessels leave",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C098",
-   "idx": 1,
-   "url": "https://globalnation.inquirer.net/?p=174534",
-   "grep": [
-    "Del Rosario",
-    "United States",
-    "simultaneous",
-    "June 15",
-    "Scarborough"
-   ],
-   "excerpt": 0,
-   "note": "media only: Philippine Daily Inquirer (2019) on former Foreign Secretary Albert del Rosario's account that the US brokered a mutual withdrawal in June 2012",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C100",
-   "idx": 1,
-   "url": "https://www.technologyreview.com/s/602705/the-decline-in-chinese-cyberattacks-the-story-behind-the-numbers/",
-   "grep": [
-    "FireEye",
-    "September 2015",
-    "decline",
-    "Mandia",
-    "72"
-   ],
-   "excerpt": 0,
-   "note": "MIT Technology Review on the decline in Chinese cyberattacks (media only; quotes company data)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C100",
-   "idx": 2,
-   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
-   "grep": [
-    "Fiery Cross",
-    "Subi",
-    "Mischief",
-    "anti-ship cruise missiles",
-    "surface-to-air"
-   ],
-   "excerpt": 0,
-   "note": "CRS R42784 'China's Actions in South and East China Seas' (Jan 2019 version) via everycrsreport.com (primary US government analysis); missile deployments to the three Spratly outposts",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C100",
-   "idx": 2,
-   "url": "https://www.everycrsreport.com/files/2024-08-26_R42784_21f3443f0dbef1078840c28c3676252630cc8628.html",
-   "grep": [
-    "Fiery Cross",
-    "Subi",
-    "Mischief",
-    "anti-ship cruise missiles",
-    "2018"
-   ],
-   "excerpt": 0,
-   "note": "CRS R42784 'U.S.-China Strategic Competition in South and East China Seas' (Aug 2024 version) via everycrsreport.com (primary US government analysis)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C100",
+   "id": "C107",
    "idx": 3,
-   "url": "https://www.fbi.gov/news/stories/chinese-hackers-indicted-122018",
+   "url": "https://ici.radio-canada.ca/rci/en/news/1826820/b-c-court-drops-extradition-case-after-meng-wanzhou-enters-deferred-prosecution-agreement-in-u-s-",
    "grep": [
-    "Zhu Hua",
-    "Zhang Shilong",
-    "Ministry of State Security",
-    "December",
-    "APT10"
+    "deferred prosecution agreement",
+    "Meng",
+    "Brooklyn",
+    "Friday",
+    "extradition"
    ],
    "excerpt": 0,
-   "note": "FBI story: Chinese hackers indicted (US government)",
+   "note": "Radio-Canada international report, 24 September 2021 on the B.C. court dropping the extradition case after Meng entered the DPA; media only (public broadcaster)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C100",
+   "id": "C108",
    "idx": 3,
-   "url": "https://www.fbi.gov/wanted/cyber/apt-10-group",
+   "url": "https://stacks.cdc.gov/view/cdc/122556/cdc_122556_DS1.pdf",
    "grep": [
-    "Zhu Hua",
-    "Zhang Shilong",
-    "December 17, 2018",
+    "70,601",
+    "synthetic opioids other than methadone",
+    "106,699",
+    "2021",
+    "Data Brief"
+   ],
+   "excerpt": 0,
+   "note": "NCHS Data Brief No. 457, Drug Overdose Deaths in the United States 2001-2021, CDC Stacks copy; federal agency, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C108",
+   "idx": 3,
+   "url": "https://stacks.cdc.gov/view/cdc/135849/cdc_135849_DS1.pdf",
+   "grep": [
+    "73,838",
+    "107,941",
+    "synthetic opioids other than methadone",
+    "22.7",
+    "2022"
+   ],
+   "excerpt": 0,
+   "note": "NCHS Data Brief No. 491, Drug Overdose Deaths in the United States 2002-2022, CDC Stacks copy; federal agency, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C108",
+   "idx": 3,
+   "url": "https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates",
+   "grep": [
+    "73,838",
+    "70,601",
+    "synthetic opioids other than methadone",
+    "2022",
+    "2021"
+   ],
+   "excerpt": 0,
+   "note": "NIDA Drug Overdose Death Rates page (NIH), compiles CDC/NCHS counts by year; federal agency, secondary compilation of primary data",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C109",
+   "idx": 2,
+   "url": "https://blog.zoom.us/our-perspective-on-the-doj-complaint/",
+   "grep": [
+    "December 18",
+    "Jin",
+    "complaint",
+    "Eastern District of New York",
+    "terminated"
+   ],
+   "excerpt": 0,
+   "note": "Zoom company blog post, Our Perspective on the DOJ Complaint, December 2020; company statement, primary for the company's account of the charge",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C109",
+   "idx": 2,
+   "url": "https://www.justice.gov/usao-edny/press-release/file/1304406/download",
+   "grep": [
+    "Xinjiang Jin",
+    "Julien Jin",
+    "20-MJ-1103",
+    "interstate harassment",
+    "Tiananmen"
+   ],
+   "excerpt": 0,
+   "note": "EDNY document file 1304406 returned by a search for the Jin complaint (believed to be the original criminal complaint, unsealed December 2020); DOJ court filing, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C109",
+   "idx": 2,
+   "url": "https://www.justice.gov/d9/2023-04/jin_-_20-mj-1103_redacted_amended_complaint_signed.pdf",
+   "grep": [
+    "Xinjiang Jin",
+    "20-MJ-1103",
+    "December 2020",
+    "unsealed",
+    "interstate harassment"
+   ],
+   "excerpt": 0,
+   "note": "Redacted amended criminal complaint, United States v. Jin, 20-MJ-1103 (E.D.N.Y.), posted April 2023; DOJ court filing, primary; may recite the original December 2020 charging",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C109",
+   "idx": 2,
+   "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+   "grep": [
+    "December 18, 2020",
+    "Dated",
+    "Brooklyn, New York",
+    "sworn to before me"
+   ],
+   "excerpt": 0,
+   "note": "EDNY complaint affidavit: date at the foot of the filing",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C112",
+   "idx": 1,
+   "url": "https://fas.org/publication/the-2024-dod-china-military-power-report/",
+   "grep": [
+    "more than 600",
+    "1,000",
+    "2030",
+    "operational",
+    "mid-2024"
+   ],
+   "excerpt": 0,
+   "note": "Federation of American Scientists analysis of the 2024 DoD China Military Power Report; NGO, secondary, quotes the DoD 600-plus and 1,000-by-2030 figures",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C112",
+   "idx": 1,
+   "url": "https://www.armscontrol.org/act/2025-01/news/pentagon-says-chinese-nuclear-arsenal-still-growing",
+   "grep": [
+    "600",
+    "1,000",
+    "2030",
+    "warheads",
+    "Pentagon"
+   ],
+   "excerpt": 0,
+   "note": "Arms Control Association, Arms Control Today, January 2025, on the Pentagon China Military Power Report; NGO, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C112",
+   "idx": 1,
+   "url": "https://hudson.org/missile-defense/key-strategic-nuclear-forces-takeaways-2024-china-military-power-report-rebeccah-heinrichs",
+   "grep": [
+    "600",
+    "operational",
+    "1,000",
+    "2030",
+    "warheads"
+   ],
+   "excerpt": 0,
+   "note": "Hudson Institute analysis of the nuclear forces sections of the 2024 DoD China Military Power Report; think tank, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C115",
+   "idx": 3,
+   "url": "https://www.dlapiper.com/en/insights/publications/2023/08/evergrande-commences-2023s-largest-chapter-15-filing",
+   "grep": [
+    "Chapter 15",
     "Southern District of New York",
-    "Ministry of State Security"
+    "17 August",
+    "August 17",
+    "Evergrande"
    ],
    "excerpt": 0,
-   "note": "FBI wanted page: APT 10 group (US government)",
+   "note": "DLA Piper law-firm alert, 30 August 2023, on Evergrande Chapter 15 filing in the SDNY; law firm, secondary",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C100",
+   "id": "C115",
    "idx": 3,
-   "url": "https://www.justice.gov/usao-sdny/page/file/1122721/dl",
+   "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0929/2023092801875.pdf",
    "grep": [
-    "Zhu Hua",
-    "Zhang Shilong",
-    "Ministry of State Security",
-    "APT10",
-    "indict"
+    "Hui Ka Yan",
+    "measures",
+    "28 September 2023",
+    "suspected",
+    "suspended"
    ],
    "excerpt": 0,
-   "note": "SDNY indictment document (US court filing via USAO)",
+   "note": "China Evergrande Group announcement to the Hong Kong stock exchange, 28 September 2023, on the chairman being subject to compulsory measures; company regulatory filing, primary",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C103",
-   "idx": 4,
-   "url": "https://www.militarytimes.com/news/your-army/2022/09/27/ex-army-reservist-convicted-of-illegally-acting-as-chinese-agent/",
-   "grep": [
-    "Ji Chaoqun",
-    "Army Reserve",
-    "2016",
-    "Xu Yanjun",
-    "convicted"
-   ],
-   "excerpt": 0,
-   "note": "media only: Military Times (Army Times) 27 Sep 2022 report on the Ji Chaoqun jury verdict",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C103",
-   "idx": 4,
-   "url": "https://www.militarytimes.com/news/your-army/2023/01/26/former-army-reservist-spied-for-chinese-government/",
-   "grep": [
-    "Ji Chaoqun",
-    "Army Reserve",
-    "2016",
-    "Xu Yanjun",
-    "September"
-   ],
-   "excerpt": 0,
-   "note": "media only: Military Times 26 Jan 2023 report on Ji's 8-year sentence, recaps enlistment and the September 2022 conviction",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C103",
-   "idx": 4,
-   "url": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.356808/gov.uscourts.ilnd.356808.372.0.pdf",
-   "grep": [
-    "Ji",
-    "guilty",
-    "September 26, 2022",
-    "Superseding Indictment",
-    "jury"
-   ],
-   "excerpt": 0,
-   "note": "RECAP copy of docket entry 372 in United States v. Ji, N.D. Ill. 1:18-cr-611 (primary court record; contents not confirmed, likely verdict or post-trial filing)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C104",
-   "idx": 1,
-   "url": "https://www.npr.org/transcripts/529419491",
-   "grep": [
-    "Mazzetti",
-    "China",
-    "CIA",
-    "2010",
-    "2012",
-    "20"
-   ],
-   "excerpt": 0,
-   "note": "media only: NPR transcript (21 May 2017) of interview with New York Times reporter Mark Mazzetti on the dismantling of CIA sources in China",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C104",
-   "idx": 1,
-   "url": "https://www.thedailystar.net/world/china-killed-cia-sources-hobbled-us-spying-2010-2012-nyt-1408507",
-   "grep": [
-    "18 to 20",
-    "killed",
-    "imprisoned",
-    "2010",
-    "2012",
-    "CIA"
-   ],
-   "excerpt": 0,
-   "note": "media only: Daily Star (Reuters wire) 2017 report 'China killed, jailed CIA sources: NYT' on the New York Times findings",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C104",
-   "idx": 1,
-   "url": "https://www.thejournal.ie/article.php?id=3402151",
-   "grep": [
-    "20",
-    "CIA",
-    "killed",
-    "imprisoned",
-    "2010",
-    "2012"
-   ],
-   "excerpt": 0,
-   "note": "media only: TheJournal.ie 2017 report 'China killed or jailed up to 20 US spies in two years' relaying the New York Times",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C104",
+   "id": "C115",
    "idx": 3,
-   "url": "https://www.nbcnews.com/politics/justice-department/former-cia-officer-sentenced-19-years-conspiring-chinese-spies-n1089341",
+   "url": "https://www.bangkokpost.com/business/general/2654482",
    "grep": [
-    "Jerry Chun Shing Lee",
-    "19 years",
-    "pleaded guilty",
-    "national defense information",
-    "May"
+    "Hui Ka Yan",
+    "police",
+    "Evergrande",
+    "September",
+    "residential surveillance"
    ],
    "excerpt": 0,
-   "note": "media only: NBC News 22 Nov 2019 report on Lee's 19-year sentence (DOJ press pages unusable on the runner)",
+   "note": "Bangkok Post wire report, Evergrande confirms police are watching chairman, September 2023; media only",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C104",
-   "idx": 3,
-   "url": "https://kpbs.org/news/2019/11/22/ex-cia-officer-sentenced-to-19-years-for",
-   "grep": [
-    "Lee",
-    "19 years",
-    "pleaded guilty",
-    "May",
-    "national defense information"
-   ],
-   "excerpt": 0,
-   "note": "media only: NPR report carried by KPBS, 22 Nov 2019, on the sentencing and the May 2019 plea",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C104",
-   "idx": 3,
-   "url": "https://kvia.com/news/us-world/2019/11/22/former-cia-officer-gets-19-years-in-prison-for-selling-secrets-to-china/",
-   "grep": [
-    "Lee",
-    "19 years",
-    "pleaded guilty",
-    "Alexandria",
-    "Ellis"
-   ],
-   "excerpt": 0,
-   "note": "media only: KVIA (wire copy), 22 Nov 2019, on the 19-year sentence from Judge T.S. Ellis, E.D. Va.",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 0,
-   "url": "https://www.govinfo.gov/content/pkg/FR-2018-04-23/pdf/2018-08354.pdf",
-   "grep": [
-    "1.19 billion",
-    "Iran",
-    "North Korea",
-    "$661",
-    "ZTE"
-   ],
-   "excerpt": 0,
-   "note": "Federal Register notice, BIS activation of ZTE denial order, 23 April 2018 (83 FR 17644); official primary; recites the March 2017 combined $1.19 billion civil and criminal penalty",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 0,
-   "url": "https://home.treasury.gov/news/press-releases/sm0023",
-   "grep": [
-    "430,488,798",
-    "guilty",
-    "Iran",
-    "Zhongxing",
-    "1.19"
-   ],
-   "excerpt": 0,
-   "note": "Treasury Department press release of 7 March 2017 on the OFAC settlement and the coordinated DOJ/Commerce resolution with ZTE; official primary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 0,
-   "url": "https://www.uscc.gov/sites/default/files/Research/2018%20May%20Trade%20Bulletin.pdf",
-   "grep": [
-    "ZTE",
-    "pled guilty",
-    "$892 million",
-    "Iran",
-    "North Korea"
-   ],
-   "excerpt": 0,
-   "note": "US-China Economic and Security Review Commission trade bulletin, May 2018; congressional commission, secondary; says ZTE pled guilty and agreed to pay $892 million",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 3,
-   "url": "https://www.govinfo.gov/content/pkg/FR-2018-07-23/pdf/2018-15633.pdf",
-   "grep": [
-    "1,000,000,000",
-    "400,000,000",
-    "escrow",
-    "superseding",
-    "June"
-   ],
-   "excerpt": 0,
-   "note": "Federal Register notice, BIS order terminating the April 15 2018 ZTE denial order, 83 FR 34825 (23 July 2018); official primary; recites the June 2018 superseding settlement with $1 billion paid and $400 million escrow",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 3,
-   "url": "https://www.bis.gov/media/documents/e-2556.pdf",
-   "grep": [
-    "1,000,000,000",
-    "400,000,000",
-    "escrow",
-    "board of directors",
-    "senior leadership"
-   ],
-   "excerpt": 0,
-   "note": "BIS order document e-2556 hosted on bis.gov, 2018 ZTE order approving the superseding settlement (believed to be the June 2018 superseding order); official primary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C105",
-   "idx": 3,
-   "url": "https://www.rubio.senate.gov/public/index.cfm/press-releases?id=B81368F2-A577-475C-A5F6-129D2BC4317A",
-   "grep": [
-    "ZTE",
-    "conferees",
-    "NDAA",
-    "amendment",
-    "removing"
-   ],
-   "excerpt": 0,
-   "note": "Statement by Senator Marco Rubio on NDAA conferees removing the bipartisan ZTE amendment (July 2018); official senator page, primary for the fact that the Senate ZTE provision was dropped in conference",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C106",
+   "id": "C116",
    "idx": 2,
-   "url": "https://www.usitc.gov/publications/332/executive_briefings/chinasoyebot.pdf",
+   "url": "https://9to5mac.com/2022/11/09/everyone-option-airdrop-10-minutes-china/",
    "grep": [
-    "12.2 billion",
-    "3.1 billion",
-    "soy",
-    "2017",
-    "2018"
+    "10 minutes",
+    "China",
+    "iOS 16.1.1",
+    "AirDrop",
+    "Everyone"
    ],
    "excerpt": 0,
-   "note": "US International Trade Commission executive briefing on US soybean exports to China; federal agency, primary; search snippet gives $12.2 billion in 2017 and $3.1 billion in 2018",
+   "note": "9to5Mac report of 9 November 2022 on the AirDrop Everyone for 10 Minutes limit on iPhones sold in mainland China; media only (no Apple primary page found)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C106",
+   "id": "C116",
    "idx": 2,
-   "url": "https://www.usitc.gov/research_and_analysis/trade_shifts_2018/agriculture.htm",
+   "url": "https://bgr.com/tech/ios-16-1-1-limits-popular-airdrop-feature-used-during-protests-in-china/",
    "grep": [
-    "soybeans",
+    "10 minutes",
     "China",
+    "iOS 16.1.1",
+    "AirDrop",
+    "protest"
+   ],
+   "excerpt": 0,
+   "note": "BGR report on iOS 16.1.1 limiting AirDrop in China, November 2022; media only",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C116",
+   "idx": 2,
+   "url": "https://www.macworld.com/article/1377200/apple-to-limit-airdrop-everyone-setting-to-10-minutes.html",
+   "grep": [
+    "10 minutes",
+    "China",
+    "AirDrop",
+    "Everyone",
+    "iOS 16.1.1"
+   ],
+   "excerpt": 0,
+   "note": "Macworld report, Apple to limit AirDrop Everyone setting to 10 minutes, November 2022; media only",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C116",
+   "idx": 3,
+   "url": "https://www.amnesty.org/en/latest/news/2022/11/china-lockdown-protests-covid/",
+   "grep": [
+    "Urumqi",
+    "at least 10",
+    "24 November",
+    "protests",
+    "cities"
+   ],
+   "excerpt": 0,
+   "note": "Amnesty International news release, November 2022, on the Urumqi fire (at least 10 dead per government sources) and nationwide protests; NGO, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C116",
+   "idx": 3,
+   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12265/IF12265.1.pdf",
+   "grep": [
+    "Urumqi",
+    "over a dozen",
+    "November 26",
+    "zero-COVID",
+    "Shanghai"
+   ],
+   "excerpt": 0,
+   "note": "CRS In Focus IF12265 China Primer: Human Rights (6 December 2022); congressional agency, secondary; says protests in Shanghai, Beijing and over a dozen other cities after the Urumqi fire",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C116",
+   "idx": 3,
+   "url": "https://www.hrw.org/news/2023/11/19/china-allow-commemorations-white-paper-protests",
+   "grep": [
+    "blank",
+    "paper",
+    "Urumqi",
+    "November 2022",
+    "cities"
+   ],
+   "excerpt": 0,
+   "note": "Human Rights Watch statement, 19 November 2023, on the White Paper protests (demonstrators held blank paper); NGO, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C117",
+   "idx": 2,
+   "url": "https://www.grandforksgov.com/business/fufeng-usa-development",
+   "grep": [
+    "Fufeng",
+    "cancel",
+    "City Council",
+    "vote",
+    "2023"
+   ],
+   "excerpt": 0,
+   "note": "City of Grand Forks official Fufeng USA Development page, says the project was cancelled and links the council vote video and development agreement; municipal government, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C117",
+   "idx": 2,
+   "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+   "grep": [
+    "Grand Forks",
+    "City Council",
+    "Fufeng",
+    "Air Force",
+    "February"
+   ],
+   "excerpt": 0,
+   "note": "Written testimony of Nova J. Daly, House Agriculture Committee hearing, 20 March 2024; congressional record, secondary; recounts the Fufeng project and local leaders stopping it",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C117",
+   "idx": 2,
+   "url": "https://www.kfyrtv.com/2023/02/07/grand-forks-city-council-officially-cancels-fufeng-project",
+   "grep": [
+    "Fufeng",
+    "Grand Forks",
+    "council",
+    "unanimous",
+    "Monday"
+   ],
+   "excerpt": 0,
+   "note": "KFYR-TV report of 7 February 2023, Grand Forks City Council officially cancels Fufeng project; media only (local TV)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C118",
+   "idx": 2,
+   "url": "https://www.chinadaily.com.cn/a/202305/09/WS645a1fe9a310b6054fad1f82.html",
+   "grep": [
+    "Capvision",
+    "foreign intelligence",
+    "spy",
+    "China Media Group",
+    "CCTV"
+   ],
+   "excerpt": 0,
+   "note": "China Daily, 9 May 2023, Capvision accused of abetting foreign spy services, reporting the state broadcaster report; PRC state media, primary for what the PRC said",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C118",
+   "idx": 2,
+   "url": "https://www.globaltimes.cn/page/202305/1290365.shtml",
+   "grep": [
+    "Capvision",
+    "CCTV",
+    "overseas intelligence",
+    "national security",
+    "counter-espionage"
+   ],
+   "excerpt": 0,
+   "note": "Global Times, May 2023, consulting company probed in counter-espionage action; PRC state media, primary for what the PRC said",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C118",
+   "idx": 2,
+   "url": "https://techinsights.linklaters.com/post/102if3y/china-strengthens-enforcement-under-the-anti-espionage-law",
+   "grep": [
+    "Capvision",
+    "CCTV",
+    "espionage",
+    "May 2023",
+    "intelligence"
+   ],
+   "excerpt": 0,
+   "note": "Linklaters law-firm briefing on China strengthening enforcement under the anti-espionage law; law firm, secondary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C119",
+   "idx": 0,
+   "url": "https://deepseek.com/en/news/deepseek-r1/",
+   "grep": [
+    "January 20, 2025",
+    "DeepSeek-R1",
+    "deepseek-reasoner",
+    "open-source",
+    "MIT License"
+   ],
+   "excerpt": 0,
+   "note": "DeepSeek company news page announcing R1, dated 20 January 2025; company primary; covers the release date only, not the app-store ranking",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C119",
+   "idx": 1,
+   "url": "https://www.koreajoongangdaily.com/business/investors-dump-tech-stocks-after-record-593-billion-nvidia-loss/12473281",
+   "grep": [
+    "Nvidia",
+    "record",
     "billion",
-    "2018",
-    "oilseeds"
+    "DeepSeek"
    ],
    "excerpt": 0,
-   "note": "USITC Trade Shifts 2018 agricultural products chapter; federal agency, primary",
+   "note": "Korea JoongAng Daily report of Reuters coverage of the Nvidia loss (media only)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C106",
+   "id": "C119",
    "idx": 2,
-   "url": "https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/93390/OCS-19F-01.pdf?v=73487",
+   "url": "https://www.chinalawtranslate.com/en/national-intelligence-law-of-the-p-r-c-2017/",
    "grep": [
-    "12.2 billion",
-    "3.1 billion",
-    "China",
-    "soybean",
-    "2018"
+    "Article 7",
+    "support, assist",
+    "cooperate",
+    "intelligence"
    ],
    "excerpt": 0,
-   "note": "USDA Economic Research Service Oil Crops Outlook (OCS-19F-01); federal agency, primary",
+   "note": "National Intelligence Law of the PRC (2017), English translation by China Law Translate (translator, not a government page)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C107",
-   "idx": 3,
-   "url": "https://www.congress.gov/crs_external_products/R/PDF/R47620/R47620.3.pdf",
+   "id": "C119",
+   "idx": 2,
+   "url": "https://cs.brown.edu/courses/cs180/sources/2017_PRC_NationalIntelligenceLaw.pdf",
    "grep": [
-    "Meng",
-    "deferred prosecution",
-    "September 2021",
-    "Huawei",
-    "two Michaels"
+    "Article 7",
+    "support",
+    "assist",
+    "cooperate",
+    "intelligence work"
    ],
    "excerpt": 0,
-   "note": "Congressional Research Service report R47620 Canada: Background and U.S. Relations (11 July 2023 version); congressional agency, secondary; says the PRC released the two Canadians hours after Meng reached a deferred prosecution agreement",
+   "note": "National Intelligence Law (2017) translation hosted by Brown University computer science course (university)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C107",
+   "id": "C120",
    "idx": 3,
-   "url": "https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1071enr/html/BILLS-119s1071enr.htm",
    "grep": [
-    "Meng",
-    "deferred prosecution",
-    "September 24, 2021",
-    "Huawei",
-    "Eastern District of New York"
+    "SEC. 1692",
+    "cloud-based",
+    "covered period",
+    "September 30, 2030",
+    "Russia"
    ],
    "excerpt": 0,
-   "note": "DOJ National Security Division compilation of China-related cases (archived); DOJ page, primary; matched a search for Meng DPA September 24, 2021",
+   "note": "S. 1071 enrolled bill text, FY2026 NDAA (US Congress via govinfo)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C120",
+   "idx": 3,
+   "url": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+   "grep": [
+    "DEC. 18, 2025",
+    "PUBLIC LAW 119"
+   ],
+   "excerpt": 0,
+   "note": "Public Law 119-60 first page: enactment date (US Congress)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C099",
+   "idx": 2,
+   "url": "https://www.europarl.europa.eu/topics/en/article/20191018STO64607/ilham-tohti-wins-2019-sakharov-prize-for-freedom-of-thought",
+   "grep": [
+    "Ilham Tohti",
+    "Sakharov",
+    "2019",
+    "Uyghur"
+   ],
+   "excerpt": 0,
+   "note": "European Parliament topics article on the 2019 Sakharov Prize (EU institution)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
