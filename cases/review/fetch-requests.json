@@ -2,426 +2,264 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "F008",
+   "id": "F023",
    "idx": 2,
-   "url": "http://www.npc.gov.cn/zgrdw/npc/////////xinwen/2018-06/12/content_2055873.htm",
+   "url": "https://opendoorsdata.org/wp-content/uploads/2024/11/OD24_Fast-Facts_2024-1.pdf",
    "grep": [
-    "第七条",
-    "支持、协助和配合",
-    "2017年6月27日"
-   ],
-   "excerpt": 0,
-   "note": "National Intelligence Law Art. 7"
-  },
-  {
-   "id": "F009",
-   "idx": 0,
-   "url": "https://chinaselectcommittee.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/DeepSeek%20Final.pdf",
-   "grep": [
-    "OpenAI",
-    "January",
-    "distill"
-   ],
-   "excerpt": 0,
-   "note": "OpenAI said Jan 2025 it had evidence DeepSeek distilled"
-  },
-  {
-   "id": "F009",
-   "idx": 1,
-   "url": "https://www.anthropic.com/news/updating-restrictions-of-sales-to-unsupported-regions",
-   "grep": [
-    "Sep",
-    "2025",
-    "November"
-   ],
-   "excerpt": 0,
-   "note": "date of Anthropic restriction post"
-  },
-  {
-   "id": "F015",
-   "idx": 1,
-   "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title15-section9901&num=0&edition=prelim",
-   "grep": [
-    "data broker",
-    "foreign adversary",
-    "sensitive data"
-   ],
-   "excerpt": 0,
-   "note": "PADFAA 15 USC 9901"
-  },
-  {
-   "id": "F018",
-   "idx": 0,
-   "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/01/termination-of-u-s-membership-in-the-world-health-organization-who-joint-statement-by-secretary-of-state-rubio-and-secretary-of-health-and-human-services-kennedy",
-   "grep": [
-    "January 22",
-    "withdrawal",
-    "World Health Organization"
-   ],
-   "excerpt": 300,
-   "note": "US WHO withdrawal Jan 22 2026"
-  },
-  {
-   "id": "F018",
-   "idx": 0,
-   "url": "https://www.who.int/news/item/24-01-2026-who-statement-on-notification-of-withdrawal-of-the-united-states",
-   "grep": [
-    "withdrawal",
-    "22 January",
-    "regret"
-   ],
-   "excerpt": 0,
-   "note": "WHO statement on US withdrawal"
-  },
-  {
-   "id": "F018",
-   "idx": 2,
-   "url": "https://www.who.int/news/item/30-05-2025-who-director-general--member-states-reaffirm-commitment-to-who-and-global-health-at-historic-world-health-assembly",
-   "grep": [
+    "277,398",
     "China",
-    "500",
-    "pledg"
-   ],
-   "excerpt": 0,
-   "note": "China pledge in DG closing remarks"
-  },
-  {
-   "id": "F018",
-   "idx": 2,
-   "url": "https://english.www.gov.cn/news/202505/23/content_WS682faa2fc6d0868f4e8f2c1f.html",
-   "grep": [
-    "500 million",
-    "WHO",
-    "pledg",
-    "donat"
-   ],
-   "excerpt": 0,
-   "note": "China pledge, State Council English"
-  },
-  {
-   "id": "F019",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edmi/pr/chinese-nationals-charged-conspiracy-and-smuggling-dangerous-biological-pathogen-us",
-   "grep": [
-    "Fusarium",
-    "Michigan",
-    "smuggl"
-   ],
-   "excerpt": 500,
-   "note": "DOJ Fusarium case"
-  },
-  {
-   "id": "F020",
-   "idx": 3,
-   "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
-   "grep": [
-    "freeze",
-    "seize",
-    "burn",
-    "lawful"
-   ],
-   "excerpt": 0,
-   "note": "GENIUS Act freeze power"
-  },
-  {
-   "id": "F020",
-   "idx": 3,
-   "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/pdf/PLAW-119publ27.pdf",
-   "grep": [
-    "lawful order",
-    "freeze",
-    "payment stablecoin"
-   ],
-   "excerpt": 0,
-   "note": "GENIUS Act statute"
-  },
-  {
-   "id": "F021",
-   "idx": 0,
-   "url": "http://www.npc.gov.cn/englishnpc/c23934/202106/469e4015f8df41c881d69ab86cbd4aaa.shtml",
-   "grep": [
-    "Anti-Foreign Sanctions Law",
-    "adopted",
-    "countermeasures"
-   ],
-   "excerpt": 0,
-   "note": "Anti-Foreign Sanctions Law June 2021"
-  },
-  {
-   "id": "F021",
-   "idx": 2,
-   "url": "http://english.scio.gov.cn/pressroom/2025-04/05/content_117807312.html",
-   "grep": [
-    "unreliable entity",
-    "US firms",
-    "Taiwan"
-   ],
-   "excerpt": 200,
-   "note": "PRC adds US firms to UEL Apr 2025"
-  },
-  {
-   "id": "F021",
-   "idx": 2,
-   "url": "http://english.scio.gov.cn/m/pressroom/2025-01/15/content_117665049.html",
-   "grep": [
-    "unreliable entit",
-    "Anduril",
-    "arms"
-   ],
-   "excerpt": 200,
-   "note": "PRC adds 7 US firms Jan 2025"
-  },
-  {
-   "id": "F037",
-   "idx": 0,
-   "url": "https://www.federalregister.gov/documents/2024/07/18/2024-15810/standards-related-activities-and-the-export-administration-regulations",
-   "grep": [
-    "standards-related activities",
-    "July 18, 2024",
-    "Entity List"
-   ],
-   "excerpt": 0,
-   "note": "BIS 2024 standards rule"
-  },
-  {
-   "id": "F037",
-   "idx": 0,
-   "url": "https://media.bis.gov/learn-support/advisory-opinions",
-   "grep": [
-    "08/19/19",
-    "Standards",
-    "Listed Entity"
-   ],
-   "excerpt": 0,
-   "note": "BIS 2019 general advisory opinion on standards"
-  },
-  {
-   "id": "F038",
-   "idx": 2,
-   "url": "https://ustr.gov/about/policy-offices/press-office/press-releases/2025/november/ustr-suspension-action-section-301-investigation-chinas-targeting-maritime-logistics-and",
-   "grep": [
-    "November 10, 2025",
-    "suspend",
-    "fees"
+    "2023/24"
    ],
    "excerpt": 300,
-   "note": "USTR suspended port fees Nov 2025"
+   "note": "Open Doors fast facts PDF"
   },
   {
-   "id": "F039",
-   "idx": 2,
-   "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00592/securing-the-information-and-communications-technology-and-services-supply-chain-connected-vehicles",
+   "id": "F024",
+   "idx": 1,
+   "url": "https://media.ca11.uscourts.gov/opinions/pub/files/202312737.pdf",
    "grep": [
-    "Model Year 2027",
-    "software",
-    "People’s Republic of China"
+    "Senate Bill 264",
+    "Shen",
+    "Chinese",
+    "domicil"
+   ],
+   "excerpt": 300,
+   "note": "Eleventh Circuit opinion Shen v. Commissioner"
+  },
+  {
+   "id": "F024",
+   "idx": 2,
+   "url": "https://www.usda.gov/sites/default/files/documents/farm-security-nat-sec.pdf",
+   "grep": [
+    "National Farm Security Action Plan",
+    "foreign adversar",
+    "farmland"
+   ],
+   "excerpt": 300,
+   "note": "USDA plan PDF"
+  },
+  {
+   "id": "F030",
+   "idx": 1,
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf",
+   "grep": [
+    "talking points",
+    "censorship",
+    "People’s Republic of China",
+    "CAISI"
    ],
    "excerpt": 0,
-   "note": "Connected vehicle rule MY2027 software"
+   "note": "AI Action Plan PDF"
   },
   {
-   "id": "F040",
+   "id": "F035",
    "idx": 0,
-   "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11571/notice-of-availability-of-designation-of-chinese-military-companies",
+   "url": "https://investor.tsmc.com/english/encrypt/files/encrypt_file/reports/2025-01/84aeb15bbe33894365d33f52e027c5268ba95dcf/TSMC%204Q24%20Transcript.pdf",
    "grep": [
-    "Alibaba",
-    "Baidu",
-    "BYD",
+    "Arizona",
+    "high volume",
+    "4Q"
+   ],
+   "excerpt": 0,
+   "note": "TSMC 4Q24 transcript: Arizona volume production"
+  },
+  {
+   "id": "F048",
+   "idx": 0,
+   "url": "https://www.ic3.gov/PSA/2025/PSA250515",
+   "grep": [
+    "AI-generated",
+    "voice messages",
+    "senior US officials",
+    "April 2025"
+   ],
+   "excerpt": 300,
+   "note": "FBI PSA May 15 2025"
+  },
+  {
+   "id": "F050",
+   "idx": 1,
+   "url": "https://www.federalregister.gov/documents/2025/01/07/2025-00070/notice-of-availability-of-designation-of-chinese-military-companies",
+   "grep": [
+    "Tencent",
+    "January 2, 2025",
     "1260H"
    ],
-   "excerpt": 300,
-   "note": "DoD 1260H list June 2026"
-  },
-  {
-   "id": "F040",
-   "idx": 0,
-   "url": "https://media.defense.gov/2026/Jun/08/2003945537/-1/-1/1/ENTITIES-IDENTIFIED-AS-CHINESE-MILITARY-COMPANIES-OPERATING-IN-THE-UNITED-STATES-IN-ACCORDANCE-WITH-SECTION-1260H.PDF",
-   "grep": [
-    "Alibaba",
-    "BYD",
-    "Baidu"
-   ],
    "excerpt": 0,
-   "note": "DoD list PDF"
+   "note": "Tencent listed Jan 2025"
   },
   {
-   "id": "F040",
-   "idx": 2,
-   "url": "https://trumpwhitehouse.archives.gov/presidential-actions/presidential-memorandum-united-states-government-supported-research-development-national-security-policy/",
+   "id": "F051",
+   "idx": 0,
+   "url": "https://www.uscc.gov/research/chinas-facilitation-sanctions-and-export-control-evasion",
    "grep": [
-    "disclos",
-    "foreign",
-    "conflict of interest"
+    "125",
+    "Entity List",
+    "Russia",
+    "Treasury"
+   ],
+   "excerpt": 300,
+   "note": "USCC: PRC entities designated for Russia support"
+  },
+  {
+   "id": "F051",
+   "idx": 0,
+   "url": "https://home.treasury.gov/news/press-releases/jy2700",
+   "grep": [
+    "PRC",
+    "China",
+    "Hong Kong",
+    "third-country"
    ],
    "excerpt": 200,
-   "note": "NSPM-33 disclosure"
+   "note": "Treasury third-country designations"
   },
   {
-   "id": "F041",
+   "id": "F053",
    "idx": 0,
-   "url": "https://www.irs.gov/newsroom/treasury-irs-provide-guidance-for-certain-energy-tax-credits-regarding-material-assistance-provided-by-prohibited-foreign-entities-under-the-one-big-beautiful-bill",
+   "url": "https://www.federalregister.gov/documents/2025/03/26/2025-05199/beneficial-ownership-information-reporting-requirement-revision-and-deadline-extension",
    "grep": [
-    "prohibited foreign entit",
-    "material assistance",
-    "storage"
+    "domestic reporting compan",
+    "March 21, 2025",
+    "foreign"
    ],
    "excerpt": 200,
-   "note": "IRS guidance PFE material assistance"
+   "note": "CTA domestic exemption March 2025"
   },
   {
-   "id": "F041",
-   "idx": 1,
-   "url": "http://english.scio.gov.cn/m/pressroom/2025-07/16/content_117980520.html",
+   "id": "F053",
+   "idx": 2,
+   "url": "https://www.governor.nd.gov/news/burgum-issues-statement-air-force-letter-citing-significant-threat-fufeng-project-grand-forks",
    "grep": [
-    "battery",
-    "lithium",
-    "cathode",
-    "export"
+    "Air Force",
+    "Fufeng",
+    "CFIUS",
+    "threat"
+   ],
+   "excerpt": 300,
+   "note": "Grand Forks Air Force letter"
+  },
+  {
+   "id": "F053",
+   "idx": 2,
+   "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+   "grep": [
+    "jurisdiction",
+    "Grand Forks",
+    "December 2022"
+   ],
+   "excerpt": 0,
+   "note": "CFIUS jurisdiction Grand Forks testimony"
+  },
+  {
+   "id": "F054",
+   "idx": 2,
+   "url": "https://www.who.int/news-room/questions-and-answers/item/emergencies-international-health-regulations-and-emergency-committees",
+   "grep": [
+    "public health emergency of international concern",
+    "PHEIC",
+    "mpox",
+    "Zika"
+   ],
+   "excerpt": 300,
+   "note": "PHEIC list"
+  },
+  {
+   "id": "F055",
+   "idx": 0,
+   "url": "https://www.whitehouse.gov/presidential-actions/2025/08/ensuring-american-pharmaceutical-supply-chain-resilience-by-filling-the-strategic-active-pharmaceutical-ingredients-reserve/",
+   "grep": [
+    "approximately 26",
+    "Reserve",
+    "critical"
+   ],
+   "excerpt": 300,
+   "note": "EO 14336 SAPIR 26 drugs"
+  },
+  {
+   "id": "F055",
+   "idx": 2,
+   "url": "https://www.gao.gov/assets/gao-11-95.pdf",
+   "grep": [
+    "heparin",
+    "China",
+    "2008",
+    "contaminat"
+   ],
+   "excerpt": 300,
+   "note": "GAO heparin report"
+  },
+  {
+   "id": "F056",
+   "idx": 0,
+   "url": "https://www.armed-services.senate.gov/press-releases/sasc-chairman-wicker-and-ranking-member-reed-commend-final-passage-of-the-fiscal-year-2026-national-defense-authorization-act",
+   "grep": [
+    "BIOSECURE",
+    "BioSecure",
+    "Chinese biotechnology"
    ],
    "excerpt": 200,
-   "note": "MOFCOM catalogue revision July 2025"
+   "note": "BIOSECURE in FY26 NDAA"
   },
   {
-   "id": "F041",
-   "idx": 2,
-   "url": "https://www.eia.gov/todayinenergy/detail.php?id=64705",
+   "id": "F056",
+   "idx": 0,
+   "url": "https://www.davispolk.com/insights/client-update/u-s-updates-outbound-investment-rule-adopts-biosecure-act",
    "grep": [
-    "2024",
-    "66%",
-    "battery"
+    "BIOSECURE",
+    "December 18",
+    "NDAA"
+   ],
+   "excerpt": 200,
+   "note": "BIOSECURE enacted via NDAA"
+  },
+  {
+   "id": "F056",
+   "idx": 1,
+   "url": "https://www.federalregister.gov/documents/2025/01/08/2024-31486/preventing-access-to-us-sensitive-personal-data-and-government-related-data-by-countries-of-concern",
+   "grep": [
+    "genomic",
+    "human omic",
+    "countries of concern"
    ],
    "excerpt": 0,
-   "note": "EIA battery capacity 2024"
+   "note": "DOJ rule covers genomic data"
   },
   {
-   "id": "F041",
+   "id": "F056",
    "idx": 2,
-   "url": "https://www.eia.gov/todayinenergy/detail.php?id=67205",
+   "url": "https://www.dni.gov/files/NCSC/documents/SafeguardingOurFuture/NCSC_China_Genomics_Fact_Sheet_2021revision20210203.pdf",
    "grep": [
-    "2025",
-    "15 GW",
-    "battery",
-    "record"
-   ],
-   "excerpt": 0,
-   "note": "EIA 2025 batteries record"
-  },
-  {
-   "id": "F042",
-   "idx": 0,
-   "url": "https://www.justice.gov/opa/pr/former-google-engineer-found-guilty-economic-espionage-and-theft-confidential-ai-technology",
-   "grep": [
-    "guilty",
-    "economic espionage",
-    "January",
-    "2026",
-    "Ding"
+    "BGI",
+    "prenatal",
+    "PLA",
+    "genetic"
    ],
    "excerpt": 300,
-   "note": "Ding convicted Jan 29 2026"
+   "note": "NCSC genomics fact sheet 2021"
   },
   {
-   "id": "F042",
+   "id": "F057",
    "idx": 1,
-   "url": "https://www.rand.org/pubs/research_reports/RRA2849-1.html",
+   "url": "https://www.stats.gov.cn/english/PressRelease/202609/t20260916_1965342.html",
    "grep": [
-    "model weights",
-    "state",
-    "nation-state",
-    "2024"
+    "19.9%",
+    "4,797.9",
+    "January to August"
    ],
-   "excerpt": 300,
-   "note": "RAND weights security report 2024"
+   "excerpt": 200,
+   "note": "NBS property investment Jan-Aug 2026"
   },
   {
-   "id": "F043",
+   "id": "F058",
    "idx": 0,
-   "url": "https://policy.trade.ec.europa.eu/news/eu-requests-wto-panel-dispute-china-over-royalties-eu-high-tech-sector-2026-02-12_en",
+   "url": "https://ticdata.treasury.gov/resource-center/data-chart-center/tic/Documents/mfh.txt",
    "grep": [
-    "Chongqing",
-    "royalt",
-    "OPPO",
-    "global"
+    "China, Mainland",
+    "1,3"
    ],
-   "excerpt": 300,
-   "note": "Chongqing global royalty ruling"
-  },
-  {
-   "id": "F043",
-   "idx": 1,
-   "url": "https://www.wto.org/english/tratop_e/dispu_e/cases_e/ds611_e.htm",
-   "grep": [
-    "Wuhan",
-    "anti-suit",
-    "18 February 2022",
-    "2020"
-   ],
-   "excerpt": 300,
-   "note": "Wuhan anti-suit injunctions; EU WTO request"
-  },
-  {
-   "id": "F044",
-   "idx": 0,
-   "url": "https://www.dalailama.com/news/statement-affirming-the-continuation-of-the-institution-of-dalai-lama",
-   "grep": [
-    "Gaden Phodrang",
-    "sole authority",
-    "2 July 2025",
-    "reincarnation"
-   ],
-   "excerpt": 300,
-   "note": "Dalai Lama statement"
-  },
-  {
-   "id": "F044",
-   "idx": 2,
-   "url": "https://www.uscirf.gov/release-statements/uscirf-welcomes-enactment-tibet-policy-and-support-act",
-   "grep": [
-    "successor",
-    "Dalai Lama",
-    "sanction",
-    "Tibetan"
-   ],
-   "excerpt": 300,
-   "note": "Tibetan Policy and Support Act"
-  },
-  {
-   "id": "F045",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/former-high-ranking-new-york-state-government-employee-charged-acting-undisclosed",
-   "grep": [
-    "Linda Sun",
-    "agent",
-    "Executive Chamber",
-    "September"
-   ],
-   "excerpt": 300,
-   "note": "Linda Sun charged Sept 2024"
-  },
-  {
-   "id": "F046",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/two-individuals-arrested-operating-undeclared-police-station-chinese-government",
-   "grep": [
-    "police station",
-    "Ministry of Public Security",
-    "Lu Jianwang",
-    "Chen Jinping"
-   ],
-   "excerpt": 300,
-   "note": "Police station arrests April 2023"
-  },
-  {
-   "id": "F046",
-   "idx": 0,
-   "url": "https://www.justice.gov/usao-edny/pr/new-york-city-resident-pleads-guilty-operating-secret-police-station-chinese",
-   "grep": [
-    "pleaded guilty",
-    "Chen Jinping",
-    "December"
-   ],
-   "excerpt": 300,
-   "note": "Chen Jinping plea Dec 2024"
+   "excerpt": 600,
+   "note": "Treasury TIC major foreign holders"
   }
  ]
 }

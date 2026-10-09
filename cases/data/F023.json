@@ -32,11 +32,11 @@
   "gap": "Principles",
   "text": {
     "brief": "A fourth-year doctoral student in machine learning at a Pittsburgh lab opens an email from the State Department in June 2027. A new blanket rule revokes his visa, and a lab in Hangzhou offers him a job the same week.",
-    "record": "Secretary of State Rubio announced in May 2025 that the United States would revoke visas of mainland students with Party ties or in critical fields. President Trump said in August 2025 that he would welcome 600,000 mainland students. American campuses hosted 277,398 mainland students in the 2023 to 2024 academic year.",
+    "record": "Secretary of State Rubio announced in May 2025 that the United States would revoke visas of mainland students with Party ties or in critical fields ([State Department](https://www.state.gov/briefings/department-press-briefing-may-29-2025)). President Trump said in August 2025 that he would welcome 600,000 mainland students. American campuses hosted 277,398 mainland students in the 2023 to 2024 academic year.",
     "reading": "The Party needs only to wait. A blanket ban turns suspicion into policy and sends the most talented students back to mainland labs, where they build what the ban meant to stop. This is Stratagem 9, watch the fire from across the river.",
     "coreEvent": "The United States suspends new student visas for mainland citizens across science and engineering fields before 2029.",
     "gapText": "Architecture Principles. Policy treats nationality as the risk when the risk lies in specific access and conduct.",
     "fix": "Screen access and conduct, and keep the people who choose to stay. Ancestry is not loyalty."
   },
-  "status": "unsourced"
+  "status": "sourced"
 }

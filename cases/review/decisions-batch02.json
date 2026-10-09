@@ -1,0 +1,86 @@
+[
+ {
+  "id": "F022",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "HKSAR Government",
+  "url": "https://www.info.gov.hk/gia/general/202512/15/P2025121500629.htm",
+  "notes": "Hong Kong government release of 15 Dec 2025: Court of First Instance found Lai guilty of conspiracy to collude with a foreign country and conspiracy to publish seditious publications. Government source; the judgment itself is on judiciary.hk."
+ },
+ {
+  "id": "F022",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "HKSAR Government",
+  "url": "https://www.info.gov.hk/gia/general/202602/09/P2026020900687.htm",
+  "notes": "Hong Kong government remarks of 9 Feb 2026: total sentence 20 years. Government source."
+ },
+ {
+  "id": "F023",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "State Department",
+  "url": "https://www.state.gov/briefings/department-press-briefing-may-29-2025",
+  "notes": "State Department briefing 29 May 2025: begin to revoke visas of Chinese students as warranted, including CCP ties or critical fields. The Secretary's own statement of 28 May was not located; the briefing quotes it."
+ },
+ {
+  "id": "F024",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Texas Legislature (SB 17)",
+  "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00017F.htm",
+  "notes": "Enrolled text; \"designated country\" is tied to the Annual Threat Assessment (China, Russia, Iran, North Korea)."
+ },
+ {
+  "id": "F027",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "CISA advisory AA24-038A",
+  "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
+  "notes": "Joint advisory, Feb 7 2024: pre-positioning; access for at least five years."
+ },
+ {
+  "id": "F027",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Microsoft",
+  "url": "https://www.microsoft.com/en-us/security/security-insider/threat-landscape/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques",
+  "notes": "Vendor report, dated 05/25/2023 on the page (published 24 May US Pacific): Guam targeted."
+ },
+ {
+  "id": "F030",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "NIST CAISI",
+  "url": "https://www.nist.gov/news-events/news/2025/09/caisi-evaluation-deepseek-ai-models-finds-shortcomings-and-risks",
+  "notes": "NIST release September 30, 2025."
+ },
+ {
+  "id": "F033",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Xinhua",
+  "url": "https://english.news.cn/20250813/54bc89feaae2410e9e01eb2260ccea0e/c.html",
+  "notes": "PRC state media; supports \"since 2018\", not the month. Replace with the Kinmen County Government page (certificate error from the runner) or a Taiwan government source."
+ },
+ {
+  "id": "F036",
+  "idx": 0,
+  "verdict": "supported",
+  "label": [
+   "House Homeland Security Committee",
+   "Federal Register"
+  ],
+  "url": [
+   "https://homeland.house.gov/2024/09/12/new-investigation-by-house-homeland-select-committee-on-the-ccp-finds-potential-chinese-threats-to-u-s-port-infrastructure-security/",
+   "https://www.federalregister.gov/documents/2024/02/23/2024-03822/issuance-of-maritime-security-marsec-directive-105-4-cyber-risk-management-actions-for-ship-to-shore"
+  ],
+  "notes": "Committee report summary: ZPMC nearly 80 percent, cellular modems. Coast Guard notice also says nearly 80%. The committee finding is a majority-staff report."
+ },
+ {
+  "id": "F036",
+  "idx": 1,
+  "verdict": "contradicted",
+  "notes": "The February 21, 2024 executive order (EO 14116) gave the Coast Guard cyber authority; it did not fund anything. The $20 billion port investment and the PACECO onshoring were announced the same day by the White House, separately (press call transcript, bidenwhitehouse.archives.gov). Suggested rewrite: \"In February 2024 the White House announced more than $20 billion for port infrastructure and signed an executive order on port cybersecurity.\""
+ }
+]

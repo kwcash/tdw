@@ -32,13 +32,13 @@
   "gap": "Technology",
   "text": {
     "brief": "During a Taiwan crisis in 2031, the crane operators at a West Coast port watch four ship-to-shore cranes freeze in mid-lift. The loads hang over an ammunition ship while the vendor's support line rings unanswered.",
-    "record": "A joint House report of September 12, 2024 found that ZPMC supplied about 80 percent of the ship-to-shore cranes at American ports and that some carried cellular modems no one had ordered. A February 2024 executive order funded American crane production. Congress barred the Party's LOGINK logistics platform from ports the military uses.",
+    "record": "A joint House report of September 12, 2024 found that ZPMC supplied about 80 percent of the ship-to-shore cranes at American ports and that some carried cellular modems no one had ordered ([House Homeland Security Committee](https://homeland.house.gov/2024/09/12/new-investigation-by-house-homeland-select-committee-on-the-ccp-finds-potential-chinese-threats-to-u-s-port-infrastructure-security/); [Federal Register](https://www.federalregister.gov/documents/2024/02/23/2024-03822/issuance-of-maritime-security-marsec-directive-105-4-cyber-risk-management-actions-for-ship-to-shore)). A February 2024 executive order funded American crane production. Congress barred the Party's LOGINK logistics platform from ports the military uses.",
     "reading": "A crane is a computer that lifts containers. Remote maintenance channels built for convenience give the maker a second road into the port. In peacetime the road carries updates, and in a crisis it can carry a stop order. This is Stratagem 24, borrow the road to conquer Guo.",
     "coreEvent": "A US or allied port reports remote interference with mainland-made cargo equipment before 2034.",
     "gapText": "Technology Architecture. Ports bought cranes as machines and never tested them as computers.",
     "fix": "Make acceptance testing the gate for every connected machine. No contribution is suspect because of its source, and no untested one enters service. Crane workers are not agents."
   },
-  "status": "unsourced",
+  "status": "sourced",
   "book": {
     "notes": [
       {

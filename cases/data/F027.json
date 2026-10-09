@@ -31,13 +31,13 @@
   "gap": "Technology",
   "text": {
     "brief": "A water utility engineer on Guam finds a scheduled task on a server in January 2028 that no one on his team created. The task sits dormant and reaches out to a router in a neighbor's office.",
-    "record": "CISA, the NSA and the FBI warned on February 7, 2024 that Volt Typhoon had placed itself inside the networks of American critical infrastructure to enable disruption in a crisis. Some of that access had lasted at least five years. Microsoft reported in May 2023 that the group targeted infrastructure on Guam.",
+    "record": "CISA, the NSA and the FBI warned on February 7, 2024 that Volt Typhoon had placed itself inside the networks of American critical infrastructure to enable disruption in a crisis ([CISA advisory AA24-038A](https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a)). Some of that access had lasted at least five years. Microsoft reported in May 2023 that the group targeted infrastructure on Guam ([Microsoft](https://www.microsoft.com/en-us/security/security-insider/threat-landscape/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques)).",
     "reading": "The Party places its access in peacetime and saves it for the week it matters. In a Taiwan crisis, outages on Guam and at West Coast ports slow the forces that would respond. This is Stratagem 2, besiege Wei to rescue Zhao, with the homeland as the target that relieves pressure at the Strait.",
     "coreEvent": "American agencies disclose new footholds of the Party's hackers in American operational networks before 2028.",
     "gapText": "Technology Architecture. Utilities run operational systems on networks that an intruder can reach and hold for years.",
     "fix": "Pair coordinated eviction with segmentation of operational networks and manual fallbacks tested every year."
   },
-  "status": "unsourced",
+  "status": "sourced",
   "book": {
     "notes": [
       {
