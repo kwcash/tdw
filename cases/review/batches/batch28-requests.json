@@ -1,0 +1,454 @@
+[
+ {
+  "id": "C114",
+  "idx": 2,
+  "url": "https://www.cbp.gov/trade/forced-labor/faqs-uflpa-enforcement",
+  "grep": [
+   "June 21, 2022",
+   "rebuttable presumption",
+   "clear and convincing",
+   "Xinjiang"
+  ],
+  "excerpt": 0,
+  "note": "CBP UFLPA enforcement FAQ",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "Evergrande",
+   "$305 billion",
+   "dollar",
+   "bonds",
+   "default"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 0,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "Evergrande",
+   "$306 billion",
+   "default",
+   "December 2021"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on China debt problems",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 2,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "mortgage",
+   "boycott",
+   "unfinished",
+   "presold",
+   "2022"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on mortgage boycotts",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "mortgage",
+   "boycott",
+   "unfinished",
+   "presold",
+   "2022"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11953/IF11953.6.pdf",
+  "grep": [
+   "Chapter 15",
+   "Hui Ka Yan",
+   "August 2023",
+   "New York",
+   "bankruptcy"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11953 on Evergrande",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.uscc.gov/sites/default/files/2023-11/Chapter_3_Section_2--Fiscal_Financial_and_Debt_Problems_Weigh_Down_Beijings_Ambitions.pdf",
+  "grep": [
+   "Chapter 15",
+   "Hui Ka Yan",
+   "Evergrande",
+   "bankruptcy",
+   "detained"
+  ],
+  "excerpt": 0,
+  "note": "USCC 2023 Annual Report chapter on China debt problems",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 0,
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "370 acres",
+   "Air Force",
+   "CFIUS"
+  ],
+  "excerpt": 0,
+  "note": "House Agriculture Committee testimony (N. Daly, Mar 2024) on Fufeng Grand Forks",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 0,
+  "url": "https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "Air Force Base",
+   "acres"
+  ],
+  "excerpt": 0,
+  "note": "Senate hearing S. Hrg 118-371",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 1,
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "grep": [
+   "Fufeng",
+   "jurisdiction",
+   "CFIUS",
+   "Appendix A",
+   "Grand Forks"
+  ],
+  "excerpt": 0,
+  "note": "House Agriculture Committee testimony (N. Daly) on CFIUS jurisdiction",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 1,
+  "url": "https://congress.gov/118/chrg/CHRG-118shrg56337/CHRG-118shrg56337.pdf",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "CFIUS",
+   "jurisdiction"
+  ],
+  "excerpt": 0,
+  "note": "Senate hearing S. Hrg 118-371",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.valleynewslive.com/2023/02/07/grand-forks-officially-cancels-fufeng-project",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "City Council",
+   "vote",
+   "5-0"
+  ],
+  "excerpt": 0,
+  "note": "media only: Valley News Live, Feb 7, 2023",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.grandforksherald.com/news/local/year-long-fufeng-debate-comes-to-an-end-after-grand-forks-council-members-vote-to-stop-project",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "council",
+   "vote",
+   "5-0"
+  ],
+  "excerpt": 0,
+  "note": "media only: Grand Forks Herald",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/FR-2023-05-05/pdf/2023-09259.pdf",
+  "grep": [
+   "Grand Forks Air Force Base",
+   "Grand Forks",
+   "military installations",
+   "Part 802"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register May 5, 2023 CFIUS real estate rule adding Grand Forks AFB",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 3,
+  "url": "https://www.federalregister.gov/documents/2024/11/07/2024-25773/definition-of-military-installation-and-the-list-of-military-installations-in-the-regulations",
+  "grep": [
+   "59",
+   "military installations",
+   "appendix",
+   "Part 802"
+  ],
+  "excerpt": 0,
+  "note": "Federal Register Nov 2024 final rule adding military installations",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 1,
+  "url": "https://ktvz.com/?p=1204106",
+  "grep": [
+   "Bain",
+   "Shanghai",
+   "Mintz",
+   "April",
+   "questioned"
+  ],
+  "excerpt": 0,
+  "note": "media only: CNN syndication on Mintz fine and Bain Shanghai",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 1,
+  "url": "https://congress.gov/118/chrg/CHRG-118hhrg56257/CHRG-118hhrg56257.pdf",
+  "grep": [
+   "Bain",
+   "Capvision",
+   "Mintz",
+   "raid"
+  ],
+  "excerpt": 0,
+  "note": "House hearing transcript CHRG-118hhrg56257 (testimony mentions firms)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "url": "https://congress.gov/118/chrg/CHRG-118hhrg56257/CHRG-118hhrg56257.pdf",
+  "grep": [
+   "Capvision",
+   "Bain",
+   "Mintz",
+   "spies"
+  ],
+  "excerpt": 0,
+  "note": "House hearing transcript CHRG-118hhrg56257 (mentions Capvision)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 3,
+  "url": "https://subsites.chinadaily.com.cn/npc/2023-04/27/c_882140.htm",
+  "grep": [
+   "Counter-Espionage Law",
+   "July 1",
+   "documents, data, materials",
+   "national security"
+  ],
+  "excerpt": 0,
+  "note": "PRC state media on NPC subsite: revised Counter-Espionage Law",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 3,
+  "url": "https://www.aoshearman.com/en/insights/the-revised-prc-counter-espionage-law-what-has-really-changed",
+  "grep": [
+   "Counter-Espionage Law",
+   "July 1, 2023",
+   "documents",
+   "data",
+   "national security"
+  ],
+  "excerpt": 0,
+  "note": "law firm commentary (secondary)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 4,
+  "url": "https://www.aljazeera.com/economy/2023/8/22/china-fines-mintz-1-5m-for-unapproved-work-after-raids-on-beijing-office",
+  "grep": [
+   "Mintz",
+   "statistics",
+   "1.5 million",
+   "unapproved",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "media only: Al Jazeera Aug 2023",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 4,
+  "url": "https://ktvz.com/?p=1204106",
+  "grep": [
+   "Mintz",
+   "statistics",
+   "1.5 million",
+   "10.69 million yuan",
+   "fine"
+  ],
+  "excerpt": 0,
+  "note": "media only: CNN syndication Aug 2023",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 0,
+  "url": "https://chinaselectcommittee.house.gov/media/reports/deepseek-unmasked-exposing-ccps-latest-tool-spying-stealing-and-subverting-us-export",
+  "grep": [
+   "DeepSeek",
+   "R1",
+   "January 20",
+   "2025"
+  ],
+  "excerpt": 0,
+  "note": "House Select Committee report on DeepSeek (committee finding, not neutral)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "url": "https://www.nasdaq.com/articles/whats-next-nvidia-deepseeks-ai-impact-and-589-billion-market-loss",
+  "grep": [
+   "Nvidia",
+   "$589 billion",
+   "DeepSeek",
+   "January 27",
+   "largest"
+  ],
+  "excerpt": 0,
+  "note": "media only: Nasdaq-hosted article",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+  "grep": [
+   "People's Republic of China",
+   "servers",
+   "store",
+   "Personal Data"
+  ],
+  "excerpt": 0,
+  "note": "DeepSeek's own privacy policy (storage in PRC half of sentence)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://chinaselectcommittee.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/DeepSeek%20Final.pdf",
+  "grep": [
+   "National Intelligence Law",
+   "2017",
+   "Article 7",
+   "organization"
+  ],
+  "excerpt": 0,
+  "note": "secondary: House Select Committee DeepSeek report; NIL half of sentence",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+  "grep": [
+   "Prohibition on access to Department of Defense cloud-based resources",
+   "Iran",
+   "North Korea",
+   "December 18, 2025"
+  ],
+  "excerpt": 0,
+  "note": "Public Law 119-60 (FY2026 NDAA); section deep in a very long PDF",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF13197/IF13197.1.pdf",
+  "grep": [
+   "cloud",
+   "North Korea",
+   "Iran",
+   "Russia",
+   "FY2026"
+  ],
+  "excerpt": 0,
+  "note": "CRS IF13197 on FY2026 NDAA cyber/AI provisions",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
