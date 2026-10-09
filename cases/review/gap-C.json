@@ -1,0 +1,128 @@
+[
+ {
+  "id": "C080",
+  "idx": 3,
+  "sentence": "Falun Gong practitioners sued Cisco in 2011 and alleged that the company built features into Golden Shield to identify and track them.",
+  "tried": "",
+  "hint": "Doe v. Cisco, filed 2011 (N.D. Cal. / Ninth Circuit)."
+ },
+ {
+  "id": "C080",
+  "idx": 4,
+  "sentence": "The Ninth Circuit let most claims proceed on July 7, 2023, and Cisco asked the Supreme Court to review the ruling.",
+  "tried": "",
+  "hint": "Doe I v. Cisco Systems, Ninth Circuit opinion July 7, 2023; cert petition filed by Cisco. cdn.ca9.uscourts.gov."
+ },
+ {
+  "id": "C081",
+  "idx": 3,
+  "sentence": "In 2006 the government and five news organizations paid him about $1.6 million to settle his privacy suit.",
+  "tried": "The CourtListener opinion page returned no text (HTTP 202). The 2006 settlement of about $1.6 million is unchecked.",
+  "hint": "Wen Ho Lee settlement June 2006, about $1.6 million paid by the government and five news organizations."
+ },
+ {
+  "id": "C089",
+  "idx": 1,
+  "sentence": "The Party said nothing for twelve days.",
+  "tried": "The NASA newsletter did not contain '23 January' or Chinese government confirmation in the text read. The twelve days of silence is unchecked here.",
+  "hint": "Jan 11 2007 ASAT test; Chinese MFA confirmed Jan 23, 2007. State Dept briefings, MFA spokesperson transcript."
+ },
+ {
+  "id": "C089",
+  "idx": 3,
+  "sentence": "The Party formed the Strategic Support Force in 2015 to fight in space and cyberspace, and in 2024 it split that force into separate aerospace, cyber and information arms.",
+  "tried": "The NDU Press and Defense Department report pages returned HTTP 403. The 2015 formation of the Strategic Support Force and its 2024 split are unchecked.",
+  "hint": "PLA Strategic Support Force formed Dec 31 2015, dissolved April 2024 into Aerospace Force, Cyberspace Force, Information Support Force. CRS, USCC, DoD report mirrors."
+ },
+ {
+  "id": "C090",
+  "idx": 0,
+  "sentence": "Sanlu, a dairy partly owned by New Zealand's Fonterra, had received complaints about sick infants since late 2007 and kept selling.",
+  "tried": "",
+  "hint": "Sanlu / Fonterra complaints since late 2007; WHO or NZ government (Beehive, MFAT, Parliament) documents."
+ },
+ {
+  "id": "C090",
+  "idx": 2,
+  "sentence": "The formula sickened about 300,000 infants and killed six.",
+  "tried": "",
+  "hint": "Melamine milk 2008: about 300,000 infants sick, six died: WHO / China Ministry of Health numbers."
+ },
+ {
+  "id": "C090",
+  "idx": 3,
+  "sentence": "A year earlier melamine in wheat gluten and rice protein from two mainland suppliers had killed pets across the United States and forced the recall of more than 60 million packages of pet food.",
+  "tried": "",
+  "hint": "2007 melamine pet food recall: more than 60 million packages; FDA pages."
+ },
+ {
+  "id": "C094",
+  "idx": 2,
+  "sentence": "Former officials said in 2013 that the intruders had reached Google's records of American surveillance orders, which could reveal which of the Party's agents the FBI was watching.",
+  "tried": "The Washington Post article timed out on the runner. The 2013 claim that the intruders reached Google's records of surveillance orders is media-only and unchecked.",
+  "hint": "Google breach 2013 report on FISA/surveillance-order database; media only."
+ },
+ {
+  "id": "C098",
+  "idx": 0,
+  "sentence": "In April 2012 the Philippine navy had found mainland fishing boats inside Scarborough Shoal, and maritime surveillance ships of the People's Republic moved in to block any arrest.",
+  "tried": "The CRS report on the South China Sea offered for the April 2012 Scarborough Shoal standoff did not contain the event in the snippets read.",
+  "hint": "Scarborough Shoal standoff April 2012: Arbitral Tribunal award (PCA case 2013-19) or State Dept press briefing."
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "sentence": "American diplomats brokered what they described as a mutual withdrawal in June.",
+  "tried": "The CRS report snippets did not show the US-brokered mutual withdrawal in June 2012, and the congress.gov testimony page timed out. A State Department source was not found.",
+  "hint": "US-brokered mutual withdrawal June 2012: State Dept press briefings, PCA award."
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "sentence": "He won the Václav Havel Prize and the Sakharov Prize in 2019.",
+  "tried": "The European Parliament page returned no text and the Council of Europe page returned HTTP 403. The 2019 Vaclav Havel and Sakharov prizes are unchecked.",
+  "hint": "Ilham Tohti Sakharov Prize 2019 (European Parliament press release) and Vaclav Havel Prize 2019 (Council of Europe/PACE)."
+ },
+ {
+  "id": "C100",
+  "idx": 1,
+  "sentence": "Security firms reported fewer commercial intrusions from mainland groups in the months after.",
+  "tried": "",
+  "hint": "Fewer commercial intrusions after the Sept 2015 Obama-Xi agreement: FireEye 'Redline Drawn' (2016), CrowdStrike; label as company reports."
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "sentence": "By 2018 the Party had placed antiship and antiaircraft missiles on Fiery Cross, Subi and Mischief reefs.",
+  "tried": "Both CRS In Focus PDFs on the South China Sea did not mention Fiery Cross, Subi, Mischief or missiles in the text read.",
+  "hint": "Missiles at Fiery Cross, Subi, Mischief by 2018: DoD, White House press statement May 2018, CRS, USCC."
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "sentence": "In December 2018 the Justice Department charged two hackers who worked with the Ministry of State Security in the APT10 campaign against American companies.",
+  "tried": "The DOJ press page returned an empty page to the runner. The December 2018 APT10 indictment is unchecked here; a court record or FBI page may serve.",
+  "hint": "APT10: Zhu Hua and Zhang Shilong indicted Dec 2018 (SDNY). FBI wanted page, indictment PDF, Treasury, Commerce."
+ },
+ {
+  "id": "C103",
+  "idx": 4,
+  "sentence": "Xu had also directed Ji Chaoqun, a student in Chicago who enlisted in the Army Reserve in 2016, and a jury convicted Ji in September 2022.",
+  "tried": "Both DOJ press-release pages returned no text to the runner. Ji Chaoqun's Army Reserve enlistment in 2016 and his September 2022 conviction are unchecked.",
+  "hint": "Ji Chaoqun enlisted Army Reserve 2016 (MAVNI); convicted Sept 2022 (N.D. Ill.). Court docs, FBI, USAO N.D. Ill."
+ },
+ {
+  "id": "C104",
+  "idx": 1,
+  "sentence": "Between 2010 and 2012 the Party's security services killed or imprisoned as many as twenty CIA sources on the mainland, according to reporting in 2017.",
+  "tried": "",
+  "hint": "NYT 2017 reporting: CIA sources killed or imprisoned 2010-2012; media only."
+ },
+ {
+  "id": "C104",
+  "idx": 3,
+  "sentence": "He pleaded guilty to conspiracy to deliver national defense information and received 19 years in November 2019.",
+  "tried": "Both DOJ press-release pages returned no text. The guilty plea (May 2019) and the 19-year sentence (November 2019) are unchecked.",
+  "hint": "Jerry Chun Shing Lee pleaded guilty May 2019, sentenced Nov 2019 to 19 years (E.D. Va.)."
+ }
+]

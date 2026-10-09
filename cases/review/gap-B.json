@@ -1,0 +1,128 @@
+[
+ {
+  "id": "C048",
+  "idx": 1,
+  "sentence": "Chinese sources put the total who served at about 320,000, with a peak near 170,000 in 1967.",
+  "tried": "",
+  "hint": "Chinese support troops in North Vietnam 1965-1970: about 320,000 served, peak 170,000 in 1967. Wilson Center / CIA / scholarly."
+ },
+ {
+  "id": "C050",
+  "idx": 0,
+  "sentence": "The Party had labeled Lin a rightist at Peking University in 1957 and arrested her in 1960.",
+  "tried": "The CECC hearing transcript offered for Lin Zhao did not mention Lin Zhao, Peking University, rightist, 1960 or 1968. Her 1957 labeling and 1960 arrest are unchecked.",
+  "hint": "Lin Zhao: labeled rightist at Peking University 1957, arrested 1960. CECC political prisoner database or hearing record."
+ },
+ {
+  "id": "C052",
+  "idx": 3,
+  "sentence": "The State Department recalled Blood that June.",
+  "tried": "The National Security Archive page does not contain 'recalled' or 'June 1971'; Blood's recall that June is unchecked.",
+  "hint": "Archer Blood recalled from Dhaka June 1971. NSA briefing book, FRUS 1969-76 vol E-7, ADST oral history."
+ },
+ {
+  "id": "C054",
+  "idx": 2,
+  "sentence": "The Chinese text of the 1979 normalization communiqué used chengren, the word for diplomatic recognition.",
+  "tried": "",
+  "hint": "1979 normalization communique Chinese text used chengren (承认): Congressional hearing record, State Dept, scholarly."
+ },
+ {
+  "id": "C054",
+  "idx": 3,
+  "sentence": "When senators raised the change in 1979, the administration answered that the English text governed.",
+  "tried": "",
+  "hint": "1979 Senate hearings: administration said English text governed."
+ },
+ {
+  "id": "C055",
+  "idx": 2,
+  "sentence": "In March 1979 Wei warned that Deng was becoming a new dictator, and police arrested him on March 29.",
+  "tried": "Britannica returned HTTP 403 and the CECC hearing transcript did not contain March 29, 1979. Wei Jingsheng's warning about Deng and his arrest date are unchecked.",
+  "hint": "Wei Jingsheng warned Deng March 1979, arrested March 29, 1979."
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "sentence": "A court sentenced him to fifteen years in October.",
+  "tried": "Both offered pages were Britannica and returned HTTP 403. Wei Jingsheng's fifteen-year sentence and its October date are unchecked.",
+  "hint": "Wei Jingsheng sentenced to fifteen years, October 16, 1979."
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "sentence": "In December the city moved the wall to a park and required every writer to register a name and workplace.",
+  "tried": "The FRUS document offered (1977-80 Vol. XIII, Document 279) mentions the Democracy Wall and Wei Jingsheng only in a footnote; the December move to a park and the registration rule were not in the text read; Britannica returned HTTP 403.",
+  "hint": "Democracy Wall moved to Yuetan Park Dec 1979; registration of names and workplaces."
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "sentence": "In 1980 the National People's Congress struck the right to write big-character posters from the constitution.",
+  "tried": "Both offered pages were Britannica and returned HTTP 403. The 1980 constitutional change on big-character posters is unchecked; the PRC constitution's text or a National People's Congress document is the primary source.",
+  "hint": "1980 NPC removed the four bigs (big-character posters) from the Constitution. Constitution text (1978 art. 45, 1982 art. 35) or NPC document."
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "sentence": "Chin was Chinese American, and witnesses said Ronald Ebens blamed him for auto jobs lost to Japanese imports.",
+  "tried": "The CourtListener opinion page returned no text (HTTP 202) and the DOJ blog page returned an empty page; neither mentioned Vincent Chin or Ebens in the text read.",
+  "hint": "Vincent Chin: Sixth Circuit US v. Ebens 800 F.2d 1422 (1986), DOJ Civil Rights Division history."
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "sentence": "A Wayne County judge gave Ebens and his stepson Michael Nitz three years' probation and fines of $3,000 each.",
+  "tried": "The CourtListener and DOJ pages returned no text. A helper's lead, unverified: the Sixth Circuit opinion gives the fine as $3,720, not $3,000.",
+  "hint": "Wayne County Circuit Judge Charles Kaufman: three years probation, $3,000 fine; $3,720 costs."
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "sentence": "A federal jury convicted Ebens of a civil rights crime in 1984, but an appeals court overturned the verdict, and a second jury acquitted him in 1987.",
+  "tried": "The CourtListener and DOJ pages returned no text. The 1984 conviction, the reversal and the 1987 acquittal are unchecked.",
+  "hint": "Ebens 1984 federal conviction; Sixth Circuit reversed 1986; retrial Cincinnati 1987 acquittal."
+ },
+ {
+  "id": "C062",
+  "idx": 3,
+  "sentence": "The Party withdrew from Peace Pearl in 1990 and bought Soviet Su-27 fighters instead.",
+  "tried": "The CRS and GAO documents name Peace Pearl and, separately, the Su-27, but the snippets do not connect China's 1990 withdrawal from Peace Pearl to buying Su-27s. Unchecked.",
+  "hint": "China withdrew from Peace Pearl (F-8 avionics) after 1989 and bought Su-27 (1990-92)."
+ },
+ {
+  "id": "C066",
+  "idx": 0,
+  "sentence": "Coalition forces had broken Iraq's army in 1991 after six weeks of air war and a hundred hours on the ground.",
+  "tried": "",
+  "hint": "Gulf War 1991: 38 days of air war and 100-hour ground war. DoD final report to Congress, CMH, CRS."
+ },
+ {
+  "id": "C070",
+  "idx": 1,
+  "sentence": "He went back several times under cover and filmed camps whose goods reached export markets, and CBS aired his footage on 60 Minutes in 1991.",
+  "tried": "Only Britannica was offered and it returned HTTP 403. Wu's covert filming and the 1991 60 Minutes broadcast are unchecked.",
+  "hint": "Harry Wu covert filming and 60 Minutes 1991."
+ },
+ {
+  "id": "C076",
+  "idx": 2,
+  "sentence": "Immigration judges split on such claims until Congress acted in 1996.",
+  "tried": "",
+  "hint": "Immigration judges and BIA split on forced abortion claims before 1996: Matter of Chang (BIA 1989), Matter of G- (BIA 1993), Matter of X-P-T- (BIA 1996)."
+ },
+ {
+  "id": "C076",
+  "idx": 3,
+  "sentence": "Section 601 of the Illegal Immigration Reform and Immigrant Responsibility Act defined forced abortion and sterilization as persecution on account of political opinion.",
+  "tried": "",
+  "hint": "IIRIRA section 601 / 8 U.S.C. 1101(a)(42): forced abortion or involuntary sterilization deemed persecution on account of political opinion. uscode.house.gov, govinfo, congress.gov text."
+ },
+ {
+  "id": "C077",
+  "idx": 0,
+  "sentence": "Martin Scorsese's film about the Dalai Lama's youth had drawn warnings from Party officials before its release in December 1997.",
+  "tried": "",
+  "hint": "Kundun (Scorsese) December 1997; Chinese warnings to Disney."
+ }
+]

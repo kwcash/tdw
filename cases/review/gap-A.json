@@ -1,0 +1,128 @@
+[
+ {
+  "id": "C002",
+  "idx": 2,
+  "sentence": "The merchants surrendered him, a Qing court convicted him, and officials executed him by strangulation in October 1821.",
+  "tried": "MIT Visualizing Cultures essay (university site) discusses the Terranova incident of 1821 but neither 'strangled' nor 'October' was in the text read; the USC US-China Exchange page failed TLS verification. The execution by strangulation in October 1821 is unchecked.",
+  "hint": "Terranova 1821 execution by strangulation, October 1821: look for a primary (Qing memorial/ Canton records) or a US government/archival page."
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "sentence": "Soviet Russia's Karakhan Manifesto of July 1919 offered to give up Tsarist privileges in China, and the offer reached Chinese readers in March 1920.",
+  "tried": "Only a Britannica page was offered and it returned HTTP 403. The Karakhan Manifesto's July 1919 date and its reaching Chinese readers in March 1920 are unchecked.",
+  "hint": "Karakhan Manifesto 1919: FRUS or Soviet document text; Chinese publication March 1920."
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "sentence": "The Party joined the Comintern as its Chinese section in 1922 and took its directives.",
+  "tried": "Britannica returned HTTP 403; the only readable page was Wikipedia's article on the Second CCP Congress, which is not used as a source here. It mentions a resolution on participation in the Comintern (1922). Needs a primary document (the Congress's resolutions) or a scholarly source.",
+  "hint": "Second CCP Congress (July 1922) resolutions on joining the Comintern: marxists.org / a document collection."
+ },
+ {
+  "id": "C016",
+  "idx": 2,
+  "sentence": "Chen Duxiu reported to Moscow in June 1922 that the Comintern had supplied almost all of the Party's spending since the previous October.",
+  "tried": "",
+  "hint": "Chen Duxiu's June 1922 report to the Comintern; Comintern funding."
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "sentence": "Chiang Kai-shek struck in Shanghai on April 12, 1927, and the purge that followed killed thousands of Communists and labor activists.",
+  "tried": "The State Department milestone on the Chinese revolution covers the 1926-27 Northern Expedition and the Nationalist-Communist split but has no 'purge' or April 12 date; Britannica returned HTTP 403. The April 12, 1927 date and 'thousands killed' are unchecked.",
+  "hint": "Shanghai April 12, 1927 coup: FRUS 1927 vol. II consul reports via history.state.gov."
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "sentence": "The Party arranged Snow's passage into its base in the summer of 1936, and he stayed about four months.",
+  "tried": "The UMKC finding aid for Edgar Snow returned no text to the runner (HTTP 202) and Britannica returned HTTP 403. A helper agent's lead, unverified: UMKC says five months and Snow reached Bao'an on July 13, 1936, so 'about four months' needs checking against his own account.",
+  "hint": "Edgar Snow in Bao'an summer 1936, length of stay."
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "sentence": "Red Star Over China appeared in London in 1937 and in New York in January 1938, and a Chinese translation drew young volunteers to Yan'an.",
+  "tried": "The UMKC archival-object pages for the London (Gollancz) and New York (Random House) editions returned no text to the runner (HTTP 202). The 1937 and January 1938 publication dates are unchecked.",
+  "hint": "Red Star Over China: London Gollancz 1937, New York Random House Jan 1938."
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "sentence": "Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed.",
+  "tried": "The Army Center of Military History page failed DNS on the runner and Britannica returned HTTP 403. The August 9, 1945 Soviet entry into Manchuria is unchecked here.",
+  "hint": "Soviet declaration of war on Japan Aug 8 1945 / entry Aug 9: Avalon Project, FRUS 1945 vol VII, Truman Library."
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "sentence": "Jaffe paid a fine of $2,500, and no one went to prison.",
+  "tried": "The FBI history page on the Second World War and Cold War does not mention Amerasia, Jaffe or a fine. The $2,500 fine and the absence of prison terms are unchecked.",
+  "hint": "Amerasia case: Jaffe pleaded guilty and was fined $2,500 (1945). FBI Vault, NARA, FRUS, court record."
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "sentence": "By 1956 the Party had brought private industry under joint state ownership, and Rong later founded CITIC in 1979 to court foreign capital.",
+  "tried": "Only a Britannica page was offered and it returned HTTP 403. The 1956 joint ownership and Rong Yiren's founding of CITIC in 1979 are unchecked.",
+  "hint": "Joint state-private ownership 1956 (socialist transformation); CITIC founded 1979 by Rong Yiren (CITIC's own history page is acceptable, label it as the company)."
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "sentence": "The dispute over voluntary repatriation kept the war going for more than a year, and about 14,000 of the prisoners reached Taiwan in January 1954.",
+  "tried": "The Army Center of Military History pages returned HTTP 403 and a DNS failure. The length of the repatriation dispute and the January 1954 arrival of about 14,000 prisoners in Taiwan are unchecked.",
+  "hint": "Korean War POW repatriation dispute; 14,000 Chinese POWs to Taiwan January 1954. FRUS 1952-54 vol XV; Eisenhower library."
+ },
+ {
+  "id": "C038",
+  "idx": 0,
+  "sentence": "Captors had subjected American prisoners to daily indoctrination and pressure to inform on one another, and some prisoners signed confessions.",
+  "tried": "The National Archives article did not contain indoctrination, brainwash or confess in the text read; the Army history page returned HTTP 403.",
+  "hint": "US POW indoctrination in Korea: 1955 DoD Advisory Committee report 'POW: The Fight Continues After the Battle' or Senate report."
+ },
+ {
+  "id": "C042",
+  "idx": 1,
+  "sentence": "On June 8 the People's Daily turned on the critics, and the Anti-Rightist Campaign labeled more than 550,000 people rightists.",
+  "tried": "The Library of Congress authority page and Britannica both returned HTTP 403. The June 8 People's Daily editorial and the figure of more than 550,000 labeled rightists are unchecked.",
+  "hint": "People's Daily June 8 1957 editorial; Anti-Rightist Campaign 550,000 labeled rightists (official Chinese figure). Wilson Center digital archive, CIA CREST, Congressional or CECC documents."
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "sentence": "Mao circulated the letter and attacked Peng on July 23, and the conference purged him as the leader of an anti-Party clique.",
+  "tried": "The CIA reading-room PDF of leader profiles did not contain Peng Te-huai, Lushan or 'anti-party clique' in the text read; Britannica returned HTTP 403. The July 23 date and the purge are unchecked.",
+  "hint": "Lushan Conference July 1959; Mao circulated Peng Dehuai's letter July 23. Wilson Center digital archive documents."
+ },
+ {
+  "id": "C044",
+  "idx": 1,
+  "sentence": "The campaign against right opportunism that followed punished cadres who reported shortfalls, and grain procurement continued at inflated targets.",
+  "tried": "Both offered pages were Britannica and returned HTTP 403.",
+  "hint": "Anti-right-opportunism campaign 1959-60; grain procurement."
+ },
+ {
+  "id": "C044",
+  "idx": 2,
+  "sentence": "Scholarly estimates of deaths in the famine of 1959 to 1961 range from about fifteen million to forty-five million.",
+  "tried": "Both offered pages were Britannica and returned HTTP 403. The range of famine death estimates needs a scholarly source.",
+  "hint": "Great Famine death estimates 15 to 45 million: US Census Bureau (Banister), CIA, Congressional or CECC documents; or Chinese official data."
+ },
+ {
+  "id": "C045",
+  "idx": 0,
+  "sentence": "Tibetans had risen against Party rule in Lhasa on March 10, and Party artillery shelled the city after the Dalai Lama left.",
+  "tried": "The CIA reading-room document on covert action in the high altitudes returned no matches for Lhasa, Dalai Lama, March 1959 or artillery (it is probably a scanned image); Britannica returned HTTP 403.",
+  "hint": "Lhasa uprising March 10 1959; FRUS 1958-60 vol XIX China on history.state.gov."
+ },
+ {
+  "id": "C045",
+  "idx": 2,
+  "sentence": "Washington wound the program down as it moved toward the Party in the late 1960s and early 1970s.",
+  "tried": "The CIA covert-action PDF returned no matches for 1969, 1970, termination or phase; it is probably a scanned image the extractor could not read.",
+  "hint": "US Tibet program ended; FRUS 1969-1976 vol. XVII or E-13 documents on history.state.gov."
+ }
+]

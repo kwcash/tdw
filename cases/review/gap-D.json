@@ -1,0 +1,114 @@
+[
+ {
+  "id": "C105",
+  "idx": 0,
+  "sentence": "ZTE had pleaded guilty in 2017 to shipping American technology to Iran and North Korea and had paid $1.19 billion.",
+  "tried": "The Commerce page returned HTTP 403 and the DOJ release returned no text. ZTE's 2017 guilty plea and $1.19 billion payment are unchecked.",
+  "hint": "ZTE 2017 plea and $1.19 billion: BIS press release, OFAC settlement, DOJ, Federal Register."
+ },
+ {
+  "id": "C105",
+  "idx": 3,
+  "sentence": "In June the administration settled for a $1 billion fine, $400 million in escrow and new leadership, and a Senate attempt to restore the ban died in conference.",
+  "tried": "Both Commerce pages returned HTTP 403. The June 2018 settlement terms and the fate of the Senate amendment are unchecked.",
+  "hint": "ZTE June 2018 settlement: $1 billion penalty, $400 million escrow, board replaced; Senate NDAA amendment dropped in conference. Federal Register BIS order, Commerce, CRS."
+ },
+ {
+  "id": "C106",
+  "idx": 2,
+  "sentence": "Soybean exports to the mainland fell from about $12 billion in 2017 to about $3 billion in 2018.",
+  "tried": "The CRS report read (R45310) gives the $12 billion aid package and describes targeted export values but not the soybean figures of about $12 billion in 2017 and $3 billion in 2018 in the snippets; the other CRS page returned HTTP 403.",
+  "hint": "US soybean exports to China $12bn in 2017, $3bn in 2018: USDA ERS/FAS data, Census trade data, CRS, CBO."
+ },
+ {
+  "id": "C107",
+  "idx": 3,
+  "sentence": "Meng reached a deferred prosecution agreement with the Justice Department on September 24, 2021.",
+  "tried": "Both Justice Department pages (the deferred prosecution agreement PDF and the press release) returned no text to the runner. Meng's September 24, 2021 agreement is unchecked.",
+  "hint": "Meng Wanzhou DPA Sept 24 2021: E.D.N.Y. documents, PM of Canada statement, Global Affairs Canada."
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "sentence": "Deaths from synthetic opioids in the United States passed 70,000 a year in 2021 and 2022.",
+  "tried": "Both CDC pages (the NCHS data brief PDFs) returned HTTP 403. The 70,000-a-year figure for 2021 and 2022 is unchecked.",
+  "hint": "US synthetic opioid overdose deaths over 70,000 per year in 2021 and 2022: NIDA, CDC, ONDCP mirrors."
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "sentence": "The Justice Department charged Jin on December 18, 2020.",
+  "tried": "The Justice Department and FBI press-release pages returned no text, so the December 18, 2020 charging date is unchecked.",
+  "hint": "Jin Xinjiang complaint EDNY December 18, 2020."
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "sentence": "The Pentagon estimated that the Party's arsenal passed 600 operational warheads by mid-2024 and would exceed 1,000 by 2030.",
+  "tried": "Both Defense Department pages (the 2024 China Military Power Report and its fact sheet) returned HTTP 403 to the runner. The 600-warhead and 1,000-by-2030 figures are unchecked.",
+  "hint": "2024 DoD China Military Power Report: more than 600 operational warheads mid-2024, over 1,000 by 2030. CRS or DoD-hosted alternative."
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "sentence": "The company sought protection in a New York bankruptcy court in August 2023, and police detained its founder the next month.",
+  "tried": "Neither the CRS In Focus nor the USCC chapter mentions the Chapter 15 filing in New York in August 2023 or the September 2023 detention of Hui Ka Yan.",
+  "hint": "Evergrande Chapter 15 filed Aug 17 2023 in SDNY bankruptcy court; Hui Ka Yan detained September 2023."
+ },
+ {
+  "id": "C116",
+  "idx": 2,
+  "sentence": "In November Apple limited AirDrop's open setting to ten minutes on phones sold in the People's Republic.",
+  "tried": "",
+  "hint": "Apple iOS 16.1.1 AirDrop 'Everyone for 10 Minutes' in China November 2022: Apple support page."
+ },
+ {
+  "id": "C116",
+  "idx": 3,
+  "sentence": "After a fire in Urumqi killed at least ten people on November 24, protests spread to more than a dozen cities, and demonstrators held up blank sheets of paper.",
+  "tried": "",
+  "hint": "Urumqi fire November 24 2022 (at least ten dead per city government); protests in more than a dozen cities; blank sheets of paper. OHCHR, State Dept, Urumqi government."
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "sentence": "The city council voted in February 2023 to stop the project.",
+  "tried": "",
+  "hint": "Grand Forks City Council vote Feb 6 2023 to terminate the Fufeng project: city minutes or resolution on grandforksgov.com."
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "sentence": "In May state television accused the expert network Capvision of helping foreign spies.",
+  "tried": "The House hearing transcript read says Chinese security forces raided and imprisoned local staff at Capvision, Bain and Mintz; it does not mention the May state television report or the foreign-spies accusation.",
+  "hint": "Capvision raid and CCTV report May 2023 accusing it of helping foreign spies; MSS/CCTV text, USCC, CRS."
+ },
+ {
+  "id": "C119",
+  "idx": 0,
+  "sentence": "DeepSeek had released its R1 reasoning model on January 20, 2025, and its app soon topped the American download charts.",
+  "tried": "",
+  "hint": "DeepSeek-R1 released January 20, 2025: DeepSeek API docs news250120; top of US App Store."
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "sentence": "On January 27 Nvidia lost about $589 billion in market value, the largest one-day loss for any company in American market history.",
+  "tried": "",
+  "hint": "Nvidia lost about $589 billion in market value Jan 27 2025, record one-day loss."
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "sentence": "DeepSeek's privacy policy stores user data on servers in the People's Republic, where the 2017 National Intelligence Law requires organizations to assist state intelligence work.",
+  "tried": "",
+  "hint": "National Intelligence Law (2017) Article 7: organizations and citizens shall support state intelligence work. English translation (DigiChina, China Law Translate, Congress-hosted)."
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "sentence": "The defense policy law signed in December 2025 barred people from the People's Republic, Russia, Iran and North Korea from access to Pentagon cloud systems.",
+  "tried": "",
+  "hint": "FY2026 NDAA (P.L. 119-60) section 1692 prohibition on access to DoD cloud-based resources by individuals from covered nations; signed Dec 18, 2025. govinfo or congress.gov text."
+ }
+]
