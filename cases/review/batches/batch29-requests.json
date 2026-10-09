@@ -1,0 +1,599 @@
+[
+ {
+  "id": "C002",
+  "idx": 2,
+  "url": "https://searchworks.stanford.edu/view/9549871",
+  "grep": [
+   "Tarranova",
+   "strangled",
+   "October 27",
+   "1821",
+   "Canton"
+  ],
+  "excerpt": 0,
+  "note": "Stanford library catalog record for a printed contemporary pamphlet, 'Account of the trial and execution of Francis Tarranova ... strangled upon a cross by the Chinese people at Canton, on Sunday, October 27th, 1821'; catalog record of a primary item (other accounts give Oct 28); not fetch-confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C002",
+  "idx": 2,
+  "url": "https://penelope.uchicago.edu/Thayer/E/Gazetteer/Places/America/United_States/_Topics/history/_Texts/DULOCT/9*.html",
+  "grep": [
+   "Terranova",
+   "strangled",
+   "October",
+   "1821",
+   "Emily"
+  ],
+  "excerpt": 0,
+  "note": "Foster Rhea Dulles, The Old China Trade (1930), chapter 9, transcribed on Bill Thayer's site (University of Chicago); secondary scholarly narrative of the Terranova case; not fetch-confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C002",
+  "idx": 2,
+  "url": "https://www.americanforeignrelations.com/O-W/Protection-of-American-Citizens-Abroad-Extraterritoriality.html",
+  "grep": [
+   "Terranova",
+   "strangulation",
+   "1821",
+   "Canton",
+   "Emily"
+  ],
+  "excerpt": 0,
+  "note": "Encyclopedia of the New American Nation entry on extraterritoriality (reference publisher); secondary, says Terranova was surrendered and strangled; October date may be absent; media/reference only",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "url": "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/abs/soviet-offer-to-china-of-1919/3B816D3DF9103C9AE7C05A51CB83B375",
+  "grep": [
+   "Karakhan",
+   "1919",
+   "July 25",
+   "March 1920",
+   "Chinese Eastern"
+  ],
+  "excerpt": 0,
+  "note": "Journal of Asian Studies (Cambridge University Press) scholarly article 'The Soviet Offer to China of 1919'; abstract page; secondary scholarly; not fetch-confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1922v01/d775",
+  "grep": [
+   "Karakhan",
+   "1919",
+   "1920",
+   "Chinese Eastern",
+   "declaration"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1922 vol. I document on history.state.gov (Office of the Historian), Soviet-China/Karakhan declaration material; primary official archive; relevance of this exact document to the July 1919 date not confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C015",
+  "idx": 2,
+  "url": "https://openresearch-repository.anu.edu.au/items/2d31dd14-2192-40d0-8ec1-3b764d613597",
+  "grep": [
+   "Karakhan",
+   "1919",
+   "March 1920",
+   "Soviet",
+   "China"
+  ],
+  "excerpt": 0,
+  "note": "Australian National University open research repository item (likely a thesis or paper on Soviet-China relations; title not shown in search results); secondary scholarly; low confidence",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "url": "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E5%8A%A0%E5%85%A5%E7%AC%AC%E4%B8%89%E5%9B%BD%E9%99%85%E5%86%B3%E8%AE%AE%E6%A1%88",
+  "grep": [
+   "第三国际",
+   "二十一条",
+   "中国支部",
+   "1922年7月",
+   "第二次全国代表大会"
+  ],
+  "excerpt": 0,
+  "note": "Chinese Wikisource transcription of the Second CCP Congress resolution 'Resolution on the CCP joining the Third International' (July 1922); transcription of a primary party document, Wikisource not Wikipedia",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "url": "https://archief.socialhistory.org/en/node/2759",
+  "grep": [
+   "Sneevliet",
+   "1922",
+   "Chinese section",
+   "Comintern",
+   "Chinese Communist"
+  ],
+  "excerpt": 0,
+  "note": "International Institute of Social History (Amsterdam) archive description of the Sneevliet papers; says the Chinese Communist Party was officially the Chinese section of the Comintern since July 1922; archive finding aid, secondary summary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 1,
+  "url": "https://www.12371.cn/2012/10/25/ARTI1351155336987662.shtml",
+  "grep": [
+   "第三国际",
+   "第二次全国代表大会",
+   "党章",
+   "章程",
+   "1922"
+  ],
+  "excerpt": 0,
+  "note": "12371.cn (Communist Party Organization Department site) reprint of the CCP constitution adopted by the Second Congress in 1922, which ties membership to Third International recognition; primary party document",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 2,
+  "url": "https://www.marxists.org/chinese/reference-books/ccp-1921-1949/01/008.htm",
+  "grep": [
+   "陈独秀",
+   "经费",
+   "去年十月",
+   "六月",
+   "国际"
+  ],
+  "excerpt": 0,
+  "note": "Marxists Internet Archive Chinese library, Selected Documents of the CCP Central Committee vol. 1 (1921-1925); likely the report of Chen Duxiu, CC Secretary, to the Comintern dated 30 June 1922 (catalog page labelled with Chen Duxiu); primary party document; entry number not fully confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 2,
+  "url": "https://www.cuhk.edu.hk/ics/21c/media/articles/c083-200403013.pdf",
+  "grep": [
+   "陈独秀",
+   "16655",
+   "17655",
+   "1922",
+   "共产国际",
+   "经费"
+  ],
+  "excerpt": 0,
+  "note": "Yang Kuisong, article on Moscow's funding of the CCP, Twenty-First Century (Chinese University of Hong Kong Institute of Chinese Studies), June 2004; scholarly secondary citing Chen Duxiu's 30 June 1922 report (Comintern 'assistance' 16,655 of 17,655 yuan)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C016",
+  "idx": 2,
+  "url": "https://www.aisixiang.com/data/80405.html",
+  "grep": [
+   "陈独秀",
+   "16655",
+   "17655",
+   "1922",
+   "共产国际"
+  ],
+  "excerpt": 0,
+  "note": "Aisixiang academic-essay site reprint of the Yang Kuisong article on Moscow's funding of the CCP (wording differs slightly from the CUHK version); scholarly secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "url": "https://www.marxists.org/history/etol/writers/isaacs/1938/tcr/ch10.htm",
+  "grep": [
+   "April 12",
+   "Shanghai",
+   "Chiang Kai-shek",
+   "killed",
+   "thousand"
+  ],
+  "excerpt": 0,
+  "note": "Harold Isaacs, The Tragedy of the Chinese Revolution (1938), chapter 10, hosted on Marxists Internet Archive; contemporary eyewitness-era account by a journalist, partisan Trotskyist hosting; secondary; chapter number not fully confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "url": "https://cyberleninka.ru/article/n/the-12-april-coup-of-1927-actors-motives-consequences",
+  "grep": [
+   "April 12",
+   "1927",
+   "Shanghai",
+   "Chiang Kai-shek",
+   "killed",
+   "thousand"
+  ],
+  "excerpt": 0,
+  "note": "Academic journal article 'The 12 April Coup of 1927: Actors, Motives, Consequences' on CyberLeninka (Russian open-access repository); scholarly secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C017",
+  "idx": 2,
+  "url": "https://www.hoover.org/research/chiang-chooses-his-enemies",
+  "grep": [
+   "April 12",
+   "1927",
+   "Shanghai",
+   "Communists",
+   "thousand"
+  ],
+  "excerpt": 0,
+  "note": "Hoover Institution (Stanford think tank) essay 'Chiang Chooses His Enemies'; secondary think-tank essay; relevance to the April 1927 purge not confirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "url": "https://www.marxists.org/reference/archive/mao/works/1936/11/x01.htm",
+  "grep": [
+   "four months",
+   "Pao An",
+   "Bao'an",
+   "Red China",
+   "Snow"
+  ],
+  "excerpt": 0,
+  "note": "Edgar Snow's own 1936 article 'Interviews with Mao Tse-tung' hosted on Marxists Internet Archive; Snow's first-hand account; may state he remained in Red China four months",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "url": "https://publishing.cdlib.org/ucpressebooks/public/book/season-of-high-adventure-edgar-snow-in-china.html",
+  "grep": [
+   "Pao An",
+   "Bao'an",
+   "July 13",
+   "October 12",
+   "four months"
+  ],
+  "excerpt": 0,
+  "note": "University of California Press e-book (California Digital Library), S. Bernard Thomas, Season of High Adventure: Edgar Snow in China; scholarly biography; this is the book landing page, chapter text may be on sub-pages",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "url": "https://www.mfa.gov.cn/eng/zy/jj/zggcddwjw100ggs/gmqtjygml/202406/t20240606_11377907.html",
+  "grep": [
+   "Snow",
+   "Bao'an",
+   "four months",
+   "1936",
+   "Red Star Over China"
+  ],
+  "excerpt": 0,
+  "note": "PRC Ministry of Foreign Affairs page 'Who is CPC?: Edgar Snow, the first Western journalist to introduce Red China'; government page with Party-line narrative, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "url": "https://www.mfa.gov.cn/eng/zy/jj/zggcddwjw100ggs/gmqtjygml/202406/t20240606_11377907.html",
+  "grep": [
+   "Red Star Over China",
+   "October 1937",
+   "London",
+   "Yan'an",
+   "young"
+  ],
+  "excerpt": 0,
+  "note": "PRC Ministry of Foreign Affairs page on Edgar Snow; government page, Party narrative; reported to give London publication in October 1937 and the Chinese translation; secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "url": "https://www.mfa.gov.cn/ziliao_674904/zt_674979/dnzt_674981/qtzt/zggcddwjw100ggs/gmqtjygml/202208/t20220823_10749339.shtml",
+  "grep": [
+   "红星照耀中国",
+   "1937年10月",
+   "伦敦",
+   "西行漫记",
+   "延安",
+   "青年"
+  ],
+  "excerpt": 0,
+  "note": "Chinese Ministry of Foreign Affairs special page (100 stories of CPC foreign contacts) on Edgar Snow; says English edition appeared in London in October 1937 and Chinese version titled Xixi Manji; government page, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "url": "https://muse.jhu.edu/pub/250/edited_volume/chapter/3184685",
+  "grep": [
+   "Red Star Over China",
+   "Gollancz",
+   "Random House",
+   "1937",
+   "1938"
+  ],
+  "excerpt": 0,
+  "note": "Project MUSE edited-volume chapter 'How the Red Star Rose' (university press); scholarly secondary on the book's publication; may be paywalled",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "url": "https://avalon.law.yale.edu/wwii/s4.asp",
+  "grep": [
+   "August 9",
+   "Japan",
+   "Molotov",
+   "Sato",
+   "war"
+  ],
+  "excerpt": 0,
+  "note": "Avalon Project (Yale Law School) text of the Soviet declaration of war on Japan delivered 8 August 1945, effective 9 August; primary document transcription",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "url": "https://apps.dtic.mil/sti/tr/pdf/ADA143942.pdf",
+  "grep": [
+   "9 August",
+   "Manchuria",
+   "Kwantung",
+   "Trans-Baikal",
+   "1945"
+  ],
+  "excerpt": 0,
+  "note": "Glantz, August Storm: Soviet Tactical and Operational Combat in Manchuria, 1945 (Leavenworth Paper 8, US Army Combat Studies Institute, hosted by DTIC); official US Army study, secondary; Chinese Communist moves unlikely covered",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1945v07/d565",
+  "grep": [
+   "Chu Teh",
+   "August 11",
+   "Manchuria",
+   "Soviet",
+   "Communist"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1945 vol. VII, memorandum prepared by Chiang Kai-shek (history.state.gov, Office of the Historian); primary archival document stating Chu Teh claimed the right on 11 August 1945 to dispatch Communist troops to occupy cities",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "url": "https://pq-static-content.proquest.com/collateral/media2/documents/101659.pdf",
+  "grep": [
+   "Jaffe",
+   "$2,500",
+   "fine",
+   "Larsen",
+   "pleaded"
+  ],
+  "excerpt": 0,
+  "note": "ProQuest microfilm guide 'FBI Files on the Amerasia Affair' (company publication); includes a case summary; secondary; whether it gives the fine amount is unconfirmed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "url": "https://whittakerchambers.org/case/time-1950/amerasia/",
+  "grep": [
+   "Jaffe",
+   "$2,500",
+   "fine",
+   "Larsen",
+   "$500"
+  ],
+  "excerpt": 0,
+  "note": "Reproduction of TIME magazine 1950 article 'The Strange Case of Amerasia' on the Whittaker Chambers archive site; media only; reported to say the court fined Jaffe $2,500 which he paid on the spot, and Larsen $500",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "url": "https://www.weeklystandard.com/donald-lyons/a-forgotten-spy-case",
+  "grep": [
+   "Jaffe",
+   "$2,500",
+   "fine",
+   "Larsen",
+   "Amerasia"
+  ],
+  "excerpt": 0,
+  "note": "Weekly Standard review essay 'A Forgotten Spy Case' on the Amerasia affair; media only; secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "url": "https://www.citic.com/en/aboutus/history/CITIC_Group/",
+  "grep": [
+   "Rong Yiren",
+   "1979",
+   "Deng Xiaoping",
+   "foreign capital",
+   "October"
+  ],
+  "excerpt": 0,
+  "note": "CITIC's own corporate history page (company self-account, primary for its founding); says CITIC was founded in October 1979 with Rong Yiren as first chairman, at Deng Xiaoping's initiative",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "url": "https://www.china.org.cn/features/60years/2009-09/15/content_18531017.htm",
+  "grep": [
+   "1956",
+   "joint state-private",
+   "capitalist industry",
+   "whole",
+   "interest"
+  ],
+  "excerpt": 0,
+  "note": "China.org.cn (state-run, 60th anniversary feature) '1956: Joint state-private ownership'; PRC government-run secondary retrospective; seen in search as http, https assumed",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C034",
+  "idx": 2,
+  "url": "https://www.group.citic/en/About_CITIC/Brief_Introduction/",
+  "grep": [
+   "Rong Yiren",
+   "1979",
+   "window",
+   "foreign capital",
+   "Deng Xiaoping"
+  ],
+  "excerpt": 0,
+  "note": "CITIC Group's brief introduction page (company self-description); describes founding in 1979 and its role as a window for foreign capital and technology; company page, not independent",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1952-54v15p1/d453",
+  "grep": [
+   "14,000",
+   "Formosa",
+   "Taiwan",
+   "prisoners",
+   "January"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1952-54 vol XV part 1 doc 453 (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C042",
+  "idx": 1,
+  "url": "https://digitalarchive.wilsoncenter.org/document/117781",
+  "grep": [
+   "Rightist",
+   "450,000",
+   "June 8",
+   "People's Daily"
+  ],
+  "excerpt": 0,
+  "note": "Wilson Center Digital Archive: record of Mao conversation with a Polish delegation, 1957 (primary translation)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "url": "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_34.htm",
+  "grep": [
+   "Lushan",
+   "July 23",
+   "Peng",
+   "1959",
+   "letter"
+  ],
+  "excerpt": 0,
+  "note": "Mao, Speech at the Lushan Conference, July 23, 1959 (Selected Works vol. 8 as hosted by marxists.org; hosting archive, not a government page)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "url": "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_59.htm",
+  "grep": [
+   "anti-party",
+   "clique",
+   "Peng",
+   "right opportunist",
+   "Lushan"
+  ],
+  "excerpt": 0,
+  "note": "Mao, Speech at the Ninth Plenum of the Eighth Central Committee (marxists.org)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C045",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d367",
+  "grep": [
+   "March 10",
+   "Dalai Lama",
+   "Lhasa",
+   "Peiping",
+   "shell"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1958-60 vol XIX doc 367: Dulles NSC briefing March 26, 1959 on Tibet (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]

@@ -1,0 +1,351 @@
+[
+ {
+  "id": "C045",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1958-60v19/d367",
+  "grep": [
+   "March 10",
+   "Dalai Lama",
+   "Lhasa",
+   "Peiping",
+   "shell"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1958-60 vol XIX doc 367: Dulles NSC briefing March 26, 1959 on Tibet (US government record)",
+  "ua": "browser"
+ },
+ {
+  "id": "C045",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d278",
+  "grep": [
+   "Tibet",
+   "1,800",
+   "300",
+   "reduce",
+   "Mustang"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1969-76 vol XVII doc 278: CIA memo to the 40 Committee on Tibetan operations (US government record)",
+  "ua": "browser"
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "url": "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_34.htm",
+  "grep": [
+   "Lushan",
+   "July 23",
+   "Peng",
+   "1959",
+   "letter"
+  ],
+  "excerpt": 0,
+  "note": "Mao, Speech at the Lushan Conference, July 23, 1959 (Selected Works vol. 8 as hosted by marxists.org; hosting archive, not a government page)",
+  "ua": "browser"
+ },
+ {
+  "id": "C044",
+  "idx": 0,
+  "url": "https://www.marxists.org/reference/archive/mao/selected-works/volume-8/mswv8_59.htm",
+  "grep": [
+   "anti-party",
+   "clique",
+   "Peng",
+   "right opportunist",
+   "Lushan"
+  ],
+  "excerpt": 0,
+  "note": "Mao, Speech at the Ninth Plenum of the Eighth Central Committee (marxists.org)",
+  "ua": "browser"
+ },
+ {
+  "id": "C042",
+  "idx": 1,
+  "url": "https://digitalarchive.wilsoncenter.org/document/117781",
+  "grep": [
+   "Rightist",
+   "450,000",
+   "June 8",
+   "People's Daily"
+  ],
+  "excerpt": 0,
+  "note": "Wilson Center Digital Archive: record of Mao conversation with a Polish delegation, 1957 (primary translation)",
+  "ua": "browser"
+ },
+ {
+  "id": "C037",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1952-54v15p1/d453",
+  "grep": [
+   "14,000",
+   "Formosa",
+   "Taiwan",
+   "prisoners",
+   "January"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1952-54 vol XV part 1 doc 453 (US government record)",
+  "ua": "browser"
+ },
+ {
+  "id": "C066",
+  "idx": 0,
+  "url": "https://history.state.gov/milestones/1989-1992/gulf-war",
+  "grep": [
+   "January 16",
+   "February 28",
+   "Desert Storm",
+   "air",
+   "ground"
+  ],
+  "excerpt": 0,
+  "note": "Office of the Historian milestone: Gulf War (US State Department)",
+  "ua": "browser"
+ },
+ {
+  "id": "C066",
+  "idx": 0,
+  "url": "https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458965/1991-operation-desert-shielddesert-storm/",
+  "grep": [
+   "17 January",
+   "one hundred hours",
+   "largest air campaign",
+   "28 February"
+  ],
+  "excerpt": 0,
+  "note": "Air Force Historical Support Division fact sheet (US government)",
+  "ua": "browser"
+ },
+ {
+  "id": "C066",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-PEMD-96-10/pdf/GAOREPORTS-PEMD-96-10.pdf",
+  "grep": [
+   "43-day",
+   "100 hours",
+   "January 17",
+   "February 28",
+   "ground"
+  ],
+  "excerpt": 0,
+  "note": "GAO report PEMD-96-10 on Gulf War air campaign (US government, via govinfo)",
+  "ua": "browser"
+ },
+ {
+  "id": "C076",
+  "idx": 2,
+  "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3107.pdf",
+  "grep": [
+   "Chang",
+   "one couple, one child",
+   "sterilization",
+   "persecution"
+  ],
+  "excerpt": 0,
+  "note": "Matter of Chang, 20 I&N Dec. 38 (BIA 1989) (US Justice Department EOIR)",
+  "ua": "browser"
+ },
+ {
+  "id": "C076",
+  "idx": 2,
+  "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3611.pdf",
+  "grep": [
+   "Chang",
+   "601(a)",
+   "1996",
+   "forced abortion",
+   "overrul"
+  ],
+  "excerpt": 0,
+  "note": "Matter of J-S-, 24 I&N Dec. 520 (A.G. 2008): describes IIRIRA 601(a) overruling Chang (US Justice Department)",
+  "ua": "browser"
+ },
+ {
+  "id": "C076",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapI-sec1101.htm",
+  "grep": [
+   "forced to abort",
+   "involuntary sterilization",
+   "political opinion",
+   "persecuted"
+  ],
+  "excerpt": 0,
+  "note": "8 U.S.C. 1101(a)(42) as amended by IIRIRA 601(a) (US Code via govinfo)",
+  "ua": "browser"
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.europarl.europa.eu/news/en/press-room/20191018IPR64639/ilham-tohti-awarded-the-2019-sakharov-prize",
+  "grep": [
+   "Ilham Tohti",
+   "Sakharov",
+   "2019",
+   "Sassoli"
+  ],
+  "excerpt": 0,
+  "note": "European Parliament press release: Ilham Tohti awarded the 2019 Sakharov Prize (EU institution)",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.fbi.gov/news/stories/chinese-hackers-indicted-122018",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "Ministry of State Security",
+   "December",
+   "APT10"
+  ],
+  "excerpt": 0,
+  "note": "FBI story: Chinese hackers indicted (US government)",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.fbi.gov/wanted/cyber/apt-10-group",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "December 17, 2018",
+   "Southern District of New York",
+   "Ministry of State Security"
+  ],
+  "excerpt": 0,
+  "note": "FBI wanted page: APT 10 group (US government)",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.justice.gov/usao-sdny/page/file/1122721/dl",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "Ministry of State Security",
+   "APT10",
+   "indict"
+  ],
+  "excerpt": 0,
+  "note": "SDNY indictment document (US court filing via USAO)",
+  "ua": "browser"
+ },
+ {
+  "id": "C100",
+  "idx": 1,
+  "url": "https://www.technologyreview.com/s/602705/the-decline-in-chinese-cyberattacks-the-story-behind-the-numbers/",
+  "grep": [
+   "FireEye",
+   "September 2015",
+   "decline",
+   "Mandia",
+   "72"
+  ],
+  "excerpt": 0,
+  "note": "MIT Technology Review on the decline in Chinese cyberattacks (media only; quotes company data)",
+  "ua": "browser"
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "url": "https://www.koreajoongangdaily.com/business/investors-dump-tech-stocks-after-record-593-billion-nvidia-loss/12473281",
+  "grep": [
+   "Nvidia",
+   "record",
+   "billion",
+   "DeepSeek"
+  ],
+  "excerpt": 0,
+  "note": "Korea JoongAng Daily report of Reuters coverage of the Nvidia loss (media only)",
+  "ua": "browser"
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://www.chinalawtranslate.com/en/national-intelligence-law-of-the-p-r-c-2017/",
+  "grep": [
+   "Article 7",
+   "support, assist",
+   "cooperate",
+   "intelligence"
+  ],
+  "excerpt": 0,
+  "note": "National Intelligence Law of the PRC (2017), English translation by China Law Translate (translator, not a government page)",
+  "ua": "browser"
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://cs.brown.edu/courses/cs180/sources/2017_PRC_NationalIntelligenceLaw.pdf",
+  "grep": [
+   "Article 7",
+   "support",
+   "assist",
+   "cooperate",
+   "intelligence work"
+  ],
+  "excerpt": 0,
+  "note": "National Intelligence Law (2017) translation hosted by Brown University computer science course (university)",
+  "ua": "browser"
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1071enr/html/BILLS-119s1071enr.htm",
+  "grep": [
+   "SEC. 1692",
+   "cloud-based",
+   "covered period",
+   "September 30, 2030",
+   "Russia"
+  ],
+  "excerpt": 0,
+  "note": "S. 1071 enrolled bill text, FY2026 NDAA (US Congress via govinfo)",
+  "ua": "browser"
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.congress.gov/119/plaws/publ60/PLAW-119publ60.pdf",
+  "grep": [
+   "DEC. 18, 2025",
+   "PUBLIC LAW 119"
+  ],
+  "excerpt": 0,
+  "note": "Public Law 119-60 first page: enactment date (US Congress)",
+  "ua": "browser"
+ },
+ {
+  "id": "C070",
+  "idx": 1,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/roundtables/2005/CECC%20Roundtable%20Testimony%20-%20Harry%20Wu%20-%206.22.05.pdf",
+  "grep": [
+   "60 Minutes",
+   "1991",
+   "CBS",
+   "film",
+   "Laogai"
+  ],
+  "excerpt": 0,
+  "note": "Harry Wu testimony to the Congressional-Executive Commission on China, 2005 (US commission record of his own account)",
+  "ua": "browser"
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+  "grep": [
+   "December 18, 2020",
+   "Dated",
+   "Brooklyn, New York",
+   "sworn to before me"
+  ],
+  "excerpt": 0,
+  "note": "EDNY complaint affidavit: date at the foot of the filing",
+  "ua": "browser"
+ }
+]

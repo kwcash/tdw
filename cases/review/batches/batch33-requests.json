@@ -1,0 +1,526 @@
+[
+ {
+  "id": "C107",
+  "idx": 3,
+  "url": "https://ici.radio-canada.ca/rci/en/news/1826820/b-c-court-drops-extradition-case-after-meng-wanzhou-enters-deferred-prosecution-agreement-in-u-s-",
+  "grep": [
+   "deferred prosecution agreement",
+   "Meng",
+   "Brooklyn",
+   "Friday",
+   "extradition"
+  ],
+  "excerpt": 0,
+  "note": "Radio-Canada international report, 24 September 2021 on the B.C. court dropping the extradition case after Meng entered the DPA; media only (public broadcaster)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://stacks.cdc.gov/view/cdc/122556/cdc_122556_DS1.pdf",
+  "grep": [
+   "70,601",
+   "synthetic opioids other than methadone",
+   "106,699",
+   "2021",
+   "Data Brief"
+  ],
+  "excerpt": 0,
+  "note": "NCHS Data Brief No. 457, Drug Overdose Deaths in the United States 2001-2021, CDC Stacks copy; federal agency, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://stacks.cdc.gov/view/cdc/135849/cdc_135849_DS1.pdf",
+  "grep": [
+   "73,838",
+   "107,941",
+   "synthetic opioids other than methadone",
+   "22.7",
+   "2022"
+  ],
+  "excerpt": 0,
+  "note": "NCHS Data Brief No. 491, Drug Overdose Deaths in the United States 2002-2022, CDC Stacks copy; federal agency, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C108",
+  "idx": 3,
+  "url": "https://nida.nih.gov/research-topics/trends-statistics/overdose-death-rates",
+  "grep": [
+   "73,838",
+   "70,601",
+   "synthetic opioids other than methadone",
+   "2022",
+   "2021"
+  ],
+  "excerpt": 0,
+  "note": "NIDA Drug Overdose Death Rates page (NIH), compiles CDC/NCHS counts by year; federal agency, secondary compilation of primary data",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://blog.zoom.us/our-perspective-on-the-doj-complaint/",
+  "grep": [
+   "December 18",
+   "Jin",
+   "complaint",
+   "Eastern District of New York",
+   "terminated"
+  ],
+  "excerpt": 0,
+  "note": "Zoom company blog post, Our Perspective on the DOJ Complaint, December 2020; company statement, primary for the company's account of the charge",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/usao-edny/press-release/file/1304406/download",
+  "grep": [
+   "Xinjiang Jin",
+   "Julien Jin",
+   "20-MJ-1103",
+   "interstate harassment",
+   "Tiananmen"
+  ],
+  "excerpt": 0,
+  "note": "EDNY document file 1304406 returned by a search for the Jin complaint (believed to be the original criminal complaint, unsealed December 2020); DOJ court filing, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/d9/2023-04/jin_-_20-mj-1103_redacted_amended_complaint_signed.pdf",
+  "grep": [
+   "Xinjiang Jin",
+   "20-MJ-1103",
+   "December 2020",
+   "unsealed",
+   "interstate harassment"
+  ],
+  "excerpt": 0,
+  "note": "Redacted amended criminal complaint, United States v. Jin, 20-MJ-1103 (E.D.N.Y.), posted April 2023; DOJ court filing, primary; may recite the original December 2020 charging",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C109",
+  "idx": 2,
+  "url": "https://www.justice.gov/usao-edny/media/1287481/dl",
+  "grep": [
+   "December 18, 2020",
+   "Dated",
+   "Brooklyn, New York",
+   "sworn to before me"
+  ],
+  "excerpt": 0,
+  "note": "EDNY complaint affidavit: date at the foot of the filing",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://fas.org/publication/the-2024-dod-china-military-power-report/",
+  "grep": [
+   "more than 600",
+   "1,000",
+   "2030",
+   "operational",
+   "mid-2024"
+  ],
+  "excerpt": 0,
+  "note": "Federation of American Scientists analysis of the 2024 DoD China Military Power Report; NGO, secondary, quotes the DoD 600-plus and 1,000-by-2030 figures",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://www.armscontrol.org/act/2025-01/news/pentagon-says-chinese-nuclear-arsenal-still-growing",
+  "grep": [
+   "600",
+   "1,000",
+   "2030",
+   "warheads",
+   "Pentagon"
+  ],
+  "excerpt": 0,
+  "note": "Arms Control Association, Arms Control Today, January 2025, on the Pentagon China Military Power Report; NGO, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C112",
+  "idx": 1,
+  "url": "https://hudson.org/missile-defense/key-strategic-nuclear-forces-takeaways-2024-china-military-power-report-rebeccah-heinrichs",
+  "grep": [
+   "600",
+   "operational",
+   "1,000",
+   "2030",
+   "warheads"
+  ],
+  "excerpt": 0,
+  "note": "Hudson Institute analysis of the nuclear forces sections of the 2024 DoD China Military Power Report; think tank, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.dlapiper.com/en/insights/publications/2023/08/evergrande-commences-2023s-largest-chapter-15-filing",
+  "grep": [
+   "Chapter 15",
+   "Southern District of New York",
+   "17 August",
+   "August 17",
+   "Evergrande"
+  ],
+  "excerpt": 0,
+  "note": "DLA Piper law-firm alert, 30 August 2023, on Evergrande Chapter 15 filing in the SDNY; law firm, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2023/0929/2023092801875.pdf",
+  "grep": [
+   "Hui Ka Yan",
+   "measures",
+   "28 September 2023",
+   "suspected",
+   "suspended"
+  ],
+  "excerpt": 0,
+  "note": "China Evergrande Group announcement to the Hong Kong stock exchange, 28 September 2023, on the chairman being subject to compulsory measures; company regulatory filing, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C115",
+  "idx": 3,
+  "url": "https://www.bangkokpost.com/business/general/2654482",
+  "grep": [
+   "Hui Ka Yan",
+   "police",
+   "Evergrande",
+   "September",
+   "residential surveillance"
+  ],
+  "excerpt": 0,
+  "note": "Bangkok Post wire report, Evergrande confirms police are watching chairman, September 2023; media only",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 2,
+  "url": "https://9to5mac.com/2022/11/09/everyone-option-airdrop-10-minutes-china/",
+  "grep": [
+   "10 minutes",
+   "China",
+   "iOS 16.1.1",
+   "AirDrop",
+   "Everyone"
+  ],
+  "excerpt": 0,
+  "note": "9to5Mac report of 9 November 2022 on the AirDrop Everyone for 10 Minutes limit on iPhones sold in mainland China; media only (no Apple primary page found)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 2,
+  "url": "https://bgr.com/tech/ios-16-1-1-limits-popular-airdrop-feature-used-during-protests-in-china/",
+  "grep": [
+   "10 minutes",
+   "China",
+   "iOS 16.1.1",
+   "AirDrop",
+   "protest"
+  ],
+  "excerpt": 0,
+  "note": "BGR report on iOS 16.1.1 limiting AirDrop in China, November 2022; media only",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 2,
+  "url": "https://www.macworld.com/article/1377200/apple-to-limit-airdrop-everyone-setting-to-10-minutes.html",
+  "grep": [
+   "10 minutes",
+   "China",
+   "AirDrop",
+   "Everyone",
+   "iOS 16.1.1"
+  ],
+  "excerpt": 0,
+  "note": "Macworld report, Apple to limit AirDrop Everyone setting to 10 minutes, November 2022; media only",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 3,
+  "url": "https://www.amnesty.org/en/latest/news/2022/11/china-lockdown-protests-covid/",
+  "grep": [
+   "Urumqi",
+   "at least 10",
+   "24 November",
+   "protests",
+   "cities"
+  ],
+  "excerpt": 0,
+  "note": "Amnesty International news release, November 2022, on the Urumqi fire (at least 10 dead per government sources) and nationwide protests; NGO, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12265/IF12265.1.pdf",
+  "grep": [
+   "Urumqi",
+   "over a dozen",
+   "November 26",
+   "zero-COVID",
+   "Shanghai"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF12265 China Primer: Human Rights (6 December 2022); congressional agency, secondary; says protests in Shanghai, Beijing and over a dozen other cities after the Urumqi fire",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C116",
+  "idx": 3,
+  "url": "https://www.hrw.org/news/2023/11/19/china-allow-commemorations-white-paper-protests",
+  "grep": [
+   "blank",
+   "paper",
+   "Urumqi",
+   "November 2022",
+   "cities"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch statement, 19 November 2023, on the White Paper protests (demonstrators held blank paper); NGO, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.grandforksgov.com/business/fufeng-usa-development",
+  "grep": [
+   "Fufeng",
+   "cancel",
+   "City Council",
+   "vote",
+   "2023"
+  ],
+  "excerpt": 0,
+  "note": "City of Grand Forks official Fufeng USA Development page, says the project was cancelled and links the council vote video and development agreement; municipal government, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.congress.gov/118/meeting/house/116993/witnesses/HHRG-118-AG00-Wstate-DalyN-20240320.pdf",
+  "grep": [
+   "Grand Forks",
+   "City Council",
+   "Fufeng",
+   "Air Force",
+   "February"
+  ],
+  "excerpt": 0,
+  "note": "Written testimony of Nova J. Daly, House Agriculture Committee hearing, 20 March 2024; congressional record, secondary; recounts the Fufeng project and local leaders stopping it",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C117",
+  "idx": 2,
+  "url": "https://www.kfyrtv.com/2023/02/07/grand-forks-city-council-officially-cancels-fufeng-project",
+  "grep": [
+   "Fufeng",
+   "Grand Forks",
+   "council",
+   "unanimous",
+   "Monday"
+  ],
+  "excerpt": 0,
+  "note": "KFYR-TV report of 7 February 2023, Grand Forks City Council officially cancels Fufeng project; media only (local TV)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "url": "https://www.chinadaily.com.cn/a/202305/09/WS645a1fe9a310b6054fad1f82.html",
+  "grep": [
+   "Capvision",
+   "foreign intelligence",
+   "spy",
+   "China Media Group",
+   "CCTV"
+  ],
+  "excerpt": 0,
+  "note": "China Daily, 9 May 2023, Capvision accused of abetting foreign spy services, reporting the state broadcaster report; PRC state media, primary for what the PRC said",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "url": "https://www.globaltimes.cn/page/202305/1290365.shtml",
+  "grep": [
+   "Capvision",
+   "CCTV",
+   "overseas intelligence",
+   "national security",
+   "counter-espionage"
+  ],
+  "excerpt": 0,
+  "note": "Global Times, May 2023, consulting company probed in counter-espionage action; PRC state media, primary for what the PRC said",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C118",
+  "idx": 2,
+  "url": "https://techinsights.linklaters.com/post/102if3y/china-strengthens-enforcement-under-the-anti-espionage-law",
+  "grep": [
+   "Capvision",
+   "CCTV",
+   "espionage",
+   "May 2023",
+   "intelligence"
+  ],
+  "excerpt": 0,
+  "note": "Linklaters law-firm briefing on China strengthening enforcement under the anti-espionage law; law firm, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 0,
+  "url": "https://deepseek.com/en/news/deepseek-r1/",
+  "grep": [
+   "January 20, 2025",
+   "DeepSeek-R1",
+   "deepseek-reasoner",
+   "open-source",
+   "MIT License"
+  ],
+  "excerpt": 0,
+  "note": "DeepSeek company news page announcing R1, dated 20 January 2025; company primary; covers the release date only, not the app-store ranking",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 1,
+  "url": "https://www.koreajoongangdaily.com/business/investors-dump-tech-stocks-after-record-593-billion-nvidia-loss/12473281",
+  "grep": [
+   "Nvidia",
+   "record",
+   "billion",
+   "DeepSeek"
+  ],
+  "excerpt": 0,
+  "note": "Korea JoongAng Daily report of Reuters coverage of the Nvidia loss (media only)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://www.chinalawtranslate.com/en/national-intelligence-law-of-the-p-r-c-2017/",
+  "grep": [
+   "Article 7",
+   "support, assist",
+   "cooperate",
+   "intelligence"
+  ],
+  "excerpt": 0,
+  "note": "National Intelligence Law of the PRC (2017), English translation by China Law Translate (translator, not a government page)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C119",
+  "idx": 2,
+  "url": "https://cs.brown.edu/courses/cs180/sources/2017_PRC_NationalIntelligenceLaw.pdf",
+  "grep": [
+   "Article 7",
+   "support",
+   "assist",
+   "cooperate",
+   "intelligence work"
+  ],
+  "excerpt": 0,
+  "note": "National Intelligence Law (2017) translation hosted by Brown University computer science course (university)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C120",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1071enr/html/BILLS-119s1071enr.htm",
+  "grep": [
+   "SEC. 1692",
+   "cloud-based",
+   "covered period",
+   "September 30, 2030",
+   "Russia"
+  ],
+  "excerpt": 0,
+  "note": "S. 1071 enrolled bill text, FY2026 NDAA (US Congress via govinfo)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]

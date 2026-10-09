@@ -1,0 +1,594 @@
+[
+ {
+  "id": "C045",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d278",
+  "grep": [
+   "Tibet",
+   "1,800",
+   "300",
+   "reduce",
+   "Mustang"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1969-76 vol XVII doc 278: CIA memo to the 40 Committee on Tibetan operations (US government record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C048",
+  "idx": 1,
+  "url": "https://scalar.usc.edu/works/the-vietnam-war/chinas-involvement-in-the-war-1964-1969",
+  "grep": [
+   "320,000",
+   "170,000",
+   "1967",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "USC Scalar university course text on China's involvement in the Vietnam War; secondary; search summary reported 320,000 (1965-71) and ~170,000 peak in 1967",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C048",
+  "idx": 1,
+  "url": "https://www.cambridge.org/core/journals/china-quarterly/article/chinas-involvement-in-the-vietnam-war-196469/C19D6719CDDB9E160223C624A8D15A92",
+  "grep": [
+   "320,000",
+   "170,000",
+   "1967",
+   "Chinese troops",
+   "engineering"
+  ],
+  "excerpt": 0,
+  "note": "Chen Jian, China Quarterly 1995, 'China's Involvement in the Vietnam War, 1964-69'; scholarly original for the figures; may show only abstract/first page",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C048",
+  "idx": 1,
+  "url": "https://alphahistory.com/vietnamwar/chinese-and-soviet-involvement/",
+  "grep": [
+   "320,000",
+   "170,000",
+   "1967",
+   "North Vietnam"
+  ],
+  "excerpt": 0,
+  "note": "Alpha History educational site; secondary; states over 320,000 Chinese troops 1965-71 and peak ~170,000 in 1967",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C050",
+  "idx": 0,
+  "url": "https://www.chinesepen.org/english/?p=4153",
+  "grep": [
+   "Lin Zhao",
+   "Peking University",
+   "Rightist",
+   "1957",
+   "1960"
+  ],
+  "excerpt": 0,
+  "note": "Independent Chinese PEN Center case file No. 14 (1960) on Lin Zhao; NGO, secondary; says student Rightist then arrested 1960",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C050",
+  "idx": 0,
+  "url": "https://minjian-danganguan.org/en/archive/14",
+  "grep": [
+   "Lin Zhao",
+   "Peking University",
+   "Rightist",
+   "1957",
+   "October 1960"
+  ],
+  "excerpt": 0,
+  "note": "China Unofficial Archives biography entry for Lin Zhao; NGO/archive, secondary; says admitted to Peking University journalism 1954, classified Rightist 1957, arrested October 1960",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C050",
+  "idx": 0,
+  "url": "https://alphahistory.com/chineserevolution/lin-zhao/",
+  "grep": [
+   "Lin Zhao",
+   "Peking University",
+   "1957",
+   "1960",
+   "rightist"
+  ],
+  "excerpt": 0,
+  "note": "Alpha History educational site on Lin Zhao; secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C052",
+  "idx": 3,
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v11/persons",
+  "grep": [
+   "Blood, Archer",
+   "Consul General in Dacca",
+   "June 1971"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian, FRUS 1969-76 vol XI persons list; primary/official; lists Blood as Consul General in Dacca until June 1971",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C052",
+  "idx": 3,
+  "url": "https://history.state.gov/historicaldocuments/frus1969-76v11/d20",
+  "grep": [
+   "Blood",
+   "Dacca",
+   "transferred",
+   "Nixon",
+   "dissent"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1969-76 vol XI doc 20 with editorial note that Nixon ordered Blood transferred from Dacca after the dissent cable; primary/official",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C052",
+  "idx": 3,
+  "url": "https://afsa.org/sites/default/files/flipping_book/1204/63/",
+  "grep": [
+   "Blood",
+   "June 1971",
+   "recalled",
+   "personnel",
+   "Dhaka"
+  ],
+  "excerpt": 0,
+  "note": "Foreign Service Journal Dec 2004 (AFSA, diplomats' professional association); says Blood was recalled in June 1971 and assigned to State personnel office; secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C054",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d186",
+  "grep": [
+   "cheng-jen",
+   "jen shih tao",
+   "acknowledge",
+   "Chinese text",
+   "linguists"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1977-80 vol XIII doc 186, Oksenberg memo to Brzezinski 3 Jan 1979 on the Chinese rendering of 'acknowledge' as cheng-jen; primary/official",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C054",
+  "idx": 2,
+  "url": "https://www.everycrsreport.com/reports/RL30341.html",
+  "grep": [
+   "cheng ren",
+   "ren shi",
+   "acknowledge",
+   "recognize",
+   "Chinese text"
+  ],
+  "excerpt": 0,
+  "note": "CRS report RL30341 'China/Taiwan: Evolution of the One China Policy' via EveryCRSReport mirror; primary/official CRS; discusses Chinese term cheng ren in 1979 communique",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C054",
+  "idx": 3,
+  "url": "https://www.everycrsreport.com/reports/RL30341.html",
+  "grep": [
+   "Javits",
+   "Christopher",
+   "binding text",
+   "determinative",
+   "English text"
+  ],
+  "excerpt": 0,
+  "note": "CRS report RL30341 via EveryCRSReport mirror; official CRS; search summary says it quotes Christopher telling Javits the English text is the binding text",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C054",
+  "idx": 3,
+  "url": "https://www.everycrsreport.com/files/20150105_RL30341_6a250771f574e01575c1cc9fa15c71f92858ef44.pdf",
+  "grep": [
+   "Javits",
+   "Christopher",
+   "binding text",
+   "determinative",
+   "English text"
+  ],
+  "excerpt": 0,
+  "note": "Earlier PDF version of CRS RL30341 (Jan 2015); official CRS; backup in case the HTML version differs",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C054",
+  "idx": 3,
+  "url": "https://www.everycrsreport.com/files/20110110_RL30341_80a0c3ea84512024e2b29b8d0585628f504b68ac.html",
+  "grep": [
+   "Javits",
+   "Christopher",
+   "binding text",
+   "determinative",
+   "English text"
+  ],
+  "excerpt": 0,
+  "note": "Jan 2011 version of CRS RL30341; official CRS; second backup version",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 2,
+  "url": "https://beijing-spring.univie.ac.at/en/photos/big-character-posters/beijing-march-1979/",
+  "grep": [
+   "Deng Xiaoping",
+   "dictator",
+   "29 March",
+   "March 29",
+   "15 years"
+  ],
+  "excerpt": 0,
+  "note": "University of Vienna Beijing Spring project photo page; university, secondary; ties Wei's arrest on 29 March to dazibao calling Deng a dictator, sentence of 15 years in October",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 2,
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-33",
+  "grep": [
+   "Wei Jingsheng",
+   "Deng",
+   "dictator",
+   "March",
+   "1979"
+  ],
+  "excerpt": 0,
+  "note": "Independent Chinese PEN Center case file No. 33 (1979) on Wei Jingsheng; NGO, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 2,
+  "url": "https://blogs.cuit.columbia.edu/jia/inside-authoritarian-state/",
+  "grep": [
+   "Wei Jingsheng",
+   "29 March 1979",
+   "March 29",
+   "arrested",
+   "Deng"
+  ],
+  "excerpt": 0,
+  "note": "Columbia Journal of International Affairs blog (student-run university publication); secondary; states arrest on 29 March 1979",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-33",
+  "grep": [
+   "fifteen years",
+   "15 years",
+   "October 16",
+   "1979",
+   "Wei Jingsheng"
+  ],
+  "excerpt": 0,
+  "note": "Independent Chinese PEN Center case file No. 33 (1979); NGO, secondary; gives verdict date 16 Oct 1979 and 15-year sentence",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "url": "https://www.hrw.org/news/1997/11/16/wei-jingsheng-released",
+  "grep": [
+   "October 16, 1979",
+   "fifteen years",
+   "15 years",
+   "Wei Jingsheng",
+   "1979"
+  ],
+  "excerpt": 0,
+  "note": "Human Rights Watch 1997 statement on Wei's release; NGO, secondary; gives sentencing date 16 Oct 1979",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "url": "https://beijing-spring.univie.ac.at/en/photos/big-character-posters/beijing-march-1979/",
+  "grep": [
+   "15 years",
+   "October",
+   "Wei Jingsheng",
+   "arrested",
+   "1979"
+  ],
+  "excerpt": 0,
+  "note": "University of Vienna Beijing Spring project; university, secondary; sentenced to 15 years in October",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "url": "https://beijing-spring.univie.ac.at/en/the-democracy-movement-1978-1981/the-democracy-wall",
+  "grep": [
+   "Yuetan",
+   "6 December",
+   "register",
+   "Xidan",
+   "big-character"
+  ],
+  "excerpt": 0,
+  "note": "University of Vienna Beijing Spring project page on the Xidan Democracy Wall; university, secondary; closure on 6 Dec 1979, relocation to Yuetan Park, registration office",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "url": "https://journals.univie.ac.at/index.php/jeacs/article/download/6561/6579/15915",
+  "grep": [
+   "Yuetan",
+   "register",
+   "work unit",
+   "December 1979",
+   "Democracy Wall"
+  ],
+  "excerpt": 0,
+  "note": "Opletal, 'The 1978-1981 Democracy Wall Movement', Journal of East Asian Cultural Studies, University of Vienna; scholarly, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "url": "https://digital.bentley.umich.edu/midaily/mdp.39015071754373/977/download_text",
+  "grep": [
+   "Democracy Wall",
+   "register",
+   "work",
+   "names",
+   "park"
+  ],
+  "excerpt": 0,
+  "note": "Michigan Daily 1979 page (AP/UPI wire report) via Univ. of Michigan Bentley digital archive; media only; says new wall requires writers to register names and work addresses",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "url": "https://jjjcz.mee.gov.cn/djfg/gjflfg/xf/198009/t19800901_444124.html",
+  "grep": [
+   "第四十五条",
+   "大字报",
+   "大鸣",
+   "第三次会议",
+   "1980年9月10日"
+  ],
+  "excerpt": 0,
+  "note": "Chinese government agency (Ministry of Ecology and Environment discipline team) page hosting the Fifth NPC Third Session resolution amending Article 45; primary text",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "url": "https://news.12371.cn/2015/03/18/ARTI1426667115741768.shtml?from=singlemessage",
+  "grep": [
+   "大字报",
+   "大鸣",
+   "第四十五条",
+   "罢工",
+   "宪法"
+  ],
+  "excerpt": 0,
+  "note": "1978 PRC Constitution text on the Communist Party members' site 12371.cn; primary text of original Article 45",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "url": "https://openyls.law.yale.edu/server/api/core/bitstreams/a59d2072-e67a-4949-9048-755d56540be4/content",
+  "grep": [
+   "Article 45",
+   "four big",
+   "big-character posters",
+   "1980",
+   "Central Committee"
+  ],
+  "excerpt": 0,
+  "note": "Yale law journal comment on free speech in China; university law journal, secondary; says Central Committee recommended removing the four big rights June 1980 and the NPC did so",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
+  "grep": [
+   "Chinese-American",
+   "Japanese",
+   "out of work",
+   "Ebens",
+   "Vincent Chin"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion, United States v. Ebens, 800 F.2d 1422 (1986), on Justia; court opinion, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "url": "https://law.resource.org/pub/us/case/reporter/F2/800/800.F2d.1422.84-1757.html",
+  "grep": [
+   "Chinese-American",
+   "Japanese",
+   "out of work",
+   "Ebens",
+   "Chin"
+  ],
+  "excerpt": 0,
+  "note": "Same Sixth Circuit opinion, 800 F.2d 1422, on Public.Resource.Org; court opinion, primary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "url": "https://usccr.gov/files/historical/1985/85-008.pdf",
+  "grep": [
+   "Vincent Chin",
+   "Ebens",
+   "Japanese",
+   "Chinese American",
+   "probation"
+  ],
+  "excerpt": 0,
+  "note": "U.S. Commission on Civil Rights, Recent Activities Against Citizens and Residents of Asian Descent (1986); federal agency report, primary/official; content on Chin case unverified",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "url": "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
+  "grep": [
+   "Kaufman",
+   "probation",
+   "$3,000",
+   "Ebens",
+   "Nitz",
+   "manslaughter"
+  ],
+  "excerpt": 0,
+  "note": "State Bar of Michigan Bar Journal cover story 'Killing Spawned Asian American Civil Rights Movement'; professional bar publication, secondary; search summary says three years' probation and $3,000 fine",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
+  "grep": [
+   "probation",
+   "3,720",
+   "manslaughter",
+   "Wayne County",
+   "Ebens"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion, 800 F.2d 1422; court opinion, primary; search summary says it gives the state fine as $3,720, so it tests the $3,000 figure",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "url": "https://repository.law.umich.edu/context/mjrl/article/1274/viewcontent/johnson.pdf",
+  "grep": [
+   "Ebens",
+   "Nitz",
+   "probation",
+   "$3,000",
+   "Kaufman"
+  ],
+  "excerpt": 0,
+  "note": "Michigan Journal of Race and Law vol 1 article on the Vincent Chin case; university law journal, secondary",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "url": "https://law.justia.com/cases/federal/appellate-courts/F2/800/1422/270771/",
+  "grep": [
+   "Ebens",
+   "twenty-five",
+   "reverse",
+   "fair trial",
+   "section 245"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion, 800 F.2d 1422 (11 Sept 1986); court opinion, primary; covers 1984 federal conviction and reversal for denial of fair trial",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "url": "https://www.michbar.org/file/barjournal/article/documents/pdf4article1505.pdf",
+  "grep": [
+   "Ebens",
+   "not guilty",
+   "Cincinnati",
+   "Sixth Circuit",
+   "civil rights"
+  ],
+  "excerpt": 0,
+  "note": "State Bar of Michigan Bar Journal article; professional bar publication, secondary; says a Cincinnati jury found Ebens not guilty on retrial",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
