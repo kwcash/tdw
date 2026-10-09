@@ -1,0 +1,537 @@
+[
+ {
+  "id": "C093",
+  "idx": 0,
+  "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_oct2009status.pdf",
+  "grep": [
+   "drywall",
+   "China",
+   "hurricane",
+   "Katrina",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CPSC Oct 2009 imported drywall status update (official)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C093",
+  "idx": 0,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-44.pdf",
+  "grep": [
+   "Katrina",
+   "Rita",
+   "shortage",
+   "drywall",
+   "Taishan"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 court opinion, background on post-hurricane Chinese drywall imports",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C093",
+  "idx": 3,
+  "url": "https://www.govinfo.gov/content/pkg/USCOURTS-laed-2_09-md-02047/pdf/USCOURTS-laed-2_09-md-02047-116.pdf",
+  "grep": [
+   "248,000,000",
+   "Taishan",
+   "Settlement Agreement",
+   "Amorin"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 order on Taishan $248M settlement (court record); covers settlement half of sentence",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C093",
+  "idx": 3,
+  "url": "https://www.laed.uscourts.gov/case-information/mdl-mass-class-action/drywall",
+  "grep": [
+   "CNBM",
+   "Foreign Sovereign Immunities Act",
+   "Taishan",
+   "sovereign"
+  ],
+  "excerpt": 0,
+  "note": "E.D. La. MDL 2047 court page, looking for CNBM FSIA ruling (immunity half of sentence)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C094",
+  "idx": 1,
+  "url": "https://www.govinfo.gov/content/pkg/CHRG-111jhrg56161/pdf/CHRG-111jhrg56161.pdf",
+  "grep": [
+   "Google.cn",
+   "Google.com.hk",
+   "Hong Kong",
+   "uncensored",
+   "censor"
+  ],
+  "excerpt": 0,
+  "note": "House hearing Mar 2010, Google testimony on ending censorship and Hong Kong redirect",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C094",
+  "idx": 2,
+  "url": "https://www.washingtonpost.com/world/national-security/chinese-hackers-who-breached-google-gained-access-to-sensitive-data-us-officials-say/2013/05/20/51330428-be34-11e2-89c9-3be8095fe767_story.html",
+  "grep": [
+   "Google",
+   "surveillance targets",
+   "Chinese intelligence",
+   "database",
+   "wiretap"
+  ],
+  "excerpt": 0,
+  "note": "media only: Washington Post May 2013 (no primary source found)",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C095",
+  "idx": 0,
+  "url": "https://www.cecc.gov/publications/commission-analysis/beijing-court-sentences-liu-xiaobo-to-11-years",
+  "grep": [
+   "Liu Xiaobo",
+   "11 years",
+   "inciting subversion",
+   "Charter 08",
+   "Article 105"
+  ],
+  "excerpt": 0,
+  "note": "CECC (US congressional commission) analysis of Liu Xiaobo sentence",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C095",
+  "idx": 0,
+  "url": "https://www.nobelprize.org/prizes/peace/2010/speedread/",
+  "grep": [
+   "Liu Xiaobo",
+   "Charter 08",
+   "11 years",
+   "subversion"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Nobel Foundation 2010 Peace Prize speed read",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C095",
+  "idx": 3,
+  "url": "https://www.nobelprize.org/prizes/peace/2010/xiaobo/facts/",
+  "grep": [
+   "Liu Xiaobo",
+   "13 July 2017",
+   "liver cancer",
+   "Shenyang"
+  ],
+  "excerpt": 0,
+  "note": "secondary: Nobel Foundation biographical facts page",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C096",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/pr/michigan-man-sentenced-48-months-attempting-spy-people-s-republic-china",
+  "grep": [
+   "Shriver",
+   "70,000",
+   "Foreign Service",
+   "clandestine"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on Shriver sentencing",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C096",
+  "idx": 0,
+  "url": "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm",
+  "grep": [
+   "Shriver",
+   "70,000",
+   "Foreign Service",
+   "48 months"
+  ],
+  "excerpt": 0,
+  "note": "FBI Washington Field Office release on Shriver sentencing",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C096",
+  "idx": 2,
+  "url": "https://archives.fbi.gov/archives/washingtondc/press-releases/2010/wfo102210a.htm",
+  "grep": [
+   "Shriver",
+   "pleaded guilty",
+   "October 22, 2010",
+   "national defense information"
+  ],
+  "excerpt": 0,
+  "note": "FBI WFO release on Shriver guilty plea (Oct 2010)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C096",
+  "idx": 2,
+  "url": "https://www.fbi.gov/washingtondc/press-releases/2011/wfo012111.htm",
+  "grep": [
+   "Shriver",
+   "48 months",
+   "January 21, 2011",
+   "sentenced"
+  ],
+  "excerpt": 0,
+  "note": "FBI WFO release on Shriver 48-month sentence (Jan 2011)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 0,
+  "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/hearings/2012/CECC%20Hearing%20-%20Recent%20Developments%20and%20History%20of%20the%20Chen%20Guangcheng%20Case%20-%205.3.12.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "Linyi",
+   "forced abortions",
+   "sterilizations",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CECC hearing May 3, 2012 on Chen Guangcheng case (congressional record)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "Linyi",
+   "forced abortion",
+   "sterilization",
+   "2005"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 (May 29, 2012) on Chen case",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 1,
+  "url": "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+  "grep": [
+   "Chen Guangcheng",
+   "April 26",
+   "Embassy",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "State Dept background briefing on Chen Guangcheng (May 2012)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 1,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen Guangcheng",
+   "April 26",
+   "Embassy",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 timeline of embassy entry",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 2,
+  "url": "https://2009-2017.state.gov/p/eap/rls/rm/2012/05/182850.htm",
+  "grep": [
+   "Chen",
+   "May 2",
+   "hospital",
+   "Embassy",
+   "family"
+  ],
+  "excerpt": 0,
+  "note": "State Dept background briefing on Chen leaving embassy May 2",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen",
+   "May 2",
+   "hospital",
+   "changed his mind",
+   "Embassy"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 on Chen leaving embassy and reversing within hours",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 3,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42554/R42554.5.pdf",
+  "grep": [
+   "Chen",
+   "May 19",
+   "Newark",
+   "New York University"
+  ],
+  "excerpt": 0,
+  "note": "CRS R42554 timeline of Chen arrival in Newark May 19",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C097",
+  "idx": 3,
+  "url": "https://2009-2017.state.gov/r/pa/prs/ps/2012/05/189290.htm",
+  "grep": [
+   "Chen Guangcheng",
+   "New York",
+   "May 19",
+   "student"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on Chen Guangcheng (May 2012)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C098",
+  "idx": 0,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42784/R42784.88.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "fishing",
+   "Philippine",
+   "maritime surveillance"
+  ],
+  "excerpt": 0,
+  "note": "CRS report on China's actions in South and East China Seas (Scarborough 2012)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "url": "https://www.congress.gov/crs_external_products/R/PDF/R42784/R42784.88.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "withdraw",
+   "June",
+   "Philippine"
+  ],
+  "excerpt": 0,
+  "note": "CRS report on China's actions in South and East China Seas (June 2012 withdrawal)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C098",
+  "idx": 1,
+  "url": "https://congress.gov/116/meeting/house/110841/witnesses/HHRG-116-FA05-Bio-PolingG-20200630.pdf",
+  "grep": [
+   "Scarborough Shoal",
+   "2012",
+   "withdrawal",
+   "mutual"
+  ],
+  "excerpt": 0,
+  "note": "think tank (CSIS) testimony in House record, mentions US-brokered mutual withdrawal attempt",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C098",
+  "idx": 3,
+  "url": "https://docs.pca-cpa.org/2016/07/PH-CN-20160712-Press-Release-No-11-English.pdf",
+  "grep": [
+   "historic rights",
+   "nine-dash line",
+   "12 July 2016",
+   "no legal basis"
+  ],
+  "excerpt": 0,
+  "note": "PCA press release on South China Sea Arbitration Award",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C098",
+  "idx": 3,
+  "url": "https://pca-cpa.org/en/news/pca-press-release-the-south-china-sea-arbitration-the-republic-of-the-philippines-v-the-peoples-republic-of-china/",
+  "grep": [
+   "historic rights",
+   "nine-dash line",
+   "12 July 2016",
+   "Convention"
+  ],
+  "excerpt": 0,
+  "note": "PCA press release page, South China Sea Arbitration",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C099",
+  "idx": 1,
+  "url": "https://2009-2017.state.gov/secretary/remarks/2014/09/232026.htm",
+  "grep": [
+   "Ilham Tohti",
+   "life",
+   "separatism",
+   "Urumqi"
+  ],
+  "excerpt": 0,
+  "note": "State Dept statement on conviction and sentencing of Ilham Tohti (Sept 2014)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C099",
+  "idx": 1,
+  "url": "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/ilham-tohti",
+  "grep": [
+   "Tohti",
+   "students",
+   "separatism",
+   "life",
+   "2014"
+  ],
+  "excerpt": 0,
+  "note": "USCIRF (US government commission) database entry, covers students",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.europarl.europa.eu/news/en/press-room/20191018IPR64639/ilham-tohti-awarded-the-2019-sakharov-prize",
+  "grep": [
+   "Ilham Tohti",
+   "Sakharov",
+   "2019",
+   "European Parliament"
+  ],
+  "excerpt": 0,
+  "note": "European Parliament press release, Sakharov Prize 2019",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C099",
+  "idx": 2,
+  "url": "https://www.coe.int/en/web/portal/-/2019-vaclav-havel-prize-shared-by-ilham-tohti-and-the-youth-initiative-for-human-rights",
+  "grep": [
+   "Havel Prize",
+   "Ilham Tohti",
+   "2019",
+   "Youth Initiative for Human Rights"
+  ],
+  "excerpt": 0,
+  "note": "Council of Europe release, Vaclav Havel Prize 2019",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF10607/IF10607.6.pdf",
+  "grep": [
+   "Fiery Cross",
+   "Subi",
+   "Mischief",
+   "missiles",
+   "2018"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus on South China Sea disputes (Feb 2021); found via search, content unverified",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C100",
+  "idx": 2,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF10607/IF10607.12.pdf",
+  "grep": [
+   "Fiery Cross",
+   "Subi",
+   "Mischief",
+   "missiles",
+   "2018"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus on South China Sea disputes (Aug 2023); found via search, content unverified",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ },
+ {
+  "id": "C100",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/pr/two-chinese-hackers-associated-ministry-state-security-charged-global-computer-intrusion",
+  "grep": [
+   "Zhu Hua",
+   "Zhang Shilong",
+   "Ministry of State Security",
+   "APT10",
+   "Tianjin"
+  ],
+  "excerpt": 0,
+  "note": "DOJ release on APT10 indictment (Dec 20, 2018)",
+  "ua": "browser",
+  "grep_width": 170,
+  "grep_limit": 2
+ }
+]
