@@ -1,0 +1,206 @@
+[
+ {
+  "id": "F026",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "Treasury press release, January 17, 2025",
+  "url": "https://home.treasury.gov/news/press-releases/jy2792",
+  "notes": "OFAC sanctioned Sichuan Juxinhe Network Technology Co., Ltd., 'a Sichuan-based cybersecurity company with direct involvement in the Salt Typhoon cyber group', on January 17, 2025."
+ },
+ {
+  "id": "F028",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "PRC Ministry of Foreign Affairs: Xi-Biden meeting in Lima",
+  "url": "https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202411/t20241117_11527672.html",
+  "notes": "PRC readout, Nov 2024: 'The two Presidents stressed the need to maintain human control over the decision to use nuclear weapons'. Same page as F070[0]; the White House readout is the US counterpart."
+ },
+ {
+  "id": "F058",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "",
+  "url": "",
+  "notes": "Batch 8 read the table: mainland China held $1,316.7 billion in November 2013 (the 2013 monthly row runs 1270.1 in December to 1316.7 in November and 1214.2 in January), so the 'more than $1.3 trillion in 2013' peak is on the table. The 'nearly half' decline rests on the most recent row (about $684 billion), whose year header was not in the snippet. Link unchanged."
+ },
+ {
+  "id": "F060",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "Hong Kong government: Stablecoins Ordinance to commence operation on August 1, 2025",
+  "url": "https://www.info.gov.hk/gia/general/202506/06/P2025060600275.htm",
+  "notes": "HKSAR government release of June 6, 2025, titled 'Stablecoins Ordinance to commence operation on August 1, 2025'."
+ },
+ {
+  "id": "F062",
+  "idx": 2,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "Europe PMC record for the PNAS paper (DOI 10.1073/pnas.2216248120) did not contain 900, 2,621 or the word Chinese in the text read; the figures are likely in the full text, not the record. Needs a person or the PMC full text."
+ },
+ {
+  "id": "F064",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "arXiv:2412.11924, Zuchongzhi 3.0 (preprint)",
+  "url": "https://arxiv.org/abs/2412.11924",
+  "notes": "Preprint titled 'Establishing a New Benchmark in Quantum Computational Advantage with 105-qubit Zuchongzhi 3.0 Processor', submitted December 2024; the peer-reviewed version is Physical Review Letters 134, 090601 (2025). The USTC affiliation is on the paper, not in the abstract text read."
+ },
+ {
+  "id": "F065",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "FTC press release, February 2026 (PADFAA)",
+  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+  "notes": "Page not fetched: the runner got HTTP 404. The fact is as a web-search result summarized the page, so open the link and read it before relying on it. FTC release on the Protecting Americans' Data from Foreign Adversaries Act of 2024 (effective June 24, 2024): bars data brokers from selling sensitive data, including geolocation, to foreign adversaries; the letters flag products involving status as a member of the Armed Forces."
+ },
+ {
+  "id": "F065",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "FTC press release, February 2026 (PADFAA)",
+  "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa",
+  "notes": "Page not fetched: the runner got HTTP 404. The fact is as a web-search result summarized the page, so open the link and read it before relying on it. FTC warning letters to 13 data brokers, dated February 9, 2026 for most (Factual Inc. shows March 4, 2026)."
+ },
+ {
+  "id": "F068",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "CBO, Potential Costs of a National Missile Defense System (May 2026)",
+  "url": "https://www.cbo.gov/system/files/2026-05/62379-golden-dome.pdf",
+  "notes": "Page not fetched: the runner got HTTP 403. The fact is as a web-search result summarized the page, so open the link and read it before relying on it. CBO: a system with capabilities broadly consistent with the executive order would cost about $1.2 trillion over 20 years; the space-based interceptor layer is about 70% of acquisition cost and 60% of total cost. The '7,800 interceptors' count was not in the summary."
+ },
+ {
+  "id": "F068",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "Department of Defense, 2025 China Military Power Report (December 2025)",
+  "url": "https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
+  "notes": "Page not fetched: the runner got HTTP 403. The fact is as a web-search result summarized the page, so open the link and read it before relying on it. Report: stockpile 'remained in the low 600s through 2024'; the PLA 'remains on track to have over 1,000 warheads by 2030'. DoD estimates, not confirmed counts."
+ },
+ {
+  "id": "F077",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Federal Reserve FEDS Note, Sept 25, 2026",
+  "url": "https://www.federalreserve.gov/econres/notes/feds-notes/decoupling-direct-investment-american-firms-retreat-from-china-20260925.html",
+  "notes": "Fed note: 'U.S. multinationals are reducing their existing footprints in China, with rising dividend payout rates (retaining less earnings)'. That dividends now exceed reinvestment is a compression of this; read the note's charts."
+ },
+ {
+  "id": "F079",
+  "idx": 0,
+  "verdict": "supported",
+  "label": "USCIS: DED Covered Country, certain Hong Kong residents",
+  "url": "https://www.uscis.gov/humanitarian/deferred-enforced-departure/ded-covered-country-certain-hong-kong-residents",
+  "notes": "USCIS alert: 'We are automatically extending through Feb. 5, 2027, current Hong Kong DED-related Employment Authorization Documents'. The Deferred Enforced Departure itself runs by presidential memorandum; the page is consistent with a February 5, 2027 end."
+ },
+ {
+  "id": "F089",
+  "idx": 1,
+  "verdict": "supported",
+  "label": "HKEX announcement by China Evergrande Group (company filing)",
+  "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2024/0129/2024012900565.pdf",
+  "notes": "Company's own announcement to the exchange: 'On 29 January 2024, the Company was ordered to be wound up by the High Court'; joint liquidators appointed. A court record or Hong Kong Judiciary page is the primary source."
+ },
+ {
+  "id": "F086",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "USDA, Foreign Holdings of U.S. Agricultural Land through December 31, 2024",
+  "url": "https://www.fsa.usda.gov/sites/default/files/2026-01/AFIDAYR2024ReportWithPageNumbers.pdf",
+  "notes": "USDA AFIDA report: 'Chinese primary-investor filers reported owning 247,659 acres of agricultural land as of December 31, 2024'. USDA says the figure should be read as a minimum."
+ },
+ {
+  "id": "F090",
+  "idx": 2,
+  "verdict": "supported",
+  "label": [
+   "Hong Kong government: Security Secretary on the Lai Chee-ying sentencing",
+   "US State Department press statement, February 9, 2026"
+  ],
+  "url": [
+   "https://www.info.gov.hk/gia/general/202602/09/P2026020900699.htm",
+   "https://www.state.gov/releases/office-of-the-spokesperson/2026/02/sentencing-in-jimmy-lai-case"
+  ],
+  "notes": "HKSAR Security Secretary's media session of February 9, 2026 refers to 'Jimmy Lai's sentencing of 20 years'. The State statement of the same date calls the 20-year sentence 'unjust and tragic'. Both are governments' own statements; the court's sentencing document is the primary record."
+ },
+ {
+  "id": "F091",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "UK Home Office immigration statistics, year ending June 2023",
+  "url": "https://www.gov.uk/government/statistics/immigration-system-statistics-year-ending-june-2023/how-many-people-do-we-grant-protection-to",
+  "notes": "Home Office: '176,407 Hong Kong BN(O) visas have been granted as of the end of June 2023'. Later totals are higher; this is the earliest figure that already supports 'well over 100,000'."
+ },
+ {
+  "id": "F093",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "",
+  "url": "",
+  "notes": "Slip opinion syllabus: 'Held: IEEPA does not authorize the President to impose tariffs.' Decided February 20, 2026. This closes the open point in the batch 7 note. The link is unchanged."
+ },
+ {
+  "id": "F094",
+  "idx": 2,
+  "verdict": "supported",
+  "label": "CISA advisory AA24-038A",
+  "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-038a",
+  "notes": "CISA/FBI/NSA advisory, initial version February 7, 2024: PRC state-sponsored actors 'are seeking to pre-position themselves on IT networks for disruptive or destructive cyberattacks against U.S. critical infrastructure'; names Volt Typhoon."
+ },
+ {
+  "id": "F094",
+  "idx": 1,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "The alternate OPM URL also returned HTTP 404. Look for the OPM breach figures on opm.gov by search, or use the OPM Inspector General."
+ },
+ {
+  "id": "F096",
+  "idx": 0,
+  "verdict": "partial",
+  "label": "Xinhua: Zhang Youxia, Liu Zhenli expelled from CPC, military",
+  "url": "https://english.news.cn/20260921/3d1a795c52f14c10a6edda3c2165add6/c.html",
+  "notes": "Xinhua (PRC state media, a PRC statement of its own decision) dated 2026-09-21: Zhang Youxia and Liu Zhenli expelled for serious discipline and law violations. That only Xi Jinping and Zhang Shengmin remain on the Central Military Commission is not in the text read."
+ },
+ {
+  "id": "F096",
+  "idx": 1,
+  "verdict": "partial",
+  "label": "Department of Defense, 2025 China Military Power Report (December 2025)",
+  "url": "https://media.defense.gov/2025/Dec/23/2003849070/-1/-1/1/ANNUAL-REPORT-TO-CONGRESS-MILITARY-AND-SECURITY-DEVELOPMENTS-INVOLVING-THE-PEOPLES-REPUBLIC-OF-CHINA-2025.PDF",
+  "notes": "Page not fetched: the runner got HTTP 403. The fact is as a web-search result summarized the page, so open the link and read it before relying on it. Same report as F068[2]: 'the PLA remains on track to have over 1,000 warheads by 2030'."
+ },
+ {
+  "id": "F096",
+  "idx": 2,
+  "verdict": "partial",
+  "label": "State Department statement to the Conference on Disarmament, February 2026",
+  "url": "https://www.state.gov/releases/2026/02/statement-to-the-conference-on-disarmament/",
+  "notes": "State: 'As of yesterday, February 5th, New START and its central limits have expired.' The word 'trilateral' is not on the page, and the PRC's refusal is a PRC position that this US statement does not record."
+ },
+ {
+  "id": "F098",
+  "idx": 0,
+  "verdict": "unresolved",
+  "label": "",
+  "url": "",
+  "notes": "english.www.gov.cn loaded the 2019 white paper's introduction, but 'intelligent' and 'informationized' were not in the text captured, so the body was not read. The 2019 paper is usually cited for 'informationized warfare' and for intelligent warfare as an emerging form, not as 'the direction of change'; the wording of this sentence may overstate it. Needs a person to read Section I."
+ },
+ {
+  "id": "F098",
+  "idx": 1,
+  "verdict": "partial",
+  "label": [
+   "DeepSeek-R1 paper (company preprint, January 2025)",
+   "DeepSeek-V3 technical report (company preprint)"
+  ],
+  "url": [
+   "https://arxiv.org/abs/2501.12948",
+   "https://arxiv.org/abs/2412.19437"
+  ],
+  "notes": "Company's own preprints. V3: 'requires only 2.788M H800 GPU hours for its full training' and 'performance comparable to leading closed-source models'. R1 (January 2025): the abstract text read did not name OpenAI-o1. 'Matched leading American systems' is the company's own claim and the outside benchmark record is not linked."
+ }
+]
