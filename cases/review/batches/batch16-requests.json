@@ -1,0 +1,440 @@
+[
+ {
+  "id": "C019",
+  "idx": 0,
+  "url": "https://finding-aids.library.umkc.edu/agents/people/536",
+  "grep": [
+   "Edgar Snow",
+   "1936",
+   "Mao",
+   "Red Star Over China",
+   "months"
+  ],
+  "excerpt": 0,
+  "note": "UMKC Edgar Snow papers finding aid (archive)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C019",
+  "idx": 0,
+  "url": "https://www.britannica.com/biography/Edgar-Parks-Snow",
+  "grep": [
+   "Snow",
+   "1936",
+   "Red Star Over China",
+   "Yen-an",
+   "Mao"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Edgar Snow (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "url": "https://finding-aids.library.umkc.edu/repositories/4/archival_objects/306098",
+  "grep": [
+   "Red Star Over China",
+   "1937",
+   "Gollancz",
+   "London"
+  ],
+  "excerpt": 0,
+  "note": "UMKC finding aid, Red Star Over China 1937 edition (archive)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C019",
+  "idx": 1,
+  "url": "https://finding-aids.library.umkc.edu/repositories/4/archival_objects/306099",
+  "grep": [
+   "Red Star Over China",
+   "1938",
+   "Random House",
+   "New York"
+  ],
+  "excerpt": 0,
+  "note": "UMKC finding aid, Red Star Over China 1938 edition (archive)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C020",
+  "idx": 0,
+  "url": "https://tile.loc.gov/storage-services/service/ll/llmlp/Judgment-IMTFE-Vol-II-PartB-Chapter-VIII/Judgment-IMTFE-Vol-II-PartB-Chapter-VIII.pdf",
+  "grep": [
+   "Nanking",
+   "13 December 1937",
+   "200,000",
+   "prisoners of war",
+   "Safety Zone"
+  ],
+  "excerpt": 0,
+  "note": "IMTFE (Tokyo Tribunal) judgment, Conventional War Crimes chapter (LOC; primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C020",
+  "idx": 0,
+  "url": "https://www.mofa.go.jp/policy/q_a/faq16.html",
+  "grep": [
+   "Nanjing",
+   "1937",
+   "non-combatants",
+   "looting",
+   "killing"
+  ],
+  "excerpt": 0,
+  "note": "Japan MOFA history Q&A (official; acknowledges killings after entry)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 0,
+  "url": "https://exeas.weai.columbia.edu/downloads/resources/pdf/trial-wangshiwei.pdf",
+  "grep": [
+   "Wang Shiwei",
+   "Trotsk",
+   "1942",
+   "Wild Lilies",
+   "rectification"
+  ],
+  "excerpt": 0,
+  "note": "Columbia Weatherhead East Asian Inst. teaching document on Wang Shiwei trial (secondary/documents)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 0,
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-case-no-1",
+  "grep": [
+   "Wang Shiwei",
+   "Trotsk",
+   "1942",
+   "Yan'an",
+   "rectification"
+  ],
+  "excerpt": 0,
+  "note": "Independent Chinese PEN article on Wang Shiwei (secondary, advocacy)",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 1,
+  "url": "https://exeas.weai.columbia.edu/downloads/resources/pdf/trial-wangshiwei.pdf",
+  "grep": [
+   "Wang Shiwei",
+   "expelled",
+   "1947",
+   "executed",
+   "Trotsk"
+  ],
+  "excerpt": 0,
+  "note": "Columbia Weatherhead East Asian Inst. teaching document (secondary/documents)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 1,
+  "url": "https://www.chinesepen.org/english/no-13-yu-zhang-case-no-1",
+  "grep": [
+   "Wang Shiwei",
+   "1947",
+   "executed",
+   "Trotskyite",
+   "July 1"
+  ],
+  "excerpt": 0,
+  "note": "Independent Chinese PEN article (secondary, advocacy)",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 2,
+  "url": "https://www.aisixiang.com/data/415.html",
+  "grep": [
+   "王实味",
+   "公安部",
+   "1991",
+   "托派",
+   "复查"
+  ],
+  "excerpt": 0,
+  "note": "Aisixiang Chinese-language article (secondary; reprint of 1991 MPS decision per search)",
+  "grep_width": 200
+ },
+ {
+  "id": "C022",
+  "idx": 2,
+  "url": "https://www.marxists.org/chinese/reference-books/yanan1942/5-02.htm",
+  "grep": [
+   "王实味",
+   "公安部",
+   "1991",
+   "托派",
+   "复查"
+  ],
+  "excerpt": 0,
+  "note": "marxists.org Chinese-language reference book chapter (secondary; may quote MPS 1991 decision)",
+  "grep_width": 200
+ },
+ {
+  "id": "C023",
+  "idx": 2,
+  "url": "https://www.govinfo.gov/content/pkg/SERIALSET-10757_00_00-094-0535-0000/pdf/SERIALSET-10757_00_00-094-0535-0000.pdf",
+  "grep": [
+   "105",
+   "quota",
+   "Chinese",
+   "repeal",
+   "naturalization"
+  ],
+  "excerpt": 0,
+  "note": "78th Congress Senate Report 535 on repeal of Chinese exclusion (US Serial Set; primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C023",
+  "idx": 2,
+  "url": "https://history.house.gov/Exhibitions-and-Publications/APA/Historical-Essays/Exclusion-to-Inclusion/Immigrants-and-Refugees/",
+  "grep": [
+   "1943",
+   "repeal",
+   "quota",
+   "105",
+   "Chinese"
+  ],
+  "excerpt": 0,
+  "note": "House History essay (official, secondary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C024",
+  "idx": 1,
+  "url": "https://www.nps.gov/people/dr-chienshiung-wu.htm",
+  "grep": [
+   "Wu",
+   "xenon",
+   "Hanford",
+   "Fermi",
+   "poison"
+  ],
+  "excerpt": 0,
+  "note": "NPS Manhattan Project NHP bio of Chien-Shiung Wu (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C024",
+  "idx": 1,
+  "url": "https://www.nps.gov/people/dr-chien-shiung-wu-the-first-lady-of-physics.htm",
+  "grep": [
+   "Wu",
+   "xenon",
+   "Hanford",
+   "Fermi",
+   "1944"
+  ],
+  "excerpt": 0,
+  "note": "NPS bio, Wu First Lady of Physics (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C024",
+  "idx": 2,
+  "url": "https://www.britannica.com/biography/Chien-Shiung-Wu",
+  "grep": [
+   "citizen",
+   "1954",
+   "parity",
+   "1957",
+   "cobalt"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Chien-Shiung Wu (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C024",
+  "idx": 2,
+  "url": "https://nvlpubs.nist.gov/nistpubs/sp958-lide/111-115.pdf",
+  "grep": [
+   "parity",
+   "Wu",
+   "1957",
+   "cobalt-60",
+   "National Bureau of Standards"
+  ],
+  "excerpt": 0,
+  "note": "NIST SP 958 essay on parity nonconservation experiment (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "url": "https://www.history.army.mil/brochures/chinoff/chinoff.htm",
+  "grep": [
+   "Manchuria",
+   "9 August",
+   "Kwantung",
+   "Soviet",
+   "1945"
+  ],
+  "excerpt": 0,
+  "note": "US Army Center of Military History, China Offensive campaign brochure (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C026",
+  "idx": 2,
+  "url": "https://www.britannica.com/place/Manchuria/Manchuria-since-c-1900",
+  "grep": [
+   "August 9",
+   "Soviet",
+   "Manchuria",
+   "communist",
+   "1945"
+  ],
+  "excerpt": 0,
+  "note": "Britannica Manchuria since 1900 (secondary)",
+  "grep_width": 200
+ },
+ {
+  "id": "C027",
+  "idx": 2,
+  "url": "https://www.fbi.gov/history/brief-history/world-war-cold-war",
+  "grep": [
+   "Amerasia",
+   "Jaffe",
+   "fined",
+   "2,500",
+   "1945"
+  ],
+  "excerpt": 0,
+  "note": "FBI brief history (official, but may lack fine; low confidence - no source on fine found)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C028",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1946v10/d366",
+  "grep": [
+   "Marshall",
+   "January 7",
+   "statement",
+   "Kuomintang",
+   "extremist"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1946 v10, Marshall statement of Jan 7 1947 (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C028",
+  "idx": 2,
+  "url": "https://history.state.gov/historicaldocuments/frus1946v10/ch6",
+  "grep": [
+   "Marshall",
+   "January 7",
+   "statement",
+   "reactions",
+   "1947"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1946 v10 chapter, reactions to Marshall's statement (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C029",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1949v09/d684",
+  "grep": [
+   "gold yuan",
+   "August 19",
+   "1948",
+   "currency reform",
+   "freeze"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1949 v9, Stuart report on 1948 currency reform (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C029",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1948v08/d333",
+  "grep": [
+   "gold yuan",
+   "August 19",
+   "currency reform",
+   "1948"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1948 v8 document on gold yuan reform (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C030",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1949v08/d1249",
+  "grep": [
+   "Ward",
+   "Mukden",
+   "October 24",
+   "arrest",
+   "beat"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1949 v8, Ward arrest and Chinese charge (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C030",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1949v08/d1225",
+  "grep": [
+   "Ward",
+   "Mukden",
+   "arrest",
+   "October",
+   "trial"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1949 v8, Mukden documents on Ward (official primary)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C030",
+  "idx": 1,
+  "url": "https://www.loc.gov/resource/sn83045462/1949-12-09/ed-1/?sp=1&st=text",
+  "grep": [
+   "Ward",
+   "Mukden",
+   "deport",
+   "Tientsin",
+   "December"
+  ],
+  "excerpt": 0,
+  "note": "Evening Star 9 Dec 1949 via LOC Chronicling America (newspaper; expulsion in December)",
+  "ua": "browser",
+  "grep_width": 200
+ }
+]
