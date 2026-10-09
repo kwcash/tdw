@@ -2,594 +2,599 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C060",
-   "idx": 3,
-   "url": "https://findingaids.lib.umich.edu/catalog/umich-bhl-05100",
+   "id": "C094",
+   "idx": 2,
+   "url": "https://www.scmagazine.com/news/google-hackers-wanted-to-know-which-chinese-intel-operatives-were-being-watched",
    "grep": [
-    "Ebens",
-    "1987",
-    "25 years",
-    "Vincent Chin",
-    "retrial"
+    "Google",
+    "surveillance",
+    "court orders",
+    "Chinese",
+    "database"
    ],
    "excerpt": 0,
-   "note": "University of Michigan Bentley Historical Library finding aid for American Citizens for Justice records; university archive, secondary; summarises conviction, overturn and 1987 retrial",
+   "note": "media only: SC Magazine 2013 report summarising the Washington Post story on the Google intruders reaching a database of surveillance orders",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C062",
-   "idx": 3,
-   "url": "https://www.everycrsreport.com/reports/RL30700.html",
+   "id": "C094",
+   "idx": 2,
+   "url": "https://securityaffairs.com/?p=14586",
    "grep": [
-    "Peace Pearl",
-    "Su-27",
-    "1990",
-    "F-8",
-    "avionics"
+    "Google",
+    "surveillance",
+    "FISA",
+    "court orders",
+    "Washington Post"
    ],
    "excerpt": 0,
-   "note": "CRS report RL30700 'China's Foreign Conventional Arms Acquisitions' via EveryCRSReport mirror; official CRS; a CRS report in search says China canceled Peace Pearl in 1990",
+   "note": "media only: Security Affairs (security news blog) May 2013 post 'Google data breach, Company's Surveillance Database hacked' relaying the Washington Post report",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C062",
-   "idx": 3,
-   "url": "https://www.uscc.gov/sites/default/files/5.20.10Fisher.pdf",
+   "id": "C094",
+   "idx": 2,
+   "url": "https://news.hitb.org/content/chinese-hackers-who-breached-google-reportedly-targeted-classified-data",
    "grep": [
-    "Peace Pearl",
-    "Grumman",
-    "Tiananmen",
-    "Su-27",
-    "cancel"
+    "Google",
+    "classified",
+    "surveillance",
+    "former",
+    "Chinese"
    ],
    "excerpt": 0,
-   "note": "Richard Fisher testimony to the U.S.-China Economic and Security Review Commission (20 May 2010); congressional commission record, primary; says Peace Pearl was canceled after Tiananmen and Russia stepped in",
+   "note": "media only: HITB news digest on the 2013 report that the Google hackers targeted classified surveillance data",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C062",
-   "idx": 3,
-   "url": "https://apps.dtic.mil/sti/tr/pdf/ADA297080.pdf",
-   "grep": [
-    "Peace Pearl",
-    "Su-27",
-    "Tiananmen",
-    "F-8",
-    "suspended"
-   ],
-   "excerpt": 0,
-   "note": "RAND, China's Air Force Enters the 21st Century (Allen, Krumel, Pollack, 1995), DTIC copy; think-tank study for the U.S. Air Force, secondary",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C066",
+   "id": "C098",
    "idx": 0,
-   "url": "https://history.state.gov/milestones/1989-1992/gulf-war",
+   "url": "https://www.everycrsreport.com/files/20130123_R42930_70e04bc4533a3f94d62d7fd97ebe108394d4f0bd.html",
    "grep": [
-    "January 16",
-    "February 28",
-    "Desert Storm",
-    "air",
-    "ground"
+    "Scarborough Shoal",
+    "April 2012",
+    "fishing",
+    "surveillance",
+    "Philippine"
    ],
    "excerpt": 0,
-   "note": "Office of the Historian milestone: Gulf War (US State Department)",
+   "note": "CRS R42930 'Maritime Territorial Disputes in East Asia: Issues for Congress' (Jan 2013) via everycrsreport.com (primary US government analysis); covers the 2012 Scarborough Shoal standoff",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C066",
+   "id": "C098",
    "idx": 0,
-   "url": "https://www.afhistory.af.mil/FAQs/Fact-Sheets/Article/458965/1991-operation-desert-shielddesert-storm/",
+   "url": "https://www.everycrsreport.com/reports/R44555.html",
    "grep": [
-    "17 January",
-    "one hundred hours",
-    "largest air campaign",
-    "28 February"
+    "Scarborough Shoal",
+    "2012",
+    "fishing",
+    "maritime surveillance",
+    "withdraw"
    ],
    "excerpt": 0,
-   "note": "Air Force Historical Support Division fact sheet (US government)",
+   "note": "CRS R44555 on the Philippines v. China UNCLOS arbitration (2016) via everycrsreport.com (primary US government analysis); background on the 2012 standoff",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C066",
+   "id": "C098",
    "idx": 0,
-   "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-PEMD-96-10/pdf/GAOREPORTS-PEMD-96-10.pdf",
+   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
    "grep": [
-    "43-day",
-    "100 hours",
-    "January 17",
-    "February 28",
-    "ground"
+    "Scarborough Shoal",
+    "2012",
+    "Philippine",
+    "fishing",
+    "cordon"
    ],
    "excerpt": 0,
-   "note": "GAO report PEMD-96-10 on Gulf War air campaign (US government, via govinfo)",
+   "note": "CRS R42784 'China's Actions in South and East China Seas' (Jan 2019 version) via everycrsreport.com (primary US government analysis); Scarborough Shoal 2012 episode",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C070",
+   "id": "C098",
    "idx": 1,
-   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/documents/roundtables/2005/CECC%20Roundtable%20Testimony%20-%20Harry%20Wu%20-%206.22.05.pdf",
+   "url": "https://www.everycrsreport.com/reports/R44555.html",
    "grep": [
-    "60 Minutes",
-    "1991",
-    "CBS",
-    "film",
-    "Laogai"
+    "Scarborough Shoal",
+    "withdraw",
+    "United States",
+    "June 2012",
+    "verbal agreement"
    ],
    "excerpt": 0,
-   "note": "Harry Wu testimony to the Congressional-Executive Commission on China, 2005 (US commission record of his own account)",
+   "note": "CRS R44555 (2016) via everycrsreport.com (primary US government analysis); describes negotiations partly mediated by the United States and the agreement that vessels would leave",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C076",
+   "id": "C098",
+   "idx": 1,
+   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
+   "grep": [
+    "Scarborough Shoal",
+    "withdraw",
+    "verbal agreement",
+    "intermediated",
+    "United States"
+   ],
+   "excerpt": 0,
+   "note": "CRS R42784 (Jan 2019 version) via everycrsreport.com (primary US government analysis); negotiations 'intermediated by the United States' and reported agreement that all vessels leave",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C098",
+   "idx": 1,
+   "url": "https://globalnation.inquirer.net/?p=174534",
+   "grep": [
+    "Del Rosario",
+    "United States",
+    "simultaneous",
+    "June 15",
+    "Scarborough"
+   ],
+   "excerpt": 0,
+   "note": "media only: Philippine Daily Inquirer (2019) on former Foreign Secretary Albert del Rosario's account that the US brokered a mutual withdrawal in June 2012",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C100",
+   "idx": 1,
+   "url": "https://www.technologyreview.com/s/602705/the-decline-in-chinese-cyberattacks-the-story-behind-the-numbers/",
+   "grep": [
+    "FireEye",
+    "September 2015",
+    "decline",
+    "Mandia",
+    "72"
+   ],
+   "excerpt": 0,
+   "note": "MIT Technology Review on the decline in Chinese cyberattacks (media only; quotes company data)",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C100",
    "idx": 2,
-   "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2012/08/14/3107.pdf",
+   "url": "https://www.everycrsreport.com/files/20190131_R42784_593ac5df59ea48a37af45fab0c084b10de211c05.html",
    "grep": [
-    "Chang",
-    "one couple, one child",
-    "sterilization",
-    "persecution"
+    "Fiery Cross",
+    "Subi",
+    "Mischief",
+    "anti-ship cruise missiles",
+    "surface-to-air"
    ],
    "excerpt": 0,
-   "note": "Matter of Chang, 20 I&N Dec. 38 (BIA 1989) (US Justice Department EOIR)",
+   "note": "CRS R42784 'China's Actions in South and East China Seas' (Jan 2019 version) via everycrsreport.com (primary US government analysis); missile deployments to the three Spratly outposts",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C076",
+   "id": "C100",
    "idx": 2,
-   "url": "https://www.justice.gov/sites/default/files/eoir/legacy/2014/07/25/3611.pdf",
+   "url": "https://www.everycrsreport.com/files/2024-08-26_R42784_21f3443f0dbef1078840c28c3676252630cc8628.html",
    "grep": [
-    "Chang",
-    "601(a)",
-    "1996",
-    "forced abortion",
-    "overrul"
+    "Fiery Cross",
+    "Subi",
+    "Mischief",
+    "anti-ship cruise missiles",
+    "2018"
    ],
    "excerpt": 0,
-   "note": "Matter of J-S-, 24 I&N Dec. 520 (A.G. 2008): describes IIRIRA 601(a) overruling Chang (US Justice Department)",
+   "note": "CRS R42784 'U.S.-China Strategic Competition in South and East China Seas' (Aug 2024 version) via everycrsreport.com (primary US government analysis)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C076",
+   "id": "C100",
    "idx": 3,
-   "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title8/html/USCODE-2023-title8-chap12-subchapI-sec1101.htm",
+   "url": "https://www.fbi.gov/news/stories/chinese-hackers-indicted-122018",
    "grep": [
-    "forced to abort",
-    "involuntary sterilization",
-    "political opinion",
-    "persecuted"
+    "Zhu Hua",
+    "Zhang Shilong",
+    "Ministry of State Security",
+    "December",
+    "APT10"
    ],
    "excerpt": 0,
-   "note": "8 U.S.C. 1101(a)(42) as amended by IIRIRA 601(a) (US Code via govinfo)",
+   "note": "FBI story: Chinese hackers indicted (US government)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C080",
+   "id": "C100",
    "idx": 3,
-   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141602824_2025.01.31%20-%20Cisco%20Cert%20Pet.pdf",
+   "url": "https://www.fbi.gov/wanted/cyber/apt-10-group",
    "grep": [
-    "Falun Gong",
-    "Golden Shield",
-    "2011",
-    "Northern District of California",
-    "identify"
+    "Zhu Hua",
+    "Zhang Shilong",
+    "December 17, 2018",
+    "Southern District of New York",
+    "Ministry of State Security"
    ],
    "excerpt": 0,
-   "note": "Cisco's petition for certiorari in No. 24-856 (U.S. Supreme Court filing, primary court document); states when respondents sued and the Golden Shield allegations",
+   "note": "FBI wanted page: APT 10 group (US government)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C080",
+   "id": "C100",
    "idx": 3,
-   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141615995_2025.01.31%20-%20Cisco%20Cert%20Pet%20App.pdf",
+   "url": "https://www.justice.gov/usao-sdny/page/file/1122721/dl",
    "grep": [
-    "Falun Gong",
-    "Golden Shield",
-    "2011",
-    "Cisco",
-    "Berzon"
+    "Zhu Hua",
+    "Zhang Shilong",
+    "Ministry of State Security",
+    "APT10",
+    "indict"
    ],
    "excerpt": 0,
-   "note": "Appendix to Cisco cert petition 24-856 containing the Ninth Circuit opinion (No. 15-16909) and district court orders (primary court documents)",
+   "note": "SDNY indictment document (US court filing via USAO)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C080",
-   "idx": 3,
-   "url": "https://business-humanrights.org/en/cisco-systems-lawsuits-re-china",
-   "grep": [
-    "Falun Gong",
-    "Golden Shield",
-    "2011",
-    "Cisco",
-    "Chambers"
-   ],
-   "excerpt": 0,
-   "note": "Business & Human Rights Resource Centre case page on the Cisco China lawsuits (NGO, secondary; summarises the May 2011 filing)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C080",
+   "id": "C103",
    "idx": 4,
-   "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-856.html",
+   "url": "https://www.militarytimes.com/news/your-army/2022/09/27/ex-army-reservist-convicted-of-illegally-acting-as-chinese-agent/",
    "grep": [
-    "July 7, 2023",
-    "15-16909",
-    "Petition for a writ of certiorari",
-    "Cisco Systems",
-    "Rehearing Denied"
+    "Ji Chaoqun",
+    "Army Reserve",
+    "2016",
+    "Xu Yanjun",
+    "convicted"
    ],
    "excerpt": 0,
-   "note": "U.S. Supreme Court docket for Cisco Systems v. Doe I, No. 24-856 (primary court record); lists Ninth Circuit decision date and the cert petition",
+   "note": "media only: Military Times (Army Times) 27 Sep 2022 report on the Ji Chaoqun jury verdict",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C080",
+   "id": "C103",
    "idx": 4,
-   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141602824_2025.01.31%20-%20Cisco%20Cert%20Pet.pdf",
+   "url": "https://www.militarytimes.com/news/your-army/2023/01/26/former-army-reservist-spied-for-chinese-government/",
    "grep": [
-    "July 7, 2023",
-    "Ninth Circuit",
-    "15-16909",
-    "73 F.4th 700",
-    "certiorari"
+    "Ji Chaoqun",
+    "Army Reserve",
+    "2016",
+    "Xu Yanjun",
+    "September"
    ],
    "excerpt": 0,
-   "note": "Cisco's petition for certiorari in No. 24-856 (primary court filing); cites the Ninth Circuit decision and asks the Supreme Court to review it",
+   "note": "media only: Military Times 26 Jan 2023 report on Ji's 8-year sentence, recaps enlistment and the September 2022 conviction",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C080",
+   "id": "C103",
    "idx": 4,
-   "url": "https://www.supremecourt.gov/DocketPDF/24/24-856/342121/20250206141615995_2025.01.31%20-%20Cisco%20Cert%20Pet%20App.pdf",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.ilnd.356808/gov.uscourts.ilnd.356808.372.0.pdf",
    "grep": [
-    "July 7, 2023",
-    "15-16909",
-    "Berzon",
-    "Christen",
-    "REVERSED"
+    "Ji",
+    "guilty",
+    "September 26, 2022",
+    "Superseding Indictment",
+    "jury"
    ],
    "excerpt": 0,
-   "note": "Appendix to the cert petition with the Ninth Circuit opinion filed July 7, 2023 (primary court document)",
+   "note": "RECAP copy of docket entry 372 in United States v. Ji, N.D. Ill. 1:18-cr-611 (primary court record; contents not confirmed, likely verdict or post-trial filing)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C081",
-   "idx": 3,
-   "url": "https://www.rcfp.org/settlement-reached-lee-case-involving-reporters-subpoenas/",
-   "grep": [
-    "Wen Ho Lee",
-    "$750,000",
-    "895,000",
-    "Associated Press",
-    "June 2"
-   ],
-   "excerpt": 0,
-   "note": "Reporters Committee for Freedom of the Press news item on the June 2006 Lee settlement (NGO, secondary); gives the news organizations' $750,000 share and the five outlets",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 3,
-   "url": "https://www.jurist.org/news/2006/06/us-nuclear-scientist-settles-privacy",
-   "grep": [
-    "Wen Ho Lee",
-    "895,000",
-    "750,000",
-    "Privacy Act",
-    "news organizations"
-   ],
-   "excerpt": 0,
-   "note": "JURIST (University of Pittsburgh School of Law news service, secondary) report on the June 2006 settlement amounts: government $895,000 plus media $750,000",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C081",
-   "idx": 3,
-   "url": "https://archive.seattletimes.com/archive/20060603/wenholee03/us-5-news-organizations-settle-wen-ho-lees-lawsuit",
-   "grep": [
-    "Wen Ho Lee",
-    "1.6 million",
-    "895,000",
-    "750,000",
-    "five news organizations"
-   ],
-   "excerpt": 0,
-   "note": "media only: Associated Press story (Seattle Times archive, 3 June 2006) on the Lee settlement, should carry the combined ~$1.6 million figure",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C089",
+   "id": "C104",
    "idx": 1,
-   "url": "https://www.fmprc.gov.cn/ce/ceun/eng/fyrth/t291388.htm",
+   "url": "https://www.npr.org/transcripts/529419491",
    "grep": [
-    "23 January, 2007",
-    "outer space",
-    "Liu Jianchao",
-    "test",
-    "informed"
+    "Mazzetti",
+    "China",
+    "CIA",
+    "2010",
+    "2012",
+    "20"
    ],
    "excerpt": 0,
-   "note": "PRC Ministry of Foreign Affairs transcript of spokesperson Liu Jianchao's regular press conference on 23 January 2007 (primary, Chinese government), first official comment on the satellite test",
+   "note": "media only: NPR transcript (21 May 2017) of interview with New York Times reporter Mark Mazzetti on the dismantling of CIA sources in China",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C089",
+   "id": "C104",
    "idx": 1,
-   "url": "https://www.everycrsreport.com/files/20070423_RS22652_86cca19bea87ad2ae804edb0c6d1556a407f392a.html",
+   "url": "https://www.thedailystar.net/world/china-killed-cia-sources-hobbled-us-spying-2010-2012-nyt-1408507",
    "grep": [
-    "January 11, 2007",
-    "January 23",
-    "Foreign Ministry",
-    "Fengyun",
-    "anti-satellite"
+    "18 to 20",
+    "killed",
+    "imprisoned",
+    "2010",
+    "2012",
+    "CIA"
    ],
    "excerpt": 0,
-   "note": "CRS Report RS22652 'China's Anti-Satellite Weapon Test' (Shirley Kan, 23 Apr 2007), Congressional Research Service via everycrsreport.com mirror (primary US government analysis); dates the test and the Chinese statement",
+   "note": "media only: Daily Star (Reuters wire) 2017 report 'China killed, jailed CIA sources: NYT' on the New York Times findings",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C089",
+   "id": "C104",
    "idx": 1,
-   "url": "https://www.hoover.org/sites/default/files/research/docs/clm20jm.pdf",
+   "url": "https://www.thejournal.ie/article.php?id=3402151",
    "grep": [
-    "January 11",
-    "January 23",
-    "silence",
-    "ASAT",
-    "Foreign Ministry"
+    "20",
+    "CIA",
+    "killed",
+    "imprisoned",
+    "2010",
+    "2012"
    ],
    "excerpt": 0,
-   "note": "China Leadership Monitor (Hoover Institution think tank, James Mulvenon) analysis of Beijing's silence after the January 2007 ASAT test (secondary)",
+   "note": "media only: TheJournal.ie 2017 report 'China killed or jailed up to 20 US spies in two years' relaying the New York Times",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C089",
+   "id": "C104",
    "idx": 3,
-   "url": "https://www.uscc.gov/sites/default/files/Costello_Written%20Testimony.pdf",
+   "url": "https://www.nbcnews.com/politics/justice-department/former-cia-officer-sentenced-19-years-conspiring-chinese-spies-n1089341",
    "grep": [
-    "Strategic Support Force",
-    "December 31, 2015",
-    "December 2015",
-    "space",
-    "cyberspace"
+    "Jerry Chun Shing Lee",
+    "19 years",
+    "pleaded guilty",
+    "national defense information",
+    "May"
    ],
    "excerpt": 0,
-   "note": "Written testimony of John Costello to the U.S.-China Economic and Security Review Commission, 'China's Strategic Support Force: A Force for a New Era' (US government commission record, primary testimony); covers 2015 creation for space and cyber",
+   "note": "media only: NBC News 22 Nov 2019 report on Lee's 19-year sentence (DOJ press pages unusable on the runner)",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C089",
+   "id": "C104",
    "idx": 3,
-   "url": "https://www.cna.org/Newsletters/PLA%20Update/Issue-20/PLA-Update-Issue-20-April-30-2024.pdf",
+   "url": "https://kpbs.org/news/2019/11/22/ex-cia-officer-sentenced-to-19-years-for",
    "grep": [
-    "April 19",
-    "Strategic Support Force",
-    "Aerospace Force",
-    "Cyberspace Force",
-    "Information Support Force",
-    "2015"
+    "Lee",
+    "19 years",
+    "pleaded guilty",
+    "May",
+    "national defense information"
    ],
    "excerpt": 0,
-   "note": "CNA PLA Update Issue 20 (30 Apr 2024), CNA research institute newsletter (think tank, secondary); reports the April 19, 2024 disbanding of the SSF into three forces and its late-2015 founding",
+   "note": "media only: NPR report carried by KPBS, 22 Nov 2019, on the sentencing and the May 2019 plea",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C089",
+   "id": "C104",
    "idx": 3,
-   "url": "https://www.airuniversity.af.edu/CASI/Display/Article/3749754/the-plas-new-information-support-force/",
+   "url": "https://kvia.com/news/us-world/2019/11/22/former-cia-officer-gets-19-years-in-prison-for-selling-secrets-to-china/",
    "grep": [
-    "Strategic Support Force",
-    "Information Support Force",
-    "Aerospace Force",
-    "Cyberspace Force",
-    "2015"
+    "Lee",
+    "19 years",
+    "pleaded guilty",
+    "Alexandria",
+    "Ellis"
    ],
    "excerpt": 0,
-   "note": "China Aerospace Studies Institute (US Air Force Air University) article 'The PLA's New Information Support Force' (US government research institute, secondary)",
+   "note": "media only: KVIA (wire copy), 22 Nov 2019, on the 19-year sentence from Judge T.S. Ellis, E.D. Va.",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
+   "id": "C105",
    "idx": 0,
-   "url": "https://www.china.org.cn/china/photos/2008-12/31/content_17037604.htm",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2018-04-23/pdf/2018-08354.pdf",
    "grep": [
-    "Sanlu",
-    "December 2007",
-    "complaints",
-    "Tian Wenhua",
-    "melamine"
+    "1.19 billion",
+    "Iran",
+    "North Korea",
+    "$661",
+    "ZTE"
    ],
    "excerpt": 0,
-   "note": "china.org.cn (Chinese government-run outlet, Xinhua-sourced) report on the 31 Dec 2008 Sanlu executives' trial; prosecutors on complaints from December 2007 (state media, primary Chinese account)",
+   "note": "Federal Register notice, BIS activation of ZTE denial order, 23 April 2018 (83 FR 17644); official primary; recites the March 2017 combined $1.19 billion civil and criminal penalty",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
+   "id": "C105",
    "idx": 0,
-   "url": "https://covid-19.chinadaily.com.cn/china/2009-01/01/content_7358822.htm",
+   "url": "https://home.treasury.gov/news/press-releases/sm0023",
    "grep": [
-    "Sanlu",
-    "December 2007",
-    "complaints",
-    "Tian Wenhua",
-    "melamine"
+    "430,488,798",
+    "guilty",
+    "Iran",
+    "Zhongxing",
+    "1.19"
    ],
    "excerpt": 0,
-   "note": "China Daily (state media mirror) 1 Jan 2009 report on the Sanlu trial and guilty plea; complaints began December 2007 (secondary/state media)",
+   "note": "Treasury Department press release of 7 March 2017 on the OFAC settlement and the coordinated DOJ/Commerce resolution with ZTE; official primary",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
+   "id": "C105",
    "idx": 0,
-   "url": "https://www.treasury.govt.nz/sites/default/files/2020-03/oia-20200010.pdf",
+   "url": "https://www.uscc.gov/sites/default/files/Research/2018%20May%20Trade%20Bulletin.pdf",
    "grep": [
-    "Sanlu",
-    "43%",
-    "Fonterra",
-    "melamine",
-    "2008"
+    "ZTE",
+    "pled guilty",
+    "$892 million",
+    "Iran",
+    "North Korea"
    ],
    "excerpt": 0,
-   "note": "New Zealand Treasury response to an Official Information Act request (NZ government document, primary); states Fonterra's 43% stake in Sanlu and the 2008 melamine scandal (covers the ownership half of the sentence only)",
+   "note": "US-China Economic and Security Review Commission trade bulletin, May 2018; congressional commission, secondary; says ZTE pled guilty and agreed to pay $892 million",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
-   "idx": 2,
-   "url": "https://covid-19.chinadaily.com.cn/china/2008-12/01/content_7258262.htm",
-   "grep": [
-    "294,000",
-    "six",
-    "51,900",
-    "Ministry of Health",
-    "melamine"
-   ],
-   "excerpt": 0,
-   "note": "China Daily (Xinhua) 1 Dec 2008 report of the Chinese Ministry of Health's final figures: 294,000 infants affected, six deaths (state media relaying the government announcement)",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C090",
-   "idx": 2,
-   "url": "https://rfs.healthbureau.gov.hk/images/HKMJ/HKMJ_Vol19_No6_Supple8_Dec2013.pdf",
-   "grep": [
-    "294 000",
-    "294,000",
-    "melamine",
-    "six deaths",
-    "Sanlu"
-   ],
-   "excerpt": 0,
-   "note": "Hong Kong Medical Journal supplement funded by the Hong Kong Food and Health Bureau (government-funded research summary, secondary) citing the Ministry of Health's 294,000 infants and six deaths",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C090",
-   "idx": 2,
-   "url": "https://www.besjournal.com/fileSWYXYHJKX/journal/article/swyxyhjkx/2009/2/PDF/bes200902005.pdf",
-   "grep": [
-    "294",
-    "melamine",
-    "six",
-    "infant formula",
-    "Sanlu"
-   ],
-   "excerpt": 0,
-   "note": "Biomedical and Environmental Sciences 2009 (China CDC journal, peer-reviewed, secondary) article on the melamine infant formula incident",
-   "ua": "browser",
-   "grep_width": 170,
-   "grep_limit": 2
-  },
-  {
-   "id": "C090",
+   "id": "C105",
    "idx": 3,
-   "url": "https://www.avma.org/javma-news/2007-04-15/recall-pet-food-leaves-veterinarians-seeking-solutions",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2018-07-23/pdf/2018-15633.pdf",
    "grep": [
-    "60 million",
-    "melamine",
-    "wheat gluten",
-    "recall",
-    "Menu Foods"
+    "1,000,000,000",
+    "400,000,000",
+    "escrow",
+    "superseding",
+    "June"
    ],
    "excerpt": 0,
-   "note": "JAVMA News, American Veterinary Medical Association, 15 Apr 2007 (professional association, secondary); recall scale and melamine in wheat gluten",
+   "note": "Federal Register notice, BIS order terminating the April 15 2018 ZTE denial order, 83 FR 34825 (23 July 2018); official primary; recites the June 2018 superseding settlement with $1 billion paid and $400 million escrow",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
+   "id": "C105",
    "idx": 3,
-   "url": "https://cacmap.fda.gov/animal-veterinary/recalls-withdrawals/melamine-pet-food-recall-frequently-asked-questions",
+   "url": "https://www.bis.gov/media/documents/e-2556.pdf",
    "grep": [
-    "Xuzhou Anying",
-    "Binzhou Futian",
-    "wheat gluten",
-    "rice protein concentrate",
-    "melamine"
+    "1,000,000,000",
+    "400,000,000",
+    "escrow",
+    "board of directors",
+    "senior leadership"
    ],
    "excerpt": 0,
-   "note": "FDA Center for Veterinary Medicine, Melamine Pet Food Recall FAQ (agency page, primary); names the two Chinese suppliers of wheat gluten and rice protein concentrate",
+   "note": "BIS order document e-2556 hosted on bis.gov, 2018 ZTE order approving the superseding settlement (believed to be the June 2018 superseding order); official primary",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
   },
   {
-   "id": "C090",
+   "id": "C105",
    "idx": 3,
-   "url": "https://www.dvm360.com/view/tentative-settlement-reached-pet-food-lawsuits-0",
+   "url": "https://www.rubio.senate.gov/public/index.cfm/press-releases?id=B81368F2-A577-475C-A5F6-129D2BC4317A",
    "grep": [
-    "60 million",
-    "Menu Foods",
-    "melamine",
-    "recall",
-    "pouches"
+    "ZTE",
+    "conferees",
+    "NDAA",
+    "amendment",
+    "removing"
    ],
    "excerpt": 0,
-   "note": "media only: dvm360 veterinary trade news on the pet food lawsuit settlement; states Menu Foods recalled 60 million cans and pouches",
+   "note": "Statement by Senator Marco Rubio on NDAA conferees removing the bipartisan ZTE amendment (July 2018); official senator page, primary for the fact that the Senate ZTE provision was dropped in conference",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C106",
+   "idx": 2,
+   "url": "https://www.usitc.gov/publications/332/executive_briefings/chinasoyebot.pdf",
+   "grep": [
+    "12.2 billion",
+    "3.1 billion",
+    "soy",
+    "2017",
+    "2018"
+   ],
+   "excerpt": 0,
+   "note": "US International Trade Commission executive briefing on US soybean exports to China; federal agency, primary; search snippet gives $12.2 billion in 2017 and $3.1 billion in 2018",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C106",
+   "idx": 2,
+   "url": "https://www.usitc.gov/research_and_analysis/trade_shifts_2018/agriculture.htm",
+   "grep": [
+    "soybeans",
+    "China",
+    "billion",
+    "2018",
+    "oilseeds"
+   ],
+   "excerpt": 0,
+   "note": "USITC Trade Shifts 2018 agricultural products chapter; federal agency, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C106",
+   "idx": 2,
+   "url": "https://ers.usda.gov/sites/default/files/_laserfiche/outlooks/93390/OCS-19F-01.pdf?v=73487",
+   "grep": [
+    "12.2 billion",
+    "3.1 billion",
+    "China",
+    "soybean",
+    "2018"
+   ],
+   "excerpt": 0,
+   "note": "USDA Economic Research Service Oil Crops Outlook (OCS-19F-01); federal agency, primary",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C107",
+   "idx": 3,
+   "url": "https://www.congress.gov/crs_external_products/R/PDF/R47620/R47620.3.pdf",
+   "grep": [
+    "Meng",
+    "deferred prosecution",
+    "September 2021",
+    "Huawei",
+    "two Michaels"
+   ],
+   "excerpt": 0,
+   "note": "Congressional Research Service report R47620 Canada: Background and U.S. Relations (11 July 2023 version); congressional agency, secondary; says the PRC released the two Canadians hours after Meng reached a deferred prosecution agreement",
+   "ua": "browser",
+   "grep_width": 170,
+   "grep_limit": 2
+  },
+  {
+   "id": "C107",
+   "idx": 3,
+   "url": "https://www.justice.gov/archives/nsd/information-about-department-justice-s-china-initiative-and-compilation-china-related",
+   "grep": [
+    "Meng",
+    "deferred prosecution",
+    "September 24, 2021",
+    "Huawei",
+    "Eastern District of New York"
+   ],
+   "excerpt": 0,
+   "note": "DOJ National Security Division compilation of China-related cases (archived); DOJ page, primary; matched a search for Meng DPA September 24, 2021",
    "ua": "browser",
    "grep_width": 170,
    "grep_limit": 2
