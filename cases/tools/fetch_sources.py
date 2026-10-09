@@ -110,10 +110,20 @@ def fetch(url, terms, grep=(), excerpt=0):
     for attempt in (1, 2):
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml,*/*;q=0.5'})
-            with urllib.request.urlopen(req, timeout=25) as r:
+            with urllib.request.urlopen(req, timeout=20) as r:
                 ctype = r.headers.get('Content-Type', '')
-                raw = r.read(MAX_PDF_BYTES if ('pdf' in ctype or url.lower().endswith('.pdf')) else MAX_BYTES)
+                cap = MAX_PDF_BYTES if ('pdf' in ctype or url.lower().endswith('.pdf')) else MAX_BYTES
+                deadline, chunks, got = time.time() + 45, [], 0     # a slow trickle must not hold the job
+                while got < cap and time.time() < deadline:
+                    chunk = r.read(65536)
+                    if not chunk:
+                        break
+                    chunks.append(chunk)
+                    got += len(chunk)
+                raw = b''.join(chunks)
                 out.update(status=r.status, final_url=r.geturl(), bytes=len(raw), content_type=ctype)
+                if time.time() >= deadline and got < cap:
+                    out['note'] = 'read stopped at the 45 second limit; page may be cut short'
             text = text_of(raw, ctype)
             m = re.search(r'(?is)<title[^>]*>(.*?)</title>', raw.decode('utf-8', 'replace'))
             out['title'] = re.sub(r'\s+', ' ', html.unescape(m.group(1))).strip()[:160] if m else None
