@@ -33,7 +33,7 @@ def compile_content():
     cases = [load_json(p) for p in case_files()]
     cases.sort(key=lambda c: (c['kind'] != 'catalog', int(c['id'][1:])))
     tax = load_json(ROOT / 'schema' / 'taxonomy.json')
-    return cases, {'ops': [op(c) for c in cases], 'arcs': load_json(DATA / 'arcs.json'),
+    return cases, {'ops': [op(c) for c in cases], 'arcs': [{k: v for k, v in a.items() if k != 'chapter'} for a in load_json(DATA / 'arcs.json')],
                    'taxonomy': {'domains': tax['domains'], 'stratagems': load_json(ROOT / 'schema' / 'stratagems.json'),
                                 'stages': tax['stages'], 'tiers': tax['tiers']},
                    'dailyEpoch': load_json(DATA / 'meta.json')['dailyEpoch']}

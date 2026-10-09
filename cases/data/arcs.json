@@ -21,7 +21,8 @@
       "F073",
       "F072"
     ],
-    "span": "1868 to 2049"
+    "span": "1868 to 2049",
+    "chapter": "part-3/07-taiwan-the-republic-of-china.md"
   },
   {
     "id": "the-war-for-the-mind",
@@ -42,7 +43,8 @@
       "F082",
       "F081"
     ],
-    "span": "1919 to 2050"
+    "span": "1919 to 2050",
+    "chapter": "part-3/02-accommodate.md"
   },
   {
     "id": "the-long-arm",
@@ -62,7 +64,8 @@
       "F079",
       "F080"
     ],
-    "span": "1924 to 2049"
+    "span": "1924 to 2049",
+    "chapter": "part-3/04-the-long-arm.md"
   },
   {
     "id": "the-digital-twin",
@@ -82,7 +85,8 @@
       "F095",
       "F094"
     ],
-    "span": "1937 to 2050"
+    "span": "1937 to 2050",
+    "chapter": "appendices/05-appendix-e-the-digital-twin.md"
   },
   {
     "id": "protocols-and-ports",
@@ -101,7 +105,8 @@
       "F074",
       "F075"
     ],
-    "span": "1784 to 2050"
+    "span": "1784 to 2050",
+    "chapter": "part-3/05-protocols-and-ports.md"
   },
   {
     "id": "military-civil-fusion",
@@ -120,7 +125,8 @@
       "F077",
       "F076"
     ],
-    "span": "1905 to 2046"
+    "span": "1905 to 2046",
+    "chapter": "part-3/03-military-civil-fusion.md"
   },
   {
     "id": "the-borrowed-knife",
@@ -139,7 +145,8 @@
       "F084",
       "F085"
     ],
-    "span": "1921 to 2046"
+    "span": "1921 to 2046",
+    "chapter": "part-3/01-attract.md"
   },
   {
     "id": "after-covid",
@@ -158,7 +165,8 @@
       "F087",
       "F086"
     ],
-    "span": "1862 to 2049"
+    "span": "1862 to 2049",
+    "chapter": "part-3/06-covid-19.md"
   },
   {
     "id": "financial-control",
@@ -177,7 +185,8 @@
       "F088",
       "F089"
     ],
-    "span": "1784 to 2045"
+    "span": "1784 to 2045",
+    "chapter": "part-4/01-financial-control.md"
   },
   {
     "id": "machine-minds",
@@ -196,7 +205,8 @@
       "F098",
       "F100"
     ],
-    "span": "1881 to 2051"
+    "span": "1881 to 2051",
+    "chapter": null
   },
   {
     "id": "the-pen-from-the-inside",
@@ -214,7 +224,8 @@
       "F093",
       "F092"
     ],
-    "span": "1867 to 2050"
+    "span": "1867 to 2050",
+    "chapter": "part-4/02-the-pen-from-the-inside.md"
   },
   {
     "id": "the-high-ground",
@@ -232,7 +243,8 @@
       "F096",
       "F097"
     ],
-    "span": "1784 to 2049"
+    "span": "1784 to 2049",
+    "chapter": null
   },
   {
     "id": "technology-ip",
@@ -249,7 +261,8 @@
       "F043",
       "F078"
     ],
-    "span": "1821 to 2050"
+    "span": "1821 to 2050",
+    "chapter": "part-1/02-technology-ip-the-one-way-transfer.md"
   },
   {
     "id": "hong-kong",
@@ -265,6 +278,7 @@
       "F091",
       "F090"
     ],
-    "span": "1898 to 2049"
+    "span": "1898 to 2049",
+    "chapter": "part-1/01-hong-kong-the-national-security-law.md"
   }
 ]

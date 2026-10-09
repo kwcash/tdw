@@ -91,6 +91,10 @@ def main():
     arcs = load_json(DATA / 'arcs.json')
     for e in check(arcs, load_json(SCHEMA / 'arcs.schema.json'), None):
         E('arcs', e)
+    book_src = SCHEMA.parent.parent / 'book' / 'src'
+    for a in arcs:
+        if a.get('chapter') and book_src.is_dir() and not (book_src / a['chapter']).is_file():
+            E('arcs', f'{a["id"]}: chapter {a["chapter"]} is not a file under book/src')
     by_id = {c['id']: c for c in cases}
     names = {a['name'] for a in arcs}
     member = collections.defaultdict(list)

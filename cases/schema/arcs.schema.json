@@ -10,6 +10,7 @@
       "name": {"type": "string", "minLength": 3},
       "blurb": {"type": "string", "minLength": 10},
       "span": {"type": "string"},
+      "chapter": {"type": ["string", "null"], "description": "Manuscript section under book/src that treats this arc, or null."},
       "nodes": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[CF][0-9]{3}$"}}
     }
   }
