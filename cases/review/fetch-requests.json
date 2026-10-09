@@ -2,482 +2,29 @@
  "from_cases": false,
  "requests": [
   {
-   "id": "C046",
-   "idx": 0,
-   "url": "https://www.britannica.com/place/Hong-Kong/Postwar-Hong-Kong",
-   "grep": [
-    "1962",
-    "Hong Kong",
-    "refugees",
-    "Guangdong",
-    "border"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Britannica (weak candidate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C047",
-   "idx": 1,
-   "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device",
-   "grep": [
-    "October 16, 1964",
-    "Chinese",
-    "nuclear",
-    "Communist"
-   ],
-   "excerpt": 0,
-   "note": "American Presidency Project, LBJ statement (test date)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C047",
-   "idx": 1,
-   "url": "https://history.state.gov/historicaldocuments/frus1964-68v30/summary",
-   "grep": [
-    "October 16, 1964",
-    "nuclear",
-    "Khrushchev",
-    "Lop Nor"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1964-68 vol XXX summary (Khrushchev ouster not confirmed)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C047",
-   "idx": 2,
-   "url": "https://www.presidency.ucsb.edu/documents/statement-the-president-the-first-chinese-nuclear-device",
-   "grep": [
-    "surprise",
-    "unexpected",
-    "Chinese Communist",
-    "nuclear",
-    "October 16, 1964"
-   ],
-   "excerpt": 0,
-   "note": "American Presidency Project, LBJ statement",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C048",
-   "idx": 0,
-   "url": "https://history.state.gov/historicaldocuments/frus1964-68v30/d115",
-   "grep": [
-    "railroad",
-    "anti-aircraft",
-    "North Vietnam",
-    "engineer",
-    "Chinese"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1964-68 vol XXX (partial candidate: 1965 Chinese units in N. Vietnam)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C049",
-   "idx": 0,
-   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
-   "grep": [
-    "Rittenberg",
-    "1945",
-    "Army",
-    "Chinese Communist Party"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Wilson Center person page",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C049",
-   "idx": 1,
-   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
-   "grep": [
-    "Rittenberg",
-    "1949",
-    "1955",
-    "1968",
-    "1977"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Wilson Center person page (arrest dates)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C049",
-   "idx": 1,
-   "url": "https://id.loc.gov/authorities/names/nr93000905.html",
-   "grep": [
-    "Rittenberg",
-    "1949",
-    "imprison",
-    "China",
-    "1977"
-   ],
-   "excerpt": 0,
-   "note": "Library of Congress name authority (candidate)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C049",
-   "idx": 2,
-   "url": "https://www.wilsoncenter.org/person/sidney-rittenberg",
-   "grep": [
-    "Rittenberg",
-    "1980",
-    "United States",
-    "business",
-    "advis"
-   ],
-   "excerpt": 0,
-   "note": "secondary, Wilson Center (snippet says returned to US 1979; check)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C050",
-   "idx": 0,
-   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/evo-media-document/Dissidents-Who-Have-Suffered-for-Human-Rights-in-China-A-Look-Back-and-A-Look-Forward.pdf",
-   "grep": [
-    "Lin Zhao",
-    "Peking University",
-    "rightist",
-    "1960",
-    "1968"
-   ],
-   "excerpt": 0,
-   "note": "CECC report (candidate; Lin Zhao details not confirmed in snippet)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
-   "idx": 1,
-   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
-   "grep": [
-    "table tennis",
-    "April 6, 1971",
-    "invited",
-    "Ping-Pong",
-    "1971"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
-   "idx": 1,
-   "url": "https://www.archives.gov/press/press-releases/2008/nr08-110",
-   "grep": [
-    "Ping",
-    "April 10",
-    "Hong Kong",
-    "Mao",
-    "table tennis"
-   ],
-   "excerpt": 0,
-   "note": "National Archives press release (Ping Pong diplomacy)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
-   "idx": 2,
-   "url": "https://www.nixonlibrary.gov/research/almanac/april-14-1971",
-   "grep": [
-    "table tennis",
-    "Chou",
-    "Great Hall",
-    "April 14, 1971",
-    "Zhou"
-   ],
-   "excerpt": 0,
-   "note": "Nixon Library almanac, April 14 1971",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
-   "idx": 2,
-   "url": "https://www.archives.gov/press/press-releases/2008/nr08-110",
-   "grep": [
-    "Great Hall",
-    "Zhou",
-    "Chou",
-    "April 14",
-    "table tennis"
-   ],
-   "excerpt": 0,
-   "note": "National Archives press release",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
+   "id": "C055",
    "idx": 3,
-   "url": "https://www.nixonlibrary.gov/research/almanac/april-14-1971",
+   "url": "https://kids.britannica.com/students/article/Wei-Jingsheng/314107",
    "grep": [
-    "embargo",
-    "trade",
-    "China",
-    "Nixon",
-    "April 14, 1971"
+    "Wei Jingsheng",
+    "15 years",
+    "1979",
+    "state secrets"
    ],
    "excerpt": 0,
-   "note": "Nixon Library almanac, April 14 1971",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C051",
-   "idx": 3,
-   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
-   "grep": [
-    "restrictions",
-    "trade",
-    "1971",
-    "table tennis",
-    "travel"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 0,
-   "url": "https://history.state.gov/historicaldocuments/frus1969-76v17/d139",
-   "grep": [
-    "Yahya",
-    "Pakistan",
-    "Chou En-lai",
-    "July 9, 1971"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1969-76 vol XVII, Kissinger-Zhou memcon (Pakistan channel)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 0,
-   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
-   "grep": [
-    "Dacca",
-    "East Pakistan",
-    "March 28, 1971",
-    "Blood",
-    "genocide"
-   ],
-   "excerpt": 0,
-   "note": "secondary, National Security Archive (crackdown)",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 1,
-   "url": "https://history.state.gov/historicaldocuments/frus1969-76ve13/d9",
-   "grep": [
-    "seventeen hours",
-    "Chou En-lai",
-    "July 14, 1971",
-    "Yeh Chien-ying"
-   ],
-   "excerpt": 0,
-   "note": "FRUS 1969-76 vol E-13, Kissinger memo 'My Talks with Chou En-lai' (Seventeen hours)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 1,
-   "url": "https://www.presidency.ucsb.edu/documents/remarks-the-nation-announcing-acceptance-invitation-visit-the-peoples-republic-china",
-   "grep": [
-    "Chou En-lai",
-    "invitation",
-    "before May 1972",
-    "July 15, 1971"
-   ],
-   "excerpt": 0,
-   "note": "American Presidency Project, Nixon remarks 15 July 1971",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 2,
-   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
-   "grep": [
-    "April 6, 1971",
-    "Dacca",
-    "Blood",
-    "dissent",
-    "genocide"
-   ],
-   "excerpt": 0,
-   "note": "secondary, National Security Archive reproduction of the Blood cable",
-   "grep_width": 200
-  },
-  {
-   "id": "C052",
-   "idx": 3,
-   "url": "https://nsarchive.gwu.edu/briefing-book/foia/2018-03-15/department-states-dissent-channel-revealed",
-   "grep": [
-    "Blood",
-    "recalled",
-    "June 1971",
-    "Dacca"
-   ],
-   "excerpt": 0,
-   "note": "secondary, National Security Archive (candidate; recall not confirmed in snippet)",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 0,
-   "url": "https://ask.un.org/faq/320138",
-   "grep": [
-    "2758",
-    "76",
-    "35",
-    "17 abstentions",
-    "25 October 1971"
-   ],
-   "excerpt": 0,
-   "note": "UN Dag Hammarskjold Library FAQ",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 0,
-   "url": "https://legal.un.org/unjuridicalyearbook/pdfs/english/by_volume/1972/chpVI.pdf",
-   "grep": [
-    "2758",
-    "76",
-    "35",
-    "abstentions",
-    "People's Republic of China"
-   ],
-   "excerpt": 0,
-   "note": "UN Juridical Yearbook 1972",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 1,
-   "url": "https://documents.un.org/doc/resolution/gen/nr0/327/74/pdf/nr032774.pdf?OpenElement=",
-   "grep": [
-    "2758 (XXVI)",
-    "Chiang Kai-shek",
-    "lawful rights",
-    "People's Republic of China",
-    "expel"
-   ],
-   "excerpt": 0,
-   "note": "UN document, GA 26th session resolutions",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 1,
-   "url": "https://treaties.un.org/doc/Publication/MTDSG/Historical%20Information/mtdsg.history-old.en.pdf",
-   "grep": [
-    "2758",
-    "Chiang Kai-shek",
-    "expel",
-    "1971",
-    "China"
-   ],
-   "excerpt": 0,
-   "note": "UN Treaty Collection historical information",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 4,
-   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12646/IF12646.7.pdf",
-   "grep": [
-    "2758",
-    "State Department",
-    "Taiwan",
-    "motions",
-    "2024"
-   ],
-   "excerpt": 0,
-   "note": "CRS In Focus IF12646 (note: snippet gives State statement as March 2025)",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C053",
-   "idx": 4,
-   "url": "https://www.europarl.europa.eu/doceo/document/TA-10-2024-0030_EN.html",
-   "grep": [
-    "2758",
-    "24 October 2024",
-    "Taiwan",
-    "misinterpretation"
-   ],
-   "excerpt": 0,
-   "note": "European Parliament text adopted 24 Oct 2024",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C054",
-   "idx": 0,
-   "url": "https://www.ait.org.tw/u-s-prc-joint-communique-1972/",
-   "grep": [
-    "all Chinese on either side of the Taiwan Strait",
-    "one China",
-    "does not challenge that position",
-    "February 28, 1972"
-   ],
-   "excerpt": 0,
-   "note": "AIT text of the Shanghai Communique",
-   "ua": "browser",
-   "grep_width": 200
-  },
-  {
-   "id": "C054",
-   "idx": 0,
-   "url": "https://history.state.gov/milestones/1969-1976/rapprochement-china",
-   "grep": [
-    "Shanghai Communiqué",
-    "one China",
-    "Taiwan Strait",
-    "1972"
-   ],
-   "excerpt": 0,
-   "note": "State Dept Office of the Historian Milestones (dates the communique Feb 27)",
+   "note": "secondary, Britannica Students",
    "ua": "browser",
    "grep_width": 200
   },
   {
    "id": "C055",
-   "idx": 2,
+   "idx": 3,
    "url": "https://www.britannica.com/topic/Beijing-Spring",
    "grep": [
     "Wei Jingsheng",
-    "Deng",
-    "despot",
-    "March 1979",
-    "arrested"
+    "15 years",
+    "October 1979",
+    "sentenced"
    ],
    "excerpt": 0,
    "note": "secondary, Britannica",
@@ -486,16 +33,423 @@
   },
   {
    "id": "C055",
-   "idx": 2,
-   "url": "https://www.cecc.gov/sites/evo-subsites/cecc.house.gov/files/evo-media-document/Dissidents-Who-Have-Suffered-for-Human-Rights-in-China-A-Look-Back-and-A-Look-Forward.pdf",
+   "idx": 4,
+   "url": "https://www.britannica.com/topic/Beijing-Spring",
    "grep": [
-    "Wei Jingsheng",
-    "March 29, 1979",
-    "dictator",
-    "15 years"
+    "Democracy Wall",
+    "December 1979",
+    "park",
+    "register",
+    "Yuetan"
    ],
    "excerpt": 0,
-   "note": "CECC report (candidate)",
+   "note": "secondary, Britannica",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C055",
+   "idx": 4,
+   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d279",
+   "grep": [
+    "Democracy Wall",
+    "Wei Jingsheng",
+    "park",
+    "registration",
+    "Beijing"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1977-80 vol XIII (candidate; content not confirmed)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C055",
+   "idx": 5,
+   "url": "https://www.britannica.com/topic/Beijing-Spring",
+   "grep": [
+    "big-character",
+    "1980",
+    "constitution",
+    "National People's Congress"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Britannica (candidate)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C055",
+   "idx": 5,
+   "url": "https://www.britannica.com/place/China/Constitutional-framework",
+   "grep": [
+    "big-character",
+    "1980",
+    "four bigs",
+    "constitution",
+    "posters"
+   ],
+   "excerpt": 0,
+   "note": "secondary, Britannica (candidate)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 0,
+   "url": "https://www.state.gov/china-24-227",
+   "grep": [
+    "January 31, 1979",
+    "Cooperation in Science and Technology",
+    "Agreement",
+    "extended"
+   ],
+   "excerpt": 0,
+   "note": "State Dept treaty listing, Feb 2024 extension",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 0,
+   "url": "https://history.state.gov/departmenthistory/visits/china",
+   "grep": [
+    "Deng",
+    "1979",
+    "January 29",
+    "Carter"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian, visits by Chinese leaders",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 2,
+   "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+   "grep": [
+    "August 27, 2023",
+    "extended",
+    "Science and Technology",
+    "2023",
+    "five"
+   ],
+   "excerpt": 0,
+   "note": "State Dept release on amendment and extension",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 2,
+   "url": "https://www.state.gov/china-24-227",
+   "grep": [
+    "August 27, 2023",
+    "extend",
+    "February 27, 2024",
+    "Science and Technology",
+    "Exchange of Notes"
+   ],
+   "excerpt": 0,
+   "note": "State Dept treaty listing, Feb 2024 extension (short extensions)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 3,
+   "url": "https://www.state.gov/china-24-1213",
+   "grep": [
+    "December 13, 2024",
+    "Protocol",
+    "Amending and Extending",
+    "Science and Technology"
+   ],
+   "excerpt": 0,
+   "note": "State Dept treaty listing, Dec 2024 protocol",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C056",
+   "idx": 3,
+   "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+   "grep": [
+    "critical and emerging technologies",
+    "basic research",
+    "December 13",
+    "2024"
+   ],
+   "excerpt": 0,
+   "note": "State Dept release on amendment and extension",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C057",
+   "idx": 1,
+   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+   "grep": [
+    "Vietnam",
+    "Deng",
+    "February 1979",
+    "Carter",
+    "January 29"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C057",
+   "idx": 1,
+   "url": "https://digitalarchive.wilsoncenter.org/document/decisions-nvr-9-march-1979-oral-report-chinas-aggression-against-socialist-republic",
+   "grep": [
+    "17 February 1979",
+    "China",
+    "March 1979",
+    "Vietnam",
+    "aggression"
+   ],
+   "excerpt": 0,
+   "note": "Wilson Center Digital Archive, Vietnamese primary document (partisan)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C058",
+   "idx": 0,
+   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+   "grep": [
+    "Mutual Defense Treaty",
+    "one year",
+    "January 1, 1979",
+    "terminate",
+    "Taiwan"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C058",
+   "idx": 0,
+   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+   "grep": [
+    "Mutual Defense Treaty",
+    "notice",
+    "Taiwan Relations Act",
+    "1979"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C058",
+   "idx": 1,
+   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+   "grep": [
+    "administration",
+    "bill",
+    "Congress",
+    "Taiwan Relations Act",
+    "security"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C058",
+   "idx": 1,
+   "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+   "grep": [
+    "Taiwan Relations Act",
+    "Congress",
+    "security",
+    "legislation",
+    "1979"
+   ],
+   "excerpt": 0,
+   "note": "State Dept Office of the Historian Milestones",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C058",
+   "idx": 4,
+   "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+   "grep": [
+    "339",
+    "85",
+    "50",
+    "conference report",
+    "Taiwan Relations Act"
+   ],
+   "excerpt": 0,
+   "note": "FRUS 1977-80 vol XIII (conference-report votes 339-50, 85-4)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C059",
+   "idx": 2,
+   "url": "https://www.reaganlibrary.gov/archives/speech/united-states-china-joint-communique-united-states-arms-sales-taiwan",
+   "grep": [
+    "August 17",
+    "gradually",
+    "reduce",
+    "arms to Taiwan",
+    "1982"
+   ],
+   "excerpt": 0,
+   "note": "Reagan Library, text of the 1982 communique",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C059",
+   "idx": 2,
+   "url": "https://www.ait.org.tw/u-s-prc-joint-communique-1982/",
+   "grep": [
+    "intends gradually",
+    "reduce its sale of arms",
+    "Taiwan",
+    "August 17, 1982"
+   ],
+   "excerpt": 0,
+   "note": "AIT text of the 1982 communique",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C059",
+   "idx": 4,
+   "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11665/IF11665.1.pdf",
+   "grep": [
+    "declassified",
+    "August 17, 1982",
+    "conditioned absolutely",
+    "2020",
+    "memo"
+   ],
+   "excerpt": 0,
+   "note": "CRS In Focus IF11665 (Oct 2020) on Six Assurances and Reagan memo",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C059",
+   "idx": 4,
+   "url": "https://web-archive-2022.ait.org.tw/our-relationship/policy-history/key-u-s-foreign-policy-documents-region/six-assurances-1982/index.html",
+   "grep": [
+    "Reagan",
+    "memo",
+    "declassified",
+    "conditioned absolutely",
+    "August 17, 1982"
+   ],
+   "excerpt": 0,
+   "note": "AIT declassified cables page (Taiwan Arms Sales and Six Assurances)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 0,
+   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+   "grep": [
+    "Vincent Chin",
+    "Ebens",
+    "Chinese",
+    "auto",
+    "Japanese"
+   ],
+   "excerpt": 0,
+   "note": "Sixth Circuit opinion, United States v. Ebens",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 0,
+   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+   "grep": [
+    "Vincent Chin",
+    "Ebens",
+    "auto",
+    "Japanese",
+    "Chinese American"
+   ],
+   "excerpt": 0,
+   "note": "DOJ blog (official)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 2,
+   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+   "grep": [
+    "probation",
+    "$3,000",
+    "Ebens",
+    "Nitz",
+    "manslaughter"
+   ],
+   "excerpt": 0,
+   "note": "DOJ blog (official)",
+   "ua": "browser",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 2,
+   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+   "grep": [
+    "probation",
+    "$3,720",
+    "Nitz",
+    "stepson",
+    "manslaughter"
+   ],
+   "excerpt": 0,
+   "note": "Sixth Circuit opinion (snippet says fined $3,720, not $3,000)",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 3,
+   "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+   "grep": [
+    "civil rights",
+    "1984",
+    "reversed",
+    "Ebens",
+    "new trial"
+   ],
+   "excerpt": 0,
+   "note": "Sixth Circuit opinion, United States v. Ebens",
+   "grep_width": 200
+  },
+  {
+   "id": "C060",
+   "idx": 3,
+   "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+   "grep": [
+    "acquitted",
+    "1987",
+    "retrial",
+    "Ebens",
+    "civil rights"
+   ],
+   "excerpt": 0,
+   "note": "DOJ blog (official)",
    "ua": "browser",
    "grep_width": 200
   }

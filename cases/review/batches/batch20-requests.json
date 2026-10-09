@@ -1,0 +1,454 @@
+[
+ {
+  "id": "C055",
+  "idx": 3,
+  "url": "https://kids.britannica.com/students/article/Wei-Jingsheng/314107",
+  "grep": [
+   "Wei Jingsheng",
+   "15 years",
+   "1979",
+   "state secrets"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica Students",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C055",
+  "idx": 3,
+  "url": "https://www.britannica.com/topic/Beijing-Spring",
+  "grep": [
+   "Wei Jingsheng",
+   "15 years",
+   "October 1979",
+   "sentenced"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "url": "https://www.britannica.com/topic/Beijing-Spring",
+  "grep": [
+   "Democracy Wall",
+   "December 1979",
+   "park",
+   "register",
+   "Yuetan"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C055",
+  "idx": 4,
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d279",
+  "grep": [
+   "Democracy Wall",
+   "Wei Jingsheng",
+   "park",
+   "registration",
+   "Beijing"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1977-80 vol XIII (candidate; content not confirmed)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "url": "https://www.britannica.com/topic/Beijing-Spring",
+  "grep": [
+   "big-character",
+   "1980",
+   "constitution",
+   "National People's Congress"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica (candidate)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C055",
+  "idx": 5,
+  "url": "https://www.britannica.com/place/China/Constitutional-framework",
+  "grep": [
+   "big-character",
+   "1980",
+   "four bigs",
+   "constitution",
+   "posters"
+  ],
+  "excerpt": 0,
+  "note": "secondary, Britannica (candidate)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 0,
+  "url": "https://www.state.gov/china-24-227",
+  "grep": [
+   "January 31, 1979",
+   "Cooperation in Science and Technology",
+   "Agreement",
+   "extended"
+  ],
+  "excerpt": 0,
+  "note": "State Dept treaty listing, Feb 2024 extension",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 0,
+  "url": "https://history.state.gov/departmenthistory/visits/china",
+  "grep": [
+   "Deng",
+   "1979",
+   "January 29",
+   "Carter"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian, visits by Chinese leaders",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 2,
+  "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+  "grep": [
+   "August 27, 2023",
+   "extended",
+   "Science and Technology",
+   "2023",
+   "five"
+  ],
+  "excerpt": 0,
+  "note": "State Dept release on amendment and extension",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 2,
+  "url": "https://www.state.gov/china-24-227",
+  "grep": [
+   "August 27, 2023",
+   "extend",
+   "February 27, 2024",
+   "Science and Technology",
+   "Exchange of Notes"
+  ],
+  "excerpt": 0,
+  "note": "State Dept treaty listing, Feb 2024 extension (short extensions)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 3,
+  "url": "https://www.state.gov/china-24-1213",
+  "grep": [
+   "December 13, 2024",
+   "Protocol",
+   "Amending and Extending",
+   "Science and Technology"
+  ],
+  "excerpt": 0,
+  "note": "State Dept treaty listing, Dec 2024 protocol",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C056",
+  "idx": 3,
+  "url": "https://2021-2025.state.gov/amendment-and-extension-of-the-u-s-prc-science-and-technology-agreement-sta/",
+  "grep": [
+   "critical and emerging technologies",
+   "basic research",
+   "December 13",
+   "2024"
+  ],
+  "excerpt": 0,
+  "note": "State Dept release on amendment and extension",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C057",
+  "idx": 1,
+  "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+  "grep": [
+   "Vietnam",
+   "Deng",
+   "February 1979",
+   "Carter",
+   "January 29"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian Milestones",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C057",
+  "idx": 1,
+  "url": "https://digitalarchive.wilsoncenter.org/document/decisions-nvr-9-march-1979-oral-report-chinas-aggression-against-socialist-republic",
+  "grep": [
+   "17 February 1979",
+   "China",
+   "March 1979",
+   "Vietnam",
+   "aggression"
+  ],
+  "excerpt": 0,
+  "note": "Wilson Center Digital Archive, Vietnamese primary document (partisan)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C058",
+  "idx": 0,
+  "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+  "grep": [
+   "Mutual Defense Treaty",
+   "one year",
+   "January 1, 1979",
+   "terminate",
+   "Taiwan"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian Milestones",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C058",
+  "idx": 0,
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+  "grep": [
+   "Mutual Defense Treaty",
+   "notice",
+   "Taiwan Relations Act",
+   "1979"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C058",
+  "idx": 1,
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+  "grep": [
+   "administration",
+   "bill",
+   "Congress",
+   "Taiwan Relations Act",
+   "security"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1977-80 vol XIII (TRA legislative record)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C058",
+  "idx": 1,
+  "url": "https://history.state.gov/milestones/1977-1980/china-policy",
+  "grep": [
+   "Taiwan Relations Act",
+   "Congress",
+   "security",
+   "legislation",
+   "1979"
+  ],
+  "excerpt": 0,
+  "note": "State Dept Office of the Historian Milestones",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C058",
+  "idx": 4,
+  "url": "https://history.state.gov/historicaldocuments/frus1977-80v13/d235",
+  "grep": [
+   "339",
+   "85",
+   "50",
+   "conference report",
+   "Taiwan Relations Act"
+  ],
+  "excerpt": 0,
+  "note": "FRUS 1977-80 vol XIII (conference-report votes 339-50, 85-4)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C059",
+  "idx": 2,
+  "url": "https://www.reaganlibrary.gov/archives/speech/united-states-china-joint-communique-united-states-arms-sales-taiwan",
+  "grep": [
+   "August 17",
+   "gradually",
+   "reduce",
+   "arms to Taiwan",
+   "1982"
+  ],
+  "excerpt": 0,
+  "note": "Reagan Library, text of the 1982 communique",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C059",
+  "idx": 2,
+  "url": "https://www.ait.org.tw/u-s-prc-joint-communique-1982/",
+  "grep": [
+   "intends gradually",
+   "reduce its sale of arms",
+   "Taiwan",
+   "August 17, 1982"
+  ],
+  "excerpt": 0,
+  "note": "AIT text of the 1982 communique",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C059",
+  "idx": 4,
+  "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11665/IF11665.1.pdf",
+  "grep": [
+   "declassified",
+   "August 17, 1982",
+   "conditioned absolutely",
+   "2020",
+   "memo"
+  ],
+  "excerpt": 0,
+  "note": "CRS In Focus IF11665 (Oct 2020) on Six Assurances and Reagan memo",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C059",
+  "idx": 4,
+  "url": "https://web-archive-2022.ait.org.tw/our-relationship/policy-history/key-u-s-foreign-policy-documents-region/six-assurances-1982/index.html",
+  "grep": [
+   "Reagan",
+   "memo",
+   "declassified",
+   "conditioned absolutely",
+   "August 17, 1982"
+  ],
+  "excerpt": 0,
+  "note": "AIT declassified cables page (Taiwan Arms Sales and Six Assurances)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+  "grep": [
+   "Vincent Chin",
+   "Ebens",
+   "Chinese",
+   "auto",
+   "Japanese"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion, United States v. Ebens",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 0,
+  "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+  "grep": [
+   "Vincent Chin",
+   "Ebens",
+   "auto",
+   "Japanese",
+   "Chinese American"
+  ],
+  "excerpt": 0,
+  "note": "DOJ blog (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+  "grep": [
+   "probation",
+   "$3,000",
+   "Ebens",
+   "Nitz",
+   "manslaughter"
+  ],
+  "excerpt": 0,
+  "note": "DOJ blog (official)",
+  "ua": "browser",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 2,
+  "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+  "grep": [
+   "probation",
+   "$3,720",
+   "Nitz",
+   "stepson",
+   "manslaughter"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion (snippet says fined $3,720, not $3,000)",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "url": "https://www.courtlistener.com/opinion/476300/united-states-v-ronald-ebens/",
+  "grep": [
+   "civil rights",
+   "1984",
+   "reversed",
+   "Ebens",
+   "new trial"
+  ],
+  "excerpt": 0,
+  "note": "Sixth Circuit opinion, United States v. Ebens",
+  "grep_width": 200
+ },
+ {
+  "id": "C060",
+  "idx": 3,
+  "url": "https://www.justice.gov/archives/opa/blog/remembering-vincent-chin",
+  "grep": [
+   "acquitted",
+   "1987",
+   "retrial",
+   "Ebens",
+   "civil rights"
+  ],
+  "excerpt": 0,
+  "note": "DOJ blog (official)",
+  "ua": "browser",
+  "grep_width": 200
+ }
+]
