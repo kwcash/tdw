@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Total Domain War</title>
+<meta name="description" content="Play the war nobody declared. Twelve domains, thirty-six stratagems, one lever. Run 220 operations, the long war in China from 1931, or the contest among three powers in 2030.">
+<meta property="og:title" content="Total Domain War">
+<meta property="og:description" content="Twelve domains. Thirty-six stratagems. One lever. Play the war nobody declared.">
+<meta property="og:type" content="website">
+<style>
+:root {
+  --bg:#0e1319; --panel:#161d26; --ink:#e8ecf1; --muted:#9aa5b2; --line:#2a3441; --accent:#e0574f; --accent-ink:#10151c; --link:#f0a39e;
+  --tile:#1b2431; --hot:#e0574f; --cool:#5fb37c;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) { --bg:#f5f6f8; --panel:#fff; --ink:#151a21; --muted:#5d6673; --line:#dfe3e8; --accent:#b3261e; --accent-ink:#fff; --link:#b3261e; --tile:#eef1f5; --hot:#b3261e; --cool:#2c7a4b; }
+}
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 Georgia,"Times New Roman",serif; }
+a { color:inherit; }
+:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+.sans { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+.kicker { font:800 12px/1 system-ui,sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--link); }
+h1,h2,h3 { text-wrap:balance; }
+
+/* top bar */
+.top { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 0; font:700 14px/1 system-ui,sans-serif; }
+.top .brand { text-decoration:none; letter-spacing:.04em; white-space:nowrap; }
+.top nav a { white-space:nowrap; }
+.top nav { display:flex; gap:18px; }
+.top nav a { color:var(--muted); text-decoration:none; padding:8px 0; }
+.top nav a:hover { color:var(--ink); }
+
+/* buttons */
+.btn { display:inline-flex; align-items:center; gap:8px; min-height:48px; padding:0 24px; border-radius:10px; border:2px solid var(--accent); background:var(--accent); color:var(--accent-ink); font:800 16px/1 system-ui,sans-serif; text-decoration:none; }
+.btn:hover { filter:brightness(1.08); }
+.btn.ghost { background:transparent; color:var(--ink); border-color:var(--line); }
+.btn.ghost:hover { border-color:var(--accent); }
+.btn.big { min-height:56px; padding:0 30px; font-size:18px; }
+
+/* hero */
+.hero { display:grid; gap:36px; grid-template-columns:1.05fr .95fr; align-items:center; padding:28px 0 56px; }
+.hero h1 { font-size:clamp(38px,7.2vw,68px); line-height:1.02; margin:14px 0 18px; letter-spacing:-.02em; }
+.hero h1 em { font-style:normal; color:var(--link); }
+.hero .sub { font-size:19px; color:var(--muted); margin:0 0 26px; max-width:34em; }
+.cta-row { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+.micro { font:14px/1.5 system-ui,sans-serif; color:var(--muted); margin:14px 0 0; }
+
+/* the live board */
+.rig { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:14px; box-shadow:0 20px 60px rgba(0,0,0,.28); }
+.rig-head { display:flex; justify-content:space-between; gap:8px; font:700 11px/1 system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); padding:2px 2px 10px; }
+.grid12 { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+.t { position:relative; min-height:68px; padding:7px 6px 14px; border-radius:8px; background:var(--tile); border:1px solid var(--line); font:700 10.5px/1.15 system-ui,sans-serif; color:var(--ink); overflow:hidden; transition:background .3s,border-color .3s; }
+.t .pips { position:absolute; left:6px; right:6px; bottom:5px; display:flex; gap:2px; }
+.t .pips i { flex:1; height:4px; border-radius:2px; background:var(--line); transition:background .3s; }
+.t.p1 .pips i:nth-child(-n+1), .t.p2 .pips i:nth-child(-n+2), .t.p3 .pips i:nth-child(-n+3), .t.p4 .pips i:nth-child(-n+4), .t.p5 .pips i:nth-child(-n+5) { background:var(--hot); }
+.t.p3, .t.p4 { border-color:var(--hot); }
+.t.p5 { border-color:var(--hot); background:color-mix(in srgb, var(--hot) 22%, var(--tile)); }
+.t.hit { animation:hit .5s ease-out; }
+.t.held { animation:held .6s ease-out; }
+.t.lever::after { content:"LEVER?"; position:absolute; top:4px; right:4px; font:800 8px/1 system-ui,sans-serif; letter-spacing:.08em; color:var(--link); animation:blink 1.6s ease-in-out infinite; }
+.t.lever { border-style:dashed; border-color:var(--link); }
+@keyframes hit { 0% { box-shadow:0 0 0 0 var(--hot); } 100% { box-shadow:0 0 0 10px transparent; } }
+@keyframes held { 0% { box-shadow:0 0 0 0 var(--cool); } 100% { box-shadow:0 0 0 10px transparent; } }
+@keyframes blink { 50% { opacity:.25; } }
+.feed { margin-top:10px; min-height:44px; padding:9px 11px; border-radius:8px; background:var(--tile); border:1px solid var(--line); font:600 13px/1.35 system-ui,sans-serif; color:var(--ink); }
+.feed b { color:var(--link); }
+.lev { margin-top:10px; font:700 11px/1 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); display:flex; justify-content:space-between; }
+.lev-track { margin-top:6px; height:8px; border-radius:4px; background:var(--tile); border:1px solid var(--line); overflow:hidden; }
+.lev-fill { height:100%; width:0; background:linear-gradient(90deg,#d6a43a,#e0574f); transition:width .5s; }
+
+/* era cards */
+section { padding:56px 0; border-top:1px solid var(--line); }
+section h2 { font-size:clamp(28px,5vw,42px); line-height:1.1; margin:10px 0 12px; letter-spacing:-.01em; }
+section .lead { color:var(--muted); font-size:18px; max-width:40em; margin:0 0 30px; }
+.eras { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+.era { --c:#f0827b; position:relative; display:flex; flex-direction:column; gap:12px; padding:26px 24px 24px; border-radius:18px; color:#f3f5f8; text-decoration:none; overflow:hidden; border:1px solid #3a4656; background:linear-gradient(145deg,#10151c 0%,#1b2533 58%,#3a1d1d 100%); transition:transform .2s,border-color .2s,box-shadow .2s; }
+.era.e1931 { --c:#e3a93f; background:linear-gradient(145deg,#14120e 0%,#241d12 58%,#43301a 100%); border-color:#4d4128; }
+.era.e2030 { --c:#4cc3d9; background:linear-gradient(145deg,#0d1519 0%,#10262f 58%,#0f3a4d 100%); border-color:#2a4654; }
+.era:hover { transform:translateY(-4px); border-color:var(--c); box-shadow:0 18px 44px rgba(0,0,0,.35); }
+.era .mark { position:absolute; right:-6px; top:-14px; font:900 112px/1 system-ui,sans-serif; letter-spacing:-.05em; color:var(--c); opacity:.13; pointer-events:none; user-select:none; }
+.era .tag { position:relative; font:800 12px/1 system-ui,sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--c); }
+.era h3 { margin:0; font-size:30px; line-height:1.1; position:relative; }
+.era .hook { margin:0; font-size:18px; line-height:1.4; color:#fff; position:relative; font-style:italic; }
+.era p.body { margin:0; color:#cfd6df; font-size:16px; flex:1; position:relative; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; margin:2px 0 4px; position:relative; }
+.chips span { font:700 12px/1 system-ui,sans-serif; padding:7px 10px; border-radius:99px; border:1px solid color-mix(in srgb, var(--c) 55%, transparent); color:#f3f5f8; background:color-mix(in srgb, var(--c) 12%, transparent); }
+.era .go { display:flex; align-items:center; justify-content:center; min-height:50px; border-radius:10px; background:var(--c); color:#10151c; font:800 16px/1 system-ui,sans-serif; position:relative; }
+.era:hover .go { filter:brightness(1.1); }
+
+/* how it plays */
+.steps { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); counter-reset:s; }
+.step { padding:22px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
+.step::before { counter-increment:s; content:counter(s); display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%; background:var(--accent); color:var(--accent-ink); font:800 16px/1 system-ui,sans-serif; margin-bottom:12px; }
+.step h3 { margin:0 0 6px; font-size:22px; }
+.step p { margin:0; color:var(--muted); }
+.feats { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); margin-top:22px; }
+.feat { padding:16px 18px; border-left:3px solid var(--accent); background:var(--panel); border-radius:0 10px 10px 0; }
+.feat b { display:block; font:800 15px/1.3 system-ui,sans-serif; margin-bottom:4px; }
+.feat span { color:var(--muted); font-size:15.5px; }
+
+/* closing call */
+.final { text-align:center; }
+.final h2 { font-size:clamp(30px,6vw,52px); }
+.final .cta-row { justify-content:center; }
+.final .lead { margin-left:auto; margin-right:auto; }
+
+/* the book, secondary */
+.book { display:flex; flex-wrap:wrap; gap:18px 28px; align-items:center; justify-content:space-between; padding:26px; border:1px solid var(--line); border-radius:14px; background:var(--panel); }
+.book h3 { margin:0 0 4px; font-size:22px; }
+.book p { margin:0; color:var(--muted); max-width:34em; }
+.book .links { display:flex; flex-wrap:wrap; gap:10px; }
+
+.foot { padding:28px 0 44px; border-top:1px solid var(--line); font:13px/1.6 system-ui,sans-serif; color:var(--muted); }
+.foot p { margin:0 0 6px; }
+
+@media (max-width:820px) {
+  .hero { grid-template-columns:1fr; gap:28px; padding-bottom:40px; }
+  section { padding:44px 0; }
+  .era .mark { font-size:88px; }
+}
+@media (max-width:520px) { .top nav a[href="#how"] { display:none; } }
+@media (max-width:420px) {
+  .t { min-height:64px; font-size:10px; }
+  .btn.big { width:100%; justify-content:center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  .era, .era:hover { transition:none; transform:none; }
+  .t.lever::after { animation:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top sans">
+    <a class="brand" href="/">TOTAL DOMAIN WAR</a>
+    <nav aria-label="Main"><a href="#eras">Play</a><a href="#how">How it plays</a><a href="/read/">The book</a></nav>
+  </div>
+
+  <main id="main">
+    <header class="hero">
+      <div>
+        <div class="kicker">The strategy game</div>
+        <h1>You are losing a war <em>you cannot see.</em></h1>
+        <p class="sub">Twelve domains. Thirty-six stratagems. Three actions a turn. Your opponent plays face down, and one domain holds the lever that decides the war. Name it before the opponent consumes the whole system.</p>
+        <div class="cta-row">
+          <a class="btn big" href="/game/">Play now &rarr;</a>
+          <a class="btn ghost big" href="#eras">Choose your war</a>
+        </div>
+        <p class="micro">Runs in your browser. No account needed.</p>
+      </div>
+
+      <div class="rig" aria-hidden="true">
+        <div class="rig-head"><span>Opponent&rsquo;s turn</span><span id="rt">Turn 1 of 8</span></div>
+        <div class="grid12" id="g12"></div>
+        <div class="feed" id="feed">Cards in play&hellip;</div>
+        <div class="lev"><span>Leverage</span><span id="lv">0 / 24</span></div>
+        <div class="lev-track"><div class="lev-fill" id="lf"></div></div>
+      </div>
+    </header>
+
+    <section id="eras">
+      <div class="kicker">Three ways in</div>
+      <h2>Choose your war.</h2>
+      <p class="lead">Each game runs on the same engine. Pick the century. Every operation comes from the documented record or from the near future the record points to.</p>
+
+      <div class="eras">
+        <a class="era" href="/game/">
+          <span class="mark" aria-hidden="true">220</span>
+          <span class="tag">1784 to 2051</span>
+          <h3>The full game</h3>
+          <p class="hook">From the Canton gate to the futures of 2051.</p>
+          <p class="body">Run 220 operations across fourteen campaign arcs. Take a lens and a doctrine card. Climb six tiers of difficulty. Learn all thirty-six stratagems by capturing them.</p>
+          <div class="chips"><span>220 operations</span><span>14 campaigns</span><span>Daily operation</span></div>
+          <span class="go">Play the full game &rarr;</span>
+        </a>
+
+        <a class="era e1931" href="/1931/">
+          <span class="mark" aria-hidden="true">1931</span>
+          <span class="tag">1931 to 1949</span>
+          <h3>The long war in China</h3>
+          <p class="hook">From Mukden to the gold yuan.</p>
+          <p class="body">Defend the Nationalist government against two enemies at once. The Chinese Communist Party recruits the people your state relies on. Imperial Japan wins quickly and cannot finish. Push Japan hard enough and the rivals are forced into a truce, and the truce has a price.</p>
+          <div class="chips"><span>3 factions</span><span>10 operations</span><span>Leaders and legitimacy</span></div>
+          <span class="go">Play 1931 &rarr;</span>
+        </a>
+
+        <a class="era e2030" href="/2030/">
+          <span class="mark" aria-hidden="true">2030</span>
+          <span class="tag">2021 to 2032</span>
+          <h3>A contest among three</h3>
+          <p class="hook">From the gas valve to the orbits.</p>
+          <p class="body">Lead the United States and its allies. You hold the dollar rails and the frontier models and you are slow to act as one. The Party-state holds the data and the factories. The Kremlin breaks what it cannot build.</p>
+          <div class="chips"><span>3 powers</span><span>10 operations</span><span>Record and near future</span></div>
+          <span class="go">Play 2030 &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="kicker">How it plays</div>
+      <h2>Three actions. Then the cards land.</h2>
+      <p class="lead">A turn takes a minute. An operation takes a handful of turns. The pressure builds whether you are ready or not.</p>
+      <div class="steps">
+        <div class="step"><h3>Read the board</h3><p>Twelve domains carry pressure, shields and slopes. Your opponent&rsquo;s cards sit above them and name where they will land. Some arrive face down.</p></div>
+        <div class="step"><h3>Spend three actions</h3><p>Detect a hidden card. Disrupt a card you can see. Defend a domain with a shield. An idle action costs you coherence, and coherence buys actions.</p></div>
+        <div class="step"><h3>Name the lever</h3><p>One domain carries the whole operation. Name it right and leverage drops and your Disrupts there cost less. Name it wrong and the opponent gains.</p></div>
+      </div>
+      <div class="feats">
+        <div class="feat"><b>A new operation every day</b><span>Everyone plays the same one. Compare how you held the line.</span></div>
+        <div class="feat"><b>Challenge a friend</b><span>Send a link. You both face the same opening, and the game checks every result by replay.</span></div>
+        <div class="feat"><b>See what went wrong</b><span>Every finished run ends with a replay and a report on where the leverage came from.</span></div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="kicker">Take the first move</div>
+      <h2>The attack is already moving.</h2>
+      <p class="lead">Start with the full game, or step straight into a war.</p>
+      <div class="cta-row">
+        <a class="btn big" href="/game/">Play the full game</a>
+        <a class="btn ghost big" href="/1931/">1931</a>
+        <a class="btn ghost big" href="/2030/">2030</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="book">
+        <div>
+          <div class="kicker">The book behind the game</div>
+          <h3>Total Domain War, by James Rogers</h3>
+          <p>How the Chinese Communist Party wages war without fighting, and why the West keeps losing. The game runs on the framework in the book. Ten dimensions, twelve domains and thirty-six stratagems, applied to the documented record.</p>
+        </div>
+        <div class="links"><a class="btn ghost" href="/read/">Read the book</a><a class="btn ghost" href="/prologue.html">Read the prologue</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>The actor is the Party. The Chinese people are its first victims. Ancestry is not loyalty.</p>
+    <p>totaldomainwar.com</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var NAMES = ['Kinetic','Economic','Financial','Information','Psychological','Legal','Association','Cyber','Cultural','AI and Cognitive','Biological','Data and Surveillance'];
+  var THEATER = [1, 2, 4, 5, 6, 7, 9, 11]; // the domains in play
+  var LEVER = 6;
+  var CARDS = [
+    ['S3', 'kill with a borrowed knife', 6], ['S5', 'loot a burning house', 4], ['S20', 'muddy the waters to catch the fish', 5],
+    ['S28', 'lure the enemy onto the roof and remove the ladder', 11], ['S30', 'make the host and the guest exchange places', 4],
+    ['S29', 'deck the tree with false blossoms', 2], ['S19', 'remove the firewood from under the pot', 1], ['S10', 'hide a knife behind a smile', 7]
+  ];
+  var g = document.getElementById('g12'), feed = document.getElementById('feed'), lv = document.getElementById('lv'), lf = document.getElementById('lf'), rt = document.getElementById('rt');
+  var p = NAMES.map(function () { return 0; }), tiles = [], leverage = 0, turn = 1, tick = 0, ending = false;
+  NAMES.forEach(function (n, i) {
+    var t = document.createElement('div');
+    t.className = 't' + (i === LEVER ? ' lever' : '');
+    t.innerHTML = n + '<span class="pips"><i></i><i></i><i></i><i></i><i></i></span>';
+    g.appendChild(t); tiles.push(t);
+  });
+  function paint() {
+    tiles.forEach(function (t, i) { t.className = t.className.replace(/\sp\d/g, '') + ' p' + p[i]; });
+    var pct = Math.min(100, Math.round(leverage / 24 * 100));
+    lf.style.width = pct + '%'; lv.textContent = Math.min(leverage, 24) + ' / 24'; rt.textContent = 'Turn ' + turn + ' of 8';
+  }
+  function flash(i, cls) { var t = tiles[i]; t.classList.remove('hit', 'held'); void t.offsetWidth; t.classList.add(cls); }
+  function reset() { p = NAMES.map(function () { return 0; }); [2, 4, 6, 9].forEach(function (i) { p[i] = 1; }); leverage = 0; turn = 1; paint(); }
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) {
+    p[2] = 3; p[6] = 4; p[4] = 2; p[9] = 1; leverage = 9; turn = 4; paint();
+    feed.innerHTML = '<b>S3</b> kill with a borrowed knife &rarr; Association';
+    return;
+  }
+  reset();
+  setInterval(function () {
+    tick++;
+    if (ending) return;
+    if (leverage >= 24) { ending = true; paint(); feed.innerHTML = '<b>Consumed.</b> The operation is lost. Starting again&hellip;'; setTimeout(function () { reset(); ending = false; }, 1800); return; }
+    var attack = tick % 3 !== 0;
+    if (attack) {
+      var c = CARDS[Math.floor(Math.random() * CARDS.length)];
+      var i = c[2]; if (p[i] < 5) p[i]++;
+      feed.innerHTML = '<b>' + c[0] + '</b> ' + c[1] + ' &rarr; ' + NAMES[i];
+      flash(i, 'hit');
+    } else {
+      var h = 0; p.forEach(function (v, k) { if (v > p[h]) h = k; });
+      if (p[h] > 0) { p[h]--; feed.innerHTML = '<b>Defend.</b> A shield absorbs the hit on ' + NAMES[h]; flash(h, 'held'); }
+    }
+    leverage += p.filter(function (v) { return v >= 3; }).length;
+    if (tick % 3 === 0) turn = turn % 8 + 1;
+    paint();
+  }, 1250);
+})();
+</script>
+</body>
+</html>
