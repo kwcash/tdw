@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TDW Strategic Game</title>
+<meta name="description" content="Twelve domains, thirty-six stratagems, one lever. A turn-based strategy game built on the documented record from 1784 to 2051.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#/">TDW<span>Strategic Game</span></a>
+  <nav id="nav" aria-label="Main"></nav>
+</header>
+<div id="banner" class="banner" hidden></div>
+<main id="main" tabindex="-1"><p class="muted">Loading…</p></main>
+<footer class="foot">
+  <p>The actor is the Party. The Chinese people are its first victims. Ancestry is not loyalty.</p>
+  <p class="muted">The Thirty-Six Stratagems are a folk compilation, not PLA doctrine. This demo keeps progress in your browser.</p>
+</footer>
+
+<script>
+fetch('assets/content.json').then(function(r){if(!r.ok)throw new Error(r.status);return r.text();}).then(function(t){
+  var d=document.createElement('script');d.type='application/json';d.id='tdw-content';d.textContent=t;document.body.appendChild(d);
+  var g=document.createElement('script');g.src='js/record.js';g.onload=function(){var h=document.createElement('script');h.src='js/game.js';document.body.appendChild(h);};document.body.appendChild(g);
+}).catch(function(e){document.querySelector('main').textContent='Could not load game data ('+e.message+'). Check that assets/content.json is uploaded.';});
+</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Total Domain War</title>
-<meta name="description" content="Play the war nobody declared. Twelve domains, thirty-six stratagems, one lever. Run 220 operations, the long war in China from 1931, or the contest among three powers in 2030.">
+<meta name="description" content="Play the war nobody declared. Twelve domains, thirty-six stratagems, one lever. Play the contest as it stands in 2026, run 220 operations across 1784 to 2051, or step into 1931 or 2030.">
 <meta property="og:title" content="Total Domain War">
 <meta property="og:description" content="Twelve domains. Thirty-six stratagems. One lever. Play the war nobody declared.">
 <meta property="og:type" content="website">
@@ -76,9 +76,10 @@ h1,h2,h3 { text-wrap:balance; }
 section { padding:56px 0; border-top:1px solid var(--line); }
 section h2 { font-size:clamp(28px,5vw,42px); line-height:1.1; margin:10px 0 12px; letter-spacing:-.01em; }
 section .lead { color:var(--muted); font-size:18px; max-width:40em; margin:0 0 30px; }
-.eras { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); }
+.eras { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr)); }
 .era { --c:#f0827b; position:relative; display:flex; flex-direction:column; gap:12px; padding:26px 24px 24px; border-radius:18px; color:#f3f5f8; text-decoration:none; overflow:hidden; border:1px solid #3a4656; background:linear-gradient(145deg,#10151c 0%,#1b2533 58%,#3a1d1d 100%); transition:transform .2s,border-color .2s,box-shadow .2s; }
 .era.e1931 { --c:#e3a93f; background:linear-gradient(145deg,#14120e 0%,#241d12 58%,#43301a 100%); border-color:#4d4128; }
+.era.e2026 { --c:#8fd18b; background:linear-gradient(145deg,#0e1511 0%,#16261a 58%,#1f3d24 100%); border-color:#2f4a33; }
 .era.e2030 { --c:#4cc3d9; background:linear-gradient(145deg,#0d1519 0%,#10262f 58%,#0f3a4d 100%); border-color:#2a4654; }
 .era:hover { transform:translateY(-4px); border-color:var(--c); box-shadow:0 18px 44px rgba(0,0,0,.35); }
 .era .mark { position:absolute; right:-6px; top:-14px; font:900 112px/1 system-ui,sans-serif; letter-spacing:-.05em; color:var(--c); opacity:.13; pointer-events:none; user-select:none; }
@@ -148,7 +149,7 @@ section .lead { color:var(--muted); font-size:18px; max-width:40em; margin:0 0 3
         <h1>You are losing a war <em>you cannot see.</em></h1>
         <p class="sub">Twelve domains. Thirty-six stratagems. Three actions a turn. Your opponent plays face down, and one domain holds the lever that decides the war. Name it before the opponent consumes the whole system.</p>
         <div class="cta-row">
-          <a class="btn big" href="/game/">Play now &rarr;</a>
+          <a class="btn big" href="/2026/">Play 2026 &rarr;</a>
           <a class="btn ghost big" href="#eras">Choose your war</a>
         </div>
         <p class="micro">Runs in your browser. No account needed.</p>
@@ -164,11 +165,21 @@ section .lead { color:var(--muted); font-size:18px; max-width:40em; margin:0 0 3
     </header>
 
     <section id="eras">
-      <div class="kicker">Three ways in</div>
+      <div class="kicker">Four ways in</div>
       <h2>Choose your war.</h2>
       <p class="lead">Each game runs on the same engine. Pick the century. Every operation comes from the documented record or from the near future the record points to.</p>
 
       <div class="eras">
+        <a class="era e2026" href="/2026/">
+          <span class="mark" aria-hidden="true">2026</span>
+          <span class="tag">The war as it stands now</span>
+          <h3>2026</h3>
+          <p class="hook">Twelve domains. Twelve operations.</p>
+          <p class="body">Play the contest as it stands in the autumn of 2026. Each operation makes one domain the lever, from the coast guard&rsquo;s circles around Pratas to the data a health authority will not hand over. Every one of the thirty-six stratagems appears.</p>
+          <div class="chips"><span>12 operations</span><span>12 domains</span><span>All 36 stratagems</span></div>
+          <span class="go">Play 2026 &rarr;</span>
+        </a>
+
         <a class="era" href="/game/">
           <span class="mark" aria-hidden="true">220</span>
           <span class="tag">1784 to 2051</span>
@@ -220,9 +231,10 @@ section .lead { color:var(--muted); font-size:18px; max-width:40em; margin:0 0 3
     <section class="final">
       <div class="kicker">Take the first move</div>
       <h2>The attack is already moving.</h2>
-      <p class="lead">Start with the full game, or step straight into a war.</p>
+      <p class="lead">Start with the war as it stands now, or step into any other.</p>
       <div class="cta-row">
-        <a class="btn big" href="/game/">Play the full game</a>
+        <a class="btn big" href="/2026/">Play 2026</a>
+        <a class="btn ghost big" href="/game/">The full game</a>
         <a class="btn ghost big" href="/1931/">1931</a>
         <a class="btn ghost big" href="/2030/">2030</a>
       </div>
