@@ -27,3 +27,9 @@ What is here, so a reset of the working machine does not cost the game again.
 - `dist/1931.zip` is the current 1931 build. `dist/update-2026-10-13b.zip` is the upload set (root `index.html` plus the `1931/` folder and three notes).
 - The 2026, 2030 and game zips keep the v4 bundle. They behave the same because none of their operations lists holdings.
 - `CHANGELOG_2026-10-13b.md`, `BALANCE_E011.md` and `NOTES_E011.md` describe it. `test/holdings.test.js` covers the new rules.
+
+## Update of 13 October 2026, third set
+
+- The 2026 build adds forecast mode. `patch-v6.py` turns the v5 bundle into the current one, and `forecast/build_forecasts.py` writes `assets/forecasts.json` from the ledger snapshot. `js/game.js` now holds the v6 bundle. The engine part is unchanged.
+- `dist/2026.zip` is the current 2026 build. `dist/update-2026-10-13c.zip` is the upload set for the `2026/` folder.
+- `FORECAST_NOTES.md` lists what is in, what is left out and why, the score, and how the owner enters results. `CHANGELOG_2026-10-13c.md` lists the changes. `test/forecast.test.js` checks the data.

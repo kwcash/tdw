@@ -1,0 +1,2530 @@
+{
+ "schema": 2,
+ "storageKey": "tdw-2026-1",
+ "era": "contest-2026",
+ "ruleset": {
+  "legitimacy": true
+ },
+ "copy": {
+  "hero": "Every operation comes from the record of the contest as it stands in the autumn of 2026. Sixteen operations. Twelve cover the twelve domains. The other four follow Taiwan's budget and vote, the Iranian oil fleet and a seized botnet.",
+  "arcsLabel": "2004 to 2026",
+  "arcsTitle": "Two campaign arcs",
+  "arcsText": "The Taiwan Strait and the seams where allies, trade, data and law meet.",
+  "opsNote": "Sixteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.",
+  "arcsNote": "Two arcs. Each runs through the record one operation at a time. Win an operation to open the next."
+ },
+ "tutorial": "C001",
+ "daily": [
+  "W001",
+  "W002",
+  "W003",
+  "W004",
+  "W005",
+  "W006",
+  "W007",
+  "W008",
+  "W009",
+  "W010",
+  "W011",
+  "W012"
+ ],
+ "factions": {
+  "USA_Allies": {
+   "id": "USA_Allies",
+   "name": "The United States and its allies",
+   "short": "USA",
+   "control": "player",
+   "legitimacy": 65,
+   "blurb": "Holds the dollar rails and the frontier models. Slow to act as one.",
+   "start": {
+    "shields": {
+     "Financial": 3,
+     "AI and Cognitive": 3
+    }
+   },
+   "focus": [
+    "Financial",
+    "AI and Cognitive",
+    "Legal"
+   ],
+   "traits": {
+    "coherenceHit": 1,
+    "friction": {
+     "every": 3,
+     "n": 1
+    }
+   }
+  },
+  "PRC_State": {
+   "id": "PRC_State",
+   "name": "The Party-state (PRC)",
+   "short": "PRC",
+   "legitimacy": 60,
+   "blurb": "Holds the data, the factories and the precursor chemistry. Plays long.",
+   "start": {
+    "shields": {
+     "Data and Surveillance": 3,
+     "Economic": 3,
+     "Biological": 2
+    }
+   },
+   "focus": [
+    "Data and Surveillance",
+    "Biological",
+    "Economic"
+   ],
+   "power": {
+    "Data and Surveillance": 1,
+    "Economic": 1
+   },
+   "affinity": {
+    "S1": 4,
+    "S10": 4,
+    "S8": 2
+   },
+   "signature": [
+    "S1",
+    "S10",
+    "S8"
+   ],
+   "hostility": {
+    "USA_Allies": 3,
+    "Russia_Proxies": 0.5
+   }
+  },
+  "Russia_Proxies": {
+   "id": "Russia_Proxies",
+   "name": "The Kremlin and its proxies",
+   "short": "RUS",
+   "legitimacy": 45,
+   "blurb": "Weaker than its rivals and willing to break things. Disrupts what it cannot build.",
+   "start": {
+    "shields": {
+     "Cyber": 2,
+     "Economic": 1
+    }
+   },
+   "focus": [
+    "Economic",
+    "Cyber",
+    "Biological",
+    "Information"
+   ],
+   "power": {
+    "Cyber": 1
+   },
+   "affinity": {
+    "S20": 4,
+    "S27": 2,
+    "S3": 3,
+    "S13": 2,
+    "S28": 2
+   },
+   "signature": [
+    "S20",
+    "S3",
+    "S28"
+   ],
+   "hostility": {
+    "USA_Allies": 3,
+    "PRC_State": 0.5
+   }
+  },
+  "Iran_Axis": {
+   "id": "Iran_Axis",
+   "name": "Iran and its proxies",
+   "short": "IRN",
+   "legitimacy": 40,
+   "blurb": "Fights through agents and sells oil to the one buyer that will take it.",
+   "start": {
+    "shields": {
+     "Kinetic": 2,
+     "Economic": 1
+    }
+   },
+   "focus": [
+    "Kinetic",
+    "Economic",
+    "Information"
+   ],
+   "power": {
+    "Kinetic": 1
+   },
+   "affinity": {
+    "S3": 4,
+    "S21": 3,
+    "S13": 2,
+    "S5": 2
+   },
+   "signature": [
+    "S3",
+    "S21",
+    "S13"
+   ],
+   "hostility": {
+    "USA_Allies": 3,
+    "PRC_State": 0.3
+   }
+  }
+ },
+ "cadres": {
+  "treasury_office": {
+   "id": "treasury_office",
+   "name": "The sanctions office",
+   "role": "Treasury",
+   "faction": "USA_Allies",
+   "domain": "Financial",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "groups": [
+      "Attack"
+     ]
+    }
+   },
+   "blurb": "Freezes and designates faster than the other side can reroute."
+  },
+  "frontier_lab": {
+   "id": "frontier_lab",
+   "name": "The frontier lab security team",
+   "role": "Industry",
+   "faction": "USA_Allies",
+   "domain": "AI and Cognitive",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Watches who asks the model what."
+  },
+  "cyber_operators": {
+   "id": "cyber_operators",
+   "name": "The cyber operators",
+   "role": "Defense",
+   "faction": "USA_Allies",
+   "domain": "Cyber",
+   "mods": {
+    "ap": {
+     "delta": 1,
+     "when": 1
+    }
+   },
+   "blurb": "Hunt inside the networks they defend."
+  },
+  "health_security": {
+   "id": "health_security",
+   "name": "The health security agencies",
+   "role": "Public health",
+   "faction": "USA_Allies",
+   "domain": "Biological",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Run the surveillance laboratories."
+  },
+  "data_bureau": {
+   "id": "data_bureau",
+   "name": "The data bureau",
+   "role": "State body",
+   "faction": "PRC_State",
+   "domain": "Data and Surveillance",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Holds the records the other side lacks."
+  },
+  "influence_service": {
+   "id": "influence_service",
+   "name": "The influence service",
+   "role": "Intelligence",
+   "faction": "Russia_Proxies",
+   "domain": "Information",
+   "mods": {
+    "disrupt": {
+     "delta": 1,
+     "codes": [
+      "S20",
+      "S29"
+     ]
+    },
+    "legitimacy": -1
+   },
+   "blurb": "Muddies what the other side can prove."
+  },
+  "campus_office": {
+   "id": "campus_office",
+   "name": "The campus compliance office",
+   "role": "University",
+   "faction": "USA_Allies",
+   "domain": "Cultural",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Counts every foreign dollar that reaches a campus."
+  },
+  "language_office": {
+   "id": "language_office",
+   "name": "The language education office",
+   "role": "Education ministry",
+   "faction": "PRC_State",
+   "domain": "Cultural",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S1",
+      "S25"
+     ]
+    }
+   },
+   "blurb": "Supplies the teachers and the textbooks."
+  },
+  "allied_coast_guards": {
+   "id": "allied_coast_guards",
+   "name": "The allied coast guards",
+   "role": "Maritime",
+   "faction": "USA_Allies",
+   "domain": "Kinetic",
+   "mods": {
+    "ap": {
+     "delta": 1,
+     "when": 1
+    }
+   },
+   "blurb": "Shadow every patrol and publish what they see."
+  },
+  "china_coast_guard": {
+   "id": "china_coast_guard",
+   "name": "The China Coast Guard",
+   "role": "Maritime law enforcement",
+   "faction": "PRC_State",
+   "domain": "Kinetic",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S13",
+      "S6"
+     ]
+    }
+   },
+   "blurb": "Calls a patrol law enforcement."
+  },
+  "trade_remedies": {
+   "id": "trade_remedies",
+   "name": "The trade remedies offices",
+   "role": "Commerce",
+   "faction": "USA_Allies",
+   "domain": "Economic",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Open a case where a sector floods."
+  },
+  "policy_banks": {
+   "id": "policy_banks",
+   "name": "The policy banks",
+   "role": "State lenders",
+   "faction": "PRC_State",
+   "domain": "Economic",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S28",
+      "S17",
+      "S12"
+     ]
+    }
+   },
+   "blurb": "Finance the factories that no market would."
+  },
+  "comms_cell": {
+   "id": "comms_cell",
+   "name": "The allied communications cell",
+   "role": "Public diplomacy",
+   "faction": "USA_Allies",
+   "domain": "Information",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "codes": [
+      "S26",
+      "S29",
+      "S7"
+     ]
+    }
+   },
+   "blurb": "Answers a claim in the language of the audience that hears it."
+  },
+  "propaganda_dept": {
+   "id": "propaganda_dept",
+   "name": "The propaganda department",
+   "role": "Party",
+   "faction": "PRC_State",
+   "domain": "Information",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S26",
+      "S29",
+      "S7"
+     ]
+    },
+    "legitimacy": -1
+   },
+   "blurb": "Sets the line that state media repeats."
+  },
+  "legal_advisers": {
+   "id": "legal_advisers",
+   "name": "The allied legal advisers",
+   "role": "Law offices",
+   "faction": "USA_Allies",
+   "domain": "Legal",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "groups": [
+      "Control"
+     ]
+    }
+   },
+   "blurb": "Answer a claim of law with the text of the resolution."
+  },
+  "taiwan_office": {
+   "id": "taiwan_office",
+   "name": "The Taiwan Affairs Office",
+   "role": "Party office",
+   "faction": "PRC_State",
+   "domain": "Legal",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S30",
+      "S22",
+      "S24"
+     ]
+    }
+   },
+   "blurb": "Turns a claim into a statute and a statute into a warrant."
+  },
+  "fact_checkers": {
+   "id": "fact_checkers",
+   "name": "The Taiwanese fact-checkers",
+   "role": "Civil society",
+   "faction": "USA_Allies",
+   "domain": "Psychological",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Answer a rumor within hours."
+  },
+  "narrative_network": {
+   "id": "narrative_network",
+   "name": "The narrative network",
+   "role": "Media and amplifiers",
+   "faction": "PRC_State",
+   "domain": "Psychological",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S33",
+      "S35",
+      "S10"
+     ]
+    }
+   },
+   "blurb": "Repeats one doubt in a hundred voices."
+  },
+  "independent_refiners": {
+   "id": "independent_refiners",
+   "name": "The independent refiners",
+   "role": "Shandong",
+   "faction": "PRC_State",
+   "domain": "Economic",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Buy the crude that the big firms will not touch."
+  },
+  "shadow_fleet": {
+   "id": "shadow_fleet",
+   "name": "The shadow fleet",
+   "role": "Tankers",
+   "faction": "Iran_Axis",
+   "domain": "Economic",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S21",
+      "S3"
+     ]
+    }
+   },
+   "blurb": "Changes the ship name between the Gulf and the dock."
+  },
+  "export_offices": {
+   "id": "export_offices",
+   "name": "The allied export-control offices",
+   "role": "Commerce",
+   "faction": "USA_Allies",
+   "domain": "Legal",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "groups": [
+      "Attack"
+     ]
+    }
+   },
+   "blurb": "Review what leaves, and who receives it."
+  },
+  "survey_fleet": {
+   "id": "survey_fleet",
+   "name": "The survey fleet",
+   "role": "Research vessels",
+   "faction": "PRC_State",
+   "domain": "Cyber",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S8",
+      "S5"
+     ]
+    }
+   },
+   "blurb": "Maps the sea floor in public."
+  },
+  "cable_owners": {
+   "id": "cable_owners",
+   "name": "The cable owners",
+   "role": "Industry",
+   "faction": "USA_Allies",
+   "domain": "Cyber",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "Keep repair ships on contract."
+  },
+  "chip_fund": {
+   "id": "chip_fund",
+   "name": "The semiconductor fund",
+   "role": "State investor",
+   "faction": "PRC_State",
+   "domain": "AI and Cognitive",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S36",
+      "S14",
+      "S32"
+     ]
+    }
+   },
+   "blurb": "Pays for chips that no foreign firm sells."
+  },
+  "summit_team": {
+   "id": "summit_team",
+   "name": "The summit team",
+   "role": "Executive office",
+   "faction": "USA_Allies",
+   "domain": "Association",
+   "mods": {
+    "ap": {
+     "delta": 1,
+     "when": 0
+    }
+   },
+   "blurb": "Plans the meeting and the readout together."
+  },
+  "liaison_dept": {
+   "id": "liaison_dept",
+   "name": "The United Front Work Department",
+   "role": "Party department",
+   "faction": "PRC_State",
+   "domain": "Association",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S23",
+      "S2",
+      "S34"
+     ]
+    }
+   },
+   "blurb": "Makes friends where it has no claim and pressure where it has."
+  },
+  "justice_fbi": {
+   "id": "justice_fbi",
+   "name": "The Justice Department and the FBI",
+   "role": "Law enforcement",
+   "faction": "USA_Allies",
+   "domain": "Legal",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "groups": [
+      "Attack",
+      "Confrontation"
+     ]
+    }
+   },
+   "blurb": "Take a domain by court order and publish what it was aimed at."
+  },
+  "cyber_contractors": {
+   "id": "cyber_contractors",
+   "name": "The cyber contractors",
+   "role": "Firms the state can call on",
+   "faction": "PRC_State",
+   "domain": "Cyber",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S13",
+      "S10"
+     ]
+    }
+   },
+   "blurb": "Build the scanning tools and the lures."
+  },
+  "health_commission": {
+   "id": "health_commission",
+   "name": "The health commission",
+   "role": "State health body",
+   "faction": "PRC_State",
+   "domain": "Biological",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S20",
+      "S16",
+      "S27"
+     ]
+    }
+   },
+   "blurb": "Decides which records leave the country."
+  }
+ },
+ "pacts": {
+  "partnership": {
+   "id": "partnership",
+   "name": "The partnership",
+   "members": [
+    "PRC_State",
+    "Russia_Proxies"
+   ],
+   "against": "USA_Allies",
+   "truce": true,
+   "active": true,
+   "breakWhen": {
+    "legitimacy": {
+     "faction": "Russia_Proxies",
+     "lt": 25
+    }
+   },
+   "onBreak": [
+    {
+     "type": "tempo",
+     "faction": "Russia_Proxies",
+     "n": -1
+    },
+    {
+     "type": "tempo",
+     "faction": "PRC_State",
+     "n": -1
+    }
+   ],
+   "breakText": "The partners stop coordinating. The Kremlin has become a cost to the Party."
+  },
+  "oil_shield": {
+   "id": "oil_shield",
+   "name": "The oil shield",
+   "members": [
+    "PRC_State",
+    "Iran_Axis"
+   ],
+   "against": "USA_Allies",
+   "truce": true,
+   "active": true,
+   "breakWhen": {
+    "legitimacy": {
+     "faction": "Iran_Axis",
+     "lt": 25
+    }
+   },
+   "onBreak": [
+    {
+     "type": "tempo",
+     "faction": "Iran_Axis",
+     "n": -1
+    },
+    {
+     "type": "tempo",
+     "faction": "PRC_State",
+     "n": -1
+    }
+   ],
+   "breakText": "The buyer walks away. Tehran has become a cost to the Party."
+  }
+ },
+ "calendar": [
+  {
+   "date": "2026-10-12",
+   "end": "2026-10-17",
+   "label": "People's Liberation Army exercises in five sea areas off the mainland coast. Taiwan's defense minister says they lie away from Taiwan.",
+   "kind": "window",
+   "source": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/12/2003865828",
+   "ref": null
+  },
+  {
+   "date": "2026-10-25",
+   "end": null,
+   "label": "Taiwan Restoration Day observance in the People's Republic. The date is also the date of Resolution 2758.",
+   "kind": "scheduled",
+   "source": "https://subsites.chinadaily.com.cn/npc/2025-10/25/c_1135469.htm",
+   "ref": null
+  },
+  {
+   "date": "2026-11-18",
+   "end": "2026-11-19",
+   "label": "APEC leaders meet in Shenzhen. Trump and Xi both intend to attend.",
+   "kind": "scheduled",
+   "source": "https://www.csis.org/analysis/takeaways-trump-xi-white-house-summit",
+   "ref": null
+  },
+  {
+   "date": "2026-11-28",
+   "end": null,
+   "label": "Taiwan holds local elections for 22 mayor and magistrate posts.",
+   "kind": "scheduled",
+   "source": "https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections",
+   "ref": null
+  },
+  {
+   "date": "2026-12",
+   "end": null,
+   "label": "The G20 leaders meet in Miami. Xi is expected to attend.",
+   "kind": "scheduled",
+   "source": "https://www.csis.org/analysis/takeaways-trump-xi-white-house-summit",
+   "ref": null
+  }
+ ],
+ "calendarNote": "Dates are scheduled or expected. Nothing here is a prediction.",
+ "ops": [
+  {
+   "id": "C001",
+   "kind": "catalog",
+   "num": 1,
+   "title": "The Gate at Canton",
+   "fullTitle": "The Gate at Canton (1784)",
+   "tier": 1,
+   "dimension": "Topology",
+   "stage": "Defense",
+   "stratagems": [
+    "S22"
+   ],
+   "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Economic",
+   "opponent": "The opium traders",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     1784,
+     null
+    ],
+    "end": [
+     1784,
+     null
+    ]
+   },
+   "label": "1784",
+   "brief": "In August 1784 Samuel Shaw, supercargo of the Empress of China, anchored at Whampoa and learned the terms of the only gate the Qing court kept open to the West.",
+   "record": "The Qing court confined Western trade to Canton from 1757. Every foreign ship needed a licensed hong merchant to stand surety for its conduct and its duties, and foreigners lived in a strip of factories outside the city walls for the trading season. The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules.",
+   "reading": "The security merchant made one licensed person answer for every guest, a gate built on verification rather than trust. The gate held until opium moved outside it and the gatekeepers took a cut, which is where most later gates have failed.",
+   "gap": "Business",
+   "gapText": "Business Architecture. The gatekeepers earned from the traffic their office existed to stop.",
+   "fix": "Verify every request at the gate and audit the gatekeeper's income, the discipline zero trust now names.",
+   "hidden": true
+  },
+  {
+   "id": "W001",
+   "kind": "catalog",
+   "num": 1,
+   "title": "The Last Institute",
+   "fullTitle": "The Last Institute (2023)",
+   "tier": 1,
+   "dimension": "Time",
+   "stage": "Attract",
+   "stratagems": [
+    "S1",
+    "S25",
+    "S9"
+   ],
+   "theater": [
+    "Cultural",
+    "Association",
+    "Legal",
+    "Information"
+   ],
+   "spine": "Cultural",
+   "opponent": "The Party's education office",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2004,
+     11
+    ],
+    "end": [
+     2023,
+     10
+    ]
+   },
+   "label": "November 2004 to 2023",
+   "brief": "In 2004 a university in Seoul opened the first Confucius Institute. Fifteen years later about a hundred American campuses hosted one.",
+   "record": "An office of the education ministry in Beijing paid for the teachers and the textbooks. In 2018 Congress barred Defense Department language funds from universities that hosted an institute. Most American campuses closed theirs within a few years. In 2020 the Beijing office became the Center for Language Education and Cooperation, and a nominally independent foundation took over the institutes that remained. By January 2023 the American count had fallen to fewer than five.",
+   "reading": "The lesson was ordinary and the access was the point. This is Stratagem 1, deceive the heavens to cross the sea. A familiar classroom hid a channel. Stratagem 25 swaps the beams one at a time, because each concession on a campus looks small. Stratagem 9 does the rest. Most universities watched from across the river until a funding law forced the choice.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. No campus office could see every foreign agreement, so each deal looked small on its own.",
+   "fix": "Keep one public register of every foreign-funded program on a campus, and give one named officer the authority to review it.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "campus_office",
+    "language_office"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Congress bars Defense Department language funds from schools that host an institute.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "The Beijing office renames itself and hands the institutes to a foundation.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.88
+   }
+  },
+  {
+   "id": "W002",
+   "kind": "catalog",
+   "num": 2,
+   "title": "The Circling",
+   "fullTitle": "The Circling (2026)",
+   "tier": 2,
+   "dimension": "Phase",
+   "stage": "Control",
+   "stratagems": [
+    "S13",
+    "S6",
+    "S4"
+   ],
+   "theater": [
+    "Kinetic",
+    "Association",
+    "Legal",
+    "Psychological"
+   ],
+   "spine": "Kinetic",
+   "opponent": "The Party's coast guard and army",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2025,
+     12
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "December 2025 to October 2026",
+   "brief": "In September 2026 China Coast Guard ships circled Pratas Island for more than a day. Taiwan administers the island and the Party claims it.",
+   "record": "The People's Liberation Army named an exercise around Taiwan Justice Mission-2025 in December 2025. In September 2026 China Coast Guard vessels entered the waters off Kinmen on the 8th, the 10th and the 11th. They circled Pratas on the 7th and the 8th for more than twenty-four hours. PLA aircraft entered Taiwan's air defense identification zone 181 times that month. On 9 October 2026 four China Coast Guard ships entered the restricted waters off Kinmen, and Taiwan's coast guard expelled them. China's Maritime Safety Administration issued no-sail notices for five sea areas for People's Liberation Army exercises from 12 to 17 October. Taiwan's defense minister assessed that the areas lie off China's coast and that the exercises involve artillery only.",
+   "reading": "The Party does not need to land on an island to change who governs it. Each patrol sets a precedent, and each precedent becomes the baseline for the next. This is Stratagem 13, stomp the grass to scare the snake. The named exercises mark the bursts and the coast guard fills the quiet between them. Stratagem 6 shows force in one place while pressure builds in another. Stratagem 4 waits for the defender to tire.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. Each patrol stayed below the line that would trigger a response, so no one owned the decision to answer the sum.",
+   "fix": "Write the answer to each rung of the ladder in advance, and name one body that can order it.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "allied_coast_guards",
+    "china_coast_guard"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "China Coast Guard ships circle Pratas for more than a day.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "The People's Liberation Army announces a named exercise around Taiwan.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Kinetic",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.95
+   }
+  },
+  {
+   "id": "W003",
+   "kind": "catalog",
+   "num": 3,
+   "title": "The Surplus",
+   "fullTitle": "The Surplus (2026)",
+   "tier": 2,
+   "dimension": "Gradient",
+   "stage": "Control",
+   "stratagems": [
+    "S28",
+    "S17",
+    "S12"
+   ],
+   "theater": [
+    "Economic",
+    "Financial",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Economic",
+   "opponent": "The Party-state",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2024,
+     10
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "October 2024 to October 2026",
+   "brief": "In October 2024 the European Union put new duties on electric cars built on the mainland. The factories kept building.",
+   "record": "The European Union's definitive duties on battery electric vehicles from the mainland took effect on October 30, 2024. They ran from 7.8 percent for Tesla's Shanghai plant to 35.3 percent for SAIC. BYD paid 17.0 percent. The Party's own statistics bureau reported that factories used less than three quarters of their capacity in 2025 while exports rose. The United States ran a smaller bilateral deficit with the mainland in 2025 than in 2024. The surplus moved to other markets.",
+   "reading": "A factory built far above domestic demand must sell abroad. The surplus is an enabling condition and not a transfer to any partner. It pays for an industrial base that sanctions lists do not reach. This is Stratagem 28, lure the enemy onto the roof and remove the ladder. Each buyer that reorganizes around cheap supply loses the way back. Stratagem 17 casts a low price to attract the contract. Stratagem 12 takes one sector at a time.",
+   "gap": "Business",
+   "gapText": "Business Architecture. Importers treated each cheap input as a bargain and not as a dependency.",
+   "fix": "Cap the share any one source may supply of a critical input, and aim trade remedies at the condition and not only at the flow.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "trade_remedies",
+    "policy_banks"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Cheap exports reach a sector faster than its defenders can answer.",
+     "effects": [
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "A new round of duties lands and the surplus moves to another market.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.76
+   }
+  },
+  {
+   "id": "W004",
+   "kind": "catalog",
+   "num": 4,
+   "title": "The Hostility Campaign",
+   "fullTitle": "The Hostility Campaign (2025)",
+   "tier": 3,
+   "dimension": "Resonance",
+   "stage": "Control",
+   "stratagems": [
+    "S26",
+    "S29",
+    "S7"
+   ],
+   "theater": [
+    "Information",
+    "Economic",
+    "Cultural",
+    "Association"
+   ],
+   "spine": "Information",
+   "opponent": "The Party's propaganda apparatus",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2025,
+     11
+    ],
+    "end": [
+     2026,
+     6
+    ]
+   },
+   "label": "November 2025 to June 2026",
+   "brief": "In November 2025 Japan's new prime minister said in parliament that an attack on Taiwan could threaten Japan's survival. Within days the Party's agencies were telling Chinese citizens to avoid Japan.",
+   "record": "Prime Minister Sanae Takaichi said in the Diet that a Taiwan contingency could threaten Japan's survival. The Party's agencies answered with a travel advisory and a halt to Japanese seafood imports. State media ran a sustained campaign against Japan and its prime minister.",
+   "reading": "The campaign had two audiences. One was the Party's own public, which learns who the enemy is. The other was every government that watches what it costs to say Taiwan's name. This is Stratagem 26, point at the mulberry while cursing the locust. Stratagem 29 decks the tree with false blossoms, because a boycott looks like popular anger. Stratagem 7 builds a grievance from a sentence.",
+   "gap": "Principles",
+   "gapText": "Architecture Principles. Allies had no shared rule for who answers when one member is coerced for a statement of policy.",
+   "fix": "Agree in advance that coercion of one ally for a stated policy draws a joint response, and publish the rule.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "comms_cell",
+    "propaganda_dept"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 2,
+     "text": "State media opens a campaign against Japan and its prime minister.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "A travel advisory and an import halt hit Japan's seafood and tourism trades.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.7
+   }
+  },
+  {
+   "id": "W005",
+   "kind": "catalog",
+   "num": 5,
+   "title": "Resolution 2758",
+   "fullTitle": "Resolution 2758 (2026)",
+   "tier": 3,
+   "dimension": "Agency",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S30",
+    "S22",
+    "S24"
+   ],
+   "theater": [
+    "Legal",
+    "Association",
+    "Psychological",
+    "Information"
+   ],
+   "spine": "Legal",
+   "opponent": "The Party's legal offices",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2024,
+     6
+    ],
+    "end": [
+     2026,
+     9
+    ]
+   },
+   "label": "June 2024 to September 2026",
+   "brief": "In October 1971 the General Assembly voted to seat the People's Republic at the United Nations. The resolution never mentions Taiwan. The Party now reads it as if it did.",
+   "record": "Resolution 2758 of October 25, 1971 recognized the representatives of the People's Republic as the only legitimate representatives of China at the United Nations. It does not mention Taiwan and does not settle Taiwan's status. The Anti-Secession Law of 2005 set out the legal frame the Party uses for Taiwan. In June 2024 mainland courts, prosecutors and police issued guidelines that treat advocacy of Taiwan's independence as a crime. Police on the mainland have since posted bounties for named Taiwanese. In October 2025 the National People's Congress Standing Committee named 25 October Taiwan Restoration Day, the date of Resolution 2758.",
+   "reading": "A claim repeated by every official becomes a fact in the room even when the text says otherwise. This is Stratagem 30, make the host and the guest exchange places. The Party plays the guest who claims the house. Stratagem 22 shuts the door on a person who travels, because domestic law now reaches anyone it names. Stratagem 24 borrows the road, because a United Nations vote supplies the legal bridge.",
+   "gap": "Principles",
+   "gapText": "Architecture Principles. Allied governments had no common published reading of Resolution 2758, so each answered alone.",
+   "fix": "Publish one shared legal reading of the resolution, and answer each use of the claim with the text.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "legal_advisers",
+    "taiwan_office"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "The Taiwan Affairs Office announces that advocacy of independence is a crime.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Police post a bounty for a named Taiwanese.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.73
+   }
+  },
+  {
+   "id": "W006",
+   "kind": "catalog",
+   "num": 6,
+   "title": "Doubt About America",
+   "fullTitle": "Doubt About America (2026)",
+   "tier": 4,
+   "dimension": "Entropy",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S33",
+    "S35",
+    "S10"
+   ],
+   "theater": [
+    "Psychological",
+    "Information",
+    "Association",
+    "Cultural"
+   ],
+   "spine": "Psychological",
+   "opponent": "The Party's narrative network",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2021,
+     1
+    ],
+    "end": [
+     2026,
+     9
+    ]
+   },
+   "label": "2021 to 2026",
+   "brief": "In 2022 a rumor spread across Taiwan's social media that Washington would abandon the island when a war began. By 2023 researchers had counted dozens of versions.",
+   "record": "A Taiwanese research group, IORG, coded 84 distinct narratives that cast doubt on American reliability between 2021 and June 2023. It tied them to twelve trigger events and sorted them into eight types. It traced the amplification to Party media and to accounts inside Taiwan. A national university survey found that most residents describe themselves as Taiwanese only.",
+   "reading": "The goal is not a conversion. The goal is a habit of doubt. This is Stratagem 33, sow discord among the enemy, aimed at the bond between an island and its patron. Stratagem 35 chains many small rumors into one mood. Stratagem 10 wears a friendly face while it does so. The defense lies in the public's own sense of who it is.",
+   "gap": "Data",
+   "gapText": "Data Architecture. No one published which narratives were circulating, so each rumor met an audience that had never heard it named.",
+   "fix": "Publish a weekly public list of the narratives in circulation, with the evidence of who amplifies each.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "fact_checkers",
+    "narrative_network"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 2,
+     "text": "A rumor says Washington will abandon Taiwan in a crisis.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "The rumor returns with a new trigger event.",
+     "effects": [
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.76
+   }
+  },
+  {
+   "id": "W007",
+   "kind": "catalog",
+   "num": 7,
+   "title": "The Teapots",
+   "fullTitle": "The Teapots (2026)",
+   "tier": 4,
+   "dimension": "Topology",
+   "stage": "Extract",
+   "stratagems": [
+    "S3",
+    "S21",
+    "S11"
+   ],
+   "theater": [
+    "Financial",
+    "Economic",
+    "Legal",
+    "Data and Surveillance"
+   ],
+   "spine": "Financial",
+   "opponent": "The Party-state and Iran",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2025,
+     1
+    ],
+    "end": [
+     2026,
+     6
+    ]
+   },
+   "label": "2025 to June 2026",
+   "brief": "About one barrel in eight of the crude that refiners on the mainland bought in 2025 came from Iran.",
+   "record": "Iran sold about 1.4 million barrels a day to the mainland in 2025, at a discount of eight to ten dollars a barrel. That was between eighty and ninety percent of its exports. Independent refiners in Shandong province bought most of it. In April 2026 the United States Treasury designated Hengli Petrochemical, one of the large refiners, and said the revenue helped fund Iran's military.",
+   "reading": "The Party buys the oil. It does not give Iran a grant. The purchase is the lifeline, and the independent refiners are the buffer that lets the state say it took no part. This is Stratagem 3, kill with a borrowed knife. Stratagem 21 sheds the golden shell, because cargoes change names between the Gulf and the dock. Stratagem 11 gives up one refiner to save the system.",
+   "gap": "Technology",
+   "gapText": "Technology Architecture. Sanctions list companies, but the trade moves through a network that rebuilds itself after each listing.",
+   "fix": "Map the network as a graph and sanction its hubs together, and pair each designation with an offer to the buyer to switch suppliers.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State",
+    "Iran_Axis"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "treasury_office",
+    "independent_refiners",
+    "shadow_fleet"
+   ],
+   "pacts": [
+    "oil_shield"
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Cargoes change names and reach Shandong.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Financial",
+       "n": 1,
+       "by": "Iran_Axis"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Financial",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "The Treasury designates a large refiner.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Financial",
+       "n": 1
+      },
+      {
+       "type": "legitimacy",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.79
+   }
+  },
+  {
+   "id": "W008",
+   "kind": "catalog",
+   "num": 8,
+   "title": "The Leaked Wall",
+   "fullTitle": "The Leaked Wall (2026)",
+   "tier": 5,
+   "dimension": "Topology",
+   "stage": "Control",
+   "stratagems": [
+    "S31",
+    "S15",
+    "S19"
+   ],
+   "theater": [
+    "Data and Surveillance",
+    "Information",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Data and Surveillance",
+   "opponent": "The Party's surveillance industry",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2025,
+     9
+    ],
+    "end": [
+     2026,
+     6
+    ]
+   },
+   "label": "September 2025 to June 2026",
+   "brief": "In September 2025 hundreds of gigabytes of internal files from a company that builds the Great Firewall appeared online. The files showed that the wall had been packaged for sale.",
+   "record": "The files came from Geedge Networks and the MESA laboratory. They described the systems that filter and monitor traffic inside the mainland. They also showed that a version of those systems went to governments in several other countries. Researchers who study digital repression disagree about the cause. One leading study argues that the buyer's own policing priorities predict use better than the seller's intent.",
+   "reading": "The Party built a wall for its own people first. It then learned that the wall is also a product. This is Stratagem 31, the beauty trap run on money, because a buyer receives a capability and accepts a dependency. Stratagem 15 lures the tiger down the mountain by selling the tools where the buyer's own appetite supplies the demand. Stratagem 19 removes the firewood, since a government that can see everything can starve a movement before it forms. The record also supports a plainer reading. Many buyers wanted the wall.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. Export controls cover chips and not the integration services that turn parts into a system.",
+   "fix": "Extend export review to surveillance integration services, and publish the list of end users that are denied.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "export_offices",
+    "data_bureau"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Internal files from a firewall vendor appear online.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "A new customer government signs for a filtering system.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.83
+   }
+  },
+  {
+   "id": "W009",
+   "kind": "catalog",
+   "num": 9,
+   "title": "The Cable Survey",
+   "fullTitle": "The Cable Survey (2026)",
+   "tier": 5,
+   "dimension": "Criticality",
+   "stage": "Control",
+   "stratagems": [
+    "S8",
+    "S18",
+    "S5"
+   ],
+   "theater": [
+    "Cyber",
+    "Kinetic",
+    "Economic",
+    "Data and Surveillance"
+   ],
+   "spine": "Cyber",
+   "opponent": "The Party's survey and cyber services",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2023,
+     2
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "February 2023 to October 2026",
+   "brief": "In February 2023 both subsea cables that connect Taiwan's Matsu islands to the main island stopped carrying data.",
+   "record": "Both Matsu cables stopped working in February 2023. In February 2024 the American cyber agency and its Five Eyes partners reported that state-sponsored hackers working for the People's Republic had gained persistent access to American critical infrastructure and could use it to disrupt service in a major crisis. In September 2026 the Philippine Coast Guard assessed that Party survey ships had worked near subsea cables off the Batanes islands from September 9 to 15 and again from September 22 to October 1.",
+   "reading": "A cable is a thin line that carries a whole domain. Survey work looks like science and maps exactly where a cut would hurt. This is Stratagem 8, openly repair the gallery roads and march secretly through Chencang. Stratagem 18 captures the ringleader, because one hub can silence many users. Stratagem 5 loots a burning house, because the first day of a crisis is the day the defender's attention is elsewhere.",
+   "gap": "Technology",
+   "gapText": "Technology Architecture. A small island depends on two cables and one microwave link, and no policy owns the repair ships.",
+   "fix": "Pair redundancy with prosecution. Add landing points and pre-contracted repair vessels, and treat a deliberate cut as an act that earns a named response.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "cyber_operators",
+    "cable_owners",
+    "survey_fleet"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "A survey ship works near a cable landing.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "A cable stops carrying data.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 2,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "dropShields",
+       "faction": "USA_Allies",
+       "domain": "Cyber"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.01
+   }
+  },
+  {
+   "id": "W010",
+   "kind": "catalog",
+   "num": 10,
+   "title": "The Refusal",
+   "fullTitle": "The Refusal (2026)",
+   "tier": 5,
+   "dimension": "Asymmetry",
+   "stage": "Extract",
+   "stratagems": [
+    "S32",
+    "S14",
+    "S36"
+   ],
+   "theater": [
+    "AI and Cognitive",
+    "Economic",
+    "Legal",
+    "Data and Surveillance"
+   ],
+   "spine": "AI and Cognitive",
+   "opponent": "The Party's technology planners",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2025,
+     10
+    ],
+    "end": [
+     2026,
+     6
+    ]
+   },
+   "label": "October 2025 to June 2026",
+   "brief": "In 2025 Washington cleared an advanced American AI chip for sale to firms on the mainland. Beijing's regulators discouraged the firms from buying it.",
+   "record": "The American government loosened its controls on one advanced AI chip, the H200, in late 2025. Regulators in Beijing then discouraged domestic firms from buying it, in line with a policy of self-reliance in chips. American prosecutors have charged people with smuggling restricted chips to the mainland, and the cases remain allegations until proven. In October 2025 Beijing began issuing a K visa for young foreign science and technology talent.",
+   "reading": "A buyer who refuses to buy is bargaining. The Party wants the capacity and the independence, and it will pay in time to get both. The Party uses Stratagem 36 on purpose. Its name is if all else fails, retreat. Stratagem 32 shows an empty fortress, because a state that appears to need nothing negotiates from strength. Stratagem 14 borrows a corpse to resurrect the soul, because restricted chips and open models return under new names.",
+   "gap": "Application",
+   "gapText": "Application Architecture. Export controls check the buyer's name and not the use the chip is put to.",
+   "fix": "Pair know-your-customer checks with shared audits of large clusters, and publish the penalties.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "frontier_lab",
+    "chip_fund"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Regulators tell domestic firms to hold off on the American chip.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "AI and Cognitive",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "A smuggling network is charged in an American court.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "AI and Cognitive",
+       "n": 1
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "AI and Cognitive",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.87
+   }
+  },
+  {
+   "id": "W011",
+   "kind": "catalog",
+   "num": 11,
+   "title": "The Summit Season",
+   "fullTitle": "The Summit Season (2026)",
+   "tier": 6,
+   "dimension": "Coherence",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S23",
+    "S2",
+    "S34"
+   ],
+   "theater": [
+    "Association",
+    "Kinetic",
+    "Legal",
+    "Psychological"
+   ],
+   "spine": "Association",
+   "opponent": "The Party-state and the Kremlin",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2026,
+     4
+    ],
+    "end": [
+     2026,
+     11
+    ]
+   },
+   "label": "April to November 2026",
+   "brief": "In April 2026 the chair of Taiwan's Nationalist Party sat down with Xi Jinping. A package of American arms for Taiwan was already on hold.",
+   "record": "The Nationalist Party chair met Xi Jinping in April 2026. A package of arms for Taiwan worth about fourteen billion dollars had not been formally notified to Congress. The Asia-Pacific Economic Cooperation summit is set for Shenzhen in November 2026, and Vladimir Putin is due to attend. After a Trump-Xi summit in Beijing in May, the United States paused a record package of arms for Taiwan. In late September Xi made a state visit to Washington, and the two sides extended their trade truce by a few months. Both leaders intend to attend the Shenzhen summit on 18 and 19 November.",
+   "reading": "The Party trades at summits and keeps the strategy. This is Stratagem 23, befriend a distant state while attacking a neighbor. A warm meeting with Washington leaves Taipei, Tokyo and Manila to wonder what was traded. Stratagem 2 besieges Wei to rescue Zhao, so pressure on an ally relieves pressure elsewhere. Stratagem 34 rewards a self-inflicted wound, because a held arms package costs the holder and buys the other side a better meeting.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. No standing channel ensures that an ally hears the terms of a summit before it ends.",
+   "fix": "Create a standing allied consultation that runs before and after every summit, and publish what was traded.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State",
+    "Russia_Proxies"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "summit_team",
+    "liaison_dept",
+    "influence_service"
+   ],
+   "pacts": [
+    "partnership"
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "A summit opens and a package of arms for Taiwan stays on hold.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "The two partners appear together at a second summit.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1,
+       "by": "Russia_Proxies"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.92
+   }
+  },
+  {
+   "id": "W012",
+   "kind": "catalog",
+   "num": 12,
+   "title": "The Unsupplied Data",
+   "fullTitle": "The Unsupplied Data (2025)",
+   "tier": 6,
+   "dimension": "Entropy",
+   "stage": "Extract",
+   "stratagems": [
+    "S20",
+    "S16",
+    "S27"
+   ],
+   "theater": [
+    "Biological",
+    "Information",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Biological",
+   "opponent": "The Party's health authorities",
+   "world": null,
+   "arc": "The Seams",
+   "when": {
+    "start": [
+     2020,
+     1
+    ],
+    "end": [
+     2025,
+     6
+    ]
+   },
+   "label": "2020 to June 2025",
+   "brief": "In June 2025 an advisory group of the World Health Organization published its assessment of how the COVID-19 virus began. It listed the data it had asked for and never received.",
+   "record": "The WHO Scientific Advisory Group for the Origins of Novel Pathogens published its assessment on June 27, 2025. It reported that data it requested from the authorities in Beijing were not supplied. It did not decide between a natural spillover and a laboratory accident. A majority staff report of a House subcommittee reached a laboratory conclusion in December 2024, and the minority dissented.",
+   "reading": "The record shows what was withheld. It does not show why. This is Stratagem 20, muddy the waters to catch the fish, because a gap in the data becomes room for every theory. Stratagem 16 lets a little go to keep the inquiry cooperative while the key records stay shut. Stratagem 27 feigns confusion while holding the records. A reader should hold the withholding as fact and the origin as an open question.",
+   "gap": "Data",
+   "gapText": "Data Architecture. The international health rules have no means to compel a state to hand over what an inquiry requests.",
+   "fix": "Make data-sharing terms a condition of funding and of seats on inquiry panels, and publish each request and each reply.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "health_security",
+    "health_commission"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "A request for data goes unanswered.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Two official reports reach opposite conclusions.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Biological",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.8
+   }
+  },
+  {
+   "id": "W013",
+   "kind": "watch",
+   "num": 13,
+   "title": "The Ballot",
+   "fullTitle": "The Ballot (2026)",
+   "tier": 4,
+   "dimension": "Phase",
+   "stage": "Control",
+   "stratagems": [
+    "S7",
+    "S29",
+    "S20"
+   ],
+   "theater": [
+    "Information",
+    "Psychological",
+    "Data and Surveillance",
+    "Association"
+   ],
+   "spine": "Information",
+   "opponent": "The Party's influence agencies",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2026,
+     4
+    ],
+    "end": [
+     2026,
+     11
+    ]
+   },
+   "label": "April to November 2026",
+   "brief": "On 28 November 2026 Taiwan elects 22 mayors and magistrates and 11,051 local officials in all. By 8 September its Investigation Bureau had already opened 54 cases of suspected foreign interference and electoral fraud.",
+   "record": "Taiwan holds its local elections on 28 November 2026. By 8 September its Investigation Bureau had opened 54 cases of suspected foreign interference and electoral fraud, and prosecutors had tracked more than 200 suspicious financial transactions. The National Security Bureau warned in April 2026 that Beijing would interfere in the vote. The record ends here. The vote has not yet taken place.",
+   "reading": "Scenario, not record. The Party gains most when voters doubt the count, whoever wins. This is Stratagem 20, muddy the waters to catch the fish. Stratagem 7 builds a scandal from nothing, and Stratagem 29 decks the tree with false blossoms. The contest is between Taiwan's own parties and the game takes no side. The threat is the campaign from outside.",
+   "gap": "Data",
+   "gapText": "Data Architecture. No public register tells voters which claims are circulating or who amplifies them.",
+   "fix": "Publish a daily list of false claims in circulation during the campaign, with the evidence of who amplified each, and certify results on a fixed timetable.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "fact_checkers",
+    "taiwan_office",
+    "narrative_network"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Scenario. Foreign-linked accounts push a claim about the vote.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Scenario. A rumor about the count spreads.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 8,
+     "text": "Scenario. Election night brings a surge of doubt about the count.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Information",
+       "n": 3,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "status": "open",
+   "settleOn": "2026-11-29",
+   "rules": {
+    "handScale": 0.81
+   }
+  },
+  {
+   "id": "W014",
+   "kind": "catalog",
+   "num": 14,
+   "title": "The Special Budget",
+   "fullTitle": "The Special Budget (2026)",
+   "tier": 6,
+   "dimension": "Coherence",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S33",
+    "S9",
+    "S4"
+   ],
+   "theater": [
+    "Financial",
+    "Association",
+    "Psychological",
+    "Legal"
+   ],
+   "spine": "Financial",
+   "opponent": "The Party-state",
+   "world": null,
+   "arc": "The Strait",
+   "when": {
+    "start": [
+     2026,
+     5
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "May 2026 to October 2026",
+   "brief": "In May 2026 Taiwan's legislature passed a special defense budget of NT$780 billion. The executive had asked for NT$1.25 trillion.",
+   "record": "Taiwan's legislature passed a special defense budget bill of NT$780 billion, about US$26 billion. The executive had proposed NT$1.25 trillion. The opposition had favored a framework of NT$380 billion plus additions. Analysts tied the final amount to American pressure before the Trump-Xi summit in Beijing. Taiwan's 2027 defense budget is set to exceed 3 percent of gross domestic product for the first time, and President Lai has pledged 5 percent by 2030.",
+   "reading": "A divided government can fund deterrence when an outside deadline sets the price. The Party gains from every month the price stays in dispute. This is the shape of Stratagem 33, sow discord among the enemy, whether or not Beijing caused the dispute. Stratagem 9 watches the fire from across the river while Taipei argues. Stratagem 4 waits at ease for a weary opponent. The record shows the amount and not the motive.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. No standing rule let the executive and the legislature agree a defense price before an outside deadline set it.",
+   "fix": "Agree a multiyear defense funding floor in advance of each summit season, and publish it.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "summit_team",
+    "taiwan_office",
+    "narrative_network"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "The executive and the legislature split over the price of deterrence.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Financial",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "An outside deadline sets the price at a lower figure.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Financial",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 7,
+     "text": "The price stays in dispute for another month.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Psychological",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.07
+   }
+  },
+  {
+   "id": "W015",
+   "kind": "catalog",
+   "num": 15,
+   "title": "The Shadow Fleet",
+   "fullTitle": "The Shadow Fleet (2026)",
+   "tier": 4,
+   "dimension": "Entropy",
+   "stage": "Extract",
+   "stratagems": [
+    "S21",
+    "S12",
+    "S36"
+   ],
+   "theater": [
+    "Economic",
+    "Financial",
+    "Legal",
+    "Data and Surveillance"
+   ],
+   "spine": "Economic",
+   "opponent": "The Party-state and Iran",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2026,
+     9
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "September to October 2026",
+   "brief": "On 8 October 2026 the United States Treasury listed 17 ships and 17 companies in Iran's oil and petrochemical trade. It said the action neutralizes most of Iran's shadow fleet.",
+   "record": "On 8 October 2026 the United States Treasury designated 17 vessels and 17 companies under Executive Order 13902. The owners included firms based on the mainland and in Hong Kong. The vessels flew the flags of 12 jurisdictions, Hong Kong among them. Treasury also removed two vessels from the list. Treasury said the action effectively neutralizes the vast majority of Iran's remaining shadow fleet and gave no volume.",
+   "reading": "A list is a snapshot and a network is a process. A listed ship can change its name, its flag and its owner. This is Stratagem 21, slough off the cicada's golden shell. Stratagem 12 pilfers a goat, so each small cargo takes the discount and the risk spreads across many hulls. Stratagem 36 retreats the moment a ship is named. Treasury's claim can be tested against Iranian export volumes, and no volume has been published.",
+   "gap": "Data",
+   "gapText": "Data Architecture. A list records hulls and owners at one date, so it cannot show the network that replaces them.",
+   "fix": "Publish the list as a graph with the date each link was observed, and score each round of designations against export volumes at a fixed later date.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State",
+    "Iran_Axis"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "treasury_office",
+    "independent_refiners",
+    "shadow_fleet"
+   ],
+   "pacts": [
+    "oil_shield"
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Ships change names and flags after the designations.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "Iran_Axis"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Treasury lists more ships and companies.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1
+      },
+      {
+       "type": "legitimacy",
+       "faction": "Iran_Axis",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.65
+   }
+  },
+  {
+   "id": "W016",
+   "kind": "catalog",
+   "num": 16,
+   "title": "The Seized Botnet",
+   "fullTitle": "The Seized Botnet (2026)",
+   "tier": 5,
+   "dimension": "Topology",
+   "stage": "Control",
+   "stratagems": [
+    "S13",
+    "S10",
+    "S22"
+   ],
+   "theater": [
+    "Cyber",
+    "Data and Surveillance",
+    "Legal",
+    "Information"
+   ],
+   "spine": "Cyber",
+   "opponent": "The Party's cyber contractors",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2026,
+     9
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "September to October 2026",
+   "brief": "On 8 October 2026 the Justice Department seized six internet domains that it says a mainland contractor used to scan for weak systems and to phish Taiwanese universities.",
+   "record": "On 8 October 2026 the Justice Department and the FBI obtained a court order in the Western District of Pennsylvania. It seized one domain used for vulnerability scanning and five used for spear-phishing. The scanning tool worked through a botnet of internet-connected devices. The department attributed the tools to a group it calls Flax Typhoon and to a mainland contractor. That attribution is an allegation and no court has ruled on it. The named targets included a South Carolina power company and an NGO. They also included airports in Japan and Poland. Others were Taiwanese gas and power companies and universities. The foreign ministry in Beijing told the United States to quit its double standards.",
+   "reading": "The seizure removes the tools and leaves the people who built them. A scanning botnet and a phishing kit are reconnaissance, and the record reports no attack effect. This is Stratagem 13, stomp the grass to scare the snake, because probing shows a defender where to look and what moves. Stratagem 10 hides the knife behind a smile in an ordinary email. Stratagem 22 shuts the door to catch the thief, and a court order is the door. The record shows the seizure and not the intent. The attribution stays an allegation.",
+   "gap": "Technology",
+   "gapText": "Technology Architecture. A seizure takes domains and leaves the operators free to register new ones.",
+   "fix": "Pair each seizure with shared indicators for the allied networks, and publish what the seized tools targeted so that victims can check.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "cyber_operators",
+    "justice_fbi",
+    "cyber_contractors"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "A scanning tool probes a utility network.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Phishing emails reach university inboxes.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.06
+   }
+  }
+ ],
+ "arcs": [
+  {
+   "id": "the-strait",
+   "name": "The Strait",
+   "span": "2023 to 2026",
+   "blurb": "The Taiwan Strait, from the coast guard's circles to the summit table.",
+   "nodes": [
+    "W002",
+    "W005",
+    "W006",
+    "W009",
+    "W011",
+    "W014"
+   ]
+  },
+  {
+   "id": "the-seams",
+   "name": "The Seams",
+   "span": "2004 to 2026",
+   "blurb": "The places where allies, trade, data and law meet. The method works through each of them.",
+   "nodes": [
+    "W001",
+    "W003",
+    "W004",
+    "W007",
+    "W008",
+    "W010",
+    "W012"
+   ]
+  }
+ ],
+ "taxonomy": {
+  "domains": [
+   "Kinetic",
+   "Economic",
+   "Financial",
+   "Information",
+   "Psychological",
+   "Legal",
+   "Association",
+   "Cyber",
+   "Cultural",
+   "AI and Cognitive",
+   "Biological",
+   "Data and Surveillance"
+  ],
+  "stratagems": [
+   {
+    "code": "S1",
+    "name": "deceive the heavens to cross the sea",
+    "group": "Superiority"
+   },
+   {
+    "code": "S2",
+    "name": "besiege Wei to rescue Zhao",
+    "group": "Superiority"
+   },
+   {
+    "code": "S3",
+    "name": "kill with a borrowed knife",
+    "group": "Superiority"
+   },
+   {
+    "code": "S4",
+    "name": "wait at ease for the weary enemy",
+    "group": "Superiority"
+   },
+   {
+    "code": "S5",
+    "name": "loot a burning house",
+    "group": "Superiority"
+   },
+   {
+    "code": "S6",
+    "name": "make a sound in the east, strike in the west",
+    "group": "Superiority"
+   },
+   {
+    "code": "S7",
+    "name": "create something from nothing",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S8",
+    "name": "openly repair the gallery roads and march secretly through Chencang",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S9",
+    "name": "watch the fire from across the river",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S10",
+    "name": "hide a knife behind a smile",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S11",
+    "name": "sacrifice the plum tree to preserve the peach",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S12",
+    "name": "take the opportunity to pilfer a goat",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S13",
+    "name": "stomp the grass to scare the snake",
+    "group": "Attack"
+   },
+   {
+    "code": "S14",
+    "name": "borrow a corpse to resurrect the soul",
+    "group": "Attack"
+   },
+   {
+    "code": "S15",
+    "name": "lure the tiger down the mountain",
+    "group": "Attack"
+   },
+   {
+    "code": "S16",
+    "name": "let the enemy off in order to catch them",
+    "group": "Attack"
+   },
+   {
+    "code": "S17",
+    "name": "cast a brick to attract jade",
+    "group": "Attack"
+   },
+   {
+    "code": "S18",
+    "name": "capture the ringleader to disband the bandits",
+    "group": "Attack"
+   },
+   {
+    "code": "S19",
+    "name": "remove the firewood from under the pot",
+    "group": "Confusion"
+   },
+   {
+    "code": "S20",
+    "name": "muddy the waters to catch the fish",
+    "group": "Confusion"
+   },
+   {
+    "code": "S21",
+    "name": "slough off the cicada's golden shell",
+    "group": "Confusion"
+   },
+   {
+    "code": "S22",
+    "name": "shut the door to catch the thief",
+    "group": "Confusion"
+   },
+   {
+    "code": "S23",
+    "name": "befriend a distant state while attacking a neighbor",
+    "group": "Confusion"
+   },
+   {
+    "code": "S24",
+    "name": "borrow the road to conquer Guo",
+    "group": "Confusion"
+   },
+   {
+    "code": "S25",
+    "name": "replace the beams with rotten timbers",
+    "group": "Control"
+   },
+   {
+    "code": "S26",
+    "name": "point at the mulberry while cursing the locust",
+    "group": "Control"
+   },
+   {
+    "code": "S27",
+    "name": "feign madness without losing balance",
+    "group": "Control"
+   },
+   {
+    "code": "S28",
+    "name": "lure the enemy onto the roof and remove the ladder",
+    "group": "Control"
+   },
+   {
+    "code": "S29",
+    "name": "deck the tree with false blossoms",
+    "group": "Control"
+   },
+   {
+    "code": "S30",
+    "name": "make the host and the guest exchange places",
+    "group": "Control"
+   },
+   {
+    "code": "S31",
+    "name": "the beauty trap, run on money",
+    "group": "Desperation"
+   },
+   {
+    "code": "S32",
+    "name": "the empty fortress",
+    "group": "Desperation"
+   },
+   {
+    "code": "S33",
+    "name": "sow discord among the enemy",
+    "group": "Desperation"
+   },
+   {
+    "code": "S34",
+    "name": "inflict injury on yourself to win trust",
+    "group": "Desperation"
+   },
+   {
+    "code": "S35",
+    "name": "chain the stratagems",
+    "group": "Desperation"
+   },
+   {
+    "code": "S36",
+    "name": "if all else fails, retreat",
+    "group": "Desperation"
+   }
+  ],
+  "stages": [
+   "Attract",
+   "Accommodate",
+   "Control",
+   "Extract",
+   "Consume",
+   "Defense",
+   "Mirror",
+   "Doctrine"
+  ],
+  "tiers": [
+   {
+    "tier": 1,
+    "title": "Recruit"
+   },
+   {
+    "tier": 2,
+    "title": "Operative"
+   },
+   {
+    "tier": 3,
+    "title": "Analyst"
+   },
+   {
+    "tier": 4,
+    "title": "Strategist"
+   },
+   {
+    "tier": 5,
+    "title": "Commander"
+   },
+   {
+    "tier": 6,
+    "title": "Doctrine Master"
+   }
+  ]
+ },
+ "dailyEpoch": "2026-09-30"
+}
