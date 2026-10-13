@@ -444,6 +444,14 @@
   const slopeBonusFor = (S, v, d) => ((S.ledger[v].traits.slopeProne || []).includes(d) ? 1 : 0);
 
   // Leverage each actor will bank at the end of this turn from ground it holds against the player.
+  // Holdings (Revision 33). A holding costs its holder every turn and denies the rival part of its gain.
+  // It is consuming where its cost is more than its denial. Giving one up can raise what the others cost (couples),
+  // and keeping one can raise what the others cost while it stands (strains).
+  const holdingsOf = (S) => S.holdings || [];
+  const liveHoldings = (S) => holdingsOf(S).filter((h) => h.active);
+  const holdingCost = (S, h) => Math.min(3, h.cost + (h.raised || 0) + liveHoldings(S).filter((o) => o !== h && o.strains.includes(h.id)).length);
+  const isConsuming = (S, h) => holdingCost(S, h) > h.denial;
+  const denialOf = (S, a) => liveHoldings(S).reduce((x, h) => x + (!h.denies || h.denies === a ? h.denial : 0), 0);
   function leverageFlow(S) {
     const gain = {};
     for (const a of actorsOf(S)) gain[a] = 0;
@@ -455,6 +463,7 @@
       if (d === S.op.spine && p >= 3 && !S.lever.exposed) g += 1;
       if (g) { const a = topAggressor(S, S.player, d); gain[a] = (gain[a] || 0) + g; }
     }
+    for (const a of Object.keys(gain)) if (gain[a]) gain[a] = Math.max(0, gain[a] - denialOf(S, a));
     return gain;
   }
   function cadreLegitFlow(S) {
@@ -592,6 +601,10 @@
       stats: { detects: 0, disrupts: 0, defends: 0, absorbed: 0, offersTaken: 0, capturedDomains: 0 },
     };
     S.rng = hashSeed(`${S.seed}|${op.id}|${tier}`);
+    // Holdings, when the operation has them. An operation without them carries no extra state.
+    if (Array.isArray(op.holdings) && op.holdings.length) {
+      S.holdings = op.holdings.map((h) => ({ id: h.id, name: h.name || h.id, domain: h.domain, cost: clamp(Math.round(h.cost || 0), 0, 3), denial: clamp(Math.round(h.denial || 0), 0, 3), couples: (h.couples || []).slice(), strains: (h.strains || []).slice(), raised: 0, denies: h.denies || null, text: h.text || '', yieldText: h.yieldText || '', onYield: clone(h.onYield || []), active: true }));
+    }
     for (const d of DOMAINS) S.domainState[d] = blankDomain(S.factions, theater.includes(d));
     attach(S);
     // Criticality: the lever always bears load. The dimension adds the best-linked theater domain.
@@ -668,7 +681,7 @@
     if (!e || typeof e !== 'object') return;
     const f = e.faction;
     switch (e.type) {
-      case 'legitimacy': addLegitimacy(S, f, e.n, ev, e.why || 'event'); break;
+      case 'legitimacy': { const got = addLegitimacy(S, f, e.n, ev, e.why || 'event'); if (e.self && got) ev.push({ k: 'self', f, type: e.self, why: e.selfWhy || e.why || 'event', n: got }); break; }
       case 'shield': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const before = D.shields[f]; D.shields[f] = clamp(before + e.n, 0, MAX_S); if (D.shields[f] !== before) ev.push({ k: 'shield', d: e.domain, n: D.shields[f] - before, total: D.shields[f], f, event: true }); } break;
       case 'dropShields': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const k = D.shields[f]; D.shields[f] = 0; if (k) ev.push({ k: 'drain', d: e.domain, n: k, src: e.why || 'event', f }); } break;
       case 'pressure': if (S.ledger[f] && DOMAINS.includes(e.domain)) press(S, f, e.domain, e.n, ev, e.why || 'event', { spill: true, by: S.ledger[e.by] ? e.by : null }); break;
@@ -1169,6 +1182,7 @@
       o.domains[d] = x;
     }
     for (const c of S.cadres) if (c.faction === S.player && c.active !== false && !c.fixed && !(c.lock > 0) && !c.moved && S.ap >= 1) o.assign[c.id] = 1;
+    if (holdingsOf(S).length) { o.yield = {}; for (const h of liveHoldings(S)) if (S.ap >= 1) o.yield[h.id] = 1; }
     return o;
   }
 
@@ -1355,6 +1369,20 @@
         log(S, `Doctrine: ${DOCTRINES[code].name}. ${DOCTRINES[code].text}`);
         break;
       }
+      case 'yield': {
+        const h = holdingsOf(S).find((x) => x.id === a.holding);
+        if (!h) throw new Error('No such holding.');
+        if (!h.active) throw new Error(`You already gave up ${h.name}.`);
+        spend(1);
+        const was = holdingCost(S, h);
+        h.active = false;
+        for (const id of h.couples) { const o2 = holdingsOf(S).find((x) => x.id === id && x.active); if (o2) o2.raised = (o2.raised || 0) + 1; }
+        for (const e of h.onYield || []) applyEffect(S, e, ev);
+        ev.push({ k: 'yield', id: h.id, name: h.name, d: h.domain, cost: was, denial: h.denial });
+        S.flags.acts.push('yield');
+        log(S, h.yieldText || `You give up ${h.name}. It no longer costs you and no longer denies the rival.`);
+        break;
+      }
       case 'end': return endTurn(S);
       default: throw new Error('Unknown action.');
     }
@@ -1436,6 +1464,19 @@
     }
     // A pact in force pays out each turn: shared credit, a creeping slope, whatever its terms say.
     for (const p of S.pacts) if (p.active) for (const e of p.perTurn || []) if (due(S, e)) applyEffect(S, e, ev);
+    // Holdings: each live one costs its holder. Shields go first and then pressure.
+    for (const h of liveHoldings(S)) {
+      const cost = holdingCost(S, h);
+      if (!cost) continue;
+      const D = S.domainState[h.domain];
+      const take = Math.min(cost, D.shields[S.player]);
+      if (take) { D.shields[S.player] -= take; ev.push({ k: 'drain', d: h.domain, n: take, src: 'holding', f: S.player }); }
+      if (cost > take) press(S, S.player, h.domain, cost - take, ev, 'holding', { by: null });
+      const consuming = isConsuming(S, h);
+      ev.push({ k: 'upkeep', id: h.id, name: h.name, d: h.domain, n: cost, denial: h.denial, consuming });
+      if (consuming) ev.push({ k: 'self', f: S.player, type: 'overextension', why: h.name, n: cost });
+      log(S, consuming ? `Holding ${h.name} costs ${cost} this turn and denies ${h.denial}.` : `Holding ${h.name} costs ${cost} this turn.`);
+    }
     // Internal friction: a faction that cannot act as one loses coherence on a schedule.
     const fr = S.ledger[S.player].traits.friction;
     if (fr && S.turn % (fr.every || 3) === 0 && !hasLens(S, 'Entropy')) addCoherence(S, -(fr.n || 1), ev, 'internal friction');
@@ -1447,6 +1488,7 @@
       for (const a of actorsOf(S)) if (!S.flags.costly[a]) addLegitimacy(S, a, R.cleanTurn, ev, 'clean turn');
       const flow = cadreLegitFlow(S);
       for (const f of S.factions) if (flow[f]) addLegitimacy(S, f, flow[f], ev, 'standing');
+      for (const c of liveCadres(S)) if (c.mods && c.mods.self && c.mods.legitimacy < 0) ev.push({ k: 'self', f: c.faction, type: c.mods.self, why: c.name, n: c.mods.legitimacy });
       for (const f of S.factions) {
         const state = entropyState(S, f);
         if (state === 'stable') continue;
@@ -1539,12 +1581,13 @@
       tier: S.tier, turn: S.turn, maxTurns: S.maxTurns, dates: S.dates, bursts: S.dim === 'Phase' ? [3, 6, 9].filter((t) => t <= S.maxTurns) : [],
       ap: S.ap, coherence: S.coherence, leverage: S.leverage, consumeAt: S.consumeAt, thresholds: thresholds(S), stage: S.stage, stageName: STAGES[Math.min(S.stage, 4)],
       board, intents, lever: { named: S.lever.named, exposed: S.lever.exposed, correct: S.lever.correct },
-      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign }, apPenaltyNext: S.apPenalty,
+      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign, ...(opt.yield ? { yield: opt.yield } : {}) }, apPenaltyNext: S.apPenalty,
       log: S.log.slice(-30), history: S.history, over: S.over, spine: S.over ? S.op.spine : undefined,
       player: S.player, factions, boards, multi: S.factions.length > 2,
       cadres: S.cadres.filter((c) => c.active !== false).map((c) => ({ id: c.id, name: c.name, role: c.role, faction: c.faction, domain: c.domain, locked: c.lock > 0, mine: c.faction === S.player, movable: !!opt.assign[c.id], mods: c.mods, blurb: c.blurb })),
       pacts: S.pacts.map((p) => ({ id: p.id, name: p.name, members: p.members, against: p.against, active: p.active, broken: p.broken })),
       rules: { legitimacy: S.rules.legitimacy, spikeBelow: S.rules.legit.spikeBelow },
+      ...(S.holdings ? { holdings: S.holdings.map((h) => ({ id: h.id, name: h.name, domain: h.domain, cost: holdingCost(S, h), baseCost: h.cost, denial: h.denial, consuming: isConsuming(S, h), active: h.active, couples: h.couples, strains: h.strains, text: h.text, canYield: !!(opt.yield && opt.yield[h.id]), yieldLegitimacy: h.onYield.filter((e) => e.type === 'legitimacy' && e.faction === S.player).reduce((x, e) => x + e.n, 0) })) } : {}),
     };
   }
 
@@ -1571,6 +1614,7 @@
   function validate(op, registry = {}) {
     const bad = [];
     const reg = registry || {};
+    const SELF_TYPES = ['predation on own base', 'overextension', 'purge of own capacity', 'breach of own legitimating rule', 'withdrawal of own commitment'];
     if (!op || typeof op !== 'object') return ['not an operation'];
     if (!DIMENSIONS[op.dimension]) bad.push(`unknown dimension ${op.dimension}`);
     if (op.kind != null && !['catalog', 'futures', 'watch'].includes(op.kind)) bad.push(`unknown kind ${op.kind}`);
@@ -1602,6 +1646,7 @@
       if (!(reg.cadres && reg.cadres[id]) && typeof c === 'string') bad.push(`cadre ${id} is not in the registry`);
       if (op.factions && !ids.includes(def.faction)) bad.push(`cadre ${id} belongs to ${def.faction}, who is not in this operation`);
       if (!DOMAINS.includes(def.domain)) bad.push(`cadre ${id} sits in unknown domain ${def.domain}`);
+      if (def.mods && def.mods.self != null && !SELF_TYPES.includes(def.mods.self)) bad.push(`cadre ${id} names an unknown self-act type ${def.mods.self}`);
     }
     for (const p of op.pacts || []) {
       const id = typeof p === 'string' ? p : p.id;
@@ -1614,9 +1659,21 @@
       if (!['legitimacy', 'shield', 'dropShields', 'pressure', 'slope', 'coherence', 'leverage', 'tempo', 'pact', 'cadre', 'log'].includes(e.type)) bad.push(`${where}: unknown effect ${e.type}`);
       if (e.domain != null && !DOMAINS.includes(e.domain)) bad.push(`${where}: unknown domain ${e.domain}`);
       if (e.faction != null && op.factions && !ids.includes(e.faction)) bad.push(`${where}: faction ${e.faction} is not in the operation`);
+      if (e.self != null && !SELF_TYPES.includes(e.self)) bad.push(`${where}: unknown self-act type ${e.self}`);
     };
     for (const s of op.script || []) { if (!Number.isInteger(s.turn) || s.turn < 1) bad.push('script entry needs a turn'); (s.effects || []).forEach((e) => effectOk(e, `script turn ${s.turn}`)); }
     for (const p of op.pacts || []) { const def = { ...((reg.pacts && reg.pacts[typeof p === 'string' ? p : p.id]) || {}), ...(typeof p === 'string' ? {} : p) }; for (const k of ['onForm', 'onBreak', 'perTurn']) (def[k] || []).forEach((e) => effectOk(e, `pact ${def.id} ${k}`)); }
+    const hids = [];
+    for (const h of op.holdings || []) {
+      if (!h || typeof h.id !== 'string' || !ID_RE.test(h.id) || FORBIDDEN_ID.has(h.id)) { bad.push(`bad holding id ${h && h.id}`); continue; }
+      if (hids.includes(h.id)) bad.push(`duplicate holding id ${h.id}`);
+      hids.push(h.id);
+      if (!DOMAINS.includes(h.domain)) bad.push(`holding ${h.id} sits in unknown domain ${h.domain}`);
+      for (const k of ['cost', 'denial']) if (!Number.isInteger(h[k]) || h[k] < 0 || h[k] > 3) bad.push(`holding ${h.id} needs a ${k} from 0 to 3`);
+      if (h.denies != null && !ids.includes(h.denies)) bad.push(`holding ${h.id} denies ${h.denies}, who is not in this operation`);
+      (h.onYield || []).forEach((e) => effectOk(e, `holding ${h.id} onYield`));
+    }
+    for (const h of op.holdings || []) for (const k of ['couples', 'strains']) for (const c of h[k] || []) if (!hids.includes(c) || c === h.id) bad.push(`holding ${h.id} ${k} an unknown holding ${c}`);
     return bad;
   }
 
@@ -1933,6 +1990,7 @@
     if (action.intent != null) clean.intent = Number(action.intent);
     if (action.domain != null) clean.domain = String(action.domain);
     if (action.cadre != null) clean.cadre = String(action.cadre);
+    if (action.holding != null) clean.holding = String(action.holding);
     const S = JSON.parse(JSON.stringify(run.state));
     let events;
     try { events = E.act(S, clean); } catch (e) { fail(400, e.message); }
@@ -2900,6 +2958,16 @@
     return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders</div><ul>${rows}</ul></section>`;
   }
 
+  function holdingsHtml(v) {
+    if (!v.holdings || !v.holdings.length) return '';
+    const rows = v.holdings.map((h) => {
+      const state = !h.active ? 'given up' : h.consuming ? 'consuming' : 'sustainable';
+      const raised = h.active && h.cost > h.baseCost ? ` · cost up ${h.cost - h.baseCost}` : '';
+      return `<li class="holding ${h.active ? '' : 'gone'} ${h.active && h.consuming ? 'consuming' : ''}"><div><b>${esc(h.name)}</b> <span class="chip2 hstate">${state}</span></div><div class="small">${icon(h.domain)} ${esc(h.domain)} · costs ${h.cost} a turn${raised} · denies ${h.denial}</div>${h.text ? `<div class="small muted">${esc(h.text)}</div>` : ''}${h.canYield ? `<button type="button" data-yield="${esc(h.id)}">Give up · 1 action</button>` : ''}</li>`;
+    }).join('');
+    return `<section class="holdings" aria-label="Holdings"><div class="label">Holdings</div><ul>${rows}</ul><p class="small muted">A holding costs you every turn and keeps some leverage from the rival. A holding is consuming when its cost is more than what it denies.</p></section>`;
+  }
+
   function elsewhereHtml(v) {
     const els = v.intents.filter((i) => !isMine(v, i) && !i.cancelled && i.code);
     if (!els.length) return '';
@@ -3010,7 +3078,7 @@
           ${doc ? `<div class="meter"><div class="lbl">Doctrine · ${esc(doc.layer)}</div>${doc.used ? `<div class="small muted">${esc(doc.name)} spent</div>` : `<button type="button" id="doctrine" ${v.can.doctrine ? '' : 'disabled'}>${esc(doc.name)}</button>`}</div>` : ''}
         </div>
       </div>
-      ${factionsHtml(v)}${cadresHtml(v)}
+      ${factionsHtml(v)}${cadresHtml(v)}${holdingsHtml(v)}
       ${G.feed.length ? `<div class="feed" aria-live="polite">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
       <div class="hand-head"><h2>Cards in play</h2><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
       <div class="hand">${v.intents.filter((i) => isMine(v, i)).map(cardHtml).join('') || '<p class="muted">No cards aimed at you this turn.</p>'}</div>
@@ -3045,6 +3113,14 @@
       act({ type: 'end' });
     });
     $('#rule').addEventListener('click', () => openSheet(`<h3>${esc(v.op.dimension)} · ${esc(v.rule.tier)}</h3><p><b>${esc(v.rule.rule)}</b></p><p>Counter: ${esc(v.rule.counter)}</p>${v.lens ? `<p class="small">Your lens, ${esc(v.lens.name)}: ${esc(v.lens.text)}</p>` : ''}<p class="small muted">The ten dimensions are the physics of an operation. Coherence multiplies, Agency gates, Topology and Entropy describe the ground, Time, Asymmetry and Criticality describe the contest, and Phase, Gradient and Resonance describe the move.</p>`));
+    bind('[data-yield]', 'click', (e) => {
+      const id = e.currentTarget.dataset.yield;
+      const h = v.holdings.find((x) => x.id === id);
+      const price = h.yieldLegitimacy < 0 ? ` Giving it up costs ${-h.yieldLegitimacy} legitimacy.` : '';
+      const ties = h.couples && h.couples.length ? ` It also raises what ${h.couples.map((c) => (v.holdings.find((x) => x.id === c) || { name: c }).name).join(' and ')} costs.` : '';
+      openSheet(`<h3>Give up ${esc(h.name)}</h3><p class="small">It stops costing ${h.cost} a turn and stops denying ${h.denial}.${esc(price)}${esc(ties)} It cannot be taken back.</p><div class="acts"><button type="button" class="primary" data-yes>Give it up · 1 action</button><button type="button" data-do="close">Keep it</button></div>`,
+        (sheet) => { bind('[data-yes]', 'click', () => { closeSheet(); act({ type: 'yield', holding: id }); }, sheet); bind('[data-do="close"]', 'click', closeSheet, sheet); });
+    });
     bind('[data-cadre]', 'click', (e) => {
       const id = e.currentTarget.dataset.cadre;
       const c = v.cadres.find((x) => x.id === id);
@@ -3432,6 +3508,18 @@
   const dayNoOf = (s) => (s.mode === 'daily' ? ` #${REC().dayNumber(rc(), s.seed.slice(6))}` : '');
   const sendText = (title, tier, r, code) => `TDW challenge: ${title}, Tier ${tier}.\nMy result: ${r.score} points, ${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}.\nCheck it by replay, then send yours back: ${recLink(code)}`;
 
+  function ownHtml(rep) {
+    const o = rep.own;
+    if (!o || !o.sides.some((s) => s.acts.length)) return '';
+    const cap = (t) => t.charAt(0).toUpperCase() + t.slice(1);
+    const rows = o.sides.map((s) => {
+      const by = {}; s.acts.forEach((a) => { (by[a.type] = by[a.type] || []).push(a); });
+      const body = s.acts.length ? Object.entries(by).map(([t, l]) => `${esc(cap(t))} (${[...new Set(l.map((a) => a.why))].map(esc).join(', ')}) on turn${l.length > 1 ? 's' : ''} ${l.map((a) => a.turn).join(', ')}`).join('. ') + '.' : 'None recorded.';
+      return `<li><b>${esc(s.name)}</b>${s.player ? ' (you)' : ''}. ${body}</li>`;
+    }).join('');
+    return `<h3>Acts against its own position</h3><ul class="own">${rows}</ul><p class="small muted">Each act is typed by what it was when it happened. The result does not decide it.</p>`;
+  }
+
   function reportHtml(rep, own) {
     const s = rep.summary;
     const top = Math.max(1, ...rep.ledger.map((x) => x.n));
@@ -3454,6 +3542,7 @@
       <h3>Pressure that landed</h3><p>${press}</p>
       ${worst}
       <h3>The play</h3><p>${rep.stats.detects} Detect, ${rep.stats.disrupts} Disrupt, ${rep.stats.defends} Defend. ${idle} ${named}</p>
+      ${ownHtml(rep)}
       <h3>What to change</h3><ul class="changes">${rep.changes.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
       <p class="small muted">Computed from the action log. It describes what happened, not what would have happened.</p>
     </div>`;

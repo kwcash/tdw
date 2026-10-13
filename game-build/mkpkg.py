@@ -3,7 +3,7 @@ root = os.path.dirname(os.path.abspath(__file__))
 orig = open(f'{root}/orig/index.html').read()
 V = {
  'game': dict(json='base', title='TDW Strategic Game', desc=None, foot1=None),
- '1931': dict(json='era1', title='Total Domain War 1931 to 1949',
+ '1931': dict(json='era1', title='Total Domain War 1931 to 1949', ver=4,
    desc='Three factions, one occupation, and a civil war that stopped for the Japanese. A turn-based strategy game built on the documented record from 1931 to 1949.',
    foot1='The actors are a party and two governments. The Chinese and Japanese peoples are not them. Ancestry is not loyalty.'),
  '2026': dict(json='era3', title='Total Domain War 2026',
@@ -15,7 +15,7 @@ V = {
 }
 NOTICE = {
  'game': 'TDW game, version 3. Upload and replace everything in /game/ (index.html, css/, js/, assets/).\nThe engine now supports several factions per operation, legitimacy and leaders. The 1784 to 2051 catalog plays as before.\nResult codes and replay verification (js/record.js) are kept. Codes made by the earlier build still verify.\nSaved games from the earlier build continue.\n',
- '1931': 'TDW 1931 to 1949. Upload everything to its own folder, for example /1931/ (index.html, css/, js/, assets/).\nIt keeps its own saved progress, separate from /game/.\n',
+ '1931': 'TDW 1931 to 1949, updated 13 October 2026. Replace everything in /1931/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 1931 build stay valid. The storage key is unchanged.\nEleven operations. New is E011, The Manchurian Trap, the first operation where holding ground has a cost. A Holdings panel shows what each holding costs and denies, and a player can give one up. The report adds a line for acts that hurt the actor\'s own position, on both sides.\nSee NOTES_E011.md for the claim list to check.\n',
  '2026': 'TDW 2026, updated 13 October 2026. Replace everything in /2026/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 2026 build stay valid. The storage key is unchanged.\nSixteen operations. Twelve cover the twelve domains. W013 is a watch on Taiwan\'s 28 November vote and W014 covers Taiwan\'s special defense budget. New on 13 October are W015 on the Treasury designations of Iran\'s shadow fleet and W016 on the Justice Department\'s seizure of a botnet. A calendar of the next 120 days sits above the operations.\nEvery dimension and every one of the thirty-six stratagems appears. See SOURCING_2026.md for the claim list to check.\n',
  '2030': 'TDW 2030. Upload everything to its own folder, for example /2030/ (index.html, css/, js/, assets/).\nIt keeps its own saved progress, separate from /game/.\n',
 }

@@ -4,7 +4,9 @@
 const path = require('node:path');
 const A = require(path.resolve(process.argv[2])); const B = require(path.resolve(process.argv[3]));
 const ALLOWED = new Set(['brief', 'record', 'reading', 'gapText', 'fix', 'label', 'when.end']);
-const eq = (x, y) => JSON.stringify(x) === JSON.stringify(y);
+// Report-only tags (self, selfWhy) name an act against one's own position and change no mechanics, so they are not a frozen change.
+const bare = (x) => JSON.stringify(x, (k, v) => (k === 'self' || k === 'selfWhy' ? undefined : v));
+const eq = (x, y) => bare(x) === bare(y);
 let bad = 0; const changed = {};
 for (const a of A.ops) {
   const b = B.ops.find((o) => o.id === a.id);

@@ -59,6 +59,7 @@
       case 'name': return 'n' + domChar(E, a.domain);
       case 'doctrine': return a.domain ? 'k' + domChar(E, a.domain) : 'k';
       case 'assign': if (!/^[A-Za-z0-9_-]{1,30}$/.test(a.cadre || '')) fail('Bad leader.'); return 'g' + domChar(E, a.domain) + a.cadre;
+      case 'yield': if (!/^[A-Za-z0-9_-]{1,30}$/.test(a.holding || '')) fail('Bad holding.'); return 'y' + a.holding;
       case 'end': return 'e';
       default: return fail('Unknown action.');
     }
@@ -66,6 +67,8 @@
   function decodeAction(E, tok) {
     const g = /^g([0-9ab])([A-Za-z0-9_-]{1,30})$/.exec(tok);
     if (g) return { type: 'assign', cadre: g[2], domain: E.DOMAINS[IDX.indexOf(g[1])] };
+    const y = /^y([A-Za-z0-9_-]{1,30})$/.exec(tok);
+    if (y) return { type: 'yield', holding: y[1] };
     const m = /^([dxafonXk])(\d{1,4}|[0-9ab])?$/.exec(tok) || (tok === 'e' ? ['e', 'e', undefined] : null);
     if (!m) fail('The code holds an action the game does not know.');
     const t = m[1];
@@ -148,6 +151,7 @@
       case 'accept': return `Accept ${what}`;
       case 'name': return `Name ${a.domain} as the lever`;
       case 'doctrine': return `Play the doctrine card${a.domain ? ` on ${a.domain}` : ''}`;
+      case 'yield': return `Give up ${((S.holdings || []).find((h) => h.id === a.holding) || {}).name || a.holding}`;
       case 'assign': return `Move ${(ctxNow && ctxNow.reg.cadres[a.cadre] && ctxNow.reg.cadres[a.cadre].name) || a.cadre} to ${a.domain}`;
       default: return `End turn ${S.turn}`;
     }
@@ -228,6 +232,9 @@
     const fn = (id) => fname(ctx, id);
     const who = (f) => (f && ctx.player && f !== ctx.player ? `${fn(f)}'s ` : '');
     switch (e.k) {
+      case 'upkeep': return `Holding ${e.name} costs ${e.n}${e.consuming ? ` and denies only ${e.denial}` : ''}.`;
+      case 'yield': return `${e.name} is given up.`;
+      case 'self': return `${fn(e.f)}: an act against its own position (${e.type}), ${e.why}.`;
       case 'legit': return e.n ? `${fn(e.f)} legitimacy ${sgn(e.n)}${e.why ? ', ' + (SRC[e.why] || (E.CARDS[e.why] ? card(e.why) : String(e.why).replace(/_/g, ' '))) : ''}. It stands at ${e.total}.` : null;
       case 'spike': return `${fn(e.f)} falls into an entropy spike at ${e.legitimacy} legitimacy.`;
       case 'seize': return `${fn(e.by)} seizes ${e.d} from ${fn(e.f)}.`;
@@ -285,7 +292,7 @@
     'held ground': 'Domains held at 3 or more pressure', 'lever named': 'Lever named', 'wrong lever': 'A wrong lever named',
     'lever mapped': 'Lever mapped', 'lever captured': 'The lever fell', cascade: 'A load-bearing domain fell', 'one aim': 'Cards pulling one way', event: 'A scripted event', governance: 'Governance doctrine',
   };
-  const SRC = { slope: 'Slopes', noise: 'Entropy noise', spill: 'Spill from a full domain', trap: 'The door that shut' };
+  const SRC = { slope: 'Slopes', noise: 'Entropy noise', spill: 'Spill from a full domain', trap: 'The door that shut', holding: 'The cost of holding' };
 
   function report(res, ctx, opts) {
     const E = ctx.E;
@@ -330,9 +337,25 @@
     const idleTurns = S.history.filter((h) => h.unspent >= 2);
     const idle = S.history.reduce((a, h) => a + h.unspent, 0);
 
+    // Acts against one's own position (Revision 33). Typed by structure when they happen. Both sides are reported.
+    const sideName = (f) => { const x = ctx.reg.factions[f]; return (x && (x.short || x.name)) || f; };
+    const sides = S.factions.filter((f) => f === S.player || S.ledger[f].control === 'ai').map((f) => ({ id: f, name: sideName(f), player: f === S.player, acts: [] }));
+    const paid = {}; const gave = {};
+    for (const fr of frames) for (const e of fr.ev) {
+      if (e.k === 'self') { const side = sides.find((x) => x.id === e.f); if (side) side.acts.push({ turn: fr.turn, type: e.type, why: e.why, n: e.n }); }
+      if (e.k === 'upkeep') paid[e.id] = (paid[e.id] || 0) + e.n;
+      if (e.k === 'yield') gave[e.id] = fr.turn;
+    }
+    const holdings = (S.holdings || []).map((h) => ({ id: h.id, name: h.name, cost: h.cost, denial: h.denial, consuming: h.cost > h.denial, paid: paid[h.id] || 0, gaveUpOn: gave[h.id] || null }));
+
     // Up to two changes, each tied to a number in this run.
     const changes = [];
     const lost = summary.outcome !== 'win';
+    for (const h of holdings) {
+      if (!h.consuming) continue;
+      if (h.gaveUpOn) changes.push(`${You} gave up ${h.name} on turn ${h.gaveUpOn}. By this operation's scores it cost ${h.cost} a turn and denied ${h.denial}. ${h.paid ? `Holding it had cost ${h.paid} by then.` : 'Holding it had cost nothing by then.'}`);
+      else if (h.paid) changes.push(`${You} kept ${h.name} to the end. By this operation's scores it cost ${h.cost} a turn and denied ${h.denial}, and it cost ${h.paid} in all. Giving it up stops the cost.`);
+    }
     if (!S.lever.named && (lost || summary.stars < 3)) {
       changes.push(`${You} never named the lever. It was ${summary.spine}. A right guess cuts 2 leverage and makes every Disrupt there cost 1 less.`);
     }
@@ -352,6 +375,7 @@
     return {
       summary, ledger, totalGain, relief: reliefList, pressure, absorbed: S.stats.absorbed, worstTurn, curve, captures, named, idle, idleTurns,
       stats: { detects: S.stats.detects, disrupts: S.stats.disrupts, defends: S.stats.defends }, changes: changes.slice(0, 2),
+      own: { sides }, holdings,
     };
   }
 

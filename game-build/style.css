@@ -471,3 +471,14 @@ a.card.feature:hover { border-color: var(--ink); }
   .cal-item { grid-template-columns: 1fr; gap: 2px; }
   .cal-meta { justify-content: flex-start; }
 }
+
+/* ---- version 5: holdings and acts against one's own position ---- */
+.holdings, .cadres { margin: 12px 0; }
+.holdings ul { list-style: none; margin: 6px 0; padding: 0; display: grid; gap: 8px; }
+.holding { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); display: grid; gap: 4px; }
+.holding.consuming { border-color: var(--warn); }
+.holding.gone { opacity: .6; }
+.holding .hstate { font-weight: 700; }
+.holding.consuming .hstate { border-color: var(--warn); color: var(--warn); }
+.holding button { justify-self: start; margin-top: 4px; }
+ul.own { margin: 0; padding-left: 20px; display: grid; gap: 4px; }

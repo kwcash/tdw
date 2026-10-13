@@ -20,3 +20,10 @@ What is here, so a reset of the working machine does not cost the game again.
 
 - Two operations added to the 2026 content, W015 The Shadow Fleet and W016 The Seized Botnet. The game code did not change. `CHANGELOG_2026-10-13.md` and `BALANCE_2026-10-13.md` describe it.
 - `dist/2026.zip` is the current build. `dist/update-2026-10-13.zip` is the upload set.
+
+## Update of 13 October 2026, second set
+
+- The 1931 build adds E011 The Manchurian Trap and the holdings rule, with a report line for acts against one's own position. `patch-v5.py` turns the v4 bundle into the current one, and `content/era1_v5.py` adds the content. `js/` now holds the v5 bundle.
+- `dist/1931.zip` is the current 1931 build. `dist/update-2026-10-13b.zip` is the upload set (root `index.html` plus the `1931/` folder and three notes).
+- The 2026, 2030 and game zips keep the v4 bundle. They behave the same because none of their operations lists holdings.
+- `CHANGELOG_2026-10-13b.md`, `BALANCE_E011.md` and `NOTES_E011.md` describe it. `test/holdings.test.js` covers the new rules.

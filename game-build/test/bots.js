@@ -59,3 +59,18 @@ function tunerBot(S) {
   return { type: 'end' };
 }
 module.exports.tunerBot = tunerBot;
+
+// Policies for operations with holdings. They differ only in when they give up a consuming holding.
+// 'holder' never does. 'yield1' does it on the first turn. 'yield3' waits until the third turn.
+function policy(name) {
+  if (!name || name === 'tuner' || name === 'holder') return tunerBot;
+  const at = name === 'yield1' ? 1 : name === 'yield3' ? 3 : Number(name.replace('yield', ''));
+  return (S) => {
+    if (S.turn >= at && S.holdings && S.ap >= 1) {
+      const h = S.holdings.find((x) => x.active && x.cost > x.denial);
+      if (h) return { type: 'yield', holding: h.id };
+    }
+    return tunerBot(S);
+  };
+}
+module.exports.policy = policy;
