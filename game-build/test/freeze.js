@@ -19,6 +19,7 @@ for (const a of A.ops) {
       continue;
     }
     if (eq(a[k], b[k])) continue;
+    if (a.kind === 'watch' && k === 'status' && a.status === 'open' && b.status === 'settled') { (changed[a.id] = changed[a.id] || []).push(k + ' (settled)'); continue; }   // settling a watch is allowed, and nothing else about status is
     (changed[a.id] = changed[a.id] || []).push(k);
     if (a.id === 'C001' || !ALLOWED.has(k)) { console.log('FAIL', a.id, 'changed frozen field', k); bad++; }
   }

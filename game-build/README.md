@@ -33,3 +33,7 @@ What is here, so a reset of the working machine does not cost the game again.
 - The 2026 build adds forecast mode. `patch-v6.py` turns the v5 bundle into the current one, and `forecast/build_forecasts.py` writes `assets/forecasts.json` from the ledger snapshot. `js/game.js` now holds the v6 bundle. The engine part is unchanged.
 - `dist/2026.zip` is the current 2026 build. `dist/update-2026-10-13c.zip` is the upload set for the `2026/` folder.
 - `FORECAST_NOTES.md` lists what is in, what is left out and why, the score, and how the owner enters results. `CHANGELOG_2026-10-13c.md` lists the changes. `test/forecast.test.js` checks the data.
+
+## Settling a watch (prepared, not yet used)
+
+- `settle_watch.py` and `SETTLE_WATCH.md` carry out the settling of W013 after 29 November 2026. The live build has not changed. `test/freeze.js` now lets a watch go from open to settled and allows nothing else about its status.
