@@ -73,7 +73,7 @@ OPS = [
  op(1, 'The Last Institute', 2023, 1, 'Time', 'Attract', ['S1', 'S25', 'S9'], ['Cultural', 'Association', 'Legal', 'Information'], 'Cultural', 'The Party\'s education office',
     [2004, 11], [2023, 10], 'November 2004 to 2023',
     'In 2004 a university in Seoul opened the first Confucius Institute. Fifteen years later about a hundred American campuses hosted one.',
-    'An office of the education ministry in Beijing paid for the teachers and the textbooks. In 2018 Congress barred Defense Department language funds from universities that hosted an institute. Most American campuses closed theirs within a few years. In 2020 the Beijing office became the Center for Language Education and Cooperation, and a nominally independent foundation took over the institutes that remained. By 2023 the American count had fallen to a handful.',
+    'An office of the education ministry in Beijing paid for the teachers and the textbooks. In 2018 Congress barred Defense Department language funds from universities that hosted an institute. Most American campuses closed theirs within a few years. In 2020 the Beijing office became the Center for Language Education and Cooperation, and a nominally independent foundation took over the institutes that remained. By January 2023 the American count had fallen to fewer than five.',
     'The lesson was ordinary and the access was the point. This is Stratagem 1, deceive the heavens to cross the sea. A familiar classroom hid a channel. Stratagem 25 swaps the beams one at a time, because each concession on a campus looks small. Stratagem 9 does the rest. Most universities watched from across the river until a funding law forced the choice.',
     'Governance', 'Governance Architecture. No campus office could see every foreign agreement, so each deal looked small on its own.',
     'Keep one public register of every foreign-funded program on a campus, and give one named officer the authority to review it.',
@@ -83,7 +83,7 @@ OPS = [
  op(2, 'The Circling', 2026, 2, 'Phase', 'Control', ['S13', 'S6', 'S4'], ['Kinetic', 'Association', 'Legal', 'Psychological'], 'Kinetic', 'The Party\'s coast guard and army',
     [2025, 12], [2026, 10], 'December 2025 to October 2026',
     'In September 2026 China Coast Guard ships circled Pratas Island for more than a day. Taiwan administers the island and the Party claims it.',
-    'The People\'s Liberation Army named an exercise around Taiwan Justice Mission-2025 in December 2025. In September 2026 China Coast Guard vessels entered the waters off Kinmen on the 8th, the 10th and the 11th. They circled Pratas on the 7th and the 8th for more than twenty-four hours. PLA aircraft entered Taiwan\'s air defense identification zone 181 times that month.',
+    'The People\'s Liberation Army named an exercise around Taiwan Justice Mission-2025 in December 2025. In September 2026 China Coast Guard vessels entered the waters off Kinmen on the 8th, the 10th and the 11th. They circled Pratas on the 7th and the 8th for more than twenty-four hours. PLA aircraft entered Taiwan\'s air defense identification zone 181 times that month. On 9 October 2026 four China Coast Guard ships entered the restricted waters off Kinmen, and Taiwan\'s coast guard expelled them. China\'s Maritime Safety Administration issued no-sail notices for five sea areas for People\'s Liberation Army exercises from 12 to 17 October. Taiwan\'s defense minister assessed that the areas lie off China\'s coast and that the exercises involve artillery only.',
     'The Party does not need to land on an island to change who governs it. Each patrol sets a precedent, and each precedent becomes the baseline for the next. This is Stratagem 13, stomp the grass to scare the snake. The named exercises mark the bursts and the coast guard fills the quiet between them. Stratagem 6 shows force in one place while pressure builds in another. Stratagem 4 waits for the defender to tire.',
     'Governance', 'Governance Architecture. Each patrol stayed below the line that would trigger a response, so no one owned the decision to answer the sum.',
     'Write the answer to each rung of the ladder in advance, and name one body that can order it.',
@@ -93,8 +93,8 @@ OPS = [
  op(3, 'The Surplus', 2026, 2, 'Gradient', 'Control', ['S28', 'S17', 'S12'], ['Economic', 'Financial', 'Legal', 'Association'], 'Economic', 'The Party-state',
     [2024, 10], [2026, 10], 'October 2024 to October 2026',
     'In October 2024 the European Union put new duties on electric cars built on the mainland. The factories kept building.',
-    'The European Union\'s definitive duties on battery electric vehicles from the mainland took effect on October 30, 2024. They ran from 17.0 percent for BYD to 35.3 percent for SAIC. The Party\'s own statistics bureau reported that factories used less than three quarters of their capacity in 2025 while exports rose. The United States ran a smaller bilateral deficit with the mainland in 2025 than in 2024. The surplus moved to other markets.',
-    'A factory built far above domestic demand must sell abroad. The surplus is not a transfer to any partner. It is an enabling condition, because it pays for an industrial base that sanctions lists do not reach. This is Stratagem 28, lure the enemy onto the roof and remove the ladder. Each buyer that reorganizes around cheap supply loses the way back. Stratagem 17 casts a low price to attract the contract. Stratagem 12 takes one sector at a time.',
+    'The European Union\'s definitive duties on battery electric vehicles from the mainland took effect on October 30, 2024. They ran from 7.8 percent for Tesla\'s Shanghai plant to 35.3 percent for SAIC. BYD paid 17.0 percent. The Party\'s own statistics bureau reported that factories used less than three quarters of their capacity in 2025 while exports rose. The United States ran a smaller bilateral deficit with the mainland in 2025 than in 2024. The surplus moved to other markets.',
+    'A factory built far above domestic demand must sell abroad. The surplus is an enabling condition and not a transfer to any partner. It pays for an industrial base that sanctions lists do not reach. This is Stratagem 28, lure the enemy onto the roof and remove the ladder. Each buyer that reorganizes around cheap supply loses the way back. Stratagem 17 casts a low price to attract the contract. Stratagem 12 takes one sector at a time.',
     'Business', 'Business Architecture. Importers treated each cheap input as a bargain and not as a dependency.',
     'Cap the share any one source may supply of a critical input, and aim trade remedies at the condition and not only at the flow.',
     'The Seams', ['trade_remedies', 'policy_banks'],
@@ -113,7 +113,7 @@ OPS = [
  op(5, 'Resolution 2758', 2026, 3, 'Agency', 'Accommodate', ['S30', 'S22', 'S24'], ['Legal', 'Association', 'Psychological', 'Information'], 'Legal', 'The Party\'s legal offices',
     [2024, 6], [2026, 9], 'June 2024 to September 2026',
     'In October 1971 the General Assembly voted to seat the People\'s Republic at the United Nations. The resolution never mentions Taiwan. The Party now reads it as if it did.',
-    'Resolution 2758 of October 25, 1971 recognized the representatives of the People\'s Republic as the only legitimate representatives of China at the United Nations. It does not mention Taiwan and does not settle Taiwan\'s status. The Anti-Secession Law of 2005 set out the legal frame the Party uses for Taiwan. In June 2024 mainland courts, prosecutors and police issued guidelines that treat advocacy of Taiwan\'s independence as a crime. Police on the mainland have since posted bounties for named Taiwanese.',
+    'Resolution 2758 of October 25, 1971 recognized the representatives of the People\'s Republic as the only legitimate representatives of China at the United Nations. It does not mention Taiwan and does not settle Taiwan\'s status. The Anti-Secession Law of 2005 set out the legal frame the Party uses for Taiwan. In June 2024 mainland courts, prosecutors and police issued guidelines that treat advocacy of Taiwan\'s independence as a crime. Police on the mainland have since posted bounties for named Taiwanese. In October 2025 the National People\'s Congress Standing Committee named 25 October Taiwan Restoration Day, the date of Resolution 2758.',
     'A claim repeated by every official becomes a fact in the room even when the text says otherwise. This is Stratagem 30, make the host and the guest exchange places. The Party plays the guest who claims the house. Stratagem 22 shuts the door on a person who travels, because domestic law now reaches anyone it names. Stratagem 24 borrows the road, because a United Nations vote supplies the legal bridge.',
     'Principles', 'Architecture Principles. Allied governments had no common published reading of Resolution 2758, so each answered alone.',
     'Publish one shared legal reading of the resolution, and answer each use of the claim with the text.',
@@ -174,7 +174,7 @@ OPS = [
  op(11, 'The Summit Season', 2026, 6, 'Coherence', 'Accommodate', ['S23', 'S2', 'S34'], ['Association', 'Kinetic', 'Legal', 'Psychological'], 'Association', 'The Party-state and the Kremlin',
     [2026, 4], [2026, 11], 'April to November 2026',
     'In April 2026 the chair of Taiwan\'s Nationalist Party sat down with Xi Jinping. A package of American arms for Taiwan was already on hold.',
-    'The Nationalist Party chair met Xi Jinping in April 2026. A package of arms for Taiwan worth about fourteen billion dollars had not been formally notified to Congress. The Asia-Pacific Economic Cooperation summit is set for Shenzhen in November 2026, and Vladimir Putin is due to attend.',
+    'The Nationalist Party chair met Xi Jinping in April 2026. A package of arms for Taiwan worth about fourteen billion dollars had not been formally notified to Congress. The Asia-Pacific Economic Cooperation summit is set for Shenzhen in November 2026, and Vladimir Putin is due to attend. After a Trump-Xi summit in Beijing in May, the United States paused a record package of arms for Taiwan. In late September Xi made a state visit to Washington, and the two sides extended their trade truce by a few months. Both leaders intend to attend the Shenzhen summit on 18 and 19 November.',
     'The Party trades at summits and keeps the strategy. This is Stratagem 23, befriend a distant state while attacking a neighbor. A warm meeting with Washington leaves Taipei, Tokyo and Manila to wonder what was traded. Stratagem 2 besieges Wei to rescue Zhao, so pressure on an ally relieves pressure elsewhere. Stratagem 34 rewards a self-inflicted wound, because a held arms package costs the holder and buys the other side a better meeting.',
     'Governance', 'Governance Architecture. No standing channel ensures that an ally hears the terms of a summit before it ends.',
     'Create a standing allied consultation that runs before and after every summit, and publish what was traded.',
@@ -191,7 +191,35 @@ OPS = [
     'Make data-sharing terms a condition of funding and of seats on inquiry panels, and publish each request and each reply.',
     'The Seams', ['health_security', 'health_commission'],
     [S(3, 'A request for data goes unanswered.', P(U, 'Information', 2, C)), S(6, 'Two official reports reach opposite conclusions.', P(U, 'Biological', 1, C), SL(U, 'Information', 1, C))]),
+ op(13, 'The Ballot', 2026, 4, 'Phase', 'Control', ['S7', 'S29', 'S20'], ['Information', 'Psychological', 'Data and Surveillance', 'Association'], 'Information', 'The Party\'s influence agencies',
+    [2026, 4], [2026, 11], 'April to November 2026',
+    'On 28 November 2026 Taiwan elects 22 mayors and magistrates and 11,051 local officials in all. By 8 September its Investigation Bureau had already opened 54 cases of suspected foreign interference and electoral fraud.',
+    'Taiwan holds its local elections on 28 November 2026. By 8 September its Investigation Bureau had opened 54 cases of suspected foreign interference and electoral fraud, and prosecutors had tracked more than 200 suspicious financial transactions. The National Security Bureau warned in April 2026 that Beijing would interfere in the vote. The record ends here. The vote has not yet taken place.',
+    'Scenario, not record. The Party gains most when voters doubt the count, whoever wins. This is Stratagem 20, muddy the waters to catch the fish. Stratagem 7 builds a scandal from nothing, and Stratagem 29 decks the tree with false blossoms. The contest is between Taiwan\'s own parties and the game takes no side. The threat is the campaign from outside.',
+    'Data', 'Data Architecture. No public register tells voters which claims are circulating or who amplifies them.',
+    'Publish a daily list of false claims in circulation during the campaign, with the evidence of who amplified each, and certify results on a fixed timetable.',
+    None, ['fact_checkers', 'taiwan_office', 'narrative_network'],
+    [S(3, 'Scenario. Foreign-linked accounts push a claim about the vote.', P(U, 'Information', 2, C)),
+     S(6, 'Scenario. A rumor about the count spreads.', P(U, 'Psychological', 1, C), P(U, 'Data and Surveillance', 1, C)),
+     S(8, 'Scenario. Election night brings a surge of doubt about the count.', P(U, 'Information', 3, C))]),
+
+ op(14, 'The Special Budget', 2026, 6, 'Coherence', 'Accommodate', ['S33', 'S9', 'S4'], ['Financial', 'Association', 'Psychological', 'Legal'], 'Financial', 'The Party-state',
+    [2026, 5], [2026, 10], 'May 2026 to October 2026',
+    'In May 2026 Taiwan\'s legislature passed a special defense budget of NT$780 billion. The executive had asked for NT$1.25 trillion.',
+    'Taiwan\'s legislature passed a special defense budget bill of NT$780 billion, about US$26 billion. The executive had proposed NT$1.25 trillion. The opposition had favored a framework of NT$380 billion plus additions. Analysts tied the final amount to American pressure before the Trump-Xi summit in Beijing. Taiwan\'s 2027 defense budget is set to exceed 3 percent of gross domestic product for the first time, and President Lai has pledged 5 percent by 2030.',
+    'A divided government can fund deterrence when an outside deadline sets the price. The Party gains from every month the price stays in dispute. This is the shape of Stratagem 33, sow discord among the enemy, whether or not Beijing caused the dispute. Stratagem 9 watches the fire from across the river while Taipei argues. Stratagem 4 waits at ease for a weary opponent. The record shows the amount and not the motive.',
+    'Governance', 'Governance Architecture. No standing rule let the executive and the legislature agree a defense price before an outside deadline set it.',
+    'Agree a multiyear defense funding floor in advance of each summit season, and publish it.',
+    'The Strait', ['summit_team', 'taiwan_office', 'narrative_network'],
+    [S(3, 'The executive and the legislature split over the price of deterrence.', P(U, 'Financial', 2, C)),
+     S(5, 'An outside deadline sets the price at a lower figure.', P(U, 'Association', 1, C), SL(U, 'Financial', 1, C)),
+     S(7, 'The price stays in dispute for another month.', P(U, 'Psychological', 1, C))]),
 ]
+
+def watch(o, settle='2026-11-29'):
+    o['kind'] = 'watch'; o['status'] = 'open'; o['settleOn'] = settle
+    return o
+watch(OPS[12])
 
 def tuned(ops):
     f = HERE / 'era3.tuning.json'
@@ -203,26 +231,37 @@ def tuned(ops):
             if t[o['id']]['consumeAdj']: o['consumeAdj'] = t[o['id']]['consumeAdj']
 
 COPY = {
-    'hero': 'Every operation comes from the record of the contest as it stands in the autumn of 2026. Twelve operations, one for each domain.',
+    'hero': 'Every operation comes from the record of the contest as it stands in the autumn of 2026. Fourteen operations. Twelve cover the twelve domains, one covers Taiwan\'s defense budget, and a watch follows its 28 November vote.',
     'arcsLabel': '2004 to 2026', 'arcsTitle': 'Two campaign arcs',
     'arcsText': 'The Taiwan Strait and the seams where allies, trade, data and law meet.',
-    'opsNote': 'Twelve operations from the record to October 2026, one for each domain. Tier sets the difficulty.',
+    'opsNote': 'Fourteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.',
     'arcsNote': 'Two arcs. Each runs through the record one operation at a time. Win an operation to open the next.',
 }
 ARCS = [
     {'id': 'the-strait', 'name': 'The Strait', 'span': '2023 to 2026', 'blurb': 'The Taiwan Strait, from the coast guard\'s circles to the summit table.',
-     'nodes': [o['id'] for o in sorted((o for o in OPS if o['arc'] == 'The Strait'), key=lambda o: o['tier'])]},
+     'nodes': [o['id'] for o in sorted((o for o in OPS if o['arc'] == 'The Strait' and o['id'] != 'W014'), key=lambda o: o['tier'])] + ['W014']},
     {'id': 'the-seams', 'name': 'The Seams', 'span': '2004 to 2026', 'blurb': 'The places where allies, trade, data and law meet. The method works through each of them.',
      'nodes': [o['id'] for o in sorted((o for o in OPS if o['arc'] == 'The Seams'), key=lambda o: o['tier'])]},
 ]
+
+CALENDAR = [
+    {'date': '2026-10-12', 'end': '2026-10-17', 'label': 'People\'s Liberation Army exercises in five sea areas off the mainland coast. Taiwan\'s defense minister says they lie away from Taiwan.', 'kind': 'window', 'source': 'https://www.taipeitimes.com/News/taiwan/archives/2026/10/12/2003865828', 'ref': None},
+    {'date': '2026-10-25', 'end': None, 'label': 'Taiwan Restoration Day observance in the People\'s Republic. The date is also the date of Resolution 2758.', 'kind': 'scheduled', 'source': 'https://subsites.chinadaily.com.cn/npc/2025-10/25/c_1135469.htm', 'ref': None},
+    {'date': '2026-11-18', 'end': '2026-11-19', 'label': 'APEC leaders meet in Shenzhen. Trump and Xi both intend to attend.', 'kind': 'scheduled', 'source': 'https://www.csis.org/analysis/takeaways-trump-xi-white-house-summit', 'ref': None},
+    {'date': '2026-11-28', 'end': None, 'label': 'Taiwan holds local elections for 22 mayor and magistrate posts.', 'kind': 'scheduled', 'source': 'https://en.wikipedia.org/wiki/2026_Taiwanese_local_elections', 'ref': None},
+    {'date': '2026-12', 'end': None, 'label': 'The G20 leaders meet in Miami. Xi is expected to attend.', 'kind': 'scheduled', 'source': 'https://www.csis.org/analysis/takeaways-trump-xi-white-house-summit', 'ref': None},
+]
+CALENDAR_NOTE = 'Dates are scheduled or expected. Nothing here is a prediction.'
 
 def build():
     tuned(OPS)
     boot = next(o for o in base['ops'] if o['id'] == 'C001')
     return {
         'schema': 2, 'storageKey': 'tdw-2026-1', 'era': 'contest-2026', 'ruleset': {'legitimacy': True},
-        'copy': COPY, 'tutorial': 'C001', 'daily': [o['id'] for o in OPS],
+        'copy': COPY, 'tutorial': 'C001', # The daily pool stays the twelve operations it had on 12 October. A longer pool would change which operation a past date maps to, and a verified daily record checks that mapping.
+        'daily': [o['id'] for o in OPS if o['id'] not in ('W013', 'W014')],
         'factions': FACTIONS, 'cadres': CADRES, 'pacts': PACTS,
+        'calendar': CALENDAR, 'calendarNote': CALENDAR_NOTE,
         'ops': [boot] + OPS, 'arcs': ARCS, 'taxonomy': base['taxonomy'], 'dailyEpoch': base['dailyEpoch'],
     }
 

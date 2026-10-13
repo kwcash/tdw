@@ -11,7 +11,7 @@ function play(op, seed, tier) {
   while (!S.over && g++ < 400) { const a = (process.env.LITE ? B.greedyBot : B.tunerBot)(S); try { E.act(S, a); } catch { E.act(S, { type: 'end' }); } }
   return S.over && S.over.outcome === 'win';
 }
-function rate(op, n = N) { let w = 0; for (let i = 0; i < n; i++) if (play(op, 's' + i, op.tier)) w++; return w / n; }
+function rate(op, n = N) { let w = 0; for (let i = 0; i < n; i++) if (play(op, (process.env.SEEDS || 's') + i, op.tier)) w++; return w / n; }
 module.exports = { rate, play, REG };
 if (require.main === module) {
   const rows = {};

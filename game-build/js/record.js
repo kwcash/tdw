@@ -22,7 +22,7 @@
     const byId = new Map(C.ops.map((o) => [o.id, o]));
     // Builds with several factions carry them in the content. Without them every operation plays as a two-faction one.
     const reg = { factions: C.factions || {}, cadres: C.cadres || {}, pacts: C.pacts || {}, ruleset: C.ruleset || {} };
-    const pool = (C.daily || []).map((id) => byId.get(id)).filter(Boolean);
+    const pool = (C.daily || []).map((id) => byId.get(id)).filter((o) => o && o.kind !== 'watch');
     return { E, ops: C.ops, byId, reg, pool: pool.length ? pool : C.ops, tutorial: C.tutorial || 'C001', epoch: C.dailyEpoch || '2026-09-30' };
   }
   let pageCtx = null;
@@ -203,6 +203,7 @@
       outcome: o.outcome, reason: o.reason, stars: o.stars, score: o.score, turns: o.turns, maxTurns: S.maxTurns,
       leverage: o.leverage, consumeAt: o.consumeAt, stage: o.stage, leverCorrect: o.leverCorrect, spine: o.spine, captured: o.captured.length,
       actions: meta.actions.length,
+      ...(op.kind === 'watch' ? { watch: { status: op.status === 'settled' ? 'settled' : 'open', settleOn: op.settleOn || null } } : {}),
     };
   }
 

@@ -1573,6 +1573,11 @@
     const reg = registry || {};
     if (!op || typeof op !== 'object') return ['not an operation'];
     if (!DIMENSIONS[op.dimension]) bad.push(`unknown dimension ${op.dimension}`);
+    if (op.kind != null && !['catalog', 'futures', 'watch'].includes(op.kind)) bad.push(`unknown kind ${op.kind}`);
+    if (op.kind === 'watch') {
+      if (!['open', 'settled'].includes(op.status)) bad.push('a watch operation needs status open or settled');
+      if (typeof op.settleOn !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(op.settleOn) || Number.isNaN(Date.parse(op.settleOn))) bad.push('a watch operation needs a settleOn date');
+    }
     if (!DOMAINS.includes(op.spine)) bad.push(`unknown spine ${op.spine}`);
     for (const d of op.theater || []) if (!DOMAINS.includes(d)) bad.push(`unknown theater domain ${d}`);
     for (const c of op.stratagems || []) if (!CARDS[c]) bad.push(`unknown stratagem ${c}`);
@@ -1650,7 +1655,7 @@
   const dayNumber = (day) => Math.max(1, Math.floor((Date.parse(day + 'T00:00:00Z') - DAY_ONE) / 86400000) + 1);
   const arcTier = (arc, i) => (arc.nodes.length <= 1 ? 1 : 1 + Math.round((5 * i) / (arc.nodes.length - 1)));
   // The daily draws from content.daily when the build names a pool, and from every operation otherwise.
-  const DAILY_POOL = (C.daily || []).map((id) => opById.get(id)).filter(Boolean);
+  const DAILY_POOL = (C.daily || []).map((id) => opById.get(id)).filter((o) => o && o.kind !== 'watch');
   function dailyOp(day) { const P = DAILY_POOL.length ? DAILY_POOL : OPS; const n = dayNumber(day); return P[(((n * 37) % P.length) + P.length) % P.length]; }
   function randomHex(bytes) {
     const a = new Uint8Array(bytes);
@@ -1728,8 +1733,11 @@
     const player = o.player || (defs.find((f) => f.control === 'player') || defs[0]).id;
     return defs.map((f) => ({ id: f.id, name: f.name || f.id, short: f.short || f.id, player: f.id === player, blurb: f.blurb || '' }));
   }
+  // A watch operation plays the record up to its last source and marks its subject as not yet settled.
+  function watchOf(o) { return o && o.kind === 'watch' ? { status: o.status === 'settled' ? 'settled' : 'open', settleOn: o.settleOn || null } : null; }
   function brief(o, withBest) {
     return {
+      watch: watchOf(o),
       factions: factionsOf(o),
       id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, dimension: o.dimension, rule: E.DIMENSIONS[o.dimension],
       stage: o.stage, opponent: o.opponent, theater: o.theater, world: o.world, arc: o.arc, brief: o.brief,
@@ -1772,7 +1780,7 @@
     const S = run.state;
     const o = opById.get(run.op_id);
     return {
-      run: { id: run.id, mode: run.mode, opId: run.op_id, tier: run.tier, day: run.day, dayNumber: run.day ? dayNumber(run.day) : null, arcId: run.arc_id, arcNode: run.arc_node, challenge: challengeOf(run), status: run.status, scored: !!run.scored, score: run.score, stars: run.stars, xp: run.xp },
+      run: { id: run.id, mode: run.mode, opId: run.op_id, tier: run.tier, day: run.day, dayNumber: run.day ? dayNumber(run.day) : null, arcId: run.arc_id, arcNode: run.arc_node, challenge: challengeOf(run), watch: watchOf(o), status: run.status, scored: !!run.scored, score: run.score, stars: run.stars, xp: run.xp },
       brief: brief(o, false), view: E.view(S), debrief: S.over ? debrief(o) : null,
       share: S.over ? shareText(run, S) : null, code: S.over ? run.code || null : null,
     };
@@ -1890,7 +1898,7 @@
   on('GET', /^\/api\/ops$/, () => {
     const best = {};
     for (const r of runs()) if (r.status === 'won') best[r.op_id] = Math.max(best[r.op_id] || 0, r.stars);
-    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, dimension: o.dimension, arc: o.arc, world: o.world, stars: best[o.id] ?? null })) };
+    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, dimension: o.dimension, arc: o.arc, world: o.world, watch: watchOf(o), stars: best[o.id] ?? null })) };
   });
   on('GET', /^\/api\/ops\/([A-Za-z0-9]+)$/, (m, q) => {
     const o = opById.get(m[1]);
@@ -1956,9 +1964,11 @@
     need();
     const done = runs().filter((r) => (r.status === 'won' || r.status === 'lost') && r.code).sort((a, b) => b.id - a.id).slice(0, 40);
     return {
-      records: done.map((r) => ({ id: r.id, mode: r.mode, opId: r.op_id, title: opById.get(r.op_id).title, tier: r.tier, day: r.day, dayNumber: r.day ? dayNumber(r.day) : null, status: r.status, score: r.score, stars: r.stars, seed: r.seed, code: r.code, challenge: challengeOf(r) })),
+      records: done.map((r) => ({ id: r.id, mode: r.mode, opId: r.op_id, title: opById.get(r.op_id).title, tier: r.tier, day: r.day, dayNumber: r.day ? dayNumber(r.day) : null, status: r.status, score: r.score, stars: r.stars, seed: r.seed, code: r.code, challenge: challengeOf(r), watch: watchOf(opById.get(r.op_id)) })),
     };
   });
+
+  on('GET', /^\/api\/calendar$/, () => ({ calendar: C.calendar || [], note: C.calendarNote || '' }));
 
   on('GET', /^\/api\/arcs$/, () => {
     const prog = arcProgress();
@@ -2575,7 +2585,28 @@
   const card = (code) => meta().cards.find((c) => c.code === code);
   const cardName = (code) => { const c = card(code); return c ? `S${c.num}, ${c.name}` : code; };
   const MODE = { daily: 'Daily operation', arc: 'Campaign', challenge: 'Challenge', tutorial: 'Boot camp', free: 'Operation' };
-  const kindLabel = (k) => (k === 'catalog' ? 'History' : 'Futures');
+  const kindLabel = (k) => (k === 'catalog' ? 'History' : k === 'watch' ? 'Watch' : 'Futures');
+  const fmtDay = (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const watchChip = (w) => (w ? `<span class="chip2 watch ${w.status === 'settled' ? 'settled' : 'open'}">${w.status === 'settled' ? 'Settled' + (w.settleOn ? ' ' + esc(fmtDay(w.settleOn)) : '') : 'Watch: not yet settled'}</span>` : '');
+  const watchNote = (w) => (w ? `<p class="small muted watchnote">${w.status === 'settled' ? 'This watch has settled.' : 'A watch plays the record up to its last source. The subject is not yet settled.'}${w.settleOn ? ` ${w.status === 'settled' ? 'It settled' : 'It settles'} on ${esc(fmtDay(w.settleOn))}.` : ''}</p>` : '');
+
+  // ---------- the next 120 days ----------
+  // Shows the entries that end on or after the viewer's local date and start within 120 days. A month-only date shows through that month.
+  function calendarHtml(c) {
+    const items = (c && c.calendar) || [];
+    const now = new Date(); const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const horizon = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 120);
+    const first = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d || 1); };
+    const last = (s) => { const [y, m, d] = s.split('-').map(Number); return d ? new Date(y, m - 1, d) : new Date(y, m, 0); };
+    const rows = items.filter((e) => last(e.end || e.date) >= today && first(e.date) <= horizon).sort((a, b) => first(a.date) - first(b.date));
+    if (!rows.length) return '';
+    const dm = (dt) => dt.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const when = (e) => (e.date.length === 7 ? first(e.date).toLocaleDateString('en-GB', { month: 'long', year: 'numeric' }) : e.end ? `${dm(first(e.date))} to ${dm(first(e.end))}` : dm(first(e.date)));
+    const KIND = { window: 'Window', scheduled: 'Scheduled', record: 'Record' };
+    return `<section class="cal card" aria-labelledby="calh"><h2 id="calh">Next 120 days</h2>
+      <ol class="cal-list">${rows.map((e) => `<li class="cal-item ${esc(e.kind)}"><time class="cal-when" datetime="${esc(e.date)}">${esc(when(e))}</time><span class="cal-label">${esc(e.label)}</span><span class="cal-meta"><span class="chip2">${esc(KIND[e.kind] || e.kind)}</span><a class="cal-src" href="${esc(e.source)}" target="_blank" rel="noopener noreferrer">Source<span class="sr"> for ${esc(e.label)}</span></a></span></li>`).join('')}</ol>
+      <p class="small muted">${esc((c && c.note) || 'Dates are scheduled or expected. Nothing here is a prediction.')}</p></section>`;
+  }
   // Text a build may override through content.copy. The defaults are the original wording.
   const copy = () => ({
     hero: 'Every operation comes from the record, from the Canton gate in 1784 to the futures of 2051.',
@@ -2641,7 +2672,7 @@
   route(/^\/(\?.*)?$/, async () => {
     const me = state.me;
     if (!me) return renderWelcome();
-    const [prog, daily, live, arcs] = await Promise.all([api('/progress'), api('/daily'), api('/runs/live'), api('/arcs')]);
+    const [prog, daily, live, arcs, calData] = await Promise.all([api('/progress'), api('/daily'), api('/runs/live'), api('/arcs'), api('/calendar')]);
     const p = prog.progress;
     const pctToNext = Math.round((100 * (p.xp - p.levelFloor)) / Math.max(1, p.nextLevel - p.levelFloor));
     const dm = daily.mine;
@@ -2655,6 +2686,7 @@
           ${dm && dm.status !== 'live' ? `<span class="stars">${'★'.repeat(dm.stars || 0)}${'☆'.repeat(3 - (dm.stars || 0))}</span><span>Score ${dm.score}</span><a class="btn" href="#/daily">Today's board</a>` : `<button class="primary" id="daily">${dm ? 'Resume the daily' : 'Play the daily'}</button>`}
         </div>
       </div>
+      ${calendarHtml(calData)}
       ${!prog.tutorialDone ? `<div class="card feature"><div class="label">New here</div><div class="big">Boot camp</div><p class="small">Six turns at The Gate at Canton, 1784. Learn the board, the cards and the lever in three minutes.</p><button class="primary" id="boot">Start boot camp</button></div>` : ''}
       ${DEMO ? '<div class="card"><p class="small">You are playing the demo. Progress stays in this browser. The full game adds accounts, shared boards and friend challenges.</p></div>'
         : me.isGuest ? `<div class="card"><p class="small">You are playing as a guest. <a href="#/register">Create an account</a> to keep your rank, codex and campaign on any device.</p></div>` : ''}
@@ -2689,7 +2721,8 @@
     location.hash = '#/op/' + o.id;
   }
 
-  function renderWelcome() {
+  async function renderWelcome() {
+    const calData = await api('/calendar');
     render(html`
       <div class="hero">
         <div class="kicker">Total Domain War</div>
@@ -2698,6 +2731,7 @@
         <div class="row"><button class="primary" id="go">Play now</button><a class="btn" href="#/how">How to play</a>${DEMO ? '' : '<a class="btn" href="#/login">Sign in</a>'}</div>
         <p class="small">No account needed to start. Five to eight minutes a game.</p>
       </div>
+      ${calendarHtml(calData)}
       <div class="tiles2">
         <div class="card"><div class="label">Every day</div><div class="big">The daily operation</div><p class="small">Everyone gets the same operation. Post your result grid without spoilers.</p></div>
         <div class="card"><div class="label">${esc(copy().arcsLabel)}</div><div class="big">${esc(copy().arcsTitle)}</div><p class="small">${esc(copy().arcsText)}</p></div>
@@ -2715,6 +2749,7 @@
   route(/^\/ops(\?.*)?$/, async (q) => {
     const f = qs(location.hash);
     const all = (await api('/ops')).ops;
+    const calData = await api('/calendar');
     const dims = Object.keys(meta().dimensions);
     let list = all;
     if (f.kind) list = list.filter((o) => o.kind === f.kind);
@@ -2724,13 +2759,14 @@
     render(html`
       <h1>Operations</h1>
       <p class="small muted">${esc(copy().opsNote)}</p>
+      ${calendarHtml(calData)}
       <div class="filters">
-        <select id="kind" aria-label="Kind"><option value="">History and futures</option><option value="catalog" ${f.kind === 'catalog' ? 'selected' : ''}>History</option><option value="futures" ${f.kind === 'futures' ? 'selected' : ''}>Futures</option></select>
+        <select id="kind" aria-label="Kind"><option value="">History and futures</option><option value="catalog" ${f.kind === 'catalog' ? 'selected' : ''}>History</option><option value="futures" ${f.kind === 'futures' ? 'selected' : ''}>Futures</option><option value="watch" ${f.kind === 'watch' ? 'selected' : ''}>Watch</option></select>
         <select id="tier" aria-label="Tier"><option value="">All tiers</option>${[1, 2, 3, 4, 5, 6].map((t) => `<option ${String(t) === f.tier ? 'selected' : ''}>${t}</option>`).join('')}</select>
         <select id="dim" aria-label="Dimension"><option value="">All dimensions</option>${dims.map((d) => `<option ${d === f.dim ? 'selected' : ''}>${d}</option>`).join('')}</select>
         <input id="q" placeholder="Search titles" value="${esc(f.q || '')}" aria-label="Search">
       </div>
-      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}<span class="chip2">T${o.tier}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
+      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}${o.watch ? ' · ' + watchChip(o.watch) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}<span class="chip2">T${o.tier}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
     `);
     const upd = () => {
       const p = new URLSearchParams();
@@ -2760,6 +2796,7 @@
       <p class="small"><a href="${mode === 'arc' ? '#/arc/' + esc(f.arc) : '#/ops'}">${mode === 'arc' ? 'Back to the arc' : 'All operations'}</a></p>
       <div class="kicker">${kindLabel(o.kind)} · ${esc(o.label)}${o.arc ? ' · ' + esc(o.arc) : ''}</div>
       <h1>${esc(o.title)}</h1>
+      ${o.watch ? `<p>${watchChip(o.watch)}</p>${watchNote(o.watch)}` : ''}
       <div class="brief-grid">
         <div>
           <div class="card prose"><div class="label">Cold open</div><p>${md(o.brief)}</p>
@@ -2959,6 +2996,7 @@
       <div class="hud">
         <div class="hud-top">
           <div><div class="kicker">${esc(MODE[d.run.mode] || 'Operation')}${d.run.dayNumber ? ' #' + d.run.dayNumber : ''}${d.run.scored ? '' : ' · practice'}</div><h1>${esc(v.op.title)}</h1>
+            ${d.run.watch ? `<div>${watchChip(d.run.watch)}</div>` : ''}
             <div class="hud-sub">${esc(opp)} · ${esc(v.op.label)} · Tier ${v.tier}${v.op.world ? ' · ' + esc(v.op.world) : ''}${v.lens ? ' · Lens: ' + esc(v.lens.name) : ''}</div></div>
           <div class="turnbox"><div class="date">${esc(v.dates[v.turn - 1])}</div><div class="tn">Turn ${v.turn} of ${v.maxTurns} · <a href="#/how" target="_blank" rel="noopener">How to play</a></div></div>
         </div>
@@ -3149,6 +3187,7 @@
     render(html`
       <div class="result ${win ? '' : 'loss'}">
         <div class="kicker">${esc(MODE[run.mode] || 'Operation')}${run.dayNumber ? ' #' + run.dayNumber : ''} · ${esc(v.op.title)}</div>
+        ${run.watch ? `<div>${watchChip(run.watch)}</div>${watchNote(run.watch)}` : ''}
         <h1>${head}</h1>
         ${stars(o.stars)}
         <p class="score">${o.score}</p>
@@ -3485,7 +3524,7 @@
     const lens = s.lens ? ` · Lens: ${esc(meta().lenses[s.lens]?.name || s.lens)}` : '';
     const doc = s.doctrine ? ` · Doctrine: ${esc(meta().doctrines[s.doctrine]?.name || s.doctrine)}` : '';
     return `<div class="card verified"><div class="label"><span class="ok">Verified by replay</span> · ${esc(MODE[s.mode] || 'Operation')}${dayNoOf(s)}</div>
-      <h3>${esc(s.title)}</h3>
+      <h3>${esc(s.title)}${s.watch ? ' ' + watchChip(s.watch) : ''}</h3>
       <p>${stars(s.stars)} Score <b>${s.score}</b> · Tier ${s.tier}. ${esc(outcomeLine(s))}</p>
       <p class="small muted">${s.actions} actions from seed ${esc(s.seed)}${lens}${doc}</p>
       ${link ? `<a class="btn" href="#/v/${esc(link)}">Open the full record</a>` : ''}</div>`;
@@ -3518,6 +3557,7 @@
       <div class="hero">
         <div class="kicker">Verified record · ${esc(MODE[s.mode] || 'Operation')}${dayNoOf(s)}</div>
         <h1>${esc(s.title)}</h1>
+        ${s.watch ? `<p>${watchChip(s.watch)}</p>` : ''}
         <p>${esc(s.opponent)} · ${esc(s.dimension)} · Tier ${s.tier}</p>
         <div class="row">${stars(s.stars)} <span>Score ${s.score}</span></div>
       </div>
@@ -3557,7 +3597,7 @@
       </div>
       <div id="out"></div>
       <h2>Your results</h2>
-      ${recs.length ? `<div class="card scroll"><table><tr><th>Operation</th><th>Mode</th><th>Result</th><th>Score</th><th></th></tr>${recs.map((r) => `<tr><td>${esc(r.title)}<div class="small muted">Tier ${r.tier}</div></td><td>${esc(MODE[r.mode] || r.mode)}${r.dayNumber ? ' #' + r.dayNumber : ''}</td><td>${stars(r.stars || 0, 'small')}</td><td>${r.score}</td><td class="nowrap"><a class="btn" href="#/v/${esc(r.code)}">Replay</a> <button type="button" data-copy="${r.id}">Copy code</button></td></tr>`).join('')}</table></div>` : '<p class="muted">Finish a run and its record appears here.</p>'}
+      ${recs.length ? `<div class="card scroll"><table><tr><th>Operation</th><th>Mode</th><th>Result</th><th>Score</th><th></th></tr>${recs.map((r) => `<tr><td>${esc(r.title)}${r.watch ? ' ' + watchChip(r.watch) : ''}<div class="small muted">Tier ${r.tier}</div></td><td>${esc(MODE[r.mode] || r.mode)}${r.dayNumber ? ' #' + r.dayNumber : ''}</td><td>${stars(r.stars || 0, 'small')}</td><td>${r.score}</td><td class="nowrap"><a class="btn" href="#/v/${esc(r.code)}">Replay</a> <button type="button" data-copy="${r.id}">Copy code</button></td></tr>`).join('')}</table></div>` : '<p class="muted">Finish a run and its record appears here.</p>'}
     `);
     bind('[data-copy]', 'click', (e) => { const r = recs.find((x) => String(x.id) === e.currentTarget.dataset.copy); if (r) copyText(r.code, 'Code copied.'); });
     const R = REC(); const ctx = rc();

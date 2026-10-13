@@ -9,3 +9,9 @@ What is here, so a reset of the working machine does not cost the game again.
 - `test/` the record round-trip and legacy-code tests, the balance bot, the win-rate report and the tuner. `e2e/` the browser checks (Playwright).
 - `mkpkg.py` assembles the four packages from these parts. It expects the working layout it was written for (`out/`, `parts/`, `orig/`, `content/`).
 - `SOURCING_2026.md` every factual claim in the 2026 build, with where it came from and what is left to check.
+
+## Update of 12 October 2026
+
+- `patch-v4.py` turns the earlier bundle into the current one (watch operations and the 120-day calendar). The current `js/game.js` includes both features.
+- `dist/2026.zip` is built from the current bundle. The other three zips in `dist/` still hold the earlier bundle. They run the same content and behave the same, and they can be rebuilt with `mkpkg.py`.
+- `CHANGELOG_2026-10-12.md` lists every field changed by operation id. `BALANCE_2026-10-12.md` holds the win rates. `test/freeze.js` and `test/replay-codes.js` check that existing mechanics and old result codes stay valid.

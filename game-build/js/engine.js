@@ -1573,6 +1573,11 @@
     const reg = registry || {};
     if (!op || typeof op !== 'object') return ['not an operation'];
     if (!DIMENSIONS[op.dimension]) bad.push(`unknown dimension ${op.dimension}`);
+    if (op.kind != null && !['catalog', 'futures', 'watch'].includes(op.kind)) bad.push(`unknown kind ${op.kind}`);
+    if (op.kind === 'watch') {
+      if (!['open', 'settled'].includes(op.status)) bad.push('a watch operation needs status open or settled');
+      if (typeof op.settleOn !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(op.settleOn) || Number.isNaN(Date.parse(op.settleOn))) bad.push('a watch operation needs a settleOn date');
+    }
     if (!DOMAINS.includes(op.spine)) bad.push(`unknown spine ${op.spine}`);
     for (const d of op.theater || []) if (!DOMAINS.includes(d)) bad.push(`unknown theater domain ${d}`);
     for (const c of op.stratagems || []) if (!CARDS[c]) bad.push(`unknown stratagem ${c}`);

@@ -46,5 +46,13 @@
  "W012": {
   "handScale": 0.8,
   "consumeAdj": 0
+ },
+ "W013": {
+  "handScale": 0.81,
+  "consumeAdj": 0
+ },
+ "W014": {
+  "handScale": 1.07,
+  "consumeAdj": 0
  }
 }

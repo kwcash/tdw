@@ -453,3 +453,21 @@ a.card.feature:hover { border-color: var(--ink); }
 .cmp .best { font-weight: 700; color: var(--good); }
 .nowrap { white-space: nowrap; }
 .card.record textarea { margin: 8px 0; }
+
+/* ---- version 4: watch operations and the 120-day calendar ---- */
+.chip2.watch { font-weight: 700; border-color: var(--warn); color: var(--warn); background: color-mix(in srgb, var(--warn) 12%, var(--panel)); }
+.chip2.watch.settled { border-color: var(--good); color: var(--good); background: color-mix(in srgb, var(--good) 12%, var(--panel)); }
+.watchnote { margin: 4px 0 12px; }
+.cal { margin: 16px 0; }
+.cal h2 { margin: 0 0 8px; font-size: 18px; }
+.cal-list { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 0; }
+.cal-item { display: grid; grid-template-columns: 9.5em 1fr auto; gap: 4px 12px; align-items: baseline; padding: 8px 0; border-top: 1px solid var(--line); }
+.cal-item:first-child { border-top: 0; }
+.cal-when { font-weight: 700; font-variant-numeric: tabular-nums; }
+.cal-meta { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.cal-src { font-size: 13px; }
+.cal-src:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 560px) {
+  .cal-item { grid-template-columns: 1fr; gap: 2px; }
+  .cal-meta { justify-content: flex-start; }
+}
