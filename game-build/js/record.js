@@ -60,6 +60,7 @@
       case 'doctrine': return a.domain ? 'k' + domChar(E, a.domain) : 'k';
       case 'assign': if (!/^[A-Za-z0-9_-]{1,30}$/.test(a.cadre || '')) fail('Bad leader.'); return 'g' + domChar(E, a.domain) + a.cadre;
       case 'yield': if (!/^[A-Za-z0-9_-]{1,30}$/.test(a.holding || '')) fail('Bad holding.'); return 'y' + a.holding;
+      case 'reach': if (!/^[A-Za-z0-9_-]{1,30}$/.test(a.move || '')) fail('Bad move.'); return 'r' + a.move;
       case 'end': return 'e';
       default: return fail('Unknown action.');
     }
@@ -69,6 +70,8 @@
     if (g) return { type: 'assign', cadre: g[2], domain: E.DOMAINS[IDX.indexOf(g[1])] };
     const y = /^y([A-Za-z0-9_-]{1,30})$/.exec(tok);
     if (y) return { type: 'yield', holding: y[1] };
+    const rr = /^r([A-Za-z0-9_-]{1,30})$/.exec(tok);
+    if (rr) return { type: 'reach', move: rr[1] };
     const m = /^([dxafonXk])(\d{1,4}|[0-9ab])?$/.exec(tok) || (tok === 'e' ? ['e', 'e', undefined] : null);
     if (!m) fail('The code holds an action the game does not know.');
     const t = m[1];
@@ -152,6 +155,7 @@
       case 'name': return `Name ${a.domain} as the lever`;
       case 'doctrine': return `Play the doctrine card${a.domain ? ` on ${a.domain}` : ''}`;
       case 'yield': return `Give up ${((S.holdings || []).find((h) => h.id === a.holding) || {}).name || a.holding}`;
+      case 'reach': return `Use ${((S.reach || []).find((m) => m.id === a.move) || {}).name || a.move}`;
       case 'assign': return `Move ${(ctxNow && ctxNow.reg.cadres[a.cadre] && ctxNow.reg.cadres[a.cadre].name) || a.cadre} to ${a.domain}`;
       default: return `End turn ${S.turn}`;
     }
@@ -234,6 +238,9 @@
     switch (e.k) {
       case 'upkeep': return `Holding ${e.name} costs ${e.n}${e.consuming ? ` and denies only ${e.denial}` : ''}.`;
       case 'yield': return `${e.name} is given up.`;
+      case 'reach': return `${e.name} is used${e.permit === 'priced' ? ', at a price' : ''}.`;
+      case 'mirror': return null;
+      case 'unslope': return `${fn(e.f)}: ${e.n} slope removed from ${e.d}.`;
       case 'self': return `${fn(e.f)}: an act against its own position (${e.type}), ${e.why}.`;
       case 'legit': return e.n ? `${fn(e.f)} legitimacy ${sgn(e.n)}${e.why ? ', ' + (SRC[e.why] || (E.CARDS[e.why] ? card(e.why) : String(e.why).replace(/_/g, ' '))) : ''}. It stands at ${e.total}.` : null;
       case 'spike': return `${fn(e.f)} falls into an entropy spike at ${e.legitimacy} legitimacy.`;
@@ -346,11 +353,15 @@
       if (e.k === 'upkeep') paid[e.id] = (paid[e.id] || 0) + e.n;
       if (e.k === 'yield') gave[e.id] = fr.turn;
     }
+    const mirrors = {}; const usedMoves = {};
+    for (const fr of frames) for (const e of fr.ev) { if (e.k === 'mirror') mirrors[e.id] = (mirrors[e.id] || 0) + 1; if (e.k === 'reach') usedMoves[e.id] = (usedMoves[e.id] || 0) + 1; }
+    const reach = (S.reach || []).map((m) => ({ id: m.id, name: m.name, text: m.text, permit: m.permit[S.player] || 'free', used: usedMoves[m.id] || 0, mirror: mirrors[m.id] || 0, evidence: m.evidence }));
     const holdings = (S.holdings || []).map((h) => ({ id: h.id, name: h.name, cost: h.cost, denial: h.denial, consuming: h.cost > h.denial, paid: paid[h.id] || 0, gaveUpOn: gave[h.id] || null }));
 
     // Up to two changes, each tied to a number in this run.
     const changes = [];
     const lost = summary.outcome !== 'win';
+    for (const m of reach) if (m.permit === 'barred' && m.mirror) changes.push(`The rival used ${m.name} ${m.mirror} time${m.mirror > 1 ? 's' : ''}. That act was closed to ${You === 'You' ? 'you' : 'the player'}.`);
     for (const h of holdings) {
       if (!h.consuming) continue;
       if (h.gaveUpOn) changes.push(`${You} gave up ${h.name} on turn ${h.gaveUpOn}. By this operation's scores it cost ${h.cost} a turn and denied ${h.denial}. ${h.paid ? `Holding it had cost ${h.paid} by then.` : 'Holding it had cost nothing by then.'}`);
@@ -375,7 +386,7 @@
     return {
       summary, ledger, totalGain, relief: reliefList, pressure, absorbed: S.stats.absorbed, worstTurn, curve, captures, named, idle, idleTurns,
       stats: { detects: S.stats.detects, disrupts: S.stats.disrupts, defends: S.stats.defends }, changes: changes.slice(0, 2),
-      own: { sides }, holdings,
+      own: { sides }, holdings, reach,
     };
   }
 

@@ -444,6 +444,11 @@
   const slopeBonusFor = (S, v, d) => ((S.ledger[v].traits.slopeProne || []).includes(d) ? 1 : 0);
 
   // Leverage each actor will bank at the end of this turn from ground it holds against the player.
+  // Reach moves (Revision 38). A move is an act with a strong effect, and each faction holds a permit for it.
+  // Free acts anyone may take. A priced act works but costs the actor legitimacy and counts as an act against its own position.
+  // A barred act is closed to the actor. The board still lists it, with the evidence for why it is closed.
+  const reachOf = (S) => S.reach || [];
+  const permitOf = (S, m) => m.permit[S.player] || 'free';
   // Holdings (Revision 33). A holding costs its holder every turn and denies the rival part of its gain.
   // It is consuming where its cost is more than its denial. Giving one up can raise what the others cost (couples),
   // and keeping one can raise what the others cost while it stands (strains).
@@ -601,6 +606,10 @@
       stats: { detects: 0, disrupts: 0, defends: 0, absorbed: 0, offersTaken: 0, capturedDomains: 0 },
     };
     S.rng = hashSeed(`${S.seed}|${op.id}|${tier}`);
+    // Reach moves, when the operation has them. An operation without them carries no extra state.
+    if (Array.isArray(op.reach) && op.reach.length) {
+      S.reach = op.reach.map((m) => ({ id: m.id, name: m.name || m.id, domain: m.domain, text: m.text || '', log: m.log || '', permit: Object.assign({}, m.permit || {}), limit: clamp(Math.round(m.limit || 1), 1, 3), ap: clamp(Math.round(m.ap || 1), 1, 2), effects: (m.effects || []).map((e) => Object.assign({}, e)), pricedEffects: (m.pricedEffects || []).map((e) => Object.assign({}, e)), evidence: (m.evidence || []).map((x) => Object.assign({}, x)), used: 0 }));
+    }
     // Holdings, when the operation has them. An operation without them carries no extra state.
     if (Array.isArray(op.holdings) && op.holdings.length) {
       S.holdings = op.holdings.map((h) => ({ id: h.id, name: h.name || h.id, domain: h.domain, cost: clamp(Math.round(h.cost || 0), 0, 3), denial: clamp(Math.round(h.denial || 0), 0, 3), couples: (h.couples || []).slice(), strains: (h.strains || []).slice(), raised: 0, denies: h.denies || null, text: h.text || '', yieldText: h.yieldText || '', onYield: clone(h.onYield || []), active: true }));
@@ -680,7 +689,10 @@
   function applyEffect(S, e, ev) {
     if (!e || typeof e !== 'object') return;
     const f = e.faction;
+    if (e.mirror) ev.push({ k: 'mirror', id: e.mirror, f });
     switch (e.type) {
+      case 'ease': if (S.ledger[f] && DOMAINS.includes(e.domain)) ease(S, f, e.domain, e.n, ev); break;
+      case 'unslope': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const k = Math.min(e.n, D.slopes[f]); if (k > 0) { D.slopes[f] -= k; ev.push({ k: 'unslope', d: e.domain, n: k, f }); } } break;
       case 'legitimacy': { const got = addLegitimacy(S, f, e.n, ev, e.why || 'event'); if (e.self && got) ev.push({ k: 'self', f, type: e.self, why: e.selfWhy || e.why || 'event', n: got }); break; }
       case 'shield': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const before = D.shields[f]; D.shields[f] = clamp(before + e.n, 0, MAX_S); if (D.shields[f] !== before) ev.push({ k: 'shield', d: e.domain, n: D.shields[f] - before, total: D.shields[f], f, event: true }); } break;
       case 'dropShields': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const k = D.shields[f]; D.shields[f] = 0; if (k) ev.push({ k: 'drain', d: e.domain, n: k, src: e.why || 'event', f }); } break;
@@ -1183,6 +1195,7 @@
     }
     for (const c of S.cadres) if (c.faction === S.player && c.active !== false && !c.fixed && !(c.lock > 0) && !c.moved && S.ap >= 1) o.assign[c.id] = 1;
     if (holdingsOf(S).length) { o.yield = {}; for (const h of liveHoldings(S)) if (S.ap >= 1) o.yield[h.id] = 1; }
+    if (reachOf(S).length) { o.reach = {}; for (const m of reachOf(S)) { const p = permitOf(S, m); if (p !== 'barred' && m.used < m.limit && S.ap >= m.ap) o.reach[m.id] = p; } }
     return o;
   }
 
@@ -1367,6 +1380,21 @@
         if (code === 'governance') addLeverage(S, -3, ev, code);
         ev.push({ k: 'doctrine', code, d: a.domain || null });
         log(S, `Doctrine: ${DOCTRINES[code].name}. ${DOCTRINES[code].text}`);
+        break;
+      }
+      case 'reach': {
+        const m = reachOf(S).find((x) => x.id === a.move);
+        if (!m) throw new Error('No such move.');
+        const p = permitOf(S, m);
+        if (p === 'barred') throw new Error(`${m.name} is closed to you.`);
+        if (m.used >= m.limit) throw new Error(`You already used ${m.name}.`);
+        spend(m.ap);
+        m.used++;
+        for (const e of m.effects) applyEffect(S, e, ev);
+        if (p === 'priced') for (const e of m.pricedEffects) applyEffect(S, e, ev);
+        ev.push({ k: 'reach', id: m.id, name: m.name, d: m.domain, permit: p });
+        S.flags.acts.push('reach');
+        log(S, m.log || `You use ${m.name}.${p === 'priced' ? ' It has a price.' : ''}`);
         break;
       }
       case 'yield': {
@@ -1581,12 +1609,13 @@
       tier: S.tier, turn: S.turn, maxTurns: S.maxTurns, dates: S.dates, bursts: S.dim === 'Phase' ? [3, 6, 9].filter((t) => t <= S.maxTurns) : [],
       ap: S.ap, coherence: S.coherence, leverage: S.leverage, consumeAt: S.consumeAt, thresholds: thresholds(S), stage: S.stage, stageName: STAGES[Math.min(S.stage, 4)],
       board, intents, lever: { named: S.lever.named, exposed: S.lever.exposed, correct: S.lever.correct },
-      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign, ...(opt.yield ? { yield: opt.yield } : {}) }, apPenaltyNext: S.apPenalty,
+      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign, ...(opt.yield ? { yield: opt.yield } : {}), ...(opt.reach ? { reach: opt.reach } : {}) }, apPenaltyNext: S.apPenalty,
       log: S.log.slice(-30), history: S.history, over: S.over, spine: S.over ? S.op.spine : undefined,
       player: S.player, factions, boards, multi: S.factions.length > 2,
       cadres: S.cadres.filter((c) => c.active !== false).map((c) => ({ id: c.id, name: c.name, role: c.role, faction: c.faction, domain: c.domain, locked: c.lock > 0, mine: c.faction === S.player, movable: !!opt.assign[c.id], mods: c.mods, blurb: c.blurb })),
       pacts: S.pacts.map((p) => ({ id: p.id, name: p.name, members: p.members, against: p.against, active: p.active, broken: p.broken })),
       rules: { legitimacy: S.rules.legitimacy, spikeBelow: S.rules.legit.spikeBelow },
+      ...(S.reach ? { reach: S.reach.map((m) => ({ id: m.id, name: m.name, domain: m.domain, text: m.text, permit: permitOf(S, m), limit: m.limit, used: m.used, ap: m.ap, canUse: !!(opt.reach && opt.reach[m.id]), price: m.pricedEffects.filter((e) => e.type === 'legitimacy').reduce((x, e) => x - e.n, 0), evidence: m.evidence })) } : {}),
       ...(S.holdings ? { holdings: S.holdings.map((h) => ({ id: h.id, name: h.name, domain: h.domain, cost: holdingCost(S, h), baseCost: h.cost, denial: h.denial, consuming: isConsuming(S, h), active: h.active, couples: h.couples, strains: h.strains, text: h.text, canYield: !!(opt.yield && opt.yield[h.id]), yieldLegitimacy: h.onYield.filter((e) => e.type === 'legitimacy' && e.faction === S.player).reduce((x, e) => x + e.n, 0) })) } : {}),
     };
   }
@@ -1656,13 +1685,31 @@
     }
     const effectOk = (e, where) => {
       if (!e || typeof e !== 'object') { bad.push(`${where}: effect is not an object`); return; }
-      if (!['legitimacy', 'shield', 'dropShields', 'pressure', 'slope', 'coherence', 'leverage', 'tempo', 'pact', 'cadre', 'log'].includes(e.type)) bad.push(`${where}: unknown effect ${e.type}`);
+      if (!['legitimacy', 'shield', 'dropShields', 'pressure', 'slope', 'coherence', 'leverage', 'tempo', 'pact', 'cadre', 'log', 'ease', 'unslope'].includes(e.type)) bad.push(`${where}: unknown effect ${e.type}`);
       if (e.domain != null && !DOMAINS.includes(e.domain)) bad.push(`${where}: unknown domain ${e.domain}`);
       if (e.faction != null && op.factions && !ids.includes(e.faction)) bad.push(`${where}: faction ${e.faction} is not in the operation`);
       if (e.self != null && !SELF_TYPES.includes(e.self)) bad.push(`${where}: unknown self-act type ${e.self}`);
     };
     for (const s of op.script || []) { if (!Number.isInteger(s.turn) || s.turn < 1) bad.push('script entry needs a turn'); (s.effects || []).forEach((e) => effectOk(e, `script turn ${s.turn}`)); }
     for (const p of op.pacts || []) { const def = { ...((reg.pacts && reg.pacts[typeof p === 'string' ? p : p.id]) || {}), ...(typeof p === 'string' ? {} : p) }; for (const k of ['onForm', 'onBreak', 'perTurn']) (def[k] || []).forEach((e) => effectOk(e, `pact ${def.id} ${k}`)); }
+    const rids = [];
+    for (const m of op.reach || []) {
+      if (!m || typeof m.id !== 'string' || !ID_RE.test(m.id) || FORBIDDEN_ID.has(m.id)) { bad.push(`bad reach id ${m && m.id}`); continue; }
+      if (rids.includes(m.id)) bad.push(`duplicate reach id ${m.id}`);
+      rids.push(m.id);
+      if (!DOMAINS.includes(m.domain)) bad.push(`reach ${m.id} sits in unknown domain ${m.domain}`);
+      for (const [f, p] of Object.entries(m.permit || {})) {
+        if (!ids.includes(f)) bad.push(`reach ${m.id} gives a permit to ${f}, who is not in this operation`);
+        if (!['free', 'priced', 'barred'].includes(p)) bad.push(`reach ${m.id} permit ${p} is not free, priced or barred`);
+      }
+      if (m.limit != null && !(Number.isInteger(m.limit) && m.limit >= 1 && m.limit <= 3)) bad.push(`reach ${m.id} needs a limit from 1 to 3`);
+      if (m.ap != null && !(Number.isInteger(m.ap) && m.ap >= 1 && m.ap <= 2)) bad.push(`reach ${m.id} needs 1 or 2 actions`);
+      (m.effects || []).forEach((e) => effectOk(e, `reach ${m.id}`));
+      (m.pricedEffects || []).forEach((e) => effectOk(e, `reach ${m.id} price`));
+      if (Object.values(m.permit || {}).includes('priced') && !(m.pricedEffects || []).length) bad.push(`reach ${m.id} is priced and names no price`);
+      for (const x of m.evidence || []) if (!x || !/^EV-\d{3}$/.test(x.id || '') || !x.line) bad.push(`reach ${m.id} has evidence without a card id and a line`);
+    }
+    for (const s of op.script || []) for (const e of s.effects || []) if (e.mirror != null && !rids.includes(e.mirror)) bad.push(`script turn ${s.turn} mirrors an unknown reach move ${e.mirror}`);
     const hids = [];
     for (const h of op.holdings || []) {
       if (!h || typeof h.id !== 'string' || !ID_RE.test(h.id) || FORBIDDEN_ID.has(h.id)) { bad.push(`bad holding id ${h && h.id}`); continue; }
@@ -1796,7 +1843,7 @@
     return {
       watch: watchOf(o),
       factions: factionsOf(o),
-      id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, dimension: o.dimension, rule: E.DIMENSIONS[o.dimension],
+      id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, rule: E.DIMENSIONS[o.dimension],
       stage: o.stage, opponent: o.opponent, theater: o.theater, world: o.world, arc: o.arc, brief: o.brief,
       signature: o.stratagems.map((c) => ({ code: c, num: E.CARDS[c].num, name: E.CARDS[c].name, group: E.CARDS[c].group })),
       best: withBest ? bestOf(o.id) : null,
@@ -1956,7 +2003,7 @@
   on('GET', /^\/api\/ops$/, () => {
     const best = {};
     for (const r of runs()) if (r.status === 'won') best[r.op_id] = Math.max(best[r.op_id] || 0, r.stars);
-    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, dimension: o.dimension, arc: o.arc, world: o.world, watch: watchOf(o), stars: best[o.id] ?? null })) };
+    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, arc: o.arc, world: o.world, watch: watchOf(o), stars: best[o.id] ?? null })) };
   });
   on('GET', /^\/api\/ops\/([A-Za-z0-9]+)$/, (m, q) => {
     const o = opById.get(m[1]);
@@ -1992,6 +2039,7 @@
     if (action.domain != null) clean.domain = String(action.domain);
     if (action.cadre != null) clean.cadre = String(action.cadre);
     if (action.holding != null) clean.holding = String(action.holding);
+    if (action.move != null) clean.move = String(action.move);
     const S = JSON.parse(JSON.stringify(run.state));
     let events;
     try { events = E.act(S, clean); } catch (e) { fail(400, e.message); }
@@ -2842,7 +2890,7 @@
         <select id="dim" aria-label="Dimension"><option value="">All dimensions</option>${dims.map((d) => `<option ${d === f.dim ? 'selected' : ''}>${d}</option>`).join('')}</select>
         <input id="q" placeholder="Search titles" value="${esc(f.q || '')}" aria-label="Search">
       </div>
-      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}${o.watch ? ' · ' + watchChip(o.watch) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}<span class="chip2">T${o.tier}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
+      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}${o.watch ? ' · ' + watchChip(o.watch) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}${o.band ? '<span class="chip2 band">Asymmetry band</span>' : ''}<span class="chip2">T${o.tier}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
     `);
     const upd = () => {
       const p = new URLSearchParams();
@@ -2880,11 +2928,12 @@
             <div class="label">Domains in play</div><p class="pill-row">${o.theater.map((t) => `<span class="chip2">${icon(t, 'ic')} ${esc(t)}</span>`).join('')}</p>
             <p class="small muted">One of these is the lever the operation turns on. Watch where the cards land, then name it.</p>
           </div>
+          ${o.band ? '<div class="card bandnote"><div class="label">Asymmetry band</div><p>The rival acts on its own population and its own firms with no court, no press and no vote in the way. Your side holds the same kinds of power under law. Some acts are closed to you and some carry a price. The board lists each one with its source.</p><p class="small muted">A scripted player wins this operation rarely. The score is the game\'s reading and not a count.</p></div>' : ''}
           <div class="card rulebox"><div class="label">The physics · ${esc(o.dimension)} · ${esc(o.rule.tier)}</div><p><b>${esc(o.rule.rule)}</b></p><p class="small">Counter: ${esc(o.rule.counter)}</p></div>
           <div class="card"><div class="label">Intelligence</div><p class="small">The record ties this operation to ${o.signature.map((s) => `<b>Stratagem ${s.num}, ${esc(s.name)}</b>`).join(' and ')}. Expect to see it often.</p></div>
         </div>
         <div>
-          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${[1, 2, 3, 4, 5, 6].map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}">T${t}</button>`).join('')}</div><p class="small muted">The record sets Tier ${o.tier}.</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>Tier ${d.arcTier || o.tier}</p><p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
+          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${(o.band ? [o.tier] : [1, 2, 3, 4, 5, 6]).map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}">T${t}</button>`).join('')}</div><p class="small muted">${o.band ? 'This operation sits in the asymmetry band and plays at Tier ' + o.tier + ' only.' : 'The record sets Tier ' + o.tier + '.'}</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>Tier ${d.arcTier || o.tier}</p><p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
           <div class="card"><div class="label">Lens · optional</div><div class="loadout">${lensRows}</div></div>
           <div class="card"><div class="label">Doctrine card · optional, once per operation</div><div class="loadout">${docRows}</div></div>
           ${o.best ? `<p>Your best: ${stars(o.best.stars)} · ${o.best.score}</p>` : ''}
@@ -2974,6 +3023,18 @@
       return `<li class="cadre ${c.mine ? 'mine' : 'theirs'} ${c.locked ? 'locked' : ''}"><div><b>${esc(c.name)}</b> <span class="small muted">${esc(c.role)} · ${esc(factionShort(c.faction))}</span></div><div class="small">${icon(c.domain)} ${esc(c.domain)}${c.locked ? ' · out of action' : ''}</div><div class="small muted">${esc(modsText(c.mods))}</div>${mv}</li>`;
     }).join('');
     return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders</div><ul>${rows}</ul></section>`;
+  }
+
+  function reachHtml(v) {
+    if (!v.reach || !v.reach.length) return '';
+    const STATE = { barred: 'Closed to you', priced: 'Has a price', free: 'Open' };
+    const rows = v.reach.map((m) => {
+      const st = m.used >= m.limit && m.permit !== 'barred' ? 'Used' : STATE[m.permit];
+      const ev = m.evidence && m.evidence.length ? `<details class="rv-ev"><summary>Why</summary><ul>${m.evidence.map((x) => `<li><b>${esc(x.id)}</b> ${esc(x.line)}</li>`).join('')}</ul></details>` : '';
+      const price = m.permit === 'priced' ? `<div class="small">Costs ${m.price} legitimacy and counts as an act against your own position.</div>` : '';
+      return `<li class="reach ${esc(m.permit)} ${m.used >= m.limit ? 'gone' : ''}"><div><b>${esc(m.name)}</b> <span class="chip2 rstate">${esc(st)}</span></div><div class="small">${icon(m.domain)} ${esc(m.domain)}</div><div class="small muted">${esc(m.text)}</div>${price}${ev}${m.canUse ? `<button type="button" data-reach="${esc(m.id)}">Use · ${m.ap} action${m.ap > 1 ? 's' : ''}</button>` : ''}</li>`;
+    }).join('');
+    return `<section class="reachbox" aria-label="Reach"><div class="label">Reach</div><ul>${rows}</ul><p class="small muted">An act marked closed is open to the rival and barred to you. Each one lists the evidence behind that.</p></section>`;
   }
 
   function holdingsHtml(v) {
@@ -3096,7 +3157,7 @@
           ${doc ? `<div class="meter"><div class="lbl">Doctrine · ${esc(doc.layer)}</div>${doc.used ? `<div class="small muted">${esc(doc.name)} spent</div>` : `<button type="button" id="doctrine" ${v.can.doctrine ? '' : 'disabled'}>${esc(doc.name)}</button>`}</div>` : ''}
         </div>
       </div>
-      ${factionsHtml(v)}${cadresHtml(v)}${holdingsHtml(v)}
+      ${factionsHtml(v)}${cadresHtml(v)}${holdingsHtml(v)}${reachHtml(v)}
       ${G.feed.length ? `<div class="feed" aria-live="polite">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
       <div class="hand-head"><h2>Cards in play</h2><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
       <div class="hand">${v.intents.filter((i) => isMine(v, i)).map(cardHtml).join('') || '<p class="muted">No cards aimed at you this turn.</p>'}</div>
@@ -3131,6 +3192,13 @@
       act({ type: 'end' });
     });
     $('#rule').addEventListener('click', () => openSheet(`<h3>${esc(v.op.dimension)} · ${esc(v.rule.tier)}</h3><p><b>${esc(v.rule.rule)}</b></p><p>Counter: ${esc(v.rule.counter)}</p>${v.lens ? `<p class="small">Your lens, ${esc(v.lens.name)}: ${esc(v.lens.text)}</p>` : ''}<p class="small muted">The ten dimensions are the physics of an operation. Coherence multiplies, Agency gates, Topology and Entropy describe the ground, Time, Asymmetry and Criticality describe the contest, and Phase, Gradient and Resonance describe the move.</p>`));
+    bind('[data-reach]', 'click', (e) => {
+      const id = e.currentTarget.dataset.reach;
+      const m = v.reach.find((x) => x.id === id);
+      const price = m.permit === 'priced' ? `<p class="small">This act has a price. It costs ${m.price} legitimacy and counts as an act against your own position.</p>` : '';
+      openSheet(`<h3>${esc(m.name)}</h3><p class="small">${esc(m.text)}</p>${price}<div class="acts"><button type="button" class="primary" data-yes>Use it · ${m.ap} action${m.ap > 1 ? 's' : ''}</button><button type="button" data-do="close">Not now</button></div>`,
+        (sheet) => { bind('[data-yes]', 'click', () => { closeSheet(); act({ type: 'reach', move: id }); }, sheet); bind('[data-do="close"]', 'click', closeSheet, sheet); });
+    });
     bind('[data-yield]', 'click', (e) => {
       const id = e.currentTarget.dataset.yield;
       const h = v.holdings.find((x) => x.id === id);
@@ -3710,6 +3778,17 @@
   const dayNoOf = (s) => (s.mode === 'daily' ? ` #${REC().dayNumber(rc(), s.seed.slice(6))}` : '');
   const sendText = (title, tier, r, code) => `TDW challenge: ${title}, Tier ${tier}.\nMy result: ${r.score} points, ${'★'.repeat(r.stars)}${'☆'.repeat(3 - r.stars)}.\nCheck it by replay, then send yours back: ${recLink(code)}`;
 
+  function reachReportHtml(rep) {
+    const r = rep.reach;
+    if (!r || !r.length) return '';
+    const closed = r.filter((m) => m.permit === 'barred');
+    const priced = r.filter((m) => m.permit === 'priced' && m.used);
+    const item = (m, lead) => `<li><b>${esc(m.name)}.</b> ${lead} <span class="small muted">${m.evidence.map((x) => esc(x.id)).join(', ')}</span></li>`;
+    const rows = closed.map((m) => item(m, `${m.mirror ? `The rival used it ${m.mirror} time${m.mirror > 1 ? 's' : ''} in this run. ` : 'The rival did not use it in this run. '}It was closed to you.`))
+      .concat(priced.map((m) => item(m, `You used it and paid for it.`))).join('');
+    return `<h3>What your rules closed</h3><ul class="own">${rows || '<li>Nothing closed in this run.</li>'}</ul><p class="small muted">The permits are the game's reading of the evidence cards. They are not a count of anything.</p>`;
+  }
+
   function ownHtml(rep) {
     const o = rep.own;
     if (!o || !o.sides.some((s) => s.acts.length)) return '';
@@ -3744,6 +3823,7 @@
       <h3>Pressure that landed</h3><p>${press}</p>
       ${worst}
       <h3>The play</h3><p>${rep.stats.detects} Detect, ${rep.stats.disrupts} Disrupt, ${rep.stats.defends} Defend. ${idle} ${named}</p>
+      ${reachReportHtml(rep)}
       ${ownHtml(rep)}
       <h3>What to change</h3><ul class="changes">${rep.changes.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
       <p class="small muted">Computed from the action log. It describes what happened, not what would have happened.</p>

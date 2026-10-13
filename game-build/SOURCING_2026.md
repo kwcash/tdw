@@ -1,8 +1,8 @@
 # Sourcing list for TDW 2026
 
-Updated 13 October 2026.
+Updated 13 October 2026, with W017 and W018 added.
 
-The sixteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
+The eighteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
 
 **How to use this file.** Each row gives one factual claim, where it came from, and what is still to do. I could not check any 2026 event independently. Every 2026 claim comes from the Architecture of Strategy package you sent (playbook v4, contest map v6, the prediction ledger and the review package). Claims marked **GK** come from my general knowledge up to mid-2026. Treat a GK claim as unverified until a source is added.
 
@@ -78,6 +78,30 @@ Status keys. **Use** the package states it as fact (F) with a named source. **Ch
 | W016 | The department attributed the tools to a group it calls Flax Typhoon and to a mainland contractor. The text calls this an allegation and names no firm | E0045 (allegation, no verdict). The group label is the department's own | Check, allegation |
 | W016 | Named targets: a South Carolina power company, an NGO, airports in Japan and Poland, Taiwanese gas and power companies, and Taiwanese universities | E0045 | Check |
 | W016 | The foreign ministry in Beijing told the United States to quit its double standards, on 9 October 2026 | E0045 (stated position). Confirm against the ministry's transcript | Check |
+| W017 | The Party-state's National Intelligence Law of 2017 obliges any organization or citizen to support, assist and cooperate with state intelligence work. | EV-001: National Intelligence Law (2017), Article 7, and National Security Law (2015), Article 11, as cited in the Military-Civil Fusion case, note 4. | Use |
+| W017 | US agencies compel a firm to produce customer data only through a warrant, a court order or a statutory process the firm can challenge in court. | EV-020: United States Constitution, amendment IV, and the Stored Communications Act. A primary text and not from the book files. | Check |
+| W017 | The book argues that the statute puts the relatives of a person abroad within the Party-state's reach, so the relative becomes the lever. The book states this as its own argument. | EV-004: Military-Civil Fusion case, the passage on the National Intelligence Law. The book states this as its own argument. | Check |
+| W017 | The Party-state has run overseas police service stations on foreign soil to pressure dissidents. | EV-003: Justice Department complaints and arrests of 2023 and Safeguard Defenders reporting, as cited in Part Three, note 9. | Check |
+| W017 | In the West the same powers over money are divided and contested in public. Courts can challenge them, voters can answer them and a free press can report them. Anyone can escape them. In China they sit with a single party. The book states this as its own argument. | EV-010: Financial Control case, the passage on accountability. The book states this as its own argument. | Check |
+| W017 | The Hong Kong national security law claims jurisdiction over offenses committed outside Hong Kong by non-residents, and the police later posted bounties on named activists abroad. | EV-002: National Security Law, Article 38, and Hong Kong Police Force bounty announcements of July and December 2023, as cited in the Hong Kong case, note 9. | Use |
+| W017 | The First Amendment bars the US government from suppressing lawful speech. | EV-019: United States Constitution, amendment I. A primary text and not from the book files. | Check |
+| W017 | Suspicion by ancestry is the outcome the Party wants. It isolates the diaspora and confirms the Party's claim that overseas Chinese have no home but the People's Republic. The book states this as its own argument. | EV-014: Military-Civil Fusion case, the closing passage on the defense. The book states this as its own argument. | Check |
+| W017 | The book's counter to transnational repression is to treat it as a national-security offense and not a private dispute, to shut the overseas stations and to protect the diaspora plainly. The book states this as its own argument. | EV-017: Part Three, the Sign and the Counter for the Psychological domain. The book states this as its own counter. | Check |
+| W017 | The Defense Department's 1260H list of Chinese military companies and the Commerce Department's Entity List are published in the Federal Register. | EV-015: Section 1260H designations and Entity List determinations, as cited in the Military-Civil Fusion case, note 5. | Use |
+| W017 | The book's defense against a Phase operation is to stage the response before the trigger. Sanctions, asset actions and legal measures are designed and agreed in advance, so the answer lands in hours and not months. The book states this as its own argument. | EV-018: Hong Kong case, the passage on the counter. The book states this as its own counter. | Check |
+| W017 | The permits (free, priced or barred), the cost and effect of each move, and the script beats are the game's reading of the cards above. The record ends on 12 October 2026 | Designer reading (R) | Scenario |
+| W018 | The People's Bank of China designed its digital currency on a managed-anonymity principle, private for small purchases and traceable when the state decides it matters. | EV-005: People's Bank of China Digital Currency Research Institute publications on e-CNY design, as cited in the Financial Control case, note 4. The book says full integration with the behavioral record is not yet operational at national scale. | Check |
+| W018 | US agencies compel a firm to produce customer data only through a warrant, a court order or a statutory process the firm can challenge in court. | EV-020: United States Constitution, amendment IV, and the Stored Communications Act. A primary text and not from the book files. | Check |
+| W018 | Hong Kong's Apple Daily published its final edition on 24 June 2021 after an asset freeze under the national security law. | EV-007: Apple Daily final edition, 24 June 2021, with asset-freeze figures from company filings and Security Bureau statements, as cited in the Hong Kong case, note 4. | Check |
+| W018 | About a quarter of China scholars report that they censor themselves. | EV-008: Greitens and Truex, Repressive Experiences among China Scholars, The China Quarterly (2020), as cited in Part Two, note 14. | Check |
+| W018 | The First Amendment bars the US government from suppressing lawful speech. | EV-019: United States Constitution, amendment I. A primary text and not from the book files. | Check |
+| W018 | In February 2022 Canada invoked its Emergencies Act and froze the bank accounts of people who had funded a protest. A Federal Court ruling in 2024 found the invocation unreasonable. | EV-011: Emergencies Act invocation of February 2022, the Public Order Emergency Commission and the 2024 Federal Court ruling, as cited in the Financial Control case, note 7. | Check |
+| W018 | From 2013 to 2017 a Justice Department initiative pressured banks to cut off legal but disfavored businesses. House findings and FDIC reversals followed. | EV-012: Operation Choke Point, a Justice Department initiative of 2013 to 2017, with House Oversight Committee findings and FDIC policy reversals, as cited in the Financial Control case, note 6. | Check |
+| W018 | In 2023 a British bank quietly debanked a political figure over his views. An apology, an executive's resignation and a regulatory review followed. | EV-013: The UK debanking episode of 2023 and the Financial Conduct Authority review, as cited in the Financial Control case, note 8. | Check |
+| W018 | In the West the same powers over money are divided and contested in public. Courts can challenge them, voters can answer them and a free press can report them. Anyone can escape them. In China they sit with a single party. The book states this as its own argument. | EV-010: Financial Control case, the passage on accountability. The book states this as its own argument. | Check |
+| W018 | The Defense Department's 1260H list of Chinese military companies and the Commerce Department's Entity List are published in the Federal Register. | EV-015: Section 1260H designations and Entity List determinations, as cited in the Military-Civil Fusion case, note 5. | Use |
+| W018 | Under the pressure of a delisting statute the PCAOB secured an inspection agreement in August 2022 and conducted its first inspections of mainland and Hong Kong audit firms in late 2022. | EV-016: PCAOB Statement of Protocol of August 2022, as cited in the Borrowed Knife case, note 3. | Check |
+| W018 | The permits (free, priced or barred), the cost and effect of each move, and the script beats are the game's reading of the cards above. The record ends on 12 October 2026 | Designer reading (R) | Scenario |
 
 ## Calendar
 
@@ -99,12 +123,12 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 - Biology: no technical content. The op records governance and disclosure only.
 - No Taiwanese candidate is named and no candidate list. The game takes no side between Taiwan's parties. It shows no poll and no prediction of who wins. The text says "the opposition" and uses offices.
 - Nothing after 12 October 2026 is record. The vote and the December window appear only as a scenario or as a scheduled date.
-- The book's prediction ledger text does not appear in the game. Ledger ids may appear only as internal ref values, and none does.
+- The book's prediction ledger text appears only on the Forecast page, unchanged and with its time stamp, under the author's written permission. It does not appear in any operation. Evidence cards EV-001 to EV-020 appear on the board of W017 and W018 and in their reports.
 - Left out on purpose: scenario CW-3 of the playbook (a leader's family member taken hostage), because it names a private individual. Also left out: the E-10 trade figures marked unverified, the 25-year Iran deal figure the playbook marks "do not use", and all of the playbook's predictions.
 
 ## The ten, twelve and thirty-six
 
-- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 to W016 add second levers on Information, Financial, Economic and Cyber.
+- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 to W016 add second levers on Information, Financial, Economic and Cyber. W017 and W018 add second levers on Legal and Financial.
 - **Ten dimensions.** Every dimension is the physics of at least one operation. Entropy and Topology each run twice.
 - **Thirty-six stratagems.** W001 to W012 give each stratagem once, three to an operation. W013 to W016 reuse stratagems that W001 to W012 already use. Every stratagem still appears, and several appear twice.
 
@@ -126,3 +150,5 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 | W014 The Special Budget | Financial | Coherence | S33, S9, S4 |
 | W015 The Shadow Fleet | Economic | Entropy | S21, S12, S36 |
 | W016 The Seized Botnet | Cyber | Topology | S13, S10, S22 |
+| W017 The Reach (asymmetry band) | Legal | Agency | S3, S8, S35 |
+| W018 The Wallet (asymmetry band) | Financial | Asymmetry | S22, S33, S16 |

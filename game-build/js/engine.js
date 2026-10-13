@@ -444,6 +444,11 @@
   const slopeBonusFor = (S, v, d) => ((S.ledger[v].traits.slopeProne || []).includes(d) ? 1 : 0);
 
   // Leverage each actor will bank at the end of this turn from ground it holds against the player.
+  // Reach moves (Revision 38). A move is an act with a strong effect, and each faction holds a permit for it.
+  // Free acts anyone may take. A priced act works but costs the actor legitimacy and counts as an act against its own position.
+  // A barred act is closed to the actor. The board still lists it, with the evidence for why it is closed.
+  const reachOf = (S) => S.reach || [];
+  const permitOf = (S, m) => m.permit[S.player] || 'free';
   // Holdings (Revision 33). A holding costs its holder every turn and denies the rival part of its gain.
   // It is consuming where its cost is more than its denial. Giving one up can raise what the others cost (couples),
   // and keeping one can raise what the others cost while it stands (strains).
@@ -601,6 +606,10 @@
       stats: { detects: 0, disrupts: 0, defends: 0, absorbed: 0, offersTaken: 0, capturedDomains: 0 },
     };
     S.rng = hashSeed(`${S.seed}|${op.id}|${tier}`);
+    // Reach moves, when the operation has them. An operation without them carries no extra state.
+    if (Array.isArray(op.reach) && op.reach.length) {
+      S.reach = op.reach.map((m) => ({ id: m.id, name: m.name || m.id, domain: m.domain, text: m.text || '', log: m.log || '', permit: Object.assign({}, m.permit || {}), limit: clamp(Math.round(m.limit || 1), 1, 3), ap: clamp(Math.round(m.ap || 1), 1, 2), effects: (m.effects || []).map((e) => Object.assign({}, e)), pricedEffects: (m.pricedEffects || []).map((e) => Object.assign({}, e)), evidence: (m.evidence || []).map((x) => Object.assign({}, x)), used: 0 }));
+    }
     // Holdings, when the operation has them. An operation without them carries no extra state.
     if (Array.isArray(op.holdings) && op.holdings.length) {
       S.holdings = op.holdings.map((h) => ({ id: h.id, name: h.name || h.id, domain: h.domain, cost: clamp(Math.round(h.cost || 0), 0, 3), denial: clamp(Math.round(h.denial || 0), 0, 3), couples: (h.couples || []).slice(), strains: (h.strains || []).slice(), raised: 0, denies: h.denies || null, text: h.text || '', yieldText: h.yieldText || '', onYield: clone(h.onYield || []), active: true }));
@@ -680,7 +689,10 @@
   function applyEffect(S, e, ev) {
     if (!e || typeof e !== 'object') return;
     const f = e.faction;
+    if (e.mirror) ev.push({ k: 'mirror', id: e.mirror, f });
     switch (e.type) {
+      case 'ease': if (S.ledger[f] && DOMAINS.includes(e.domain)) ease(S, f, e.domain, e.n, ev); break;
+      case 'unslope': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const k = Math.min(e.n, D.slopes[f]); if (k > 0) { D.slopes[f] -= k; ev.push({ k: 'unslope', d: e.domain, n: k, f }); } } break;
       case 'legitimacy': { const got = addLegitimacy(S, f, e.n, ev, e.why || 'event'); if (e.self && got) ev.push({ k: 'self', f, type: e.self, why: e.selfWhy || e.why || 'event', n: got }); break; }
       case 'shield': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const before = D.shields[f]; D.shields[f] = clamp(before + e.n, 0, MAX_S); if (D.shields[f] !== before) ev.push({ k: 'shield', d: e.domain, n: D.shields[f] - before, total: D.shields[f], f, event: true }); } break;
       case 'dropShields': if (S.ledger[f] && DOMAINS.includes(e.domain)) { const D = S.domainState[e.domain]; const k = D.shields[f]; D.shields[f] = 0; if (k) ev.push({ k: 'drain', d: e.domain, n: k, src: e.why || 'event', f }); } break;
@@ -1183,6 +1195,7 @@
     }
     for (const c of S.cadres) if (c.faction === S.player && c.active !== false && !c.fixed && !(c.lock > 0) && !c.moved && S.ap >= 1) o.assign[c.id] = 1;
     if (holdingsOf(S).length) { o.yield = {}; for (const h of liveHoldings(S)) if (S.ap >= 1) o.yield[h.id] = 1; }
+    if (reachOf(S).length) { o.reach = {}; for (const m of reachOf(S)) { const p = permitOf(S, m); if (p !== 'barred' && m.used < m.limit && S.ap >= m.ap) o.reach[m.id] = p; } }
     return o;
   }
 
@@ -1367,6 +1380,21 @@
         if (code === 'governance') addLeverage(S, -3, ev, code);
         ev.push({ k: 'doctrine', code, d: a.domain || null });
         log(S, `Doctrine: ${DOCTRINES[code].name}. ${DOCTRINES[code].text}`);
+        break;
+      }
+      case 'reach': {
+        const m = reachOf(S).find((x) => x.id === a.move);
+        if (!m) throw new Error('No such move.');
+        const p = permitOf(S, m);
+        if (p === 'barred') throw new Error(`${m.name} is closed to you.`);
+        if (m.used >= m.limit) throw new Error(`You already used ${m.name}.`);
+        spend(m.ap);
+        m.used++;
+        for (const e of m.effects) applyEffect(S, e, ev);
+        if (p === 'priced') for (const e of m.pricedEffects) applyEffect(S, e, ev);
+        ev.push({ k: 'reach', id: m.id, name: m.name, d: m.domain, permit: p });
+        S.flags.acts.push('reach');
+        log(S, m.log || `You use ${m.name}.${p === 'priced' ? ' It has a price.' : ''}`);
         break;
       }
       case 'yield': {
@@ -1581,12 +1609,13 @@
       tier: S.tier, turn: S.turn, maxTurns: S.maxTurns, dates: S.dates, bursts: S.dim === 'Phase' ? [3, 6, 9].filter((t) => t <= S.maxTurns) : [],
       ap: S.ap, coherence: S.coherence, leverage: S.leverage, consumeAt: S.consumeAt, thresholds: thresholds(S), stage: S.stage, stageName: STAGES[Math.min(S.stage, 4)],
       board, intents, lever: { named: S.lever.named, exposed: S.lever.exposed, correct: S.lever.correct },
-      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign, ...(opt.yield ? { yield: opt.yield } : {}) }, apPenaltyNext: S.apPenalty,
+      can: { name: opt.name, doctrine: opt.doctrine, end: opt.end, assign: opt.assign, ...(opt.yield ? { yield: opt.yield } : {}), ...(opt.reach ? { reach: opt.reach } : {}) }, apPenaltyNext: S.apPenalty,
       log: S.log.slice(-30), history: S.history, over: S.over, spine: S.over ? S.op.spine : undefined,
       player: S.player, factions, boards, multi: S.factions.length > 2,
       cadres: S.cadres.filter((c) => c.active !== false).map((c) => ({ id: c.id, name: c.name, role: c.role, faction: c.faction, domain: c.domain, locked: c.lock > 0, mine: c.faction === S.player, movable: !!opt.assign[c.id], mods: c.mods, blurb: c.blurb })),
       pacts: S.pacts.map((p) => ({ id: p.id, name: p.name, members: p.members, against: p.against, active: p.active, broken: p.broken })),
       rules: { legitimacy: S.rules.legitimacy, spikeBelow: S.rules.legit.spikeBelow },
+      ...(S.reach ? { reach: S.reach.map((m) => ({ id: m.id, name: m.name, domain: m.domain, text: m.text, permit: permitOf(S, m), limit: m.limit, used: m.used, ap: m.ap, canUse: !!(opt.reach && opt.reach[m.id]), price: m.pricedEffects.filter((e) => e.type === 'legitimacy').reduce((x, e) => x - e.n, 0), evidence: m.evidence })) } : {}),
       ...(S.holdings ? { holdings: S.holdings.map((h) => ({ id: h.id, name: h.name, domain: h.domain, cost: holdingCost(S, h), baseCost: h.cost, denial: h.denial, consuming: isConsuming(S, h), active: h.active, couples: h.couples, strains: h.strains, text: h.text, canYield: !!(opt.yield && opt.yield[h.id]), yieldLegitimacy: h.onYield.filter((e) => e.type === 'legitimacy' && e.faction === S.player).reduce((x, e) => x + e.n, 0) })) } : {}),
     };
   }
@@ -1656,13 +1685,31 @@
     }
     const effectOk = (e, where) => {
       if (!e || typeof e !== 'object') { bad.push(`${where}: effect is not an object`); return; }
-      if (!['legitimacy', 'shield', 'dropShields', 'pressure', 'slope', 'coherence', 'leverage', 'tempo', 'pact', 'cadre', 'log'].includes(e.type)) bad.push(`${where}: unknown effect ${e.type}`);
+      if (!['legitimacy', 'shield', 'dropShields', 'pressure', 'slope', 'coherence', 'leverage', 'tempo', 'pact', 'cadre', 'log', 'ease', 'unslope'].includes(e.type)) bad.push(`${where}: unknown effect ${e.type}`);
       if (e.domain != null && !DOMAINS.includes(e.domain)) bad.push(`${where}: unknown domain ${e.domain}`);
       if (e.faction != null && op.factions && !ids.includes(e.faction)) bad.push(`${where}: faction ${e.faction} is not in the operation`);
       if (e.self != null && !SELF_TYPES.includes(e.self)) bad.push(`${where}: unknown self-act type ${e.self}`);
     };
     for (const s of op.script || []) { if (!Number.isInteger(s.turn) || s.turn < 1) bad.push('script entry needs a turn'); (s.effects || []).forEach((e) => effectOk(e, `script turn ${s.turn}`)); }
     for (const p of op.pacts || []) { const def = { ...((reg.pacts && reg.pacts[typeof p === 'string' ? p : p.id]) || {}), ...(typeof p === 'string' ? {} : p) }; for (const k of ['onForm', 'onBreak', 'perTurn']) (def[k] || []).forEach((e) => effectOk(e, `pact ${def.id} ${k}`)); }
+    const rids = [];
+    for (const m of op.reach || []) {
+      if (!m || typeof m.id !== 'string' || !ID_RE.test(m.id) || FORBIDDEN_ID.has(m.id)) { bad.push(`bad reach id ${m && m.id}`); continue; }
+      if (rids.includes(m.id)) bad.push(`duplicate reach id ${m.id}`);
+      rids.push(m.id);
+      if (!DOMAINS.includes(m.domain)) bad.push(`reach ${m.id} sits in unknown domain ${m.domain}`);
+      for (const [f, p] of Object.entries(m.permit || {})) {
+        if (!ids.includes(f)) bad.push(`reach ${m.id} gives a permit to ${f}, who is not in this operation`);
+        if (!['free', 'priced', 'barred'].includes(p)) bad.push(`reach ${m.id} permit ${p} is not free, priced or barred`);
+      }
+      if (m.limit != null && !(Number.isInteger(m.limit) && m.limit >= 1 && m.limit <= 3)) bad.push(`reach ${m.id} needs a limit from 1 to 3`);
+      if (m.ap != null && !(Number.isInteger(m.ap) && m.ap >= 1 && m.ap <= 2)) bad.push(`reach ${m.id} needs 1 or 2 actions`);
+      (m.effects || []).forEach((e) => effectOk(e, `reach ${m.id}`));
+      (m.pricedEffects || []).forEach((e) => effectOk(e, `reach ${m.id} price`));
+      if (Object.values(m.permit || {}).includes('priced') && !(m.pricedEffects || []).length) bad.push(`reach ${m.id} is priced and names no price`);
+      for (const x of m.evidence || []) if (!x || !/^EV-\d{3}$/.test(x.id || '') || !x.line) bad.push(`reach ${m.id} has evidence without a card id and a line`);
+    }
+    for (const s of op.script || []) for (const e of s.effects || []) if (e.mirror != null && !rids.includes(e.mirror)) bad.push(`script turn ${s.turn} mirrors an unknown reach move ${e.mirror}`);
     const hids = [];
     for (const h of op.holdings || []) {
       if (!h || typeof h.id !== 'string' || !ID_RE.test(h.id) || FORBIDDEN_ID.has(h.id)) { bad.push(`bad holding id ${h && h.id}`); continue; }

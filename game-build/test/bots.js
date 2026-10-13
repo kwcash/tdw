@@ -62,7 +62,27 @@ module.exports.tunerBot = tunerBot;
 
 // Policies for operations with holdings. They differ only in when they give up a consuming holding.
 // 'holder' never does. 'yield1' does it on the first turn. 'yield3' waits until the third turn.
+// Policies for operations with reach moves. 'reach-free' uses only the moves the permits leave open at no price.
+// 'reach-priced' uses only priced moves. 'reach-all' uses both. Each uses at most one move a turn, first in the listed order,
+// and leaves everything else to the tuner bot. 'reach-none' is the tuner bot alone.
+const reachTurn = new WeakMap();
+function reachPolicy(kinds) {
+  return (S) => {
+    if (S.reach) {
+      const o = E.options(S);
+      if (o.reach && reachTurn.get(S) !== S.turn) {
+        const pick = S.reach.find((m) => o.reach[m.id] && kinds.includes(o.reach[m.id]));
+        if (pick && S.ap >= pick.ap + 1) { reachTurn.set(S, S.turn); return { type: 'reach', move: pick.id }; }
+      }
+    }
+    return tunerBot(S);
+  };
+}
 function policy(name) {
+  if (name === 'reach-free') return reachPolicy(['free']);
+  if (name === 'reach-priced') return reachPolicy(['priced']);
+  if (name === 'reach-all') return reachPolicy(['free', 'priced']);
+  if (name === 'reach-none') return tunerBot;
   if (!name || name === 'tuner' || name === 'holder') return tunerBot;
   const at = name === 'yield1' ? 1 : name === 'yield3' ? 3 : Number(name.replace('yield', ''));
   return (S) => {

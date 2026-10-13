@@ -37,3 +37,11 @@ What is here, so a reset of the working machine does not cost the game again.
 ## Settling a watch (prepared, not yet used)
 
 - `settle_watch.py` and `SETTLE_WATCH.md` carry out the settling of W013 after 29 November 2026. The live build has not changed. `test/freeze.js` now lets a watch go from open to settled and allows nothing else about its status.
+
+## Update of 13 October 2026, fourth set
+
+- The 2026 build adds the asymmetry band, W017 The Reach and W018 The Wallet, with permits and reach moves in the engine. `patch-v7.py` turns the v6 bundle into the current one. `band/band_ops.py` and `band/build_band.py` build the operations from reviewed evidence cards. `js/` now holds the v7 bundle. Engine changes are opt-in, and every earlier result code still verifies.
+- `evidence/` holds the pipeline: `extract_candidates.py` (129 candidates from the sourced files, in `candidates/`), `import_notes.py`, `build_evidence.py`, `cards.json` (19 reviewed cards) and `EVIDENCE_INDEX.md`.
+- `dist/2026.zip` is the current 2026 build. `dist/update-2026-10-13d.zip` is the upload set.
+- `ASYMMETRY_NOTES.md`, `BALANCE_W017_W018.md` and `CHANGELOG_2026-10-13d.md` describe it. `test/reach.test.js` covers the new rules.
+- The tests in `test/` were written against the working layout `out/`, `parts/`, `content/`, `band/`, `forecast/` that `mkpkg.py` reads. Run them from a tree with that layout.
