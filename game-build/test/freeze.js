@@ -21,7 +21,8 @@ for (const a of A.ops) {
     if (a.id === 'C001' || !ALLOWED.has(k)) { console.log('FAIL', a.id, 'changed frozen field', k); bad++; }
   }
 }
-for (const k of ['factions', 'cadres', 'pacts', 'ruleset', 'taxonomy', 'daily', 'dailyEpoch', 'storageKey', 'era', 'tutorial', 'schema']) if (!eq(A[k], B[k])) { console.log('FAIL', k, 'changed'); bad++; }
+for (const k of ['cadres', 'factions']) for (const id of Object.keys(A[k])) if (!eq(A[k][id], B[k][id])) { console.log('FAIL', k, id, 'changed'); bad++; }   // new registry entries may be added, old ones never change
+for (const k of ['pacts', 'ruleset', 'taxonomy', 'daily', 'dailyEpoch', 'storageKey', 'era', 'tutorial', 'schema']) if (!eq(A[k], B[k])) { console.log('FAIL', k, 'changed'); bad++; }
 const added = B.ops.filter((o) => !A.ops.some((x) => x.id === o.id)).map((o) => o.id);
 console.log('changed fields by op', JSON.stringify(changed));
 console.log('added ops', added.join(', '), '| arcs before', A.arcs.map((a) => a.nodes.length).join(','), 'after', B.arcs.map((a) => a.nodes.length).join(','));

@@ -6,11 +6,11 @@
   "legitimacy": true
  },
  "copy": {
-  "hero": "Every operation comes from the record of the contest as it stands in the autumn of 2026. Fourteen operations. Twelve cover the twelve domains, one covers Taiwan's defense budget, and a watch follows its 28 November vote.",
+  "hero": "Every operation comes from the record of the contest as it stands in the autumn of 2026. Sixteen operations. Twelve cover the twelve domains. The other four follow Taiwan's budget and vote, the Iranian oil fleet and a seized botnet.",
   "arcsLabel": "2004 to 2026",
   "arcsTitle": "Two campaign arcs",
   "arcsText": "The Taiwan Strait and the seams where allies, trade, data and law meet.",
-  "opsNote": "Fourteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.",
+  "opsNote": "Sixteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.",
   "arcsNote": "Two arcs. Each runs through the record one operation at a time. Win an operation to open the next."
  },
  "tutorial": "C001",
@@ -558,6 +558,40 @@
     }
    },
    "blurb": "Makes friends where it has no claim and pressure where it has."
+  },
+  "justice_fbi": {
+   "id": "justice_fbi",
+   "name": "The Justice Department and the FBI",
+   "role": "Law enforcement",
+   "faction": "USA_Allies",
+   "domain": "Legal",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "groups": [
+      "Attack",
+      "Confrontation"
+     ]
+    }
+   },
+   "blurb": "Take a domain by court order and publish what it was aimed at."
+  },
+  "cyber_contractors": {
+   "id": "cyber_contractors",
+   "name": "The cyber contractors",
+   "role": "Firms the state can call on",
+   "faction": "PRC_State",
+   "domain": "Cyber",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S13",
+      "S10"
+     ]
+    }
+   },
+   "blurb": "Build the scanning tools and the lures."
   },
   "health_commission": {
    "id": "health_commission",
@@ -2035,6 +2069,195 @@
    ],
    "rules": {
     "handScale": 1.07
+   }
+  },
+  {
+   "id": "W015",
+   "kind": "catalog",
+   "num": 15,
+   "title": "The Shadow Fleet",
+   "fullTitle": "The Shadow Fleet (2026)",
+   "tier": 4,
+   "dimension": "Entropy",
+   "stage": "Extract",
+   "stratagems": [
+    "S21",
+    "S12",
+    "S36"
+   ],
+   "theater": [
+    "Economic",
+    "Financial",
+    "Legal",
+    "Data and Surveillance"
+   ],
+   "spine": "Economic",
+   "opponent": "The Party-state and Iran",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2026,
+     9
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "September to October 2026",
+   "brief": "On 8 October 2026 the United States Treasury listed 17 ships and 17 companies in Iran's oil and petrochemical trade. It said the action neutralizes most of Iran's shadow fleet.",
+   "record": "On 8 October 2026 the United States Treasury designated 17 vessels and 17 companies under Executive Order 13902. The owners included firms based on the mainland and in Hong Kong. The vessels flew the flags of 12 jurisdictions, Hong Kong among them. Treasury also removed two vessels from the list. Treasury said the action effectively neutralizes the vast majority of Iran's remaining shadow fleet and gave no volume.",
+   "reading": "A list is a snapshot and a network is a process. A listed ship can change its name, its flag and its owner. This is Stratagem 21, slough off the cicada's golden shell. Stratagem 12 pilfers a goat, so each small cargo takes the discount and the risk spreads across many hulls. Stratagem 36 retreats the moment a ship is named. Treasury's claim can be tested against Iranian export volumes, and no volume has been published.",
+   "gap": "Data",
+   "gapText": "Data Architecture. A list records hulls and owners at one date, so it cannot show the network that replaces them.",
+   "fix": "Publish the list as a graph with the date each link was observed, and score each round of designations against export volumes at a fixed later date.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State",
+    "Iran_Axis"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "treasury_office",
+    "independent_refiners",
+    "shadow_fleet"
+   ],
+   "pacts": [
+    "oil_shield"
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "Ships change names and flags after the designations.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "Iran_Axis"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Treasury lists more ships and companies.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Economic",
+       "n": 1
+      },
+      {
+       "type": "legitimacy",
+       "faction": "Iran_Axis",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.65
+   }
+  },
+  {
+   "id": "W016",
+   "kind": "catalog",
+   "num": 16,
+   "title": "The Seized Botnet",
+   "fullTitle": "The Seized Botnet (2026)",
+   "tier": 5,
+   "dimension": "Topology",
+   "stage": "Control",
+   "stratagems": [
+    "S13",
+    "S10",
+    "S22"
+   ],
+   "theater": [
+    "Cyber",
+    "Data and Surveillance",
+    "Legal",
+    "Information"
+   ],
+   "spine": "Cyber",
+   "opponent": "The Party's cyber contractors",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2026,
+     9
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "September to October 2026",
+   "brief": "On 8 October 2026 the Justice Department seized six internet domains that it says a mainland contractor used to scan for weak systems and to phish Taiwanese universities.",
+   "record": "On 8 October 2026 the Justice Department and the FBI obtained a court order in the Western District of Pennsylvania. It seized one domain used for vulnerability scanning and five used for spear-phishing. The scanning tool worked through a botnet of internet-connected devices. The department attributed the tools to a group it calls Flax Typhoon and to a mainland contractor. That attribution is an allegation and no court has ruled on it. The named targets included a South Carolina power company and an NGO. They also included airports in Japan and Poland. Others were Taiwanese gas and power companies and universities. The foreign ministry in Beijing told the United States to quit its double standards.",
+   "reading": "The seizure removes the tools and leaves the people who built them. A scanning botnet and a phishing kit are reconnaissance, and the record reports no attack effect. This is Stratagem 13, stomp the grass to scare the snake, because probing shows a defender where to look and what moves. Stratagem 10 hides the knife behind a smile in an ordinary email. Stratagem 22 shuts the door to catch the thief, and a court order is the door. The record shows the seizure and not the intent. The attribution stays an allegation.",
+   "gap": "Technology",
+   "gapText": "Technology Architecture. A seizure takes domains and leaves the operators free to register new ones.",
+   "fix": "Pair each seizure with shared indicators for the allied networks, and publish what the seized tools targeted so that victims can check.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "cyber_operators",
+    "justice_fbi",
+    "cyber_contractors"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 3,
+     "text": "A scanning tool probes a utility network.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Phishing emails reach university inboxes.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 1,
+       "by": "PRC_State"
+      },
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cyber",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.06
    }
   }
  ],

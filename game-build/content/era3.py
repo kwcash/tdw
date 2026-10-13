@@ -40,6 +40,8 @@ for c in [
     cad('chip_fund', 'The semiconductor fund', 'State investor', 'PRC_State', 'AI and Cognitive', {'cardPower': {'delta': 1, 'codes': ['S36', 'S14', 'S32']}}, 'Pays for chips that no foreign firm sells.'),
     cad('summit_team', 'The summit team', 'Executive office', 'USA_Allies', 'Association', {'ap': {'delta': 1, 'when': 0}}, 'Plans the meeting and the readout together.'),
     cad('liaison_dept', 'The United Front Work Department', 'Party department', 'PRC_State', 'Association', {'cardPower': {'delta': 1, 'codes': ['S23', 'S2', 'S34']}}, 'Makes friends where it has no claim and pressure where it has.'),
+    cad('justice_fbi', 'The Justice Department and the FBI', 'Law enforcement', 'USA_Allies', 'Legal', {'disrupt': {'delta': -1, 'groups': ['Attack', 'Confrontation']}}, 'Take a domain by court order and publish what it was aimed at.'),
+    cad('cyber_contractors', 'The cyber contractors', 'Firms the state can call on', 'PRC_State', 'Cyber', {'cardPower': {'delta': 1, 'codes': ['S13', 'S10']}}, 'Build the scanning tools and the lures.'),
     cad('health_commission', 'The health commission', 'State health body', 'PRC_State', 'Biological', {'cardPower': {'delta': 1, 'codes': ['S20', 'S16', 'S27']}}, 'Decides which records leave the country.'),
 ]:
     CADRES[c['id']] = c
@@ -214,6 +216,27 @@ OPS = [
     [S(3, 'The executive and the legislature split over the price of deterrence.', P(U, 'Financial', 2, C)),
      S(5, 'An outside deadline sets the price at a lower figure.', P(U, 'Association', 1, C), SL(U, 'Financial', 1, C)),
      S(7, 'The price stays in dispute for another month.', P(U, 'Psychological', 1, C))]),
+
+ op(15, 'The Shadow Fleet', 2026, 4, 'Entropy', 'Extract', ['S21', 'S12', 'S36'], ['Economic', 'Financial', 'Legal', 'Data and Surveillance'], 'Economic', 'The Party-state and Iran',
+    [2026, 9], [2026, 10], 'September to October 2026',
+    'On 8 October 2026 the United States Treasury listed 17 ships and 17 companies in Iran\'s oil and petrochemical trade. It said the action neutralizes most of Iran\'s shadow fleet.',
+    'On 8 October 2026 the United States Treasury designated 17 vessels and 17 companies under Executive Order 13902. The owners included firms based on the mainland and in Hong Kong. The vessels flew the flags of 12 jurisdictions, Hong Kong among them. Treasury also removed two vessels from the list. Treasury said the action effectively neutralizes the vast majority of Iran\'s remaining shadow fleet and gave no volume.',
+    'A list is a snapshot and a network is a process. A listed ship can change its name, its flag and its owner. This is Stratagem 21, slough off the cicada\'s golden shell. Stratagem 12 pilfers a goat, so each small cargo takes the discount and the risk spreads across many hulls. Stratagem 36 retreats the moment a ship is named. Treasury\'s claim can be tested against Iranian export volumes, and no volume has been published.',
+    'Data', 'Data Architecture. A list records hulls and owners at one date, so it cannot show the network that replaces them.',
+    'Publish the list as a graph with the date each link was observed, and score each round of designations against export volumes at a fixed later date.',
+    None, ['treasury_office', 'independent_refiners', 'shadow_fleet'],
+    [S(3, 'Ships change names and flags after the designations.', P(U, 'Economic', 1, 'Iran_Axis'), SL(U, 'Economic', 1, C)), S(6, 'Treasury lists more ships and companies.', SH(U, 'Economic', 1), {'type': 'legitimacy', 'faction': 'Iran_Axis', 'n': -1})],
+    factions=('USA_Allies', 'PRC_State', 'Iran_Axis'), pacts=['oil_shield']),
+
+ op(16, 'The Seized Botnet', 2026, 5, 'Topology', 'Control', ['S13', 'S10', 'S22'], ['Cyber', 'Data and Surveillance', 'Legal', 'Information'], 'Cyber', 'The Party\'s cyber contractors',
+    [2026, 9], [2026, 10], 'September to October 2026',
+    'On 8 October 2026 the Justice Department seized six internet domains that it says a mainland contractor used to scan for weak systems and to phish Taiwanese universities.',
+    'On 8 October 2026 the Justice Department and the FBI obtained a court order in the Western District of Pennsylvania. It seized one domain used for vulnerability scanning and five used for spear-phishing. The scanning tool worked through a botnet of internet-connected devices. The department attributed the tools to a group it calls Flax Typhoon and to a mainland contractor. That attribution is an allegation and no court has ruled on it. The named targets included a South Carolina power company and an NGO. They also included airports in Japan and Poland. Others were Taiwanese gas and power companies and universities. The foreign ministry in Beijing told the United States to quit its double standards.',
+    'The seizure removes the tools and leaves the people who built them. A scanning botnet and a phishing kit are reconnaissance, and the record reports no attack effect. This is Stratagem 13, stomp the grass to scare the snake, because probing shows a defender where to look and what moves. Stratagem 10 hides the knife behind a smile in an ordinary email. Stratagem 22 shuts the door to catch the thief, and a court order is the door. The record shows the seizure and not the intent. The attribution stays an allegation.',
+    'Technology', 'Technology Architecture. A seizure takes domains and leaves the operators free to register new ones.',
+    'Pair each seizure with shared indicators for the allied networks, and publish what the seized tools targeted so that victims can check.',
+    None, ['cyber_operators', 'justice_fbi', 'cyber_contractors'],
+    [S(3, 'A scanning tool probes a utility network.', P(U, 'Cyber', 1, C)), S(6, 'Phishing emails reach university inboxes.', P(U, 'Data and Surveillance', 1, C), P(U, 'Cyber', 1, C))]),
 ]
 
 def watch(o, settle='2026-11-29'):
@@ -231,10 +254,10 @@ def tuned(ops):
             if t[o['id']]['consumeAdj']: o['consumeAdj'] = t[o['id']]['consumeAdj']
 
 COPY = {
-    'hero': 'Every operation comes from the record of the contest as it stands in the autumn of 2026. Fourteen operations. Twelve cover the twelve domains, one covers Taiwan\'s defense budget, and a watch follows its 28 November vote.',
+    'hero': 'Every operation comes from the record of the contest as it stands in the autumn of 2026. Sixteen operations. Twelve cover the twelve domains. The other four follow Taiwan\'s budget and vote, the Iranian oil fleet and a seized botnet.',
     'arcsLabel': '2004 to 2026', 'arcsTitle': 'Two campaign arcs',
     'arcsText': 'The Taiwan Strait and the seams where allies, trade, data and law meet.',
-    'opsNote': 'Fourteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.',
+    'opsNote': 'Sixteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.',
     'arcsNote': 'Two arcs. Each runs through the record one operation at a time. Win an operation to open the next.',
 }
 ARCS = [
@@ -259,7 +282,7 @@ def build():
     return {
         'schema': 2, 'storageKey': 'tdw-2026-1', 'era': 'contest-2026', 'ruleset': {'legitimacy': True},
         'copy': COPY, 'tutorial': 'C001', # The daily pool stays the twelve operations it had on 12 October. A longer pool would change which operation a past date maps to, and a verified daily record checks that mapping.
-        'daily': [o['id'] for o in OPS if o['id'] not in ('W013', 'W014')],
+        'daily': [o['id'] for o in OPS[:12]],
         'factions': FACTIONS, 'cadres': CADRES, 'pacts': PACTS,
         'calendar': CALENDAR, 'calendarNote': CALENDAR_NOTE,
         'ops': [boot] + OPS, 'arcs': ARCS, 'taxonomy': base['taxonomy'], 'dailyEpoch': base['dailyEpoch'],

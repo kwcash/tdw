@@ -15,3 +15,8 @@ What is here, so a reset of the working machine does not cost the game again.
 - `patch-v4.py` turns the earlier bundle into the current one (watch operations and the 120-day calendar). The current `js/game.js` includes both features.
 - `dist/2026.zip` is built from the current bundle. The other three zips in `dist/` still hold the earlier bundle. They run the same content and behave the same, and they can be rebuilt with `mkpkg.py`.
 - `CHANGELOG_2026-10-12.md` lists every field changed by operation id. `BALANCE_2026-10-12.md` holds the win rates. `test/freeze.js` and `test/replay-codes.js` check that existing mechanics and old result codes stay valid.
+
+## Update of 13 October 2026
+
+- Two operations added to the 2026 content, W015 The Shadow Fleet and W016 The Seized Botnet. The game code did not change. `CHANGELOG_2026-10-13.md` and `BALANCE_2026-10-13.md` describe it.
+- `dist/2026.zip` is the current build. `dist/update-2026-10-13.zip` is the upload set.

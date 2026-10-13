@@ -1,8 +1,8 @@
 # Sourcing list for TDW 2026
 
-Updated 12 October 2026.
+Updated 13 October 2026.
 
-The fourteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
+The sixteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
 
 **How to use this file.** Each row gives one factual claim, where it came from, and what is still to do. I could not check any 2026 event independently. Every 2026 claim comes from the Architecture of Strategy package you sent (playbook v4, contest map v6, the prediction ledger and the review package). Claims marked **GK** come from my general knowledge up to mid-2026. Treat a GK claim as unverified until a source is added.
 
@@ -69,6 +69,15 @@ Status keys. **Use** the package states it as fact (F) with a named source. **Ch
 | W014 | Taiwan's legislature passed a special defense budget bill of NT$780 billion, about US$26 billion, after the executive proposed NT$1.25 trillion. The opposition had favored a framework of NT$380 billion plus additions. Analysts tied the final amount to American pressure before the Beijing summit. The passage date of 8 May 2026 is inferred from an article date, so the text says "In May 2026" | F10: https://scmp.com/news/china/politics/article/3353177/did-us-pressure-xi-trump-summit-force-kmt-hand-taiwans-defence-budget | Check |
 | W014 | Taiwan's 2027 defense budget is set to exceed 3 percent of GDP for the first time, and President Lai has pledged 5 percent by 2030 | F11: https://www.ajc.com/news/2026/09/taiwan-is-watching-closely-as-xi-and-trump-meet-and-hopes-us-will-keep-up-its-arms-sales/ | Check |
 | W014 | President Lai is named because the cited facts name the sitting head of state. He is not a candidate in the 28 November elections | Owner's rule | Rule |
+| W015 | On 8 October 2026 the United States Treasury designated 17 vessels and 17 companies under Executive Order 13902 | Treasury press release sb0653, 8 Oct 2026 (home.treasury.gov/news/press-releases/sb0653), logged as E0043 in the review package of 12 October and marked level A there. I could not open the release from this environment | Check |
+| W015 | The owners included firms based on the mainland and in Hong Kong. The text names no company | E0043 (the package names six firms. They stay out of the text) | Check |
+| W015 | The vessels flew the flags of 12 jurisdictions, Hong Kong among them, and Treasury removed two vessels from the list | E0043 | Check |
+| W015 | Treasury said the action effectively neutralizes the vast majority of Iran's remaining shadow fleet and gave no volume. The text states this as Treasury's claim and says it can be tested against export volumes | E0043 (claim, not fact). The package set a re-check on 9 November against Iranian export volumes and Hormuz flows | Check |
+| W016 | On 8 October 2026 the Justice Department and the FBI obtained a court order in the Western District of Pennsylvania and seized one domain used for vulnerability scanning and five used for spear-phishing | DOJ Office of Public Affairs release, 8 Oct 2026 (justice.gov/opa/pr/justice-department-and-fbi-seize-vulnerability-scanning-and-spear-phishing-tools-operated), logged as E0045 and marked level A for the seizure. I could not open the release from this environment | Check |
+| W016 | The scanning tool worked through a botnet of internet-connected devices | E0045 (a Mirai botnet) | Check |
+| W016 | The department attributed the tools to a group it calls Flax Typhoon and to a mainland contractor. The text calls this an allegation and names no firm | E0045 (allegation, no verdict). The group label is the department's own | Check, allegation |
+| W016 | Named targets: a South Carolina power company, an NGO, airports in Japan and Poland, Taiwanese gas and power companies, and Taiwanese universities | E0045 | Check |
+| W016 | The foreign ministry in Beijing told the United States to quit its double standards, on 9 October 2026 | E0045 (stated position). Confirm against the ministry's transcript | Check |
 
 ## Calendar
 
@@ -86,6 +95,7 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 
 - The adversary is the Party, the Party-state or a named agency. The people are never the actor. Proper names such as China Coast Guard stay as they are.
 - No figure beyond those listed above. I did not add any Xinjiang figure, any production comparison or any other statistic.
+- A company or person named in a designation or an indictment stays out of the text. The text says "firms" and "a mainland contractor". An attribution by a prosecutor is called an allegation.
 - Biology: no technical content. The op records governance and disclosure only.
 - No Taiwanese candidate is named and no candidate list. The game takes no side between Taiwan's parties. It shows no poll and no prediction of who wins. The text says "the opposition" and uses offices.
 - Nothing after 12 October 2026 is record. The vote and the December window appear only as a scenario or as a scheduled date.
@@ -94,9 +104,9 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 
 ## The ten, twelve and thirty-six
 
-- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 (Information) and W014 (Financial) add a second lever on those two.
+- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 to W016 add second levers on Information, Financial, Economic and Cyber.
 - **Ten dimensions.** Every dimension is the physics of at least one operation. Entropy and Topology each run twice.
-- **Thirty-six stratagems.** W001 to W012 give each stratagem once, three to an operation. W013 and W014 repeat six of them. W013 uses S7, S29 and S20. W014 uses S33, S9 and S4. Every stratagem still appears and six appear twice.
+- **Thirty-six stratagems.** W001 to W012 give each stratagem once, three to an operation. W013 to W016 reuse stratagems that W001 to W012 already use. Every stratagem still appears, and several appear twice.
 
 | Op | Domain (lever) | Dimension | Signature stratagems |
 |---|---|---|---|
@@ -114,3 +124,5 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 | W012 The Unsupplied Data | Biological | Entropy | S20, S16, S27 |
 | W013 The Ballot (watch) | Information | Phase | S7, S29, S20 |
 | W014 The Special Budget | Financial | Coherence | S33, S9, S4 |
+| W015 The Shadow Fleet | Economic | Entropy | S21, S12, S36 |
+| W016 The Seized Botnet | Cyber | Topology | S13, S10, S22 |
