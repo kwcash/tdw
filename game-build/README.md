@@ -45,3 +45,10 @@ What is here, so a reset of the working machine does not cost the game again.
 - `dist/2026.zip` is the current 2026 build. `dist/update-2026-10-13d.zip` is the upload set.
 - `ASYMMETRY_NOTES.md`, `BALANCE_W017_W018.md` and `CHANGELOG_2026-10-13d.md` describe it. `test/reach.test.js` covers the new rules.
 - The tests in `test/` were written against the working layout `out/`, `parts/`, `content/`, `band/`, `forecast/` that `mkpkg.py` reads. Run them from a tree with that layout.
+
+## Update of 14 October 2026
+
+- The 2026 build adds a real Tier 7. `patch-v8.py` turns the v7 bundle into the current one. `js/` now holds the v8 bundle. Tiers 1 to 6 are unchanged, and `test/tier7.test.js` checks that against `test/engine.v7.js`, the engine of the previous update.
+- W017 and W018 are set to Tier 7 and retuned (`band/tuning.json`).
+- `dist/2026.zip` is the current build. `dist/update-2026-10-14.zip` is the upload set.
+- `TIER7_NOTES.md`, `BALANCE_W017_W018.md` and `CHANGELOG_2026-10-14.md` describe it.

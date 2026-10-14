@@ -2266,7 +2266,7 @@
    "num": 17,
    "title": "The Reach",
    "fullTitle": "The Reach (2026)",
-   "tier": 6,
+   "tier": 7,
    "band": "asymmetry",
    "dimension": "Agency",
    "stage": "Control",
@@ -2712,7 +2712,7 @@
     }
    ],
    "rules": {
-    "handScale": 0.86
+    "handScale": 0.68
    }
   },
   {
@@ -2721,7 +2721,7 @@
    "num": 18,
    "title": "The Wallet",
    "fullTitle": "The Wallet (2026)",
-   "tier": 6,
+   "tier": 7,
    "band": "asymmetry",
    "dimension": "Asymmetry",
    "stage": "Extract",
@@ -3055,7 +3055,7 @@
     }
    ],
    "rules": {
-    "handScale": 0.97
+    "handScale": 0.82
    }
   }
  ],

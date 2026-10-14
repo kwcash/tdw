@@ -18,7 +18,7 @@ def move(id, name, domain, text, permit, effects, cards, priced=None, limit=1, a
     return m
 
 W017 = {
- 'id': 'W017', 'kind': 'catalog', 'num': 17, 'title': 'The Reach', 'fullTitle': 'The Reach (2026)', 'tier': 6, 'band': 'asymmetry',
+ 'id': 'W017', 'kind': 'catalog', 'num': 17, 'title': 'The Reach', 'fullTitle': 'The Reach (2026)', 'tier': 7, 'band': 'asymmetry',
  'dimension': 'Agency', 'stage': 'Control', 'stratagems': ['S3', 'S8', 'S35'],
  'theater': ['Legal', 'Association', 'Data and Surveillance', 'Psychological'], 'spine': 'Legal',
  'opponent': 'The Party-state', 'world': None, 'arc': None, 'when': {'start': [2017, 6], 'end': [2026, 10]}, 'label': 'June 2017 to October 2026',
@@ -59,7 +59,7 @@ W017 = {
 }
 
 W018 = {
- 'id': 'W018', 'kind': 'catalog', 'num': 18, 'title': 'The Wallet', 'fullTitle': 'The Wallet (2026)', 'tier': 6, 'band': 'asymmetry',
+ 'id': 'W018', 'kind': 'catalog', 'num': 18, 'title': 'The Wallet', 'fullTitle': 'The Wallet (2026)', 'tier': 7, 'band': 'asymmetry',
  'dimension': 'Asymmetry', 'stage': 'Extract', 'stratagems': ['S22', 'S33', 'S16'],
  'theater': ['Financial', 'Economic', 'Information', 'Data and Surveillance'], 'spine': 'Financial',
  'opponent': 'The Party-state', 'world': None, 'arc': None, 'when': {'start': [2020, 11], 'end': [2026, 10]}, 'label': 'November 2020 to October 2026',

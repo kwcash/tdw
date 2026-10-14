@@ -4,9 +4,9 @@ The game tests whether a rule can be written down and played. It proves nothing 
 
 ## What the band is
 
-Two operations in the 2026 build, W017 The Reach and W018 The Wallet, form an asymmetry band. They play at Tier 6 and are tuned much harder than any other operation. The best scripted line wins about 1.6 percent of W017 and 1.4 percent of W018.
+Two operations in the 2026 build, W017 The Reach and W018 The Wallet, form an asymmetry band. They play at Tier 7, the new top tier, and the best scripted line wins about 1.1 percent of W017 and 2.2 percent of W018.
 
-**Tier 7 was not built.** The engine, the result codes and the challenge links all carry a tier from 1 to 6, and a seventh tier would touch every one of them. The band reaches the same result with a flag on the operation. A tier 7 can follow later if you want the number to show.
+**Tier 7 is a real tier.** See TIER7_NOTES.md. The permits work at any tier, and the band operations are set to Tier 7 by the record.
 
 ## How the permits work
 

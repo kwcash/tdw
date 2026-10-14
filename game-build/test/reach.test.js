@@ -113,8 +113,8 @@ ok('every move cites reviewed cards, copies the card line unchanged, and fits it
   }
 });
 
-ok('the band operations sit at tier 6, outside the daily and every arc, and no old operation changed', () => {
-  assert.deepStrictEqual([w17.tier, w17.band, w18.tier, w18.band], [6, 'asymmetry', 6, 'asymmetry']);
+ok('the band operations sit at tier 7, outside the daily and every arc, and no old operation changed', () => {
+  assert.deepStrictEqual([w17.tier, w17.band, w18.tier, w18.band], [7, 'asymmetry', 7, 'asymmetry']);
   assert.ok(!C3.daily.includes('W017') && !C3.daily.includes('W018'));
   for (const a of C3.arcs) assert.ok(!a.nodes.includes('W017') && !a.nodes.includes('W018'));
   const before = require('../content/era3.before7.json');

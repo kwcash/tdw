@@ -47,7 +47,7 @@ async function finish(pg) { let t = 0; while (!(await pg.$('.result')) && t++ < 
     await pg.screenshot({ path: `${SHOTS}/W017-result-${w}.png`, fullPage: true });
     if (w === 1280) texts.push(await pg.$eval('main', (m) => { const c = m.cloneNode(true); ['.fc', '.rv-ev'].forEach((s) => c.querySelectorAll(s).forEach((x) => x.remove())); const u = [...c.querySelectorAll('h3')].filter((h) => /What your rules closed/.test(h.textContent))[0]; return u ? u.nextElementSibling.innerText + '\n' + u.nextElementSibling.nextElementSibling.innerText : ''; }));
     await pg.goto(`${base(9901)}#/v/${code}`); await pg.waitForSelector('.verified, .notverified'); const verified = !!(await pg.$('.card.verified'));
-    out(`${w}px: ops listed ${nOps}, band chips ${chips} | tier buttons ${JSON.stringify(tiers)} | note: ${note.slice(0, 120)}...`);
+    out(`${w}px: ops listed ${nOps}, band chips ${chips} | tier buttons ${JSON.stringify(tiers)} default T7 pressed ${await pg.$eval('[data-tier="7"]', (b) => b.getAttribute('aria-pressed')).catch(() => null)} | note: ${note.slice(0, 120)}...`);
     out('  reach rows:', JSON.stringify(rows)); out('  evidence folds', ev, '| first closed move evidence:', evText.slice(0, 260));
     out('  overflow', ov, '| used badge after free move:', used, '| legitimacy before/after the priced move:', legBefore, legAfter, '| sheet:', sheet.slice(0, 220));
     out('  code verifies:', verified, '| tokens:', (code.match(/~[^~]*~?$/) || [''])[0].slice(0, 60), '| report blocks:', JSON.stringify(closed).slice(0, 700));

@@ -141,10 +141,11 @@
   };
   // Difficulty by tier. cards: the opponent's base hand, one more from fromTurn on, one more at each listed stage.
   const TUNING = {
-    consume: [24, 22, 20, 20, 19, 18],
+    consume: [24, 22, 20, 20, 19, 18, 17],
     cards: [
       { base: 2, fromTurn: 6, at: [2] }, { base: 2, fromTurn: 4, at: [1] }, { base: 2, fromTurn: 3, at: [1] },
       { base: 3, fromTurn: 7, at: [2] }, { base: 3, fromTurn: 6, at: [2] }, { base: 3, fromTurn: 4, at: [2] },
+      { base: 3, fromTurn: 3, at: [1, 2] },
     ],
     asymFrac: 0.34, burstCards: 3, burstAmp: 0, resonanceAt: 2, resAim: 2, critShield: 1, critAim: 2, gateAim: 3, gateStart: 1, spillAt: 2,
   };
@@ -582,7 +583,7 @@
   }
 
   function newGame(op, cfg = {}) {
-    const tier = Math.max(1, Math.min(6, Number(cfg.tier || op.tier || 3)));
+    const tier = Math.max(1, Math.min(7, Number(cfg.tier || op.tier || 3)));
     const dim = op.dimension;
     const world = op.world || null;
     let maxTurns = cfg.maxTurns || (dim === 'Time' ? 10 : 8);
@@ -634,6 +635,7 @@
     if (tier >= 2) S.board[op.spine].p = 1;
     if (tier >= 3) theater.forEach((d) => { S.board[d].p = Math.max(S.board[d].p, 1); });
     if (tier >= 5) S.board[op.spine].p = 2;
+    if (tier >= 7) theater.forEach((d) => { S.board[d].p = Math.max(S.board[d].p, 2); });
     // Each faction's own opening position.
     for (const f of S.factions) {
       const st = S.ledger[f].start || {};

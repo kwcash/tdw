@@ -141,10 +141,11 @@
   };
   // Difficulty by tier. cards: the opponent's base hand, one more from fromTurn on, one more at each listed stage.
   const TUNING = {
-    consume: [24, 22, 20, 20, 19, 18],
+    consume: [24, 22, 20, 20, 19, 18, 17],
     cards: [
       { base: 2, fromTurn: 6, at: [2] }, { base: 2, fromTurn: 4, at: [1] }, { base: 2, fromTurn: 3, at: [1] },
       { base: 3, fromTurn: 7, at: [2] }, { base: 3, fromTurn: 6, at: [2] }, { base: 3, fromTurn: 4, at: [2] },
+      { base: 3, fromTurn: 3, at: [1, 2] },
     ],
     asymFrac: 0.34, burstCards: 3, burstAmp: 0, resonanceAt: 2, resAim: 2, critShield: 1, critAim: 2, gateAim: 3, gateStart: 1, spillAt: 2,
   };
@@ -582,7 +583,7 @@
   }
 
   function newGame(op, cfg = {}) {
-    const tier = Math.max(1, Math.min(6, Number(cfg.tier || op.tier || 3)));
+    const tier = Math.max(1, Math.min(7, Number(cfg.tier || op.tier || 3)));
     const dim = op.dimension;
     const world = op.world || null;
     let maxTurns = cfg.maxTurns || (dim === 'Time' ? 10 : 8);
@@ -634,6 +635,7 @@
     if (tier >= 2) S.board[op.spine].p = 1;
     if (tier >= 3) theater.forEach((d) => { S.board[d].p = Math.max(S.board[d].p, 1); });
     if (tier >= 5) S.board[op.spine].p = 2;
+    if (tier >= 7) theater.forEach((d) => { S.board[d].p = Math.max(S.board[d].p, 2); });
     // Each faction's own opening position.
     for (const f of S.factions) {
       const st = S.ledger[f].start || {};
@@ -1925,11 +1927,11 @@
       op = opById.get(String(body.opId || ''));
       if (!op) fail(404, 'No such operation');
       seed = randomHex(6);
-      tier = Math.max(1, Math.min(6, Number(body.tier) || op.tier));
+      tier = Math.max(1, Math.min(7, Number(body.tier) || op.tier));
     } else if (mode === 'challenge') {
       // A challenge is a link that fixes the operation, tier and seed. Both players start from the same opening, with no loadout.
       const cid = String(body.opId || ''); const ctier = Number(body.tier); const cseed = String(body.seed || '');
-      if (!/^[A-Z]\d{3}$/.test(cid) || !(ctier >= 1 && ctier <= 6) || !/^[a-z0-9]{6,16}$/.test(cseed)) fail(400, 'This challenge link is not valid.');
+      if (!/^[A-Z]\d{3}$/.test(cid) || !(ctier >= 1 && ctier <= 7) || !/^[a-z0-9]{6,16}$/.test(cseed)) fail(400, 'This challenge link is not valid.');
       op = opById.get(cid);
       if (!op) fail(404, 'No such operation');
       seed = cseed; tier = ctier; lens = null; doctrine = null;
@@ -2886,7 +2888,7 @@
       ${calendarHtml(calData)}
       <div class="filters">
         <select id="kind" aria-label="Kind"><option value="">History and futures</option><option value="catalog" ${f.kind === 'catalog' ? 'selected' : ''}>History</option><option value="futures" ${f.kind === 'futures' ? 'selected' : ''}>Futures</option><option value="watch" ${f.kind === 'watch' ? 'selected' : ''}>Watch</option></select>
-        <select id="tier" aria-label="Tier"><option value="">All tiers</option>${[1, 2, 3, 4, 5, 6].map((t) => `<option ${String(t) === f.tier ? 'selected' : ''}>${t}</option>`).join('')}</select>
+        <select id="tier" aria-label="Tier"><option value="">All tiers</option>${[1, 2, 3, 4, 5, 6, 7].map((t) => `<option ${String(t) === f.tier ? 'selected' : ''}>${t}</option>`).join('')}</select>
         <select id="dim" aria-label="Dimension"><option value="">All dimensions</option>${dims.map((d) => `<option ${d === f.dim ? 'selected' : ''}>${d}</option>`).join('')}</select>
         <input id="q" placeholder="Search titles" value="${esc(f.q || '')}" aria-label="Search">
       </div>
@@ -2928,12 +2930,12 @@
             <div class="label">Domains in play</div><p class="pill-row">${o.theater.map((t) => `<span class="chip2">${icon(t, 'ic')} ${esc(t)}</span>`).join('')}</p>
             <p class="small muted">One of these is the lever the operation turns on. Watch where the cards land, then name it.</p>
           </div>
-          ${o.band ? '<div class="card bandnote"><div class="label">Asymmetry band</div><p>The rival acts on its own population and its own firms with no court, no press and no vote in the way. Your side holds the same kinds of power under law. Some acts are closed to you and some carry a price. The board lists each one with its source.</p><p class="small muted">A scripted player wins this operation rarely. The score is the game\'s reading and not a count.</p></div>' : ''}
+          ${o.band ? '<div class="card bandnote"><div class="label">Asymmetry band</div><p>The rival acts on its own population and its own firms with no court, no press and no vote in the way. Your side holds the same kinds of power under law. Some acts are closed to you and some carry a price. The board lists each one with its source.</p><p class="small muted">A scripted player wins this operation rarely at Tier 7. The score is the game\'s reading and not a count.</p></div>' : ''}
           <div class="card rulebox"><div class="label">The physics · ${esc(o.dimension)} · ${esc(o.rule.tier)}</div><p><b>${esc(o.rule.rule)}</b></p><p class="small">Counter: ${esc(o.rule.counter)}</p></div>
           <div class="card"><div class="label">Intelligence</div><p class="small">The record ties this operation to ${o.signature.map((s) => `<b>Stratagem ${s.num}, ${esc(s.name)}</b>`).join(' and ')}. Expect to see it often.</p></div>
         </div>
         <div>
-          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${(o.band ? [o.tier] : [1, 2, 3, 4, 5, 6]).map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}">T${t}</button>`).join('')}</div><p class="small muted">${o.band ? 'This operation sits in the asymmetry band and plays at Tier ' + o.tier + ' only.' : 'The record sets Tier ' + o.tier + '.'}</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>Tier ${d.arcTier || o.tier}</p><p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
+          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${[1, 2, 3, 4, 5, 6, 7].map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}">T${t}</button>`).join('')}</div><p class="small muted">The record sets Tier ${o.tier}.${o.tier < 7 ? ' Tier 7 is harder than any tier on the record.' : ''}</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>Tier ${d.arcTier || o.tier}</p><p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
           <div class="card"><div class="label">Lens · optional</div><div class="loadout">${lensRows}</div></div>
           <div class="card"><div class="label">Doctrine card · optional, once per operation</div><div class="loadout">${docRows}</div></div>
           ${o.best ? `<p>Your best: ${stars(o.best.stars)} · ${o.best.score}</p>` : ''}

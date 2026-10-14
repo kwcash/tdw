@@ -15,7 +15,7 @@
   const MODES = ['free', 'daily', 'arc', 'challenge', 'tutorial'];
   const SEED_RE = /^[A-Za-z0-9:_-]{1,40}$/;
   const OPID_RE = /^[A-Z]\d{3}$/;
-  const CHALLENGE_RE = /^([A-Z]\d{3})~([1-6])~([a-z0-9]{6,16})$/;
+  const CHALLENGE_RE = /^([A-Z]\d{3})~([1-7])~([a-z0-9]{6,16})$/;
 
   // ---------- context ----------
   function makeCtx(E, C) {
@@ -110,7 +110,7 @@
     if (checkOf(E, body) !== p[9].toLowerCase()) fail('The code has a typo or a missing piece. Copy it again.');
     const [, opId, tier, seed, lens, doctrine, mode, maxTurns, acts] = p;
     if (!OPID_RE.test(opId)) fail('The code names no valid operation.');
-    if (!/^[1-6]$/.test(tier)) fail('The code names no valid tier.');
+    if (!/^[1-7]$/.test(tier)) fail('The code names no valid tier.');
     if (!SEED_RE.test(seed)) fail('The code holds a bad seed.');
     if (lens !== '-' && !/^[A-Za-z]{3,20}$/.test(lens)) fail('The code names no valid lens.');
     if (doctrine !== '-' && !/^[a-z]{3,20}$/.test(doctrine)) fail('The code names no valid doctrine card.');
@@ -381,7 +381,7 @@
     if (totalGain >= 6 && held / totalGain >= 0.5) {
       changes.push(`${Math.round((100 * held) / totalGain)}% of the opponent's leverage came from domains left at 3 or more pressure. Disrupt the hottest domain before it reaches 3.`);
     }
-    if (!changes.length) changes.push(lost ? 'No single fault stands out in this run.' : 'This line held cleanly. Raise the tier.');
+    if (!changes.length) changes.push(lost ? 'No single fault stands out in this run.' : (S.tier >= 7 ? 'This line held cleanly at the top tier.' : 'This line held cleanly. Raise the tier.'));
 
     return {
       summary, ledger, totalGain, relief: reliefList, pressure, absorbed: S.stats.absorbed, worstTurn, curve, captures, named, idle, idleTurns,
