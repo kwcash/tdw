@@ -6,7 +6,7 @@ const C3 = require('../content/era3.json'); const C1 = require('../content/era1.
 const cards = JSON.parse(fs.readFileSync(path.join(__dirname, '../band/cards.json'), 'utf8')).cards;
 const reg = (C) => ({ factions: C.factions, cadres: C.cadres, pacts: C.pacts, ruleset: C.ruleset });
 const clone = (x) => JSON.parse(JSON.stringify(x));
-const w17 = C3.ops.find((o) => o.id === 'W017'); const w18 = C3.ops.find((o) => o.id === 'W018');
+const w17 = C3.ops.find((o) => o.id === 'W017'); const w18 = C3.ops.find((o) => o.id === 'W018'); const w19 = C3.ops.find((o) => o.id === 'W019');
 const fresh = (op = w17, seed = 'r1') => E.newGame(op, { seed, tier: op.tier, registry: reg(C3) });
 let n = 0; const ok = (name, fn) => { fn(); n++; };
 
@@ -104,7 +104,7 @@ ok('validate refuses bad reach moves and bad mirror tags', () => {
 ok('every move cites reviewed cards, copies the card line unchanged, and fits its permit', () => {
   const by = Object.fromEntries(cards.map((c) => [c.id, c]));
   const NEED = { barred: ['constraint', 'guardrail'], priced: ['democracy_record', 'guardrail'], free: ['lawful_tool', 'constraint'] };
-  for (const op of [w17, w18]) for (const m of op.reach) {
+  for (const op of [w17, w18, w19]) for (const m of op.reach) {
     assert.ok(m.evidence.length >= 1, m.id);
     for (const x of m.evidence) { assert.ok(by[x.id], x.id); assert.strictEqual(x.line, by[x.id].claim); }
     const sides = m.evidence.map((x) => by[x.id].side); const p = m.permit.USA_Allies;
@@ -114,15 +114,14 @@ ok('every move cites reviewed cards, copies the card line unchanged, and fits it
 });
 
 ok('the band operations sit at tier 7, outside the daily and every arc, and no old operation changed', () => {
-  assert.deepStrictEqual([w17.tier, w17.band, w18.tier, w18.band], [7, 'asymmetry', 7, 'asymmetry']);
-  assert.ok(!C3.daily.includes('W017') && !C3.daily.includes('W018'));
-  for (const a of C3.arcs) assert.ok(!a.nodes.includes('W017') && !a.nodes.includes('W018'));
+  assert.deepStrictEqual([w17.tier, w17.band, w18.tier, w18.band, w19.tier, w19.band], [7, 'asymmetry', 7, 'asymmetry', 7, 'asymmetry']);
+  for (const id of ['W017', 'W018', 'W019']) { assert.ok(!C3.daily.includes(id)); for (const a of C3.arcs) assert.ok(!a.nodes.includes(id)); }
   const before = require('../content/era3.before7.json');
   for (const o of before.ops) assert.strictEqual(JSON.stringify(C3.ops.find((x) => x.id === o.id)), JSON.stringify(o), o.id);
 });
 
 ok('the rules hold in the band text, the Party and never a people, and no banned figure', () => {
-  const text = JSON.stringify([w17, w18]);
+  const text = JSON.stringify([w17, w18, w19]);
   assert.ok(!/the Chinese (people )?(are|have|will)|Chinese (students|scholars|citizens|nationals) (are|steal|spy)/i.test(text));
   assert.ok(!/Xinjiang|Uyghur|Uighur/i.test(text));
   assert.ok(!/KMT|DPP|TPP/.test(text));
@@ -143,10 +142,32 @@ ok('the card validator refuses a people as actor, an individual, a Xinjiang figu
 
 ok('the notes importer marks drafts and lists the problems', () => {
   const dir = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'nt-')); const nf = path.join(dir, 'n.md'); const of = path.join(dir, 'o.jsonl');
-  fs.writeFileSync(nf, 'claim: A fine claim.\nsource: A source, 2026.\nclass: F\n---\nclaim: The Chinese people are spies.\nsource: none\nclass: F\n');
+  fs.writeFileSync(nf, 'claim: A fine claim.\nsource: A source, 2026.\nclass: F\nside: party\nact: x\nactor: the Party-state\n---\nclaim: The Chinese people are spies.\nsource: none\nclass: F\nside: party\nact: x\nactor: the Chinese people\n');
   const r = cp.spawnSync('python3', ['-I', path.join(__dirname, '../band/import_notes.py'), nf, of]); assert.strictEqual(r.status, 0, String(r.stderr));
   const rows = fs.readFileSync(of, 'utf8').trim().split('\n').map(JSON.parse);
   assert.strictEqual(rows.length, 2); assert.ok(rows.every((x) => x.status === 'draft')); assert.strictEqual(rows[0].problems.length, 0); assert.ok(rows[1].problems.length >= 1);
+});
+
+ok('W017 and W018 are byte for byte what shipped on 14 October, so their result codes stay valid', () => {
+  const shipped = require('../content/era3.shipped-1014.json');
+  for (const id of ['W017', 'W018']) assert.strictEqual(JSON.stringify(C3.ops.find((o) => o.id === id)), JSON.stringify(shipped.ops.find((o) => o.id === id)), id);
+});
+
+ok('the later batch of cards came through the importer, carry a provenance and pass the validator against the candidates', () => {
+  const dir = path.join(__dirname, '../band'); const have = cards.map((c) => c.id);
+  for (let i = 21; i <= 32; i++) assert.ok(have.includes('EV-0' + i), 'EV-0' + i);
+  for (const c of cards.filter((x) => Number(x.id.slice(3)) >= 21)) assert.ok(c.from && c.from !== 'notes', c.id);
+  const r = cp.spawnSync('python3', ['-I', path.join(dir, 'build_evidence.py'), path.join(dir, 'cards.json'), require('node:os').tmpdir()]); assert.strictEqual(r.status, 0, String(r.stdout));
+});
+
+ok('the promoter refuses a draft with problems and keeps every earlier card unchanged', () => {
+  const dir = fs.mkdtempSync(path.join(require('node:os').tmpdir(), 'pr-')); const dr = path.join(dir, 'd.jsonl'); const cf = path.join(dir, 'c.json');
+  fs.writeFileSync(cf, JSON.stringify({ cards: [{ id: 'EV-001', side: 'party', act: 'x', actor: 'the Party-state', claim: 'A.', class: 'F', source: 'Article 7, a statute.' }] }));
+  const good = { draft: 1, claim: 'A claim.', source: 'A statute, Article 1.', class: 'F', side: 'party', act: 'x', actor: 'the Party-state', from: 'primary-text', check: 'true', problems: [] };
+  fs.writeFileSync(dr, [good, Object.assign({}, good, { draft: 2, problems: ['a people is named as the actor'] })].map((x) => JSON.stringify(x)).join('\n') + '\n');
+  const r = cp.spawnSync('python3', ['-I', path.join(__dirname, '../band/promote_drafts.py'), dr, cf]); const out = String(r.stdout);
+  assert.ok(/promoted EV-002/.test(out) && /REFUSED draft 2/.test(out), out);
+  const after = JSON.parse(fs.readFileSync(cf, 'utf8')).cards; assert.strictEqual(after.length, 2); assert.strictEqual(after[0].claim, 'A.');
 });
 
 console.log(`OK: ${n} reach and evidence tests passed`);

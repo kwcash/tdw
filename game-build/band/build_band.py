@@ -30,6 +30,6 @@ for spec in band_ops.OPS:
 n = len(C['ops'])
 for k in ('hero', 'opsNote'):
     s = C['copy'][k]
-    C['copy'][k] = s.replace('Sixteen operations', 'Eighteen operations').replace("The other four follow Taiwan's budget and vote, the Iranian oil fleet and a seized botnet.", "The other six follow Taiwan's budget and vote, the Iranian oil fleet, a seized botnet and two operations on the limits that bind a free society.")
+    C['copy'][k] = s.replace('Sixteen operations', 'Nineteen operations').replace("The other four follow Taiwan's budget and vote, the Iranian oil fleet and a seized botnet.", "The other seven follow Taiwan's budget and vote, the Iranian oil fleet, a seized botnet and three operations on the limits that bind a free society.")
 out.write_text(json.dumps(C, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
 print('operations now', n)

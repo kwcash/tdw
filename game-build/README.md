@@ -52,3 +52,11 @@ What is here, so a reset of the working machine does not cost the game again.
 - W017 and W018 are set to Tier 7 and retuned (`band/tuning.json`).
 - `dist/2026.zip` is the current build. `dist/update-2026-10-14.zip` is the upload set.
 - `TIER7_NOTES.md`, `BALANCE_W017_W018.md` and `CHANGELOG_2026-10-14.md` describe it.
+
+## Update of 14 October 2026, second set
+
+- Tier 7 reaches the base game, the 1931 build and the 2030 build. `js/` holds the v8 bundle, and `mkpkg.py` builds all four packages from it. `e2e/v8.js` runs the three older builds at Tier 7 and loads an old save in each.
+- W019 The Lab joins the asymmetry band. `band/band_ops.py` holds all three band operations, and W017 and W018 are byte for byte unchanged (`content/era3.shipped-1014.json` is the shipped copy that a test compares against).
+- The second evidence batch went through `band/import_notes.py`, `band/promote_drafts.py` and `band/build_evidence.py`. `band/batches/` holds its notes and drafts. `evidence/EVIDENCE_INDEX.md` lists all 31 cards.
+- `dist/*.zip` are the four current builds. `dist/update-2026-10-14b.zip` is the upload set for all four folders and the root `index.html`.
+- `CHANGELOG_2026-10-14b.md`, `TIER7_NOTES.md`, `ASYMMETRY_NOTES.md` and `BALANCE_W017_W018.md` describe it.

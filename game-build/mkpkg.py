@@ -2,22 +2,22 @@ import os, shutil, re, json, sys
 root = os.path.dirname(os.path.abspath(__file__))
 orig = open(f'{root}/orig/index.html').read()
 V = {
- 'game': dict(json='base', title='TDW Strategic Game', desc=None, foot1=None),
- '1931': dict(json='era1', title='Total Domain War 1931 to 1949', ver=4,
+ 'game': dict(json='base', title='TDW Strategic Game', ver=4, desc=None, foot1=None),
+ '1931': dict(json='era1', title='Total Domain War 1931 to 1949', ver=5,
    desc='Three factions, one occupation, and a civil war that stopped for the Japanese. A turn-based strategy game built on the documented record from 1931 to 1949.',
    foot1='The actors are a party and two governments. The Chinese and Japanese peoples are not them. Ancestry is not loyalty.'),
  '2026': dict(json='era3', title='Total Domain War 2026',
-   ver=8, extra=['forecasts.json', 'forecast-results.json'], desc='Eighteen operations from the record of the contest as it stands in autumn 2026, with a watch on Taiwan\'s 28 November vote. A turn-based strategy game that applies ten dimensions, twelve domains and thirty-six stratagems.',
+   ver=9, extra=['forecasts.json', 'forecast-results.json'], desc='Nineteen operations from the record of the contest as it stands in autumn 2026, with a watch on Taiwan\'s 28 November vote. A turn-based strategy game that applies ten dimensions, twelve domains and thirty-six stratagems.',
    foot1='The actors are states and the parties that run them. Their peoples are not the adversary. The Chinese people are the Party\'s first victims. Ancestry is not loyalty.'),
- '2030': dict(json='era2', title='Total Domain War 2030',
+ '2030': dict(json='era2', title='Total Domain War 2030', ver=4,
    desc='Three blocs, twelve domains, and a contest fought through finance, data and cables. A turn-based strategy game built on the documented record and the open reading to 2051.',
    foot1='The actors are states and the parties that run them. Their peoples are not the adversary. The Chinese people are the Party\'s first victims. Ancestry is not loyalty.'),
 }
 NOTICE = {
- 'game': 'TDW game, version 3. Upload and replace everything in /game/ (index.html, css/, js/, assets/).\nThe engine now supports several factions per operation, legitimacy and leaders. The 1784 to 2051 catalog plays as before.\nResult codes and replay verification (js/record.js) are kept. Codes made by the earlier build still verify.\nSaved games from the earlier build continue.\n',
- '1931': 'TDW 1931 to 1949, updated 13 October 2026. Replace everything in /1931/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 1931 build stay valid. The storage key is unchanged.\nEleven operations. New is E011, The Manchurian Trap, the first operation where holding ground has a cost. A Holdings panel shows what each holding costs and denies, and a player can give one up. The report adds a line for acts that hurt the actor\'s own position, on both sides.\nSee NOTES_E011.md for the claim list to check.\n',
- '2026': 'TDW 2026, updated 14 October 2026. Replace everything in /2026/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 2026 build stay valid. The storage key is unchanged.\nNew is Tier 7, a difficulty above the record\'s Tier 6, offered on every operation in free play. W017 The Reach and W018 The Wallet sit at Tier 7 and list moves the rival may take freely and your side may not. A scripted player wins them rarely, and the notes explain why. Forecast mode stays.\nSee TIER7_NOTES.md and ASYMMETRY_NOTES.md.\n',
- '2030': 'TDW 2030. Upload everything to its own folder, for example /2030/ (index.html, css/, js/, assets/).\nIt keeps its own saved progress, separate from /game/.\n',
+ 'game': 'TDW game, updated 14 October 2026. Replace everything in /game/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nNew is Tier 7, a difficulty above the record\'s Tier 6, offered on every operation in free play. Tiers 1 to 6 play exactly as before.\nSee TIER7_NOTES.md.\n',
+ '1931': 'TDW 1931 to 1949, updated 14 October 2026. Replace everything in /1931/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 1931 build stay valid. The storage key is unchanged.\nNew is Tier 7, a difficulty above the record\'s Tier 6, offered on every operation in free play. Tiers 1 to 6 play exactly as before. E011 and the holdings rule stay.\nSee TIER7_NOTES.md.\n',
+ '2026': 'TDW 2026, updated 14 October 2026. Replace everything in /2026/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 2026 build stay valid. The storage key is unchanged.\nNew is W019 The Lab, a third operation in the asymmetry band at Tier 7. It follows the pattern of W017 and W018 and rests on twelve new evidence cards that came in through the importer. W017 and W018 are unchanged. Tier 7, forecast mode and the band stay.\nSee ASYMMETRY_NOTES.md and EVIDENCE_INDEX.md.\n',
+ '2030': 'TDW 2030, updated 14 October 2026. Replace everything in /2030/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nNew is Tier 7, a difficulty above the record\'s Tier 6, offered on every operation in free play. Tiers 1 to 6 play exactly as before.\nSee TIER7_NOTES.md.\n',
 }
 for name, v in V.items():
     if len(sys.argv) > 1 and name not in sys.argv[1:]: continue

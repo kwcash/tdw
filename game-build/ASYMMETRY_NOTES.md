@@ -4,7 +4,7 @@ The game tests whether a rule can be written down and played. It proves nothing 
 
 ## What the band is
 
-Two operations in the 2026 build, W017 The Reach and W018 The Wallet, form an asymmetry band. They play at Tier 7, the new top tier, and the best scripted line wins about 1.1 percent of W017 and 2.2 percent of W018.
+Three operations in the 2026 build form an asymmetry band. They are W017 The Reach and W018 The Wallet, with W019 The Lab added later. They play at Tier 7, the new top tier. The best scripted line wins about 1.1 percent of W017 and 2.2 percent of W018. It wins 1.6 percent of W019.
 
 **Tier 7 is a real tier.** See TIER7_NOTES.md. The permits work at any tier, and the band operations are set to Tier 7 by the record.
 
@@ -22,11 +22,11 @@ The rival's scripted acts carry a tag naming the move they mirror. The report th
 
 The player's side is always the United States and its allies in these two operations. The permits are written for the United States, which is where the constraint evidence comes from. Allies differ in detail, so the permits are a simplification and the page says they are the game's reading.
 
-## What the two operations teach
+## What the operations teach
 
 - A scripted player that uses only the free, lawful moves does best.
 - A player that takes the priced shortcut does worse. The ancestry move relieves pressure at once, and it costs 8 legitimacy, adds a slope to Association and gives the rival leverage. This is the book's own argument. Suspicion by ancestry is the outcome the Party wants.
-- The same holds for freezing accounts without a court in W018. Democracies have done it, and the cards record what followed.
+- The same holds for freezing accounts without a court in W018 and for a broad criminal initiative in W019. Democracies have done both, and the cards record what followed.
 
 Both results come from the rules and the numbers. Neither is scripted.
 
@@ -47,12 +47,31 @@ The pipeline lives in `evidence/` and has four parts.
 - A priced move needs a democracy record or a guardrail.
 - A free move needs a lawful tool or a constraint.
 
-The corpus is small. The repo files hold 129 footnoted sentences, and 19 became cards. To ingest more, send notes in the template at the head of `import_notes.py`. The same checks apply.
+## The second batch
+
+The second batch came through the importer.
+
+1. `band/batches/batch2_notes.md` holds 12 notes in the template. Each names the book sentence it rests on in a `from` field. Two lines are primary texts and not from the book files.
+2. `import_notes.py` turned them into 12 drafts and found no problems.
+3. `promote_drafts.py` promoted the 12 drafts into cards EV-021 to EV-032. A draft with problems is refused, and no earlier card changes.
+4. `build_evidence.py` validated all 31 cards, and checked that each `from` names a candidate that exists.
+5. `band/build_band.py` built W019 from the cards. Its moves cite 21 distinct cards.
+
+The cards cover four things.
+- The Party-state's side. The cards cover the Thousand Talents program and the Hong Kong law kept secret until it took effect.
+- The records of democracies. The cards cover the Justice Department's China Initiative and the exclusion of Japanese Americans in 1942, with the 1988 redress.
+- Lawful tools. The cards cover the Higher Education Act disclosure rule and the Foreign Agents Registration Act.
+- Limits in law. The cards cover the Entity List and a court's verdict for Fujian Jinhua.
+
+W017 and W018 are byte for byte what shipped on 14 October. Their `handScale` and moves are unchanged, so every result code made on them stays valid. A test checks this against the shipped file. New material goes into new operations.
+
+The corpus is still small. The repo files hold 129 footnoted sentences, and 31 are now cards. The review package's evidence log is mostly commentary and 2026 intelligence items. Four items there would qualify as cards, and each is already used in W015 or W016 or names a private individual, so I left them out. To ingest more, send notes in the template at the head of `import_notes.py`. The same checks apply.
 
 ## Where the evidence is thin
 
 - **EV-004** is the book's argument that the statute puts relatives within reach. The book states it as inference, and so does the card.
 - **EV-019 and EV-020** are primary US texts and not from the book files. They are marked Check.
+- The book says the Thousand Talents program ran for sixteen years before Western agencies treated it as one campaign. The cited Senate report is from November 2019, and the program began in 2008. I left the number out of the game and listed the mismatch in the sourcing list.
 - Nine cards rest on book footnotes that I could not read at the source from here. Each is marked Check. They are EV-003, EV-005 to EV-008, EV-011 to EV-013 and EV-016.
 - The record text of W017 and W018 states only what these cards state. The script beats and the reading are labeled as scenario.
 
@@ -68,9 +87,10 @@ The number is the best scripted line, not a person. A player who reads the board
 
 ## Checks run
 
-- 15 new tests in `test/reach.test.js`.
+- 18 tests in `test/reach.test.js`.
   - The engine rules and the code round trip.
   - The validator and the importer.
   - The evidence cited by every move.
+  - The importer, the promoter and the file of shipped operations.
 - All earlier tests pass. The 320 earlier result codes and the 148 original-engine codes verify. The earlier operations are byte for byte unchanged.
 - Browser run at 1280 and 390 pixels with no console errors and no horizontal overflow.

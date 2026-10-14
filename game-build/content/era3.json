@@ -6,11 +6,11 @@
   "legitimacy": true
  },
  "copy": {
-  "hero": "Every operation comes from the record of the contest as it stands in the autumn of 2026. Eighteen operations. Twelve cover the twelve domains. The other six follow Taiwan's budget and vote, the Iranian oil fleet, a seized botnet and two operations on the limits that bind a free society.",
+  "hero": "Every operation comes from the record of the contest as it stands in the autumn of 2026. Nineteen operations. Twelve cover the twelve domains. The other seven follow Taiwan's budget and vote, the Iranian oil fleet, a seized botnet and three operations on the limits that bind a free society.",
   "arcsLabel": "2004 to 2026",
   "arcsTitle": "Two campaign arcs",
   "arcsText": "The Taiwan Strait and the seams where allies, trade, data and law meet.",
-  "opsNote": "Eighteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.",
+  "opsNote": "Nineteen operations from the record to October 2026. Twelve cover the twelve domains. Tier sets the difficulty.",
   "arcsNote": "Two arcs. Each runs through the record one operation at a time. Win an operation to open the next."
  },
  "tutorial": "C001",
@@ -3056,6 +3056,555 @@
    ],
    "rules": {
     "handScale": 0.82
+   }
+  },
+  {
+   "id": "W019",
+   "kind": "catalog",
+   "num": 19,
+   "title": "The Lab",
+   "fullTitle": "The Lab (2026)",
+   "tier": 7,
+   "band": "asymmetry",
+   "dimension": "Gradient",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S17",
+    "S14",
+    "S10"
+   ],
+   "theater": [
+    "Cultural",
+    "Association",
+    "Legal",
+    "Data and Surveillance"
+   ],
+   "spine": "Cultural",
+   "opponent": "The Party-state",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     2018,
+     11
+    ],
+    "end": [
+     2026,
+     10
+    ]
+   },
+   "label": "November 2018 to October 2026",
+   "brief": "The Party-state draws researchers abroad toward its institutions with funding and prestige. In 2018 a democracy answered with a criminal initiative and ended it four years later.",
+   "record": "Talent-recruitment programs led by the Thousand Talents Plan draw established researchers toward Chinese institutions with funding and prestige. Recruitment on better pay is an ordinary economic fact and is no sign of disloyalty by anyone recruited. A Senate subcommittee report of November 2019 examined the plans as one campaign. The Justice Department announced a China Initiative in November 2018 against researchers who hid Beijing funding from their American grants, and it ended the initiative in February 2022. The book calls it too narrow and too slow and says many read it as proof that the effort was never about security. In 1942 the United States excluded Japanese Americans on the strength of ancestry alone, and a federal commission later found that military necessity never justified it. The record ends on 12 October 2026.",
+   "reading": "Scenario, not record. The Party-state can bind a lab, a scholar and a family by one rule and publish that rule on the day it takes effect. A free society must bring a case a court will hear and must keep the program apart from the person. The shortcut that screens people by origin relieves pressure at once and repeats a wrong the record already holds. This is Stratagem 17, cast a brick to attract jade. Stratagem 14 borrows a corpse to resurrect the soul, and Stratagem 10 hides a knife behind a smile.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. No standing rule separates a program from the people it recruits, so a defense that begins with the program drifts to the person.",
+   "fix": "Name programs and not people, require public disclosure of foreign funding above a set line and bring only the case a court will hear.",
+   "factions": [
+    "USA_Allies",
+    "PRC_State"
+   ],
+   "player": "USA_Allies",
+   "cadres": [
+    "campus_office",
+    "legal_advisers",
+    "liaison_dept"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 2,
+     "text": "A security organ asks a university lab for the notes of a visiting scholar.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 2,
+       "by": "PRC_State",
+       "mirror": "duty_to_inform"
+      }
+     ]
+    },
+    {
+     "turn": 3,
+     "text": "A scholar abroad stops publishing after a call from home.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1,
+       "by": "PRC_State",
+       "mirror": "fear"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1,
+       "by": "PRC_State"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "A new rule binds a whole field of study, and its text appears on the day it takes effect.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 2,
+       "by": "PRC_State",
+       "mirror": "secret_rule"
+      }
+     ]
+    },
+    {
+     "turn": 7,
+     "text": "Funding offers reach a second laboratory.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 2,
+       "by": "PRC_State"
+      }
+     ]
+    }
+   ],
+   "reach": [
+    {
+     "id": "duty_to_inform",
+     "name": "Oblige every lab to inform the security organs",
+     "domain": "Data and Surveillance",
+     "text": "Order any university or researcher to report to the security organs on demand.",
+     "permit": {
+      "USA_Allies": "barred"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 3
+      },
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Data and Surveillance",
+       "n": 2
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-001",
+       "line": "The Party-state's National Intelligence Law of 2017 obliges any organization or citizen to support, assist and cooperate with state intelligence work."
+      },
+      {
+       "id": "EV-020",
+       "line": "US agencies compel a firm to produce customer data only through a warrant, a court order or a statutory process the firm can challenge in court."
+      }
+     ]
+    },
+    {
+     "id": "fear",
+     "name": "Make scholars silent through fear for funding and family",
+     "domain": "Cultural",
+     "text": "Keep scholars quiet by threats to their funding and their families.",
+     "permit": {
+      "USA_Allies": "barred"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "unslope",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 2
+      },
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 2
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-008",
+       "line": "About a quarter of China scholars report that they censor themselves."
+      },
+      {
+       "id": "EV-004",
+       "line": "The book argues that the statute puts the relatives of a person abroad within the Party-state's reach, so the relative becomes the lever."
+      },
+      {
+       "id": "EV-019",
+       "line": "The First Amendment bars the US government from suppressing lawful speech."
+      }
+     ]
+    },
+    {
+     "id": "secret_rule",
+     "name": "Bind a field by a rule published when it takes effect",
+     "domain": "Legal",
+     "text": "Pass a rule in secret and publish its text on the day it binds.",
+     "permit": {
+      "USA_Allies": "barred"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 3
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-032",
+       "line": "The Party-state held the text of the Hong Kong national security law secret until it took effect at 11 pm on 30 June 2020. Arrests and frozen accounts followed within hours and days."
+      },
+      {
+       "id": "EV-031",
+       "line": "The Fifth Amendment bars the federal government from depriving a person of liberty without due process of law."
+      }
+     ]
+    },
+    {
+     "id": "initiative",
+     "name": "Open a broad criminal initiative against researchers",
+     "domain": "Cultural",
+     "text": "Prosecute researchers with foreign ties on a wide front, whatever the case.",
+     "permit": {
+      "USA_Allies": "priced"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 3
+      },
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -2
+      }
+     ],
+     "pricedEffects": [
+      {
+       "type": "legitimacy",
+       "faction": "USA_Allies",
+       "n": -7,
+       "why": "the broad initiative",
+       "self": "overextension",
+       "selfWhy": "the broad initiative"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 2,
+       "by": "PRC_State"
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": 1,
+       "why": "the broad initiative"
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-023",
+       "line": "The Justice Department announced a China Initiative in November 2018 against researchers who hid Beijing funding from their American grants, and it ended the initiative in February 2022."
+      },
+      {
+       "id": "EV-014",
+       "line": "Suspicion by ancestry is the outcome the Party wants. It isolates the diaspora and confirms the Party's claim that overseas Chinese have no home but the People's Republic."
+      }
+     ]
+    },
+    {
+     "id": "screen_students",
+     "name": "Screen students and scholars by origin",
+     "domain": "Association",
+     "text": "Treat origin as a sign of risk, which relieves pressure now and repeats a wrong the record already holds.",
+     "permit": {
+      "USA_Allies": "priced"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 3
+      },
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 2
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -2
+      }
+     ],
+     "pricedEffects": [
+      {
+       "type": "legitimacy",
+       "faction": "USA_Allies",
+       "n": -8,
+       "why": "screening by origin",
+       "self": "breach of own legitimating rule",
+       "selfWhy": "screening by origin"
+      },
+      {
+       "type": "slope",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 2,
+       "by": "PRC_State"
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": 1,
+       "why": "screening by origin"
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-024",
+       "line": "Executive Order 9066 of February 1942 authorized the exclusion that sent Japanese Americans to internment camps on the strength of ancestry alone. A federal commission later found that military necessity never justified it and Congress passed redress in 1988."
+      },
+      {
+       "id": "EV-025",
+       "line": "The Munson and Ringle reports found the Japanese American population overwhelmingly loyal and mass internment unnecessary. Both reports came before Executive Order 9066."
+      },
+      {
+       "id": "EV-014",
+       "line": "Suspicion by ancestry is the outcome the Party wants. It isolates the diaspora and confirms the Party's claim that overseas Chinese have no home but the People's Republic."
+      }
+     ]
+    },
+    {
+     "id": "disclose",
+     "name": "Require public disclosure of foreign funding",
+     "domain": "Legal",
+     "text": "Publish foreign gifts and contracts above a set line, with the date.",
+     "permit": {
+      "USA_Allies": "free"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 1
+      },
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-026",
+       "line": "Section 117 of the Higher Education Act requires universities to disclose foreign gifts."
+      },
+      {
+       "id": "EV-027",
+       "line": "The book proposes real-time public disclosure of foreign funding above a set line. It would cover universities, think tanks, nonprofits and media."
+      },
+      {
+       "id": "EV-028",
+       "line": "The Foreign Agents Registration Act of 1938 requires anyone acting for a foreign principal to disclose the relationship publicly before speaking. It silences no one and removes the deniability."
+      }
+     ]
+    },
+    {
+     "id": "name_campaign",
+     "name": "Name the recruitment program as one campaign",
+     "domain": "Cultural",
+     "text": "Treat the program and not the person as the subject, and publish the record.",
+     "permit": {
+      "USA_Allies": "free"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1
+      },
+      {
+       "type": "unslope",
+       "faction": "USA_Allies",
+       "domain": "Cultural",
+       "n": 1
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-022",
+       "line": "A Senate subcommittee report of November 2019 examined the talent-recruitment plans of the Party-state as one campaign."
+      }
+     ]
+    },
+    {
+     "id": "protect_scholars",
+     "name": "Protect scholars and open a reporting line",
+     "domain": "Association",
+     "text": "Tell scholars who are pressured where to report it, and answer every report.",
+     "permit": {
+      "USA_Allies": "free"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 2
+      },
+      {
+       "type": "ease",
+       "faction": "USA_Allies",
+       "domain": "Association",
+       "n": 1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-017",
+       "line": "The book's counter to transnational repression is to treat it as a national-security offense and not a private dispute, to shut the overseas stations and to protect the diaspora plainly."
+      },
+      {
+       "id": "EV-014",
+       "line": "Suspicion by ancestry is the outcome the Party wants. It isolates the diaspora and confirms the Party's claim that overseas Chinese have no home but the People's Republic."
+      }
+     ]
+    },
+    {
+     "id": "designate_entities",
+     "name": "List the entities that act for the state",
+     "domain": "Legal",
+     "text": "Put the entities in the register, with the date and the reason.",
+     "permit": {
+      "USA_Allies": "free"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 1
+      },
+      {
+       "type": "leverage",
+       "faction": "PRC_State",
+       "n": -1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-015",
+       "line": "The Defense Department's 1260H list of Chinese military companies and the Commerce Department's Entity List are published in the Federal Register."
+      },
+      {
+       "id": "EV-030",
+       "line": "On 29 October 2018 the Commerce Department added Fujian Jinhua to the Entity List. The listing needed only an agency determination and took effect at once."
+      }
+     ]
+    },
+    {
+     "id": "prove_in_court",
+     "name": "Bring only the case a court will hear",
+     "domain": "Legal",
+     "text": "Charge only what the evidence will carry before a judge.",
+     "permit": {
+      "USA_Allies": "free"
+     },
+     "limit": 1,
+     "ap": 1,
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "USA_Allies",
+       "domain": "Legal",
+       "n": 2
+      },
+      {
+       "type": "coherence",
+       "faction": "USA_Allies",
+       "n": 1
+      }
+     ],
+     "evidence": [
+      {
+       "id": "EV-029",
+       "line": "On 27 February 2024 a federal judge found Fujian Jinhua not guilty of economic espionage and conspiracy after a non-jury trial. The judge concluded that prosecutors had failed to prove the company misappropriated Micron's data."
+      },
+      {
+       "id": "EV-031",
+       "line": "The Fifth Amendment bars the federal government from depriving a person of liberty without due process of law."
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.7
    }
   }
  ],

@@ -1,8 +1,8 @@
 # Sourcing list for TDW 2026
 
-Updated 13 October 2026, with W017 and W018 added.
+Updated 14 October 2026, with W017, W018 and W019 added.
 
-The eighteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
+The nineteen operations in the 2026 build state a record and then a reading. The record is checked here. The reading is argued and is not on this list.
 
 **How to use this file.** Each row gives one factual claim, where it came from, and what is still to do. I could not check any 2026 event independently. Every 2026 claim comes from the Architecture of Strategy package you sent (playbook v4, contest map v6, the prediction ledger and the review package). Claims marked **GK** come from my general knowledge up to mid-2026. Treat a GK claim as unverified until a source is added.
 
@@ -102,6 +102,27 @@ Status keys. **Use** the package states it as fact (F) with a named source. **Ch
 | W018 | The Defense Department's 1260H list of Chinese military companies and the Commerce Department's Entity List are published in the Federal Register. | EV-015: Section 1260H designations and Entity List determinations, as cited in the Military-Civil Fusion case, note 5. | Use |
 | W018 | Under the pressure of a delisting statute the PCAOB secured an inspection agreement in August 2022 and conducted its first inspections of mainland and Hong Kong audit firms in late 2022. | EV-016: PCAOB Statement of Protocol of August 2022, as cited in the Borrowed Knife case, note 3. | Check |
 | W018 | The permits (free, priced or barred), the cost and effect of each move, and the script beats are the game's reading of the cards above. The record ends on 12 October 2026 | Designer reading (R) | Scenario |
+| W019 | The Party-state's National Intelligence Law of 2017 obliges any organization or citizen to support, assist and cooperate with state intelligence work. | EV-001: National Intelligence Law (2017), Article 7, and National Security Law (2015), Article 11, as cited in the Military-Civil Fusion case, note 4. | Use |
+| W019 | US agencies compel a firm to produce customer data only through a warrant, a court order or a statutory process the firm can challenge in court. | EV-020: United States Constitution, amendment IV, and the Stored Communications Act. A primary text and not from the book files. | Check |
+| W019 | About a quarter of China scholars report that they censor themselves. | EV-008: Greitens and Truex, Repressive Experiences among China Scholars, The China Quarterly (2020), as cited in Part Two, note 14. | Check |
+| W019 | The book argues that the statute puts the relatives of a person abroad within the Party-state's reach, so the relative becomes the lever. The book states this as its own argument. | EV-004: Military-Civil Fusion case, the passage on the National Intelligence Law. The book states this as its own argument. | Check |
+| W019 | The First Amendment bars the US government from suppressing lawful speech. | EV-019: United States Constitution, amendment I. A primary text and not from the book files. | Check |
+| W019 | The Party-state held the text of the Hong Kong national security law secret until it took effect at 11 pm on 30 June 2020. Arrests and frozen accounts followed within hours and days. | EV-032: Law of the People's Republic of China on Safeguarding National Security in the Hong Kong Special Administrative Region, effective 30 June 2020, as cited in Part Two, note 20 and the Hong Kong case, note 1. | Use |
+| W019 | The Fifth Amendment bars the federal government from depriving a person of liberty without due process of law. | EV-031: United States Constitution, amendment V. A primary text and not from the book files. | Check |
+| W019 | The Justice Department announced a China Initiative in November 2018 against researchers who hid Beijing funding from their American grants, and it ended the initiative in February 2022. | EV-023: DOJ China Initiative, announced November 2018 and ended February 2022, as cited in Part Three, note 23. The book calls it too narrow and too slow and says many read it as proof that the effort was never about security. | Check |
+| W019 | Suspicion by ancestry is the outcome the Party wants. It isolates the diaspora and confirms the Party's claim that overseas Chinese have no home but the People's Republic. The book states this as its own argument. | EV-014: Military-Civil Fusion case, the closing passage on the defense. The book states this as its own argument. | Check |
+| W019 | Executive Order 9066 of February 1942 authorized the exclusion that sent Japanese Americans to internment camps on the strength of ancestry alone. A federal commission later found that military necessity never justified it and Congress passed redress in 1988. | EV-024: Executive Order 9066 (19 February 1942) and Korematsu v. United States (1944), with the findings of the federal commission and the 1988 redress law, as cited in Part Two, note 28. | Use |
+| W019 | The Munson and Ringle reports found the Japanese American population overwhelmingly loyal and mass internment unnecessary. Both reports came before Executive Order 9066. | EV-025: The Munson Report (November 1941) and the Ringle Report (January 1942), and the findings of the 1983 federal commission, as cited in the Military-Civil Fusion case, note 2a. | Use |
+| W019 | Section 117 of the Higher Education Act requires universities to disclose foreign gifts. | EV-026: Higher Education Act, Section 117 foreign gift disclosures, as cited in Part Two, notes 13 and 16. The requirement is stated from general knowledge and its primary text is still to check. | Check |
+| W019 | The book proposes real-time public disclosure of foreign funding above a set line. It would cover universities, think tanks, nonprofits and media. The book states this as its own argument. | EV-027: Part Two, the book's own counter to hidden dependence, citing Foreign Agents Registration Act filings and Higher Education Act Section 117. The book states this as its own proposal and as an argument. | Check |
+| W019 | The Foreign Agents Registration Act of 1938 requires anyone acting for a foreign principal to disclose the relationship publicly before speaking. It silences no one and removes the deniability. | EV-028: Foreign Agents Registration Act of 1938, 22 U.S.C. 611 and following, as cited in Part Three, note 12. | Use |
+| W019 | A Senate subcommittee report of November 2019 examined the talent-recruitment plans of the Party-state as one campaign. | EV-022: US Senate Permanent Subcommittee on Investigations, Threats to the US Research Enterprise, China's Talent Recruitment Plans (November 2019), as cited in Part Two, note 2. The book says the program ran for sixteen years before Western agencies treated it as one campaign. The number is left out here because the dates do not obviously match. | Check |
+| W019 | The book's counter to transnational repression is to treat it as a national-security offense and not a private dispute, to shut the overseas stations and to protect the diaspora plainly. The book states this as its own argument. | EV-017: Part Three, the Sign and the Counter for the Psychological domain. The book states this as its own counter. | Check |
+| W019 | The Defense Department's 1260H list of Chinese military companies and the Commerce Department's Entity List are published in the Federal Register. | EV-015: Section 1260H designations and Entity List determinations, as cited in the Military-Civil Fusion case, note 5. | Use |
+| W019 | On 29 October 2018 the Commerce Department added Fujian Jinhua to the Entity List. The listing needed only an agency determination and took effect at once. | EV-030: Commerce Department Entity List addition of 29 October 2018, as cited in the Technology IP case, note 1. The remark that it needed no proof beyond an agency determination is the book's own account. | Check |
+| W019 | On 27 February 2024 a federal judge found Fujian Jinhua not guilty of economic espionage and conspiracy after a non-jury trial. The judge concluded that prosecutors had failed to prove the company misappropriated Micron's data. | EV-029: Fujian Jinhua not-guilty verdict of 27 February 2024 in a US District Court, as cited in the Technology IP case, note 3. | Check |
+| W019 | The permits (free, priced or barred), the cost and effect of each move, and the script beats are the game's reading of the cards above. The record ends on 12 October 2026 | Designer reading (R) | Scenario |
+| W019 | The book says the Party-state ran Thousand Talents for sixteen years before Western agencies treated it as one campaign. The number is left out of the game because the dates do not obviously match | Part Two, note 2. Confirm against the Senate subcommittee report of November 2019 | Check |
 
 ## Calendar
 
@@ -123,12 +144,12 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 - Biology: no technical content. The op records governance and disclosure only.
 - No Taiwanese candidate is named and no candidate list. The game takes no side between Taiwan's parties. It shows no poll and no prediction of who wins. The text says "the opposition" and uses offices.
 - Nothing after 12 October 2026 is record. The vote and the December window appear only as a scenario or as a scheduled date.
-- The book's prediction ledger text appears only on the Forecast page, unchanged and with its time stamp, under the author's written permission. It does not appear in any operation. Evidence cards EV-001 to EV-020 appear on the board of W017 and W018 and in their reports.
+- The book's prediction ledger text appears only on the Forecast page, unchanged and with its time stamp, under the author's written permission. It does not appear in any operation. Evidence cards EV-001 to EV-032 appear on the board of W017, W018 and W019 and in their reports.
 - Left out on purpose: scenario CW-3 of the playbook (a leader's family member taken hostage), because it names a private individual. Also left out: the E-10 trade figures marked unverified, the 25-year Iran deal figure the playbook marks "do not use", and all of the playbook's predictions.
 
 ## The ten, twelve and thirty-six
 
-- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 to W016 add second levers on Information, Financial, Economic and Cyber. W017 and W018 add second levers on Legal and Financial.
+- **Twelve domains.** W001 to W012 make each domain the lever of one operation. W013 to W016 add second levers on Information, Financial, Economic and Cyber. W017, W018 and W019 add second levers on Legal, Financial and Cultural.
 - **Ten dimensions.** Every dimension is the physics of at least one operation. Entropy and Topology each run twice.
 - **Thirty-six stratagems.** W001 to W012 give each stratagem once, three to an operation. W013 to W016 reuse stratagems that W001 to W012 already use. Every stratagem still appears, and several appear twice.
 
@@ -152,3 +173,4 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 | W016 The Seized Botnet | Cyber | Topology | S13, S10, S22 |
 | W017 The Reach (asymmetry band) | Legal | Agency | S3, S8, S35 |
 | W018 The Wallet (asymmetry band) | Financial | Asymmetry | S22, S33, S16 |
+| W019 The Lab (asymmetry band) | Cultural | Gradient | S17, S14, S10 |

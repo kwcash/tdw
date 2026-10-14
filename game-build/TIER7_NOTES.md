@@ -46,10 +46,23 @@ The tuner bot is a simple scripted player. Each figure is the share of 400 games
 
 Tier 7 averages about 2 percent for this bot. The band operations W017 and W018 add permits on top of it and are tuned to about 1 to 3 percent for their best line. See BALANCE_W017_W018.md.
 
-## Not changed
+## Tier 7 on the other builds
 
-- The 1931, 2030 and base game builds keep the earlier bundle and offer six tiers.
+The base game, the 1931 build and the 2030 build now carry the same bundle and offer Tier 7. Each figure is the share of games the tuner bot won, 150 per operation for 1931 and 2030 and 60 per operation on every fifth operation of the base game. The base game has 220 operations and the sample is 44 of them.
+
+| Build | Operations | Tier 6 average | Tier 7 average |
+|---|---|---|---|
+| 1931 to 1949 | 12 | 19% | 7% |
+| 2030 | 11 | 23% | 4% |
+| Base game, 44 sampled | 220 | 13% | 2% |
+
+Some operations in these builds are already near zero at Tier 6, so Tier 7 leaves little room there. The 1931 operation E011 wins 1% at Tier 6 and 0% at Tier 7 for the tuner bot, which never gives up a holding. A player who gives up Manchuria on turn 1 does better at both tiers.
+
+The test `test/tier7.test.js` already ran sampled operations from all four content sets against the earlier engine at four tiers. Every final state matched. A browser run on each of the three builds at 1280 and 390 pixels showed no console errors, and an old save and an old result code from the earlier bundle loaded and verified.
+
+## Not changed
 - The tutorial, the daily and every earlier result code.
+- The campaign arcs, which still climb from Tier 1 to Tier 6 in every build.
 - The `tier` field of every operation on the record. Only W017 and W018 are set to 7.
 
 ## Checks run

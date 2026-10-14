@@ -1,11 +1,12 @@
 #!/usr/bin/env python3 -I
-"""Validates cards.json and writes evidence.json and EVIDENCE_INDEX.md. Usage: build_evidence.py cards.json OUT_DIR [DOCS_DIR]
+"""Validates cards.json and writes evidence.json and EVIDENCE_INDEX.md. Usage: build_evidence.py cards.json OUT_DIR [DOCS_DIR [CANDIDATES_DIR]]
 Rules the build enforces. They come from the repo's CLAUDE.md and from the standing rules of this project.
  1. Every card has an id, a side, an act, an actor, a claim, a class (F, I, R or S) and a source line.
  2. The actor is the Party, the Party-state, a named agency or government, or a free society. It is never a people.
  3. No claim names a private individual, and none states a Xinjiang or detention figure.
  4. An F card cites a document, a statute or a record. An I, R or S card says so and says whose argument it is.
- 5. When DOCS_DIR is given, a card that names a book sentence ('from' is a candidate id) must find its footnote text in the files."""
+ 5. When CANDIDATES_DIR is given, a card whose 'from' names a candidate must name one that exists. 'primary-text', 'notes' and the book-note forms are allowed.
+ 6. When DOCS_DIR is given, a card that names a book sentence ('from' is a candidate id) must find its footnote text in the files."""
 import json, pathlib, re, sys
 
 cards_p, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
@@ -29,7 +30,7 @@ for c in data['cards']:
     if PEOPLE.search(txt): bad.append(f'{w}: a people is named as the actor')
     if PRIVATE.search(txt): bad.append(f'{w}: names an individual')
     if SENS.search(txt) and re.search(r'\d', c.get('claim', '')): bad.append(f'{w}: a Xinjiang or detention figure')
-    if c.get('class') == 'F' and not re.search(r'(Law|Act|Article|amendment|Register|ruling|Commission|announce|publication|Statement|filing|complaint|list|Quarterly|reporting|suspension|designation|edition|initiative|episode|Constitution|Decision|Exchange)', c.get('source', ''), re.I): bad.append(f'{w}: an F card needs a document, statute or record in its source')
+    if c.get('class') == 'F' and not re.search(r'(Law|Act|Article|amendment|Register|ruling|Commission|announce|publication|Statement|filing|complaint|list|Quarterly|reporting|suspension|designation|edition|initiative|episode|Constitution|Decision|Exchange|testimony|report|disclosure|advisory|Plan|records|verdict|Order|Report|Initiative|materials|addition)', c.get('source', ''), re.I): bad.append(f'{w}: an F card needs a document, statute or record in its source')
     if c.get('class') in ('I', 'R', 'S') and not re.search(r"(argument|counter|reading|speculation)", c.get('source', ''), re.I): bad.append(f'{w}: an {c.get("class")} card must say whose argument it is')
     if len(c.get('claim', '')) > 330: bad.append(f'{w}: claim over 330 characters')
 if len(sys.argv) > 3:
@@ -37,6 +38,13 @@ if len(sys.argv) > 3:
     for c in data['cards']:
         m = re.fullmatch(r'PartThree-note(\d+)', c.get('from', ''))
         if m and f'[^{m.group(1)}]:' not in notes: bad.append(f'{c["id"]}: footnote {m.group(1)} not found')
+if len(sys.argv) > 4:
+    have = set()
+    for p in pathlib.Path(sys.argv[4]).glob('*.jsonl'):
+        have |= {json.loads(l)['id'] for l in p.read_text(encoding='utf-8').splitlines() if l.strip()}
+    for c in data['cards']:
+        f = c.get('from', '')
+        if f.startswith('EV-') and f not in have: bad.append(f'{c["id"]}: from names {f}, which is not a candidate')
 if bad:
     print('\n'.join('REFUSED ' + b for b in bad)); sys.exit(1)
 out.mkdir(parents=True, exist_ok=True)
