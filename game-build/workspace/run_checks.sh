@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 fail=0
 # The bundle in out/ must be what the sources in src/ make.
 r=$(python3 build.py --check | tail -1); echo "$r"; case "$r" in *match*) ;; *) fail=1;; esac
-for t in record.test record-legacy.test holdings.test forecast.test reach.test tier7.test guide.test difficulty.test glossary.test progress.test rules.test; do
+for t in record.test record-legacy.test holdings.test forecast.test reach.test tier7.test guide.test difficulty.test glossary.test progress.test rules.test a11y.test; do
   r=$(node test/$t.js 2>&1 | tail -1); echo "$t: $r"; case "$r" in OK*) ;; *) fail=1;; esac
 done
 r=$(python3 test/review.py 2>&1 | tail -1); echo "review: $r"; case "$r" in OK*) ;; *) fail=1;; esac
@@ -18,5 +18,8 @@ for(const f of ['base','era1','era2','era3']){const C=require('./content/'+f+'.j
 for(const o of C.ops){const r=E.validate(o,reg);const e=(r&&r.errors)||(Array.isArray(r)?r:[]);if(e.length){bad++;console.log(f,o.id,e)}}}
 console.log('validate:',bad?bad+' problems':'all four content files valid');process.exit(bad?1:0)" || fail=1
 for f in content/base.json content/era1.json content/era2.json content/era3.json band/cards.json src/help.json content/guides.json; do r=$(python3 test/lint-strict.py $f | tail -1); echo "lint $f: $r"; case "$r" in 0\ style*) ;; *) fail=1;; esac; done
+# The process documents at the top of game-build keep the house style too.
+for f in RULES.md RISKS.md BACKUP.md STANDARDS.md REVIEW_SOURCES.md REVIEW_LOG.md PLAYTEST.md PLAYTEST_LOG.md ACCESSIBILITY.md; do r=$(python3 test/lint-strict.py ../$f | tail -1); case "$r" in 0\ style*) ;; *) echo "lint $f: $r"; fail=1;; esac; done
+echo "lint process documents: done"
 [ $fail = 0 ] && echo "ALL CHECKS PASS" || echo "SOME CHECKS FAILED"
 exit $fail

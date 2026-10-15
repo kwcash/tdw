@@ -195,6 +195,12 @@
    "label": "Send feedback by email",
    "subject": "TDW feedback",
    "intro": "Tell us what worked and what did not. Name the operation and the tier if you can."
+  },
+  "live": {
+   "turn": "Turn {n}.",
+   "over": "The operation is over.",
+   "quiet": "Nothing landed this turn.",
+   "unspent": "You have {n} actions unspent. Idle actions cost coherence. Press End turn again within four seconds to end it."
   }
  },
  "glossary": [

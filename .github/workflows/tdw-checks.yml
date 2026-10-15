@@ -44,7 +44,7 @@ jobs:
           python-version: '3.12'
       - name: Install Playwright and Chromium
         run: |
-          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.56.1
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.56.1 axe-core@4.10.2
           npx playwright install --with-deps chromium
       - name: Build the packages
         working-directory: game-build/workspace
@@ -61,3 +61,10 @@ jobs:
         run: |
           mkdir -p /tmp/shots
           for v in v9 v10 v11 v12; do NEW=$PWD/out/pkg SHOTS=/tmp/shots node e2e/$v.js | tail -3; done
+      - name: Accessibility audit
+        working-directory: game-build/workspace
+        env:
+          PW_MODULE: /tmp/pw/node_modules/playwright
+          CHROMIUM: ''
+          AXE: /tmp/pw/node_modules/axe-core/axe.min.js
+        run: node e2e/a11y.js

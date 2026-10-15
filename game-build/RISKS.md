@@ -41,3 +41,5 @@ Each issue names who acts next. Status is Open, Waiting or Closed.
 | I8 | HANDOFF.md holds seven style failures. No check reads it, because it holds no player text. | Rewrite the seven sentences at the next handoff update. | Claude | Open |
 | I9 | The style lint reads no colons or semicolons. | Teach the lint to skip links and times, then check prose for both. | Claude | Open |
 | I10 | The secret scan matched an assignment in `instrument/analyze.php`, outside the game. Claude did not open the file. | The owner checks that the file holds no real key. | Owner | Open |
+| I11 | The playtest round has not run. | The owner finds five to eight players and runs PLAYTEST.md. | Owner | Waiting |
+| I12 | No person has played with a real screen reader. The audit checked structure only. | One playtest session uses NVDA or VoiceOver, as ACCESSIBILITY.md says. | Owner | Waiting |

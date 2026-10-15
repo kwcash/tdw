@@ -596,7 +596,21 @@
     </button>`;
   }
 
+  // One live region that stays on the page while the board redraws, so a screen reader reads out each turn's results.
+  // The board creates it on first draw, so it is in place before any text arrives.
+  function liveRegion() {
+    let live = document.getElementById('sr-turn');
+    if (!live) { live = document.createElement('div'); live.id = 'sr-turn'; live.className = 'sr-only'; live.setAttribute('aria-live', 'polite'); live.setAttribute('aria-atomic', 'true'); document.body.appendChild(live); }
+    return live;
+  }
+  function announce(text) {
+    const live = liveRegion();
+    live.textContent = '';
+    setTimeout(() => { live.textContent = text; }, 50);
+  }
+
   function drawBoard() {
+    liveRegion();
     const d = G.data;
     const v = d.view;
     if (v.over) return drawResult();
@@ -628,7 +642,7 @@
         </div>
       </div>
       ${hint === 'tier7' ? hintHtml('tier7') : ''}${factionsHtml(v, hint)}${cadresHtml(v, hint)}${holdingsHtml(v, hint)}${reachHtml(v, hint)}
-      ${G.feed.length ? `<div class="feed" aria-live="polite">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
+      ${G.feed.length ? `<div class="feed">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
       <div class="hand-head"><div class="headrow"><h2>Cards in play</h2>${gl('card', true)}</div><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
       <div class="hand">${v.intents.filter((i) => isMine(v, i)).map(cardHtml).join('') || '<p class="muted">No cards aimed at you this turn.</p>'}</div>
       ${elsewhereHtml(v)}
@@ -660,6 +674,7 @@
         btn.textContent = `Tap again to end with ${v.ap} unspent`;
         btn.classList.add('armed');
         const w = btn.nextElementSibling; if (w) w.textContent = 'Idle actions cost coherence.';
+        announce(HELP.ui.live.unspent.replace('{n}', v.ap));
         setTimeout(() => { if (btn.isConnected) { delete btn.dataset.armed; btn.textContent = `End turn ${v.turn}`; btn.classList.remove('armed'); } }, 4000);
         return;
       }
@@ -796,6 +811,9 @@
       if (r.rewards) G.rewards = r.rewards;
       G.data = r;
       drawBoard();
+      const said = G.feed.map((f) => f.text).join(' ');
+      if (action.type === 'end') announce(`${r.view.over ? HELP.ui.live.over : HELP.ui.live.turn.replace('{n}', r.view.turn)} ${said || HELP.ui.live.quiet}`);
+      else if (said) announce(said);
       if (action.type === 'end' && !r.view.over) window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (e) {
       toast(e.message);

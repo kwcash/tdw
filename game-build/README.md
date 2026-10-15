@@ -109,3 +109,7 @@ What is here, so a reset of the working machine does not cost the game again.
 ## Update of 15 October 2026, ninth set
 
 - Upload the 2026 folder only. The forecast page gains claim R6 by the owner's decision. REVIEW_SOURCES.md and the worksheet in `workspace/review/` make up the pack for the independent source reviewer. `CHANGELOG_2026-10-15i.md` describes it.
+
+## Update of 15 October 2026, tenth set
+
+- Upload all four folders. Accessibility fixes for contrast and screen readers. PLAYTEST.md is the script for the playtest sessions, and ACCESSIBILITY.md logs the audit. `CHANGELOG_2026-10-15j.md` describes it.

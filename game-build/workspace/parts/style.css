@@ -2,7 +2,7 @@
   --bg: #f5f6f8; --panel: #ffffff; --ink: #151a21; --muted: #5d6673; --line: #dfe3e8;
   --accent: #b3261e; --accent-ink: #fff;
   --detect: #1f5fbf; --disrupt: #b3261e; --defend: #1e7a46;
-  --good: #1e7a46; --bad: #b3261e; --warn: #9a6400;
+  --good: #1e7a46; --bad: #b3261e; --warn: #8a5a00; --kicker: #b3261e; --btn: #b3261e;
   --radius: 10px; --shadow: 0 1px 2px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.04);
   --banner-bg: #fff4d6; --banner-ink: #5a3d00; --banner-line: #f0d58a; --star: #a87908;
   color-scheme: light;
@@ -12,7 +12,7 @@
     --bg: #0e1319; --panel: #161d26; --ink: #e8ecf1; --muted: #9aa5b2; --line: #2a3441;
     --accent: #e0574f; --accent-ink: #fff;
     --detect: #5b9bf0; --disrupt: #ef6b63; --defend: #4cc07f;
-    --good: #4cc07f; --bad: #ef6b63; --warn: #e3a83a;
+    --good: #4cc07f; --bad: #ef6b63; --warn: #e3a83a; --kicker: #f0a39e; --btn: #c0392b;
     --shadow: none; color-scheme: dark;
     --banner-bg: #3a2c07; --banner-ink: #f5dc9c; --banner-line: #6b5210; --star: #e2b33a;
   }
@@ -21,7 +21,7 @@
   --bg: #0e1319; --panel: #161d26; --ink: #e8ecf1; --muted: #9aa5b2; --line: #2a3441;
   --accent: #e0574f; --accent-ink: #fff;
   --detect: #5b9bf0; --disrupt: #ef6b63; --defend: #4cc07f;
-  --good: #4cc07f; --bad: #ef6b63; --warn: #e3a83a;
+  --good: #4cc07f; --bad: #ef6b63; --warn: #e3a83a; --kicker: #f0a39e; --btn: #c0392b;
   --shadow: none; color-scheme: dark;
   --banner-bg: #3a2c07; --banner-ink: #f5dc9c; --banner-line: #6b5210; --star: #e2b33a;
 }
@@ -57,7 +57,7 @@ p { margin: 8px 0; }
 .tag.strong { color: var(--ink); border-color: var(--ink); }
 
 button, .btn { font: inherit; min-height: 48px; padding: 10px 16px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px; }
-button.primary, .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); font-weight: 600; }
+button.primary, .btn.primary { background: var(--btn); color: var(--accent-ink); border-color: var(--btn); font-weight: 600; }
 button:disabled { opacity: .5; cursor: not-allowed; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid var(--detect); outline-offset: 2px; }
 input, select, textarea { font: inherit; width: 100%; min-height: 48px; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
@@ -152,7 +152,9 @@ nav .menu a { display: flex; }
 .hero .btn.primary { background: #e0574f; border-color: #e0574f; color: #fff; }
 .hero .chip2 { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.28); color: #f3f5f8; }
 .hero a { color: #f3f5f8; }
-.kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #f0a39e; font-weight: 800; }
+.kicker { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--kicker); font-weight: 800; }
+.hero .kicker { color: #f0a39e; }
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .tiles2 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .feature { position: relative; overflow: hidden; }
 .feature .big { font-size: 22px; font-weight: 800; margin: 4px 0; }
@@ -269,7 +271,7 @@ nav .menu a { display: flex; }
 .tile .badge { font-size: 11px; font-weight: 900; border-radius: 6px; padding: 1px 5px; background: var(--ink); color: var(--bg); }
 .tile .badge.lever { background: var(--lever); color: #fff; }
 .tile .badge.crit { background: var(--g-sup); color: #111; }
-.tile .badge.gate { background: var(--g-des); color: #fff; }
+.tile .badge.gate { background: var(--g-des); color: var(--bg); }
 .tile .ppips { display: flex; gap: 3px; margin-top: auto; }
 .tile .pp { flex: 1; height: 8px; border-radius: 3px; background: var(--line); }
 .tile .pp.on { background: var(--pressure); }
@@ -445,7 +447,7 @@ a.card.feature:hover { border-color: var(--ink); }
 .rp-events li.now { font-weight: 600; }
 .tile.rp { position: relative; }
 .tile.rp .badges { display: flex; gap: 3px; flex-wrap: wrap; min-height: 14px; }
-.badge.lever { background: var(--accent); color: var(--accent-ink); }
+.badge.lever { background: var(--btn); color: var(--accent-ink); }
 .badge.crit { background: var(--warn); color: #fff; }
 .badge.gate { background: var(--muted); color: var(--panel); }
 .cmp { width: 100%; border-collapse: collapse; }
