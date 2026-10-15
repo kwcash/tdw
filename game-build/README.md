@@ -97,3 +97,7 @@ What is here, so a reset of the working machine does not cost the game again.
 ## Update of 15 October 2026, sixth set
 
 - No player-facing change and no upload. STANDARDS.md and `templates/` set how a change and a release are made. `CHANGELOG_2026-10-15f.md` describes it.
+
+## Update of 15 October 2026, seventh set
+
+- No player-facing change and no upload. RULES.md numbers the standing rules and names the check for each. `CHANGELOG_2026-10-15g.md` describes it.

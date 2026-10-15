@@ -42,6 +42,8 @@ Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, r
 
 ## Standing rules (they bind every change)
 
+RULES.md numbers these rules R1 to R15 and names the check for each.
+
 - The actor is the Party, the Party-state or a named agency, never the Chinese people. Ancestry is not loyalty.
 - The twelve domains are fixed and in this order: Kinetic, Economic, Financial, Information, Psychological, Legal, Association, Cyber, Cultural, AI and Cognitive, Biological, Data and Surveillance.
 - Contested numbers stay conservative. No Xinjiang or detention figures.
@@ -68,11 +70,12 @@ Done: multi-faction engine, result codes and replay, the 2026 build to W019, for
 
 ## Open items
 
-1. **R6 decision.** The forecast page leaves R6 out because it names a Taiwanese party. The owner has not said whether to include it.
-2. **Settle W013** after 29 November 2026. Follow `SETTLE_WATCH.md`. Get source links from the owner first. Enter forecast results at `#/forecast/desk` as the project's scoring log records them. TC1 falls due on 11 November.
-3. **Source checks.** Many claims are marked Check in `SOURCING_2026.md` and in `band/cards.json`. The book's "sixteen years" for Thousand Talents does not match its 2019 citation, and the number is left out of the game.
-4. **Lynceus credit line** has not been checked against the written terms and carries no date. It is the `forecast.credit` field in `content/era3.json`.
-5. **More evidence.** Send notes in the template at the head of `band/import_notes.py`. Then run `import_notes.py`, `promote_drafts.py` and `build_evidence.py`.
+1. **Two party mentions.** Base game F032 and 2026 operation W011 name a Taiwanese party. RULES.md lists both as exceptions to R5 until the owner decides.
+2. **Forecast claim R6.** This R6 is a forecast claim and not rule R6. The forecast page leaves it out because it names a Taiwanese party. The owner has not said whether to include it.
+3. **Settle W013** after 29 November 2026. Follow `SETTLE_WATCH.md`. Get source links from the owner first. Enter forecast results at `#/forecast/desk` as the project's scoring log records them. TC1 falls due on 11 November.
+4. **Source checks.** Many claims are marked Check in `SOURCING_2026.md` and in `band/cards.json`. The book's "sixteen years" for Thousand Talents does not match its 2019 citation, and the number is left out of the game.
+5. **Lynceus credit line** has not been checked against the written terms and carries no date. It is the `forecast.credit` field in `content/era3.json`.
+6. **More evidence.** Send notes in the template at the head of `band/import_notes.py`. Then run `import_notes.py`, `promote_drafts.py` and `build_evidence.py`.
 
 ## Planned work, in order
 
@@ -81,7 +84,7 @@ The owner asked for the process and the player experience to move up one maturit
 **Process, Level 2 to 3**
 1. Done on 15 October (CHANGELOG_2026-10-15e.md). `.github/workflows/tdw-checks.yml` runs `run_checks.sh` on every push, and the browser checks on request. The bundle is built from `src/` by `build.py`.
 2. Done on 15 October (CHANGELOG_2026-10-15f.md). STANDARDS.md and `templates/`. `release.py` refuses a release without a changelog that passes the lint.
-3. Number the standing rules in a register and map each to the test or lint that enforces it.
+3. Done on 15 October (CHANGELOG_2026-10-15g.md). RULES.md numbers the standing rules and names the check for each. `test/rules.test.js` tests eleven of them.
 4. Add a risk and issue log, with a backup policy.
 5. An independent reviewer verifies sources. The owner must supply that person.
 
