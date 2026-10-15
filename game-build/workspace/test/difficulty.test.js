@@ -4,7 +4,7 @@ const assert = require('node:assert'); const fs = require('node:fs'); const path
 const D = require('../difficulty/build_difficulty.js'); const H = require('./shim-harness.js');
 const ROOT = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const TABLE = read('difficulty/difficulty.json'); const HELP = read('parts/help.json');
+const TABLE = read('difficulty/difficulty.json'); const HELP = read('src/help.json');
 const BUILDS = { base: 'content/base.json', era1: 'content/era1.json', era2: 'content/era2.json', era3: 'content/era3.json' };
 const tests = []; const ok = (name, fn) => tests.push([name, fn]);
 const bandOf = (rate) => HELP.ui.difficulty.bands.find((b) => rate >= b.min);
@@ -58,7 +58,7 @@ ok('the labels cover every share, read from easiest to hardest, and keep the hou
   for (let i = 1; i < bands.length; i++) assert.ok(bands[i].min < bands[i - 1].min);
   assert.strictEqual(bands[bands.length - 1].min, 0);
   for (const b of bands) assert.ok(/^[A-Z][a-z]+( [a-z]+)?$/.test(b.label), b.label);
-  const r = cp.spawnSync('python3', [path.join(ROOT, 'test/lint-strict.py'), path.join(ROOT, 'parts/help.json')], { encoding: 'utf8' });
+  const r = cp.spawnSync('python3', [path.join(ROOT, 'test/lint-strict.py'), path.join(ROOT, 'src/help.json')], { encoding: 'utf8' });
   assert.strictEqual(r.stdout.trim().split('\n').pop(), '0 style failures');
   for (const k of ['note', 'won']) assert.ok(typeof HELP.ui.difficulty[k] === 'string' && !/[:;—]/.test(HELP.ui.difficulty[k]), k);
   // The sentence gives the share itself, so it cannot disagree with the label.

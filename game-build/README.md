@@ -88,3 +88,8 @@ What is here, so a reset of the working machine does not cost the game again.
 - All four builds take the v12 bundle. A page at `#/progress` saves the progress to a file and loads it back after a second tap. A loaded file is checked field by field.
 - A feedback link is ready and stays hidden until `workspace/parts/help.json` names an address under `ui.feedback.email`.
 - `dist/update-2026-10-15d.zip` is the upload set for all four folders. `CHANGELOG_2026-10-15d.md` describes it.
+
+## Update of 15 October 2026, fifth set
+
+- No player-facing change and no upload. `workspace/src/` holds the maintained sources and `workspace/build.py` builds the bundle from them. The old patch chain moved to `workspace/history/`.
+- `.github/workflows/tdw-checks.yml` runs every check on each push. `CHANGELOG_2026-10-15e.md` describes it.

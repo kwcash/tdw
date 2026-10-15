@@ -3,7 +3,7 @@
 const assert = require('node:assert'); const fs = require('node:fs'); const path = require('node:path');
 const E = require('../out/engine.js'); const R = require('../out/record.js'); const H = require('./shim-harness.js');
 const ROOT = path.join(__dirname, '..');
-const HELP = JSON.parse(fs.readFileSync(path.join(ROOT, 'parts/help.json'), 'utf8'));
+const HELP = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/help.json'), 'utf8'));
 const clone = (x) => JSON.parse(JSON.stringify(x));
 const tests = []; const ok = (name, fn) => tests.push([name, fn]);
 
@@ -183,7 +183,7 @@ ok('the page says when this browser keeps nothing, a second tab sees a load at o
 });
 
 ok('a save written by the previous release saves to a file and loads back whole', async () => {
-  const old = H.load('content/era1.json', { bundle: path.join(ROOT, 'out/game.v11.js') });
+  const old = H.load('content/era1.json', { bundle: path.join(ROOT, 'baselines/bundles/game.v11.js') });
   const r = await old.api('/runs', { mode: 'free', opId: 'E011' }); await H.playOut(old, r.run.id);
   const nu = H.load('content/era1.json', { storage: old.storage });
   const { file } = await nu.api('/demo/export');

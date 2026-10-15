@@ -1,0 +1,63 @@
+# Runs every check of the TDW game build. See game-build/STANDARDS.md.
+name: TDW checks
+
+on:
+  push:
+    branches: [main, 'claude/**']
+    paths: ['game-build/**', '.github/workflows/tdw-checks.yml']
+  pull_request:
+    paths: ['game-build/**', '.github/workflows/tdw-checks.yml']
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Also run the browser checks (about 20 minutes)'
+        type: boolean
+        default: false
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: run_checks.sh
+        run: bash game-build/workspace/run_checks.sh
+
+  browser:
+    if: github.event_name == 'workflow_dispatch' && inputs.browser
+    needs: checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Playwright and Chromium
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw && npm init -y >/dev/null && npm i playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Build the packages
+        working-directory: game-build/workspace
+        run: python3 mkpkg.py
+      - name: Unpack the shipped builds as the previous release
+        run: |
+          for b in game 1931 2030 2026; do mkdir -p /tmp/old/$b && unzip -oq game-build/dist/$b.zip -d /tmp/old/$b; done
+      - name: Browser checks v9 to v12
+        working-directory: game-build/workspace
+        env:
+          PW_MODULE: /tmp/pw/node_modules/playwright
+          CHROMIUM: ''
+          OLDD: /tmp/old
+        run: |
+          mkdir -p /tmp/shots
+          for v in v9 v10 v11 v12; do NEW=$PWD/out/pkg SHOTS=/tmp/shots node e2e/$v.js | tail -3; done

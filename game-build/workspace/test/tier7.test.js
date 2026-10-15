@@ -1,7 +1,7 @@
 'use strict';
 // Tier 7. Tiers 1 to 6 must play exactly as before. Run: node test/tier7.test.js
 const assert = require('node:assert');
-const E = require('../out/engine.js'); const E7 = require('../out/engine.v7.js'); const R = require('../out/record.js'); const B = require('./bots.js');
+const E = require('../out/engine.js'); const E7 = require('../baselines/bundles/engine.v7.js'); const R = require('../out/record.js'); const B = require('./bots.js');
 const sets = { base: require('../content/base.json'), era1: require('../content/era1.json'), era2: require('../content/era2.json'), era3: require('../content/era3.json') };
 const reg = (C) => ({ factions: C.factions, cadres: C.cadres, pacts: C.pacts, ruleset: C.ruleset });
 let n = 0; const ok = (name, fn) => { fn(); n++; };

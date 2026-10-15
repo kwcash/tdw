@@ -4,7 +4,7 @@ const assert = require('node:assert'); const fs = require('node:fs'); const path
 const E = require('../out/engine.js'); const R = require('../out/record.js'); const B = require('./bots.js'); const H = require('./shim-harness.js');
 const ROOT = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const HELP = read('parts/help.json'); const GUIDES = read('content/guides.json').guides;
+const HELP = read('src/help.json'); const GUIDES = read('content/guides.json').guides;
 const C = { base: read('content/base.json'), era1: read('content/era1.json'), era2: read('content/era2.json'), era3: read('content/era3.json') };
 const reg = (c) => ({ factions: c.factions, cadres: c.cadres, pacts: c.pacts, ruleset: c.ruleset });
 const clone = (x) => JSON.parse(JSON.stringify(x));
@@ -39,7 +39,7 @@ const guideCode = (ctx, g, log, over = {}) => R.makeCode(ctx, { opId: g.op, tier
 
 // ---------- the help text ----------
 ok('the help text keeps the house style, with no colon or semicolon in prose', () => {
-  assert.strictEqual(lint('parts/help.json'), '0 style failures');
+  assert.strictEqual(lint('src/help.json'), '0 style failures');
   for (const [w, t] of walkText('help', HELP, new Set(['note', 'schema', 'id', 'when', 'how', 'guide', 'email']))) prose(w, t);
 });
 
@@ -217,7 +217,7 @@ ok('first-use hints live in the save, survive a reload and clear with the progre
 });
 
 ok('a save from the previous build loads and plays, and the old build still reads a new save', async () => {
-  const old = H.load('content/era1.json', { bundle: path.join(ROOT, 'out/game.v8.js') });
+  const old = H.load('content/era1.json', { bundle: path.join(ROOT, 'baselines/bundles/game.v8.js') });
   const r = await old.api('/runs', { mode: 'free', opId: 'E011' });
   const done = await H.playOut(old, r.run.id);
   const nu = H.load('content/era1.json', { storage: old.storage });
@@ -227,7 +227,7 @@ ok('a save from the previous build loads and plays, and the old build still read
   const recs = (await nu.api('/records')).records;
   assert.strictEqual(recs[0].code, done.code); assert.ok(R.verify(recs[0].code, R.makeCtx(E, C.era1)).ok);
   const gd = await nu.api('/runs', { mode: 'guide', guide: 'holdings' }); await H.playOut(nu, gd.run.id); await nu.api('/hints', { id: 'holdings' });
-  const back = H.load('content/era1.json', { storage: nu.storage, bundle: path.join(ROOT, 'out/game.v8.js') });
+  const back = H.load('content/era1.json', { storage: nu.storage, bundle: path.join(ROOT, 'baselines/bundles/game.v8.js') });
   const pb = await back.api('/progress');
   assert.strictEqual(pb.progress.played, 2);
   assert.ok((await back.api('/records')).records.some((x) => x.code === done.code));
@@ -237,7 +237,7 @@ ok('a save from the previous build loads and plays, and the old build still read
 // ---------- the engine stays put ----------
 ok('the engine part of the bundle is byte for byte the version 8 engine', () => {
   const g = fs.readFileSync(path.join(ROOT, 'out/game.js'), 'utf8');
-  const e8 = fs.readFileSync(path.join(ROOT, 'out/engine.v8.js'), 'utf8');
+  const e8 = fs.readFileSync(path.join(ROOT, 'baselines/bundles/engine.v8.js'), 'utf8');
   assert.strictEqual(fs.readFileSync(path.join(ROOT, 'out/engine.js'), 'utf8'), e8);
   assert.strictEqual(g.slice(0, g.indexOf('/* TDW demo shim.')).trimEnd() + '\n', e8);
 });

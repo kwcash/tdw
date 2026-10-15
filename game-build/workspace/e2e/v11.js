@@ -1,12 +1,12 @@
 // Browser run for version 11: the glossary page and the links to it from each panel. Usage:
 // NEW=<folder holding game, 1931, 2030, 2026 built by mkpkg.py> OLDD=<the same four from the previous release> SHOTS=<dir> node e2e/v11.js
-const { chromium } = require('/tmp/pw/node_modules/playwright');
+const { chromium } = require(process.env.PW_MODULE || '/tmp/pw/node_modules/playwright');
 const http = require('http'), fs = require('fs'), path = require('path');
 const NEW = process.env.NEW, OLDD = process.env.OLDD, SHOTS = process.env.SHOTS || '';
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
 function serve(dir, port) { http.createServer((q, r) => { let f = path.join(dir, decodeURIComponent(q.url.split('?')[0])); if (f.endsWith('/')) f += 'index.html'; fs.readFile(f, (e, d) => { if (e) { r.writeHead(404); r.end(); } else { r.writeHead(200, { 'content-type': MIME[path.extname(f)] || 'text/plain' }); r.end(d); } }); }).listen(port); }
 const WS = path.join(__dirname, '..');
-const HELP = JSON.parse(fs.readFileSync(path.join(WS, 'parts/help.json'), 'utf8'));
+const HELP = JSON.parse(fs.readFileSync(path.join(WS, 'src/help.json'), 'utf8'));
 // build, an operation with many panels, the tier to play, the content file, a term only this build shows (or null)
 const BUILDS = [['game', 'C002', 1, 'base', null], ['1931', 'E011', 4, 'era1', 'holding'], ['2030', 'N005', 3, 'era2', 'pact'], ['2026', 'W017', 7, 'era3', 'permit']];
 // The terms a build should show, worked out from its content the way the game does.
@@ -25,7 +25,7 @@ const out = (...a) => console.log(...a);
 let bad = 0; const check = (cond, what) => { if (!cond) { bad++; out('  FAIL', what); } };
 async function finish(pg) { let t = 0; while (!(await pg.$('.result')) && t++ < 40) { const ok = await pg.$('#coachok'); if (ok) { await ok.click(); continue; } const end = await pg.$('#end'); if (!end) break; await end.click(); await pg.waitForTimeout(60); const e2 = await pg.$('#end'); if (e2 && /Tap again/.test(await e2.textContent())) await e2.click(); await pg.waitForTimeout(120); } await pg.waitForSelector('.result'); }
 (async () => {
-  const br = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] });
+  const br = await chromium.launch({ ...(process.env.CHROMIUM === '' ? {} : { executablePath: process.env.CHROMIUM || '/opt/pw-browsers/chromium' }), args: ['--no-sandbox'] });
   for (const [i, [name, opId, tier, b, only]] of BUILDS.entries()) {
     const nu = `http://localhost:${10010 + i}/`; const old = `http://localhost:${10020 + i}/`; const want = expected(b);
     for (const [w, h] of [[1280, 900], [390, 800]]) {

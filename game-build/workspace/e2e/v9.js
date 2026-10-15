@@ -1,6 +1,6 @@
 // Browser run for version 9: How to play sections, first-use hints, guided runs, old saves. Usage:
 // NEW=<folder holding game, 1931, 2030, 2026 built by mkpkg.py> OLDD=<the same four from the previous release> SHOTS=<dir> node e2e/v9.js
-const { chromium } = require('/tmp/pw/node_modules/playwright');
+const { chromium } = require(process.env.PW_MODULE || '/tmp/pw/node_modules/playwright');
 const http = require('http'), fs = require('fs'), path = require('path');
 const NEW = process.env.NEW, OLDD = process.env.OLDD, SHOTS = process.env.SHOTS || '';
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
@@ -40,7 +40,7 @@ const headingSeen = (pg, id) => pg.evaluate((x) => {
 }, id);
 const hintOf = (pg) => pg.$eval('.hint .hintok', (b) => b.dataset.hint).catch(() => null);
 (async () => {
-  const br = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] });
+  const br = await chromium.launch({ ...(process.env.CHROMIUM === '' ? {} : { executablePath: process.env.CHROMIUM || '/opt/pw-browsers/chromium' }), args: ['--no-sandbox'] });
   for (const [i, [name, opId, tier, how, guide]] of BUILDS.entries()) {
     const nu = `http://localhost:${9970 + i}/`; const old = `http://localhost:${9980 + i}/`;
     for (const [w, h] of [[1280, 900], [390, 800]]) {

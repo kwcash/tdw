@@ -1,6 +1,6 @@
 // Browser run for version 12: progress to and from a file, and the feedback link. Usage:
 // NEW=<folder holding game, 1931, 2030, 2026 built by mkpkg.py> OLDD=<the same four from the previous release> SHOTS=<dir> node e2e/v12.js
-const { chromium } = require('/tmp/pw/node_modules/playwright');
+const { chromium } = require(process.env.PW_MODULE || '/tmp/pw/node_modules/playwright');
 const http = require('http'), fs = require('fs'), path = require('path'), os = require('os');
 const NEW = process.env.NEW, OLDD = process.env.OLDD, SHOTS = process.env.SHOTS || '';
 const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
@@ -16,7 +16,7 @@ async function finish(pg) { let t = 0; while (!(await pg.$('.result')) && t++ < 
 const rowOf = (pg, label, sel = '.psum') => pg.$$eval(`${sel} tr`, (rs, l) => { const r = rs.find((x) => x.querySelector('th').textContent === l); return r ? r.querySelector('td').textContent : null; }, label);
 const files = {};
 (async () => {
-  const br = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--no-sandbox'] });
+  const br = await chromium.launch({ ...(process.env.CHROMIUM === '' ? {} : { executablePath: process.env.CHROMIUM || '/opt/pw-browsers/chromium' }), args: ['--no-sandbox'] });
   for (const [i, [name, opId, key]] of BUILDS.entries()) {
     const nu = `http://localhost:${10030 + i}/`; const old = `http://localhost:${10040 + i}/`;
     for (const [w, h] of [[1280, 900], [390, 800]]) {

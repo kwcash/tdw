@@ -19,8 +19,9 @@ The engine is deterministic and turn based. It has 12 domains, 10 dimensions and
 
 All work happens in `game-build/workspace/`. It is the working tree, and the files at the top of `game-build/` are older mirrors, release notes and `dist/`.
 
-- `out/` holds the current bundle (`game.js`, `engine.js`, `record.js`) and the previous versions (`*.v4.js` to `*.v11.js`). `parts/style.css` holds the CSS. `parts/help.json` holds the help text and the glossary that the bundle embeds.
-- `patch-v4.py` to `patch-v12.py` each turn the previous bundle into the next. Do not rerun the chain. A new step adds the next patch that reads the current bundle, as `patch-v12.py` does. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
+- `src/` holds the maintained sources of the bundle, its stylesheet and `help.json`. Edit those and never `out/`. `src/README.md` describes each file.
+- `build.py` builds `out/game.js`, `out/engine.js`, `out/record.js` and `parts/style.css` from `src/`. `build.py --check` fails when `out/` differs from what the sources make, and `run_checks.sh` runs it first.
+- `history/` keeps the old patch chain and the bundles it made. Nothing there runs. `baselines/bundles/` keeps the four old bundles that tests read. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
 - `content/` holds the four content files and their `.before` copies. `content/era3.shipped-1014.json` is the 14 October copy that a test compares W017 and W018 against.
 - `band/` holds `band_ops.py` (all three band operations), `build_band.py`, `cards.json` (31 reviewed evidence cards), the importer tools and `batches/`.
 - `forecast/` holds `build_forecasts.py` and the ledger snapshot. `settle_watch.py` settles a watch.
@@ -32,11 +33,12 @@ All work happens in `game-build/workspace/`. It is the working tree, and the fil
 
 ```
 cd game-build/workspace
-bash run_checks.sh          # about a minute, must end with ALL CHECKS PASS
-python3 mkpkg.py            # builds out/pkg/game, 1931, 2030, 2026
+python3 build.py            # builds out/ from src/ after you edit a source
+bash run_checks.sh          # about two minutes, must end with ALL CHECKS PASS
+python3 release.py TAG CHANGELOG_TAG.md   # checks, then builds every zip and the mirrors
 ```
 
-Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, run `mkdir -p /tmp/pw && cd /tmp/pw && npm init -y && npm i playwright@1.56.1`. Chromium is at `/opt/pw-browsers/chromium`. The e2e scripts expect `T` to be a folder that holds `v3`, so run `mkdir -p /tmp/t && ln -s $PWD /tmp/t/v3` from the workspace. Then run `T=/tmp/t OLD=<folder of the previous build> SHOTS=<dir> OUT=<dir> node e2e/v8.js`. For `OLD`, unzip the current `dist/*.zip` before you change anything.
+Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, run `mkdir -p /tmp/pw && cd /tmp/pw && npm init -y && npm i playwright@1.56.1`. Chromium is at `/opt/pw-browsers/chromium`, and the variables `PW_MODULE` and `CHROMIUM` point elsewhere. Unzip the current `dist/*.zip` into one folder per build before you change anything, as the previous release. After `python3 mkpkg.py`, run `NEW=$PWD/out/pkg OLDD=<that folder> SHOTS=<dir> node e2e/v12.js`, and the same for `v9` to `v11`. CI runs the same four on request.
 
 ## Standing rules (they bind every change)
 
@@ -75,7 +77,7 @@ Done: multi-faction engine, result codes and replay, the 2026 build to W019, for
 The owner asked for the process and the player experience to move up one maturity level each.
 
 **Process, Level 2 to 3**
-1. Make `run_checks.sh` run in CI (GitHub Actions workflow file). Replace the `patch-vN` chain with maintained source files and generate the bundle from them.
+1. Done on 15 October (CHANGELOG_2026-10-15e.md). `.github/workflows/tdw-checks.yml` runs `run_checks.sh` on every push, and the browser checks on request. The bundle is built from `src/` by `build.py`.
 2. Write short standards for a change and for a release, with a definition of done and templates.
 3. Number the standing rules in a register and map each to the test or lint that enforces it.
 4. Add a risk and issue log, with a backup policy.

@@ -4,7 +4,7 @@ const assert = require('node:assert'); const fs = require('node:fs'); const path
 const E = require('../out/engine.js'); const H = require('./shim-harness.js');
 const ROOT = path.join(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const HELP = read('parts/help.json'); const GL = HELP.glossary;
+const HELP = read('src/help.json'); const GL = HELP.glossary;
 const BUNDLE = fs.readFileSync(path.join(ROOT, 'out/game.js'), 'utf8');
 const BUILDS = { base: 'content/base.json', era1: 'content/era1.json', era2: 'content/era2.json', era3: 'content/era3.json' };
 const WHEN = ['always', 'factions', 'legit', 'leaders', 'pacts', 'multi', 'holdings', 'reach', 'selfact', 'watch', 'world', 'forecast', 'guides'];
@@ -37,7 +37,7 @@ function expectCounts(C) {
 }
 
 ok('the glossary keeps the house style', () => {
-  const r = cp.spawnSync('python3', [path.join(ROOT, 'test/lint-strict.py'), path.join(ROOT, 'parts/help.json')], { encoding: 'utf8' });
+  const r = cp.spawnSync('python3', [path.join(ROOT, 'test/lint-strict.py'), path.join(ROOT, 'src/help.json')], { encoding: 'utf8' });
   assert.strictEqual(r.stdout.trim().split('\n').pop(), '0 style failures');
   for (const g of GL) { prose(`${g.id}.term`, g.term); prose(`${g.id}.text`, g.text); }
   for (const k of ['glossTitle', 'glossIntro', 'glossFilter', 'glossNone', 'glossSee', 'glossLink', 'glossName', 'glossOpen', 'glossCountOne', 'glossCountMany']) prose(k, HELP.ui[k]);
