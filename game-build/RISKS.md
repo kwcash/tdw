@@ -31,15 +31,15 @@ Each issue names who acts next. Status is Open, Waiting or Closed.
 
 | Issue | What is wrong or undecided | Next step | Who acts | Status |
 |---|---|---|---|---|
-| I1 | Base game F032 and 2026 operation W011 name a Taiwanese party, against R5. | The owner keeps them or asks for neutral wording. | Owner | Waiting |
+| I1 | Base game F032 and 2026 operation W011 name a Taiwanese party, against R5. | The owner decided on 15 October 2026 to keep both. RULES.md logs them as exceptions. | Owner | Closed |
 | I2 | Forecast claim R6 names a Taiwanese party. | The owner decided on 15 October 2026 to show it word for word. RULES.md logs the exception. | Owner | Closed |
 | I3 | Forecast claim TC1 falls due on 11 November 2026, and R6 on 29 November. | The owner enters each result at the desk and sends the results file. | Owner | Open |
 | I4 | Watch W013 settles after the vote of 28 November 2026. | The owner sends source links, and the steps in SETTLE_WATCH.md follow. | Owner | Open |
-| I5 | SOURCING_2026.md and the evidence cards still mark 88 claims for a check. | The review pack is ready in REVIEW_SOURCES.md. The owner finds the reviewer and sends the worksheet. | Owner | Waiting |
+| I5 | SOURCING_2026.md and the evidence cards marked 88 claims for a check. | The owner checked the sources on 15 October 2026 and reports that they hold. REVIEW_LOG.md records it. The pack stays ready for an independent round. | Owner | Closed |
 | I6 | Nobody has checked the Lynceus credit line against the written terms. | Check the terms and date the line. | Owner | Open |
 | I7 | The feedback link stays hidden because the owner has set no address. | The owner gives an address when ready. | Owner | Waiting |
 | I8 | HANDOFF.md holds seven style failures. No check reads it, because it holds no player text. | Rewrite the seven sentences at the next handoff update. | Claude | Open |
 | I9 | The style lint reads no colons or semicolons. | Teach the lint to skip links and times, then check prose for both. | Claude | Open |
-| I10 | The secret scan matched an assignment in `instrument/analyze.php`, outside the game. Claude did not open the file. | The owner checks that the file holds no real key. | Owner | Open |
+| I10 | The secret scan matched an assignment in `instrument/analyze.php`, outside the game. | The owner decided on 15 October 2026 to leave the file alone. The scan covers only the game's folders, and the game never uses the file. | Owner | Closed |
 | I11 | The playtest round has not run. | The owner finds five to eight players and runs PLAYTEST.md. | Owner | Waiting |
-| I12 | No person has played with a real screen reader. The audit checked structure only. | One playtest session uses NVDA or VoiceOver, as ACCESSIBILITY.md says. | Owner | Waiting |
+| I12 | No person has played with a real screen reader. The audit checked structure only. | The owner accepted the automated audit on 15 October 2026. A screen reader session in the playtest stays welcome. | Owner | Closed |

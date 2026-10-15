@@ -113,3 +113,7 @@ What is here, so a reset of the working machine does not cost the game again.
 ## Update of 15 October 2026, tenth set
 
 - Upload all four folders. Accessibility fixes for contrast and screen readers. PLAYTEST.md is the script for the playtest sessions, and ACCESSIBILITY.md logs the audit. `CHANGELOG_2026-10-15j.md` describes it.
+
+## Update of 15 October 2026, eleventh set
+
+- No player-facing change and no upload. The owner's decisions on sources, party mentions and the accessibility audit are recorded. `CHANGELOG_2026-10-15k.md` describes them.

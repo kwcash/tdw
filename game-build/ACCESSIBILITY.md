@@ -37,6 +37,8 @@ After the fixes the audit reports no WCAG 2.1 A or AA violation in either theme 
 
 ### What still needs a person
 
+On 15 October 2026 the owner accepted the automated audit and chose to move forward without a screen reader session first. The checks below stay useful for any playtest.
+
 - **A real screen reader.** The audit checks structure and the live region, not the experience. A person should play one run with NVDA on Windows or VoiceOver on a Mac or phone. They should note anything read twice, read out of order or never read. A busy turn can produce a long announcement, so they should say whether it is too long. PLAYTEST.md asks for one such session.
 - **The four second window.** A second press of End turn must come within four seconds when actions remain. A screen reader user may need longer. The playtest should note whether it causes trouble.
 - **Colour alone.** The action meter states its count in text. A person should confirm that nothing else on the board relies on colour alone, such as the red pressure bars.

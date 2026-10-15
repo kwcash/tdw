@@ -8,7 +8,9 @@ The log calls the reviewer Reviewer A. The owner keeps the reviewer's name and c
 
 | Round | Sent | Returned | Reviewer | Confirmed | Confirmed with change | Not supported | Cannot check | Not yet checked |
 |---|---|---|---|---|---|---|---|---|
-| 1 | Not yet sent | | Reviewer A | | | | | 88 |
+| 1 | 15 October 2026 | 15 October 2026 | The owner | All 88 | | | | |
+
+Round 1 was the owner's own check and not an independent one. The owner reported that every source holds. The owner also holds more sources for the next version of the game, and reports that those check out too. An independent round can still use the pack at any time.
 
 ## How to close a round
 

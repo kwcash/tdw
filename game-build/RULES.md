@@ -26,7 +26,7 @@ To change a rule, get the owner's decision in writing first. Then change this ta
 
 ## The three exceptions to R5
 
-Both shipped before this register. Neither is changed until the owner decides.
+The first two shipped before this register. On 15 October 2026 the owner decided to keep both as they stand.
 
 - Base game F032, The Peace Framework. Its record says that Xi Jinping hosted the chair of the Kuomintang in Beijing in April 2026.
 - 2026 build W011, The Summit Season. Its brief and record say that the chair of Taiwan's Nationalist Party met Xi Jinping in April 2026.

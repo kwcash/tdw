@@ -51,8 +51,8 @@ ok('R3', 'no sentence about Xinjiang or the camps gives a count of people', () =
   assert.deepStrictEqual(bad, []);
 });
 
-ok('R5', 'no Taiwanese party, party list, candidate or opinion poll appears outside the two registered exceptions', () => {
-  // Both exceptions shipped before the register. RULES.md flags them for the owner's decision.
+ok('R5', 'no Taiwanese party, party list, candidate or opinion poll appears outside the registered exceptions', () => {
+  // Both shipped before the register. The owner decided on 15 October 2026 to keep them, and RULES.md logs them.
   const EXCEPT = new Set(['base F032', 'era3 W011']); // and forecast claim R6, below
   const PARTY = /Kuomintang|\bKMT\b|Democratic Progressive|\bDPP\b|Taiwan People's Party|\bTPP\b|New Power Party|party list/i;
   const bad = [];
@@ -73,7 +73,7 @@ ok('R5', 'no Taiwanese party, party list, candidate or opinion poll appears outs
   // The forecast claims ship in the 2026 folder. The owner decided to show R6 word for word.
   for (const it of json('forecast/out/forecasts.json').items) if (it.id !== 'R6') for (const [w, t] of strings(it)) check(`forecast ${it.id} ${w}`, t);
   assert.deepStrictEqual(bad, []);
-  // The exceptions stay as they are until the owner decides.
+  // The kept exceptions stay word for word.
   assert.ok(/Kuomintang/.test(JSON.stringify(BUILDS.base.ops.find((o) => o.id === 'F032'))));
   assert.ok(/Nationalist Party/.test(JSON.stringify(BUILDS.era3.ops.find((o) => o.id === 'W011'))));
 });

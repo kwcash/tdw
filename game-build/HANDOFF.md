@@ -73,12 +73,14 @@ Done: multi-faction engine, result codes and replay, the 2026 build to W019, for
 
 RISKS.md carries open items 1 to 5 as issues I1 to I6, with who acts next. It also logs further issues.
 
-1. **Two party mentions.** Base game F032 and 2026 operation W011 name a Taiwanese party. RULES.md lists both as exceptions to R5 until the owner decides.
+1. **Two party mentions.** Decided on 15 October. The owner keeps base game F032 and 2026 operation W011 as they stand. RULES.md lists both as exceptions to R5.
 2. **Forecast claim R6.** Decided on 15 October. The owner chose to show it word for word as an exception to rule R5. It falls due on 29 November, the day after the vote that W013 watches.
 3. **Settle W013** after 29 November 2026. Follow `SETTLE_WATCH.md`. Get source links from the owner first. Enter forecast results at `#/forecast/desk` as the project's scoring log records them. TC1 falls due on 11 November.
 4. **Source checks.** Many claims are marked Check in `SOURCING_2026.md` and in `band/cards.json`. The book's "sixteen years" for Thousand Talents does not match its 2019 citation, and the number is left out of the game.
 5. **Lynceus credit line** has not been checked against the written terms and carries no date. It is the `forecast.credit` field in `content/era3.json`.
 6. **More evidence.** Send notes in the template at the head of `band/import_notes.py`. Then run `import_notes.py`, `promote_drafts.py` and `build_evidence.py`.
+
+**Decisions of 15 October.** The owner checked the sources and reports that they hold. REVIEW_LOG.md records it as round 1. The owner holds more sources for the next version of the game and reports that those check out too. Ask for them in the template at the head of `band/import_notes.py`. The owner keeps both party mentions, accepts the automated accessibility audit and leaves `instrument/analyze.php` alone.
 
 ## Planned work, in order
 
