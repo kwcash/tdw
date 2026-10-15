@@ -8,7 +8,8 @@ const board = fs.readFileSync(path.join(ROOT, 'src/board.js'), 'utf8');
 const HELP = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/help.json'), 'utf8'));
 const tests = []; const ok = (name, fn) => tests.push([name, fn]);
 
-// The three theme blocks: light, dark by system setting, dark by choice.
+// The three theme blocks: light, dark by system setting, dark by choice. The card group colours sit in three more.
+const gblocks = [...css.matchAll(/\{([^{}]*--g-des:[^{}]*)\}/g)].map((m) => m[1]);
 const blocks = [/:root \{([^}]*)\}/, /:root:not\(\[data-theme="light"\]\) \{([^}]*)\}/, /:root\[data-theme="dark"\] \{([^}]*)\}/].map((re) => re.exec(css)[1]);
 const token = (block, name) => {
   const m = new RegExp(`--${name}:\\s*#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\\b`).exec(block); assert.ok(m, `--${name} is set in every theme`);
@@ -27,16 +28,20 @@ ok('text colours meet 4.5 to 1 in the light and both dark themes', () => {
       'button text on a primary button': [ink, token(b, 'btn')],
       'muted text on a panel': [token(b, 'muted'), panel],
       'warning text on its chip': [token(b, 'warn'), mix(token(b, 'warn'), panel, 0.12)],
-      'gate badge text': [bg, i === 0 ? '#5f6b7a' : '#8b97a6'],
+      'gate badge text': [bg, token(gblocks[i], 'g-des')],
     };
     for (const [what, [fg, back]] of Object.entries(pairs)) assert.ok(ratio(fg, back) >= 4.5, `theme ${i}: ${what} is ${ratio(fg, back).toFixed(2)} to 1`);
   });
 });
 
-ok('primary buttons and the lever badge use the button token, and the hero keeps its own kicker colour', () => {
+ok('primary buttons and the lever badge use the button token, and the dark banners keep their own kicker colour', () => {
   assert.ok(/button\.primary, \.btn\.primary \{ background: var\(--btn\)/.test(css));
-  assert.ok(/\.badge\.lever \{ background: var\(--btn\)/.test(css));
-  assert.ok(/\.kicker \{[^}]*color: var\(--kicker\)/.test(css) && /\.hero \.kicker \{ color: #f0a39e; \}/.test(css));
+  assert.ok(/\.tile \.badge\.lever \{ background: var\(--btn\)/.test(css), 'the lever badge on a tile');
+  assert.ok(/\.result \.btn\.primary \{ background: var\(--btn\)/.test(css) && /\.hero \.btn\.primary \{ background: var\(--btn\)/.test(css), 'the result and hero buttons');
+  assert.ok(/\.hero \.kicker, \.result \.kicker \{ color: #f0a39e; \}/.test(css), 'the kicker on the dark banners');
+  assert.ok(!/background: #e0574f/.test(css), 'no button keeps the old red that failed with white text');
+  assert.strictEqual(gblocks.length, 3);
+  assert.ok(/\.kicker \{[^}]*color: var\(--kicker\)/.test(css));
   assert.ok(/\.tile \.badge\.gate \{[^}]*color: var\(--bg\)/.test(css));
 });
 
@@ -45,6 +50,8 @@ ok('the board keeps one live region outside the redrawn area, and the feed is no
   assert.ok(/live\.setAttribute\('aria-live', 'polite'\)/.test(board) && /document\.body\.appendChild\(live\)/.test(board));
   assert.ok(/function drawBoard\(\) \{\n\s+liveRegion\(\);/.test(board), 'the region exists before the first turn ends');
   assert.ok(!/class="feed" aria-live/.test(board));
+  assert.ok(/clearTimeout\(liveTimer\); live\.textContent = '';\n\s+liveTimer = setTimeout/.test(board), 'a new announcement cancels a pending one');
+  assert.ok(/addEventListener\('hashchange', \(\) => \{ clearTimeout\(liveTimer\); live\.textContent = ''; \}\)/.test(board), 'the region empties when the player leaves');
 });
 
 ok('the announcements live in help.json, keep the house style and match the four second window', () => {

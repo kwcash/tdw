@@ -598,15 +598,20 @@
 
   // One live region that stays on the page while the board redraws, so a screen reader reads out each turn's results.
   // The board creates it on first draw, so it is in place before any text arrives.
+  // It empties when the player leaves the page, so no stale text waits on later pages.
+  let liveTimer = 0;
   function liveRegion() {
     let live = document.getElementById('sr-turn');
-    if (!live) { live = document.createElement('div'); live.id = 'sr-turn'; live.className = 'sr-only'; live.setAttribute('aria-live', 'polite'); live.setAttribute('aria-atomic', 'true'); document.body.appendChild(live); }
+    if (!live) {
+      live = document.createElement('div'); live.id = 'sr-turn'; live.className = 'sr-only'; live.setAttribute('aria-live', 'polite'); live.setAttribute('aria-atomic', 'true'); document.body.appendChild(live);
+      window.addEventListener('hashchange', () => { clearTimeout(liveTimer); live.textContent = ''; });
+    }
     return live;
   }
   function announce(text) {
     const live = liveRegion();
-    live.textContent = '';
-    setTimeout(() => { live.textContent = text; }, 50);
+    clearTimeout(liveTimer); live.textContent = '';
+    liveTimer = setTimeout(() => { live.textContent = text; }, 50);
   }
 
   function drawBoard() {
@@ -812,7 +817,8 @@
       G.data = r;
       drawBoard();
       const said = G.feed.map((f) => f.text).join(' ');
-      if (action.type === 'end') announce(`${r.view.over ? HELP.ui.live.over : HELP.ui.live.turn.replace('{n}', r.view.turn)} ${said || HELP.ui.live.quiet}`);
+      // The feed often names the new turn already, so the turn number goes first only when it does not.
+      if (action.type === 'end') announce(`${r.view.over ? HELP.ui.live.over + ' ' : /\bTurn \d+/.test(said) ? '' : HELP.ui.live.turn.replace('{n}', r.view.turn) + ' '}${said || HELP.ui.live.quiet}`);
       else if (said) announce(said);
       if (action.type === 'end' && !r.view.over) window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (e) {

@@ -71,6 +71,7 @@ async function structure(pg) {
   // Keyboard only. Tab through the board and check each stop shows a focus ring. Then play a whole run with Tab and Enter.
   {
     const ctx = await br.newContext({ viewport: { width: 1280, height: 900 } }); const pg = await ctx.newPage();
+    const kerrs = []; pg.on('pageerror', (e) => kerrs.push(e.message));
     await pg.goto(`${base}/2026/#/op/W017`); await pg.waitForSelector('#start'); await settle(pg);
     const tabTo = async (id, cap = 200) => { for (let i = 0; i < cap; i++) { await pg.keyboard.press('Tab'); if (await pg.evaluate((x) => document.activeElement && document.activeElement.id === x, id)) return i + 1; } return -1; };
     out.keyboard.tabsToStart = await tabTo('start');
@@ -95,12 +96,23 @@ async function structure(pg) {
     while (!(await pg.$('#rcode')) && turns < 40) {
       const n = await tabTo('end'); if (n < 0) break;
       await pg.keyboard.press('Enter'); await pg.waitForTimeout(250); turns++;
-      if (turns <= 2) heard.push(await pg.evaluate(() => { const l = document.getElementById('sr-turn'); return l ? { same: l.dataset.first === '1', live: l.getAttribute('aria-live'), text: l.textContent.trim().slice(0, 120) } : null; }));
+      if (turns <= 4) heard.push(await pg.evaluate(() => { const l = document.getElementById('sr-turn'); return l ? { same: l.dataset.first === '1', live: l.getAttribute('aria-live'), text: l.textContent.trim() } : null; }));
     }
     out.keyboard.liveRegion = heard;
     out.keyboard.feedLive = await pg.evaluate(() => document.querySelectorAll('.feed[aria-live]').length);
     out.keyboard.turnsPlayed = turns; out.keyboard.runFinished = !!(await pg.$('#rcode'));
     out.keyboard.focusAfterEnd = await pg.evaluate(() => { const e = document.activeElement; return e ? `${e.tagName.toLowerCase()}#${e.id}` : 'none'; });
+    // The result page and the replay of the same run, in the light theme and then the dark one.
+    const code = out.keyboard.runFinished ? await pg.$eval('#rcode', (e) => e.value) : null;
+    for (const scheme of ['light', 'dark']) {
+      await pg.emulateMedia({ colorScheme: scheme });
+      if (scheme === 'dark') { await pg.goto(`${base}/2026/#/op/W017`); await pg.waitForSelector('#start'); await pg.click('#start'); await pg.waitForSelector('#end');
+        for (let i = 0; i < 80 && !(await pg.$('#rcode')); i++) { await pg.click('#end').catch(() => {}); await pg.waitForTimeout(120); } }
+      await settle(pg); out.pages.push({ zoom: scheme, build: '2026', page: 'Result', violations: await axe(pg) });
+      if (code) { await pg.goto(`${base}/2026/#/v/${code}`); await pg.waitForSelector('main h1, main h2'); await settle(pg); out.pages.push({ zoom: scheme, build: '2026', page: 'Replay', violations: await axe(pg) }); }
+    }
+    out.keyboard.left = await pg.evaluate(() => { const l = document.getElementById('sr-turn'); return l ? l.textContent : ''; });
+    out.keyboard.errors = kerrs;
     await ctx.close();
   }
   await br.close(); server.close();
@@ -116,7 +128,10 @@ async function structure(pg) {
   if (out.zoom.some((z) => z.overflow > 0)) fails.push('sideways scroll at 200 percent');
   if (out.pages.some((p) => p.structure && (p.structure.h1 !== 1 || !p.structure.main || !p.structure.skip || p.structure.lang !== 'en'))) fails.push('page structure');
   if (k.tabsToStart < 0 || !k.runFinished || k.noRing.length || k.offscreen.length) fails.push('keyboard');
-  if (!k.liveRegion.length || k.liveRegion.some((h) => !h || !h.same || h.live !== 'polite' || !h.text) || k.feedLive) fails.push('live region on the board');
+  const said = k.liveRegion.filter((h) => h && h.same && h.live === 'polite').map((h) => h.text);
+  if (said.length !== k.liveRegion.length || !said.some((x) => /^You have \d+ actions unspent/.test(x)) || !said.some((x) => /Turn \d+/.test(x)) || k.feedLive) fails.push('live region on the board');
+  if (k.left) fails.push('the live region keeps old text after the player leaves the board');
+  if (k.errors.length) fails.push('page errors during keyboard play');
   if (errs.length) fails.push('page errors');
   console.log(fails.length ? 'ACCESSIBILITY CHECKS FAILED: ' + fails.join(', ') : 'ALL ACCESSIBILITY CHECKS PASS');
   process.exit(fails.length ? 1 : 0);
