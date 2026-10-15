@@ -1,0 +1,113 @@
+{
+ "note": "Guided runs. add_guides.py copies each guide into the content file of its build. A guide plays a shipped operation at a fixed tier, seed and clock, so the operation itself does not change.",
+ "guides": [
+  {
+   "id": "holdings",
+   "build": "era1",
+   "op": "E011",
+   "tier": 1,
+   "turns": 6,
+   "seed": "guide-holdings",
+   "title": "Holdings in six turns",
+   "blurb": "A short run of The Manchurian Trap at Tier 1. Learn what a holding costs and when to give one up.",
+   "steps": [
+    {
+     "id": "h-start",
+     "when": "start",
+     "text": "This guided run lasts six turns at Tier 1. You hold the north and the south for the Nationalist government in 1946. Read the Holdings panel above the cards."
+    },
+    {
+     "id": "h-cost",
+     "when": "start",
+     "text": "Each holding costs you every turn and denies the rival some leverage. Manchuria costs 2 and denies only 1, so the panel marks it consuming."
+    },
+    {
+     "id": "h-yield",
+     "when": {
+      "consuming": "manchuria"
+     },
+     "text": "Give up Manchuria with the button in its row. The move costs 1 action and 2 legitimacy. You cannot take it back."
+    },
+    {
+     "id": "h-after",
+     "when": {
+      "yielded": "manchuria"
+     },
+     "text": "Manchuria no longer drains your armies. The south costs 1 and denies 2, so it still pays to keep."
+    },
+    {
+     "id": "h-south",
+     "when": {
+      "yielded": "south"
+     },
+     "text": "You gave up the south, which cost 1 and denied the rival 2. Manchuria still costs more than it denies."
+    },
+    {
+     "id": "h-log",
+     "when": {
+      "turn": 2
+     },
+     "text": "Open the operation log below the board. Each holding takes its cost from your shields first and then adds pressure."
+    },
+    {
+     "id": "h-report",
+     "when": {
+      "turn": 5
+     },
+     "text": "The report at the end lists acts against your own position. Each turn you keep a consuming holding counts as one."
+    }
+   ]
+  },
+  {
+   "id": "reach",
+   "build": "era3",
+   "op": "W017",
+   "tier": 1,
+   "turns": 6,
+   "seed": "guide-reach",
+   "title": "Reach in six turns",
+   "blurb": "A short run of The Reach at Tier 1. Learn the three permits and what the rival may do that you may not.",
+   "steps": [
+    {
+     "id": "r-start",
+     "when": "start",
+     "text": "This guided run lasts six turns at Tier 1. You play the United States and its allies against the Party-state. Read the Reach panel above the cards."
+    },
+    {
+     "id": "r-permits",
+     "when": "start",
+     "text": "Each act in Reach carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost you. Closed acts stay barred to you."
+    },
+    {
+     "id": "r-open",
+     "when": "unused",
+     "text": "Use an open act now. Designate the agencies and list the front organizations costs 1 action and shields your Legal domain."
+    },
+    {
+     "id": "r-why",
+     "when": "start",
+     "text": "Tap Why under a closed act. One card shows what lets the rival do it. Another shows what bars your side."
+    },
+    {
+     "id": "r-price",
+     "when": "priced",
+     "text": "Screen people by ancestry and family ties has a price. The act works but costs 8 legitimacy and counts as an act against your own position. Ancestry is not loyalty, and the game charges you for treating it as one."
+    },
+    {
+     "id": "r-mirror",
+     "when": {
+      "turn": 2
+     },
+     "text": "The rival just asked a firm abroad for its customer records under the 2017 law. Your panel lists that power as closed to you."
+    },
+    {
+     "id": "r-report",
+     "when": {
+      "turn": 5
+     },
+     "text": "The report at the end lists what your rules closed. It counts how often the rival used each closed act."
+    }
+   ]
+  }
+ ]
+}

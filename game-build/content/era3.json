@@ -3879,5 +3879,57 @@
   "results": "assets/forecast-results.json",
   "count": 49,
   "credit": "The claims, the probabilities and the reference answers come from the prediction ledger of the Architecture of Strategy by Lynceus (a pen name), used with the author's written permission."
- }
+ },
+ "guides": [
+  {
+   "id": "reach",
+   "op": "W017",
+   "tier": 1,
+   "turns": 6,
+   "seed": "guide-reach",
+   "title": "Reach in six turns",
+   "blurb": "A short run of The Reach at Tier 1. Learn the three permits and what the rival may do that you may not.",
+   "steps": [
+    {
+     "id": "r-start",
+     "when": "start",
+     "text": "This guided run lasts six turns at Tier 1. You play the United States and its allies against the Party-state. Read the Reach panel above the cards."
+    },
+    {
+     "id": "r-permits",
+     "when": "start",
+     "text": "Each act in Reach carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost you. Closed acts stay barred to you."
+    },
+    {
+     "id": "r-open",
+     "when": "unused",
+     "text": "Use an open act now. Designate the agencies and list the front organizations costs 1 action and shields your Legal domain."
+    },
+    {
+     "id": "r-why",
+     "when": "start",
+     "text": "Tap Why under a closed act. One card shows what lets the rival do it. Another shows what bars your side."
+    },
+    {
+     "id": "r-price",
+     "when": "priced",
+     "text": "Screen people by ancestry and family ties has a price. The act works but costs 8 legitimacy and counts as an act against your own position. Ancestry is not loyalty, and the game charges you for treating it as one."
+    },
+    {
+     "id": "r-mirror",
+     "when": {
+      "turn": 2
+     },
+     "text": "The rival just asked a firm abroad for its customer records under the 2017 law. Your panel lists that power as closed to you."
+    },
+    {
+     "id": "r-report",
+     "when": {
+      "turn": 5
+     },
+     "text": "The report at the end lists what your rules closed. It counts how often the rival used each closed act."
+    }
+   ]
+  }
+ ]
 }

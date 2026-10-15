@@ -62,3 +62,11 @@ What is here, so a reset of the working machine does not cost the game again.
 - The second evidence batch went through `band/import_notes.py`, `band/promote_drafts.py` and `band/build_evidence.py`. `band/batches/` holds its notes and drafts. `evidence/EVIDENCE_INDEX.md` lists all 31 cards.
 - `dist/*.zip` are the four current builds. `dist/update-2026-10-14b.zip` is the upload set for all four folders and the root `index.html`.
 - `CHANGELOG_2026-10-14b.md`, `TIER7_NOTES.md`, `ASYMMETRY_NOTES.md` and `BALANCE_W017_W018.md` describe it.
+
+## Update of 15 October 2026
+
+- All four builds take the v9 bundle. How to play gains Tiers in every build, Holdings in 1931, and Reach and permits and Forecast in 2026. Each panel shows a first-use hint, and the save keeps the ones a player has read.
+- Two guided runs teach holdings (E011 in 1931) and reach (W017 in 2026) in six turns at Tier 1. A guided run makes a result code with the mode `guide`. No operation changed and the engine is unchanged.
+- `workspace/patch-v9.py` turns the v8 bundle into the v9 bundle, and `workspace/parts/help.json` holds the help text. `workspace/content/guides.json` and `workspace/content/add_guides.py` add the guides to the content.
+- `workspace/release.py` builds the packages, the zips in `dist/` and these mirrors. `dist/update-2026-10-15.zip` is the upload set for all four folders.
+- `CHANGELOG_2026-10-15.md` describes it. `workspace/test/guide.test.js` and `workspace/e2e/v9.js` check it.

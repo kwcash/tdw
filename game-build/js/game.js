@@ -1762,6 +1762,13 @@
   const arcTier = (arc, i) => (arc.nodes.length <= 1 ? 1 : 1 + Math.round((5 * i) / (arc.nodes.length - 1)));
   // The daily draws from content.daily when the build names a pool, and from every operation otherwise.
   const DAILY_POOL = (C.daily || []).map((id) => opById.get(id)).filter((o) => o && o.kind !== 'watch');
+  // Guided runs. Each one plays a shipped operation at the guide's tier, seed and clock. The content names them.
+  const GUIDES = (C.guides || []).filter((g) => opById.has(g.op));
+  const guideById = new Map(GUIDES.map((g) => [g.id, g]));
+  const guideFor = (o) => (o.holdings && o.holdings.length && guideById.has('holdings') ? 'holdings' : o.reach && o.reach.length && guideById.has('reach') ? 'reach' : null);
+  const guideOut = (g) => ({ id: g.id, title: g.title, blurb: g.blurb, op: g.op, opTitle: opById.get(g.op).title, tier: g.tier, turns: g.turns, steps: g.steps });
+  // First-use hints, one per panel. The save keeps the ones the player has read.
+  const HINT_IDS = ["factions", "leaders", "holdings", "reach", "tier7"];
   function dailyOp(day) { const P = DAILY_POOL.length ? DAILY_POOL : OPS; const n = dayNumber(day); return P[(((n * 37) % P.length) + P.length) % P.length]; }
   function randomHex(bytes) {
     const a = new Uint8Array(bytes);
@@ -1848,6 +1855,7 @@
       id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, rule: E.DIMENSIONS[o.dimension],
       stage: o.stage, opponent: o.opponent, theater: o.theater, world: o.world, arc: o.arc, brief: o.brief,
       signature: o.stratagems.map((c) => ({ code: c, num: E.CARDS[c].num, name: E.CARDS[c].name, group: E.CARDS[c].group })),
+      guide: guideFor(o),
       best: withBest ? bestOf(o.id) : null,
     };
   }
@@ -1859,7 +1867,8 @@
     cards: E.cardList().map((c) => ({ code: c.code, num: c.num, name: c.name, group: c.group, text: c.text, face: c.face, offer: c.offer || null, proxy: !!c.proxy })),
     copy: C.copy || null,
     forecast: C.forecast || null,
-    counts: { ops: OPS.filter((o) => !o.hidden).length, arcs: ARCS.length, multi: OPS.filter((o) => Array.isArray(o.factions) && o.factions.length > 2).length },
+    counts: { ops: OPS.filter((o) => !o.hidden).length, arcs: ARCS.length, multi: OPS.filter((o) => Array.isArray(o.factions) && o.factions.length > 2).length, holdings: OPS.filter((o) => !o.hidden && Array.isArray(o.holdings) && o.holdings.length).length, reach: OPS.filter((o) => !o.hidden && Array.isArray(o.reach) && o.reach.length).length },
+    guides: GUIDES.map(guideOut),
   };
 
   // ---------- runs ----------
@@ -1887,7 +1896,7 @@
     const S = run.state;
     const o = opById.get(run.op_id);
     return {
-      run: { id: run.id, mode: run.mode, opId: run.op_id, tier: run.tier, day: run.day, dayNumber: run.day ? dayNumber(run.day) : null, arcId: run.arc_id, arcNode: run.arc_node, challenge: challengeOf(run), watch: watchOf(o), status: run.status, scored: !!run.scored, score: run.score, stars: run.stars, xp: run.xp },
+      run: { id: run.id, mode: run.mode, opId: run.op_id, tier: run.tier, day: run.day, dayNumber: run.day ? dayNumber(run.day) : null, arcId: run.arc_id, arcNode: run.arc_node, challenge: challengeOf(run), guide: run.guide || null, coach: run.mode === 'guide' && Array.isArray(run.coach) ? run.coach.slice() : [], watch: watchOf(o), status: run.status, scored: !!run.scored, score: run.score, stars: run.stars, xp: run.xp },
       brief: brief(o, false), view: E.view(S), debrief: S.over ? debrief(o) : null,
       share: S.over ? shareText(run, S) : null, code: S.over ? run.code || null : null,
     };
@@ -1907,7 +1916,7 @@
     let doctrine = body.doctrine || null;
     if (lens && !lo.lenses.includes(lens)) fail(403, 'That lens is still locked.');
     if (doctrine && !lo.doctrines.includes(doctrine)) fail(403, 'That doctrine card is still locked.');
-    let op; let seed; let tier; let day = null; let arcId = null; let arcNode = null; let scored = 1; let maxTurns;
+    let op; let seed; let tier; let day = null; let arcId = null; let arcNode = null; let scored = 1; let maxTurns; let guide = null;
     if (mode === 'daily') {
       day = today();
       op = dailyOp(day); seed = `daily:${day}`; tier = DAILY_TIER;
@@ -1923,6 +1932,10 @@
       op = opById.get(arc.nodes[node]); seed = randomHex(6); tier = arcTier(arc, node); arcId = arc.id; arcNode = node;
     } else if (mode === 'tutorial') {
       op = opById.get(C.tutorial || 'C001'); seed = 'tutorial'; tier = 1; lens = null; doctrine = null; maxTurns = 6;
+    } else if (mode === 'guide') {
+      const gd = guideById.get(String(body.guide || ''));
+      if (!gd) fail(404, 'No such guided run in this build.');
+      op = opById.get(gd.op); seed = gd.seed; tier = gd.tier; lens = null; doctrine = null; maxTurns = gd.turns; guide = gd.id;
     } else if (mode === 'free') {
       op = opById.get(String(body.opId || ''));
       if (!op) fail(404, 'No such operation');
@@ -1945,7 +1958,7 @@
     const S = E.newGame(op, { seed, tier, lens, doctrine, mode, maxTurns, registry: REG });
     const id = ++d.seq;
     // log holds every accepted action. With the seed it lets anyone replay the run and verify the result.
-    const run = { id, mode, op_id: op.id, seed, tier, lens, doctrine, day, arc_id: arcId, arc_node: arcNode, state: S, scored, status: 'live', score: null, stars: null, turns: null, xp: null, created: Date.now(), maxTurns: maxTurns || null, log: [], code: null };
+    const run = { id, mode, op_id: op.id, seed, tier, lens, doctrine, day, arc_id: arcId, arc_node: arcNode, state: S, scored, status: 'live', score: null, stars: null, turns: null, xp: null, created: Date.now(), maxTurns: maxTurns || null, log: [], code: null, ...(guide ? { guide } : {}) };
     d.runs[id] = run;
     save();
     return run;
@@ -1966,8 +1979,9 @@
     Object.assign(run, { status: win ? 'won' : 'lost', score: S.over.score, stars: S.over.stars, turns: S.over.turns, xp, finished: Date.now() });
     const newUnlocks = [];
     const grant = (key) => { if (!d.unlocks[key]) { d.unlocks[key] = Date.now(); newUnlocks.push(key); } };
+    if (run.mode === 'guide' && run.guide) grant('guide:' + run.guide);
     if (win) {
-      if (run.mode !== 'tutorial') grant('lens:' + S.dim);
+      if (run.mode !== 'tutorial' && run.mode !== 'guide') grant('lens:' + S.dim);
       if (run.mode === 'arc') {
         const ap = (d.arcs[run.arc_id] = d.arcs[run.arc_id] || {});
         ap[run.arc_node] = Math.max(ap[run.arc_node] || 0, S.over.stars);
@@ -2011,6 +2025,7 @@
     const o = opById.get(m[1]);
     if (!o) fail(404, 'No such operation');
     const out = { op: brief(o, true), loadout: load().user ? loadout() : null };
+    out.guideDone = !!(out.op.guide && has('guide:' + out.op.guide));
     const arc = arcById.get(String(q.arc || ''));
     const node = Number(q.node);
     if (arc && arc.nodes[node] === o.id) out.arcTier = arcTier(arc, node);
@@ -2126,8 +2141,34 @@
       badges: Object.keys(d.unlocks).filter((k) => k.startsWith('arc:') || k.startsWith('group:') || k === 'codex:all'),
     };
   });
-  on('GET', /^\/api\/progress$/, () => { need(); return { progress: progress(), tutorialDone: has('tutorial') }; });
+  on('GET', /^\/api\/progress$/, () => { need(); return { progress: progress(), tutorialDone: has('tutorial'), guidesDone: GUIDES.filter((g) => has('guide:' + g.id)).map((g) => g.id) }; });
   on('POST', /^\/api\/demo\/reset$/, () => { db = blank(); try { localStorage.removeItem(KEY); } catch { /* memory only */ } return { ok: true }; });
+
+  // Coach steps a player dismissed in a guided run. The run keeps them, so they go when the run goes.
+  on('POST', /^\/api\/runs\/(\d+)\/coach$/, (m, q, body) => {
+    need();
+    const run = load().runs[Number(m[1])];
+    const gd = run && run.mode === 'guide' ? guideById.get(run.guide) : null;
+    if (!gd) fail(404, 'No such guided run');
+    const step = String((body && body.step) || '');
+    if (!gd.steps.some((x) => x.id === step)) fail(400, 'No such step.');
+    run.coach = (Array.isArray(run.coach) ? run.coach : []).filter((x) => gd.steps.some((y) => y.id === x));
+    if (!run.coach.includes(step)) run.coach.push(step);
+    save();
+    return { coach: run.coach.slice() };
+  });
+  on('GET', /^\/api\/guides$/, () => ({ guides: GUIDES.map((g) => ({ ...guideOut(g), done: has('guide:' + g.id) })) }));
+  const hintsOf = (d) => (Array.isArray(d.hints) ? d.hints.filter((h) => HINT_IDS.includes(h)) : []);
+  on('GET', /^\/api\/hints$/, () => ({ seen: hintsOf(load()) }));
+  on('POST', /^\/api\/hints$/, (m, q, body) => {
+    const id = String((body && body.id) || '');
+    if (!HINT_IDS.includes(id)) fail(400, 'No such hint.');
+    const d = load();
+    d.hints = hintsOf(d);
+    if (!d.hints.includes(id)) d.hints.push(id);
+    save();
+    return { seen: d.hints.slice() };
+  });
 
   function handle(method, url, body) {
     const u = new URL(url, 'http://demo.invalid');
@@ -2683,6 +2724,8 @@
   const { $, $$, esc, md, api, html, render, applyWidths, errorBox, bind, route, state, needLogin } = T;
   // The single-page demo runs without a server. It keeps progress in this browser and hides accounts and challenges.
   const DEMO = !!window.TDW_DEMO;
+  // Help text shared by every build. It comes from parts/help.json.
+  const HELP = {"schema":1,"note":"Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.","how":[{"id":"tiers","when":"always","title":"Tiers","intro":"Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.","items":[{"label":"Tiers 1 to 6","text":"Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play."},{"label":"Tier 7","text":"Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. A scripted player rarely wins it."},{"label":"Where tiers apply","text":"Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb."}]},{"id":"holdings","when":"holdings","title":"Holdings","intro":"Some operations give your side ground it must pay to keep. The Holdings panel lists each one.","items":[{"label":"Cost and denial","text":"A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage."},{"label":"Consuming","text":"A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position."},{"label":"Giving one up","text":"Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back."}],"guide":"holdings"},{"id":"reach","when":"reach","title":"Reach and permits","intro":"Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.","items":[{"label":"Open","text":"An open act works at no price. Use it for the actions it names, up to its limit."},{"label":"Has a price","text":"A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival."},{"label":"Closed to you","text":"A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit."},{"label":"The report","text":"When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything."}],"guide":"reach"},{"id":"forecast","when":"forecast","title":"Forecast","intro":"The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.","items":[{"label":"Your forecast","text":"Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change."},{"label":"The score","text":"When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours."},{"label":"Where results come from","text":"The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little."}]}],"hints":{"factions":{"text":"This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.","how":"factions"},"leaders":{"text":"A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.","how":"factions"},"holdings":{"text":"Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.","how":"holdings"},"reach":{"text":"Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.","how":"reach"},"tier7":{"text":"You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. A scripted player rarely wins here.","how":"tiers"}},"ui":{"hintOk":"Got it","hintMore":"More in How to play","guideStart":"Try the guided run","guideLabel":"Guided run","guideHome":"Guided run","guideOp":"Learn the panel first","guideNext":"Play the full operation","forecastHow":"How forecasts score"}};
 
   // ---------- icons ----------
   const ICON = {
@@ -2708,7 +2751,7 @@
   const meta = () => state.meta;
   const card = (code) => meta().cards.find((c) => c.code === code);
   const cardName = (code) => { const c = card(code); return c ? `S${c.num}, ${c.name}` : code; };
-  const MODE = { daily: 'Daily operation', arc: 'Campaign', challenge: 'Challenge', tutorial: 'Boot camp', free: 'Operation' };
+  const MODE = { daily: 'Daily operation', arc: 'Campaign', challenge: 'Challenge', tutorial: 'Boot camp', guide: 'Guided run', free: 'Operation' };
   const kindLabel = (k) => (k === 'catalog' ? 'History' : k === 'watch' ? 'Watch' : 'Futures');
   const fmtDay = (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
   const watchChip = (w) => (w ? `<span class="chip2 watch ${w.status === 'settled' ? 'settled' : 'open'}">${w.status === 'settled' ? 'Settled' + (w.settleOn ? ' ' + esc(fmtDay(w.settleOn)) : '') : 'Watch: not yet settled'}</span>` : '');
@@ -2788,9 +2831,104 @@
     if (kind === 'arc') return 'Arc complete';
     if (kind === 'group') return `Group mastered: ${v}`;
     if (kind === 'codex') return 'Codex complete';
+    if (kind === 'guide') return 'Guided run complete';
     return null;
   }
   const qs = (h) => Object.fromEntries(new URLSearchParams((h.split('?')[1]) || ''));
+
+  // ---------- version 9: first-use hints, guided runs and the new How to play sections ----------
+  // A hint shows once per panel. The save keeps the ones the player has read, so they clear with the progress.
+  const hintState = { seen: null };
+  async function loadHints() {
+    if (!hintState.seen) { try { hintState.seen = (await api('/hints')).seen; } catch { hintState.seen = []; } }
+    return hintState.seen;
+  }
+  async function markHint(id) {
+    if (!hintState.seen) hintState.seen = [];
+    if (!hintState.seen.includes(id)) hintState.seen.push(id);
+    try { hintState.seen = (await api('/hints', { id })).seen; } catch { /* kept in memory for this visit */ }
+  }
+  // The link goes only to a section this build's How to play page shows.
+  const howHas = (id) => (id === 'factions' ? counts().multi > 0 : id === 'dimensions' || id === 'groups' || HELP.how.some((s) => s.id === id && howOn()[s.when]));
+  function hintHtml(id) {
+    const h = HELP.hints[id];
+    if (!h || !hintState.seen || hintState.seen.includes(id)) return '';
+    return `<aside class="hint" role="note" aria-label="Tip"><p id="hint-${esc(id)}">${esc(h.text)}</p><div class="row"><button type="button" class="hintok" data-hint="${esc(id)}" aria-describedby="hint-${esc(id)}">${esc(HELP.ui.hintOk)}</button>${h.how && howHas(h.how) ? `<a href="#/how?s=${esc(h.how)}" target="_blank" rel="noopener">${esc(HELP.ui.hintMore)}</a>` : ''}</div></aside>`;
+  }
+  // The board shows one hint at a time, for the first panel in play whose hint is unread. Boot camp and guided runs have their own coach.
+  function boardHint(v, mode) {
+    if (mode === 'tutorial' || mode === 'guide' || !hintState.seen) return null;
+    const on = { factions: !!factionsHtml(v), leaders: !!(v.cadres && v.cadres.length), holdings: !!(v.holdings && v.holdings.length), reach: !!(v.reach && v.reach.length), tier7: v.tier >= 7 };
+    return ['factions', 'leaders', 'holdings', 'reach', 'tier7'].find((k) => on[k] && !hintState.seen.includes(k)) || null;
+  }
+  const guides = () => (meta() && meta().guides) || [];
+  const guideOf = (id) => guides().find((x) => x.id === id) || null;
+  function guideCards(done) {
+    return guides().filter((x) => !(done || []).includes(x.id)).map((x) => `<div class="card feature"><div class="label">${esc(HELP.ui.guideHome)}</div><div class="big">${esc(x.title)}</div><p class="small">${esc(x.blurb)}</p><button type="button" data-guide="${esc(x.id)}">${esc(HELP.ui.guideStart)}</button></div>`).join('');
+  }
+  function guideOpCard(id, done) {
+    const x = done ? null : guideOf(id);
+    return x ? `<div class="card guidecard"><div class="label">${esc(HELP.ui.guideOp)}</div><p class="small">${esc(x.blurb)}</p><button type="button" data-guide="${esc(x.id)}">${esc(HELP.ui.guideStart)}</button></div>` : '';
+  }
+  function wireGuides() {
+    bind('[data-guide]', 'click', (e) => {
+      const b = e.currentTarget; b.disabled = true;
+      startRun({ mode: 'guide', guide: b.dataset.guide }).catch((err) => { toast(err.message); b.disabled = false; });
+    });
+  }
+  // A guide step shows when its condition holds and the player has not dismissed it in this run.
+  const GUIDE_WHEN = {
+    start: () => true,
+    consuming: (v) => (v.holdings || []).some((h) => h.active && h.consuming),
+    yielded: (v) => (v.holdings || []).some((h) => !h.active),
+    unused: (v) => !!(v.reach && v.reach.length) && v.reach.every((m) => !m.used) && v.reach.some((m) => m.canUse && m.permit === 'free'),
+    priced: (v) => (v.reach || []).some((m) => m.permit === 'priced' && m.canUse),
+    barred: (v) => (v.reach || []).some((m) => m.permit === 'barred'),
+  };
+  // A condition is a name above, a turn ({ turn: 2 }), or the state of one holding ({ consuming: id } or { yielded: id }).
+  const holdingIn = (v, id) => (v.holdings || []).find((h) => h.id === id);
+  function stepOk(w, v) {
+    if (!w || typeof w !== 'object') return !!(GUIDE_WHEN[w] && GUIDE_WHEN[w](v));
+    if (w.turn != null) return v.turn >= Number(w.turn);
+    if (w.consuming) { const h = holdingIn(v, w.consuming); return !!(h && h.active && h.consuming); }
+    if (w.yielded) { const h = holdingIn(v, w.yielded); return !!(h && !h.active); }
+    return false;
+  }
+  // The run keeps the steps the player has dismissed, so a reset or a new run starts the coach again.
+  const guideSeen = () => (G.data && Array.isArray(G.data.run.coach) ? G.data.run.coach : []);
+  async function markGuideStep(id) {
+    G.data.run.coach = guideSeen().concat([id]);
+    try { G.data.run.coach = (await api(`/runs/${G.id}/coach`, { step: id })).coach; } catch { /* kept in memory for this visit */ }
+  }
+  function guideCoachHtml(v) {
+    const x = guideOf(G.data.run.guide);
+    if (!x) return '';
+    const seen = guideSeen();
+    const step = x.steps.find((s) => !seen.includes(s.id) && stepOk(s.when, v));
+    if (!step) return '';
+    const n = seen.filter((id) => x.steps.some((s) => s.id === id)).length + 1;
+    return `<div class="coach" role="note"><div class="ctext" id="coachtext"><span class="label">${esc(HELP.ui.guideLabel)} · step ${n}</span>${esc(step.text)}</div><button id="coachok" data-c="${esc(step.id)}" aria-describedby="coachtext">${esc(HELP.ui.hintOk)}</button></div>`;
+  }
+  // After a dismissal the next note takes focus. It scrolls to the middle of the screen, clear of the sticky header and end bar.
+  function focusNext(sel) {
+    const nx = $(sel);
+    if (!nx) return;
+    nx.focus({ preventScroll: true });
+    (nx.closest('.hint, .coach') || nx).scrollIntoView({ block: 'center' });
+  }
+  const howOn = () => ({ always: true, holdings: counts().holdings > 0, reach: counts().reach > 0, forecast: !!(meta() && meta().forecast) });
+  function howToc() {
+    const on = howOn();
+    const items = (counts().multi ? [['factions', 'More than two factions']] : []).concat(HELP.how.filter((s) => on[s.when]).map((s) => [s.id, s.title]), [['dimensions', 'The ten dimensions'], ['groups', 'The six stratagem groups']]);
+    return `<nav class="howtoc" aria-label="On this page">${items.map(([id, t]) => `<a href="#/how?s=${esc(id)}">${esc(t)}</a>`).join('')}</nav>`;
+  }
+  function howSections() {
+    const on = howOn();
+    return HELP.how.filter((s) => on[s.when]).map((s) => {
+      const x = s.guide ? guideOf(s.guide) : null;
+      return `<h2 id="how-${esc(s.id)}" tabindex="-1">${esc(s.title)}</h2><p class="small muted">${esc(s.intro)}</p><div class="tiles2">${s.items.map((it) => `<div class="card"><div class="label">${esc(it.label)}</div><p class="small">${esc(it.text)}</p></div>`).join('')}</div>${x ? `<p class="row"><button type="button" data-guide="${esc(x.id)}">${esc(HELP.ui.guideStart)}</button><span class="small muted">${esc(x.blurb)}</span></p>` : ''}`;
+    }).join('');
+  }
 
   // ---------- home ----------
   route(/^\/(\?.*)?$/, async () => {
@@ -2812,7 +2950,7 @@
       </div>
       ${calendarHtml(calData)}
       ${fcHomeCard()}
-      ${!prog.tutorialDone ? `<div class="card feature"><div class="label">New here</div><div class="big">Boot camp</div><p class="small">Six turns at The Gate at Canton, 1784. Learn the board, the cards and the lever in three minutes.</p><button class="primary" id="boot">Start boot camp</button></div>` : ''}
+      ${!prog.tutorialDone ? `<div class="card feature"><div class="label">New here</div><div class="big">Boot camp</div><p class="small">Six turns at The Gate at Canton, 1784. Learn the board, the cards and the lever in three minutes.</p><button class="primary" id="boot">Start boot camp</button></div>` : guideCards(prog.guidesDone)}
       ${DEMO ? '<div class="card"><p class="small">You are playing the demo. Progress stays in this browser. The full game adds accounts, shared boards and friend challenges.</p></div>'
         : me.isGuest ? `<div class="card"><p class="small">You are playing as a guest. <a href="#/register">Create an account</a> to keep your rank, codex and campaign on any device.</p></div>` : ''}
       <div class="tiles2">
@@ -2836,6 +2974,7 @@
     const d = $('#daily'); if (d) d.addEventListener('click', () => startRun({ mode: 'daily' }).catch((e) => toast(e.message)));
     const b = $('#boot'); if (b) b.addEventListener('click', () => startRun({ mode: 'tutorial' }).catch((e) => toast(e.message)));
     $('#quick').addEventListener('click', () => quickPlay(p.level));
+    wireGuides();
   }, 10);
 
   async function quickPlay(level) {
@@ -2930,6 +3069,7 @@
             <div class="label">Domains in play</div><p class="pill-row">${o.theater.map((t) => `<span class="chip2">${icon(t, 'ic')} ${esc(t)}</span>`).join('')}</p>
             <p class="small muted">One of these is the lever the operation turns on. Watch where the cards land, then name it.</p>
           </div>
+          ${mode === 'free' && o.guide ? guideOpCard(o.guide, d.guideDone) : ''}
           ${o.band ? '<div class="card bandnote"><div class="label">Asymmetry band</div><p>The rival acts on its own population and its own firms with no court, no press and no vote in the way. Your side holds the same kinds of power under law. Some acts are closed to you and some carry a price. The board lists each one with its source.</p><p class="small muted">A scripted player wins this operation rarely at Tier 7. The score is the game\'s reading and not a count.</p></div>' : ''}
           <div class="card rulebox"><div class="label">The physics · ${esc(o.dimension)} · ${esc(o.rule.tier)}</div><p><b>${esc(o.rule.rule)}</b></p><p class="small">Counter: ${esc(o.rule.counter)}</p></div>
           <div class="card"><div class="label">Intelligence</div><p class="small">The record ties this operation to ${o.signature.map((s) => `<b>Stratagem ${s.num}, ${esc(s.name)}</b>`).join(' and ')}. Expect to see it often.</p></div>
@@ -2946,6 +3086,7 @@
     bind('[data-tier]', 'click', (e) => { pick.tier = Number(e.currentTarget.dataset.tier); $$('[data-tier]').forEach((b) => b.setAttribute('aria-pressed', String(b === e.currentTarget))); });
     bind('[data-lens]', 'click', (e) => { const k = e.currentTarget.dataset.lens; pick.lens = pick.lens === k ? null : k; $$('[data-lens]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lens === pick.lens))); });
     bind('[data-doc]', 'click', (e) => { const k = e.currentTarget.dataset.doc; pick.doctrine = pick.doctrine === k ? null : k; $$('[data-doc]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.doc === pick.doctrine))); });
+    wireGuides();
     $('#start').addEventListener('click', async () => {
       $('#start').disabled = true;
       try {
@@ -2974,10 +3115,12 @@
     Object.assign(G, { id: Number(id), sel: null, feed: [], flashes: {}, flipped: new Set(), rewards: null });
     G.data = await api('/runs/' + id);
     G.lastLog = G.data.view.log.length;
+    await loadHints();
     drawBoard();
   }, 10);
 
   function coachHtml(v) {
+    if (G.data.run.mode === 'guide') return guideCoachHtml(v);
     if (G.data.run.mode !== 'tutorial') return '';
     const seen = store.get('tdw-coach', []);
     const step = COACH.find((c) => !seen.includes(c.id) && (!c.when || c.when(v)));
@@ -3006,7 +3149,7 @@
     return out.length ? out.join('. ') + '.' : '';
   }
 
-  function factionsHtml(v) {
+  function factionsHtml(v, hint) {
     if (!v2(v) || !(v.multi || v.rules.legitimacy || v.pacts.length)) return '';
     const leg = v.rules.legitimacy;
     const pacts = v.pacts.map((p) => `<span class="pactchip ${p.active ? 'on' : p.broken ? 'broken' : ''}">${esc(p.name)} · ${p.active ? 'in force' : p.broken ? 'broken' : 'not yet'}</span>`).join('');
@@ -3015,19 +3158,19 @@
       const lv = f.player ? '' : `<div class="small muted">Leverage ${f.leverage} of ${v.consumeAt} · ${esc(f.stageName)}</div>`;
       return `<div class="fx ${f.player ? 'you' : ''}"><div class="fx-name"><b>${esc(f.name)}</b>${f.player ? ' <span class="chip2">You</span>' : ''}</div>${f.blurb ? `<div class="small muted">${esc(f.blurb)}</div>` : ''}${lv}${lg}</div>`;
     }).join('');
-    return `<section class="factions" aria-label="Factions"><div class="fx-head"><span class="label">Factions</span>${pacts}</div><div class="fx-grid">${cells}</div></section>`;
+    return `<section class="factions" aria-label="Factions"><div class="fx-head"><span class="label">Factions</span>${pacts}</div>${hint === 'factions' ? hintHtml('factions') : ''}<div class="fx-grid">${cells}</div></section>`;
   }
 
-  function cadresHtml(v) {
+  function cadresHtml(v, hint) {
     if (!v.cadres || !v.cadres.length) return '';
     const rows = v.cadres.map((c) => {
       const mv = c.mine && c.movable ? `<button type="button" data-cadre="${esc(c.id)}">Move · 1 action</button>` : '';
       return `<li class="cadre ${c.mine ? 'mine' : 'theirs'} ${c.locked ? 'locked' : ''}"><div><b>${esc(c.name)}</b> <span class="small muted">${esc(c.role)} · ${esc(factionShort(c.faction))}</span></div><div class="small">${icon(c.domain)} ${esc(c.domain)}${c.locked ? ' · out of action' : ''}</div><div class="small muted">${esc(modsText(c.mods))}</div>${mv}</li>`;
     }).join('');
-    return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders</div><ul>${rows}</ul></section>`;
+    return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders</div>${hint === 'leaders' ? hintHtml('leaders') : ''}<ul>${rows}</ul></section>`;
   }
 
-  function reachHtml(v) {
+  function reachHtml(v, hint) {
     if (!v.reach || !v.reach.length) return '';
     const STATE = { barred: 'Closed to you', priced: 'Has a price', free: 'Open' };
     const rows = v.reach.map((m) => {
@@ -3036,17 +3179,17 @@
       const price = m.permit === 'priced' ? `<div class="small">Costs ${m.price} legitimacy and counts as an act against your own position.</div>` : '';
       return `<li class="reach ${esc(m.permit)} ${m.used >= m.limit ? 'gone' : ''}"><div><b>${esc(m.name)}</b> <span class="chip2 rstate">${esc(st)}</span></div><div class="small">${icon(m.domain)} ${esc(m.domain)}</div><div class="small muted">${esc(m.text)}</div>${price}${ev}${m.canUse ? `<button type="button" data-reach="${esc(m.id)}">Use · ${m.ap} action${m.ap > 1 ? 's' : ''}</button>` : ''}</li>`;
     }).join('');
-    return `<section class="reachbox" aria-label="Reach"><div class="label">Reach</div><ul>${rows}</ul><p class="small muted">An act marked closed is open to the rival and barred to you. Each one lists the evidence behind that.</p></section>`;
+    return `<section class="reachbox" aria-label="Reach"><div class="label">Reach</div>${hint === 'reach' ? hintHtml('reach') : ''}<ul>${rows}</ul><p class="small muted">An act marked closed is open to the rival and barred to you. Each one lists the evidence behind that.</p></section>`;
   }
 
-  function holdingsHtml(v) {
+  function holdingsHtml(v, hint) {
     if (!v.holdings || !v.holdings.length) return '';
     const rows = v.holdings.map((h) => {
       const state = !h.active ? 'given up' : h.consuming ? 'consuming' : 'sustainable';
       const raised = h.active && h.cost > h.baseCost ? ` · cost up ${h.cost - h.baseCost}` : '';
       return `<li class="holding ${h.active ? '' : 'gone'} ${h.active && h.consuming ? 'consuming' : ''}"><div><b>${esc(h.name)}</b> <span class="chip2 hstate">${state}</span></div><div class="small">${icon(h.domain)} ${esc(h.domain)} · costs ${h.cost} a turn${raised} · denies ${h.denial}</div>${h.text ? `<div class="small muted">${esc(h.text)}</div>` : ''}${h.canYield ? `<button type="button" data-yield="${esc(h.id)}">Give up · 1 action</button>` : ''}</li>`;
     }).join('');
-    return `<section class="holdings" aria-label="Holdings"><div class="label">Holdings</div><ul>${rows}</ul><p class="small muted">A holding costs you every turn and keeps some leverage from the rival. A holding is consuming when its cost is more than what it denies.</p></section>`;
+    return `<section class="holdings" aria-label="Holdings"><div class="label">Holdings</div>${hint === 'holdings' ? hintHtml('holdings') : ''}<ul>${rows}</ul><p class="small muted">A holding costs you every turn and keeps some leverage from the rival. A holding is consuming when its cost is more than what it denies.</p></section>`;
   }
 
   function elsewhereHtml(v) {
@@ -3140,6 +3283,7 @@
       : v.lever.named ? `<div><b>${esc(v.lever.named)}</b> <span class="err">wrong</span></div><div class="small muted">The real lever is still hidden.</div>`
         : `<button type="button" id="namelever">Name the lever</button>`;
     const doc = v.doctrine;
+    const hint = boardHint(v, d.run.mode);
     render(html`
       ${coachHtml(v)}
       <div class="hud">
@@ -3159,7 +3303,7 @@
           ${doc ? `<div class="meter"><div class="lbl">Doctrine · ${esc(doc.layer)}</div>${doc.used ? `<div class="small muted">${esc(doc.name)} spent</div>` : `<button type="button" id="doctrine" ${v.can.doctrine ? '' : 'disabled'}>${esc(doc.name)}</button>`}</div>` : ''}
         </div>
       </div>
-      ${factionsHtml(v)}${cadresHtml(v)}${holdingsHtml(v)}${reachHtml(v)}
+      ${hint === 'tier7' ? hintHtml('tier7') : ''}${factionsHtml(v, hint)}${cadresHtml(v, hint)}${holdingsHtml(v, hint)}${reachHtml(v, hint)}
       ${G.feed.length ? `<div class="feed" aria-live="polite">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
       <div class="hand-head"><h2>Cards in play</h2><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
       <div class="hand">${v.intents.filter((i) => isMine(v, i)).map(cardHtml).join('') || '<p class="muted">No cards aimed at you this turn.</p>'}</div>
@@ -3174,7 +3318,11 @@
     $$('.lc-tick, .lg-line').forEach((el) => { el.style.left = el.dataset.left + '%'; });
     $$('.feed p').forEach((el) => { el.style.animationDelay = (Number(el.dataset.delay) * 0.18) + 's'; });
     const ok = $('#coachok');
-    if (ok) ok.addEventListener('click', () => { const seen = store.get('tdw-coach', []); seen.push(ok.dataset.c); store.set('tdw-coach', seen); drawBoard(); });
+    if (ok) ok.addEventListener('click', async () => {
+      if (d.run.mode === 'guide') await markGuideStep(ok.dataset.c); else { const seen = store.get('tdw-coach', []); seen.push(ok.dataset.c); store.set('tdw-coach', seen); }
+      drawBoard(); focusNext('#coachok');
+    });
+    bind('.hintok', 'click', async (e) => { await markHint(e.currentTarget.dataset.hint); drawBoard(); focusNext('.hintok'); });
     bind('.tile', 'click', (e) => openTile(e.currentTarget.dataset.d));
     bind('.icard [data-act]', 'click', (e) => {
       const id = Number(e.currentTarget.closest('.icard').dataset.id);
@@ -3346,6 +3494,7 @@
     const next = run.mode === 'arc' ? `<a class="btn primary" href="#/arc/${esc(run.arcId)}">Back to the arc</a>`
       : run.mode === 'daily' ? '<a class="btn primary" href="#/daily">Today\'s board</a>'
         : run.mode === 'challenge' ? (DEMO ? '<a class="btn primary" href="#/records">Compare in Records</a>' : `<a class="btn primary" href="#/c/${esc(run.challenge)}">Opponent's score</a>`)
+          : run.mode === 'guide' ? `<a class="btn primary" href="#/op/${esc(run.opId)}">${esc(HELP.ui.guideNext)}</a>`
           : run.mode === 'tutorial' ? (state.me && state.me.isGuest && !DEMO ? '<a class="btn primary" href="#/register">Save your progress</a>' : '<a class="btn primary" href="#/daily">Play the daily</a>')
             : `<a class="btn primary" href="#/op/${esc(run.opId)}">Play again</a>`;
     render(html`
@@ -3596,7 +3745,7 @@
     const draw = () => {
       const n = Date.now();
       const sel = (st) => D.items.filter((it) => fcState(it, D.mine, D.results, n) === st).sort(sort);
-      render(html`${fcIntro(D.cfg)}
+      render(html`${fcIntro(D.cfg)}<p class="small"><a href="#/how?s=forecast">${esc(HELP.ui.forecastHow)}</a></p>
         ${D.missing ? '<p class="err" role="alert">The results file did not load. Results will not show until it does.</p>' : ''}
         ${fcSummaryHtml(fcSummary(D.items, D.mine, D.results))}
         ${sections.map(([st, label, open]) => { const l = sel(st); const cut = st === 'open' && !D.all && l.length > FC_SHOW ? FC_SHOW : l.length; return l.length ? `<details class="fcsec" ${open ? 'open' : ''}><summary><h2>${esc(label)} <span class="muted">${l.length}</span></h2></summary>${l.slice(0, cut).map((it) => fcCard(it, st, D.mine, D.results)).join('')}${cut < l.length ? `<p><button type="button" id="fcall">Show the other ${l.length - cut}</button></p>` : ''}</details>` : ''; }).join('')}
@@ -3713,6 +3862,7 @@
     render(html`
       <h1>How to play</h1>
       <p>An opponent runs the method against a host, one stratagem at a time. You defend the host until the clock runs out, or you cut the lever the operation turns on.</p>
+      ${howToc()}
       <div class="tiles2">
         <div class="card"><div class="label">1 · The board</div><p>Twelve domains. Bold outlines mark the domains in play. Red bars count pressure from 0 to 5. At 3 or more, a domain pays the opponent 1 leverage each turn. At 5 it falls and pays 2.</p></div>
         <div class="card"><div class="label">2 · The cards</div><p>Each turn the opponent plays stratagem cards aimed at domains. A face-up card shows its name, target and payload. An unattributed card shows a threat and hides its name, and it may be a feint. A face-down card shows nothing.</p></div>
@@ -3723,7 +3873,7 @@
         <div class="card"><div class="label">7 · Offers</div><p>Some cards are offers: extra actions now, a slope of pressure later. The method needs an invitation. Leave an offer and it passes.</p></div>
         <div class="card"><div class="label">8 · Stars</div><p>One star: you held the line. Two: the operation stopped before Extract. Three: you cut the lever, or kept leverage under 40 percent.</p></div>
       </div>
-      ${counts().multi ? `<h2>More than two factions</h2>
+      ${counts().multi ? `<h2 id="how-factions" tabindex="-1">More than two factions</h2>
       <p class="small muted">Some operations put three factions on the board. You command one. The others each run the method, and they also run it on each other.</p>
       <div class="tiles2">
         <div class="card"><div class="label">Pairs</div><p class="small">Every faction has its own pressure, shields and slopes in each domain, and the board records who put the pressure there. When your domain holds 3 or more pressure, the faction that put most of it there banks the leverage.</p></div>
@@ -3732,20 +3882,26 @@
         <div class="card"><div class="label">Leaders</div><p class="small">A leader stands in one domain and changes the rules there. Some make Disrupts cheaper or dearer, add shields or actions, or cost legitimacy. Move one of yours for 1 action, once a turn.</p></div>
         <div class="card"><div class="label">Pacts</div><p class="small">Two factions may stand together against a third. While a pact holds, its members do not target each other. Pacts form and break on events, and breaking one has a price.</p></div>
       </div>` : ''}
-      <h2>The ten dimensions</h2>
+      ${howSections()}
+      <h2 id="how-dimensions" tabindex="-1">The ten dimensions</h2>
       <p class="small muted">Each operation runs under the dimension its record proves. Coherence multiplies, Agency gates, Topology and Entropy describe the ground, Time, Asymmetry and Criticality describe the contest, and Phase, Gradient and Resonance describe the move.</p>
       <div class="tiles2">${dims.map(([k, x]) => `<div class="card rulebox"><div class="label">${esc(x.tier)}</div><div class="big">${esc(k)}</div><p class="small">${esc(x.rule)}</p><p class="small muted">Counter: ${esc(x.counter)}</p><p class="small muted">Lens: ${esc(meta().lenses[k].name)}. ${esc(meta().lenses[k].text)}</p></div>`).join('')}</div>
-      <h2>The six stratagem groups</h2>
+      <h2 id="how-groups" tabindex="-1">The six stratagem groups</h2>
       <p class="small muted">The Thirty-Six Stratagems are a folk compilation, not PLA doctrine. The game uses them as names for patterns any actor can run. Card borders carry the group color.</p>
       <div class="codex">${meta().groups.map((g) => `<div class="ccard g-${esc(g)}"><span class="cnm">${esc(g)}</span><span class="cnum">${meta().cards.filter((c) => c.group === g).map((c) => 'S' + c.num).join(' ')}</span></div>`).join('')}</div>
       <p class="row"><button class="primary" id="boot">Try boot camp</button><a class="btn" href="#/">Home</a></p>
       ${DEMO ? '<div class="card"><div class="label">Demo progress</div><p class="small">Your level, codex and campaign live in this browser only.</p><button type="button" id="reset">Clear my progress</button></div>' : ''}
     `);
     $('#boot').addEventListener('click', () => startRun({ mode: 'tutorial' }).catch((e) => toast(e.message)));
+    wireGuides();
+    const sec = qs(location.hash).s;
+    const tgt = sec && document.getElementById('how-' + sec);
+    if (tgt) { tgt.scrollIntoView(); tgt.focus({ preventScroll: true }); }
     const rs = $('#reset');
     if (rs) rs.addEventListener('click', async () => {
       if (!rs.dataset.armed) { rs.dataset.armed = '1'; rs.textContent = 'Tap again to clear everything'; return; }
       await api('/demo/reset', {});
+      hintState.seen = null;
       state.me = null;
       toast('Progress cleared.');
       location.hash = '#/';

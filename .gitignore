@@ -1,0 +1,3 @@
+# Build output. dist/ holds the zips that ship.
+game-build/workspace/out/pkg/
+__pycache__/

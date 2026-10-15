@@ -523,3 +523,17 @@ section.card > h2:first-child { margin-top: 4px; }
 .rv-ev ul { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px; }
 .chip2.band { font-weight: 700; border-color: var(--bad); color: var(--bad); }
 .bandnote { border-left: 4px solid var(--bad); }
+
+/* ---- version 9: first-use hints, guided runs, How to play sections ---- */
+.hint { background: var(--banner-bg); color: var(--banner-ink); border: 1px solid var(--banner-line); border-radius: var(--radius); padding: 10px 12px; margin: 8px 0; }
+.hint p { margin: 0 0 8px; font-size: 15px; }
+.hint .row { gap: 12px; }
+.hint button { min-height: 44px; }
+.hint a { color: var(--banner-ink); text-decoration: underline; }
+.coach .label { display: block; color: #c9d1db; margin-bottom: 4px; }
+.howtoc { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 4px 0 16px; }
+.howtoc a { font-size: 15px; padding: 6px 0; }
+h2[tabindex="-1"]:focus { outline: none; }
+h2[id^="how-"] { scroll-margin-top: 112px; }
+@media (max-width: 560px) { h2[id^="how-"] { scroll-margin-top: 12px; } }
+.guidecard { border-left: 4px solid var(--detect); }

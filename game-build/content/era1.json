@@ -1749,5 +1749,63 @@
    }
   ]
  },
- "dailyEpoch": "2026-09-30"
+ "dailyEpoch": "2026-09-30",
+ "guides": [
+  {
+   "id": "holdings",
+   "op": "E011",
+   "tier": 1,
+   "turns": 6,
+   "seed": "guide-holdings",
+   "title": "Holdings in six turns",
+   "blurb": "A short run of The Manchurian Trap at Tier 1. Learn what a holding costs and when to give one up.",
+   "steps": [
+    {
+     "id": "h-start",
+     "when": "start",
+     "text": "This guided run lasts six turns at Tier 1. You hold the north and the south for the Nationalist government in 1946. Read the Holdings panel above the cards."
+    },
+    {
+     "id": "h-cost",
+     "when": "start",
+     "text": "Each holding costs you every turn and denies the rival some leverage. Manchuria costs 2 and denies only 1, so the panel marks it consuming."
+    },
+    {
+     "id": "h-yield",
+     "when": {
+      "consuming": "manchuria"
+     },
+     "text": "Give up Manchuria with the button in its row. The move costs 1 action and 2 legitimacy. You cannot take it back."
+    },
+    {
+     "id": "h-after",
+     "when": {
+      "yielded": "manchuria"
+     },
+     "text": "Manchuria no longer drains your armies. The south costs 1 and denies 2, so it still pays to keep."
+    },
+    {
+     "id": "h-south",
+     "when": {
+      "yielded": "south"
+     },
+     "text": "You gave up the south, which cost 1 and denied the rival 2. Manchuria still costs more than it denies."
+    },
+    {
+     "id": "h-log",
+     "when": {
+      "turn": 2
+     },
+     "text": "Open the operation log below the board. Each holding takes its cost from your shields first and then adds pressure."
+    },
+    {
+     "id": "h-report",
+     "when": {
+      "turn": 5
+     },
+     "text": "The report at the end lists acts against your own position. Each turn you keep a consuming holding counts as one."
+    }
+   ]
+  }
+ ]
 }

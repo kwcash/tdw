@@ -1,0 +1,70 @@
+{
+ "schema": 1,
+ "note": "Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.",
+ "how": [
+  {
+   "id": "tiers",
+   "when": "always",
+   "title": "Tiers",
+   "intro": "Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.",
+   "items": [
+    { "label": "Tiers 1 to 6", "text": "Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play." },
+    { "label": "Tier 7", "text": "Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. A scripted player rarely wins it." },
+    { "label": "Where tiers apply", "text": "Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb." }
+   ]
+  },
+  {
+   "id": "holdings",
+   "when": "holdings",
+   "title": "Holdings",
+   "intro": "Some operations give your side ground it must pay to keep. The Holdings panel lists each one.",
+   "items": [
+    { "label": "Cost and denial", "text": "A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage." },
+    { "label": "Consuming", "text": "A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position." },
+    { "label": "Giving one up", "text": "Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back." }
+   ],
+   "guide": "holdings"
+  },
+  {
+   "id": "reach",
+   "when": "reach",
+   "title": "Reach and permits",
+   "intro": "Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.",
+   "items": [
+    { "label": "Open", "text": "An open act works at no price. Use it for the actions it names, up to its limit." },
+    { "label": "Has a price", "text": "A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival." },
+    { "label": "Closed to you", "text": "A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit." },
+    { "label": "The report", "text": "When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything." }
+   ],
+   "guide": "reach"
+  },
+  {
+   "id": "forecast",
+   "when": "forecast",
+   "title": "Forecast",
+   "intro": "The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.",
+   "items": [
+    { "label": "Your forecast", "text": "Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change." },
+    { "label": "The score", "text": "When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours." },
+    { "label": "Where results come from", "text": "The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little." }
+   ]
+  }
+ ],
+ "hints": {
+  "factions": { "text": "This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.", "how": "factions" },
+  "leaders": { "text": "A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.", "how": "factions" },
+  "holdings": { "text": "Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.", "how": "holdings" },
+  "reach": { "text": "Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.", "how": "reach" },
+  "tier7": { "text": "You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. A scripted player rarely wins here.", "how": "tiers" }
+ },
+ "ui": {
+  "hintOk": "Got it",
+  "hintMore": "More in How to play",
+  "guideStart": "Try the guided run",
+  "guideLabel": "Guided run",
+  "guideHome": "Guided run",
+  "guideOp": "Learn the panel first",
+  "guideNext": "Play the full operation",
+  "forecastHow": "How forecasts score"
+ }
+}

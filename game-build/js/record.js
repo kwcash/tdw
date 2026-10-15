@@ -12,7 +12,7 @@
   const PREFIX = 'TDW1';
   const SEP = '~';
   const IDX = '0123456789ab';
-  const MODES = ['free', 'daily', 'arc', 'challenge', 'tutorial'];
+  const MODES = ['free', 'daily', 'arc', 'challenge', 'tutorial', 'guide'];
   const SEED_RE = /^[A-Za-z0-9:_-]{1,40}$/;
   const OPID_RE = /^[A-Z]\d{3}$/;
   const CHALLENGE_RE = /^([A-Z]\d{3})~([1-7])~([a-z0-9]{6,16})$/;
@@ -23,7 +23,7 @@
     // Builds with several factions carry them in the content. Without them every operation plays as a two-faction one.
     const reg = { factions: C.factions || {}, cadres: C.cadres || {}, pacts: C.pacts || {}, ruleset: C.ruleset || {} };
     const pool = (C.daily || []).map((id) => byId.get(id)).filter((o) => o && o.kind !== 'watch');
-    return { E, ops: C.ops, byId, reg, pool: pool.length ? pool : C.ops, tutorial: C.tutorial || 'C001', epoch: C.dailyEpoch || '2026-09-30' };
+    return { E, ops: C.ops, byId, reg, pool: pool.length ? pool : C.ops, tutorial: C.tutorial || 'C001', epoch: C.dailyEpoch || '2026-09-30', guides: C.guides || [] };
   }
   let pageCtx = null;
   function page() {
@@ -192,6 +192,11 @@
     const E = ctx.E;
     if (meta.mode === 'challenge' && (meta.lens || meta.doctrine)) fail('A challenge allows no lens and no doctrine card.');
     if (meta.mode === 'tutorial' && (meta.lens || meta.doctrine || meta.opId !== ctx.tutorial || meta.tier !== 1 || meta.seed !== 'tutorial')) fail('This is not the boot camp operation.');
+    if (meta.mode === 'guide') {
+      // A guided run plays one shipped operation at the guide's tier, seed and clock, with no lens and no doctrine card.
+      const g = (ctx.guides || []).find((x) => x.op === meta.opId);
+      if (!g || meta.lens || meta.doctrine || meta.tier !== g.tier || meta.seed !== g.seed || meta.maxTurns !== g.turns) fail('This is not a guided run of this game.');
+    }
     if (meta.mode === 'daily') {
       const m = /^daily:(\d{4}-\d{2}-\d{2})$/.exec(meta.seed);
       if (!m || Number.isNaN(Date.parse(m[1] + 'T00:00:00Z'))) fail('A daily code needs a daily seed.');

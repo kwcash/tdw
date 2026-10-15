@@ -174,3 +174,14 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 | W017 The Reach (asymmetry band) | Legal | Agency | S3, S8, S35 |
 | W018 The Wallet (asymmetry band) | Financial | Asymmetry | S22, S33, S16 |
 | W019 The Lab (asymmetry band) | Cultural | Gradient | S17, S14, S10 |
+
+## Help text and guided runs, 15 October 2026
+
+The help text and the guided runs add no claim to the record. Each line about the 2026 build restates a claim already listed above or a rule of the game.
+
+| Where | Line | Rests on | Status |
+|---|---|---|---|
+| Guided run, Reach in six turns | The rival just asked a firm abroad for its customer records under the 2017 law. | The W017 script beat on turn 2 and EV-001 above | Use |
+| Guided run, Reach in six turns | Screen people by ancestry and family ties costs 8 legitimacy and counts as an act against your own position. | The W017 permit and price, a designer reading (R), and EV-014 above | Scenario |
+| How to play, Reach and permits | Permits are the game's reading of the evidence and not a count of anything. | The rule in ASYMMETRY_NOTES.md | Use |
+| How to play, Forecast | The site owner copies each result from the project's scoring log. | FORECAST_NOTES.md | Use |
