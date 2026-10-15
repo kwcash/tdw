@@ -54,6 +54,8 @@ Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, r
 
 ## Working conventions
 
+- STANDARDS.md sets the steps for a change and for a release, with a definition of done. `templates/` holds the change note, the changelog, the balance note and the owner's report.
+
 - Branch `claude/tdw-coding-project-0zkx4h` in `kwcash/tdw`. Commit and push with `git push -u origin claude/tdw-coding-project-0zkx4h`. Do not open a pull request unless the owner asks.
 - End each commit message with the two trailers in the session's attribution reminder.
 - The owner uploads by file manager. Never give shell, SSH or command-line upload steps. Deliver a zip with `SendUserFile` and say which folders to replace.
@@ -78,7 +80,7 @@ The owner asked for the process and the player experience to move up one maturit
 
 **Process, Level 2 to 3**
 1. Done on 15 October (CHANGELOG_2026-10-15e.md). `.github/workflows/tdw-checks.yml` runs `run_checks.sh` on every push, and the browser checks on request. The bundle is built from `src/` by `build.py`.
-2. Write short standards for a change and for a release, with a definition of done and templates.
+2. Done on 15 October (CHANGELOG_2026-10-15f.md). STANDARDS.md and `templates/`. `release.py` refuses a release without a changelog that passes the lint.
 3. Number the standing rules in a register and map each to the test or lint that enforces it.
 4. Add a risk and issue log, with a backup policy.
 5. An independent reviewer verifies sources. The owner must supply that person.

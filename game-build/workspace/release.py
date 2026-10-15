@@ -14,6 +14,13 @@ if not args: sys.exit(__doc__)
 tag, notes = args[0], args[1:]
 root_page = '--root' in sys.argv
 
+# Each note must exist and pass the house-style lint. The release standard is in ../STANDARDS.md.
+for n in notes:
+    if not (ws / n).exists(): sys.exit(f'REFUSED: {n} does not exist')
+    if n.endswith('.md') and n.startswith('CHANGELOG'):
+        lint = subprocess.run([sys.executable, '-I', str(ws / 'test/lint-strict.py'), str(ws / n)], capture_output=True, text=True)
+        if lint.returncode != 0: sys.exit('REFUSED: the changelog fails the style lint\n' + lint.stdout[-1500:])
+if not any(n.startswith('CHANGELOG') for n in notes): sys.exit('REFUSED: a release needs its changelog among the notes')
 r = subprocess.run(['bash', str(ws / 'run_checks.sh')], capture_output=True, text=True)
 if r.returncode != 0 or 'ALL CHECKS PASS' not in r.stdout: sys.exit('REFUSED: run_checks.sh did not pass\n' + r.stdout[-2000:])
 subprocess.run([sys.executable, '-I', str(ws / 'mkpkg.py')], check=True, cwd=ws)

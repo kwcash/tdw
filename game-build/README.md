@@ -93,3 +93,7 @@ What is here, so a reset of the working machine does not cost the game again.
 
 - No player-facing change and no upload. `workspace/src/` holds the maintained sources and `workspace/build.py` builds the bundle from them. The old patch chain moved to `workspace/history/`.
 - `.github/workflows/tdw-checks.yml` runs every check on each push. `CHANGELOG_2026-10-15e.md` describes it.
+
+## Update of 15 October 2026, sixth set
+
+- No player-facing change and no upload. STANDARDS.md and `templates/` set how a change and a release are made. `CHANGELOG_2026-10-15f.md` describes it.
