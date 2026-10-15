@@ -24,7 +24,7 @@ A release ships one or more changes to the owner.
 2. **Balance note.** When a win rate moves, write `BALANCE_<topic>.md` from `templates/BALANCE.md`. Otherwise the changelog says that balance did not change.
 3. **Sourcing.** When a claim joins the record, add its row to `SOURCING_2026.md` with its status. Otherwise the changelog says that no claim was added.
 4. **Cache keys and notices.** Raise the `ver` of each build that changed in `mkpkg.py`, and write its `NOTICE.txt` line.
-5. **Build.** Review RISKS.md and update its date. Then run `python3 release.py <tag> CHANGELOG_<tag>.md` and any other notes. It refuses to run unless every check passes and the changelog passes the lint. It also refuses when RISKS.md was last reviewed more than 31 days ago. A 2026 release waits for the owner's results file once a forecast claim falls due. BACKUP.md explains why.
+5. **Build.** Review RISKS.md and update its date. Then run `python3 release.py <tag> CHANGELOG_<tag>.md` and any other notes. It refuses to run unless every check passes and the changelog passes the lint. It also refuses when RISKS.md was last reviewed more than 31 days ago. From the first forecast due date every release also needs the owner to confirm the results file. BACKUP.md explains why.
 6. **Hand over.** Commit and push. Send the owner the upload zip and a plain report from `templates/REPORT.md`. Give no command-line steps for the upload.
 
 ## Definition of done

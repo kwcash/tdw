@@ -6,8 +6,11 @@
    (../../frontpage/index.html) as index.html at the top of the zip.
 3. Refreshes the mirrors at the top of game-build/: js/, style.css, content/ and the notes.
 4. Writes ../dist/MANIFEST.json with the hash of every zip, for the backup check in test/backup.py.
-It refuses to run unless run_checks.sh passes, the risk log was reviewed in the last 31 days and, once a forecast
-claim falls due, the repository holds the owner's results file (or --results-current says no result was entered)."""
+It refuses to run unless run_checks.sh passes and the risk log was reviewed in the last 31 days. It refuses a tag it
+has already used and any flag it does not know. Once a forecast claim falls due it also needs --results-current, which
+says the owner confirmed that forecast/out/forecast-results.json matches the file on the site.
+It writes each zip beside its final name and moves them all into place at the end, so a run that stops early leaves
+dist/ and its manifest as they were."""
 import datetime, json, os, shutil, subprocess, sys, zipfile, pathlib
 ws = pathlib.Path(__file__).resolve().parent
 gb = ws.parent
@@ -18,9 +21,10 @@ root_page = '--root' in sys.argv
 sys.path.insert(0, str(ws))
 import release_guard as G
 today = datetime.date.today()
-for stop in [G.review_guard(today, (gb / 'RISKS.md').read_text()),
-             G.results_guard(today, json.loads((ws / 'forecast/out/forecasts.json').read_text()), json.loads((ws / 'forecast/out/forecast-results.json').read_text()), '--results-current' in sys.argv)]:
+for stop in [G.flag_guard(sys.argv[1:]), G.review_guard(today, (gb / 'RISKS.md').read_text()),
+             G.results_guard(today, json.loads((ws / 'forecast/out/forecasts.json').read_text()), '--results-current' in sys.argv)]:
     if stop: sys.exit(stop)
+if (gb / 'dist' / f'update-{tag}.zip').exists(): sys.exit(f'REFUSED: dist/update-{tag}.zip exists. Each release keeps its own tag.')
 
 # Each note must exist and pass the house-style lint. The release standard is in ../STANDARDS.md.
 for n in notes:
@@ -38,18 +42,25 @@ def add_tree(z, src, arc):
         if p.is_file(): z.write(p, f'{arc}/{p.relative_to(src).as_posix()}' if arc else p.relative_to(src).as_posix())
 
 BUILDS = ['game', '1931', '2030', '2026']
-for b in BUILDS:
-    with zipfile.ZipFile(gb / 'dist' / f'{b}.zip', 'w', zipfile.ZIP_DEFLATED) as z: add_tree(z, ws / 'out/pkg' / b, '')
 up = gb / 'dist' / f'update-{tag}.zip'
-with zipfile.ZipFile(up, 'w', zipfile.ZIP_DEFLATED) as z:
-    if root_page: z.write(gb.parent / 'frontpage/index.html', 'index.html')
-    for b in BUILDS: add_tree(z, ws / 'out/pkg' / b, b)
-    for n in notes: z.write(ws / n, pathlib.Path(n).name)
+part = lambda p: p.with_name(p.name + '.part')
+finals = [gb / 'dist' / f'{b}.zip' for b in BUILDS] + [up]
+try:
+    for b, f in zip(BUILDS, finals):
+        with zipfile.ZipFile(part(f), 'w', zipfile.ZIP_DEFLATED) as z: add_tree(z, ws / 'out/pkg' / b, '')
+    with zipfile.ZipFile(part(up), 'w', zipfile.ZIP_DEFLATED) as z:
+        if root_page: z.write(gb.parent / 'frontpage/index.html', 'index.html')
+        for b in BUILDS: add_tree(z, ws / 'out/pkg' / b, b)
+        for n in notes: z.write(ws / n, pathlib.Path(n).name)
+except BaseException:
+    for f in finals: part(f).unlink(missing_ok=True)
+    raise
+for f in finals: os.replace(part(f), f)
+G.write_manifest(gb / 'dist')
 
 for src, dst in [('out/game.js', 'js/game.js'), ('out/engine.js', 'js/engine.js'), ('out/record.js', 'js/record.js'), ('parts/style.css', 'style.css')]:
     shutil.copy(ws / src, gb / dst)
 for f in ['base.json', 'era1.json', 'era2.json', 'era3.json']:
     shutil.copy(ws / 'content' / f, gb / 'content' / f)
 for n in notes: shutil.copy(ws / n, gb / pathlib.Path(n).name)
-G.write_manifest(gb / 'dist')
 print(f'released {tag}: {up.relative_to(gb.parent)} ({up.stat().st_size // 1024} KB), {len(notes)} notes, front page {"included" if root_page else "not included"}')

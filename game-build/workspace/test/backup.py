@@ -3,7 +3,7 @@
 1. dist/MANIFEST.json lists every zip in dist/ with its SHA-256, and each zip matches and opens.
 2. Each build zip holds a whole build that can be restored as it stands.
 3. The release guard keeps a 2026 upload from replacing forecast results the owner entered on the site.
-4. No file in game-build carries a token, a key or a password.
+4. No text file in game-build, .github or frontpage carries a token, a key or a password.
 5. RISKS.md stays numbered, uses the agreed levels and names only checks that exist and run."""
 import datetime, hashlib, json, pathlib, re, sys, zipfile
 ws = pathlib.Path(__file__).resolve().parent.parent
@@ -38,21 +38,21 @@ def _():
                 for need in ['assets/forecasts.json', 'assets/forecast-results.json']: assert need in names, f'2026.zip lacks {need}'
             json.loads(z.read('assets/content.json'))
 
-@ok('the release guard holds a 2026 release once a claim falls due, until the owner\'s results file is in')
+@ok('once a claim falls due, every release waits for the owner to confirm the results file, and a mistyped flag stops it')
 def _():
     fc = {'items': [{'id': 'A', 'check_by': '2026-11-11'}, {'id': 'B', 'check_by': '2026-12-01'}]}
-    empty = {'rows': {}}
     day = datetime.date.fromisoformat
-    assert G.results_guard(day('2026-11-10'), fc, empty, False) is None
-    assert 'forecast-results.json' in G.results_guard(day('2026-11-11'), fc, empty, False)
-    assert G.results_guard(day('2026-11-11'), fc, empty, True) is None
-    # A file with a row for every claim now due needs no flag.
-    assert G.results_guard(day('2026-11-20'), fc, {'rows': {'A': {'result': 'yes'}}}, False) is None
-    assert G.results_guard(day('2026-12-02'), fc, {'rows': {'A': {'result': 'yes'}}}, False) is not None
-    # The real files pass today, so the check is live and not a stub.
-    real = G.results_guard(datetime.date(2026, 10, 15), json.loads((ws / 'forecast/out/forecasts.json').read_text()), json.loads((ws / 'forecast/out/forecast-results.json').read_text()), False)
-    assert real is None, real
-    assert G.results_guard(datetime.date(2026, 11, 11), json.loads((ws / 'forecast/out/forecasts.json').read_text()), {'rows': {}}, False) is not None
+    assert G.results_guard(day('2026-11-10'), fc, False) is None
+    assert 'forecast-results.json' in G.results_guard(day('2026-11-11'), fc, False)
+    assert G.results_guard(day('2026-11-11'), fc, True) is None
+    assert G.results_guard(day('2026-12-02'), fc, False) is not None
+    # The real claims pass today and hold the release from the first due date.
+    real = json.loads((ws / 'forecast/out/forecasts.json').read_text())
+    assert G.results_guard(datetime.date(2026, 10, 15), real, False) is None
+    first = min(it['check_by'] for it in real['items'] if it.get('check_by'))
+    assert G.results_guard(day(first), real, False) is not None
+    assert G.flag_guard(['TAG', '--root', '--results-current']) is None
+    assert 'unknown flag --results-curent' in G.flag_guard(['TAG', '--results-curent'])
 
 @ok('the release guard holds a release when the risk log has gone more than 31 days without review')
 def _():
@@ -60,17 +60,23 @@ def _():
     assert G.review_guard(datetime.date(2026, 11, 15), text) is None
     assert 'RISKS.md' in G.review_guard(datetime.date(2026, 11, 16), text)
     assert 'RISKS.md' in G.review_guard(datetime.date(2026, 10, 15), 'no date here')
+    assert 'impossible' in G.review_guard(datetime.date(2026, 12, 15), 'Reviewed on 31 November 2026.')
+    assert 'future' in G.review_guard(datetime.date(2026, 10, 15), 'Reviewed on 16 October 2026.')
+    assert 'one' in G.review_guard(datetime.date(2026, 10, 15), text + ' ' + text)
     assert G.review_guard(datetime.date(2026, 10, 15), (gb / 'RISKS.md').read_text()) is None
 
-@ok('no file in game-build carries a token, a private key or a password')
+@ok('no text file in game-build, .github or frontpage carries a token, a private key or a password')
 def _():
-    SECRET = re.compile(r'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-(ant-)?[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{35}|xox[abpr]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|(password|passwd|api[_-]?key|secret)\s*[=:]\s*["\'][^"\'\s]{6,}')
+    SECRET = re.compile(r'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-(ant-)?[A-Za-z0-9_-]{20,}|AKIA[0-9A-Z]{16}|AIza[0-9A-Za-z_-]{35}|xox[abpr]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|\b(password|passwd|api[_-]?key|secret[_-]?key|access[_-]?token|auth[_-]?token)\s*(=\s*["\']?|:\s*["\'])(?![\w.-]*\()[^"\'\s<>$()]{6,}', re.I)
     found = []
-    for p in gb.rglob('*'):
-        if not p.is_file() or p.suffix in {'.zip', '.png', '.jpg', '.webp', '.ico'} or 'node_modules' in p.parts or '__pycache__' in p.parts or 'pkg' in p.parts: continue
+    # The parts of the repository this project ships or runs. Other folders belong to other work.
+    repo = gb.parent
+    for p in [x for top in ['game-build', '.github', 'frontpage'] for x in (repo / top).rglob('*')]:
+        rel = p.relative_to(repo).parts
+        if not p.is_file() or p.suffix in {'.zip', '.png', '.jpg', '.webp', '.ico', '.pdf'} or rel[0] == '.git' or 'node_modules' in rel or '__pycache__' in rel: continue
         try: text = p.read_text(encoding='utf-8')
         except (UnicodeDecodeError, OSError): continue
-        found += [f'{p.relative_to(gb)}: {m.group(0)[:12]}...' for m in SECRET.finditer(text)]
+        found += [f'{p.relative_to(repo)}: {m.group(0)[:12]}...' for m in SECRET.finditer(text)]
     assert found == [], found
 
 @ok('RISKS.md numbers its risks and issues with no gap, uses the agreed levels and names checks that run')

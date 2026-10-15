@@ -71,7 +71,7 @@ Done: multi-faction engine, result codes and replay, the 2026 build to W019, for
 
 ## Open items
 
-RISKS.md carries these as issues I1 to I7, with who acts next.
+RISKS.md carries open items 1 to 5 as issues I1 to I6, with who acts next. It also logs further issues.
 
 1. **Two party mentions.** Base game F032 and 2026 operation W011 name a Taiwanese party. RULES.md lists both as exceptions to R5 until the owner decides.
 2. **Forecast claim R6.** This R6 is a forecast claim and not rule R6. The forecast page leaves it out because it names a Taiwanese party. The owner has not said whether to include it.
@@ -88,7 +88,7 @@ The owner asked for the process and the player experience to move up one maturit
 1. Done on 15 October (CHANGELOG_2026-10-15e.md). `.github/workflows/tdw-checks.yml` runs `run_checks.sh` on every push, and the browser checks on request. The bundle is built from `src/` by `build.py`.
 2. Done on 15 October (CHANGELOG_2026-10-15f.md). STANDARDS.md and `templates/`. `release.py` refuses a release without a changelog that passes the lint.
 3. Done on 15 October (CHANGELOG_2026-10-15g.md). RULES.md numbers the standing rules and names the check for each. `test/rules.test.js` tests eleven of them.
-4. Done on 15 October (CHANGELOG_2026-10-15h.md). RISKS.md logs twelve risks and nine issues. BACKUP.md sets what is kept, where, and how to restore it. `release.py` refuses a release when the log is stale or when a due forecast result may be lost.
+4. Done on 15 October (CHANGELOG_2026-10-15h.md). RISKS.md logs twelve risks and ten issues. BACKUP.md sets what is kept, where, and how to restore it. `release.py` refuses a release when the log is stale or when a due forecast result may be lost.
 5. An independent reviewer verifies sources. The owner must supply that person.
 
 **Player experience, Level 2 to 3**
