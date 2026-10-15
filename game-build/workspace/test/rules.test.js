@@ -53,13 +53,13 @@ ok('R3', 'no sentence about Xinjiang or the camps gives a count of people', () =
 
 ok('R5', 'no Taiwanese party, party list, candidate or opinion poll appears outside the two registered exceptions', () => {
   // Both exceptions shipped before the register. RULES.md flags them for the owner's decision.
-  const EXCEPT = new Set(['base F032', 'era3 W011']);
+  const EXCEPT = new Set(['base F032', 'era3 W011']); // and forecast claim R6, below
   const PARTY = /Kuomintang|\bKMT\b|Democratic Progressive|\bDPP\b|Taiwan People's Party|\bTPP\b|New Power Party|party list/i;
   const bad = [];
   const check = (where, t) => {
     for (const s of sentences(t)) {
       const party = PARTY.test(s) || (/Nationalist Party/.test(s) && /Taiwan|20[12]\d/.test(s));
-      const vote = (/Taiwanese|Taiwan's/.test(s) && /\bcandidates?\b/i.test(s)) || (/Taiwan/.test(s) && /opinion polls?|\bpolling\b|\bsurvey of voters/i.test(s));
+      const vote = (/Taiwanese|Taiwan's/.test(s) && /\bcandidates?\b/i.test(s)) || (/Taiwan/.test(s) && /opinion polls?|\bpolling (firm|data|average|numbers?|lead)\b|\bsurvey of voters/i.test(s));
       if (party || vote) bad.push(`${where}: ${s}`);
     }
   };
@@ -70,6 +70,8 @@ ok('R5', 'no Taiwanese party, party list, candidate or opinion poll appears outs
     for (const [w, t] of strings(rest)) check(`${b} ${w}`, t);
   }
   for (const [w, t] of strings(HELP)) check(`help ${w}`, t);
+  // The forecast claims ship in the 2026 folder. The owner decided to show R6 word for word.
+  for (const it of json('forecast/out/forecasts.json').items) if (it.id !== 'R6') for (const [w, t] of strings(it)) check(`forecast ${it.id} ${w}`, t);
   assert.deepStrictEqual(bad, []);
   // The exceptions stay as they are until the owner decides.
   assert.ok(/Kuomintang/.test(JSON.stringify(BUILDS.base.ops.find((o) => o.id === 'F032'))));

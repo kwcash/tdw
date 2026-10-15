@@ -8,6 +8,7 @@ r=$(python3 build.py --check | tail -1); echo "$r"; case "$r" in *match*) ;; *) 
 for t in record.test record-legacy.test holdings.test forecast.test reach.test tier7.test guide.test difficulty.test glossary.test progress.test rules.test; do
   r=$(node test/$t.js 2>&1 | tail -1); echo "$t: $r"; case "$r" in OK*) ;; *) fail=1;; esac
 done
+r=$(python3 test/review.py 2>&1 | tail -1); echo "review: $r"; case "$r" in OK*) ;; *) fail=1;; esac
 r=$(python3 test/backup.py 2>&1 | tail -1); echo "backup: $r"; case "$r" in OK*) ;; *) fail=1;; esac
 r=$(node test/replay-all.js baselines/codes.all.before.json | tail -1); echo "replay-all: $r"; case "$r" in all\ 320*) ;; *) fail=1;; esac
 r=$(node test/freeze.js content/era3.before7.json content/era3.json | tail -1); echo "freeze: $r"; case "$r" in freeze\ ok*) ;; *) fail=1;; esac

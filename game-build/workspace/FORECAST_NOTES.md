@@ -14,17 +14,17 @@ The claims come from `T1 records/prediction_ledger.csv` in the collaboration pac
 
 ## What is in and what is left out
 
-49 claims are in. The first due date is 11 November 2026 (TC1), and the last is 1 January 2030. 18 ledger entries are left out.
+50 claims are in. The first due date is 11 November 2026 (TC1), and the last is 1 January 2030. 17 ledger entries are left out.
 
 | Left out | Why |
 |---|---|
-| R6, TS2, TS4, TS7 | Each names a Taiwanese party, an election result or an opinion poll. The game takes no side between Taiwan's parties and carries no polls. |
+| TS2, TS4, TS7 | Each names a Taiwanese party, an election result or an opinion poll. The game takes no side between Taiwan's parties and carries no polls. |
 | FW1, FW2, RW-P1, RW-P2 | Each concerns a disease event. The game covers biology as governance only. |
 | IR4 | It turns on one named person staying alive and in office during a war. |
 | C11-F2 | It asks for a judgment about the model, not an event. |
 | The eight phase reviews | They make no probability claim. |
 
-**This changes the date you expected.** The first due date in the ledger is R6 on 29 November, and R6 is left out under the standing rule above. The first claim in the game is TC1 on 11 November. If you want R6 in, say so and say how the rule should read. The ledger text names a party, so the game would have to show it unchanged or not at all.
+**Claim R6 is the one exception.** It names the Kuomintang and a local election result. On 15 October 2026 the owner decided to show it word for word, because the registered text cannot change. The game shows it as the book's forecast and takes no side. It falls due on 29 November, after TC1 on 11 November. RULES.md logs the exception.
 
 ## The score
 

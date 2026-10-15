@@ -27,10 +27,16 @@ ok('ids are unique, dates are valid and probabilities are strictly between 0 and
 ok('nothing registered after 12 October 2026 and nothing that is a phase review', () => {
   for (const it of D.items) { assert.ok(it.registered_utc < '2026-10-13', it.id); assert.ok(!/^P-C/.test(it.id)); }
 });
-ok('the standing rules hold, no Taiwanese party, poll or candidate and no disease event', () => {
+ok('the standing rules hold, no Taiwanese party, poll or candidate and no disease event, with R6 as the owner\'s one exception', () => {
   const bad = /KMT|DPP|TPP|Kuomintang|Progressive Party|Taiwanese only|opinion poll|plague|laborator|anti-plague|Irkutsk/i;
-  for (const it of D.items) assert.ok(!bad.test(JSON.stringify(it)), it.id);
-  for (const id of ['R6', 'TS2', 'TS4', 'TS7', 'FW1', 'FW2', 'RW-P1', 'RW-P2', 'IR4', 'C11-F2']) assert.ok(!D.items.some((x) => x.id === id), id);
+  for (const it of D.items) if (it.id !== 'R6') assert.ok(!bad.test(JSON.stringify(it)), it.id);
+  for (const id of ['TS2', 'TS4', 'TS7', 'FW1', 'FW2', 'RW-P1', 'RW-P2', 'IR4', 'C11-F2']) assert.ok(!D.items.some((x) => x.id === id), id);
+  // The owner decided on 15 October 2026 to show R6 word for word. RULES.md logs it as an exception to R5.
+  const r6 = D.items.find((x) => x.id === 'R6');
+  assert.ok(r6, 'R6 is in');
+  assert.strictEqual(r6.text, 'KMT wins the most of the 22 mayor/county-magistrate posts in Taiwan local elections of 28 Nov 2026');
+  assert.strictEqual(r6.check_by, '2026-11-29'); assert.strictEqual(r6.book_p, 0.8); assert.strictEqual(r6.reference_p, 0.75);
+  assert.strictEqual(r6.registered_utc, '2026-09-29T16:41:25Z');
 });
 ok('claims that carry counting rules in the registered records show them', () => {
   for (const id of ['TC1', 'TC2', 'TS8', 'TS9', 'TS10', 'RCH1', 'BR1', 'BR2', 'BR3', 'BL-RU1', 'BL-RU2', 'BL-RU3', 'BL-IR1', 'BL-IR2', 'BL-IR3']) { const it = D.items.find((x) => x.id === id); assert.ok(it && it.rules && it.rules_from, id); }
@@ -41,6 +47,6 @@ ok('the shipped results file is well formed and has no result for a claim that d
 });
 ok('the content block names both files and the claim count', () => {
   const C = require('../content/era3.json');
-  assert.strictEqual(C.forecast.count, D.items.length); assert.ok(/^assets\/forecasts\.json/.test(C.forecast.data)); assert.strictEqual(C.forecast.results, 'assets/forecast-results.json');
+  assert.strictEqual(C.forecast.count, D.items.length); assert.strictEqual(C.forecast.data, 'assets/forecasts.json?v=2', 'the cache key moved when R6 came in'); assert.strictEqual(C.forecast.results, 'assets/forecast-results.json');
 });
 console.log(`OK: ${n} forecast data tests passed (${D.items.length} claims, first due ${D.items[0].check_by})`);

@@ -142,7 +142,7 @@ The "Next 120 days" panel lists public events only. It hides an entry once its d
 - No figure beyond those listed above. I did not add any Xinjiang figure, any production comparison or any other statistic.
 - A company or person named in a designation or an indictment stays out of the text. The text says "firms" and "a mainland contractor". An attribution by a prosecutor is called an allegation.
 - Biology: no technical content. The op records governance and disclosure only.
-- No Taiwanese candidate is named and no candidate list. The game takes no side between Taiwan's parties. It shows no poll and no prediction of who wins. The text says "the opposition" and uses offices.
+- No Taiwanese candidate is named and no candidate list. The game takes no side between Taiwan's parties. It shows no poll. No operation predicts who wins. The Forecast page carries the book's claim R6 on the local elections word for word, as the owner decided on 15 October 2026. The text says "the opposition" and uses offices.
 - Nothing after 12 October 2026 is record. The vote and the December window appear only as a scenario or as a scheduled date.
 - The book's prediction ledger text appears only on the Forecast page, unchanged and with its time stamp, under the author's written permission. It does not appear in any operation. Evidence cards EV-001 to EV-032 appear on the board of W017, W018 and W019 and in their reports.
 - Left out on purpose: scenario CW-3 of the playbook (a leader's family member taken hostage), because it names a private individual. Also left out: the E-10 trade figures marked unverified, the 25-year Iran deal figure the playbook marks "do not use", and all of the playbook's predictions.

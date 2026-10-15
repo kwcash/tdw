@@ -84,8 +84,10 @@ ok('the shim hands the shares to the operations list, the briefing, the arcs and
 ok('adding the table changed no operation, arc, daily pool or registry', () => {
   const allowed = ['guides', 'difficulty'];
   for (const [b, before] of [['era1', 'content/era1.before9.json'], ['era3', 'content/era3.before9.json']]) {
-    const now = read(BUILDS[b]); for (const k of allowed) delete now[k];
-    assert.deepStrictEqual(now, read(before), b);
+    const now = read(BUILDS[b]); for (const k of allowed) delete now[k]; const was = read(before);
+    // Forecast claim R6 came in on 15 October, which moved the claim count and the cache key and nothing else.
+    if (now.forecast) now.forecast = { ...now.forecast, data: was.forecast.data, count: was.forecast.count };
+    assert.deepStrictEqual(now, was, b);
   }
   const shipped = read('content/era3.shipped-1014.json'); const C3 = read(BUILDS.era3);
   for (const id of ['W017', 'W018']) assert.strictEqual(JSON.stringify(C3.ops.find((o) => o.id === id)), JSON.stringify(shipped.ops.find((o) => o.id === id)), id);

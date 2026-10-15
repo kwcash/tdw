@@ -60,5 +60,5 @@ The script was run on a copy of the content with a dummy outcome, and the copy w
 
 ## Still open and linked to this step
 
-- **R6.** The forecast page leaves R6 out, so the 28 November vote has no forecast claim in the game. Settling W013 does not change that.
+- **R6.** The forecast page carries claim R6 on the same vote, by the owner's decision of 15 October 2026. Its result goes in at the desk as the scoring log records it, apart from settling W013.
 - **W014.** The Special Budget is not a watch and needs no settling.

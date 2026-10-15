@@ -7,7 +7,8 @@ ledger, out = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2])
 
 # Rows the game does not carry, with the reason. The registered ledger itself is not changed.
 EXCLUDED = {
-    'R6': 'names a Taiwanese party and a local election result', 'TS2': 'names a Taiwanese party and a presidential election result',
+    # R6 names a Taiwanese party. The owner decided on 15 October 2026 to show it word for word, as an exception to rule R5.
+    'TS2': 'names a Taiwanese party and a presidential election result',
     'TS4': 'rests on a Taiwanese opinion poll', 'TS7': 'conditional on a Taiwanese party winning', 'C11-F2': 'a judgment about the model, not an event',
     'FW1': 'a disease event; the game covers biology as governance only', 'FW2': 'a disease event; the game covers biology as governance only',
     'RW-P1': 'a disease event; the game covers biology as governance only', 'RW-P2': 'a disease event; the game covers biology as governance only',

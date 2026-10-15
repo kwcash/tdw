@@ -3875,9 +3875,9 @@
  },
  "dailyEpoch": "2026-09-30",
  "forecast": {
-  "data": "assets/forecasts.json?v=1",
+  "data": "assets/forecasts.json?v=2",
   "results": "assets/forecast-results.json",
-  "count": 49,
+  "count": 50,
   "credit": "The claims, the probabilities and the reference answers come from the prediction ledger of the Architecture of Strategy by Lynceus (a pen name), used with the author's written permission."
  },
  "guides": [

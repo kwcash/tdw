@@ -18,6 +18,19 @@
    "rules_from": "T1 records/Rev30_technology_T1_record.md"
   },
   {
+   "id": "R6",
+   "type": "risky",
+   "chapter": "Ch13 Part B",
+   "text": "KMT wins the most of the 22 mayor/county-magistrate posts in Taiwan local elections of 28 Nov 2026",
+   "registered_utc": "2026-09-29T16:41:25Z",
+   "check_by": "2026-11-29",
+   "book_p": 0.8,
+   "book_utc": "2026-10-05T01:41:21Z",
+   "reference_p": 0.75,
+   "reference_source": "prior series: the KMT took 13 of 22 posts in the 2022 local elections‡, and local elections have favoured the opposition party",
+   "sha256": "d609ea73088b2cccc7f9edb5ec8d3d3ccd0454c1b78da3638e6a78500ed61e0b"
+  },
+  {
    "id": "BL-TS3",
    "type": "baseline",
    "chapter": "Ch12 (six-check trial)",
