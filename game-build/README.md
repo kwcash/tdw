@@ -1,3 +1,5 @@
+**New session? Read `HANDOFF.md` first.** The working tree is in `workspace/`, and `workspace/run_checks.sh` runs every check.
+
 # Game build sources
 
 What is here, so a reset of the working machine does not cost the game again.

@@ -1,0 +1,58 @@
+{
+ "W001": {
+  "handScale": 0.88,
+  "consumeAdj": 0
+ },
+ "W002": {
+  "handScale": 0.95,
+  "consumeAdj": 0
+ },
+ "W003": {
+  "handScale": 0.76,
+  "consumeAdj": 0
+ },
+ "W004": {
+  "handScale": 0.7,
+  "consumeAdj": 0
+ },
+ "W005": {
+  "handScale": 0.73,
+  "consumeAdj": 0
+ },
+ "W006": {
+  "handScale": 0.76,
+  "consumeAdj": 0
+ },
+ "W007": {
+  "handScale": 0.79,
+  "consumeAdj": 0
+ },
+ "W008": {
+  "handScale": 0.83,
+  "consumeAdj": 0
+ },
+ "W009": {
+  "handScale": 1.01,
+  "consumeAdj": 0
+ },
+ "W010": {
+  "handScale": 0.87,
+  "consumeAdj": 0
+ },
+ "W011": {
+  "handScale": 0.92,
+  "consumeAdj": 0
+ },
+ "W012": {
+  "handScale": 0.8,
+  "consumeAdj": 0
+ },
+ "W013": {
+  "handScale": 0.81,
+  "consumeAdj": 0
+ },
+ "W014": {
+  "handScale": 1.07,
+  "consumeAdj": 0
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "W002": {
+  "code": "TDW1~W002~2~freeze1~-~-~free~-~g6allied_coast_guards.f0.f4.f5.e.f6.f1.f3.e.d5.d8.f0.e.d10.f6.f0.e.d13.f0.f5.f6.f7.e.d16.d19.x21.f4.e.d23.x23.f4.f0.e.a25.f4.X0.f5.f6.fa.f8.fb.e~g70d2g",
+  "ok": true,
+  "outcome": "win",
+  "score": 1720,
+  "turns": 8,
+  "assigns": 1
+ },
+ "W005": {
+  "code": "TDW1~W005~3~freeze1~-~-~free~-~g0legal_advisers.f3.f5.e.d2.f5.f0.e.d4.f5.X5.e.d6.o4.f4.e.d7.d8.o6.e.d9.d12.f4.f6.e.a16.d14.d15.x14.x15.e.a18.f5.f6.f3.X5.o8.e~1vb2vn1",
+  "ok": true,
+  "outcome": "win",
+  "score": 1545,
+  "turns": 8,
+  "assigns": 1
+ },
+ "W011": {
+  "code": "TDW1~W011~6~freeze1~-~-~free~-~g0summit_team.d2.d4.f6.e.f5.f6.f8.e.d12.x10.x12.f6.e.d13.d14.d15.d16.d18.f6.e.d22.f3.f4.f0.f5.f6.e~p8oou5",
+  "ok": true,
+  "outcome": "loss",
+  "score": 320,
+  "turns": 5,
+  "assigns": 1
+ }
+}

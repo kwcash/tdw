@@ -1,0 +1,1753 @@
+{
+ "schema": 2,
+ "storageKey": "tdw-1931-1",
+ "era": "china-1931",
+ "ruleset": {
+  "legitimacy": true
+ },
+ "copy": {
+  "hero": "Every operation comes from the record of the long war in China, from the Mukden Incident in 1931 to the gold yuan in 1948.",
+  "arcsLabel": "1931 to 1948",
+  "arcsTitle": "Two campaign arcs",
+  "arcsText": "The war with Imperial Japan and the war between the Nationalists and the Party, played as a contest among three.",
+  "opsNote": "Eleven operations from the historical record. Tier sets the difficulty.",
+  "arcsNote": "Two arcs. Each runs forward from 1931, one operation at a time. Win an operation to open the next."
+ },
+ "tutorial": "C001",
+ "daily": [
+  "E001",
+  "E002",
+  "E003",
+  "E004",
+  "E005",
+  "E006",
+  "E007",
+  "E008",
+  "E009",
+  "E010"
+ ],
+ "factions": {
+  "KMT": {
+   "id": "KMT",
+   "name": "The Nationalist government",
+   "short": "KMT",
+   "control": "player",
+   "legitimacy": 55,
+   "blurb": "Holds the cities, the ports and the customs revenue. Pays for the war by printing money.",
+   "start": {
+    "shields": {
+     "Economic": 2,
+     "Financial": 2
+    }
+   },
+   "focus": [
+    "Economic",
+    "Financial",
+    "Kinetic"
+   ],
+   "traits": {
+    "slopeProne": [
+     "Financial",
+     "Economic"
+    ],
+    "runaway": {
+     "domains": [
+      "Financial",
+      "Economic"
+     ],
+     "every": 2
+    },
+    "corruption": {
+     "domains": [
+      "Economic",
+      "Financial",
+      "Legal"
+     ],
+     "every": 2
+    }
+   }
+  },
+  "CCP": {
+   "id": "CCP",
+   "name": "The Chinese Communist Party",
+   "short": "CCP",
+   "legitimacy": 45,
+   "blurb": "Poor in industry and rich in organization. Recruits the people and institutions its enemy relies on.",
+   "start": {
+    "shields": {
+     "Psychological": 3,
+     "Association": 3
+    }
+   },
+   "focus": [
+    "Psychological",
+    "Association",
+    "Information"
+   ],
+   "power": {
+    "Psychological": 1,
+    "Association": 1
+   },
+   "affinity": {
+    "S3": 4,
+    "S30": 4,
+    "S10": 2
+   },
+   "signature": [
+    "S3",
+    "S30",
+    "S10",
+    "S29"
+   ],
+   "hostility": {
+    "KMT": 3,
+    "Imperial_Japan": 1
+   }
+  },
+  "Imperial_Japan": {
+   "id": "Imperial_Japan",
+   "name": "Imperial Japan",
+   "short": "JPN",
+   "legitimacy": 40,
+   "blurb": "Industrial and military power in a hurry. Wins quickly and cannot finish.",
+   "start": {
+    "shields": {
+     "Kinetic": 3,
+     "Economic": 3
+    }
+   },
+   "focus": [
+    "Kinetic",
+    "Economic"
+   ],
+   "power": {
+    "Kinetic": 1,
+    "Economic": 1
+   },
+   "affinity": {
+    "S2": 3,
+    "S24": 4,
+    "S7": 3,
+    "S5": 3,
+    "S1": 2
+   },
+   "signature": [
+    "S2",
+    "S24",
+    "S7",
+    "S5"
+   ],
+   "hostility": {
+    "KMT": 3,
+    "CCP": 2
+   }
+  }
+ },
+ "cadres": {
+  "chiang": {
+   "id": "chiang",
+   "name": "Chiang Kai-shek",
+   "role": "Generalissimo",
+   "faction": "KMT",
+   "domain": "Kinetic",
+   "mods": {
+    "shield": 1
+   },
+   "blurb": "One man holds the command together."
+  },
+  "zhang_xueliang": {
+   "id": "zhang_xueliang",
+   "name": "Zhang Xueliang",
+   "role": "Northeastern commander",
+   "faction": "KMT",
+   "domain": "Kinetic",
+   "mods": {
+    "ap": {
+     "delta": 1,
+     "when": 1
+    }
+   },
+   "blurb": "Commands the army that lost Manchuria and wants it back."
+  },
+  "dai_li": {
+   "id": "dai_li",
+   "name": "Dai Li",
+   "role": "Intelligence chief",
+   "faction": "KMT",
+   "domain": "Association",
+   "mods": {
+    "disrupt": {
+     "delta": -1,
+     "codes": [
+      "S3",
+      "S30"
+     ]
+    },
+    "legitimacy": -1
+   },
+   "blurb": "Counters subversion at a cost to the government's name."
+  },
+  "ching_kuo": {
+   "id": "ching_kuo",
+   "name": "Chiang Ching-kuo",
+   "role": "Economic control commissioner",
+   "faction": "KMT",
+   "domain": "Financial",
+   "mods": {
+    "shield": 1,
+    "legitimacy": -2,
+    "self": "predation on own base"
+   },
+   "blurb": "Enforces the price freeze by arrest and seizure."
+  },
+  "mao": {
+   "id": "mao",
+   "name": "Mao Zedong",
+   "role": "Party chairman",
+   "faction": "CCP",
+   "domain": "Psychological",
+   "mods": {
+    "cardPower": {
+     "delta": 1,
+     "codes": [
+      "S30",
+      "S10"
+     ]
+    }
+   },
+   "blurb": "Builds the Party's argument and its army together."
+  },
+  "zhou_enlai": {
+   "id": "zhou_enlai",
+   "name": "Zhou Enlai",
+   "role": "United front negotiator",
+   "faction": "CCP",
+   "domain": "Association",
+   "mods": {
+    "disrupt": {
+     "delta": 1,
+     "groups": [
+      "Control",
+      "Confusion"
+     ]
+    },
+    "legitimacy": 1
+   },
+   "blurb": "The Party's chief negotiator."
+  },
+  "lin_biao": {
+   "id": "lin_biao",
+   "name": "Lin Biao",
+   "role": "Northeast commander",
+   "faction": "CCP",
+   "domain": "Kinetic",
+   "mods": {
+    "cardPower": {
+     "delta": 1
+    }
+   },
+   "blurb": "Takes the cities the Soviet army leaves."
+  },
+  "soviet_command": {
+   "id": "soviet_command",
+   "name": "The Soviet occupation command",
+   "role": "External patron",
+   "faction": "CCP",
+   "domain": "Economic",
+   "mods": {
+    "disrupt": {
+     "delta": 1
+    }
+   },
+   "blurb": "Controls access to the Manchurian ports and railways."
+  },
+  "observer_group": {
+   "id": "observer_group",
+   "name": "The US Army Observation Group",
+   "role": "External witness",
+   "faction": "CCP",
+   "domain": "Information",
+   "mods": {
+    "legitimacy": 2
+   },
+   "blurb": "Reports what its host shows it."
+  },
+  "kwantung_staff": {
+   "id": "kwantung_staff",
+   "name": "The Kwantung Army staff",
+   "role": "Field command",
+   "faction": "Imperial_Japan",
+   "domain": "Kinetic",
+   "mods": {
+    "cardPower": {
+     "delta": 1
+    },
+    "legitimacy": -1,
+    "self": "breach of own legitimating rule"
+   },
+   "blurb": "Acts without waiting for Tokyo."
+  },
+  "wang_jingwei": {
+   "id": "wang_jingwei",
+   "name": "Wang Jingwei",
+   "role": "Collaborationist president",
+   "faction": "Imperial_Japan",
+   "domain": "Legal",
+   "mods": {
+    "disrupt": {
+     "delta": 1,
+     "codes": [
+      "S3",
+      "S14"
+     ]
+    }
+   },
+   "blurb": "Lends a Nationalist name to an occupation government."
+  }
+ },
+ "pacts": {
+  "united_front": {
+   "id": "united_front",
+   "name": "The united front",
+   "members": [
+    "KMT",
+    "CCP"
+   ],
+   "against": "Imperial_Japan",
+   "truce": true,
+   "formWhen": {
+    "leverage": {
+     "faction": "Imperial_Japan",
+     "gte": 4
+    }
+   },
+   "breakWhen": {
+    "leverage": {
+     "faction": "Imperial_Japan",
+     "lt": 3
+    }
+   },
+   "perTurn": [
+    {
+     "type": "legitimacy",
+     "faction": "CCP",
+     "n": 2
+    },
+    {
+     "type": "slope",
+     "faction": "KMT",
+     "domain": "Association",
+     "n": 1,
+     "by": "CCP",
+     "every": 2
+    }
+   ],
+   "onBreak": [
+    {
+     "type": "legitimacy",
+     "faction": "KMT",
+     "n": -5
+    },
+    {
+     "type": "legitimacy",
+     "faction": "CCP",
+     "n": 3
+    },
+    {
+     "type": "tempo",
+     "faction": "CCP",
+     "n": 1
+    }
+   ],
+   "formText": "The Nationalists and the Party stop fighting each other and face Imperial Japan. The Party gains standing as the patriotic force.",
+   "breakText": "The united front breaks. The Party has grown inside it, and the Nationalists have paid for the break."
+  },
+  "marshall_truce": {
+   "id": "marshall_truce",
+   "name": "The Marshall truce",
+   "members": [
+    "KMT",
+    "CCP"
+   ],
+   "truce": true,
+   "active": true,
+   "breakWhen": {
+    "turn": 4
+   },
+   "perTurn": [
+    {
+     "type": "legitimacy",
+     "faction": "KMT",
+     "n": 1,
+     "every": 2
+    }
+   ],
+   "onBreak": [
+    {
+     "type": "tempo",
+     "faction": "CCP",
+     "n": 1
+    },
+    {
+     "type": "legitimacy",
+     "faction": "KMT",
+     "n": -3
+    }
+   ],
+   "breakText": "The truce fails. The Party used the pause to build its forces in the northeast."
+  }
+ },
+ "ops": [
+  {
+   "id": "C001",
+   "kind": "catalog",
+   "num": 1,
+   "title": "The Gate at Canton",
+   "fullTitle": "The Gate at Canton (1784)",
+   "tier": 1,
+   "dimension": "Topology",
+   "stage": "Defense",
+   "stratagems": [
+    "S22"
+   ],
+   "theater": [
+    "Economic",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Economic",
+   "opponent": "The opium traders",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     1784,
+     null
+    ],
+    "end": [
+     1784,
+     null
+    ]
+   },
+   "label": "1784",
+   "brief": "In August 1784 Samuel Shaw, supercargo of the Empress of China, anchored at Whampoa and learned the terms of the only gate the Qing court kept open to the West.",
+   "record": "The Qing court confined Western trade to Canton from 1757. Every foreign ship needed a licensed hong merchant to stand surety for its conduct and its duties, and foreigners lived in a strip of factories outside the city walls for the trading season. The Empress of China had sailed from New York in February 1784 and traded ginseng for tea and silk under those rules.",
+   "reading": "The security merchant made one licensed person answer for every guest, a gate built on verification rather than trust. The gate held until opium moved outside it and the gatekeepers took a cut, which is where most later gates have failed.",
+   "gap": "Business",
+   "gapText": "Business Architecture. The gatekeepers earned from the traffic their office existed to stop.",
+   "fix": "Verify every request at the gate and audit the gatekeeper's income, the discipline zero trust now names.",
+   "hidden": true
+  },
+  {
+   "kind": "catalog",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S7",
+    "S24"
+   ],
+   "theater": [
+    "Kinetic",
+    "Legal",
+    "Information"
+   ],
+   "id": "E001",
+   "num": 1,
+   "title": "The Mukden Incident",
+   "fullTitle": "The Mukden Incident (1931)",
+   "tier": 1,
+   "dimension": "Asymmetry",
+   "stage": "Control",
+   "spine": "Kinetic",
+   "opponent": "Imperial Japan and the Party",
+   "when": {
+    "start": [
+     1931,
+     9
+    ],
+    "end": [
+     1932,
+     3
+    ]
+   },
+   "label": "September 1931 to March 1932",
+   "brief": "On the night of September 18, 1931 a charge damaged a stretch of the South Manchuria Railway outside Mukden. By morning the Kwantung Army had blamed the Nationalist garrison and taken the city.",
+   "record": "A small explosion damaged the South Manchuria Railway near Mukden on September 18, 1931. A train passed over the spot soon after. Officers of the Kwantung Army, which guarded the line, blamed Nationalist troops and took Mukden that night. Historians have established that Kwantung Army officers staged the explosion, and Tokyo had not approved the plan. The Army held most of Manchuria within five months and set up the state of Manchukuo in March 1932. Orders reached the Northeastern Army not to resist, and the debate over who gave them has not ended. The League of Nations sent the Lytton Commission, which reported in October 1932 that Japan's claim of self-defense did not hold.",
+   "reading": "Imperial Japan's field officers invented a pretext and took the ground it opened. This is Stratagem 7, create something from nothing. Tokyo accepted a result it had not ordered. The Nationalist government appealed to the League and put the fight with the Party first, and the Party gained the patriotic argument the Nationalists gave up.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. A field command could start a war that its own capital had not approved.",
+   "fix": "Decide in peacetime who may order a response to an incident, because a pretext works best against a command that must wait for permission.",
+   "factions": [
+    "KMT",
+    "Imperial_Japan",
+    {
+     "id": "CCP",
+     "handShare": 0.34
+    }
+   ],
+   "player": "KMT",
+   "cadres": [
+    "kwantung_staff"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 1,
+     "text": "Orders not to resist reach the Northeastern Army, and Mukden falls.",
+     "effects": [
+      {
+       "type": "dropShields",
+       "faction": "KMT",
+       "domain": "Kinetic"
+      },
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 1,
+       "by": "Imperial_Japan"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -3
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.35
+   }
+  },
+  {
+   "id": "E002",
+   "kind": "catalog",
+   "num": 2,
+   "title": "Red Star Over China",
+   "fullTitle": "Red Star Over China (1936)",
+   "tier": 2,
+   "dimension": "Resonance",
+   "stage": "Attract",
+   "stratagems": [
+    "S10",
+    "S29"
+   ],
+   "theater": [
+    "Information",
+    "Psychological",
+    "Association"
+   ],
+   "spine": "Information",
+   "opponent": "The Party and Imperial Japan",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "when": {
+    "start": [
+     1936,
+     null
+    ],
+    "end": [
+     1936,
+     null
+    ]
+   },
+   "label": "1936",
+   "brief": "In July 1936 Edgar Snow sat with Mao Zedong in a cave at Bao'an and wrote down the life story that Mao chose to tell him.",
+   "record": "The Party arranged Snow's passage into its base in the summer of 1936, and he stayed about four months. Red Star Over China appeared in London in 1937 and in New York in January 1938, and a Chinese translation drew young volunteers to Yan'an. The book set the Western picture of the Party for a decade.",
+   "reading": "One curated visit wrote the adversary's first Western profile, and the host chose every interview. The Party still grants access to the visitors it expects to carry its picture home.",
+   "gap": "Data",
+   "gapText": "Data Architecture. The defenders held one source on the Party's base and no means to test it.",
+   "fix": "Treat any access an adversary grants as a curated feed, and test it against sources the adversary does not control.",
+   "factions": [
+    "KMT",
+    "CCP",
+    {
+     "id": "Imperial_Japan",
+     "handShare": 0.34
+    }
+   ],
+   "player": "KMT",
+   "cadres": [
+    "mao",
+    "zhou_enlai"
+   ],
+   "pacts": [],
+   "rules": {
+    "handScale": 1.48
+   }
+  },
+  {
+   "kind": "catalog",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S18",
+    "S33",
+    "S30"
+   ],
+   "theater": [
+    "Kinetic",
+    "Association",
+    "Psychological"
+   ],
+   "id": "E003",
+   "num": 3,
+   "title": "The Xi'an Incident",
+   "fullTitle": "The Xi'an Incident (1936)",
+   "tier": 2,
+   "dimension": "Coherence",
+   "stage": "Accommodate",
+   "spine": "Association",
+   "opponent": "The Party and Imperial Japan",
+   "when": {
+    "start": [
+     1936,
+     12
+    ],
+    "end": [
+     1937,
+     9
+    ]
+   },
+   "label": "December 1936 to September 1937",
+   "brief": "On December 12, 1936 troops loyal to Zhang Xueliang surrounded Chiang Kai-shek's quarters outside Xi'an before dawn. The generalissimo had come to press the campaign against the Party, and the Party's army sat a few days' march to the north.",
+   "record": "Zhang Xueliang and Yang Hucheng detained Chiang Kai-shek at Xi'an on December 12, 1936. Both were Nationalist commanders, and they demanded an end to the civil war and a united resistance to Japan. Zhou Enlai flew to Xi'an for the Party, and Chiang flew back to Nanjing on December 25 without signing a written agreement. Zhang went with him and spent decades under house arrest. The Party and the Nationalists announced a second united front in September 1937, after fighting broke out at the Marco Polo Bridge in July.",
+   "reading": "The Party did not plan the detention, and Moscow pressed for Chiang's release. The Party still gained the most from it. Imperial Japan's hold on the northeast broke the Nationalists' command from inside, and the Party offered the way out. This is Stratagem 18, capture the ringleader to disband the bandits, run by one of Chiang's own generals and cashed in by the Party.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. The command rested on one man, and one detention broke it.",
+   "fix": "Give a command more than one head, and write the line of succession before a crisis tests it.",
+   "factions": [
+    "KMT",
+    "CCP",
+    "Imperial_Japan"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "chiang",
+    "zhang_xueliang",
+    "zhou_enlai"
+   ],
+   "pacts": [
+    {
+     "id": "united_front",
+     "formWhen": null
+    }
+   ],
+   "script": [
+    {
+     "turn": 1,
+     "text": "Zhang Xueliang and Yang Hucheng detain Chiang Kai-shek at Xi'an and demand an end to the civil war.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "chiang",
+       "set": "lock",
+       "turns": 2
+      },
+      {
+       "type": "coherence",
+       "n": -2
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -4
+      }
+     ]
+    },
+    {
+     "turn": 2,
+     "text": "Zhou Enlai negotiates, and Chiang flies to Nanjing on December 25 with no written agreement. The fighting between the Nationalists and the Party stops.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "chiang",
+       "set": "restore"
+      },
+      {
+       "type": "cadre",
+       "id": "zhang_xueliang",
+       "set": "remove"
+      },
+      {
+       "type": "pact",
+       "id": "united_front",
+       "set": "active"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "CCP",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "turn": 7,
+     "text": "Fighting at the Marco Polo Bridge in July has become a full war. Imperial Japan presses along the coast.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "Imperial_Japan"
+      },
+      {
+       "type": "leverage",
+       "faction": "Imperial_Japan",
+       "n": 2
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.89
+   }
+  },
+  {
+   "kind": "catalog",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S14",
+    "S3"
+   ],
+   "theater": [
+    "Legal",
+    "Association",
+    "Information"
+   ],
+   "id": "E004",
+   "num": 4,
+   "title": "The Nanjing Regime",
+   "fullTitle": "The Nanjing Regime (1940)",
+   "tier": 3,
+   "dimension": "Gradient",
+   "stage": "Control",
+   "spine": "Legal",
+   "opponent": "Imperial Japan and the Party",
+   "when": {
+    "start": [
+     1939,
+     3
+    ],
+    "end": [
+     1940,
+     12
+    ]
+   },
+   "label": "March 1939 to December 1940",
+   "brief": "In March 1940 a government opened in Nanjing under the Nationalist flag and the name of Sun Yat-sen's party. Its president was Wang Jingwei, who had once led the Nationalist government's own executive branch.",
+   "record": "Wang Jingwei, a senior Nationalist leader, left Chongqing in December 1938 and broke with Chiang Kai-shek over the war. Imperial Japan backed him, and his government opened in Nanjing on March 30, 1940 under the Nationalist flag and name. Japan recognized it in November 1940. The government claimed to continue Sun Yat-sen's party while it governed under Japanese military power.",
+   "reading": "Imperial Japan raised a dead name and gave it a body. This is Stratagem 14, borrow a corpse to resurrect the soul. The regime never won the standing it borrowed, and it still forced the real government to defend its own name. Office, salary and protection pulled officials across one at a time. The Party watched both sides spend credit it was saving.",
+   "gap": "Principles",
+   "gapText": "Principles Architecture. A name could be copied because no one had defined who could speak for the government.",
+   "fix": "Define who holds the authority to speak in the nation's name and publish it, because a copied authority works only where the original has not said what it is.",
+   "factions": [
+    "KMT",
+    "Imperial_Japan",
+    {
+     "id": "CCP",
+     "handShare": 0.5
+    }
+   ],
+   "player": "KMT",
+   "cadres": [
+    "wang_jingwei",
+    "dai_li"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 1,
+     "text": "Wang Jingwei has broken with Chongqing and is still looking for a government to lead.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "wang_jingwei",
+       "set": "remove"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "On March 30 Wang Jingwei's government opens in Nanjing under the Nationalist flag.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "wang_jingwei",
+       "set": "restore"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -6
+      },
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Legal",
+       "n": 2,
+       "by": "Imperial_Japan"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.22
+   },
+   "consumeAdj": 3
+  },
+  {
+   "kind": "catalog",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S26",
+    "S33"
+   ],
+   "theater": [
+    "Association",
+    "Information",
+    "Kinetic"
+   ],
+   "id": "E005",
+   "num": 5,
+   "title": "The New Fourth Army Incident",
+   "fullTitle": "The New Fourth Army Incident (1941)",
+   "tier": 3,
+   "dimension": "Criticality",
+   "stage": "Control",
+   "spine": "Association",
+   "opponent": "The Party and Imperial Japan",
+   "when": {
+    "start": [
+     1940,
+     10
+    ],
+    "end": [
+     1941,
+     5
+    ]
+   },
+   "label": "October 1940 to May 1941",
+   "brief": "On January 4, 1941 the headquarters column of the New Fourth Army broke camp in southern Anhui and began its march toward the Yangtze. Nationalist divisions had moved into position around it.",
+   "record": "Nationalist forces attacked the New Fourth Army's headquarters column in southern Anhui from January 6, 1941. The Nationalist government had ordered the army north of the Yangtze, and the army's commanders chose a route to the south. Nationalist forces killed or captured most of the column. Chiang Kai-shek disbanded the army by order, and the Party reconstituted it within days under new commanders. Cooperation between the two sides ended in practice. The united front survived in name through the war.",
+   "reading": "Each side blamed the other, and the record supports no claim that one alone ended the front. The cost fell unevenly. The Nationalist government drew criticism abroad, and the Party gained a story of betrayal that it used for the rest of the war. A front held together by one load-bearing agreement fell when the agreement fell.",
+   "gap": "Principles",
+   "gapText": "Principles Architecture. The front rested on one agreement that neither side had written down.",
+   "fix": "Write the terms of a standing pact down and name who judges a breach, because an unwritten front breaks on the first disputed order.",
+   "factions": [
+    "KMT",
+    "CCP",
+    "Imperial_Japan"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "chiang",
+    "zhou_enlai",
+    "dai_li"
+   ],
+   "pacts": [
+    {
+     "id": "united_front",
+     "active": true,
+     "formWhen": null,
+     "breakWhen": {
+      "turn": 4
+     }
+    }
+   ],
+   "script": [
+    {
+     "turn": 4,
+     "text": "Nationalist forces destroy most of the New Fourth Army's headquarters column in Anhui.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "CCP",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "KMT"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -4
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.61
+   }
+  },
+  {
+   "id": "E006",
+   "kind": "catalog",
+   "num": 6,
+   "title": "The Dixie Mission",
+   "fullTitle": "The Dixie Mission (1944)",
+   "tier": 4,
+   "dimension": "Resonance",
+   "stage": "Attract",
+   "stratagems": [
+    "S10"
+   ],
+   "theater": [
+    "Kinetic",
+    "Information",
+    "Psychological",
+    "Association"
+   ],
+   "spine": "Association",
+   "opponent": "The Party and Imperial Japan",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "when": {
+    "start": [
+     1944,
+     4
+    ],
+    "end": [
+     1944,
+     12
+    ]
+   },
+   "label": "April to December 1944",
+   "brief": "On July 22, 1944, Colonel David Barrett stepped off a C-47 at Yan'an at the head of the United States Army Observation Group.",
+   "record": "The Party hosted the observers with open access to its leaders and its base, and Mao told John Service that the Party wanted American cooperation after the war. Service's reports praised the Party's discipline and contrasted it with Nationalist corruption. Ambassador Patrick Hurley opposed working with the Party, and the mission's advocates later lost their careers in the purge of the China hands. Imperial Japan launched its Ichi-Go offensive in April 1944 and overran Nationalist armies in Henan, Hunan and Guangxi that year.",
+   "reading": "Yan'an ran the Attract stage on American officers, and the warmth was real enough to persuade honest men. The Party welcomed the observers it could host and leaned to the Soviet Union once it held power, which is Stratagem 10 on a five-year clock.",
+   "gap": "Data",
+   "gapText": "Data Architecture. The observers saw what their host showed them, and no other channel tested it.",
+   "fix": "Pair every hosted visit with independent collection and read the host's access as an operation.",
+   "factions": [
+    "KMT",
+    "CCP",
+    "Imperial_Japan"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "observer_group",
+    "zhou_enlai",
+    "dai_li"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 1,
+     "text": "Imperial Japan opens Ichi-Go. Its armies drive on the Nationalist airfields and rail lines.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "observer_group",
+       "set": "remove"
+      },
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "Imperial_Japan"
+      },
+      {
+       "type": "leverage",
+       "faction": "Imperial_Japan",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "turn": 4,
+     "text": "On July 22 Colonel Barrett's observation group lands at Yan'an and meets an open door.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "observer_group",
+       "set": "restore"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "CCP",
+       "n": 5
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.09
+   }
+  },
+  {
+   "kind": "catalog",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S11",
+    "S30"
+   ],
+   "theater": [
+    "Economic",
+    "Kinetic",
+    "Association"
+   ],
+   "id": "E007",
+   "num": 7,
+   "title": "The Manchurian Takeover",
+   "fullTitle": "The Manchurian Takeover (1945)",
+   "tier": 4,
+   "dimension": "Agency",
+   "stage": "Extract",
+   "spine": "Economic",
+   "opponent": "The Party",
+   "when": {
+    "start": [
+     1945,
+     8
+    ],
+    "end": [
+     1946,
+     9
+    ]
+   },
+   "label": "August 1945 to September 1946",
+   "brief": "In August 1945 the Red Army crossed the Manchurian border while the Kwantung Army collapsed. Behind it lay the largest industrial base in China, which Imperial Japan had built over fourteen years.",
+   "record": "The Yalta agreement of February 1945 promised the Soviet Union a lease on Port Arthur, preeminent interests in Dairen and joint operation of the Manchurian railways. Soviet forces entered Manchuria on August 9, 1945, and the Party's troops moved in behind them as the Kwantung Army collapsed. The Red Army removed industrial plant from the region before it withdrew in the spring of 1946, and estimates of the loss vary widely. Nationalist and Party forces fought for the cities the Soviets left, and the Party took the last of them in the autumn of 1948.",
+   "reading": "The Soviet army delayed Nationalist landings and eased the Party's way, and historians still dispute how much it armed the Party. The Nationalists took the cities and could not hold the country between them. This is Stratagem 30, make the host and the guest exchange places, run on a province.",
+   "gap": "Business",
+   "gapText": "Business Architecture. The industrial base passed from Japan to the Soviet army to two rival governments, and no owner had the means to run it.",
+   "fix": "Secure an industrial asset before the claim on it is contested, and write access rights into any agreement that lets a third power hold the ground.",
+   "factions": [
+    "KMT",
+    "CCP"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "soviet_command",
+    "lin_biao",
+    "chiang"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 1,
+     "text": "The Red Army enters Manchuria. The Nationalists hold no ground there.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "CCP",
+       "domain": "Economic",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "turn": 3,
+     "text": "The Red Army begins to remove industrial plant.",
+     "effects": [
+      {
+       "type": "dropShields",
+       "faction": "KMT",
+       "domain": "Economic"
+      },
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Economic",
+       "n": 2,
+       "why": "plant removal"
+      }
+     ]
+    },
+    {
+     "turn": 5,
+     "text": "The Red Army withdraws. The Party's forces and the Nationalists race for the cities.",
+     "effects": [
+      {
+       "type": "cadre",
+       "id": "soviet_command",
+       "set": "remove"
+      },
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "CCP"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.51
+   }
+  },
+  {
+   "id": "E008",
+   "kind": "catalog",
+   "num": 8,
+   "title": "The Marshall Mission",
+   "fullTitle": "The Marshall Mission (1946)",
+   "tier": 5,
+   "dimension": "Time",
+   "stage": "Accommodate",
+   "stratagems": [
+    "S4",
+    "S10"
+   ],
+   "theater": [
+    "Kinetic",
+    "Legal",
+    "Association"
+   ],
+   "spine": "Kinetic",
+   "opponent": "The Party",
+   "world": null,
+   "arc": "Three Kingdoms",
+   "when": {
+    "start": [
+     1946,
+     1
+    ],
+    "end": [
+     1946,
+     12
+    ]
+   },
+   "label": "1946",
+   "brief": "On January 10, 1946, George Marshall watched Nationalist and Communist negotiators announce a ceasefire in Chongqing.",
+   "record": "Marshall set up truce teams of American, Nationalist and Communist officers to police the ceasefire. Fighting resumed in Manchuria that spring as both sides raced for the ground the Soviets left. Marshall left China in January 1947 and blamed extremists on both sides for the failure.",
+   "reading": "A truce with no enforcement served the side with the longer horizon, and the Party used the pause to build its forces in the northeast. Both sides broke the truce, and the record supports no claim that either one alone destroyed it.",
+   "gap": "Principles",
+   "gapText": "Architecture Principles. The mediator had verification teams and no power to act on what they found.",
+   "fix": "Tie any ceasefire to verification with consequences agreed before signature, or treat it as a pause the patient side will use.",
+   "factions": [
+    "KMT",
+    "CCP"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "zhou_enlai",
+    "chiang",
+    "lin_biao"
+   ],
+   "pacts": [
+    "marshall_truce"
+   ],
+   "rules": {
+    "handScale": 0.96
+   }
+  },
+  {
+   "id": "E009",
+   "kind": "catalog",
+   "num": 9,
+   "title": "The Gold Yuan",
+   "fullTitle": "The Gold Yuan (1948)",
+   "tier": 5,
+   "dimension": "Entropy",
+   "stage": "Consume",
+   "stratagems": [
+    "S5",
+    "S9"
+   ],
+   "theater": [
+    "Economic",
+    "Financial",
+    "Psychological"
+   ],
+   "spine": "Financial",
+   "opponent": "The Party",
+   "world": "Runaway",
+   "arc": "Three Kingdoms",
+   "when": {
+    "start": [
+     1948,
+     8
+    ],
+    "end": [
+     1949,
+     3
+    ]
+   },
+   "label": "August 1948 to March 1949",
+   "brief": "In August 1948 Chiang Ching-kuo arrived in Shanghai to enforce the gold yuan, a new currency that citizens had to buy with their gold and foreign cash.",
+   "record": "The Nationalist government issued the gold yuan on August 19, 1948. It froze prices and ordered citizens to exchange their gold, silver and foreign currency. Chiang Ching-kuo arrested speculators, the price freeze broke within weeks, and the currency collapsed before the year was out.",
+   "reading": "The regime spent its middle class to buy three months of stable prices, and the Party took the cities that followed partly on the regime's own collapse. A government that confiscates its citizens' savings in a crisis teaches them to wait for the other side.",
+   "gap": "Business",
+   "gapText": "Business Architecture. The Financial capability had no discipline the government could not override.",
+   "fix": "Keep money under rules a crisis government cannot suspend, because savers who lose everything stop defending the system.",
+   "factions": [
+    "KMT",
+    "CCP"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "ching_kuo"
+   ],
+   "pacts": [],
+   "script": [
+    {
+     "turn": 1,
+     "text": "On August 19 the gold yuan replaces the old note and prices are frozen by decree.",
+     "effects": [
+      {
+       "type": "shield",
+       "faction": "KMT",
+       "domain": "Financial",
+       "n": 2
+      },
+      {
+       "type": "shield",
+       "faction": "KMT",
+       "domain": "Economic",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "turn": 3,
+     "text": "The freeze breaks as goods leave the shops, and the savings that bought it are gone.",
+     "effects": [
+      {
+       "type": "dropShields",
+       "faction": "KMT",
+       "domain": "Financial"
+      },
+      {
+       "type": "dropShields",
+       "faction": "KMT",
+       "domain": "Economic"
+      },
+      {
+       "type": "slope",
+       "faction": "KMT",
+       "domain": "Financial",
+       "n": 2
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -6,
+       "self": "predation on own base",
+       "selfWhy": "the gold yuan exchange order"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.37
+   },
+   "consumeAdj": 6
+  },
+  {
+   "kind": "catalog",
+   "world": "Long Grind",
+   "arc": "Three Kingdoms",
+   "stratagems": [
+    "S9",
+    "S4",
+    "S30"
+   ],
+   "theater": [
+    "Kinetic",
+    "Psychological",
+    "Association",
+    "Economic"
+   ],
+   "id": "E010",
+   "num": 10,
+   "title": "Watching the Fire",
+   "fullTitle": "Watching the Fire (1937)",
+   "tier": 6,
+   "dimension": "Phase",
+   "stage": "Control",
+   "spine": "Association",
+   "opponent": "The Party and Imperial Japan",
+   "when": {
+    "start": [
+     1937,
+     9
+    ],
+    "end": [
+     1945,
+     9
+    ]
+   },
+   "label": "1937 to 1945",
+   "brief": "In the autumn of 1937 three armies shared one country and each fought a different war. Imperial Japan fought to end the conflict on its terms, the Nationalists fought to survive, and the Party fought to be there when it ended.",
+   "record": "The Party and the Nationalists announced a second united front in September 1937. The Party launched the Hundred Regiments Offensive in north China in August 1940. Nationalist forces destroyed most of the New Fourth Army's headquarters column in January 1941, and cooperation ended in practice. Imperial Japan's Ichi-Go offensive overran Nationalist armies in 1944. Japan surrendered in August 1945.",
+   "reading": "The Nationalists bore the set-piece battles and the Party built its organization behind the lines. Historians still dispute how much the Party fought and how much it waited. The war ended in August 1945 with both armies placed for the war after it. This is Stratagem 9, watch the fire from across the river.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. One command carried the war and its costs while its rival carried the peace.",
+   "fix": "Measure an alliance by what each partner builds while the war lasts, and write that into the terms before the war ends.",
+   "factions": [
+    "KMT",
+    "CCP",
+    "Imperial_Japan"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "chiang",
+    "dai_li",
+    "mao",
+    "kwantung_staff"
+   ],
+   "pacts": [
+    {
+     "id": "united_front",
+     "active": true,
+     "formWhen": null,
+     "breakWhen": {
+      "turn": 4
+     }
+    }
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "The Party launches the Hundred Regiments Offensive in north China.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "Imperial_Japan",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "CCP"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "CCP",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "Imperial Japan opens Ichi-Go and overruns Nationalist armies across three provinces.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 3,
+       "by": "Imperial_Japan"
+      },
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -4
+      }
+     ]
+    },
+    {
+     "turn": 8,
+     "text": "Imperial Japan surrenders in August, and the two armies turn to face each other.",
+     "effects": [
+      {
+       "type": "leverage",
+       "faction": "Imperial_Japan",
+       "n": -99
+      },
+      {
+       "type": "tempo",
+       "faction": "Imperial_Japan",
+       "n": -9
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 1.74
+   }
+  },
+  {
+   "id": "E011",
+   "kind": "catalog",
+   "num": 11,
+   "title": "The Manchurian Trap",
+   "fullTitle": "The Manchurian Trap (1946)",
+   "tier": 4,
+   "dimension": "Criticality",
+   "stage": "Extract",
+   "stratagems": [
+    "S15",
+    "S11",
+    "S36"
+   ],
+   "theater": [
+    "Kinetic",
+    "Economic",
+    "Association",
+    "Psychological"
+   ],
+   "spine": "Psychological",
+   "opponent": "The Party",
+   "world": null,
+   "arc": null,
+   "when": {
+    "start": [
+     1946,
+     5
+    ],
+    "end": [
+     1948,
+     11
+    ]
+   },
+   "label": "May 1946 to November 1948",
+   "brief": "In the summer of 1948 the Nationalists still held the cities of Manchuria. Each garrison lived on a rail line or an air route that the Party's army could cut.",
+   "record": "Chiang Kai-shek chose to hold the cities of Manchuria and kept strong forces there from 1946. The garrisons in Changchun, Shenyang and Jinzhou depended on supply by rail and by air. The Party's forces besieged Changchun from May 1948 and took it in October. The Liaoshen campaign ran from September to November 1948. By its end the Party held all of Manchuria. The Nationalists lost several hundred thousand troops there, and sources differ on the count.",
+   "reading": "The Party did not need to take the cities. It needed the Nationalists to keep them. This is Stratagem 15, lure the tiger down the mountain. A garrison far from its base draws the armies that the south needs. Stratagem 11 sacrifices the plum tree to preserve the peach. Stratagem 36 retreats when all else fails. The record shows the garrisons and the losses. It does not show what a withdrawal would have saved. The costs and denials in this operation are the game's scores and not a count.",
+   "gap": "Governance",
+   "gapText": "Governance Architecture. No rule told the government what a position was worth to hold, so each garrison stayed because it had been placed.",
+   "fix": "Score every position for what it costs to hold and what it denies, and review each one before a campaign season. Give up a position that costs more than it denies while the choice is still open.",
+   "factions": [
+    {
+     "id": "KMT",
+     "start": {
+      "shields": {
+       "Kinetic": 3,
+       "Economic": 2,
+       "Financial": 2
+      }
+     }
+    },
+    "CCP"
+   ],
+   "player": "KMT",
+   "cadres": [
+    "chiang",
+    "lin_biao"
+   ],
+   "pacts": [],
+   "holdings": [
+    {
+     "id": "manchuria",
+     "name": "Manchuria",
+     "domain": "Kinetic",
+     "cost": 2,
+     "denial": 1,
+     "text": "The garrisons live on rail and air supply and draw on the best armies.",
+     "yieldText": "You give up Manchuria. The garrisons stop draining the armies, and the Party takes the north.",
+     "onYield": [
+      {
+       "type": "legitimacy",
+       "faction": "KMT",
+       "n": -2,
+       "why": "giving up Manchuria"
+      }
+     ]
+    },
+    {
+     "id": "south",
+     "name": "The south",
+     "domain": "Economic",
+     "cost": 1,
+     "denial": 2,
+     "text": "The cities, the ports and the customs revenue."
+    }
+   ],
+   "script": [
+    {
+     "turn": 3,
+     "text": "The Party's forces cut the rail lines to the north.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Economic",
+       "n": 1,
+       "by": "CCP"
+      }
+     ]
+    },
+    {
+     "turn": 6,
+     "text": "The Party's forces besiege the garrisons.",
+     "effects": [
+      {
+       "type": "pressure",
+       "faction": "KMT",
+       "domain": "Kinetic",
+       "n": 2,
+       "by": "CCP"
+      }
+     ]
+    }
+   ],
+   "rules": {
+    "handScale": 0.82
+   }
+  }
+ ],
+ "arcs": [
+  {
+   "id": "three-kingdoms",
+   "name": "Three Kingdoms",
+   "span": "1931 to 1948",
+   "blurb": "The war with Imperial Japan and the war between the Nationalists and the Party, played as one contest among three.",
+   "nodes": [
+    "E001",
+    "E002",
+    "E003",
+    "E004",
+    "E005",
+    "E006",
+    "E007",
+    "E008",
+    "E009",
+    "E010"
+   ]
+  },
+  {
+   "id": "the-united-front",
+   "name": "The United Front",
+   "span": "1936 to 1945",
+   "blurb": "Two rivals stand together against a third. Learn what the pact buys, what it costs, and who grows inside it.",
+   "nodes": [
+    "E002",
+    "E003",
+    "E005",
+    "E006",
+    "E008",
+    "E010"
+   ]
+  }
+ ],
+ "taxonomy": {
+  "domains": [
+   "Kinetic",
+   "Economic",
+   "Financial",
+   "Information",
+   "Psychological",
+   "Legal",
+   "Association",
+   "Cyber",
+   "Cultural",
+   "AI and Cognitive",
+   "Biological",
+   "Data and Surveillance"
+  ],
+  "stratagems": [
+   {
+    "code": "S1",
+    "name": "deceive the heavens to cross the sea",
+    "group": "Superiority"
+   },
+   {
+    "code": "S2",
+    "name": "besiege Wei to rescue Zhao",
+    "group": "Superiority"
+   },
+   {
+    "code": "S3",
+    "name": "kill with a borrowed knife",
+    "group": "Superiority"
+   },
+   {
+    "code": "S4",
+    "name": "wait at ease for the weary enemy",
+    "group": "Superiority"
+   },
+   {
+    "code": "S5",
+    "name": "loot a burning house",
+    "group": "Superiority"
+   },
+   {
+    "code": "S6",
+    "name": "make a sound in the east, strike in the west",
+    "group": "Superiority"
+   },
+   {
+    "code": "S7",
+    "name": "create something from nothing",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S8",
+    "name": "openly repair the gallery roads and march secretly through Chencang",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S9",
+    "name": "watch the fire from across the river",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S10",
+    "name": "hide a knife behind a smile",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S11",
+    "name": "sacrifice the plum tree to preserve the peach",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S12",
+    "name": "take the opportunity to pilfer a goat",
+    "group": "Confrontation"
+   },
+   {
+    "code": "S13",
+    "name": "stomp the grass to scare the snake",
+    "group": "Attack"
+   },
+   {
+    "code": "S14",
+    "name": "borrow a corpse to resurrect the soul",
+    "group": "Attack"
+   },
+   {
+    "code": "S15",
+    "name": "lure the tiger down the mountain",
+    "group": "Attack"
+   },
+   {
+    "code": "S16",
+    "name": "let the enemy off in order to catch them",
+    "group": "Attack"
+   },
+   {
+    "code": "S17",
+    "name": "cast a brick to attract jade",
+    "group": "Attack"
+   },
+   {
+    "code": "S18",
+    "name": "capture the ringleader to disband the bandits",
+    "group": "Attack"
+   },
+   {
+    "code": "S19",
+    "name": "remove the firewood from under the pot",
+    "group": "Confusion"
+   },
+   {
+    "code": "S20",
+    "name": "muddy the waters to catch the fish",
+    "group": "Confusion"
+   },
+   {
+    "code": "S21",
+    "name": "slough off the cicada's golden shell",
+    "group": "Confusion"
+   },
+   {
+    "code": "S22",
+    "name": "shut the door to catch the thief",
+    "group": "Confusion"
+   },
+   {
+    "code": "S23",
+    "name": "befriend a distant state while attacking a neighbor",
+    "group": "Confusion"
+   },
+   {
+    "code": "S24",
+    "name": "borrow the road to conquer Guo",
+    "group": "Confusion"
+   },
+   {
+    "code": "S25",
+    "name": "replace the beams with rotten timbers",
+    "group": "Control"
+   },
+   {
+    "code": "S26",
+    "name": "point at the mulberry while cursing the locust",
+    "group": "Control"
+   },
+   {
+    "code": "S27",
+    "name": "feign madness without losing balance",
+    "group": "Control"
+   },
+   {
+    "code": "S28",
+    "name": "lure the enemy onto the roof and remove the ladder",
+    "group": "Control"
+   },
+   {
+    "code": "S29",
+    "name": "deck the tree with false blossoms",
+    "group": "Control"
+   },
+   {
+    "code": "S30",
+    "name": "make the host and the guest exchange places",
+    "group": "Control"
+   },
+   {
+    "code": "S31",
+    "name": "the beauty trap, run on money",
+    "group": "Desperation"
+   },
+   {
+    "code": "S32",
+    "name": "the empty fortress",
+    "group": "Desperation"
+   },
+   {
+    "code": "S33",
+    "name": "sow discord among the enemy",
+    "group": "Desperation"
+   },
+   {
+    "code": "S34",
+    "name": "inflict injury on yourself to win trust",
+    "group": "Desperation"
+   },
+   {
+    "code": "S35",
+    "name": "chain the stratagems",
+    "group": "Desperation"
+   },
+   {
+    "code": "S36",
+    "name": "if all else fails, retreat",
+    "group": "Desperation"
+   }
+  ],
+  "stages": [
+   "Attract",
+   "Accommodate",
+   "Control",
+   "Extract",
+   "Consume",
+   "Defense",
+   "Mirror",
+   "Doctrine"
+  ],
+  "tiers": [
+   {
+    "tier": 1,
+    "title": "Recruit"
+   },
+   {
+    "tier": 2,
+    "title": "Operative"
+   },
+   {
+    "tier": 3,
+    "title": "Analyst"
+   },
+   {
+    "tier": 4,
+    "title": "Strategist"
+   },
+   {
+    "tier": 5,
+    "title": "Commander"
+   },
+   {
+    "tier": 6,
+    "title": "Doctrine Master"
+   }
+  ]
+ },
+ "dailyEpoch": "2026-09-30"
+}
