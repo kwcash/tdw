@@ -1,0 +1,65 @@
+{
+ "note": "Written by release.py. test/backup.py checks every zip against it.",
+ "zips": {
+  "1931.zip": {
+   "sha256": "b2bbecd6dc6dcc77eb09a935323b154e8b1ad0c18520fd1234aafb0835524f78",
+   "bytes": 129296
+  },
+  "2026.zip": {
+   "sha256": "38146f7f47ab6c7053dff2fa2f184eb4425b174c5e679ce3063b5654480850ed",
+   "bytes": 150000
+  },
+  "2030.zip": {
+   "sha256": "bff322a1c3d76b0023bf6d588aa708ee0219b51a58b64911921064d6c8613962",
+   "bytes": 127913
+  },
+  "game.zip": {
+   "sha256": "439b8087c5b1b7563044d6b7dfb92a863c3a6cade6841ad5403f8b861fbbeaea",
+   "bytes": 225064
+  },
+  "update-2026-10-12.zip": {
+   "sha256": "20c4edabfd3bf5cb1a742ea50447e0a3ef1eddc481ac866cdc7bd4bbf8aa2d84",
+   "bytes": 122896
+  },
+  "update-2026-10-13.zip": {
+   "sha256": "4ba991925c9839afbfdf7da38cd1bbda0a0150e2039fe6b5e6d282163845cd43",
+   "bytes": 124271
+  },
+  "update-2026-10-13b.zip": {
+   "sha256": "e596ca01090a67d7b933baee4cf7fa391f81a51b0a6a5babf23e1d2c2636ef30",
+   "bytes": 115868
+  },
+  "update-2026-10-13c.zip": {
+   "sha256": "deaa28f3af432e4f325b2a1c11415da15a9e52d8129415ef20063514f780dad9",
+   "bytes": 131599
+  },
+  "update-2026-10-13d.zip": {
+   "sha256": "835afdb72e1d753a25a150fd17d0a6345a037bc0625385ac287bdd6375bd113f",
+   "bytes": 155046
+  },
+  "update-2026-10-14.zip": {
+   "sha256": "bbb663348eb37d64327e99e37c7c7a1de98479457962a1c5f47ccc1c6277c173",
+   "bytes": 137022
+  },
+  "update-2026-10-14b.zip": {
+   "sha256": "34d2f80e77422eada696977fdec0376de7cc4a544b19b1d9f6582c1c8b916f2e",
+   "bytes": 593454
+  },
+  "update-2026-10-15.zip": {
+   "sha256": "bcae1f6d195cb92b5545fb3960c50ad44d0ebf766f7c3de4f3217edbcf6c3ec6",
+   "bytes": 601219
+  },
+  "update-2026-10-15b.zip": {
+   "sha256": "93f43564bc9dcbbb199404943dc67ba6ca62e35a619c1d2d96da77c9a5e3927f",
+   "bytes": 596682
+  },
+  "update-2026-10-15c.zip": {
+   "sha256": "56aa856e14ca4d9ff06e7992866a697e27ec44c552467b5a95e75e37e82fc235",
+   "bytes": 616341
+  },
+  "update-2026-10-15d.zip": {
+   "sha256": "d49348ee92a13fe620dccaa42743a5a4e5ccd3e11268f1d8c6fdb03091c1669b",
+   "bytes": 634669
+  }
+ }
+}

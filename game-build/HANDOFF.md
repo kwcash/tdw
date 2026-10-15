@@ -57,6 +57,7 @@ RULES.md numbers these rules R1 to R15 and names the check for each.
 ## Working conventions
 
 - STANDARDS.md sets the steps for a change and for a release, with a definition of done. `templates/` holds the change note, the changelog, the balance note and the owner's report.
+- RISKS.md holds the risk and issue log. Review it at each release and update its date. BACKUP.md sets the backup policy. Commit each `forecast-results.json` the owner sends to `workspace/forecast/out/` before the next release.
 
 - Branch `claude/tdw-coding-project-0zkx4h` in `kwcash/tdw`. Commit and push with `git push -u origin claude/tdw-coding-project-0zkx4h`. Do not open a pull request unless the owner asks.
 - End each commit message with the two trailers in the session's attribution reminder.
@@ -69,6 +70,8 @@ RULES.md numbers these rules R1 to R15 and names the check for each.
 Done: multi-faction engine, result codes and replay, the 2026 build to W019, forecast mode, holdings and acts against one's own position (E011), the asymmetry band, evidence pipeline (31 cards), Tier 7 on all four builds. On 15 October the four player experience items 1 to 4: How to play sections with hints and guided runs, difficulty labels, the glossary and progress files. See the `CHANGELOG_*` files in order.
 
 ## Open items
+
+RISKS.md carries these as issues I1 to I7, with who acts next.
 
 1. **Two party mentions.** Base game F032 and 2026 operation W011 name a Taiwanese party. RULES.md lists both as exceptions to R5 until the owner decides.
 2. **Forecast claim R6.** This R6 is a forecast claim and not rule R6. The forecast page leaves it out because it names a Taiwanese party. The owner has not said whether to include it.
@@ -85,7 +88,7 @@ The owner asked for the process and the player experience to move up one maturit
 1. Done on 15 October (CHANGELOG_2026-10-15e.md). `.github/workflows/tdw-checks.yml` runs `run_checks.sh` on every push, and the browser checks on request. The bundle is built from `src/` by `build.py`.
 2. Done on 15 October (CHANGELOG_2026-10-15f.md). STANDARDS.md and `templates/`. `release.py` refuses a release without a changelog that passes the lint.
 3. Done on 15 October (CHANGELOG_2026-10-15g.md). RULES.md numbers the standing rules and names the check for each. `test/rules.test.js` tests eleven of them.
-4. Add a risk and issue log, with a backup policy.
+4. Done on 15 October (CHANGELOG_2026-10-15h.md). RISKS.md logs twelve risks and nine issues. BACKUP.md sets what is kept, where, and how to restore it. `release.py` refuses a release when the log is stale or when a due forecast result may be lost.
 5. An independent reviewer verifies sources. The owner must supply that person.
 
 **Player experience, Level 2 to 3**

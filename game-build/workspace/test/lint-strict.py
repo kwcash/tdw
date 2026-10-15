@@ -18,7 +18,7 @@ def check(where, t):
     if ' -- ' in t: issues.append(f'{where}: " -- "')
     for s in sentences(t):
         if re.match(r'^(It is|There are)\b', s) or re.search(r'\bIt is ', s) and re.match(r'^It is\b', s): issues.append(f'{where}: sentence opens with "{s.split()[0]} {s.split()[1]}": {s[:70]}')
-        n = s.count(',')
+        n = re.sub(r'(?<=\d),(?=\d{3}\b)', '', s).count(',')   # digit groups such as 320,000 are not commas in prose
         if n > 2: issues.append(f'{where}: {n} commas: {s[:80]}')
 
 def walk(where, v, key=None):

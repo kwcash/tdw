@@ -101,3 +101,7 @@ What is here, so a reset of the working machine does not cost the game again.
 ## Update of 15 October 2026, seventh set
 
 - No player-facing change and no upload. RULES.md numbers the standing rules and names the check for each. `CHANGELOG_2026-10-15g.md` describes it.
+
+## Update of 15 October 2026, eighth set
+
+- No player-facing change and no upload. RISKS.md logs the risks and issues, and BACKUP.md sets the backup policy. `CHANGELOG_2026-10-15h.md` describes it.
