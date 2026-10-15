@@ -2,20 +2,20 @@
  "note": "Written by release.py. test/backup.py checks every zip against it.",
  "zips": {
   "1931.zip": {
-   "sha256": "161a258cf7172f5f193405f234682c73d9c176ba6f63984986ec82cc3eeb4a11",
-   "bytes": 129296
+   "sha256": "5f583a9df0d5258d1ee9cf83cc49a0ad5cc939a0e62e62c21d27d0b20a83fd47",
+   "bytes": 129987
   },
   "2026.zip": {
-   "sha256": "efb9dd3a006036191bfb57e421887b73785175a360cca5ff02c4a480bc27be4f",
-   "bytes": 150250
+   "sha256": "82e195187ba63ee5ce73295481a604e864280f58102f4179bdfd681c9e772359",
+   "bytes": 150941
   },
   "2030.zip": {
-   "sha256": "c57c6154a302275381935f42ee611d5abe0645fc5270e7d0fa2cdd000b52e0e4",
-   "bytes": 127913
+   "sha256": "33fa64d0d52a5383fa9ff1641280aedcba0a873dd948e2f892a235c7385d81da",
+   "bytes": 128603
   },
   "game.zip": {
-   "sha256": "a4ffc5735164030b281000e0d8dec8a8f54eb6cf6096d2ad41c0209591c99144",
-   "bytes": 225064
+   "sha256": "b6011a5ec82f4f7014d95ae896673e0939a9acff5a4043545c757ad47e1d1bd2",
+   "bytes": 225753
   },
   "update-2026-10-12.zip": {
    "sha256": "20c4edabfd3bf5cb1a742ea50447e0a3ef1eddc481ac866cdc7bd4bbf8aa2d84",
@@ -64,6 +64,10 @@
   "update-2026-10-15i.zip": {
    "sha256": "b31c0da339154fadd676cebfe6cb447dba3a6fac1d0621b829efe388b66173c7",
    "bytes": 633950
+  },
+  "update-2026-10-15j.zip": {
+   "sha256": "da531c64fee726dbce1e6a6c01d06e9f6fae3e8cc46f9ee2ed820b231f23a4e8",
+   "bytes": 636885
   }
  }
 }
