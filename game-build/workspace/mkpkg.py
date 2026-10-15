@@ -2,22 +2,22 @@ import os, shutil, re, json, sys
 root = os.path.dirname(os.path.abspath(__file__))
 orig = open(f'{root}/orig/index.html').read()
 V = {
- 'game': dict(json='base', title='TDW Strategic Game', ver=5, desc=None, foot1=None),
- '1931': dict(json='era1', title='Total Domain War 1931 to 1949', ver=6,
+ 'game': dict(json='base', title='TDW Strategic Game', ver=6, desc=None, foot1=None),
+ '1931': dict(json='era1', title='Total Domain War 1931 to 1949', ver=7,
    desc='Three factions, one occupation, and a civil war that stopped for the Japanese. A turn-based strategy game built on the documented record from 1931 to 1949.',
    foot1='The actors are a party and two governments. The Chinese and Japanese peoples are not them. Ancestry is not loyalty.'),
  '2026': dict(json='era3', title='Total Domain War 2026',
-   ver=10, extra=['forecasts.json', 'forecast-results.json'], desc='Nineteen operations from the record of the contest as it stands in autumn 2026, with a watch on Taiwan\'s 28 November vote. A turn-based strategy game that applies ten dimensions, twelve domains and thirty-six stratagems.',
+   ver=11, extra=['forecasts.json', 'forecast-results.json'], desc='Nineteen operations from the record of the contest as it stands in autumn 2026, with a watch on Taiwan\'s 28 November vote. A turn-based strategy game that applies ten dimensions, twelve domains and thirty-six stratagems.',
    foot1='The actors are states and the parties that run them. Their peoples are not the adversary. The Chinese people are the Party\'s first victims. Ancestry is not loyalty.'),
- '2030': dict(json='era2', title='Total Domain War 2030', ver=5,
+ '2030': dict(json='era2', title='Total Domain War 2030', ver=6,
    desc='Three blocs, twelve domains, and a contest fought through finance, data and cables. A turn-based strategy game built on the documented record and the open reading to 2051.',
    foot1='The actors are states and the parties that run them. Their peoples are not the adversary. The Chinese people are the Party\'s first victims. Ancestry is not loyalty.'),
 }
 NOTICE = {
- 'game': 'TDW game, updated 15 October 2026. Replace everything in /game/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nHow to play gains a Tiers section, and the board shows a first-use hint for each panel the first time it appears. No operation changed.\nSee CHANGELOG_2026-10-15.md.\n',
- '1931': 'TDW 1931 to 1949, updated 15 October 2026. Replace everything in /1931/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 1931 build stay valid. The storage key is unchanged.\nHow to play gains Tiers and Holdings. Each panel shows a first-use hint. A guided run teaches holdings in six turns on E011 at Tier 1. No operation changed.\nSee CHANGELOG_2026-10-15.md.\n',
- '2026': 'TDW 2026, updated 15 October 2026. Replace everything in /2026/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier 2026 build stay valid. The storage key is unchanged.\nHow to play gains Tiers, Reach and permits, and Forecast. Each panel shows a first-use hint. A guided run teaches reach in six turns on W017 at Tier 1. No operation changed, and W017 and W018 stay byte for byte as shipped.\nSee CHANGELOG_2026-10-15.md.\n',
- '2030': 'TDW 2030, updated 15 October 2026. Replace everything in /2030/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nHow to play gains a Tiers section, and the board shows a first-use hint for each panel the first time it appears. No operation changed.\nSee CHANGELOG_2026-10-15.md.\n',
+ 'game': 'TDW game, updated 15 October 2026, second set. Replace everything in /game/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nEach operation and tier now shows an approximate difficulty, from Gentle to Brutal. The label reads how often a simple scripted player wins. Tier 7 stays open. No operation changed.\nSee CHANGELOG_2026-10-15b.md.\n',
+ '1931': 'TDW 1931 to 1949, updated 15 October 2026, second set. Replace everything in /1931/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nEach operation and tier now shows an approximate difficulty, from Gentle to Brutal. The label reads how often a simple scripted player wins. Tier 7 stays open. No operation changed.\nSee CHANGELOG_2026-10-15b.md.\n',
+ '2026': 'TDW 2026, updated 15 October 2026, second set. Replace everything in /2026/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nEach operation and tier now shows an approximate difficulty, from Gentle to Brutal. The label reads how often a simple scripted player wins. Tier 7 stays open. No operation changed.\nSee CHANGELOG_2026-10-15b.md.\n',
+ '2030': 'TDW 2030, updated 15 October 2026, second set. Replace everything in /2030/ (index.html, css/, js/, assets/).\nSaved progress and result codes from the earlier build stay valid. The storage key is unchanged.\nEach operation and tier now shows an approximate difficulty, from Gentle to Brutal. The label reads how often a simple scripted player wins. Tier 7 stays open. No operation changed.\nSee CHANGELOG_2026-10-15b.md.\n',
 }
 for name, v in V.items():
     if len(sys.argv) > 1 and name not in sys.argv[1:]: continue

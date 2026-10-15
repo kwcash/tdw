@@ -3,7 +3,7 @@
 set -u
 cd "$(dirname "$0")"
 fail=0
-for t in record.test record-legacy.test holdings.test forecast.test reach.test tier7.test guide.test; do
+for t in record.test record-legacy.test holdings.test forecast.test reach.test tier7.test guide.test difficulty.test; do
   r=$(node test/$t.js 2>&1 | tail -1); echo "$t: $r"; case "$r" in OK*) ;; *) fail=1;; esac
 done
 r=$(node test/replay-all.js baselines/codes.all.before.json | tail -1); echo "replay-all: $r"; case "$r" in all\ 320*) ;; *) fail=1;; esac

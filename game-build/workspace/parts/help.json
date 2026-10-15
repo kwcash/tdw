@@ -9,8 +9,9 @@
    "intro": "Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.",
    "items": [
     { "label": "Tiers 1 to 6", "text": "Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play." },
-    { "label": "Tier 7", "text": "Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. A scripted player rarely wins it." },
-    { "label": "Where tiers apply", "text": "Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb." }
+    { "label": "Tier 7", "text": "Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. On most operations a scripted player rarely wins it." },
+    { "label": "Where tiers apply", "text": "Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb." },
+    { "label": "Difficulty labels", "text": "Each tier of each operation carries a label from Gentle to Brutal. The label reads the share of 400 games a simple scripted player won at that tier. People may do better or worse." }
    ]
   },
   {
@@ -55,7 +56,7 @@
   "leaders": { "text": "A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.", "how": "factions" },
   "holdings": { "text": "Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.", "how": "holdings" },
   "reach": { "text": "Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.", "how": "reach" },
-  "tier7": { "text": "You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. A scripted player rarely wins here.", "how": "tiers" }
+  "tier7": { "text": "You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. On most operations a scripted player rarely wins here.", "how": "tiers" }
  },
  "ui": {
   "hintOk": "Got it",
@@ -65,6 +66,11 @@
   "guideHome": "Guided run",
   "guideOp": "Learn the panel first",
   "guideNext": "Play the full operation",
-  "forecastHow": "How forecasts score"
+  "forecastHow": "How forecasts score",
+  "difficulty": {
+   "bands": [ { "min": 85, "label": "Gentle" }, { "min": 60, "label": "Fair" }, { "min": 35, "label": "Hard" }, { "min": 10, "label": "Very hard" }, { "min": 0, "label": "Brutal" } ],
+   "won": "A scripted player won {n} percent of its games at this tier.",
+   "note": "Each label reads the share of games a simple scripted player won. People may do better or worse."
+  }
  }
 }

@@ -1767,6 +1767,9 @@
   const guideById = new Map(GUIDES.map((g) => [g.id, g]));
   const guideFor = (o) => (o.holdings && o.holdings.length && guideById.has('holdings') ? 'holdings' : o.reach && o.reach.length && guideById.has('reach') ? 'reach' : null);
   const guideOut = (g) => ({ id: g.id, title: g.title, blurb: g.blurb, op: g.op, opTitle: opById.get(g.op).title, tier: g.tier, turns: g.turns, steps: g.steps });
+  // Approximate difficulty. The share of games a scripted player wins at Tier 1 to Tier 7. The content carries the table.
+  const DIFF = (C.difficulty && C.difficulty.rates) || {};
+  const diffOf = (id) => DIFF[id] || null;
   // First-use hints, one per panel. The save keeps the ones the player has read.
   const HINT_IDS = ["factions", "leaders", "holdings", "reach", "tier7"];
   function dailyOp(day) { const P = DAILY_POOL.length ? DAILY_POOL : OPS; const n = dayNumber(day); return P[(((n * 37) % P.length) + P.length) % P.length]; }
@@ -1855,7 +1858,7 @@
       id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, rule: E.DIMENSIONS[o.dimension],
       stage: o.stage, opponent: o.opponent, theater: o.theater, world: o.world, arc: o.arc, brief: o.brief,
       signature: o.stratagems.map((c) => ({ code: c, num: E.CARDS[c].num, name: E.CARDS[c].name, group: E.CARDS[c].group })),
-      guide: guideFor(o),
+      guide: guideFor(o), diff: diffOf(o.id),
       best: withBest ? bestOf(o.id) : null,
     };
   }
@@ -2019,7 +2022,7 @@
   on('GET', /^\/api\/ops$/, () => {
     const best = {};
     for (const r of runs()) if (r.status === 'won') best[r.op_id] = Math.max(best[r.op_id] || 0, r.stars);
-    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, arc: o.arc, world: o.world, watch: watchOf(o), stars: best[o.id] ?? null })) };
+    return { ops: OPS.filter((o) => !o.hidden).map((o) => ({ id: o.id, kind: o.kind, title: o.title, label: o.label, tier: o.tier, band: o.band || null, dimension: o.dimension, arc: o.arc, world: o.world, watch: watchOf(o), stars: best[o.id] ?? null, diff: diffOf(o.id) })) };
   });
   on('GET', /^\/api\/ops\/([A-Za-z0-9]+)$/, (m, q) => {
     const o = opById.get(m[1]);
@@ -2126,7 +2129,7 @@
       arc: { id: a.id, name: a.name, blurb: a.blurb, span: a.span },
       nodes: a.nodes.map((id, i) => {
         const o = opById.get(id);
-        return { index: i, id, title: o.title, label: o.label, kind: o.kind, tier: arcTier(a, i), dimension: o.dimension, stars: p[i] ?? null, open: i === 0 || p[i - 1] != null };
+        return { index: i, id, title: o.title, label: o.label, kind: o.kind, tier: arcTier(a, i), diff: (diffOf(id) || [])[arcTier(a, i) - 1] ?? null, dimension: o.dimension, stars: p[i] ?? null, open: i === 0 || p[i - 1] != null };
       }),
     };
   });
@@ -2725,7 +2728,7 @@
   // The single-page demo runs without a server. It keeps progress in this browser and hides accounts and challenges.
   const DEMO = !!window.TDW_DEMO;
   // Help text shared by every build. It comes from parts/help.json.
-  const HELP = {"schema":1,"note":"Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.","how":[{"id":"tiers","when":"always","title":"Tiers","intro":"Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.","items":[{"label":"Tiers 1 to 6","text":"Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play."},{"label":"Tier 7","text":"Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. A scripted player rarely wins it."},{"label":"Where tiers apply","text":"Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb."}]},{"id":"holdings","when":"holdings","title":"Holdings","intro":"Some operations give your side ground it must pay to keep. The Holdings panel lists each one.","items":[{"label":"Cost and denial","text":"A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage."},{"label":"Consuming","text":"A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position."},{"label":"Giving one up","text":"Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back."}],"guide":"holdings"},{"id":"reach","when":"reach","title":"Reach and permits","intro":"Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.","items":[{"label":"Open","text":"An open act works at no price. Use it for the actions it names, up to its limit."},{"label":"Has a price","text":"A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival."},{"label":"Closed to you","text":"A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit."},{"label":"The report","text":"When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything."}],"guide":"reach"},{"id":"forecast","when":"forecast","title":"Forecast","intro":"The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.","items":[{"label":"Your forecast","text":"Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change."},{"label":"The score","text":"When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours."},{"label":"Where results come from","text":"The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little."}]}],"hints":{"factions":{"text":"This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.","how":"factions"},"leaders":{"text":"A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.","how":"factions"},"holdings":{"text":"Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.","how":"holdings"},"reach":{"text":"Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.","how":"reach"},"tier7":{"text":"You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. A scripted player rarely wins here.","how":"tiers"}},"ui":{"hintOk":"Got it","hintMore":"More in How to play","guideStart":"Try the guided run","guideLabel":"Guided run","guideHome":"Guided run","guideOp":"Learn the panel first","guideNext":"Play the full operation","forecastHow":"How forecasts score"}};
+  const HELP = {"schema":1,"note":"Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.","how":[{"id":"tiers","when":"always","title":"Tiers","intro":"Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.","items":[{"label":"Tiers 1 to 6","text":"Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play."},{"label":"Tier 7","text":"Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. On most operations a scripted player rarely wins it."},{"label":"Where tiers apply","text":"Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb."},{"label":"Difficulty labels","text":"Each tier of each operation carries a label from Gentle to Brutal. The label reads the share of 400 games a simple scripted player won at that tier. People may do better or worse."}]},{"id":"holdings","when":"holdings","title":"Holdings","intro":"Some operations give your side ground it must pay to keep. The Holdings panel lists each one.","items":[{"label":"Cost and denial","text":"A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage."},{"label":"Consuming","text":"A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position."},{"label":"Giving one up","text":"Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back."}],"guide":"holdings"},{"id":"reach","when":"reach","title":"Reach and permits","intro":"Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.","items":[{"label":"Open","text":"An open act works at no price. Use it for the actions it names, up to its limit."},{"label":"Has a price","text":"A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival."},{"label":"Closed to you","text":"A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit."},{"label":"The report","text":"When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything."}],"guide":"reach"},{"id":"forecast","when":"forecast","title":"Forecast","intro":"The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.","items":[{"label":"Your forecast","text":"Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change."},{"label":"The score","text":"When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours."},{"label":"Where results come from","text":"The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little."}]}],"hints":{"factions":{"text":"This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.","how":"factions"},"leaders":{"text":"A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.","how":"factions"},"holdings":{"text":"Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.","how":"holdings"},"reach":{"text":"Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.","how":"reach"},"tier7":{"text":"You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. On most operations a scripted player rarely wins here.","how":"tiers"}},"ui":{"hintOk":"Got it","hintMore":"More in How to play","guideStart":"Try the guided run","guideLabel":"Guided run","guideHome":"Guided run","guideOp":"Learn the panel first","guideNext":"Play the full operation","forecastHow":"How forecasts score","difficulty":{"bands":[{"min":85,"label":"Gentle"},{"min":60,"label":"Fair"},{"min":35,"label":"Hard"},{"min":10,"label":"Very hard"},{"min":0,"label":"Brutal"}],"won":"A scripted player won {n} percent of its games at this tier.","note":"Each label reads the share of games a simple scripted player won. People may do better or worse."}}};
 
   // ---------- icons ----------
   const ICON = {
@@ -2916,6 +2919,14 @@
     nx.focus({ preventScroll: true });
     (nx.closest('.hint, .coach') || nx).scrollIntoView({ block: 'center' });
   }
+  // ---------- version 10: approximate difficulty ----------
+  // A label for the share of games a scripted player wins. The bands and the words live in parts/help.json.
+  const DIFFX = HELP.ui.difficulty;
+  const diffLabel = (rate) => { const b = rate == null ? null : DIFFX.bands.find((x) => rate >= x.min); return b ? b.label : ''; };
+  // The sentence gives the share itself, so it can never disagree with the label beside it.
+  const diffSentence = (rate) => (rate == null ? '' : DIFFX.won.replace('{n}', String(rate)));
+  const diffNote = () => `<p class="small muted diffnote">${esc(DIFFX.note)}</p>`;
+  const diffLine = (rates, t) => (rates && rates[t - 1] != null ? `Tier ${t} · ${esc(diffLabel(rates[t - 1]))}. ${esc(diffSentence(rates[t - 1]))}` : '');
   const howOn = () => ({ always: true, holdings: counts().holdings > 0, reach: counts().reach > 0, forecast: !!(meta() && meta().forecast) });
   function howToc() {
     const on = howOn();
@@ -3023,7 +3034,7 @@
     if (f.q) list = list.filter((o) => o.title.toLowerCase().includes(f.q.toLowerCase()));
     render(html`
       <h1>Operations</h1>
-      <p class="small muted">${esc(copy().opsNote)}</p>
+      <p class="small muted">${esc(copy().opsNote)} ${esc(DIFFX.note)}</p>
       ${calendarHtml(calData)}
       <div class="filters">
         <select id="kind" aria-label="Kind"><option value="">History and futures</option><option value="catalog" ${f.kind === 'catalog' ? 'selected' : ''}>History</option><option value="futures" ${f.kind === 'futures' ? 'selected' : ''}>Futures</option><option value="watch" ${f.kind === 'watch' ? 'selected' : ''}>Watch</option></select>
@@ -3031,7 +3042,7 @@
         <select id="dim" aria-label="Dimension"><option value="">All dimensions</option>${dims.map((d) => `<option ${d === f.dim ? 'selected' : ''}>${d}</option>`).join('')}</select>
         <input id="q" placeholder="Search titles" value="${esc(f.q || '')}" aria-label="Search">
       </div>
-      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}${o.watch ? ' · ' + watchChip(o.watch) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}${o.band ? '<span class="chip2 band">Asymmetry band</span>' : ''}<span class="chip2">T${o.tier}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
+      <div class="card list oplist">${list.map((o) => `<a class="item" href="#/op/${o.id}"><span><b>${esc(o.title)}</b><br><span class="meta">${kindLabel(o.kind)} · ${esc(o.label)} · ${esc(o.dimension)}${o.world ? ' · ' + esc(o.world) : ''}${o.watch ? ' · ' + watchChip(o.watch) : ''}</span></span><span>${o.stars != null ? stars(o.stars, 'small') : ''}${o.band ? '<span class="chip2 band">Asymmetry band</span>' : ''}<span class="chip2 diff">T${o.tier}${o.diff ? ' · ' + esc(diffLabel(o.diff[o.tier - 1])) : ''}</span></span></a>`).join('') || '<p class="muted">Nothing matches.</p>'}</div>
     `);
     const upd = () => {
       const p = new URLSearchParams();
@@ -3075,7 +3086,7 @@
           <div class="card"><div class="label">Intelligence</div><p class="small">The record ties this operation to ${o.signature.map((s) => `<b>Stratagem ${s.num}, ${esc(s.name)}</b>`).join(' and ')}. Expect to see it often.</p></div>
         </div>
         <div>
-          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${[1, 2, 3, 4, 5, 6, 7].map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}">T${t}</button>`).join('')}</div><p class="small muted">The record sets Tier ${o.tier}.${o.tier < 7 ? ' Tier 7 is harder than any tier on the record.' : ''}</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>Tier ${d.arcTier || o.tier}</p><p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
+          ${mode === 'free' ? `<div class="card"><div class="label">Difficulty</div><div class="seg" role="group" aria-label="Tier">${[1, 2, 3, 4, 5, 6, 7].map((t) => `<button type="button" data-tier="${t}" aria-pressed="${t === o.tier}"${o.diff ? ` aria-label="T${t}, ${esc(diffLabel(o.diff[t - 1]))}"` : ''}>T${t}</button>`).join('')}</div>${o.diff ? `<p class="small" id="tierdiff" aria-live="polite">${diffLine(o.diff, o.tier)}</p>${diffNote()}` : ''}<p class="small muted">The record sets Tier ${o.tier}.${o.tier < 7 ? ' Tier 7 is harder than any tier on the record.' : ''}</p></div>` : `<div class="card"><div class="label">Difficulty</div><p>${o.diff ? diffLine(o.diff, d.arcTier || o.tier) : `Tier ${d.arcTier || o.tier}`}</p>${o.diff ? diffNote() : ''}<p class="small muted">Campaign difficulty climbs from Tier 1 to Tier 6 along the arc.</p></div>`}
           <div class="card"><div class="label">Lens · optional</div><div class="loadout">${lensRows}</div></div>
           <div class="card"><div class="label">Doctrine card · optional, once per operation</div><div class="loadout">${docRows}</div></div>
           ${o.best ? `<p>Your best: ${stars(o.best.stars)} · ${o.best.score}</p>` : ''}
@@ -3083,6 +3094,7 @@
         </div>
       </div>
     `);
+    bind('[data-tier]', 'click', (e) => { const td = $('#tierdiff'); if (td) td.innerHTML = diffLine(o.diff, Number(e.currentTarget.dataset.tier)); });
     bind('[data-tier]', 'click', (e) => { pick.tier = Number(e.currentTarget.dataset.tier); $$('[data-tier]').forEach((b) => b.setAttribute('aria-pressed', String(b === e.currentTarget))); });
     bind('[data-lens]', 'click', (e) => { const k = e.currentTarget.dataset.lens; pick.lens = pick.lens === k ? null : k; $$('[data-lens]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lens === pick.lens))); });
     bind('[data-doc]', 'click', (e) => { const k = e.currentTarget.dataset.doc; pick.doctrine = pick.doctrine === k ? null : k; $$('[data-doc]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.doc === pick.doctrine))); });
@@ -3596,10 +3608,11 @@
     const m = d.mine;
     render(html`
       <div class="hero">
-        <div class="kicker">Daily #${d.number} · ${esc(d.day)} · Tier ${d.tier}</div>
+        <div class="kicker">Daily #${d.number} · ${esc(d.day)} · Tier ${d.tier}${o.diff ? ' · ' + esc(diffLabel(o.diff[d.tier - 1])) : ''}</div>
         <h1>${esc(o.title)}</h1>
         <p>${md(o.brief)}</p>
         <p class="pill-row"><span class="chip2">${esc(o.opponent)}</span><span class="chip2">${esc(o.label)}</span><span class="chip2 dimchip">${esc(o.dimension)}</span></p>
+        ${o.diff ? diffNote() : ''}
         <div class="row">${m && m.status !== 'live' ? `${stars(m.stars || 0)} <span>Score ${m.score}</span> <button id="again">Practice again</button>` : `<button class="primary" id="play">${m ? 'Resume' : 'Play today\'s operation'}</button>`}</div>
       </div>
       ${DEMO ? '<div class="card"><div class="label">Today</div><p>Everyone on the full game plays this operation today, and a shared board ranks the results. The demo keeps your result in this browser. A new operation starts at midnight UTC.</p></div>'
@@ -3630,9 +3643,10 @@
       <div class="kicker">${esc(d.arc.span)}</div>
       <h1>${esc(d.arc.name)}</h1>
       <p>${esc(d.arc.blurb)}</p>
+      ${d.nodes.some((n) => n.diff != null) ? diffNote() : ''}
       <div class="arcline">${d.nodes.map((n) => {
         const st = n.stars != null ? 'cleared' : n.open ? 'open' : 'locked';
-        const inner = `<span><span class="yr">${esc(n.label)}</span><br><b>${esc(n.title)}</b><br><span class="small muted">${kindLabel(n.kind)} · Tier ${n.tier} · ${esc(n.dimension)}</span></span><span>${n.stars != null ? stars(n.stars, 'small') : n.open ? '<span class="chip2">Play</span>' : '<span class="chip2">Locked</span>'}</span>`;
+        const inner = `<span><span class="yr">${esc(n.label)}</span><br><b>${esc(n.title)}</b><br><span class="small muted">${kindLabel(n.kind)} · Tier ${n.tier}${n.diff != null ? ' · ' + esc(diffLabel(n.diff)) : ''} · ${esc(n.dimension)}</span></span><span>${n.stars != null ? stars(n.stars, 'small') : n.open ? '<span class="chip2">Play</span>' : '<span class="chip2">Locked</span>'}</span>`;
         return `<div class="arcnode ${st}">${n.open ? `<a class="item" href="#/op/${n.id}?mode=arc&arc=${esc(d.arc.id)}&node=${n.index}">${inner}</a>` : `<div class="item">${inner}</div>`}</div>`;
       }).join('')}</div>
     `);

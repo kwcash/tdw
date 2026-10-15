@@ -19,12 +19,13 @@ The engine is deterministic and turn based. It has 12 domains, 10 dimensions and
 
 All work happens in `game-build/workspace/`. It is the working tree, and the files at the top of `game-build/` are older mirrors, release notes and `dist/`.
 
-- `out/` holds the current bundle (`game.js`, `engine.js`, `record.js`) and the previous versions (`*.v4.js` to `*.v8.js`). `parts/style.css` holds the CSS. `parts/help.json` holds the help text that the bundle embeds.
-- `patch-v4.py` to `patch-v9.py` each turn the previous bundle into the next. Do not rerun the chain. A new step adds the next patch that reads the current bundle, as `patch-v9.py` does. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
+- `out/` holds the current bundle (`game.js`, `engine.js`, `record.js`) and the previous versions (`*.v4.js` to `*.v9.js`). `parts/style.css` holds the CSS. `parts/help.json` holds the help text that the bundle embeds.
+- `patch-v4.py` to `patch-v10.py` each turn the previous bundle into the next. Do not rerun the chain. A new step adds the next patch that reads the current bundle, as `patch-v10.py` does. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
 - `content/` holds the four content files and their `.before` copies. `content/era3.shipped-1014.json` is the 14 October copy that a test compares W017 and W018 against.
 - `band/` holds `band_ops.py` (all three band operations), `build_band.py`, `cards.json` (31 reviewed evidence cards), the importer tools and `batches/`.
 - `forecast/` holds `build_forecasts.py` and the ledger snapshot. `settle_watch.py` settles a watch.
 - `content/guides.json` holds the guided runs and `content/add_guides.py` copies them into the content files.
+- `difficulty/build_difficulty.js` writes the difficulty table and `difficulty/add_difficulty.py` copies it into the content files. Rebuild both after any engine or content change, or the checks fail.
 - `test/` holds the tests and `e2e/` holds the Playwright runs. `test/shim-harness.js` runs the in-browser save logic under Node. `baselines/` holds 320 old result codes for regression.
 
 ## First commands
@@ -59,7 +60,7 @@ Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, r
 
 ## State at handoff
 
-Done: multi-faction engine, result codes and replay, the 2026 build to W019, forecast mode, holdings and acts against one's own position (E011), the asymmetry band, evidence pipeline (31 cards), Tier 7 on all four builds. On 15 October: How to play sections, first-use hints and two guided runs (player experience item 1). See the `CHANGELOG_*` files in order.
+Done: multi-faction engine, result codes and replay, the 2026 build to W019, forecast mode, holdings and acts against one's own position (E011), the asymmetry band, evidence pipeline (31 cards), Tier 7 on all four builds. On 15 October: How to play sections, first-use hints and two guided runs (player experience item 1), and difficulty labels (item 2). See the `CHANGELOG_*` files in order.
 
 ## Open items
 
@@ -82,7 +83,7 @@ The owner asked for the process and the player experience to move up one maturit
 
 **Player experience, Level 2 to 3**
 1. Done on 15 October (CHANGELOG_2026-10-15.md). How to play covers Holdings, Reach and permits, Tiers and Forecast. Each board panel has a first-use hint. Two guided runs teach holdings and reach.
-2. Show an approximate difficulty on each operation and tier. The owner decided on 15 October to keep Tier 7 open, with no unlock.
+2. Done on 15 October (CHANGELOG_2026-10-15b.md, DIFFICULTY_NOTES.md). Each operation and tier shows a label from a scripted player's win rate. The owner decided to keep Tier 7 open, with no unlock.
 3. Add a glossary of terms, linked from each panel.
 4. Add progress export and import as a file download, and a `mailto:` feedback link. The owner has not given a feedback address, so the link stays hidden until one is set.
 5. Write a playtest script for 5 to 8 sessions. The owner finds the players. Then audit accessibility with a screen reader, keyboard only and 200% zoom, and log the results.
