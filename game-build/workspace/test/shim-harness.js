@@ -18,14 +18,17 @@ function load(contentPath, opt = {}) {
   const text = fs.readFileSync(path.resolve(ROOT, contentPath), 'utf8');
   const C = JSON.parse(text);
   const storage = opt.storage || new Map();
+  const blocked = () => { if (opt.blocked) throw new Error('SecurityError'); };
   const localStorage = {
-    getItem: (k) => (storage.has(k) ? storage.get(k) : null),
-    setItem: (k, v) => { storage.set(k, String(v)); },
+    getItem: (k) => { blocked(); return storage.has(k) ? storage.get(k) : null; },
+    setItem: (k, v) => { blocked(); storage.set(k, String(v)); },
     removeItem: (k) => { storage.delete(k); },
     key: (i) => [...storage.keys()][i] ?? null,
     get length() { return storage.size; },
   };
   const ctx = { console, JSON, Math, Date, Map, Set, URL, URLSearchParams, Response, Promise, Uint8Array, Error, Object, Array, Number, String, setTimeout, crypto: globalThis.crypto, localStorage };
+  const listeners = {};
+  ctx.addEventListener = (type, fn) => { (listeners[type] = listeners[type] || []).push(fn); };
   ctx.self = ctx;
   ctx.document = { getElementById: (id) => (id === 'tdw-content' ? { textContent: text } : null) };
   ctx.TDWEngine = E;
@@ -39,7 +42,8 @@ function load(contentPath, opt = {}) {
     if (!res.ok) { const e = new Error(data.error || 'Request failed'); e.status = res.status; throw e; }
     return data;
   }
-  return { api: call, storage, C, key: C.storageKey || 'tdw-demo-1', save: () => JSON.parse(storage.get(C.storageKey || 'tdw-demo-1') || 'null') };
+  const fire = (type, ev) => (listeners[type] || []).forEach((fn) => fn(ev));
+  return { api: call, storage, C, fire, key: C.storageKey || 'tdw-demo-1', save: () => JSON.parse(storage.get(C.storageKey || 'tdw-demo-1') || 'null') };
 }
 
 // Plays a run to the end through the shim. pick(view) returns the next action, or null to end the turn.

@@ -82,3 +82,9 @@ What is here, so a reset of the working machine does not cost the game again.
 - All four builds take the v11 bundle. A glossary at `#/glossary` explains the terms the board uses, and each panel opens its term over the board. A term shows only in a build that has the rule behind it.
 - `workspace/parts/help.json` holds the terms and `workspace/patch-v11.py` turns the v10 bundle into the v11 bundle.
 - `dist/update-2026-10-15c.zip` is the upload set for all four folders. `CHANGELOG_2026-10-15c.md` describes it.
+
+## Update of 15 October 2026, fourth set
+
+- All four builds take the v12 bundle. A page at `#/progress` saves the progress to a file and loads it back after a second tap. A loaded file is checked field by field.
+- A feedback link is ready and stays hidden until `workspace/parts/help.json` names an address under `ui.feedback.email`.
+- `dist/update-2026-10-15d.zip` is the upload set for all four folders. `CHANGELOG_2026-10-15d.md` describes it.

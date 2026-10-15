@@ -159,7 +159,43 @@
   "glossName": "{term}, in the glossary",
   "glossCountOne": "{n} term",
   "glossCountMany": "{n} terms",
-  "glossOpen": "Open the glossary"
+  "glossOpen": "Open the glossary",
+  "progress": {
+   "title": "Your progress",
+   "link": "Save or load your progress",
+   "intro": "Your progress lives in this browser only. Save it to a file to keep a copy or to carry it to another browser.",
+   "now": "In this browser now",
+   "save": "Save my progress to a file",
+   "saved": "Check your downloads for the file.",
+   "load": "Load progress from a file",
+   "loadNote": "Loading a file replaces the progress in this browser. Save a copy first if you want to keep it.",
+   "holds": "The file holds",
+   "replace": "Replace my progress with this file",
+   "replaceAgain": "Tap again to replace your progress",
+   "loaded": "Progress loaded.",
+   "tooBig": "This file is too large to be a TDW progress file.",
+   "notFile": "This is not a TDW progress file.",
+   "clear": "Clear my progress",
+   "clearAgain": "Tap again to clear everything",
+   "cleared": "Progress cleared.",
+   "rows": {
+    "level": "Level",
+    "xp": "Experience points",
+    "played": "Operations played",
+    "won": "Operations won",
+    "captured": "Stratagems captured",
+    "records": "Result codes",
+    "forecasts": "Forecasts locked",
+    "arcs": "Campaign arcs with a step won"
+   },
+   "noStore": "This browser keeps no progress after you close the page. Save to a file before you leave."
+  },
+  "feedback": {
+   "email": "",
+   "label": "Send feedback by email",
+   "subject": "TDW feedback",
+   "intro": "Tell us what worked and what did not. Name the operation and the tier if you can."
+  }
  },
  "glossary": [
   {

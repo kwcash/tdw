@@ -19,8 +19,8 @@ The engine is deterministic and turn based. It has 12 domains, 10 dimensions and
 
 All work happens in `game-build/workspace/`. It is the working tree, and the files at the top of `game-build/` are older mirrors, release notes and `dist/`.
 
-- `out/` holds the current bundle (`game.js`, `engine.js`, `record.js`) and the previous versions (`*.v4.js` to `*.v10.js`). `parts/style.css` holds the CSS. `parts/help.json` holds the help text and the glossary that the bundle embeds.
-- `patch-v4.py` to `patch-v11.py` each turn the previous bundle into the next. Do not rerun the chain. A new step adds the next patch that reads the current bundle, as `patch-v11.py` does. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
+- `out/` holds the current bundle (`game.js`, `engine.js`, `record.js`) and the previous versions (`*.v4.js` to `*.v11.js`). `parts/style.css` holds the CSS. `parts/help.json` holds the help text and the glossary that the bundle embeds.
+- `patch-v4.py` to `patch-v12.py` each turn the previous bundle into the next. Do not rerun the chain. A new step adds the next patch that reads the current bundle, as `patch-v12.py` does. `mkpkg.py` builds the four packages into `out/pkg/`. `release.py TAG NOTES...` runs every check and builds the packages. It writes `dist/` and the upload zip and refreshes the mirrors.
 - `content/` holds the four content files and their `.before` copies. `content/era3.shipped-1014.json` is the 14 October copy that a test compares W017 and W018 against.
 - `band/` holds `band_ops.py` (all three band operations), `build_band.py`, `cards.json` (31 reviewed evidence cards), the importer tools and `batches/`.
 - `forecast/` holds `build_forecasts.py` and the ledger snapshot. `settle_watch.py` settles a watch.
@@ -60,7 +60,7 @@ Browser runs need Playwright. If `/tmp/pw/node_modules/playwright` is missing, r
 
 ## State at handoff
 
-Done: multi-faction engine, result codes and replay, the 2026 build to W019, forecast mode, holdings and acts against one's own position (E011), the asymmetry band, evidence pipeline (31 cards), Tier 7 on all four builds. On 15 October: How to play sections, first-use hints and two guided runs (player experience item 1), difficulty labels (item 2) and the glossary (item 3). See the `CHANGELOG_*` files in order.
+Done: multi-faction engine, result codes and replay, the 2026 build to W019, forecast mode, holdings and acts against one's own position (E011), the asymmetry band, evidence pipeline (31 cards), Tier 7 on all four builds. On 15 October the four player experience items 1 to 4: How to play sections with hints and guided runs, difficulty labels, the glossary and progress files. See the `CHANGELOG_*` files in order.
 
 ## Open items
 
@@ -85,5 +85,5 @@ The owner asked for the process and the player experience to move up one maturit
 1. Done on 15 October (CHANGELOG_2026-10-15.md). How to play covers Holdings, Reach and permits, Tiers and Forecast. Each board panel has a first-use hint. Two guided runs teach holdings and reach.
 2. Done on 15 October (CHANGELOG_2026-10-15b.md, DIFFICULTY_NOTES.md). Each operation and tier shows a label from a scripted player's win rate. The owner decided to keep Tier 7 open, with no unlock.
 3. Done on 15 October (CHANGELOG_2026-10-15c.md). A glossary at `#/glossary` holds 55 terms, and each board panel opens its term over the board.
-4. Add progress export and import as a file download, and a `mailto:` feedback link. The owner has not given a feedback address, so the link stays hidden until one is set.
+4. Done on 15 October (CHANGELOG_2026-10-15d.md). A page at `#/progress` saves and loads progress as a file. The `mailto:` feedback link is built and stays hidden until the owner gives an address. Set it under `ui.feedback.email` in `parts/help.json` and rebuild.
 5. Write a playtest script for 5 to 8 sessions. The owner finds the players. Then audit accessibility with a screen reader, keyboard only and 200% zoom, and log the results.

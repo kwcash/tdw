@@ -40,7 +40,7 @@ const guideCode = (ctx, g, log, over = {}) => R.makeCode(ctx, { opId: g.op, tier
 // ---------- the help text ----------
 ok('the help text keeps the house style, with no colon or semicolon in prose', () => {
   assert.strictEqual(lint('parts/help.json'), '0 style failures');
-  for (const [w, t] of walkText('help', HELP, new Set(['note', 'schema', 'id', 'when', 'how', 'guide']))) prose(w, t);
+  for (const [w, t] of walkText('help', HELP, new Set(['note', 'schema', 'id', 'when', 'how', 'guide', 'email']))) prose(w, t);
 });
 
 ok('the How to play page gains Tiers, Holdings, Reach and permits, and Forecast, and every panel has a hint', () => {
