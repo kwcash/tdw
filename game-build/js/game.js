@@ -1864,13 +1864,17 @@
   }
   const debrief = (o) => ({ record: o.record, reading: o.reading, coreEvent: o.coreEvent || null, gap: o.gap, gapText: o.gapText, fix: o.fix, spine: o.spine, fullTitle: o.fullTitle });
 
+  // What decides which glossary terms a build shows. Each count mirrors the panel it explains.
+  const PICK = OPS.filter((o) => !o.hidden);
+  const legitOf = (o) => !!(o.rules && o.rules.legitimacy !== undefined ? o.rules.legitimacy : REG.ruleset.legitimacy);
+  const multiOf = (o) => Array.isArray(o.factions) && o.factions.length > 2;
   const META = {
     domains: E.DOMAINS, short: E.SHORT, links: E.LINKS, stages: E.STAGES, stageText: E.STAGE_TEXT, groups: E.GROUPS,
     dimensions: E.DIMENSIONS, lenses: E.LENSES, doctrines: E.DOCTRINES, doctrineLevel: DOCTRINE_LEVEL,
     cards: E.cardList().map((c) => ({ code: c.code, num: c.num, name: c.name, group: c.group, text: c.text, face: c.face, offer: c.offer || null, proxy: !!c.proxy })),
     copy: C.copy || null,
     forecast: C.forecast || null,
-    counts: { ops: OPS.filter((o) => !o.hidden).length, arcs: ARCS.length, multi: OPS.filter((o) => Array.isArray(o.factions) && o.factions.length > 2).length, holdings: OPS.filter((o) => !o.hidden && Array.isArray(o.holdings) && o.holdings.length).length, reach: OPS.filter((o) => !o.hidden && Array.isArray(o.reach) && o.reach.length).length },
+    counts: { ops: OPS.filter((o) => !o.hidden).length, arcs: ARCS.length, multi: OPS.filter((o) => Array.isArray(o.factions) && o.factions.length > 2).length, holdings: OPS.filter((o) => !o.hidden && Array.isArray(o.holdings) && o.holdings.length).length, reach: OPS.filter((o) => !o.hidden && Array.isArray(o.reach) && o.reach.length).length, legit: PICK.filter(legitOf).length, leaders: PICK.filter((o) => (o.cadres || []).length).length, pacts: PICK.filter((o) => (o.pacts || []).length).length, factions: PICK.filter((o) => multiOf(o) || legitOf(o) || (o.pacts || []).length).length, watch: PICK.filter((o) => o.kind === 'watch').length, world: PICK.filter((o) => o.world).length },
     guides: GUIDES.map(guideOut),
   };
 
@@ -2728,7 +2732,7 @@
   // The single-page demo runs without a server. It keeps progress in this browser and hides accounts and challenges.
   const DEMO = !!window.TDW_DEMO;
   // Help text shared by every build. It comes from parts/help.json.
-  const HELP = {"schema":1,"note":"Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.","how":[{"id":"tiers","when":"always","title":"Tiers","intro":"Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.","items":[{"label":"Tiers 1 to 6","text":"Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play."},{"label":"Tier 7","text":"Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. On most operations a scripted player rarely wins it."},{"label":"Where tiers apply","text":"Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb."},{"label":"Difficulty labels","text":"Each tier of each operation carries a label from Gentle to Brutal. The label reads the share of 400 games a simple scripted player won at that tier. People may do better or worse."}]},{"id":"holdings","when":"holdings","title":"Holdings","intro":"Some operations give your side ground it must pay to keep. The Holdings panel lists each one.","items":[{"label":"Cost and denial","text":"A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage."},{"label":"Consuming","text":"A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position."},{"label":"Giving one up","text":"Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back."}],"guide":"holdings"},{"id":"reach","when":"reach","title":"Reach and permits","intro":"Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.","items":[{"label":"Open","text":"An open act works at no price. Use it for the actions it names, up to its limit."},{"label":"Has a price","text":"A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival."},{"label":"Closed to you","text":"A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit."},{"label":"The report","text":"When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything."}],"guide":"reach"},{"id":"forecast","when":"forecast","title":"Forecast","intro":"The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.","items":[{"label":"Your forecast","text":"Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change."},{"label":"The score","text":"When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours."},{"label":"Where results come from","text":"The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little."}]}],"hints":{"factions":{"text":"This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.","how":"factions"},"leaders":{"text":"A leader stands in one domain and changes the rules there. Read the line under each name. Move one of yours for 1 action, once a turn.","how":"factions"},"holdings":{"text":"Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.","how":"holdings"},"reach":{"text":"Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.","how":"reach"},"tier7":{"text":"You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. On most operations a scripted player rarely wins here.","how":"tiers"}},"ui":{"hintOk":"Got it","hintMore":"More in How to play","guideStart":"Try the guided run","guideLabel":"Guided run","guideHome":"Guided run","guideOp":"Learn the panel first","guideNext":"Play the full operation","forecastHow":"How forecasts score","difficulty":{"bands":[{"min":85,"label":"Gentle"},{"min":60,"label":"Fair"},{"min":35,"label":"Hard"},{"min":10,"label":"Very hard"},{"min":0,"label":"Brutal"}],"won":"A scripted player won {n} percent of its games at this tier.","note":"Each label reads the share of games a simple scripted player won. People may do better or worse."}}};
+  const HELP = {"schema":1,"note":"Player-facing help text shared by all four builds. patch-v9.py embeds it in the bundle. The house style applies, and test/guide.test.js checks it.","how":[{"id":"tiers","when":"always","title":"Tiers","intro":"Tier sets the difficulty. The record sets a tier for each operation, and free play lets you pick another.","items":[{"label":"Tiers 1 to 6","text":"Higher tiers are harder on the whole. Each step up shortens the clock to Consume, enlarges the opponent's base hand or starts the opponent with more pressure. From Tier 2 the opponent starts with pressure on the lever. From Tier 3 it starts on every domain in play."},{"label":"Tier 7","text":"Tier 7 sits above Tier 6. The clock to Consume runs one point shorter than at Tier 6. A fourth card joins the opponent's hand from turn 3, and every domain in play opens at 2 pressure. On most operations a scripted player rarely wins it."},{"label":"Where tiers apply","text":"Free play offers every tier. The campaign climbs from Tier 1 to Tier 6 along each arc. The daily runs at Tier 3. A win scores 100 more for each tier you climb."},{"label":"Difficulty labels","text":"Each tier of each operation carries a label from Gentle to Brutal. The label reads the share of 400 games a simple scripted player won at that tier. People may do better or worse."}]},{"id":"holdings","when":"holdings","title":"Holdings","intro":"Some operations give your side ground it must pay to keep. The Holdings panel lists each one.","items":[{"label":"Cost and denial","text":"A holding charges you its cost every turn. The cost comes off your shields in its domain first and then lands as pressure. While you keep a holding it denies the rival part of its leverage."},{"label":"Consuming","text":"A holding turns consuming when its cost is more than what it denies. Every turn you keep a consuming holding counts as an act against your own position."},{"label":"Giving one up","text":"Give up a holding for 1 action. It stops costing you and stops denying the rival. Some holdings cost legitimacy to give up. You cannot take a holding back."}],"guide":"holdings"},{"id":"reach","when":"reach","title":"Reach and permits","intro":"Some operations list acts with a strong effect. Each act carries a permit for your side, and the Reach panel shows it.","items":[{"label":"Open","text":"An open act works at no price. Use it for the actions it names, up to its limit."},{"label":"Has a price","text":"A priced act works but costs your side legitimacy. The game counts it as an act against your own position, and it often helps the rival."},{"label":"Closed to you","text":"A closed act stays open to the rival and barred to your side. The panel still lists it. Open Why to read the evidence cards behind the permit."},{"label":"The report","text":"When the run ends the report counts each closed act the rival used. Permits are the game's reading of the evidence and not a count of anything."}],"guide":"reach"},{"id":"forecast","when":"forecast","title":"Forecast","intro":"The Forecast page lists claims from the book's prediction ledger. The ledger dated each claim before anyone knew how it would resolve.","items":[{"label":"Your forecast","text":"Enter your chance that a claim holds, from 1 to 99 percent. Lock it before the check date. A locked forecast cannot change."},{"label":"The score","text":"When the result is in the game scores you with the Brier score. The score is the square of the miss, so lower is better. You see the book's own probability and a cheap reference answer beside yours."},{"label":"Where results come from","text":"The site owner copies each result from the project's scoring log. The page only mirrors that log. A few claims prove little."}]}],"hints":{"factions":{"text":"This panel shows every side in the operation. Each rival banks its own leverage toward Consume. Legitimacy falls with some acts and recovers on a coherent turn. Below the marked line a faction suffers an entropy spike.","how":"factions"},"leaders":{"text":"A leader stands in one domain and changes the rules there. Read the line under each name. Move each of yours once a turn for 1 action.","how":"factions"},"holdings":{"text":"Each holding costs you every turn and keeps some leverage from the rival. A holding marked consuming costs more than it denies. Give it up when it stops paying.","how":"holdings"},"reach":{"text":"Each act here carries a permit for your side. Open acts cost nothing extra. Priced acts work and cost legitimacy. Closed acts stay barred to you, and Why shows the evidence.","how":"reach"},"tier7":{"text":"You are playing Tier 7, the top tier. Every domain in play opens at 2 pressure and the opponent's hand grows sooner. On most operations a scripted player rarely wins here.","how":"tiers"}},"ui":{"hintOk":"Got it","hintMore":"More in How to play","guideStart":"Try the guided run","guideLabel":"Guided run","guideHome":"Guided run","guideOp":"Learn the panel first","guideNext":"Play the full operation","forecastHow":"How forecasts score","difficulty":{"bands":[{"min":85,"label":"Gentle"},{"min":60,"label":"Fair"},{"min":35,"label":"Hard"},{"min":10,"label":"Very hard"},{"min":0,"label":"Brutal"}],"won":"A scripted player won {n} percent of its games at this tier.","note":"Each label reads the share of games a simple scripted player won. People may do better or worse."},"glossTitle":"Glossary","glossIntro":"The terms the board and its panels use. A term shows here when this build has the rule behind it.","glossFilter":"Filter the terms","glossNone":"No term matches.","glossSee":"See also","glossLink":"Glossary","glossName":"{term}, in the glossary","glossCountOne":"{n} term","glossCountMany":"{n} terms","glossOpen":"Open the glossary"},"glossary":[{"id":"actions","term":"Actions","when":"always","text":"Each move costs actions, shown as blue dots on the board. Most operations give 3 a turn and 1 more for every 2 points of coherence. Two or more left unspent at the end of a turn can cost coherence.","see":["coherence","detect","disrupt","defend"]},{"id":"domain","term":"Domain","when":"always","text":"One of the twelve fields the contest runs through, from Kinetic to Data and Surveillance. Each domain holds pressure and shields. Bold outlines mark the domains in play.","see":["pressure","shield","lever","gated","load","lock"]},{"id":"pressure","term":"Pressure","when":"always","text":"Strain on a domain, from 0 to 5. At 3 or more the domain pays the opponent 1 leverage each turn. At 5 the domain falls and pays 2.","see":["leverage","shield","slope"]},{"id":"shield","term":"Shield","when":"always","text":"A shield absorbs 1 pressure. Defend adds one for 1 action.","see":["defend","pressure"]},{"id":"slope","term":"Slope","when":"always","text":"Pressure that grows by itself each turn until you clear it. Disrupt on the domain clears slopes before pressure.","see":["disrupt","offer"]},{"id":"leverage","term":"Leverage","when":"always","text":"What the opponent banks from domains under strain. Leverage moves the operation along its lifecycle toward Consume.","see":["lifecycle","consume"]},{"id":"lifecycle","term":"Lifecycle","when":"always","text":"The five stages of an operation. Attract leads to Accommodate, then Control and Extract, and last to Consume.","see":["leverage","consume"]},{"id":"consume","term":"Consume","when":"always","text":"The last stage. The opponent wins when the operation reaches Consume before the clock runs out.","see":["lifecycle"]},{"id":"lever","term":"Lever","when":"always","text":"The one domain an operation turns on. You may name it once. A right guess cuts leverage by 2 and makes Disrupts there cost 1 less. A wrong guess gives the opponent 2 and costs coherence.","see":["domain","stars"]},{"id":"coherence","term":"Coherence","when":"always","text":"How well your side acts as one, from 0 to 5. A turn with a shield that absorbs a hit, a Disrupt on a card you detected or a right lever raises it by 1. A turn with two idle actions or a fallen domain lowers it by 1. A turn with both changes nothing.","see":["actions"]},{"id":"detect","term":"Detect","when":"always","text":"Costs 1 action and reveals a hidden card.","see":["facedown","unattributed"]},{"id":"disrupt","term":"Disrupt","when":"always","text":"Costs 2 actions, and 1 less at a named lever. On a card you can name it cancels the card and captures it for your codex. On a domain it clears slopes and then pressure.","see":["codex","slope"]},{"id":"defend","term":"Defend","when":"always","text":"Costs 1 action and adds a shield to a domain.","see":["shield"]},{"id":"card","term":"Stratagem card","when":"always","text":"A move the opponent aims at a domain. The card lands when you end the turn unless you disrupt it.","see":["disrupt","codex","proxy"]},{"id":"facedown","term":"Face-down card","when":"always","text":"A card that shows nothing. Detect it before you answer it.","see":["detect"]},{"id":"unattributed","term":"Unattributed card","when":"always","text":"A card that shows a threat and hides its name. The threat may be a feint.","see":["detect","decoy"]},{"id":"decoy","term":"Decoy","when":"always","text":"A false card that holds nothing. Detect shows it for what it is.","see":["detect"]},{"id":"offer","term":"Offer","when":"always","text":"A card that pays you now and costs you now or later. Leave it and it passes.","see":["slope"]},{"id":"gated","term":"Gated domain","when":"always","text":"A domain where you hold no authority yet, marked GATED. Spend 1 action to open the gate before you act there.","see":["domain","dimension"]},{"id":"load","term":"Load-bearing domain","when":"always","text":"A domain the operation leans on, marked LOAD. Under Criticality the opponent aims there more often. A fall there moves the operation a full stage.","see":["lever","dimension"]},{"id":"dimension","term":"Dimension","when":"always","text":"The physics an operation runs under, one of ten. Each dimension changes one rule and names a counter.","see":["lens"],"how":"dimensions"},{"id":"lens","term":"Lens","when":"always","text":"An optional bonus tied to one dimension. Attribution, the Asymmetry lens, is open from the start. Win an operation under a dimension to unlock its lens. Boot camp and guided runs unlock none.","see":["dimension"],"how":"dimensions"},{"id":"doctrine","term":"Doctrine card","when":"always","text":"A card you may play once per operation. Each one unlocks at a level.","see":[]},{"id":"tier","term":"Tier","when":"always","text":"The difficulty of a run, from 1 to 7. The record sets a tier for each operation, and free play lets you pick another.","see":["tier7","difficulty"],"how":"tiers"},{"id":"tier7","term":"Tier 7","when":"always","text":"The top tier, above Tier 6. Every domain in play opens at 2 pressure.","see":["tier","difficulty"],"how":"tiers"},{"id":"difficulty","term":"Difficulty label","when":"always","text":"A label from Gentle to Brutal on each operation and tier. The label reads the share of 400 games a simple scripted player won there. People may do better or worse.","see":["tier"],"how":"tiers"},{"id":"stars","term":"Stars","when":"always","text":"One star means you held the line. Two mean the operation stopped before Extract. Three mean you cut the lever or kept leverage under 40 percent.","see":["lever","lifecycle"]},{"id":"faction","term":"Faction","when":"factions","text":"A side in an operation. Each faction has its own pressure and shields in every domain.","see":["legitimacy","pact","elsewhere"],"how":"factions"},{"id":"legitimacy","term":"Legitimacy","when":"legit","text":"A faction's standing, from 0 to 100. Some acts cost it and a coherent turn restores it. Below 25 a faction suffers an entropy spike.","see":["entropy","faction"],"how":"factions"},{"id":"entropy","term":"Entropy spike","when":"legit","text":"What a faction suffers below 25 legitimacy. Its own domains start to come apart.","see":["legitimacy"],"how":"factions"},{"id":"leader","term":"Leader","when":"leaders","text":"A figure or an office that stands in one domain and changes the rules there. Move each of yours once a turn for 1 action.","see":["faction"],"how":"factions"},{"id":"pact","term":"Pact","when":"pacts","text":"An agreement between factions. Members do not target each other while it holds. Some pacts stand against a third faction.","see":["faction"],"how":"factions"},{"id":"elsewhere","term":"Elsewhere","when":"multi","text":"Cards aimed at the other factions. You cannot answer them, but they shift the balance between the others.","see":["faction"],"how":"factions"},{"id":"holding","term":"Holding","when":"holdings","text":"Ground your side pays to keep. A holding costs you every turn and denies the rival part of its leverage.","see":["consuming","selfact"],"how":"holdings"},{"id":"consuming","term":"Consuming holding","when":"holdings","text":"A holding whose cost is more than what it denies. Each turn you keep it counts as an act against your own position.","see":["holding","selfact"],"how":"holdings"},{"id":"selfact","term":"Act against your own position","when":"selfact","text":"A move that weakens the side that makes it. The report lists each one with its type.","see":["consuming","permit"]},{"id":"reach","term":"Reach","when":"reach","text":"An act with a strong effect that carries a permit for your side.","see":["permit","evidence"],"how":"reach"},{"id":"permit","term":"Permit","when":"reach","text":"Open, priced or closed. Open acts cost nothing extra. Priced acts cost legitimacy. Closed acts stay barred to you. Each permit is the game's reading of its evidence cards.","see":["reach","evidence"],"how":"reach"},{"id":"evidence","term":"Evidence card","when":"reach","text":"A card that states one claim in the game's own words, with an id such as EV-001. The project keeps the source for each card, and some still wait for a check.","see":["permit"],"how":"reach"},{"id":"band","term":"Asymmetry band","when":"reach","text":"The three 2026 operations whose acts carry permits. The rival acts with no court, no press and no vote in the way. Some acts are closed to your side and some carry a price. They play at Tier 7 on the record.","see":["reach","tier7"],"how":"reach"},{"id":"watch","term":"Watch","when":"watch","text":"An operation on a subject that has not settled yet. It plays the record up to its last source.","see":[]},{"id":"forecast","term":"Forecast","when":"forecast","text":"Your chance, from 1 to 99 percent, that a dated claim holds. Lock it before the check date.","see":["brier","reference"],"how":"forecast"},{"id":"brier","term":"Brier score","when":"forecast","text":"The square of the miss between your chance and the result. Lower is better.","see":["forecast"],"how":"forecast"},{"id":"reference","term":"Cheap reference answer","when":"forecast","text":"A plain guess from a stated basis, such as a base rate. The game scores it beside you and the book.","see":["brier"],"how":"forecast"},{"id":"code","term":"Result code","when":"always","text":"A line that holds the seed and every action of a run. The game replays it to check the score.","see":["replay","challenge"]},{"id":"replay","term":"Replay","when":"always","text":"A finished run played back step by step from its result code.","see":["code"]},{"id":"challenge","term":"Challenge link","when":"always","text":"A link that fixes the operation, the tier and the seed, so two players face the same opening.","see":["code"]},{"id":"daily","term":"Daily","when":"always","text":"One operation for every player each day, at Tier 3. Your first finished run of the day counts.","see":[]},{"id":"arc","term":"Campaign arc","when":"always","text":"A chain of operations that climbs from Tier 1 to Tier 6. Win one to open the next.","see":["tier"]},{"id":"codex","term":"Codex","when":"always","text":"Your collection of the 36 stratagems. Disrupt a card to capture it.","see":["disrupt","card"],"how":"groups"},{"id":"bootcamp","term":"Boot camp","when":"always","text":"Six turns at The Gate at Canton in 1784 that teach the board.","see":["guide"]},{"id":"guide","term":"Guided run","when":"guides","text":"A short run of one operation at Tier 1 with coach steps. Each one teaches one panel.","see":["bootcamp"]},{"id":"lock","term":"Locked domain","when":"always","text":"A domain marked LOCK, where you cannot disrupt until the count runs out. One stratagem card sets the lock.","see":["disrupt","domain"]},{"id":"proxy","term":"Proxy card","when":"always","text":"A card marked PROXY, delivered through a third party. Disrupting it costs 1 more action. Where legitimacy is in play the faction that plays it loses some.","see":["card","legitimacy"]},{"id":"world","term":"World","when":"world","text":"A setting some operations run in, shown after the tier. Long Grind adds a turn and moves Consume 2 points later, and Unwinding moves it 2 sooner. Runaway and Machine Mandate feed the opponent's hand.","see":["consume","card"]}]};
 
   // ---------- icons ----------
   const ICON = {
@@ -2856,7 +2860,7 @@
   function hintHtml(id) {
     const h = HELP.hints[id];
     if (!h || !hintState.seen || hintState.seen.includes(id)) return '';
-    return `<aside class="hint" role="note" aria-label="Tip"><p id="hint-${esc(id)}">${esc(h.text)}</p><div class="row"><button type="button" class="hintok" data-hint="${esc(id)}" aria-describedby="hint-${esc(id)}">${esc(HELP.ui.hintOk)}</button>${h.how && howHas(h.how) ? `<a href="#/how?s=${esc(h.how)}" target="_blank" rel="noopener">${esc(HELP.ui.hintMore)}</a>` : ''}</div></aside>`;
+    return `<aside class="hint" role="note" aria-label="Tip"><p id="hint-${esc(id)}">${esc(h.text)}</p><div class="row"><button type="button" class="hintok" data-hint="${esc(id)}" aria-describedby="hint-${esc(id)}">${esc(HELP.ui.hintOk)}</button>${h.how && howHas(h.how) ? `<a href="#/how?s=${esc(h.how)}" >${esc(HELP.ui.hintMore)}</a>` : ''}</div></aside>`;
   }
   // The board shows one hint at a time, for the first panel in play whose hint is unread. Boot camp and guided runs have their own coach.
   function boardHint(v, mode) {
@@ -2927,6 +2931,40 @@
   const diffSentence = (rate) => (rate == null ? '' : DIFFX.won.replace('{n}', String(rate)));
   const diffNote = () => `<p class="small muted diffnote">${esc(DIFFX.note)}</p>`;
   const diffLine = (rates, t) => (rates && rates[t - 1] != null ? `Tier ${t} · ${esc(diffLabel(rates[t - 1]))}. ${esc(diffSentence(rates[t - 1]))}` : '');
+  // ---------- version 11: the glossary ----------
+  // A term shows when this build has the rule behind it. The words live in parts/help.json.
+  const GLOSS_ON = {
+    always: () => true, factions: () => counts().factions > 0, legit: () => counts().legit > 0, leaders: () => counts().leaders > 0,
+    pacts: () => counts().pacts > 0, multi: () => counts().multi > 0, holdings: () => counts().holdings > 0, reach: () => counts().reach > 0,
+    selfact: () => counts().holdings > 0 || counts().reach > 0, watch: () => counts().watch > 0, world: () => counts().world > 0,
+    forecast: () => !!(meta() && meta().forecast), guides: () => guides().length > 0,
+  };
+  const glossTerms = () => HELP.glossary.filter((x) => GLOSS_ON[x.when] && GLOSS_ON[x.when]());
+  // A small link from a panel to its term. On the board it is a button that opens the term over the board, so the run never unloads.
+  // Elsewhere it is a link to the glossary page. A second tab is avoided on purpose: two open copies of the game would overwrite one save.
+  function gl(id, onBoard) {
+    const x = glossTerms().find((y) => y.id === id);
+    if (!x) return '';
+    const name = esc(HELP.ui.glossName.replace('{term}', x.term));
+    return onBoard ? `<button type="button" class="gl" data-gl="${esc(id)}" aria-label="${name}">?</button>` : `<a class="gl" href="#/glossary?t=${esc(id)}" aria-label="${name}">?</a>`;
+  }
+  const countText = (n) => (n === 1 ? HELP.ui.glossCountOne : HELP.ui.glossCountMany).replace('{n}', String(n));
+  function termSheet(id, back) {
+    const terms = glossTerms(); const x = terms.find((y) => y.id === id);
+    if (!x) return;
+    const named = Object.fromEntries(terms.map((y) => [y.id, y.term]));
+    const see = x.see.filter((s) => named[s]);
+    const done = () => { closeSheet(); if (back && back.isConnected) back.focus(); };
+    openSheet(`<h3 id="termh">${esc(x.term)}</h3><p>${esc(x.text)}</p>${see.length ? `<p class="small">${esc(HELP.ui.glossSee)} ${see.map((s) => `<button type="button" class="linkish" data-see="${esc(s)}">${esc(named[s])}</button>`).join(' ')}</p>` : ''}<div class="acts"><button type="button" data-do="close">Close</button><a class="btn" href="#/glossary?t=${esc(id)}" data-go>${esc(HELP.ui.glossOpen)}</a></div>`,
+      (sheet) => {
+        sheet.setAttribute('aria-labelledby', 'termh');
+        bind('[data-see]', 'click', (e) => termSheet(e.currentTarget.dataset.see, back), sheet);
+        bind('[data-do="close"]', 'click', done, sheet);
+        bind('[data-go]', 'click', () => closeSheet(), sheet);
+      });
+  }
+  // One listener serves every term button, on the board and in the replay.
+  document.addEventListener('click', (e) => { const b = e.target.closest && e.target.closest('button[data-gl]'); if (b) termSheet(b.dataset.gl, b); });
   const howOn = () => ({ always: true, holdings: counts().holdings > 0, reach: counts().reach > 0, forecast: !!(meta() && meta().forecast) });
   function howToc() {
     const on = howOn();
@@ -2980,7 +3018,7 @@
       </div>
       <h2>Campaign</h2>
       <div class="tiles2">${topArcs.map((a) => `<a class="card feature" href="#/arc/${a.id}"><div class="label">${esc(a.span)}</div><div class="big">${esc(a.name)}</div><p class="small">${esc(a.blurb)}</p><div class="progress"><i data-w="${Math.round((100 * a.cleared) / a.nodes)}"></i></div><p class="small muted">${a.cleared} of ${a.nodes} operations</p></a>`).join('')}</div>
-      <p><a class="btn" href="#/arcs">All ${counts().arcs} arcs</a> <a class="btn" href="#/ops">All ${counts().ops} operations</a> <button id="quick">Quick play</button> <a class="btn" href="#/how">How to play</a></p>
+      <p><a class="btn" href="#/arcs">All ${counts().arcs} arcs</a> <a class="btn" href="#/ops">All ${counts().ops} operations</a> <button id="quick">Quick play</button> <a class="btn" href="#/how">How to play</a> <a class="btn" href="#/glossary">${esc(HELP.ui.glossLink)}</a></p>
     `);
     const d = $('#daily'); if (d) d.addEventListener('click', () => startRun({ mode: 'daily' }).catch((e) => toast(e.message)));
     const b = $('#boot'); if (b) b.addEventListener('click', () => startRun({ mode: 'tutorial' }).catch((e) => toast(e.message)));
@@ -3170,7 +3208,7 @@
       const lv = f.player ? '' : `<div class="small muted">Leverage ${f.leverage} of ${v.consumeAt} · ${esc(f.stageName)}</div>`;
       return `<div class="fx ${f.player ? 'you' : ''}"><div class="fx-name"><b>${esc(f.name)}</b>${f.player ? ' <span class="chip2">You</span>' : ''}</div>${f.blurb ? `<div class="small muted">${esc(f.blurb)}</div>` : ''}${lv}${lg}</div>`;
     }).join('');
-    return `<section class="factions" aria-label="Factions"><div class="fx-head"><span class="label">Factions</span>${pacts}</div>${hint === 'factions' ? hintHtml('factions') : ''}<div class="fx-grid">${cells}</div></section>`;
+    return `<section class="factions" aria-label="Factions"><div class="fx-head"><span class="label">Factions ${gl('faction', true)}</span>${pacts}</div>${hint === 'factions' ? hintHtml('factions') : ''}<div class="fx-grid">${cells}</div></section>`;
   }
 
   function cadresHtml(v, hint) {
@@ -3179,7 +3217,7 @@
       const mv = c.mine && c.movable ? `<button type="button" data-cadre="${esc(c.id)}">Move · 1 action</button>` : '';
       return `<li class="cadre ${c.mine ? 'mine' : 'theirs'} ${c.locked ? 'locked' : ''}"><div><b>${esc(c.name)}</b> <span class="small muted">${esc(c.role)} · ${esc(factionShort(c.faction))}</span></div><div class="small">${icon(c.domain)} ${esc(c.domain)}${c.locked ? ' · out of action' : ''}</div><div class="small muted">${esc(modsText(c.mods))}</div>${mv}</li>`;
     }).join('');
-    return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders</div>${hint === 'leaders' ? hintHtml('leaders') : ''}<ul>${rows}</ul></section>`;
+    return `<section class="cadres" aria-label="Leaders"><div class="label">Leaders ${gl('leader', true)}</div>${hint === 'leaders' ? hintHtml('leaders') : ''}<ul>${rows}</ul></section>`;
   }
 
   function reachHtml(v, hint) {
@@ -3191,7 +3229,7 @@
       const price = m.permit === 'priced' ? `<div class="small">Costs ${m.price} legitimacy and counts as an act against your own position.</div>` : '';
       return `<li class="reach ${esc(m.permit)} ${m.used >= m.limit ? 'gone' : ''}"><div><b>${esc(m.name)}</b> <span class="chip2 rstate">${esc(st)}</span></div><div class="small">${icon(m.domain)} ${esc(m.domain)}</div><div class="small muted">${esc(m.text)}</div>${price}${ev}${m.canUse ? `<button type="button" data-reach="${esc(m.id)}">Use · ${m.ap} action${m.ap > 1 ? 's' : ''}</button>` : ''}</li>`;
     }).join('');
-    return `<section class="reachbox" aria-label="Reach"><div class="label">Reach</div>${hint === 'reach' ? hintHtml('reach') : ''}<ul>${rows}</ul><p class="small muted">An act marked closed is open to the rival and barred to you. Each one lists the evidence behind that.</p></section>`;
+    return `<section class="reachbox" aria-label="Reach"><div class="label">Reach ${gl('reach', true)}</div>${hint === 'reach' ? hintHtml('reach') : ''}<ul>${rows}</ul><p class="small muted">An act marked closed is open to the rival and barred to you. Each one lists the evidence behind that.</p></section>`;
   }
 
   function holdingsHtml(v, hint) {
@@ -3201,13 +3239,13 @@
       const raised = h.active && h.cost > h.baseCost ? ` · cost up ${h.cost - h.baseCost}` : '';
       return `<li class="holding ${h.active ? '' : 'gone'} ${h.active && h.consuming ? 'consuming' : ''}"><div><b>${esc(h.name)}</b> <span class="chip2 hstate">${state}</span></div><div class="small">${icon(h.domain)} ${esc(h.domain)} · costs ${h.cost} a turn${raised} · denies ${h.denial}</div>${h.text ? `<div class="small muted">${esc(h.text)}</div>` : ''}${h.canYield ? `<button type="button" data-yield="${esc(h.id)}">Give up · 1 action</button>` : ''}</li>`;
     }).join('');
-    return `<section class="holdings" aria-label="Holdings"><div class="label">Holdings</div>${hint === 'holdings' ? hintHtml('holdings') : ''}<ul>${rows}</ul><p class="small muted">A holding costs you every turn and keeps some leverage from the rival. A holding is consuming when its cost is more than what it denies.</p></section>`;
+    return `<section class="holdings" aria-label="Holdings"><div class="label">Holdings ${gl('holding', true)}</div>${hint === 'holdings' ? hintHtml('holdings') : ''}<ul>${rows}</ul><p class="small muted">A holding costs you every turn and keeps some leverage from the rival. A holding is consuming when its cost is more than what it denies.</p></section>`;
   }
 
   function elsewhereHtml(v) {
     const els = v.intents.filter((i) => !isMine(v, i) && !i.cancelled && i.code);
     if (!els.length) return '';
-    return `<div class="elsewhere"><div class="label">Elsewhere · aimed at the other factions</div><ul>${els.map((i) => `<li>${esc(factionName(i.by))} runs <b>S${i.num}, ${esc(i.name)}</b> on ${esc(i.target || 'a domain')} against ${esc(factionName(i.victim))}${i.amount ? ` (${i.amount})` : ''}.</li>`).join('')}</ul><p class="small muted">You cannot answer these. They shift the balance between the others.</p></div>`;
+    return `<div class="elsewhere"><div class="label">Elsewhere · aimed at the other factions ${gl('elsewhere', true)}</div><ul>${els.map((i) => `<li>${esc(factionName(i.by))} runs <b>S${i.num}, ${esc(i.name)}</b> on ${esc(i.target || 'a domain')} against ${esc(factionName(i.victim))}${i.amount ? ` (${i.amount})` : ''}.</li>`).join('')}</ul><p class="small muted">You cannot answer these. They shift the balance between the others.</p></div>`;
   }
 
   function fboardsHtml(v) {
@@ -3216,7 +3254,7 @@
       const cells = v.boards[f.id].map((b) => `<div class="mini ${b.p >= 5 ? 'cap' : b.p >= 3 ? 'hot' : ''}" role="img" aria-label="${esc(b.d)}: pressure ${b.p}, ${b.s} shields${b.slope ? `, slope ${b.slope}` : ''}"><span class="mn">${esc(meta().short[b.d])}</span><span class="mp">${b.p}</span><span class="ms">${b.s ? '▲' + b.s : ''}</span></div>`).join('');
       return `<div class="fb"><div class="small"><b>${esc(f.name)}</b>${f.player ? ' (you)' : ''}</div><div class="minigrid">${cells}</div></div>`;
     }).join('');
-    return `<details class="fboards"><summary>Every faction's board</summary><p class="small muted">Digits are pressure. Triangles are shields. Pressure shows who holds the strain, and 3 or more pays the faction that put it there.</p>${blocks}</details>`;
+    return `<details class="fboards"><summary>Every faction's board</summary>${gl('faction', true)}<p class="small muted">Digits are pressure. Triangles are shields. Pressure shows who holds the strain, and 3 or more pays the faction that put it there.</p>${blocks}</details>`;
   }
 
   function incomingMap(v) {
@@ -3235,7 +3273,7 @@
     const pct = Math.min(100, Math.round((100 * v.leverage) / v.consumeAt));
     const ticks = v.thresholds.slice(0, 3).map((t) => `<span class="lc-tick" data-left="${(100 * t) / v.consumeAt}"></span>`).join('');
     return `<div class="lifecycle" aria-label="Lifecycle: ${esc(v.stageName)}, leverage ${v.leverage} of ${v.consumeAt}">
-      <div class="lc-head"><span>Lifecycle · <b>${esc(v.stageName)}</b></span><span>Leverage ${v.leverage} / ${v.consumeAt}</span></div>
+      <div class="lc-head"><span>Lifecycle · <b>${esc(v.stageName)}</b> ${gl('lifecycle', true)}</span><span>Leverage ${v.leverage} / ${v.consumeAt}</span></div>
       <div class="lc-track"><div class="lc-zones"></div><div class="lc-fill" data-w="${pct}"></div>${ticks}</div>
       <div class="lc-stages">${names.slice(0, 4).map((n, i) => `<span class="${i === v.stage ? 'on' : ''}">${n}</span>`).join('')}</div>
       <div class="small muted">${esc(meta().stageText[v.stageName] || '')}</div>
@@ -3301,26 +3339,26 @@
       <div class="hud">
         <div class="hud-top">
           <div><div class="kicker">${esc(MODE[d.run.mode] || 'Operation')}${d.run.dayNumber ? ' #' + d.run.dayNumber : ''}${d.run.scored ? '' : ' · practice'}</div><h1>${esc(v.op.title)}</h1>
-            ${d.run.watch ? `<div>${watchChip(d.run.watch)}</div>` : ''}
+            ${d.run.watch ? `<div>${watchChip(d.run.watch)} ${gl('watch', true)}</div>` : ''}
             <div class="hud-sub">${esc(opp)} · ${esc(v.op.label)} · Tier ${v.tier}${v.op.world ? ' · ' + esc(v.op.world) : ''}${v.lens ? ' · Lens: ' + esc(v.lens.name) : ''}</div></div>
-          <div class="turnbox"><div class="date">${esc(v.dates[v.turn - 1])}</div><div class="tn">Turn ${v.turn} of ${v.maxTurns} · <a href="#/how" target="_blank" rel="noopener">How to play</a></div></div>
+          <div class="turnbox"><div class="date">${esc(v.dates[v.turn - 1])}</div><div class="tn">Turn ${v.turn} of ${v.maxTurns} · <a href="#/how" target="_blank" rel="noopener">How to play</a> · <a href="#/glossary">${esc(HELP.ui.glossLink)}</a></div></div>
         </div>
         <div class="timetrack" aria-hidden="true">${v.dates.map((dt, i) => `<span class="t ${i + 1 < v.turn ? 'done' : i + 1 === v.turn ? 'now' : ''} ${v.bursts.includes(i + 1) ? 'burst' : ''}" title="${esc(dt)}"></span>`).join('')}</div>
         ${lifecycleHtml(v)}
         <div class="res">
-          <div class="meter"><div class="lbl">Actions</div><div class="pips">${Array.from({ length: Math.max(v.ap, 3) }, (_, i) => `<span class="pip ap ${i < v.ap ? 'on' : ''}"></span>`).join('')}</div><div class="small">${v.ap} left${v.apPenaltyNext ? ` · next turn −${v.apPenaltyNext}` : ''}</div></div>
-          <div class="meter"><div class="lbl">Coherence</div><div class="pips">${[0, 1, 2, 3, 4].map((i) => `<span class="pip coh ${i < v.coherence ? 'on' : ''}"></span>`).join('')}</div><div class="small">${v.op.dimension === 'Coherence' ? 'Actions = 2 + coherence' : `+${Math.floor(v.coherence / 2)} action${Math.floor(v.coherence / 2) === 1 ? '' : 's'} a turn`}</div></div>
-          <div class="meter"><div class="lbl">Lever</div>${leverHtml}</div>
-          <div class="meter"><div class="lbl">Physics</div><div><b>${esc(v.op.dimension)}</b></div><button type="button" id="rule">The rule</button></div>
-          ${doc ? `<div class="meter"><div class="lbl">Doctrine · ${esc(doc.layer)}</div>${doc.used ? `<div class="small muted">${esc(doc.name)} spent</div>` : `<button type="button" id="doctrine" ${v.can.doctrine ? '' : 'disabled'}>${esc(doc.name)}</button>`}</div>` : ''}
+          <div class="meter"><div class="lbl">Actions ${gl('actions', true)}</div><div class="pips">${Array.from({ length: Math.max(v.ap, 3) }, (_, i) => `<span class="pip ap ${i < v.ap ? 'on' : ''}"></span>`).join('')}</div><div class="small">${v.ap} left${v.apPenaltyNext ? ` · next turn −${v.apPenaltyNext}` : ''}</div></div>
+          <div class="meter"><div class="lbl">Coherence ${gl('coherence', true)}</div><div class="pips">${[0, 1, 2, 3, 4].map((i) => `<span class="pip coh ${i < v.coherence ? 'on' : ''}"></span>`).join('')}</div><div class="small">${v.op.dimension === 'Coherence' ? 'Actions = 2 + coherence' : `+${Math.floor(v.coherence / 2)} action${Math.floor(v.coherence / 2) === 1 ? '' : 's'} a turn`}</div></div>
+          <div class="meter"><div class="lbl">Lever ${gl('lever', true)}</div>${leverHtml}</div>
+          <div class="meter"><div class="lbl">Physics ${gl('dimension', true)}</div><div><b>${esc(v.op.dimension)}</b></div><button type="button" id="rule">The rule</button></div>
+          ${doc ? `<div class="meter"><div class="lbl">Doctrine · ${esc(doc.layer)} ${gl('doctrine', true)}</div>${doc.used ? `<div class="small muted">${esc(doc.name)} spent</div>` : `<button type="button" id="doctrine" ${v.can.doctrine ? '' : 'disabled'}>${esc(doc.name)}</button>`}</div>` : ''}
         </div>
       </div>
       ${hint === 'tier7' ? hintHtml('tier7') : ''}${factionsHtml(v, hint)}${cadresHtml(v, hint)}${holdingsHtml(v, hint)}${reachHtml(v, hint)}
       ${G.feed.length ? `<div class="feed" aria-live="polite">${G.feed.map((f, i) => `<p class="${f.cls || ''}" data-delay="${i}">${esc(f.text)}</p>`).join('')}</div>` : ''}
-      <div class="hand-head"><h2>Cards in play</h2><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
+      <div class="hand-head"><div class="headrow"><h2>Cards in play</h2>${gl('card', true)}</div><span class="small muted">${esc(opp)} · they land when you end the turn</span></div>
       <div class="hand">${v.intents.filter((i) => isMine(v, i)).map(cardHtml).join('') || '<p class="muted">No cards aimed at you this turn.</p>'}</div>
       ${elsewhereHtml(v)}
-      <h2>The board</h2>
+      <div class="headrow"><h2>The board</h2>${gl('domain', true)}</div>
       <div class="board">${v.board.map((b) => tileHtml(b, inc)).join('')}</div>
       ${fboardsHtml(v)}
       <p class="small muted">Bold outline: domains in play. Red bars: pressure. Shields absorb 1 pressure each. ⚠ marks what is aimed at a domain this turn.</p>
@@ -3746,7 +3784,7 @@
       <p class="small muted">Lower is better. A few claims prove little. The project's scoring log is the record, and this page only mirrors it.</p></section>`;
   }
   function fcIntro(cfg) {
-    return `<h1>Forecast</h1>
+    return `<div class="headrow"><h1>Forecast</h1>${gl('forecast')}</div>
       <p>Each claim below was registered with a date before anyone knew how it would resolve. Pick the ones you want and enter the chance you give each, from 1 to 99 percent. Lock it before the check date. When the result is in, the game scores you against the book's own probability and a cheap reference answer. The score is the Brier score, the square of the miss, so lower is better.</p>
       <p class="small muted">Forecast early. A forecast entered late has more to go on, and the game does not discount it. The scoring formula is provisional and weights are not used here. The sign ‡ in a source note means the item is still to verify. ${esc(cfg.credit || '')}</p>`;
   }
@@ -3839,7 +3877,7 @@
   // ---------- codex ----------
   route(/^\/codex$/, async () => {
     if (!state.me) {
-      render(html`<h1>The stratagem codex</h1><p>Disrupt a stratagem in play to capture it. Collect all 36.</p><button class="primary" id="go">Play now</button>`);
+      render(html`<div class="headrow"><h1>The stratagem codex</h1>${gl('codex')}</div><p>Disrupt a stratagem in play to capture it. Collect all 36.</p><button class="primary" id="go">Play now</button>`);
       $('#go').addEventListener('click', () => startRun({ mode: 'tutorial' }).catch((e) => toast(e.message)));
       return;
     }
@@ -3847,7 +3885,7 @@
     const p = d.progress;
     const byGroup = meta().groups.map((g) => ({ g, cards: d.cards.filter((c) => c.group === g), done: d.groups.find((x) => x.name === g).done }));
     render(html`
-      <h1>The stratagem codex</h1>
+      <div class="headrow"><h1>The stratagem codex</h1>${gl('codex')}</div>
       <p class="small muted">The Thirty-Six Stratagems are a folk compilation, not PLA doctrine. Here they name patterns any actor can run. Disrupt a card in play to capture it.</p>
       <div class="tiles2">
         <div class="card"><div class="label">Captured</div><div class="big">${p.codexCaptured} of 36</div><div class="progress"><i data-w="${Math.round((100 * p.codexCaptured) / 36)}"></i></div><p class="small muted">${p.codexSeen} seen</p></div>
@@ -3877,13 +3915,14 @@
       <h1>How to play</h1>
       <p>An opponent runs the method against a host, one stratagem at a time. You defend the host until the clock runs out, or you cut the lever the operation turns on.</p>
       ${howToc()}
+      <p class="small">The <a href="#/glossary">${esc(HELP.ui.glossLink.toLowerCase())}</a> lists every term the board uses.</p>
       <div class="tiles2">
         <div class="card"><div class="label">1 · The board</div><p>Twelve domains. Bold outlines mark the domains in play. Red bars count pressure from 0 to 5. At 3 or more, a domain pays the opponent 1 leverage each turn. At 5 it falls and pays 2.</p></div>
         <div class="card"><div class="label">2 · The cards</div><p>Each turn the opponent plays stratagem cards aimed at domains. A face-up card shows its name, target and payload. An unattributed card shows a threat and hides its name, and it may be a feint. A face-down card shows nothing.</p></div>
         <div class="card"><div class="label">3 · Your moves</div><p><b class="btn-detect">Detect</b> costs 1 and reveals a hidden card. <b class="btn-disrupt">Disrupt</b> costs 2 and cancels a card you can name, which captures it for your codex, or clears 2 pressure from a domain. <b class="btn-defend">Defend</b> costs 1 and adds a shield that absorbs 1 pressure.</p></div>
         <div class="card"><div class="label">4 · The lifecycle</div><p>Leverage moves the operation from Attract through Accommodate, Control and Extract to Consume. Reach the end of the clock before Consume and you hold the line.</p></div>
         <div class="card"><div class="label">5 · The lever</div><p>Every operation turns on one domain. You may name it once. Right: leverage drops by 2 and every Disrupt aimed there costs 1 less. Wrong: the opponent gains 2. Empty a named lever from turn 4, while the operation sits at Attract or Accommodate and no domain has fallen, and it collapses.</p></div>
-        <div class="card"><div class="label">6 · Coherence</div><p>A shield that absorbs a hit, a Detect followed by a Disrupt, or a correct lever raises coherence. Idle actions and fallen domains lower it. Every 2 points add an action each turn.</p></div>
+        <div class="card"><div class="label">6 · Coherence</div><p>A shield that absorbs a hit, a Disrupt on a card you detected or a correct lever raises coherence. Idle actions and fallen domains lower it. Every 2 points add an action each turn.</p></div>
         <div class="card"><div class="label">7 · Offers</div><p>Some cards are offers: extra actions now, a slope of pressure later. The method needs an invitation. Leave an offer and it passes.</p></div>
         <div class="card"><div class="label">8 · Stars</div><p>One star: you held the line. Two: the operation stopped before Extract. Three: you cut the lever, or kept leverage under 40 percent.</p></div>
       </div>
@@ -3893,7 +3932,7 @@
         <div class="card"><div class="label">Pairs</div><p class="small">Every faction has its own pressure, shields and slopes in each domain, and the board records who put the pressure there. When your domain holds 3 or more pressure, the faction that put most of it there banks the leverage.</p></div>
         <div class="card"><div class="label">Cards elsewhere</div><p class="small">A card aimed at another faction shows under Elsewhere. You cannot detect or disrupt it, but it changes who is strong when the cards land.</p></div>
         <div class="card"><div class="label">Legitimacy</div><p class="small">Each faction carries legitimacy from 0 to 100. Proxy, high-entropy and dishonorable stratagems cost the faction that plays them, and a Disrupt exposes the sender. A coherent turn restores yours. Below 25, a faction suffers an entropy spike in its own domains.</p></div>
-        <div class="card"><div class="label">Leaders</div><p class="small">A leader stands in one domain and changes the rules there. Some make Disrupts cheaper or dearer, add shields or actions, or cost legitimacy. Move one of yours for 1 action, once a turn.</p></div>
+        <div class="card"><div class="label">Leaders</div><p class="small">A leader stands in one domain and changes the rules there. Some make Disrupts cheaper or dearer, add shields or actions, or cost legitimacy. Move each of yours once a turn for 1 action.</p></div>
         <div class="card"><div class="label">Pacts</div><p class="small">Two factions may stand together against a third. While a pact holds, its members do not target each other. Pacts form and break on events, and breaking one has a price.</p></div>
       </div>` : ''}
       ${howSections()}
@@ -3920,6 +3959,36 @@
       toast('Progress cleared.');
       location.hash = '#/';
     });
+  }, 10);
+
+  // ---------- glossary ----------
+  route(/^\/glossary(\?.*)?$/, async () => {
+    const terms = glossTerms().slice().sort((a, b) => a.term.localeCompare(b.term));
+    const named = Object.fromEntries(terms.map((x) => [x.id, x.term]));
+    const entry = (x) => {
+      const see = x.see.filter((s) => named[s]);
+      return `<div class="gterm" data-g="${esc(x.id)}"><dt id="g-${esc(x.id)}" tabindex="-1">${esc(x.term)}</dt><dd><p>${esc(x.text)}</p>`
+        + (see.length ? `<p class="small">${esc(HELP.ui.glossSee)} ${see.map((s) => `<a href="#/glossary?t=${esc(s)}">${esc(named[s])}</a>`).join(' · ')}</p>` : '')
+        + (x.how && howHas(x.how) ? `<p class="small"><a href="#/how?s=${esc(x.how)}">${esc(HELP.ui.hintMore)}</a></p>` : '') + '</dd></div>';
+    };
+    render(html`
+      <h1>${esc(HELP.ui.glossTitle)}</h1>
+      <p class="small muted">${esc(HELP.ui.glossIntro)}</p>
+      <div class="glossfind"><label for="gq">${esc(HELP.ui.glossFilter)}</label><input id="gq" type="search" autocomplete="off" aria-controls="gloss"></div>
+      <p class="small muted" id="gcount" role="status">${esc(countText(terms.length))}</p>
+      <dl class="gloss" id="gloss">${terms.map(entry).join('')}</dl>
+      <p class="muted" id="gnone" hidden>${esc(HELP.ui.glossNone)}</p>
+    `);
+    const q = $('#gq');
+    q.addEventListener('input', () => {
+      const s = q.value.trim().toLowerCase(); let n = 0;
+      $$('.gterm').forEach((el) => { const x = terms.find((y) => y.id === el.dataset.g); const on = !s || `${x.term} ${x.text}`.toLowerCase().includes(s); el.hidden = !on; if (on) n++; });
+      $('#gnone').hidden = n > 0;
+      $('#gcount').textContent = countText(n);
+    });
+    const t = qs(location.hash).t;
+    const tgt = t && document.getElementById('g-' + t);
+    if (tgt) { tgt.closest('.gterm').classList.add('hit'); tgt.scrollIntoView({ block: 'start' }); tgt.focus({ preventScroll: true }); }
   }, 10);
 
   // ---------- records: result codes, replay, after-action report, challenge links ----------
@@ -4131,7 +4200,7 @@
   route(/^\/records$/, async () => {
     const recs = await ownRecords();
     render(html`
-      <h1>Records</h1>
+      <div class="headrow"><h1>Records</h1>${gl('code')}</div>
       <p class="muted">Every finished run carries a result code. Paste a code and the game replays it, action by action, to check the result. A code that verifies proves that a legal line of play earned the score.</p>
       <div class="card">
         <label class="label" for="paste">Paste one result code, or two to compare</label>

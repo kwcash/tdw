@@ -76,3 +76,9 @@ What is here, so a reset of the working machine does not cost the game again.
 - All four builds take the v10 bundle. Each operation and tier shows an approximate difficulty from Gentle to Brutal. The label reads the share of 400 games a simple scripted player won. Tier 7 stays open, as the owner decided.
 - `workspace/difficulty/` builds the table and copies it into the content files. `workspace/patch-v10.py` turns the v9 bundle into the v10 bundle.
 - `dist/update-2026-10-15b.zip` is the upload set for all four folders. `CHANGELOG_2026-10-15b.md` and `DIFFICULTY_NOTES.md` describe it.
+
+## Update of 15 October 2026, third set
+
+- All four builds take the v11 bundle. A glossary at `#/glossary` explains the terms the board uses, and each panel opens its term over the board. A term shows only in a build that has the rule behind it.
+- `workspace/parts/help.json` holds the terms and `workspace/patch-v11.py` turns the v10 bundle into the v11 bundle.
+- `dist/update-2026-10-15c.zip` is the upload set for all four folders. `CHANGELOG_2026-10-15c.md` describes it.
